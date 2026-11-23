@@ -1,0 +1,96 @@
+\appendix
+\chapter{深定理的来源和纸面证明的边界}
+\label{chap:sources}
+\section{可复查的源文件对应}
+下表中的源码随制作包附上。完整路径保留在 \path{reference/source_index.json} 及相应源文件目录中；表内使用末级文件名，避免长路径遮住数学内容。
+
+\begin{longtable}{@{}p{.31\textwidth}p{.64\textwidth}@{}}
+\toprule
+数学内容 & 原工程中的对应入口\\
+\midrule
+\endhead
+平滑函数 $G$ 与族的定义 & \path{CharFamily.lean}；本稿只取模 $1$ 的主特征。\\
+Mellin 变换及零点留数 & \path{poleData.lean} 及变换相关接口。正文亲自计算了主特征情形。\\
+单侧窗口不等式 & \path{landauWindowIneq.lean}。关键组合保留了实轴导数项。\\
+积分核的两侧尾部 & \path{landauTails.lean}。本稿取 $\delta=1/2$，把参数具体化为 $14,336,420$。\\
+窗口排除零点 & \path{landauWindow.lean}、\path{ZeroFreeOfRpowWindow.lean}。本稿对 $\zeta$ 独立展开其解析论证，并删除不需要的实极点分支。\\
+上同调长度窗口 & \path{ExistsPageN.lean}、\path{VwinOfRow.lean}、\path{TopMainZj.lean}。\\
+宿主族及辅助条件 & \path{SupplyChi.lean}、\path{ZeroFreeAllOfTopG.lean}；更深构造由它们导入的文件证明。\\
+对 $\varepsilon$ 统一的几何常数 & \path{DivinNOfHypV.lean} 中的 \path{FamilyClassConnected}，以及 \path{ShapeWin.lean}。\\
+两类输入汇合 & \path{WindowInequalityOfArtinInputs.lean}、\path{LevelGmLeOnFamilyScales.lean}。\\
+主项比较、误差与最终指数 & \path{ChTop.lean}、\path{ChCore.lean}、\path{SigALe.lean}、\path{CoreGm.lean}、\path{TopWin.lean}。\\
+公开 RH 末端 & \path{RiemannHypothesisOfEveryCharacter.lean} 与公开主入口。本文用等价的经典完备化函数方程书写收尾，不要求读者先证明一般 Dirichlet GRH。\\
+\bottomrule
+\end{longtable}
+
+\section{仍由原工程证明承担的工作}
+下列部分在原工程中有对应证明与依赖，但没有在本稿中逐条转写：
+\begin{enumerate}
+\item theta 提升中的高度可积性、尾估计、局部函数、实位最高权计算及 Rallis 型非消失输入；
+\item 自守表示到 Galois 表示的几何实现、同余极限与下降；
+\item 基变换、局部相容性等输入导出上同调长度窗口的模性与估计论证；
+\item 产生辅助素数及宿主族的可容许构造，并从同一族取得显式公式误差条件；
+\item 产生相容几何链、秩条件和逐单位比较，最终给出式\eqref{eq:arith-main}所用的主项估计。
+\end{enumerate}
+
+所以，本稿中的算术输入有明确来源，但其来源本身仍需阅读全文才能成为完全自足的纸面证明。原作者的四页公告不是这些证明的替代文本；公开的形式核验认可，也不等于本文已经转写了所有依赖。
+
+\section{本次实际完成的检查}
+本次重新读取了前次保存的 TeX 和选定源码，并从固定镜像提交恢复完整原项目源码；恢复和单文件汇编详情见附录\ref{chap:source-delivery}。重构稿 TeX 的 SHA256 为
+\begin{quote}\small
+\path{072a7fe8afcb90f2758b689fb25b163cbf44b68217b164d93dada092c588ad23}
+\end{quote}
+恢复的原复核资料包 SHA256 为
+\begin{quote}\small
+\path{15ed5fd3ee92c73fa8beafe71f57da4d5aed01535c47ce3fdbee06fc941fa4bc}
+\end{quote}
+这两项与前次记录一致。本次还重新核查了当前社区声明，并对 $\zeta$ 专门化、量词顺序、常数吸收、单侧不等式、核尾估计、最近极点选择和函数方程的例外点进行了独立数学审阅。
+
+本次未重新编译整个原 Lean 工程，也未把新稿全部再次形式化。先前小型 \path{EndpointReduction.lean} 的编译只验证带显式上游参数的末端推导；它与外部对完整公开工程的核验范围不同。
+
+\section{与前一版视频的关系}
+视频片尾展示的是 2026 年 11 月 21 日 20:55（北京时间）的 MIT 状态快照。新联合声明发布于同日 21:55（北京时间），报告了更进一步的共同体核验结果。时间较早的片尾记录应当按其标注时间理解。
+
+本稿只讨论黎曼 $\zeta$ 函数。原工程还给出 Dirichlet $L$ 函数的相应结论；本稿没有把这个范围扩张为任意类型 $L$ 函数的广义黎曼猜想。
+
+\backmatter
+\begin{thebibliography}{9}
+\addcontentsline{toc}{chapter}{参考资料}
+\bibitem{community}
+Lean and Mathlib communities.
+\emph{Lean verification of the Riemann Hypothesis}.
+2026 年 11 月 21 日发布；本稿于北京时间 2026 年 11 月 22 日查阅。
+\url{https://leanprover-community.github.io/blog/posts/riemann-hypothesis/}.
+
+\bibitem{mit}
+Andrew Sutherland.
+\emph{Verification files for the Lean proof of the Riemann Hypothesis}.
+本次打开的页面状态时间为 2026-11-21 12:55 UTC。
+\url{https://math.mit.edu/~drew/grh/}.
+
+\bibitem{announce}
+Levent Alpöge.
+四页 RH 公告及脚注中的 Lean 源归档。
+\url{https://alpo.ge/remark.pdf}.
+原始合并归档 SHA256：
+\path{9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc}.
+
+\bibitem{functional}
+NIST Digital Library of Mathematical Functions.
+§25.4, Reflection Formulas，尤其式 25.4.3--25.4.4。
+\url{https://dlmf.nist.gov/25.4}.
+
+\bibitem{gamma}
+NIST Digital Library of Mathematical Functions.
+§5.2, Definitions，Gamma 函数的零点、极点与 Euler 常数。
+\url{https://dlmf.nist.gov/5.2}.
+
+\bibitem{leanmodules}
+Lean Language Reference. Source Files and Modules.
+\url{https://lean-lang.org/doc/reference/latest/Source-Files-and-Modules/}.
+
+\bibitem{previous}
+《黎曼猜想：Lean 证明的中文数学重构》，2026 年 11 月 21 日版本。
+本次恢复其原始 TeX、复核资料包及选定源文件；本稿不是作者原文。
+\end{thebibliography}
+\end{document}

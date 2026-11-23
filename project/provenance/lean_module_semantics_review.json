@@ -1,0 +1,57 @@
+{
+  "date_beijing": "2026-11-22",
+  "conclusion": "The single .lean file is a byte-preserving source archive. It is not a newly compiled monolithic Lean module and not a kernel NDJSON export.",
+  "original_public_theorem": {
+    "path": "src/Main.lean",
+    "line": 4,
+    "name": "riemannHypothesis",
+    "type": "RiemannHypothesis",
+    "proof": "rhOfAll"
+  },
+  "observed_module_sensitive_constructs": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "line": 3,
+      "construct": "open scoped ArithmeticFunction.vonMangoldt"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+      "line": 8,
+      "construct": "private theorem character_trivial_first_factor"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "line": 13,
+      "construct": "set_option maxHeartbeats 800000"
+    },
+    {
+      "path": "src/Main.lean",
+      "line": 1,
+      "construct": "import Statements"
+    },
+    {
+      "path": "src/Statements.lean",
+      "line": 1,
+      "construct": "import Mathlib"
+    }
+  ],
+  "official_documents": [
+    "https://lean-lang.org/doc/reference/latest/Source-Files-and-Modules/",
+    "https://lean-lang.org/doc/reference/latest/Namespaces-and-Sections/",
+    "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+    "https://lean-lang.org/doc/reference/latest/External-Kernels/"
+  ],
+  "entry_file": "tools/RHEntry.lean",
+  "entry_compiled_locally": false,
+  "no_lean_executable_on_current_path": true,
+  "published_kernel_export": {
+    "source": "https://math.mit.edu/~drew/grh/",
+    "url": "https://math.mit.edu/~drew/grh/solution.ndjson.zst",
+    "compressed_bytes": 7699933588,
+    "compressed_sha256": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+    "uncompressed_bytes": 61570595788,
+    "uncompressed_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+    "downloaded_this_turn": false,
+    "kernel_rechecked_this_turn": false
+  }
+}

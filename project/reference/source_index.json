@@ -1,0 +1,1808 @@
+{
+  "original_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "note": "Selected original source files for reading; not a dependency-complete build.",
+  "core_sources": [
+    {
+      "id": "C01",
+      "title_zh": "无附加参数的最终伽罗瓦表示实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title_zh": "IsRecT 的适用类别、局部对应公理及存在/唯一性命题",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+          "line_ranges": [
+            [
+              20,
+              85
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title_zh": "从尖点参数和 Langlands 分段构造局部对应",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line_ranges": [
+            [
+              20,
+              66
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title_zh": "局部表示代数归一化指数",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean",
+          "line_ranges": [
+            [
+              24,
+              26
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title_zh": "Tor、Sqf 的实际条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean",
+          "line_ranges": [
+            [
+              27,
+              33
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title_zh": "TmW 的野惯性特征多项式条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean",
+          "line_ranges": [
+            [
+              18,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "title_zh": "Triv 是特征多项式条件",
+      "sources": [
+        {
+          "path": "Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean",
+          "line_ranges": [
+            [
+              21,
+              21
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "title_zh": "IsQpBig、AwayB、AboveB、PropsB、Row0b 及 Row0 的限制映射",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line_ranges": [
+            [
+              15,
+              86
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "title_zh": "极化配对、对偶扭曲和实位符号",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean",
+          "line_ranges": [
+            [
+              31,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title_zh": "半单表示以不变补空间定义",
+      "sources": [
+        {
+          "path": "Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean",
+          "line_ranges": [
+            [
+              1183,
+              1187
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title_zh": "theta 提升 GoodK 的确切限制",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+          "line_ranges": [
+            [
+              16,
+              24
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "title_zh": "标准加法特征、整数环自对偶性及基底数据",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              98,
+              105
+            ],
+            [
+              140,
+              155
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "title_zh": "Hecke 特征的限制与实位指数",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+          "line_ranges": [
+            [
+              396,
+              398
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              114,
+              115
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean",
+          "line_ranges": [
+            [
+              266,
+              267
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "title_zh": "TLiftK 的完整参数与量词",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+          "line_ranges": [
+            [
+              12,
+              23
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "title_zh": "最高权与分裂位非零局部配对",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              89,
+              112
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean",
+          "line_ranges": [
+            [
+              109,
+              124
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "title_zh": "theta 核确为有理点求和与 Weil 作用",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+          "line_ranges": [
+            [
+              107,
+              108
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              286,
+              289
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "title_zh": "theta 提升积分、Petersson 矩阵系数",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              22,
+              25
+            ]
+          ]
+        },
+        {
+          "path": "Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean",
+          "line_ranges": [
+            [
+              19,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "title_zh": "Schwartz 函数的 Weil 矩阵系数",
+      "sources": [
+        {
+          "path": "Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean",
+          "line_ranges": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "title_zh": "高度可积性、Rallis、群分解、bump、尾估计、实位与 Schur 命题",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+          "line_ranges": [
+            [
+              57,
+              113
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "title_zh": "AbsNe 的精确命题与测度条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              183,
+              189
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "title_zh": "AbsNe 的完整证明",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+          "line_ranges": [
+            [
+              5,
+              64
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "title_zh": "d0 的选择及最终非零自守分量构造",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+          "line_ranges": [
+            [
+              141,
+              177
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "title_zh": "theta 非消失的完整组装证明",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+          "line_ranges": [
+            [
+              26,
+              154
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "title_zh": "从已证工具得到 tLiftK",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+          "line_ranges": [
+            [
+              46,
+              49
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+          "line_ranges": [
+            [
+              39,
+              58
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+          "line_ranges": [
+            [
+              4,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "title_zh": "几何种子、同余、迹极限、下降至 Row0b 的实际调用",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line_ranges": [
+            [
+              18,
+              31
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "title_zh": "GeoOne 的实际量词、存在结论及几何实现组装",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean",
+          "line_ranges": [
+            [
+              58,
+              90
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean",
+          "line_ranges": [
+            [
+              18,
+              25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "title_zh": "几何种子 VBase 的连续性、半单性、特征多项式及 Hodge 条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean",
+          "line_ranges": [
+            [
+              38,
+              77
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "title_zh": "Lefschetz 到几何实例、再到最终 Row0b 实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "line_ranges": [
+            [
+              7,
+              11
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "title_zh": "Q_l/Z_l、局部数据、负 Tate 扭曲及 Sha 长度",
+      "sources": [
+        {
+          "path": "Formalism/GaloisCohomology/Statement.lean",
+          "line_ranges": [
+            [
+              15,
+              21
+            ],
+            [
+              50,
+              78
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "title_zh": "Sha1 为局部限制核的交；局部群为分解群",
+      "sources": [
+        {
+          "path": "ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+          "line_ranges": [
+            [
+              168,
+              170
+            ]
+          ]
+        },
+        {
+          "path": "ReciprocityTheory/Hypotheses/GalCoh.lean",
+          "line_ranges": [
+            [
+              132,
+              139
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "title_zh": "算术窗口 VWin 的完整数值与量词",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line_ranges": [
+            [
+              12,
+              49
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C32",
+      "title_zh": "从 Row0b 与已证基变换取得 VWin",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line_ranges": [
+            [
+              4,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C33",
+      "title_zh": "局部、自守、Galois 上同调、CM 输入合成窗口",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line_ranges": [
+            [
+              38,
+              74
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C34",
+      "title_zh": "最终 h 同时提供窗口及文献接口实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line_ranges": [
+            [
+              7,
+              14
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line_ranges": [
+            [
+              215,
+              218
+            ],
+            [
+              810,
+              813
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "other_groups": [
+    {
+      "title": "解析判据与 Mellin 变换",
+      "entries": [
+        {
+          "id": "A01",
+          "title_zh": "正权特征族及平滑和定义",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean"
+        },
+        {
+          "id": "A02",
+          "title_zh": "零点极点数据与窗口判据的接口",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean"
+        }
+      ]
+    },
+    {
+      "title": "窗口型 Landau 判据的证明文件",
+      "entries": [
+        {
+          "id": "L01",
+          "title_zh": "非主特征的 Mellin 变换",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean"
+        },
+        {
+          "id": "L02",
+          "title_zh": "模 1 主特征的 Mellin 变换",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean"
+        },
+        {
+          "id": "L03",
+          "title_zh": "对数导数的极点、重数与正留数",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean"
+        },
+        {
+          "id": "L04",
+          "title_zh": "幂窗口上界转成加权积分上界",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean"
+        },
+        {
+          "id": "L05",
+          "title_zh": "高阶导数积分系数",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean"
+        },
+        {
+          "id": "L06",
+          "title_zh": "指数积分核的逐点上界",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean"
+        },
+        {
+          "id": "L07",
+          "title_zh": "保留实轴项的单侧导数不等式",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean"
+        },
+        {
+          "id": "L08",
+          "title_zh": "积分核的两个尾项及具体参数",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean"
+        },
+        {
+          "id": "L09",
+          "title_zh": "Cauchy 导数估计",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCauchy.lean"
+        },
+        {
+          "id": "L10",
+          "title_zh": "单极点的高阶导数主项",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean"
+        },
+        {
+          "id": "L11",
+          "title_zh": "紧集中的零点有限性",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean"
+        },
+        {
+          "id": "L12",
+          "title_zh": "竖直移动圆心选出唯一最近极点",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean"
+        },
+        {
+          "id": "L13",
+          "title_zh": "实极点与竖直圆心的二分",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean"
+        },
+        {
+          "id": "L14",
+          "title_zh": "指数增长与窗口上界的矛盾",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean"
+        },
+        {
+          "id": "L15",
+          "title_zh": "每个极点的实部上界",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleReLe.lean"
+        },
+        {
+          "id": "L16",
+          "title_zh": "窗口判据的整体组装",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean"
+        },
+        {
+          "id": "L17",
+          "title_zh": "从幂窗口估计得到无零点",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean"
+        },
+        {
+          "id": "L18",
+          "title_zh": "几何主项差的上界",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean"
+        },
+        {
+          "id": "L19",
+          "title_zh": "特征正交与平滑素数和上界",
+          "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean"
+        }
+      ]
+    },
+    {
+      "title": "几何接口到最终指数",
+      "entries": [
+        {
+          "id": "B01",
+          "title_zh": "几何链及主项差的结构条件",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean"
+        },
+        {
+          "id": "B02",
+          "title_zh": "由 EAtH 得到有限特征误差界",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean"
+        },
+        {
+          "id": "B03",
+          "title_zh": "指数 E+6 到 E+7 的完整数值合并",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean"
+        },
+        {
+          "id": "B04",
+          "title_zh": "数据族及其良好尺度",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean"
+        },
+        {
+          "id": "B05",
+          "title_zh": "从 Artin 输入得到尺度不等式",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean"
+        },
+        {
+          "id": "B06",
+          "title_zh": "家族尺度上的平滑和上界",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean"
+        },
+        {
+          "id": "B07",
+          "title_zh": "形式化窗口接口之间的转换",
+          "path": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean"
+        }
+      ]
+    },
+    {
+      "title": "好尺度、特征族与常数量词",
+      "entries": [
+        {
+          "id": "F01",
+          "title_zh": "特征及 level 数据",
+          "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean"
+        },
+        {
+          "id": "F02",
+          "title_zh": "正权特征族和 Level.cyc",
+          "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean"
+        },
+        {
+          "id": "F03",
+          "title_zh": "窗口尺度上不等式的接口",
+          "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean"
+        },
+        {
+          "id": "F04",
+          "title_zh": "任意远处存在整个好尺度窗口",
+          "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean"
+        },
+        {
+          "id": "F05",
+          "title_zh": "选择 epsilon 并排除任意右侧零点",
+          "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean"
+        }
+      ]
+    },
+    {
+      "title": "算术输入的最后组合",
+      "entries": [
+        {
+          "id": "P01",
+          "title_zh": "先固定指数常数，再选择 epsilon 和数据族",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean"
+        },
+        {
+          "id": "P02",
+          "title_zh": "好尺度数据到所有本原特征非消失",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean"
+        },
+        {
+          "id": "P03",
+          "title_zh": "VWin 对指定特征提供宿主数据",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean"
+        },
+        {
+          "id": "P04",
+          "title_zh": "几何链族的组装",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean"
+        },
+        {
+          "id": "P05",
+          "title_zh": "选取窗口幂 3/2 并处理所有特征",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean"
+        },
+        {
+          "id": "P06",
+          "title_zh": "有限 Euler 因子、零点反射与临界带",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean"
+        },
+        {
+          "id": "P07",
+          "title_zh": "完备函数路线的 RH 末端推导",
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean"
+        }
+      ]
+    },
+    {
+      "title": "公开入口与末端推导",
+      "entries": [
+        {
+          "id": "E01",
+          "title_zh": "公开的五个定理",
+          "path": "Main.lean"
+        },
+        {
+          "id": "E02",
+          "title_zh": "准确的零点与非消失命题",
+          "path": "Statements.lean"
+        },
+        {
+          "id": "E03",
+          "title_zh": "everyCharacter 到公开定理的连接",
+          "path": "Supplements/Kernels/MainTheorems.lean"
+        },
+        {
+          "id": "E04",
+          "title_zh": "实际公开 RH 路径的 Gamma 与余弦消元",
+          "path": "Formalism/GammaFactorNonvanishing/RhOfRight.lean"
+        },
+        {
+          "id": "E05",
+          "title_zh": "本原 Dirichlet 特征的临界线结论",
+          "path": "Formalism/GammaFactorNonvanishing/CritLine.lean"
+        },
+        {
+          "id": "E06",
+          "title_zh": "自守、几何及窗口输入到特征主定理",
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+      "source_ids": [
+        "C12",
+        "C13",
+        "C16"
+      ],
+      "bytes": 28971,
+      "physical_lines": 606,
+      "sha256": "62209e957e734a32e4a85feb546cb2e8e7e087475d54fe5575b8fa7b4bd80197"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+      "source_ids": [
+        "C13",
+        "C16"
+      ],
+      "bytes": 27099,
+      "physical_lines": 491,
+      "sha256": "84d6a67f87f505d4898e86709099a0a133a23c6b922c284084adb6ac63d9fc39"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean",
+      "source_ids": [
+        "C13"
+      ],
+      "bytes": 22942,
+      "physical_lines": 458,
+      "sha256": "e592457bdb5e8f9eb804d09311da7b55de0bee01423e544872ef58a9a83bd68e"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean",
+      "source_ids": [
+        "C09"
+      ],
+      "bytes": 2266,
+      "physical_lines": 59,
+      "sha256": "123344d1220af352aa7c1248107f673aecb3c4cd0b37c00df9c9cedbce3fd9aa"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean",
+      "source_ids": [
+        "C15"
+      ],
+      "bytes": 11412,
+      "physical_lines": 245,
+      "sha256": "774fb0c3a831f1251bb1170b7c08352f5edfcf155796f4e41ff817ee410f765d"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean",
+      "source_ids": [
+        "C04"
+      ],
+      "bytes": 7782,
+      "physical_lines": 131,
+      "sha256": "3dfa96255e4a347eb90902956996b73254eb59fa43b3cd684184c06e80b161c9"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "source_ids": [
+        "C33"
+      ],
+      "bytes": 6603,
+      "physical_lines": 75,
+      "sha256": "f824d3f7873a493432bdfcbdc279fa82d70a6a9dbaac44c2a30316cada2eae3e"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "source_ids": [
+        "C32"
+      ],
+      "bytes": 515,
+      "physical_lines": 5,
+      "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "source_ids": [
+        "P06"
+      ],
+      "bytes": 5193,
+      "physical_lines": 104,
+      "sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "source_ids": [
+        "P01"
+      ],
+      "bytes": 6424,
+      "physical_lines": 134,
+      "sha256": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "source_ids": [
+        "P05"
+      ],
+      "bytes": 1215,
+      "physical_lines": 18,
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "source_ids": [
+        "C31"
+      ],
+      "bytes": 3776,
+      "physical_lines": 81,
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "source_ids": [
+        "C34"
+      ],
+      "bytes": 1213,
+      "physical_lines": 14,
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+      "source_ids": [
+        "P07"
+      ],
+      "bytes": 20673,
+      "physical_lines": 231,
+      "sha256": "80d57d0936668a1cde784b87c67f680d017962b6cecf0710a51a32b9d8549880"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+      "source_ids": [
+        "P04"
+      ],
+      "bytes": 4728,
+      "physical_lines": 51,
+      "sha256": "5624f75b4efd8cefe340360a5ba12a5d3c8a72340b54f2db9c76651a91429f00"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "source_ids": [
+        "P03"
+      ],
+      "bytes": 697,
+      "physical_lines": 16,
+      "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "source_ids": [
+        "P02"
+      ],
+      "bytes": 1791,
+      "physical_lines": 38,
+      "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "source_ids": [
+        "A01"
+      ],
+      "bytes": 1636,
+      "physical_lines": 49,
+      "sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "source_ids": [
+        "L19"
+      ],
+      "bytes": 25006,
+      "physical_lines": 446,
+      "sha256": "80ceae1e3c5728267fe7e7848342ca2d754c5363e9b6d8ae2d628c70f26772e0"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "source_ids": [
+        "L18"
+      ],
+      "bytes": 3793,
+      "physical_lines": 76,
+      "sha256": "9be04f7335746cae6bbdf52a813ae6713a90bf2a555eefc56f538bfd96af954f"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCauchy.lean",
+      "source_ids": [
+        "L09"
+      ],
+      "bytes": 1731,
+      "physical_lines": 37,
+      "sha256": "fdd3d3cdebfe075a825bd3249713b362daef806e79e4a10341cdc1104a023b39"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean",
+      "source_ids": [
+        "L05"
+      ],
+      "bytes": 1434,
+      "physical_lines": 32,
+      "sha256": "e8bd6a4a51c2299ccdd213fd7b99a67c7a2968b14cd8752cf15ab3aa14874543"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+      "source_ids": [
+        "L13"
+      ],
+      "bytes": 4357,
+      "physical_lines": 91,
+      "sha256": "f358ff8aecbe34019afe20224ae9a5890c99d55f6b6f7d838c1277e3b1d255ad"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean",
+      "source_ids": [
+        "L11"
+      ],
+      "bytes": 1132,
+      "physical_lines": 30,
+      "sha256": "1c24afcda94b779f176b3e46a2cad08e32414bd41aeee9d890e187391479129a"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean",
+      "source_ids": [
+        "L14"
+      ],
+      "bytes": 1838,
+      "physical_lines": 44,
+      "sha256": "2f3e6d7a5d2e7b1cf2b0b92c82f50b2ebb661ab8fb519092795fcade18f88df5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean",
+      "source_ids": [
+        "L06"
+      ],
+      "bytes": 807,
+      "physical_lines": 23,
+      "sha256": "9fe6836f5bbab547e0b1d154ad4133a0b0d6aaf9ba8cde93b6310a49d5dd5259"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+      "source_ids": [
+        "L12"
+      ],
+      "bytes": 5357,
+      "physical_lines": 113,
+      "sha256": "ae084dbb3f161d2dd369ff224f2117b818243b501ca596d3da2c92d83b65a67c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+      "source_ids": [
+        "L10"
+      ],
+      "bytes": 4189,
+      "physical_lines": 83,
+      "sha256": "c70dba4115698a4ee22654f0aaf213b886afe28a2d1d44a8e4370aec72fc3944"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleReLe.lean",
+      "source_ids": [
+        "L15"
+      ],
+      "bytes": 2825,
+      "physical_lines": 57,
+      "sha256": "da3615e42c27329c6b8ba7e948cba526d86b45c423225c8c111946cf409ef2ef"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+      "source_ids": [
+        "L04"
+      ],
+      "bytes": 2999,
+      "physical_lines": 61,
+      "sha256": "f9238ed2d6c67f1cbe383a33cc3759c00bed31b97a10253fbee59279290c6a5c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+      "source_ids": [
+        "L17"
+      ],
+      "bytes": 668,
+      "physical_lines": 18,
+      "sha256": "3252473ba2654b05e9d2ea0781ea91b4c7eadcca0def18b0f21d20212c2f0316"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+      "source_ids": [
+        "L08"
+      ],
+      "bytes": 6721,
+      "physical_lines": 135,
+      "sha256": "5700277144d95eea3d90d3d4e2efa3743c3d892753ed41ed27f6f38a2e92708c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "source_ids": [
+        "L16"
+      ],
+      "bytes": 9681,
+      "physical_lines": 170,
+      "sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+      "source_ids": [
+        "L07"
+      ],
+      "bytes": 6547,
+      "physical_lines": 115,
+      "sha256": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean",
+      "source_ids": [
+        "L02"
+      ],
+      "bytes": 9533,
+      "physical_lines": 203,
+      "sha256": "57054bee6a57d89958d6a4d862f74083e68afea8ce0af701b49881e2043767c5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean",
+      "source_ids": [
+        "L01"
+      ],
+      "bytes": 6556,
+      "physical_lines": 146,
+      "sha256": "22192caa33f0e9b840298329573ca3ea15e3e5d9e60624efcda3562f8ddff26a"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+      "source_ids": [
+        "L03"
+      ],
+      "bytes": 20079,
+      "physical_lines": 404,
+      "sha256": "78fb8ae795a01ad687440b035c377a9fde71088c726d1ac862ba0fd8bb1fc3c0"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "source_ids": [
+        "A02"
+      ],
+      "bytes": 2678,
+      "physical_lines": 66,
+      "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+      "source_ids": [
+        "C25"
+      ],
+      "bytes": 2933,
+      "physical_lines": 33,
+      "sha256": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "source_ids": [
+        "C28"
+      ],
+      "bytes": 495,
+      "physical_lines": 8,
+      "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean",
+      "source_ids": [
+        "C26"
+      ],
+      "bytes": 2269,
+      "physical_lines": 27,
+      "sha256": "081139c17d5bf5f3c0547485418f00df2bbd795f698519b32ce96583f8225ee6"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean",
+      "source_ids": [
+        "C26"
+      ],
+      "bytes": 13285,
+      "physical_lines": 170,
+      "sha256": "15537e9684a17f7fae1d0d9cf65666039d356d4f91ac8a533e2ebac2f0d585d7"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+      "source_ids": [
+        "C28"
+      ],
+      "bytes": 665,
+      "physical_lines": 13,
+      "sha256": "e642fff070242ac3a7d1857786deb0ead525003c2327254cc3f7d3836cc79b0f"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "source_ids": [
+        "C01",
+        "C28"
+      ],
+      "bytes": 433,
+      "physical_lines": 8,
+      "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean",
+      "source_ids": [
+        "C27"
+      ],
+      "bytes": 9603,
+      "physical_lines": 134,
+      "sha256": "7b817d4eaa6db7cb00499bcf7768cc3686c9e32dc2a34a9842f23917e01fcabe"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+      "source_ids": [
+        "C21"
+      ],
+      "bytes": 3341,
+      "physical_lines": 64,
+      "sha256": "ae05d6b3c6d978d5f7265c69c65385aa4eef63e406c0d4d5adec9c35621c80c9"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+      "source_ids": [
+        "C11"
+      ],
+      "bytes": 6633,
+      "physical_lines": 90,
+      "sha256": "c724fb9f8fc7ba20c562902b1e5601f008c77e9777886bb8790af80eb949546a"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+      "source_ids": [
+        "C14"
+      ],
+      "bytes": 1971,
+      "physical_lines": 27,
+      "sha256": "8a58c624cd91dbfb4d3e8b7735e232e1463dd51d0daa7a6174b99349b31d6fc5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+      "source_ids": [
+        "C15",
+        "C17",
+        "C20"
+      ],
+      "bytes": 24668,
+      "physical_lines": 310,
+      "sha256": "901ac70f413697a2cf0aea4a35f8d3bc419699c48e01e62a8e06d49503a2e07c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+      "source_ids": [
+        "C19",
+        "C22"
+      ],
+      "bytes": 17070,
+      "physical_lines": 180,
+      "sha256": "47f54c0dac340626f9b602eb4ad10e27543f496e61f995b71f55ce205642a20c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+      "source_ids": [
+        "C24"
+      ],
+      "bytes": 316,
+      "physical_lines": 5,
+      "sha256": "cb810adcf09297fdd356174b67d6abdc43c079dbe65797b1f47383871c1bf6ca"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+      "source_ids": [
+        "C24"
+      ],
+      "bytes": 5585,
+      "physical_lines": 60,
+      "sha256": "571074fd012521a7ed0c9f26c3a74e0e3ed3fa50b110979affa4566f6ba0f5ba"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+      "source_ids": [
+        "C23"
+      ],
+      "bytes": 11017,
+      "physical_lines": 156,
+      "sha256": "d0c0101ebf225ca5d2bddb47a519f8920d0bb450456e4c4d9a10cfdb5d84f719"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+      "source_ids": [
+        "C24"
+      ],
+      "bytes": 4517,
+      "physical_lines": 51,
+      "sha256": "8bbd5719adda270dc2c425180e45de3f6ac6c3c4fef21a95306e1633151a1e3f"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean",
+      "source_ids": [
+        "C06"
+      ],
+      "bytes": 9852,
+      "physical_lines": 143,
+      "sha256": "0158f29dcd6e1255ee0073c274b9543692dda9112da2751b85d31a0e9171e229"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean",
+      "source_ids": [
+        "C05"
+      ],
+      "bytes": 6524,
+      "physical_lines": 103,
+      "sha256": "17249e993a0cfaa745b35b523cb92fae0dbc8ea8d8a7bdbde8b5bdc657848d81"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+      "source_ids": [
+        "C08"
+      ],
+      "bytes": 5507,
+      "physical_lines": 88,
+      "sha256": "e3020031e884beef2eff18275019b7213a16f3c721242e9a79891b5396955719"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+      "source_ids": [
+        "C02"
+      ],
+      "bytes": 6283,
+      "physical_lines": 116,
+      "sha256": "4054d69535a55b8df339dee1ed766d38cb271ae87ce6033a8e0195ac577d9931"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "source_ids": [
+        "C03"
+      ],
+      "bytes": 3557,
+      "physical_lines": 66,
+      "sha256": "2411dd4cb455607d3f39761258ccde5c9e945443c421e69a626e4148a79824ab"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+      "source_ids": [
+        "B01"
+      ],
+      "bytes": 2897,
+      "physical_lines": 51,
+      "sha256": "cb17dfd05546ac3116b0638406cb082913e3370841a8abfab1e6498b6d4ac698"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "source_ids": [
+        "B03"
+      ],
+      "bytes": 4613,
+      "physical_lines": 74,
+      "sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "source_ids": [
+        "B07"
+      ],
+      "bytes": 1122,
+      "physical_lines": 19,
+      "sha256": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+      "source_ids": [
+        "B04"
+      ],
+      "bytes": 3034,
+      "physical_lines": 52,
+      "sha256": "99ab2af08664a9d1cf3afbe5113894d2b56bb64eb052a378f62d027d0f74354e"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "source_ids": [
+        "B06"
+      ],
+      "bytes": 2182,
+      "physical_lines": 39,
+      "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+      "source_ids": [
+        "B02"
+      ],
+      "bytes": 3181,
+      "physical_lines": 60,
+      "sha256": "88689d3064a0a824da4109d4c183a4cffed8953acffe6eeacb75b088b4f78f55"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "source_ids": [
+        "B05"
+      ],
+      "bytes": 1904,
+      "physical_lines": 36,
+      "sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+      "source_ids": [
+        "E06"
+      ],
+      "bytes": 7489,
+      "physical_lines": 88,
+      "sha256": "87518b975cbf7675d19cc619bf7422c43d7e2f010f6769d2b8ec1b9e852ca6d1"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "source_ids": [
+        "C34"
+      ],
+      "bytes": 97393,
+      "physical_lines": 814,
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean",
+      "source_ids": [
+        "C07"
+      ],
+      "bytes": 5152,
+      "physical_lines": 88,
+      "sha256": "bd33e4bd4882fd0ba7c527f5a8add120237b0d58c1760211b7754fb58796ad8d"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean",
+      "source_ids": [
+        "C18"
+      ],
+      "bytes": 10426,
+      "physical_lines": 134,
+      "sha256": "c66272370764fab6d9c889c427b02252e7d20de463230ff66ca9e810879e3fae"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean",
+      "source_ids": [
+        "C17"
+      ],
+      "bytes": 12382,
+      "physical_lines": 142,
+      "sha256": "b636c4351d6b5e126954ec2f5bb978cbbbae13451ac774bf9e4cfa83180a69f5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/GaloisCohomology/Statement.lean",
+      "source_ids": [
+        "C29"
+      ],
+      "bytes": 8427,
+      "physical_lines": 186,
+      "sha256": "67dc5835eb4b337dfbbbf7f0accd1198b59793ae70f5af34421a7c35410d632c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+      "source_ids": [
+        "E05"
+      ],
+      "bytes": 1825,
+      "physical_lines": 32,
+      "sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+      "source_ids": [
+        "E04"
+      ],
+      "bytes": 2459,
+      "physical_lines": 62,
+      "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean",
+      "source_ids": [
+        "C10"
+      ],
+      "bytes": 71611,
+      "physical_lines": 1423,
+      "sha256": "aeb3839d2468c0e89fbf509a1b971bf983a09ccc1e3ccf99d89dc8ee78a9edc8"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean",
+      "source_ids": [
+        "F02"
+      ],
+      "bytes": 7650,
+      "physical_lines": 176,
+      "sha256": "52ef51f6acc3ac5bdc351912a0c2934b36b4bbffcc60aea8cc6cfcf886ac3a89"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "source_ids": [
+        "F03"
+      ],
+      "bytes": 7338,
+      "physical_lines": 168,
+      "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean",
+      "source_ids": [
+        "F01"
+      ],
+      "bytes": 3625,
+      "physical_lines": 132,
+      "sha256": "3f75794693f7f4ce9618f48c91ef4672c5de1909347fd245fb4e5a93cd2e6c6c"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+      "source_ids": [
+        "F05"
+      ],
+      "bytes": 8117,
+      "physical_lines": 140,
+      "sha256": "afbbf8ec0a8aca08b7935c6118c76eef06b2eee896805e7de277b9d4e09fc52b"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean",
+      "source_ids": [
+        "F04"
+      ],
+      "bytes": 1825,
+      "physical_lines": 50,
+      "sha256": "882989a78da888b0462d17f285e42e44970a3dee70c1dc8c667fb5a3f985c2f7"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Main.lean",
+      "source_ids": [
+        "E01"
+      ],
+      "bytes": 433,
+      "physical_lines": 12,
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939"
+    },
+    {
+      "origin": "original_archive",
+      "path": "ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+      "source_ids": [
+        "C30"
+      ],
+      "bytes": 8957,
+      "physical_lines": 207,
+      "sha256": "610c38bcf79837ed06292f22f6ce7ccdb40dc8df503e0ed41a06e71e9224b55f"
+    },
+    {
+      "origin": "original_archive",
+      "path": "ReciprocityTheory/Hypotheses/GalCoh.lean",
+      "source_ids": [
+        "C30"
+      ],
+      "bytes": 16010,
+      "physical_lines": 273,
+      "sha256": "8b5051953b0209402d9ef496c5877eec8b809d1b10fbd67877408876c36f30cd"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Statements.lean",
+      "source_ids": [
+        "E02"
+      ],
+      "bytes": 783,
+      "physical_lines": 16,
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+    },
+    {
+      "origin": "original_archive",
+      "path": "Supplements/Kernels/MainTheorems.lean",
+      "source_ids": [
+        "E03"
+      ],
+      "bytes": 740,
+      "physical_lines": 16,
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53"
+    },
+    {
+      "origin": "mathlib_0df444a3",
+      "path": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "source_ids": [
+        "M01"
+      ],
+      "bytes": 12306,
+      "physical_lines": 262,
+      "sha256": "db9f37f08bcce379c502549f604c0e98bf4a39b3a3440606861bbac847f2a1a9"
+    },
+    {
+      "origin": "mathlib_0df444a3",
+      "path": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+      "source_ids": [
+        "M02"
+      ],
+      "bytes": 18979,
+      "physical_lines": 397,
+      "sha256": "86d3aaad83e64cb64a24167fd4ddb2eeec5ca4a19a9298459e87a57fec151040"
+    },
+    {
+      "origin": "mathlib_0df444a3",
+      "path": "Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+      "source_ids": [
+        "M03"
+      ],
+      "bytes": 21780,
+      "physical_lines": 419,
+      "sha256": "945a2fd23ca9ebd2d48f101d771ef9117dd9847d48fd77ea2623d8c345f4f5a9"
+    },
+    {
+      "origin": "mathlib_0df444a3",
+      "path": "Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean",
+      "source_ids": [
+        "M04"
+      ],
+      "bytes": 9148,
+      "physical_lines": 210,
+      "sha256": "ea87e1b821adbe190be9655314f5ab3fa299276dd413a1401faa175437726fcb"
+    },
+    {
+      "origin": "mathlib_0df444a3",
+      "path": "Mathlib/Analysis/SpecialFunctions/Gamma/Beta.lean",
+      "source_ids": [
+        "M05"
+      ],
+      "bytes": 28664,
+      "physical_lines": 605,
+      "sha256": "a7ac57c81c4e23a96885104166140fe33905bc46ff564203d9376b96bc494c99"
+    }
+  ]
+}

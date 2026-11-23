@@ -1,0 +1,20 @@
+Title:           黎曼猜想：人类可读的证明主线
+Subject:         ζ专用算术窗口、完整解析推导与深定理引用边界
+Author:          基于指定Lean工程的中文数学重构
+Creator:         LaTeX with hyperref
+Producer:        xdvipdfmx (20240305)
+CreationDate:    Sun Nov 22 07:04:48 2026 CST
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           31
+Encrypted:       no
+Page size:       595.28 x 841.89 pts (A4)
+Page rot:        0
+File size:       625798 bytes
+Optimized:       no
+PDF version:     1.5

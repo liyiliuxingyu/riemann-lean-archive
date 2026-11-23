@@ -1,0 +1,116 @@
+{
+  "date_beijing": "2026-11-22",
+  "scope": "Lossless all-module source aggregation, exact byte verification, actual restoration and readback of every restored source file. No Lean compilation or kernel proof export performed.",
+  "export": {
+    "format": "lean-source-bundle-v1",
+    "file": "RH_AllSources.lean",
+    "source_root": "src",
+    "module_count": 175187,
+    "original_source_bytes": 1030531854,
+    "original_source_lines": 17374215,
+    "auxiliary_count": 3,
+    "bundle_bytes": 1101883390,
+    "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+    "dependency_edges": 753261,
+    "internal_dependency_order_acyclic": true,
+    "unresolved_project_or_unknown_imports": 0,
+    "project_imports_closed_under_configured_external_prefixes": true,
+    "external_imports_included": false,
+    "lean_compilation_performed": false,
+    "kernel_export": false,
+    "source_archive_only": true,
+    "hash_index": "RH_AllSources.index.jsonl",
+    "dependency_index": "RH_AllSources.dependencies.jsonl",
+    "duplicate_content_index": "RH_AllSources.duplicates.jsonl",
+    "parser_scope": "standard module header imports only; not declaration dependency analysis"
+  },
+  "verify_against_original": {
+    "operation": "verify",
+    "module_count": 175187,
+    "auxiliary_count": 3,
+    "source_bytes": 1030531854,
+    "all_embedded_sha256_passed": true,
+    "compared_with_originals": true,
+    "lean_compilation_performed": false,
+    "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444"
+  },
+  "actual_restore": {
+    "operation": "restore",
+    "module_count": 175187,
+    "auxiliary_count": 3,
+    "source_bytes": 1030531854,
+    "all_embedded_sha256_passed": true,
+    "compared_with_originals": true,
+    "lean_compilation_performed": false,
+    "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+    "destination": "/workspace/scratch/e8ff28430def/work/lean_merge_20261122/roundtrip"
+  },
+  "verify_restored_files_read_back_from_disk": {
+    "operation": "verify",
+    "module_count": 175187,
+    "auxiliary_count": 3,
+    "source_bytes": 1030531854,
+    "all_embedded_sha256_passed": true,
+    "compared_with_originals": true,
+    "lean_compilation_performed": false,
+    "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444"
+  },
+  "format_checks": {
+    "scope": "Four-module format fixture plus separate 85-module selected-source round trip; not Lean compilation.",
+    "tested": [
+      "nested comments and fake import text",
+      "CRLF bytes and final missing newline",
+      "multiline import after public modifier",
+      "identical source bytes under distinct module paths retained",
+      "topological dependency order",
+      "auxiliary toolchain restoration",
+      "payload tamper rejected by SHA256",
+      "import cycle rejected"
+    ],
+    "results": {
+      "export": {
+        "exit_code": 0,
+        "stdout": "{\n  \"format\": \"lean-source-bundle-v1\",\n  \"file\": \"Fixture.lean\",\n  \"source_root\": \"src\",\n  \"module_count\": 4,\n  \"original_source_bytes\": 227,\n  \"original_source_lines\": 10,\n  \"auxiliary_count\": 1,\n  \"bundle_bytes\": 2123,\n  \"bundle_sha256\": \"9c8f5f0cdf4598466109f1f8c83b5cddd2f65ecfde6a3a5794d832dc254f0e85\",\n  \"dependency_edges\": 1,\n  \"internal_dependency_order_acyclic\": true,\n  \"unresolved_project_or_unknown_imports\": 0,\n  \"project_imports_closed_under_configured_external_prefixes\": true,\n  \"external_imports_included\": false,\n  \"lean_compilation_performed\": false,\n  \"kernel_export\": false,\n  \"source_archive_only\": true,\n  \"hash_index\": \"Fixture.index.jsonl\",\n  \"dependency_index\": \"Fixture.dependencies.jsonl\",\n  \"duplicate_content_index\": \"Fixture.duplicates.jsonl\",\n  \"parser_scope\": \"standard module header imports only; not declaration dependency analysis\"\n}",
+        "stderr": ""
+      },
+      "verify_originals": {
+        "exit_code": 0,
+        "stdout": "{\n  \"operation\": \"verify\",\n  \"module_count\": 4,\n  \"auxiliary_count\": 1,\n  \"source_bytes\": 227,\n  \"all_embedded_sha256_passed\": true,\n  \"compared_with_originals\": true,\n  \"lean_compilation_performed\": false,\n  \"bundle_sha256\": \"9c8f5f0cdf4598466109f1f8c83b5cddd2f65ecfde6a3a5794d832dc254f0e85\"\n}",
+        "stderr": ""
+      },
+      "restore": {
+        "exit_code": 0,
+        "stdout": "{\n  \"operation\": \"restore\",\n  \"module_count\": 4,\n  \"auxiliary_count\": 1,\n  \"source_bytes\": 227,\n  \"all_embedded_sha256_passed\": true,\n  \"compared_with_originals\": true,\n  \"lean_compilation_performed\": false,\n  \"bundle_sha256\": \"9c8f5f0cdf4598466109f1f8c83b5cddd2f65ecfde6a3a5794d832dc254f0e85\",\n  \"destination\": \"/workspace/scratch/e8ff28430def/work/lean_merge_20261122/format_fixture_restored\"\n}",
+        "stderr": ""
+      },
+      "tamper_rejected": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "ERROR: SHA256 mismatch: src/A.lean"
+      },
+      "cycle_rejected": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "ERROR: Internal import cycle (or dependents of cycle): ['A', 'B']"
+      }
+    }
+  },
+  "files": {
+    "RHEntry.lean": {
+      "bytes": 601,
+      "sha256": "ea2160eb4b37c4fd7751227041c15115aac2774f44a8bc7dc48f9a12fe1b17a7"
+    },
+    "export_lean_bundle.py": {
+      "bytes": 23726,
+      "sha256": "bb7a46ba814847638af7bcc5dc6eb79a9af1284387bedeec0f92adc7189c2edd"
+    },
+    "export_proof_process.py": {
+      "bytes": 8480,
+      "sha256": "af79fd968a966a21741abb6bb410cbf68b7da19daea9b2bde50e5a2bd1131134"
+    },
+    "源码汇编与内核导出说明.txt": {
+      "bytes": 6205,
+      "sha256": "7a8900bd42fcc32465cfbf7d874ee0c65ee4617df63eb0e202ab1e2fd64d3a68"
+    }
+  }
+}

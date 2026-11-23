@@ -1,0 +1,52 @@
+{
+  "date_beijing": "2026-11-22",
+  "version": 2,
+  "pages": 31,
+  "source_sha256": "12ce9d14fc345638e764d0c83b2645d94528c116d327ebb881394a5efbc0e2f8",
+  "pdf_sha256": "10e2ffe9717a1ba4abf5debf545bdc015d330f66fd04aac9ce0650c91a34c2d4",
+  "mathematical_review": {
+    "prior_analytic_proof_retained": true,
+    "new_arithmetic_review_passed": true,
+    "new_source_records": 30,
+    "independent_review_original_records_verified": 29,
+    "corrections_applied": [
+      "nontrivial additive character qualification",
+      "host-to-target primitive-character and weight identification via gmA_eq"
+    ],
+    "deep_arithmetic_geometry_fully_rewritten": false
+  },
+  "visual_review": {
+    "all_pages_examined": true,
+    "page_ranges": {
+      "root": "1–10",
+      "arithmetic_expansion": "11–20",
+      "archive_reassembly": "21–31"
+    },
+    "corrected_issue": "Moved appendix B.3 heading onto the page containing its table.",
+    "corrected_pages_rebuilt_and_examined": [
+      29,
+      30
+    ],
+    "unresolved_issues": []
+  },
+  "build_diagnostics": {
+    "missing_character_lines": [],
+    "overfull_boxes": [],
+    "undefined_reference_warning": false,
+    "font_warning_lines": []
+  },
+  "full_source_bundle": {
+    "module_count": 175187,
+    "original_text_bytes": 1030531854,
+    "all_module_verify_passed": true,
+    "actual_restore_performed": true,
+    "all_restored_files_read_back_and_verified": true,
+    "random_access_index_extraction_tested": [
+      "Main",
+      "Development.AutomorphicArithmetic.PrimitiveCosets.GmAEq"
+    ]
+  },
+  "new_full_lean_build": false,
+  "new_kernel_export": false,
+  "single_file_lean_module_compilation_passed": false
+}

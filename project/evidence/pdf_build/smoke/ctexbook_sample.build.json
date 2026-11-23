@@ -1,0 +1,43 @@
+{
+  "started_at_utc": "2026-11-21T16:51:43.978598+00:00",
+  "source": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/ctexbook_sample.tex",
+  "source_sha256": "a33fce6fd01ba88a539110915b94fd24a1f512c63bb00d3dddf39df055c8216f",
+  "command": [
+    "latexmk",
+    "-norc",
+    "-xelatex",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-file-line-error",
+    "-latexoption=-no-shell-escape",
+    "-outdir=/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/build",
+    "ctexbook_sample.tex"
+  ],
+  "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke",
+  "private_tex_root": "/workspace/scratch/e8ff28430def/runtime/tex_human",
+  "setup_sha256": "d6fbc4a50f0b43223b6293be08795b3e250efc3fbd173e0e4556315f6fd87118",
+  "environment": {
+    "TEXMF": "{/workspace/scratch/e8ff28430def/runtime/tex_human/texmf,/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+    "TEXINPUTS": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke//:/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex//:.:",
+    "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+    "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+    "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+    "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+  },
+  "system_global_settings_modified": false,
+  "exit_code": 0,
+  "elapsed_seconds": 10.837,
+  "process_log": "/workspace/scratch/e8ff28430def/output/riemann_human/evidence/pdf_build/smoke/ctexbook_sample.latexmk.log",
+  "diagnostics": {
+    "missing_character_lines": [],
+    "overfull_boxes": [],
+    "undefined_reference_warning": false,
+    "font_warning_lines": []
+  },
+  "success": true,
+  "pdf": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/build/ctexbook_sample.pdf",
+  "pdf_bytes": 55264,
+  "pdf_sha256": "83c858d3d5809bc5960ab7c6603343118ac7b9b8b1f538b5e001e7e5c478edc8",
+  "pages": 2,
+  "completed_at_utc": "2026-11-21T16:51:54.845475+00:00"
+}

@@ -1,0 +1,479 @@
+{
+  "status": "verified_and_extracted",
+  "source_kind": "Officially linked public GitHub mirror at immutable first commit",
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "git_tree": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+  "mirror_archive_sha256": "64399e32d8dbce44d186c2f4ca5ee2a428e66b77d0c0b8a63ce0f8e5f0f8d192",
+  "mirror_archive_bytes": 234744092,
+  "original_fourteen_volume_archive_recovered": false,
+  "author_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "public_sources": [
+    "https://math.mit.edu/~drew/grh/",
+    "https://github.com/leanprover-community/riemann-hypothesis/blob/main/verification/NOTES.md"
+  ],
+  "source_counts": {
+    "members": 178806,
+    "directories": 3616,
+    "regular_files": 175190,
+    "file_bytes": 1030536719,
+    "lean_files": 175187,
+    "lean_bytes": 1030531854,
+    "lean_physical_lines": 17374215
+  },
+  "published_count_checks": {
+    "lean_files": true,
+    "lean_bytes": true,
+    "lean_physical_lines": true
+  },
+  "gzip_integrity": "passed by reading through EOF (CRC/ISIZE)",
+  "safe_paths": true,
+  "only_regular_files_and_directories": true,
+  "destination": "/workspace/scratch/e8ff28430def/work/lean_merge_20261122/original/lean",
+  "all_file_fingerprints": "/workspace/scratch/e8ff28430def/work/lean_merge_20261122/archive/all_source_files.jsonl",
+  "previously_recovered_selected_files_compared": 88,
+  "previous_selected_files_all_identical": true,
+  "selected_file_comparisons": [
+    {
+      "path": "lake-manifest.json",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "lakefile.toml",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "lean-toolchain",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCauchy.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleReLe.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/GaloisCohomology/Statement.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Main.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/ReciprocityTheory/Hypotheses/GalCoh.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Statements.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    },
+    {
+      "path": "src/Supplements/Kernels/MainTheorems.lean",
+      "exists_in_mirror": true,
+      "byte_identical": true
+    }
+  ],
+  "new_lean_compilation_performed": false,
+  "elapsed_seconds": 38.561
+}

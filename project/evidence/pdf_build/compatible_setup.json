@@ -1,0 +1,511 @@
+{
+  "started_at_utc": "2026-11-21T16:49:59.168429+00:00",
+  "source_tag": "ctex-v2.5.10",
+  "source_commit": "13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+  "source_root": "/workspace/scratch/e8ff28430def/runtime/tex_human/source/ctex-kit-13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+  "texmf_tree": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf",
+  "format": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats/xelatex.fmt",
+  "source_archive_sha256": "d7390ae719a3b06fa647fa3923cc819f917b92a94886d30a12485c6687bfc83f",
+  "download": {
+    "url": "https://github.com/CTeX-org/ctex-kit/archive/13a22565bdd14d750b604c2f1ed0fa1938cb6cd4.tar.gz",
+    "commit": "13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+    "tag": "ctex-v2.5.10",
+    "started_at_utc": "2026-11-21T16:47:40.533643+00:00",
+    "attempts": 1,
+    "http_status": 200,
+    "final_url": "https://codeload.github.com/CTeX-org/ctex-kit/tar.gz/13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+    "success": true,
+    "bytes": 1154159,
+    "sha256": "d7390ae719a3b06fa647fa3923cc819f917b92a94886d30a12485c6687bfc83f",
+    "completed_at_utc": "2026-11-21T16:47:51.606844+00:00"
+  },
+  "steps": [
+    {
+      "command": [
+        "/usr/bin/luatex",
+        "-ini",
+        "-etex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-jobname=ctex",
+        "\\input luatexiniconfig.tex \\input plain \\input ctex.dtx"
+      ],
+      "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/build/ctex",
+      "exit_code": 0,
+      "elapsed_seconds": 4.201,
+      "log": "/workspace/scratch/e8ff28430def/runtime/tex_human/logs/unpack-ctex.log",
+      "environment": {
+        "TEXMF": "{/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+        "TEXINPUTS": ".:",
+        "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+        "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+        "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+        "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+      }
+    },
+    {
+      "command": [
+        "/usr/bin/luatex",
+        "-ini",
+        "-etex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-jobname=xeCJK",
+        "\\input luatexiniconfig.tex \\input plain \\input xeCJK.dtx"
+      ],
+      "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/build/xeCJK",
+      "exit_code": 0,
+      "elapsed_seconds": 0.976,
+      "log": "/workspace/scratch/e8ff28430def/runtime/tex_human/logs/unpack-xeCJK.log",
+      "environment": {
+        "TEXMF": "{/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+        "TEXINPUTS": ".:",
+        "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+        "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+        "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+        "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+      }
+    },
+    {
+      "command": [
+        "/usr/bin/luatex",
+        "-ini",
+        "-etex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-jobname=zhnumber",
+        "\\input luatexiniconfig.tex \\input plain \\input zhnumber.dtx"
+      ],
+      "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/build/zhnumber",
+      "exit_code": 0,
+      "elapsed_seconds": 0.619,
+      "log": "/workspace/scratch/e8ff28430def/runtime/tex_human/logs/unpack-zhnumber.log",
+      "environment": {
+        "TEXMF": "{/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+        "TEXINPUTS": ".:",
+        "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+        "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+        "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+        "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+      }
+    },
+    {
+      "command": [
+        "/usr/bin/xetex",
+        "-ini",
+        "-etex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-jobname=xelatex",
+        "\\input xelatex.ini"
+      ],
+      "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats",
+      "exit_code": 0,
+      "elapsed_seconds": 6.346,
+      "log": "/workspace/scratch/e8ff28430def/runtime/tex_human/logs/format-xelatex.log",
+      "environment": {
+        "TEXMF": "{/workspace/scratch/e8ff28430def/runtime/tex_human/texmf,/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+        "TEXINPUTS": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex//:.:",
+        "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+        "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+        "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+        "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+      }
+    }
+  ],
+  "environment": {
+    "TEXMF": "{/workspace/scratch/e8ff28430def/runtime/tex_human/texmf,/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+    "TEXINPUTS": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex//:.:",
+    "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+    "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+    "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+    "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+  },
+  "resolved_files": {
+    "ctexbook.cls": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexbook.cls",
+    "ctexart.cls": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexart.cls",
+    "xeCJK.sty": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/xeCJK/xeCJK.sty",
+    "zhnumber.sty": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/zhnumber/zhnumber.sty",
+    "fontspec.sty": "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty",
+    "amsmath.sty": "/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty",
+    "amssymb.sty": "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty",
+    "amsthm.sty": "/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty",
+    "geometry.sty": "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty",
+    "hyperref.sty": "/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty",
+    "booktabs.sty": "/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty",
+    "longtable.sty": "/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty"
+  },
+  "generated_files": [
+    {
+      "path": "tex/latex/ctex/c19rm.fd",
+      "sha256": "15dbc27abc9cc59f7088cb38f3bb2219527eabdf4d41e41d5ad206379fbe2025"
+    },
+    {
+      "path": "tex/latex/ctex/c19sf.fd",
+      "sha256": "f607aefc069d2a85b7af531d12de2952e67143be1c3f9623fa2918a87c4e10c0"
+    },
+    {
+      "path": "tex/latex/ctex/c19tt.fd",
+      "sha256": "ce1ed4e7e671e526cb872d1ea5a20efc80e83aeb845bc22a6e6a9021539877b9"
+    },
+    {
+      "path": "tex/latex/ctex/c70rm.fd",
+      "sha256": "b131d54e23a2d6a2c0fb207f1b336d04da293d8dfbd56846d615fcc3b41eb64b"
+    },
+    {
+      "path": "tex/latex/ctex/c70sf.fd",
+      "sha256": "f08707e8fb2a4b86c5e17d9de561db307e6f90760ccdfb0e9238e95e0cb9494d"
+    },
+    {
+      "path": "tex/latex/ctex/c70tt.fd",
+      "sha256": "1838b28607b682895568973b39944dc1e720e5dab716c744621c3ba8aaff5790"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-c5size.clo",
+      "sha256": "49d587efc69d3b1f34997e1d13b60404e429777c435c4b0e8ec8a554a74d4ed6"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-cs4size.clo",
+      "sha256": "aa1e59635fb889f669ea740c175f43a947c8164e2289599b66fcb2d5e3643d2b"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-engine-aptex.def",
+      "sha256": "05c44aa8074c5a8736c0aa8454fcb3f67c4b88c580c76d3903f76929e24b784b"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-engine-luatex.def",
+      "sha256": "53cf86b3e0387e6b090f5dad867630def7d0fadf60b60ec9b53a720704a887cb"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-engine-pdftex.def",
+      "sha256": "6904627180adecb8b27e20bf937080117a53c0d020d49a66dc2e382a33b6855d"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-engine-uptex.def",
+      "sha256": "72314905714957f95d7684a0c4e53cfc880914c03d02fd79eb3ec0037c447b8f"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-engine-xetex.def",
+      "sha256": "ddf72ae648c379139c8e53b569dc9a43aeeef8c7032dc3ccf8d2f9787598a8f8"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-adobe.def",
+      "sha256": "bc2c17721f64e2a860c26fd8d5c88dd9743db4892a05a556e708765e6ad398ae"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-fandol.def",
+      "sha256": "dce36d3e448f3c67ff7cd602573e8815d61af4019ce669457756e5425a055f13"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-founder.def",
+      "sha256": "fda6dd5fd892c1bfb7a88c9bafe5c0b8c7cd38a4548f95df689a583ded1891d4"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-mac.def",
+      "sha256": "dd5e05c0fb81a2436769cfda5d83686bb966d77f9acffd4ece0891722dc79a91"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-macnew.def",
+      "sha256": "02c86257399938c7c9d4e002c2540b9b1c2e6aee666059f7fb028c8e9880dd8b"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-macold.def",
+      "sha256": "4ab8b77416bc50057ce3cabf7787805204ce36f7669bdc036af86822c53b799b"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-ubuntu.def",
+      "sha256": "10a85288eb187435c414d41bb3389fc93b793dbba5d8fd8db505dd08225dc8b1"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-fontset-windows.def",
+      "sha256": "e82753025dfc71f7019bae104b99e48f7af7e824cb891859fcbc322c31aeb010"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-heading-article.def",
+      "sha256": "b2b01c7461620dd20e617ae0554a210cec50badbcbdee2e5dc135e58b4958ad5"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-heading-beamer.def",
+      "sha256": "cf98115b389bb085a3ddb1b96437419262c29f3637ebbef5c21208d5d98a1cb7"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-heading-book.def",
+      "sha256": "3420caa5ddc88e6bd2bae7ae85355a65fa04e397443b0eb91619f3ff0c997b75"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-heading-report.def",
+      "sha256": "b94dfe43e4b27cb42bf897f1efed593c8233886457ee9319a6a58f26ac9b206e"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-name-gbk.cfg",
+      "sha256": "77638ae62e100da16aebc125ae8030206993d8ae149f43c7ae1ad212e6678124"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-name-utf8.cfg",
+      "sha256": "cfcecb2350bbc39134891e562a461f08f5546035122ef92de059bcef558a7a93"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-chinese-article.def",
+      "sha256": "0cd0426b7d7017ccbe2e6b4448794e27e28f326dd1c228f79f089cf08515ee86"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-chinese-beamer.def",
+      "sha256": "54d24d65f85265aff89be2370c255865d77c4b6c823d727552c5ed44c13fd6f6"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-chinese-book.def",
+      "sha256": "a77db824f7a11eb6e75d2ff0134e858cae28ca3b404576c7621980630cbf0077"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-chinese-report.def",
+      "sha256": "e3de2db1077b600541aa3b142b0ac6db2d3eec037e3952c7e6d07274e8754271"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-chinese.def",
+      "sha256": "842937a36735071bd4b043d8dace5b52e58427d61ff98486450e5fc77fcfbd60"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-plain-article.def",
+      "sha256": "a93343fda087d20313c57b703c6795b034e4588ded21836e82b53b63933916f5"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-plain-beamer.def",
+      "sha256": "c05d9fc8b1118706c010231eca45facae0e08e5242d49b74ed84b77e9ae80a16"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-plain-book.def",
+      "sha256": "47b47380ec82240ab24dd84a9d7e42b977b46c691e68f99b287357e376304ab7"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-plain-report.def",
+      "sha256": "ded95e5df47f87890529ca7aaeae7a59691457074a5aee355e70fad0cfe8b19c"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-scheme-plain.def",
+      "sha256": "8ec0eaae2fbb71dc93fd90f6d398fa437c16d12631b6ae1f7c51c89a266ff1ab"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-spa-macro.tex",
+      "sha256": "f07f09b9d914284533e153abf0b44301cee8478195a65b45257f91f00d06b565"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-spa-make.tex",
+      "sha256": "7215e19384cd6ed923a12c07e3c4cd7e92a3915ac7d5619c60b33f2a0862a262"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-adobe.tex",
+      "sha256": "8480c84ca52fca3dac77869e708cf827b26281a1a0967212c28ecbf8afb627b2"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-fandol.tex",
+      "sha256": "2d28637708399a47aed32bed4f384f6b02d106b0c900e00848a30ed6b9433fcf"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-founder.tex",
+      "sha256": "a683ef305f69f3c6283fd27d849681986bf16711eba0a7ebc32e2065ab52d722"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-mac.tex",
+      "sha256": "fef8faf8034cf90a44f3dc6f96b27f1cf21c39dc5a6de6f8f2106e3ea38fd79a"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-ubuntu.tex",
+      "sha256": "f4b6fd62da43310c1793098ffb05b50cdd2aed72d2444548f88c54b3e258a39d"
+    },
+    {
+      "path": "tex/latex/ctex/ctex-zhmap-windows.tex",
+      "sha256": "84c93a6974c42fbf6a63156ccb5d96301cc2d31b358feac088806409e7711959"
+    },
+    {
+      "path": "tex/latex/ctex/ctex.cfg",
+      "sha256": "bf3cb871ea61fe35222b582949650638a77acc751f4e324d0903eceb7ef10b23"
+    },
+    {
+      "path": "tex/latex/ctex/ctex.ins",
+      "sha256": "96ff80dae0e3e806cdbabab1a13bcb18463d14938bbdfa8744dd7ef8fa12cd49"
+    },
+    {
+      "path": "tex/latex/ctex/ctex.sty",
+      "sha256": "bc238ed5611830e83401de7eb41cb1c93ed7d90bca1c96d3189363aedb9e10e0"
+    },
+    {
+      "path": "tex/latex/ctex/ctexart.cls",
+      "sha256": "2e1d6c25141a075f0c79db5c1febe8e99cca1dc87ba48e1010b510673dec9c75"
+    },
+    {
+      "path": "tex/latex/ctex/ctexbackend.cfg",
+      "sha256": "ac452bc753fc440c29e73a0319f17148524412b3e67478e2012dbc50af0e605f"
+    },
+    {
+      "path": "tex/latex/ctex/ctexbeamer.cls",
+      "sha256": "959f2cf444c6183e6827562ecae89ef5105cd73039d4354a32e6d711ee60d5f0"
+    },
+    {
+      "path": "tex/latex/ctex/ctexbook.cls",
+      "sha256": "9a307477fb1843bc2a846d1aa8a03e7e57bf4a693c6866c388cb7ee2d839c86c"
+    },
+    {
+      "path": "tex/latex/ctex/ctexcap.sty",
+      "sha256": "7793ab98e79a958e52b2829044c917f7ee13ae84781cf88e7550253c626d632c"
+    },
+    {
+      "path": "tex/latex/ctex/ctexheading.sty",
+      "sha256": "1dab93c5c564edfb2a2bf55ccceb7383226e7e322cf8e48d35a305074f31fd10"
+    },
+    {
+      "path": "tex/latex/ctex/ctexhook.sty",
+      "sha256": "cc853e8f50923339706aa6ad41751ff528470a711f862ca82f9a2fdf778f0b5f"
+    },
+    {
+      "path": "tex/latex/ctex/ctexopts.cfg",
+      "sha256": "75665ac74e8c865acbd6bca701f6ec20548423fb4f6146e6eecb94cfdd31c30c"
+    },
+    {
+      "path": "tex/latex/ctex/ctexpatch.sty",
+      "sha256": "ba75fe4eaa1083c87e0a22a8dc65ab29195ab3b4e20603872fd68670cba63568"
+    },
+    {
+      "path": "tex/latex/ctex/ctexrep.cls",
+      "sha256": "874dbe1a2241aeb6d5b206ae368dbbb74efea8d9f8213ed0f3ea076781fefa34"
+    },
+    {
+      "path": "tex/latex/ctex/ctexsize.sty",
+      "sha256": "9147a2ea9997862d07d764e3ded572a52f68912ad9cb988d8e751ef1f10717cc"
+    },
+    {
+      "path": "tex/latex/ctex/ctexspa.def",
+      "sha256": "87b85009ae75ed01e10f018c29a38c488df9eb988bcf09401e4b614fb7326294"
+    },
+    {
+      "path": "tex/latex/ctex/jt2zhrm.fd",
+      "sha256": "60da18a1863ea71ccabece1877639c92a3fd433b04772b68d3ce0f30c012eed7"
+    },
+    {
+      "path": "tex/latex/ctex/jt2zhsf.fd",
+      "sha256": "2fbda08a2c6e8c3e5997149d37fa8eecfd7bc5c7eeacafbbb281054cf1256157"
+    },
+    {
+      "path": "tex/latex/ctex/jt2zhtt.fd",
+      "sha256": "4e8e13172ec5472ea88aed1f8aae2b1d0224b889d577bc3e05f104b9052ed8f3"
+    },
+    {
+      "path": "tex/latex/ctex/jy2zhrm.fd",
+      "sha256": "254208299993bcefe804bd2b28f79178d98b4c12daba33850fd061e7c2388405"
+    },
+    {
+      "path": "tex/latex/ctex/jy2zhsf.fd",
+      "sha256": "9423fcde946caf95e6fcb18d967554027204b80af0ae1e80714b2c5dd49b88e8"
+    },
+    {
+      "path": "tex/latex/ctex/jy2zhtt.fd",
+      "sha256": "7b7c8cc5e84f3782d4fa43a8189ff6417c491607a3ae3a55a4cc7403f7f5f5ed"
+    },
+    {
+      "path": "tex/latex/ctex/translator-theorem-dictionary-ChineseGBK.dict",
+      "sha256": "4bdeca75d75051f5531e08e1e357ce07c63fbb2f22d45fd2d048c1ab99ac2ced"
+    },
+    {
+      "path": "tex/latex/ctex/translator-theorem-dictionary-ChineseUTF8.dict",
+      "sha256": "5dabaa80bfaa77148829cf23f5e4d109ea7bac7960dbb2d456fba3596c1aa1d6"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-CJKecglue.tex",
+      "sha256": "30c7dbe9551069d34655f0945793ab5f0cd1c93d152fb11a6e5eb9ffd29a3f40"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-CJKfntef.tex",
+      "sha256": "df938fe1f57577a956f93955c512c9c6239348f72267a781f8771e52ca60add1"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-CM.tex",
+      "sha256": "83140a94951849618a6afb180eca6ef2d12ab172c37d6afe0baba19a239f0a56"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-autofake.tex",
+      "sha256": "56f4872b5a9aeda74da6dfb334c2237ada6b01318f8ffc45e0cd0d91b28b6656"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-checksingle.tex",
+      "sha256": "662f618d182f9d52db7e3fe23c40dce65d2f9d01a097b303d4a673399430464f"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-fallback.tex",
+      "sha256": "ed01cd4d936c279f8d966331bb9420337ba89cf5dbf14554168f069afc398606"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-listings.tex",
+      "sha256": "84a16eafc9fa8a0437e362578eacc96d95ca82fad3d25c5e6bf51b87a360682f"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-mathblock.tex",
+      "sha256": "904e9cc3749ee9fcd6cc8d1d113b58e927cdfff1d1819e26715e8c6a640a3b85"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-punctstyle.tex",
+      "sha256": "7f98c4e56fc8ca9e0d0c18904d0479e68b63882a2326720add81add41da5412a"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-subCJKblock.tex",
+      "sha256": "43dd7ed84746753524410ad3297ca71553762af4d291d04c03a8104cfbb33c47"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-example-verbatim.tex",
+      "sha256": "044a40590ec050324d3d9726c9e4ff6bc7d82bda65003e10b661478c01b7a347"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK-listings.sty",
+      "sha256": "8850f2707c11a1be79cd764992fbba9810c6ab37fd69007bb1147bc04730dcd2"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK.cfg",
+      "sha256": "faeb5e0aa4e5b454ffb285d72fd40d4fece0f8997d15ecce6bbe18902f2ee932"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK.ins",
+      "sha256": "1028d9de2c2f8e036dd4fd1ef83093535ed84648920a710fee0e04c4d9d68a9e"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJK.sty",
+      "sha256": "77beed16fc30057ccf681f6f8c501e5cd7f68de16594e58e5588ec7a598e2a4a"
+    },
+    {
+      "path": "tex/latex/xeCJK/xeCJKfntef.sty",
+      "sha256": "ca0484f8e0cd3d87ca44136e8d7e5e74a9329e883b189cbae9a541caa0ada139"
+    },
+    {
+      "path": "tex/latex/xeCJK/xunicode-addon.sty",
+      "sha256": "9d26efbeb412d3141a26de83e365464d4db1036f5e9c17defc8c429115afc51f"
+    },
+    {
+      "path": "tex/latex/xeCJK/xunicode-extra.def",
+      "sha256": "fcbacaac7cdddfd796596b8014c30e0f0bf3eae8d634b2cd680153258c576776"
+    },
+    {
+      "path": "tex/latex/xeCJK/xunicode-symbols.tex",
+      "sha256": "091b2ed62227b49158c6ffab0f76c163ec9bc092c32258340a35e9eed905fe32"
+    },
+    {
+      "path": "tex/latex/zhnumber/zhnumber-big5.cfg",
+      "sha256": "875b357d4600a1734532a6705396d7825e84c96b8f56b5c63d197b6ae6c9b400"
+    },
+    {
+      "path": "tex/latex/zhnumber/zhnumber-gbk.cfg",
+      "sha256": "2f2204692a5ac4a7cb4e6cdee425f2b10af1c14b73e7ab8960e6ade46e411f1e"
+    },
+    {
+      "path": "tex/latex/zhnumber/zhnumber-utf8.cfg",
+      "sha256": "4090ec5dc9c0731d232ccabca0aceee52060c95d627e0945f56f2793fedd15bd"
+    },
+    {
+      "path": "tex/latex/zhnumber/zhnumber.ins",
+      "sha256": "94732cc01fbf9a6a0a3d554c6c2c3c992beb9d18145ee7d8829da2ba871ff739"
+    },
+    {
+      "path": "tex/latex/zhnumber/zhnumber.sty",
+      "sha256": "739d903b661fc93e3f47c37ac1192a2688566e682d4cb06e0defd9b4b90411eb"
+    }
+  ],
+  "format_sha256": "142dcae08df11bf5a61614400c6c3938c2a5ec029825283f5f7f324199085de4",
+  "completed_at_utc": "2026-11-21T16:50:11.815532+00:00",
+  "success": true
+}

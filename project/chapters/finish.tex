@@ -1,0 +1,106 @@
+\chapter{把排除边界推到二分之一}
+\label{chap:finish}
+\section{先排除临界线右侧}
+现在将引用定理\ref{thm:arithmetic}与已经证明的窗口判据\ref{thm:window-zeta}接起来。
+
+反设 $\rho\ne1$ 是一个零点，且
+\[
+\beta=\Rea\rho>\frac12.
+\]
+令
+\[
+a=\min\{\beta-\tfrac12,\tfrac12\}>0,
+\qquad \theta=\frac12+\frac a2.
+\]
+因此 $0<\theta<1$ 且 $\theta<\beta$。算术定理的常数 $K>0$ 与 $\varepsilon_0>0$ 先固定，再取
+\begin{equation}
+\varepsilon=\min\left\{\frac{\varepsilon_0}{2},\frac{a}{4K}\right\}.
+\label{eq:eps-final}
+\end{equation}
+这保证 $0<\varepsilon<\varepsilon_0$，并有
+\[
+\frac12+K\varepsilon\le\frac12+\frac a4
+<\frac12+\frac a2=\theta<\beta.
+\]
+在算术定理提供的任意远窗口上，因 $x\ge1$，
+\[
+G(x)\le x^{1/2+K\varepsilon}\le x^\theta.
+\]
+窗口判据于是排除所有实部大于 $\theta$ 的零点，与 $\Rea\rho=\beta>\theta$ 矛盾。我们得到
+\begin{equation}
+\boxed{\zeta(s)\ne0\quad\text{当 }\Rea s>\tfrac12,\ s\ne1.}
+\label{eq:right-free}
+\end{equation}
+
+\Expl{不必真的把 $\varepsilon$ 设为零。一个假想右侧零点与临界线之间有固定正距离；只要选择一次足够小但仍为正的 $\varepsilon$，就已经把它排除了。不同假想零点可以对应不同的小参数与窗口。}
+
+\section{把函数方程写成可使用的形式}
+定义完备化函数
+\[
+\mathcal Z(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s).
+\]
+经典函数方程为亚纯恒等式
+\begin{equation}
+\mathcal Z(s)=\mathcal Z(1-s).
+\label{eq:FE}
+\end{equation}
+例如，标准的 $\xi(s)=\tfrac12s(s-1)\mathcal Z(s)$ 满足
+$\xi(s)=\xi(1-s)$；在 $s\ne0,1$ 处除去相等的多项式因子，再作亚纯延拓，就得到式\eqref{eq:FE}。标准公式见资料[4]。
+
+Gamma 函数在 $0,-1,-2,\ldots$ 有单极点，在其他地方有限且非零。因而 $\Gamma(s/2)$ 的极点恰位于 $s=0,-2,-4,\ldots$。另外，$\pi^{-s/2}=\exp(-s\log\pi/2)$ 始终非零。Gamma 的这些性质见资料[5]。
+
+\section{先核对 \texorpdfstring{$\zeta(0)$}{ζ(0)}，再处理左侧零点}
+$\zeta$ 在 $0$ 全纯。由 $\Gamma(s/2)=2/s+O(1)$，
+\[
+\mathcal Z(s)=\frac{2\zeta(0)}s+O(1)\quad(s\to0).
+\]
+另一边，$\zeta(1-s)=-1/s+O(1)$，且
+$\pi^{-(1-s)/2}\Gamma((1-s)/2)\to\pi^{-1/2}\Gamma(1/2)=1$。
+函数方程给出 $2\zeta(0)=-1$，所以
+\begin{equation}
+\zeta(0)=-\frac12\ne0.
+\label{eq:zeta-zero-value}
+\end{equation}
+
+现在设 $\rho$ 为非平凡零点且 $\Rea\rho<1/2$。由式\eqref{eq:zeta-zero-value}有 $\rho\ne0$；根据非平凡的限定，$\rho$ 也不是负偶数。因此 $\Gamma(\rho/2)$ 有限非零，$\mathcal Z$ 在 $\rho$ 有意义，并且
+\[
+\mathcal Z(\rho)=\pi^{-\rho/2}\Gamma(\rho/2)\zeta(\rho)=0.
+\]
+函数方程于是给出 $\mathcal Z(1-\rho)=0$。
+但
+\[
+\Rea(1-\rho)=1-\Rea\rho>\frac12,
+\qquad 1-\rho\ne1.
+\]
+由右侧非消失式\eqref{eq:right-free}，$\zeta(1-\rho)\ne0$。又因为
+$\Rea((1-\rho)/2)>1/4$，Gamma 因子也有限非零，故
+\[
+\mathcal Z(1-\rho)=
+\pi^{-(1-\rho)/2}\Gamma((1-\rho)/2)\zeta(1-\rho)\ne0,
+\]
+矛盾。左侧非平凡零点也被排除了。
+
+\begin{center}
+\begin{tikzpicture}[x=6cm,y=.65cm,>=Latex]
+\fill[Teal!9] (.5,-2.5) rectangle (1.05,2.5);
+\draw[->] (-.05,0)--(1.13,0) node[right] {$\Rea s$};
+\draw[->] (0,-2.8)--(0,2.9) node[above] {$\Ima s$};
+\draw[Teal,thick] (.5,-2.5)--(.5,2.5);
+\node[below right] at (.5,0) {$1/2$};
+\fill[red!65!black] (.25,2) circle (1.5pt);
+\fill[red!65!black] (.75,-2) circle (1.5pt);
+\draw[->,thick] (.25,2)--(.75,-2);
+\node[above] at (.25,2) {$\rho=\beta+it$};
+\node[below right] at (.75,-2) {$1-\rho=(1-\beta)-it$};
+\node[align=center] at (.82,1.5) {右侧已被排除};
+\end{tikzpicture}
+\end{center}
+图中是用于反证的假想位置。变换 $s\mapsto1-s$ 是绕 $(1/2,0)$ 的半周旋转，虚部也改变符号；这里没有把它画成同高度的横向反射。
+
+\section{得到结论}
+非平凡零点的实部既不能大于 $1/2$，也不能小于 $1/2$。所以
+\[
+\boxed{\Rea\rho=\frac12.}
+\]
+这完成了定理\ref{thm:RH}在引用定理\ref{thm:arithmetic}及明确列出的标准解析基础上的证明。
+

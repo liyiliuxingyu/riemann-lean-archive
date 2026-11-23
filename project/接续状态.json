@@ -1,0 +1,77 @@
+{
+  "date_beijing": "2026-11-22",
+  "deliverable": "黎曼猜想_人类可读证明主线",
+  "scope": "A mathematical reconstruction specialized to zeta; complete analytic implication from a clearly cited arithmetic-window theorem, not a self-contained reproof of all upstream arithmetic geometry.",
+  "completed_math": [
+    "Mellin normalization and removable singularity at 1",
+    "nonzero zero-to-pole residue",
+    "eta paired-series proof of no positive real poles",
+    "pointwise window derivative inequality",
+    "explicit tails with sigma336 and kceil420U",
+    "finite pole separation and Cauchy lower bound",
+    "fixed-constant epsilon choice",
+    "functional equation with Gamma and zeta(0) checks"
+  ],
+  "deep_inputs_still_cited": [
+    "automorphic and Galois representation construction",
+    "Galois cohomology length windows",
+    "admissible arithmetic host construction",
+    "geometric chain and per-unit comparisons",
+    "auxiliary character error estimates"
+  ],
+  "formal_verification_scope": "No new complete Lean build or new formalization of this manuscript; prior conditional endpoint compilation preserved as prior evidence.",
+  "source_tex_sha256": "072a7fe8afcb90f2758b689fb25b163cbf44b68217b164d93dada092c588ad23",
+  "source_package_sha256": "15ed5fd3ee92c73fa8beafe71f57da4d5aed01535c47ce3fdbee06fc941fa4bc",
+  "original_lean_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "verification_update": {
+    "primary_statement": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "published_beijing": "2026-11-21 21:55",
+    "earlier_mit_snapshot_beijing": "2026-11-21 20:55"
+  },
+  "next_substantive_expansion": "Continue the unexpanded scale/thick-thin estimates inside DedekindLFunctions/LandauTheorems/ChCore.lean, then upstream constructors for DesWin/DesignExists; preserve already verified analytic chapter.",
+  "final_pdf_sha256": "10e2ffe9717a1ba4abf5debf545bdc015d330f66fd04aac9ce0650c91a34c2d4",
+  "final_tex_sha256": "12ce9d14fc345638e764d0c83b2645d94528c116d327ebb881394a5efbc0e2f8",
+  "pages": 31,
+  "version": 2,
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "source_recovery": "Fixed original-commit public mirror; original 14 payloads unavailable this run (HTTP403).",
+  "all_original_14_parts_downloaded_this_run": false,
+  "full_source_bundle": {
+    "format": "lean-source-bundle-v1",
+    "file": "RH_AllSources.lean",
+    "source_root": "src",
+    "module_count": 175187,
+    "original_source_bytes": 1030531854,
+    "original_source_lines": 17374215,
+    "auxiliary_count": 3,
+    "bundle_bytes": 1101883390,
+    "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+    "dependency_edges": 753261,
+    "internal_dependency_order_acyclic": true,
+    "unresolved_project_or_unknown_imports": 0,
+    "project_imports_closed_under_configured_external_prefixes": true,
+    "external_imports_included": false,
+    "lean_compilation_performed": false,
+    "kernel_export": false,
+    "source_archive_only": true,
+    "hash_index": "RH_AllSources.index.jsonl",
+    "dependency_index": "RH_AllSources.dependencies.jsonl",
+    "duplicate_content_index": "RH_AllSources.duplicates.jsonl",
+    "parser_scope": "standard module header imports only; not declaration dependency analysis"
+  },
+  "proof_process_export": {
+    "kind": "source-level walkthrough, not kernel export",
+    "stages": 13,
+    "distinct_modules": 33
+  },
+  "completed_additions": [
+    "VVle finite sums to summability",
+    "HostExW and simultaneous host requests",
+    "window exponent 2 to 3/2 rescaling",
+    "401 to 400 cutoff margin",
+    "Closed and DesignExists quantifier ordering",
+    "finite character orthogonality and 4o count",
+    "common-host maximum-threshold argument",
+    "complete reversible source bundle and all-module readback"
+  ]
+}

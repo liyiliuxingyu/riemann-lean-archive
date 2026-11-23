@@ -1,0 +1,43 @@
+{
+  "started_at_utc": "2026-11-21T16:55:49.695605+00:00",
+  "source": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/ctexbook_fandol.tex",
+  "source_sha256": "ccc7efa79600361b1e641f419452898516dccf6f9976ec57eda376eb62eca736",
+  "command": [
+    "latexmk",
+    "-norc",
+    "-xelatex",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-file-line-error",
+    "-latexoption=-no-shell-escape",
+    "-outdir=/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/fandol_build",
+    "ctexbook_fandol.tex"
+  ],
+  "cwd": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke",
+  "private_tex_root": "/workspace/scratch/e8ff28430def/runtime/tex_human",
+  "setup_sha256": "d6fbc4a50f0b43223b6293be08795b3e250efc3fbd173e0e4556315f6fd87118",
+  "environment": {
+    "TEXMF": "{/workspace/scratch/e8ff28430def/runtime/tex_human/texmf,/etc/texmf,/usr/share/texmf,/usr/share/texlive/texmf-dist}",
+    "TEXINPUTS": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke//:/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex//:.:",
+    "TEXFORMATS": "/workspace/scratch/e8ff28430def/runtime/tex_human/formats//:",
+    "TEXMFVAR": "/workspace/scratch/e8ff28430def/runtime/tex_human/var",
+    "TEXMFCONFIG": "/workspace/scratch/e8ff28430def/runtime/tex_human/config",
+    "TEXMFHOME": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf"
+  },
+  "system_global_settings_modified": false,
+  "exit_code": 0,
+  "elapsed_seconds": 12.928,
+  "process_log": "/workspace/scratch/e8ff28430def/output/riemann_human/evidence/pdf_build/fandol_smoke/ctexbook_fandol.latexmk.log",
+  "diagnostics": {
+    "missing_character_lines": [],
+    "overfull_boxes": [],
+    "undefined_reference_warning": false,
+    "font_warning_lines": []
+  },
+  "success": true,
+  "pdf": "/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/fandol_build/ctexbook_fandol.pdf",
+  "pdf_bytes": 71610,
+  "pdf_sha256": "8f233cb97337df6580149080572510a19973840aaccf0e70525f00acce19035d",
+  "pages": 2,
+  "completed_at_utc": "2026-11-21T16:56:02.648894+00:00"
+}

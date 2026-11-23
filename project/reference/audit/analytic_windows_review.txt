@@ -1,0 +1,88 @@
+analytic_windows.tex 数学审校记录
+================================
+
+范围：只读核对原源码，并修订中文稿中可直接确定的条件遗漏或论证省略。
+本轮没有运行 Lean、项目宏、LaTeX 编译或新的数值软件。
+下列源码路径均相对 source/lean/src/。
+
+结论
+----
+已读范围内，Mellin公式的符号、零点留数、单侧窗口不等式、尾项参数、epsilon量词和最终1/2+(eD+eL+7)epsilon指数与源码一致。
+发现一处应明确补回的实质性接口条件：CoreGm不等式同时需要EAtH与CoreAtH，原稿只写CoreAtH；已改正。
+另依主线程提示，把经典正文的非消失定义域与Lean总函数在主特征极点s=1的规定值区分开，修改了窗口定理与最终归约表述。
+另外补齐极点选择中两个关键严格不等式及紧性范围，补明WindowHypU的可积性与Cauchy展开中心不为极点。
+
+一、逐项核对结果
+----------------
+1. Gchi定义与Mellin符号
+   Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean:10-19,24-39。
+   .../LandauTheorems/mellinGchiOfNeOne.lean:116-119。
+   .../LandauTheorems/mellinGchiModOne.lean:115-118。
+   原稿的非主特征线性校正项是 +x L'(1,chi)/L(1,chi)；相应Mellin分子整体带负号，二者一致。
+   主特征分子 +1/(s-1)+1-(1+gamma)s 也正确。
+
+2. s=1可去奇点及极点留数
+   .../LandauTheorems/poleData.lean:22-29,37-61,137-239,336-400。
+   非主特征通过分子在1为零取差商。
+   模1主特征用g(s)=(s-1)zeta(s)、g(1)=1延拓，g'(1)=gamma（168-176）。
+   单个重数m的留数为-m/[rho(rho-1)]。
+   有限正权重对chi与chi逆对称化，留数共同因子不会抵消；实极点0<beta<1时留数严格为正。
+
+3. WindowHypU与单侧估计
+   .../LandauZeroFreeCriterion.lean:25-29。
+   .../LandauTheorems/landauWindowIneq.lean:27-34,75-111。
+   源码要求R exp(-theta u)可积，并要求R>=0和g<=R；原稿已说明后两项，现补明可积性以及可选U>=1。
+   |Ak(sigma+it)|+Re Ak(sigma)的加号正确；没有把g<=R偷换为|g|<=R。
+
+4. Tail参数
+   .../LandauTheorems/landauTails.lean:18-20,62-78,80-131。
+   l=2+6/delta、M=l(1+delta)、sigma=M(2+l)、k=ceil((1+delta/2)sigma U)均与源码一致。
+   两个关键恒等式
+     (1+delta/2)sigma=M(M-1)，
+     (1+delta/2)(l-2)=l+1
+   以及常数C1=exp(1)/(sigma-2-l)+1/(sigma-2+l)均正确。
+
+5. 极点唯一选择
+   .../LandauTheorems/LandauFinite.lean:9-26。
+   .../LandauTheorems/LandauDichotomy.lean:24-28,47-86。
+   .../LandauTheorems/LandauNearest.lean:10-34,36-109。
+   源码要求右半平面内每一点的去心邻域避开Z；仅说Z中各点孤立会弱化这个条件。现写清右半平面内无聚点。
+   二分支中若没有更小水平距离，则用最初rho0得到d<=sigma-Re(rho0)<sigma-theta。原稿省略该步；现补明，保证beta>theta且能选d<r<=sigma-theta。
+   竖直扰动现给出明确epsilon0，使扩大的闭圆盘仍在右半平面并包含扰动后的候选极点。有限坏高度即可避开；同虚部的不同极点因实部都<sigma而不能等距。
+   原稿极点展开另补0<|z-rho|<r，排除展开中心恰为极点。
+
+6. 任意eta与矛盾
+   .../LandauTheorems/landauWindow.lean:20-45,83-166。
+   原稿先固定sigma、极点与d<e，再选eta=log(e/d)/2；随后利用允许任意远U且k>=U。这个先后顺序正确，未错误要求所有充分大U均为好窗口。
+
+7. 特征族与epsilon量词
+   Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:8-38,105-124。
+   .../TopWin.lean:23-32,59-81。
+   Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean:13-15。
+   .../CharacterBoxes/EveryCharacter.lean:8-11；SupplyChi.lean:8-9。
+   Level.cyc取整次幂子群的本原特征像，psK=none，o为原子群阶，权重(3o+1)^(-1)，均与原稿相符。
+   存在eD,eL,epsilon1先于任意epsilon；数据族及其K,cHH,eK,CL、阈值允许后选。原稿保存了这个顺序。
+   窗口幂3/2确为主线选取。epsilon=min(epsilon1/2,d/[2(|C*|+1)])满足需要的正性、严格上限与指数约束。
+
+8. CoreGm指数及缺失的EAtH
+   Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean:12-15,21,46-74。
+   .../PrimitiveCosets/SigALe.lean:38-58。
+   Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:343-351。
+   CoreGm明确同时接受EAtH与CoreAtH；sigA_le的逐项上界来自EAtH.bdG。
+   已把原稿“在满足CoreAtH的数据上”改为同时满足两者且超过阈值。
+   指数先由CErr<=eD+eL+3得到第一段+3，ch_core再增加3，最后用x^epsilon>=1+4o吸收固定系数而再增加1。
+   原稿公式6到7正确；现把文字解释明确为3+3+1，避免将全部7都说成有限求和的损失。
+
+9. 主特征s=1的定义域
+   CharFamily.lean:38-39和ExplicitFormulaErrorOfHostConditions.lean:11-18使用Mathlib总函数，源码ZeroFree/ZeroFreeAll确实包括s=1。
+   poleData.lean:191-203在模1主特征分支用riemannZeta_one_ne_zero衔接正则化函数的零点集合。
+   经典L函数在主特征s=1处为极点，不能写成在该点有有限函数值且非零。
+   已把窗口定理结论限定为Re(s)>theta且(chi!=1或s!=1)；零点集合明确排除主特征极点。
+   最终epsilon归约先处理s!=1，非主特征s=1另引已有L(1,psi)!=0，主特征极点排除。
+   最后单独解释，源码的ZeroFreeAll还包括模1s=1处的总函数规定值，其非零来自已有riemannZeta_one_ne_zero，不是经典亚纯函数在极点的有限取值。
+
+二、边界与未在此重证的内容
+------------------------
+算术几何数据族、EAtH、CoreAtH、ChainTied的构造仍作为形式化接口引用；本轮未追溯它们全部17万余模块依赖，也没有重跑原工程。
+章节已明确这些构造没有逐条重证。因此本审校结论是所写解析归约与数值合并的准确性，不等同于独立完成全部黎曼猜想证明。
+本次没有修改原始Lean函数或命题，只修正经典正文的定义域说明；也没有擅自按另一种totalization将原函数在s=1的规定值改成零值。

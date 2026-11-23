@@ -1,0 +1,23 @@
+{
+  "format": "lean-source-bundle-v1",
+  "file": "RH_AllSources.lean",
+  "source_root": "src",
+  "module_count": 175187,
+  "original_source_bytes": 1030531854,
+  "original_source_lines": 17374215,
+  "auxiliary_count": 3,
+  "bundle_bytes": 1101883390,
+  "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+  "dependency_edges": 753261,
+  "internal_dependency_order_acyclic": true,
+  "unresolved_project_or_unknown_imports": 0,
+  "project_imports_closed_under_configured_external_prefixes": true,
+  "external_imports_included": false,
+  "lean_compilation_performed": false,
+  "kernel_export": false,
+  "source_archive_only": true,
+  "hash_index": "RH_AllSources.index.jsonl",
+  "dependency_index": "RH_AllSources.dependencies.jsonl",
+  "duplicate_content_index": "RH_AllSources.duplicates.jsonl",
+  "parser_scope": "standard module header imports only; not declaration dependency analysis"
+}

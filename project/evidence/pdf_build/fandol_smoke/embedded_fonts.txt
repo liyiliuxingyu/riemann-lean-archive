@@ -1,0 +1,12 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+PVYNKQ+FandolSong-Bold-Identity-H    CID Type 0C       Identity-H       yes yes no       4  0
+VHPEHZ+LMRoman12-Bold-Identity-H     CID Type 0C       Identity-H       yes yes yes      8  0
+FXZAKN+LMRoman12-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes     10  0
+PHWRJC+FandolSong-Regular-Identity-H CID Type 0C       Identity-H       yes yes no      12  0
+JPZBDT+FandolHei-Regular-Identity-H  CID Type 0C       Identity-H       yes yes no      19  0
+RCQCDF+DejaVuSansMono                CID TrueType      Identity-H       yes yes yes     21  0
+SLUXTF+CMMI12                        Type 1C           Builtin          yes yes yes     23  0
+UXPLCW+MSBM10                        Type 1C           Builtin          yes yes yes     24  0
+PLNQAQ+LMRoman8-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     26  0
+EFJOZB+LMRoman6-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     29  0

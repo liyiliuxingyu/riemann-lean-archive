@@ -1,0 +1,31 @@
+{
+  "sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "commit": {
+    "author": {
+      "name": "Jack McCarthy",
+      "email": "37917934+Deicyde@users.noreply.github.com",
+      "date": "2026-11-20T14:36:09Z"
+    },
+    "committer": {
+      "name": "Jack McCarthy",
+      "email": "37917934+Deicyde@users.noreply.github.com",
+      "date": "2026-11-20T14:36:09Z"
+    },
+    "message": "Mirror the submission exactly as published\n\nContents of https://alpo.ge/lean.tar.gz.part01 ... part14, joined and\nextracted with the top-level lean/ directory stripped. No files changed.\nlean.tar.gz sha256: 9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+    "tree": {
+      "sha": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+      "url": "https://api.github.com/repos/leanprover-community/riemann-hypothesis/git/trees/e517b335d21898fd2506ad538a1e1775c0aaa4e4"
+    },
+    "url": "https://api.github.com/repos/leanprover-community/riemann-hypothesis/git/commits/40e56bab026552e089d7afcfeff08d2defb9c005",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "html_url": "https://github.com/leanprover-community/riemann-hypothesis/commit/40e56bab026552e089d7afcfeff08d2defb9c005",
+  "parents": []
+}

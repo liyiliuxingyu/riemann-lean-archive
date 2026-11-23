@@ -1,0 +1,27 @@
+{
+  "lean_files": 175187,
+  "lean_bytes": 1030531854,
+  "physical_lines": 17374215,
+  "main_import_closure": 175187,
+  "outside_main_import_closure": [],
+  "external_import_roots": [
+    "Batteries",
+    "Lean",
+    "Mathlib"
+  ],
+  "internal_edges": 753569,
+  "root_counts": {
+    "BuildAid": 5,
+    "CompanionTheory": 2027,
+    "Development": 141928,
+    "Formalism": 18254,
+    "GroundTheory": 8507,
+    "Lemmata": 167,
+    "Main": 1,
+    "PositivityTheory": 449,
+    "ReciprocityTheory": 3845,
+    "Statements": 1,
+    "Supplements": 3
+  },
+  "method": "Static scan of import directives; not elaborated declaration dependency analysis."
+}

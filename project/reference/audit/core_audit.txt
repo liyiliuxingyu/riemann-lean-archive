@@ -1,0 +1,241 @@
+# 核心数学依赖审读
+
+## 本轮结果
+
+已把实际定义和关键构造转写到 core_math.tex，可嵌入主稿。该正文以数学命题、积分和量词为主，引用编号 C01—C34 的精确定位见本文件后表及 core_sources.json。
+
+本轮没有发现已读依赖链存在把待证结论当作空洞别名、裸假设或自包含恒真式替代的证据；但这不是对全部源码的排除性证明。本轮未编译、执行或核验 Lean 内核，也没有把有限范围阅读声称为对约 1 GB 源码的逐条数学复核。此处未全文展开的部分是阅读与论文转写边界，不能据此称原源码缺证。
+
+## 核心数学内容
+
+### 1. Row0b 不是一个无内容的 “存在参数” 标记
+
+它对每个 CM 数域 E、代数闭包 Ω、素数 ℓ、同构 Qbar_ℓ ≃ C、正整数秩 a、正则代数尖点表示 π 和满足实位符号与极化配对的 χ，给出连续半单的 a 维 ℓ 进 Galois 表示、整权 wt 与各嵌入的整数权多重集。字段还约束离 ℓ 的局部参数、Hodge–Tate 权、复共轭权对称性，以及带比较数据的 crystalline/de Rham/潜在半稳定局部性质。
+
+精确限制必须保留：
+
+- AwayB 的一般要求只有维数相同。在 Tor 且单值算子为零时才要求完整参数相等；在 Q_p 且 p>16a²（或 a=1）、TmW、Sqf、单值零的情形才进一步要求惯性方向特征多项式相等及单值零。
+- Tor 的原始定义要求 Weil 交换子的特征多项式为 (T−1)^n；本轮未把它偷换成矩阵恒等。
+- Sqf 并非通常意义“无重根”：若惯性生成元的特征根重数至少为2，则该根满足 z^(Norm(w)−1)=1。
+- algNorm 是 π_w⊗|det|^((1−a)/2)，不能改符号。
+- IsRecT 的部分相容公理只在 Good 类上成立；其存在性有实际尖点参数、Langlands 分段扩张及逐字段证明。
+- 全局 Row0b 的最终实例没有额外显式参数，但获得它需要几何种子、同余极限和下降等已证输入。
+
+### 2. theta 提升的目标与非消失机制
+
+TLiftK 对具有 GoodK 约束的基底数据断言：给定维数 n 的定 Hermitian 空间，存在 d0，使所有 d≥d0 的相容定 skew-Hermitian 空间均可进行指定最高权的非零全局 theta 提升。GoodK 包含未分歧 CM 扩张、标准加法特征、局部自对偶性等限制；其名为 galois 的字段实际上只是“存在 x²=−d，d>0”。
+
+源码中 theta 核确为有理点上的和，提升是核与自守形式共轭在基本域上的积分。最高权公式是：
+
+2λ′_v(k)=2λ_v(k)−d−mW(v)+n+mX(v)（k<n），
+2λ′_v(k)=n+mX(v)（n≤k<d）。
+
+分裂有限位还要求真正的非零局部 Weil intertwiner，第一变量线性、第二变量共轭线性。
+
+已完整读取并转写的构造：
+
+1. 高度可积性给出 t0。取自然数 N>2t0，d0=max(N,2n)，因此 d/2>t0 且 d≥2n。
+2. 在实位取匹配的非零最高权向量，在坏有限位取足够小的局部 bump，在其余位取未分歧真空。
+3. 把积分拆为实位 A、有限集 S 上的 B 及其余部分 C；Schur 步骤给出一个非零系数 κ。
+4. 在 C 的整点紧开子群 K 上，积分主项为 r μ(K)，其中 r=||φ||²>0；其余部分的绝对值严格小于 r μ(K)。
+5. 因而总系数积分非零；Rallis 型蕴含“theta 提升为零则该积分为零”给出 theta 提升非零。
+6. 自守性与非零不可约分量投影给出目标 U′，实位类型和分裂局部配对传递到 U′。
+
+AbsNe 引理的 Fubini 分解、由 f 可积推出 s c0 可积、主项值、尾项三角不等式及严格矛盾已在 core_math.tex 全文写出。
+
+### 3. 从 theta 提升到 Row0b，再到 VWin
+
+实际调用分两层：
+
+- 几何实现提供奇数维种子，权稀疏性提供同余输入，经迹极限、闭合特征多项式、基变换下降和 theta 提升得到 CoreAll；再得到局部相容的 Row0，最后限制为 Row0b。Row0.row0b 是限制结论，不能因某个名字含 Strong 就翻译成无条件加强。
+- VwinOfRow 将 Row0b、已证的定酉群基变换和由该 Row 构成的接口，代入 automorphic_window_of_inputs。后者组合局部、自守、Galois 上同调及 CM/阿贝尔簇输入。
+
+GeoOne 不是所有 ℓ 进表示的任意存在性：它在奇数秩、特定辅助域与素位、局部类型、稀疏权等条件下构造表示；几项进一步性质分别存在量化，不能说源码在这一层已给出同一个表示同时满足所有加强条件。
+
+### 4. VWin 的具体算术内容
+
+对 ℓ 上方素位集合 S_ℓ，取离散 Tate 扭曲 (Q_ℓ/Z_ℓ)(−j)，令 Sha 为 H¹(G_{E,S_ℓ},−) 到各局部分解群 H¹ 的限制核，λ_{ℓ,j} 为其 Z_ℓ 模长度。
+
+VVle(E,t,B) 要求所有 1≤j<t 的长度有限，而且对每个有限素数集 S，
+Σ_{ℓ∈S} logℓ · Σ_{j=1}^{t−1} λ_{ℓ,j} ≤ B。
+
+VWin 断言：对每个特征 ψ、0<ε<1/52，以及把 2^{e(x)} 放在 [x^{2+8ε},2x^{2+8ε}] 的函数 e，存在 J≥1、X0，使每个大 X 和每个满足规定同余/大小/整除条件的辅助素数对 q,d，允许找到 X^{1/J}≤Y、Y²≤X；对全部 x∈[Y,Y²]，所有相应 cyclotomic 特征域 E 都满足
+
+VVle(E, floor(x^401), sqrt(exp(x^ε)))。
+
+辅助素数条件、特征域固定群和全部量词在 core_math.tex 中列出。注意窗口定义没有自行证明辅助素数对存在。
+
+## 论文引用边界
+
+本轮全文重写了 AbsNe，并展开了 theta 非消失及最终自守分量构造。以下输入在源码中具有实际证明并被组装调用，但其全部内部证明尚未在本轮稿件重写：
+
+- Siegel–Weil、Eisenstein 延拓、Rallis 型蕴含；
+- 高度可积性、尾估计、局部 bump 存在、实位最高权计算；
+- theta 提升的自守性与谱分量投影；
+- 全纯 Lefschetz、几何实现、crystalline/Hodge 比较；
+- 同余与迹极限、基变换下降；
+- 从自守模性输入导出 VWin 的完整窗口估计。
+
+因此论文应写“引用原工程已证定理”，不能把这些段落包装为已在本文从头重证。阅读未完成不是源码缺口。
+
+## 精确源文件索引
+
+所有路径相对于源码根目录：
+
+`/workspace/scratch/e8ff28430def/research/riemann_lean_20261121/source/lean/src`
+
+### C01 — 无附加参数的最终伽罗瓦表示实例
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean`，第 6 行。
+
+### C02 — IsRecT 的适用类别、局部对应公理及存在/唯一性命题
+
+- `Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean`，第 20–85 行。
+
+### C03 — 从尖点参数和 Langlands 分段构造局部对应
+
+- `Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean`，第 20–66 行。
+
+### C04 — 局部表示代数归一化指数
+
+- `Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean`，第 24–26 行。
+
+### C05 — Tor、Sqf 的实际条件
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean`，第 27–33 行。
+
+### C06 — TmW 的野惯性特征多项式条件
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean`，第 18–19 行。
+
+### C07 — Triv 是特征多项式条件
+
+- `Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean`，第 21 行。
+
+### C08 — IsQpBig、AwayB、AboveB、PropsB、Row0b 及 Row0 的限制映射
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean`，第 15–86 行。
+
+### C09 — 极化配对、对偶扭曲和实位符号
+
+- `Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean`，第 31–55 行。
+
+### C10 — 半单表示以不变补空间定义
+
+- `Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean`，第 1183–1187 行。
+
+### C11 — theta 提升 GoodK 的确切限制
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean`，第 16–24 行。
+
+### C12 — 标准加法特征、整数环自对偶性及基底数据
+
+- `Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean`，第 98–105、140–155 行。
+
+### C13 — Hecke 特征的限制与实位指数
+
+- `Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean`，第 396–398 行。
+- `Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean`，第 114–115 行。
+- `Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean`，第 266–267 行。
+
+### C14 — TLiftK 的完整参数与量词
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean`，第 12–23 行。
+
+### C15 — 最高权与分裂位非零局部配对
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean`，第 89–112 行。
+- `Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean`，第 109–124 行。
+
+### C16 — theta 核确为有理点求和与 Weil 作用
+
+- `Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean`，第 107–108 行。
+- `Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean`，第 286–289 行。
+
+### C17 — theta 提升积分、Petersson 矩阵系数
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean`，第 22–25 行。
+- `Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean`，第 19 行。
+
+### C18 — Schwartz 函数的 Weil 矩阵系数
+
+- `Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean`，第 28–29 行。
+
+### C19 — 高度可积性、Rallis、群分解、bump、尾估计、实位与 Schur 命题
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean`，第 57–113 行。
+
+### C20 — AbsNe 的精确命题与测度条件
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean`，第 183–189 行。
+
+### C21 — AbsNe 的完整证明
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean`，第 5–64 行。
+
+### C22 — d0 的选择及最终非零自守分量构造
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean`，第 141–177 行。
+
+### C23 — theta 非消失的完整组装证明
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean`，第 26–154 行。
+
+### C24 — 从已证工具得到 tLiftK
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean`，第 46–49 行。
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean`，第 39–58 行。
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean`，第 4–5 行。
+
+### C25 — 几何种子、同余、迹极限、下降至 Row0b 的实际调用
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean`，第 18–31 行。
+
+### C26 — GeoOne 的实际量词、存在结论及几何实现组装
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean`，第 58–90 行。
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean`，第 18–25 行。
+
+### C27 — 几何种子 VBase 的连续性、半单性、特征多项式及 Hodge 条件
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean`，第 38–77 行。
+
+### C28 — Lefschetz 到几何实例、再到最终 Row0b 实例
+
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean`，第 7–11 行。
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean`，第 6 行。
+- `Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean`，第 6 行。
+
+### C29 — Q_l/Z_l、局部数据、负 Tate 扭曲及 Sha 长度
+
+- `Formalism/GaloisCohomology/Statement.lean`，第 15–21、50–78 行。
+
+### C30 — Sha1 为局部限制核的交；局部群为分解群
+
+- `ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean`，第 168–170 行。
+- `ReciprocityTheory/Hypotheses/GalCoh.lean`，第 132–139 行。
+
+### C31 — 算术窗口 VWin 的完整数值与量词
+
+- `Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean`，第 12–49 行。
+
+### C32 — 从 Row0b 与已证基变换取得 VWin
+
+- `Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean`，第 4–5 行。
+
+### C33 — 局部、自守、Galois 上同调、CM 输入合成窗口
+
+- `Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean`，第 38–74 行。
+
+### C34 — 最终 h 同时提供窗口及文献接口实例
+
+- `Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean`，第 7–14 行。
+- `Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean`，第 215–218、810–813 行。
+
+## 核对方式
+
+上述所有定位均已检查文件存在且行号位于文件范围内。core_math.tex 的 C 编号与 core_sources.json 一一对应。源码中的代码未被修改；本目录文件只是供主稿引用的审读与转写产物。
+
+## 独立局部复核
+
+另一名数学审读者独立对照了 AbsNe、TPGNonVan 与 ExistsPageN。其结论是主项/尾项非消失机制及窗口量词与源码一致。已采纳其精确化建议：明示 Haar 子群的有限性与 f 可积来源；不在非消失推理中额外假定 Haar 比例系数非零；注明 J、X0 为实数，并可增大 X0≥1，使普通取整与自然数取整一致。此复核仍是源码局部数学阅读，不是新的内核验算。

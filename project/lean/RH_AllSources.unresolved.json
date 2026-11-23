@@ -1,0 +1,1397 @@
+{
+  "expected_external_imports": [
+    {
+      "module": "Batteries.Tactic.OpenPrivate",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Lean",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Lean.Elab.Command",
+      "imported_by_count": 5
+    },
+    {
+      "module": "Lean.LibrarySuggestions.Basic",
+      "imported_by_count": 5
+    },
+    {
+      "module": "Mathlib",
+      "imported_by_count": 136003
+    },
+    {
+      "module": "Mathlib.Algebra.Algebra.Subalgebra.Centralizer",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Category.CommAlgCat.FiniteType",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Category.Ring.Constructions",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Category.Ring.FilteredColimits",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Algebra.Category.Ring.FinitePresentation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.DualNumber",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.DerivedCategory.HomologySequence",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.DerivedCategory.KInjective",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.DerivedCategory.TStructure",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.HomotopyCategory.Acyclic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.HomotopyCategory.KInjective",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Homology.Localization",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Module.Lattice",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Algebra.Module.PID",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Module.Torsion.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Module.ZLattice.Covolume",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Funext",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Nilpotent",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Field.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Degree.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Eval.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Eval.Irreducible",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Expand",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Lifts",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Algebra.QuadraticAlgebra.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.AffineSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.AffineTransitionLimit",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.AlgClosed.Basic",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Geometrically.Connected",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Group.Abelian",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Group.Affine",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Affine",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Etale",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.FinitePresentation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.FiniteType",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Flat",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.FlatRank",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.FormallyUnramified",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.LocalFlatDescent",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Proper",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.QuasiCompact",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Separated",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.Smooth",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Morphisms.UniversallyOpen",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.PullbackCarrier",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Sites.EtalePoint",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.Sites.Proetale",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.AlgebraicGeometry.ValuativeCriterion",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.CStarAlgebra.GelfandDuality",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.CStarAlgebra.Matrix",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension",
+      "imported_by_count": 5
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.BumpFunction.Normed",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.ContDiff.Bounds",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.Deriv.ZPow",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.FDeriv.Bilinear",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.InverseFunctionTheorem.FDeriv",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.IteratedDeriv.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.ParametricIntervalIntegral",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Calculus.SmoothSeries",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.BorelCaratheodory",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.Cardinality",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.Conformal",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.ExponentialBounds",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.HasPrimitives",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.Liouville",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.Analysis.Complex.Polynomial.Basic",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.Convex.Cone.Extension",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.FourierTransform",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.Inversion",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.LpSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.Calculus",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.GramMatrix",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.JointEigenspace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.PiL2",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.Positive",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.Projection.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.Spectrum",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.Subspace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.InnerProductSpace.TensorProduct",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Analysis.LocallyConvex.Separation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Matrix.Order",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.Matrix.PosDef",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Analysis.Matrix.Spectrum",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Normed.Module.Alternating.Curry",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.Normed.Operator.Extend",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Complex.Log",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.JapaneseBracket",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Log.Base",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.PolarCoord",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Pow.Deriv",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.SmoothTransition",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Sqrt",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Abelian.Injective.Extend",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.CategoryTheory.CofilteredSystem",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Functor.Flat",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Limits.MorphismProperty",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Limits.Preserves.Ulift",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Monoidal.Cartesian.Grp",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.CategoryTheory.Triangulated.Orthogonal",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Combinatorics.HalesJewett",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Finset.Lattice.Fold",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Finset.NoncommProd",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.PWO",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.WellFounded",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Fintype.BigOperators",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Matrix.Block",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Nat.Choose.Factorization",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Real.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Sym.Card",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Data.Sym.Sym2.Order",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Finite.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Finiteness",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Galois.Abelian",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Galois.Infinite",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.FieldTheory.IsAlgClosed.Basic",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.FieldTheory.KummerExtension",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Minpoly.Field",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.PrimitiveElement",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.PurelyInseparable.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.FieldTheory.Tower",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Geometry.Manifold.PartitionOfUnity",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.GroupTheory.CosetCover",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.GroupTheory.Nilpotent",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.GroupTheory.Perm.Fin",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.GroupTheory.Perm.Support",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.GroupTheory.Sylow",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Basis.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Basis.VectorSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Charpoly.BaseChange",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Charpoly.ToMatrix",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Dimension.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Dual.Lemmas",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Eigenspace.Pi",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Eigenspace.Triangularizable",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Eigenspace.Zero",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.ExteriorAlgebra.Basis",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Lagrange",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.LinearIndependent.Basic",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Charpoly.LinearMap",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Charpoly.Univ",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Permutation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.SesquilinearForm",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Swap",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Matrix.Transvection",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.PiTensorProduct",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.PiTensorProduct.Basis",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.TensorProduct.Basis",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.TensorProduct.RightExactness",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Trace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.LinearAlgebra.Vandermonde",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Constructions.Pi",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Function.ContinuousMapDense",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Function.L2Space",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Group.GeometryOfNumbers",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Measure.Haar.NormedSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Bertrand",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Chebyshev",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.Cyclotomic.Gal",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.GaussSum",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Harmonic.Bounds",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.Height.NumberField",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.LSeries.Positivity",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.LSeries.PrimesInAP",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.LSeries.RiemannZeta",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.LegendreSymbol.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.LegendreSymbol.JacobiSymbol",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.ModularForms.NormTrace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Multiplicity",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.CMField",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.ClassNumber",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.Cyclotomic.Galois",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.Discriminant.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.Discriminant.Different",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.House",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.InfinitePlace.Ramification",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.ProductFormula",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.NumberField.Units.DirichletTheorem",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.AddChar",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.Hensel",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.MahlerBasis",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.PadicIntegers",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.ProperSpace",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.PrimesCongruentOne",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.NumberTheory.RamificationInertia.Galois",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RepresentationTheory.Homological.GroupCohomology.LongExactSequence",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RepresentationTheory.Irreducible",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RepresentationTheory.Maschke",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RepresentationTheory.Semisimple",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.AsTensorProduct",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.Completeness",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.Functoriality",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.Noetherian",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.AdicCompletion.RingHom",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.AdjoinRoot",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Algebraic.Integral",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Algebraic.LinearIndependent",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Artinian.Module",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Artinian.Ring",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DedekindDomain.AdicValuation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DedekindDomain.Different",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.DedekindDomain.Dvr",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DedekindDomain.Instances",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DedekindDomain.IntegralClosure",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Derivation.ToSquareZero",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DiscreteValuationRing.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.DiscreteValuationRing.TFAE",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.DualNumber",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Etale.Field",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Etale.StandardEtale",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Filtration",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.FiniteStability",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Flat.FaithfullyFlat.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Flat.TorsionFree",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.GradedAlgebra.Radical",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Henselian",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.AssociatedPrime.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.AssociatedPrime.Localization",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.GoingDown",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.GoingUp",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.KrullsHeightTheorem",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.MinimalPrime.Noetherian",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.Norm.AbsNorm",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Ideal.Norm.RelNorm",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.IntegralClosure.IntegrallyClosed",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.IntegralDomain",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Jacobson.Radical",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Jacobson.Ring",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.RingTheory.LocalProperties.Reduced",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.LocalRing.ResidueField.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.LocalRing.ResidueField.Ideal",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.Localization.FractionRing",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Localization.Integer",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Localization.Integral",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Localization.Module",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Localization.NormTrace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MatrixAlgebra",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Derivative",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Equiv",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.LinearTopology",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Nakayama",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Nilpotent.Exp",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Norm.Defs",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Norm.Transitivity",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Nullstellensatz",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PiTensorProduct",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Cyclotomic.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Cyclotomic.Roots",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.ScaleRoots",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.UniqueFactorization",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Vieta",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Binomial",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Derivative",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Evaluation",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Expand",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Ideal",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.NoZeroDivisors",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Order",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Substitution",
+      "imported_by_count": 4
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.WeierstrassPreparation",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.RingHom.Etale",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.RingHom.FaithfullyFlat",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.RingHom.Locally",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.RingHom.StandardSmooth",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.RootsOfUnity.Complex",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.SimpleModule.Basic",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.SimpleModule.Isotypic",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Smooth.NoetherianDescent",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Smooth.StandardSmoothOfFree",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Spectrum.Prime.Jacobson",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Spectrum.Prime.RingHom",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Support",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Teichmuller",
+      "imported_by_count": 6
+    },
+    {
+      "module": "Mathlib.RingTheory.TensorProduct.Finite",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.TensorProduct.IncludeLeftSubRight",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.TensorProduct.Pi",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.TensorProduct.Quotient",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Unramified.Field",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Unramified.Finite",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Unramified.LocalRing",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.RingTheory.Unramified.Pi",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Valuation.Integers",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Valuation.Integral",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Valuation.LocalSubring",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.RingTheory.Valuation.RankOne",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.Valuation.ValuationSubring",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.RingTheory.ZMod.UnitsCyclic",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Tactic.FieldSimp",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.ClopenNhdofOne",
+      "imported_by_count": 18
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.Group.ClosedSubgroup",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.Module.FiniteDimension",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.MvPolynomial",
+      "imported_by_count": 3
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.OpenSubgroup",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.ContinuousMap.StoneWeierstrass",
+      "imported_by_count": 2
+    },
+    {
+      "module": "Mathlib.Topology.Instances.Matrix",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Instances.TrivSqZeroExt",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.JacobsonSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.KrullDimension",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Metrizable.Urysohn",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.NoetherianSpace",
+      "imported_by_count": 1
+    },
+    {
+      "module": "Mathlib.Topology.Sober",
+      "imported_by_count": 1
+    }
+  ],
+  "unresolved_project_or_unknown_imports": []
+}

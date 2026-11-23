@@ -1,0 +1,472 @@
+\chapter{原 Lean 工程提供了怎样的算术信息}
+\label{chap:arithmetic}
+\section{把最困难的输入明确写出来}
+\begin{inputtheorem}[算术几何好窗口，$\zeta$ 专门化]
+\label{thm:arithmetic}
+对于式\eqref{eq:G}中的 $G$，存在常数 $K>0$ 与 $\varepsilon_0>0$，使
+\begin{equation}
+\begin{split}
+&\forall\varepsilon\in(0,\varepsilon_0)\quad\forall T\ge1
+\quad\exists Y\ge T\quad\forall x\in[Y,Y^{3/2}],\\[-2pt]
+&\hspace{38mm}G(x)\le x^{1/2+K\varepsilon}.
+\end{split}
+\label{eq:arith-window}
+\end{equation}
+\end{inputtheorem}
+
+\textbf{引用范围。}这个定理由原工程的自守、Galois 上同调、宿主构造、几何链及显式公式估计组合而来。此处引用其形式化证明，并在本章展开模长度到求和界、有限特征正交、误差相加以及全部量词与阈值的拼接；这些上游构造的全部证明没有在本稿内展开。后文对\emph{这个明确输入如何推出 RH}给出完整解析论证。
+
+原工程实际先给出固定的实数 $e_D,e_L$ 和 $\varepsilon_1>0$，指数为
+$1/2+(e_D+e_L+7)\varepsilon$。取
+\[
+K=|e_D+e_L+7|+1,\qquad \varepsilon_0=\varepsilon_1,
+\]
+就得到上面的稍弱版本。由于 $x\ge1$ 且 $\varepsilon>0$，增大指数不会使上界失效。依赖于 $\varepsilon$ 的阈值可通过把 $Y$ 的起点增大而吸收。
+
+\section{这句话中的量词各有什么作用}
+\begin{enumerate}
+\item $K$ 在 $\varepsilon$ 之前确定。因此 $K\varepsilon$ 可以真正趋于零。若允许任意 $K(\varepsilon)$，例如 $K(\varepsilon)=1/\varepsilon$，这个结论就没有了。
+\item $Y$ 可以随着 $\varepsilon$ 和起点 $T$ 改变。不需要找一个对所有 $\varepsilon$ 都适用的共同窗口。
+\item 控制的是从 $Y$ 到 $Y^{3/2}$ 的每一个实数 $x$，不是几个零散好点。
+\item 结论仅为 $G(x)\le x^{1/2+K\varepsilon}$。它没有给出 $|G(x)|$ 的同样界，也不要求 $G(x)\ge0$。
+\end{enumerate}
+
+在对数坐标 $u=\log x$ 中，整个区间成为
+\[
+[U,3U/2],\qquad U=\log Y.
+\]
+它的长度是 $U/2$，随窗口向远处移动而增长。这给后面的积分核留下了足够宽的空间。
+
+\begin{center}
+\begin{tikzpicture}[x=1.6cm,y=1cm,>=Latex]
+\fill[Teal!14] (2,0) rectangle (5,1.05);
+\draw[->] (0,0)--(7,0) node[right] {$u=\log x$};
+\draw[Teal,thick] (2,0)--(2,1.05) (5,0)--(5,1.05);
+\node[below] at (2,0) {$U$};
+\node[below] at (5,0) {$3U/2$};
+\node at (3.5,.77) {整段成立};
+\node at (3.5,.35) {$g(u)\le e^{\theta u}$};
+\draw[<->] (2,1.4)--(5,1.4) node[midway,above] {长度 $U/2$};
+\end{tikzpicture}
+\end{center}
+
+\section{为什么只有 $\zeta$，仍然需要深层几何}
+一般工程处理有限 Dirichlet 特征族。专门取模 $1$ 的主特征时，它生成的循环群只有一个元素，群阶 $o=1$，最终保留族只剩主特征。因此目标函数确实缩减为式\eqref{eq:G}的 $G$。
+
+但是，上游宿主中的辅助特征仍然存在。构造还使用辅助素数、分圆域、几何链与 Galois 上同调长度。特别是辅助特征的误差项不能因为最终目标只剩 $\zeta$ 就被设为零。
+
+
+\section{上同调长度窗口究竟控制什么}
+\label{sec:arith-length}
+把数域记为 $E$，素数记为 $\ell$。对 $\ell$ 上方的一组素位及相容局部数据，源码考虑一个全局一阶 Galois 上同调群到相应局部上同调群的限制映射，取它的核，并记其 $\mathbb Z_\ell$ 模长度为 $\lambda_{\ell,j}$。所用系数是离散 Tate 扭曲 $(\mathbb Q_\ell/\mathbb Z_\ell)(-j)$。这些长度初始允许取无穷；有限性是需要证明的内容。
+
+源码的 \texttt{VVle}$(E,t,B)$ 同时要求：
+\begin{enumerate}
+\item 对每个素数 $\ell$ 和 $1\le j<t$，$\lambda_{\ell,j}$ 有限；
+\item 对每个有限素数集合 $S$，都有
+\begin{equation}
+\sum_{\ell\in S}(\log\ell)\sum_{j=1}^{t-1}\lambda_{\ell,j}\le B.
+\label{eq:arith-vv-partial}
+\end{equation}
+\end{enumerate}
+上述条件对源码允许的代数闭包和相容局部数据全称量化。它首先约束有限部分和；不能在没有说明收敛性时把定义直接写成无穷和。
+
+\begin{lemma}[有限部分和怎样变成受控的无穷和]
+设 $a_n\ge0$，且每个有限集合 $S\subset\mathbb N$ 都满足 $\sum_{n\in S}a_n\le B$。则 $\sum_{n=1}^{\infty}a_n$ 收敛，并且不超过 $B$。
+\end{lemma}
+\begin{proof}
+取 $s_N=\sum_{n=1}^N a_n$。因为 $a_n\ge0$，$s_N$ 单调递增；有限部分和假设给出 $s_N\le B$。实数的单调有界收敛性给出极限 $s\le B$，而这正是非负项级数的和。
+\end{proof}
+
+在 \path{DivinNOfHypV.lean} 的 \texttt{vvRecord} 中，源码先核对内部记录的模长度与上述 $\lambda_{\ell,j}$ 相等，再把非负项 \texttt{vvTerm} 的有限部分和控制在 $B$ 以内。上面的引理解释了它为何同时得到
+\[
+\sum_{\ell}\mathrm{vvTerm}(\ell)\le B,
+\qquad \sum_{\ell}\mathrm{vvTerm}(\ell)\text{ 收敛}.
+\]
+这里模长度的记录相等依赖对应的数据结构；本段展开的是由非负有限部分和界得到可求和性的数学推理。
+
+\paragraph{原始窗口的大小。}
+\path{ExistsPageN.lean} 中的 \texttt{VWinAt} 固定指数 $401$，对
+$0<\varepsilon<1/52$ 及满足
+\[
+x^{2+8\varepsilon}\le2^{e(x)}\le2x^{2+8\varepsilon}\qquad(x\ge1)
+\]
+的整数值函数 $e(x)$，给出常数 $J\ge1$ 和 $X_0$。对足够大的 $X$ 以及满足指定同余、大小和整除条件的辅助素数对 $q,d$，存在
+\[
+X^{1/J}\le Y,\qquad Y^2\le X,
+\]
+使所有 $x\in[Y,Y^2]$ 上相应分圆特征域满足
+\begin{equation}
+\mathrm{VVle}\left(E,\lfloor x^{401}\rfloor,
+\sqrt{\exp(x^\varepsilon)}\right).
+\label{eq:arith-vwin}
+\end{equation}
+例如素数对条件包含 $q\equiv3\pmod8$、$d\equiv7\pmod{16}$、$q\mid d+1$，以及指定范围内的其他奇素数也整除 $d+1$。完整条件保留在源码 \texttt{WinPair} 中；这条窗口定理本身并不替代辅助素数对的存在性构造。
+
+\Expl{这里首先得到的是某些上同调群的总长度预算。它还没有直接出现素数平滑函数 $G$。后面的宿主和几何比较负责把这份预算转成 $G$ 的上界。}
+
+\section{数据族、宿主和统一常数}
+\label{sec:arith-family}
+对固定的小参数 $\varepsilon$，源码使用一个数据族 $\mathcal F$。在尺度 $x$ 上有一组索引 $I_x$；每个 $i\in I_x$ 带一个算术宿主 $H_{x,i}$ 和尺寸数据。令 $\mathcal W$ 表示该族的好尺度集合。窗口性质写为
+\begin{equation}
+\forall T\quad\exists Y\ge T,
+\qquad [Y,Y^\lambda]\subseteq\mathcal W,
+\qquad\lambda=\frac32.
+\label{eq:arith-family-windows}
+\end{equation}
+这里的宿主是承载数域、有限群、特征及相容映射的数据；它的作用是使上同调长度、几何量和特征和可以在同一组对象上比较。
+
+\paragraph{宿主的存在。}
+\path{SupplyChi.lean} 的实际接口是
+\[
+\texttt{VWinAt}(\psi,401)
+\ \Longrightarrow\
+\texttt{HostExW}\bigl(3/2,(\texttt{GChi}\ \psi).\texttt{req}\bigr).
+\]
+其证明调用 \texttt{supplyOfAdm}，并把 \texttt{admissibleClassesTwistedChar} 提供的可容许类作为输入。这是一个带有明确前提和辅助构造的宿主存在结论。原始长度窗口 $[Y,Y^2]$ 与最终族窗口 $[Y,Y^{3/2}]$ 属于这条链的不同层次，不能混用。
+
+\paragraph{展开 \texttt{HostExW} 的量词。}
+该性质的定义位于 \path{ThinScalesIffHostBound.lean}。对于每个 $0<\varepsilon<1/52$，它先选取
+\[
+C_{T_2},C_8,C_5,c_6,C_b,x_0
+\quad\text{及一个尺度系统 }\mathcal S=(J,\mathcal W),
+\]
+其中 $C_8\ge1$、$C_5,c_6,C_b>0$、$J\ge1$，$\mathcal W$ 具有式\eqref{eq:arith-family-windows}的窗口性质。然后，对每个与 $\varepsilon,J$ 相容、满足 $x\ge x_0$ 且 $x\in\mathcal W$ 的尺度记录，才存在秩数据 $R$、宿主 $H$ 及辅助素数 $q_0$，使
+\[
+\mathrm{RankVal}(s,R),\qquad
+H.C_{T_2}=C_{T_2},\qquad
+\mathrm{HostGood}(s,C_8,C_5,c_6,C_b,H,q_0),\qquad P(C_5,s,R,H,q_0)
+\]
+同时成立。这里 \texttt{HostGood} 还包括素数同余、厚薄部分估计、分离性及指定水平素数集合等要求；其全部构造不由“存在宿主”这几个字自动完成。
+
+对当前特征 $\psi$，\path{Supply.lean} 实际把请求 $P$ 定义成
+\begin{equation}
+\begin{split}
+&\mathrm{EAtH}\bigl(\mathrm{Level.cyc}(\psi),H,T,x,\varepsilon,4\bigr)\\
+&\hspace{16mm}\land\ \mathrm{VVle}(E_H,t,\sqrt b).
+\end{split}
+\label{eq:arith-gchi-request}
+\end{equation}
+因而误差条件与长度条件是在这一步一起要求并一起取得的。\texttt{FReq.cls} 再把它们沿数据族的所有宿主保存下来。
+
+\paragraph{为何把平方窗口缩成 $3/2$ 次方窗口。}
+\path{WinPairs.lean} 中的 \texttt{winPairs} 给出一个可以直接检查的缩放步骤。令 $c\ge1$ 是分圆域构造带来的固定尺度因子，取
+\[
+\alpha=2+8\varepsilon>0,\qquad k=c^{1/\alpha}\ge1.
+\]
+将原始平方窗口的起点记为 $W$，并把它选得足够大，使
+$W\ge\max\{1,k^3,k^{400}\}$。令 $Z=kW$。由 $k^3\le W$，
+\[
+Z^{3/2}=k^{3/2}W^{3/2}\le W^{1/2}W^{3/2}=W^2.
+\]
+所以对每个 $x\in[Z,Z^{3/2}]$，记 $x'=x/k$，便有
+\[
+W\le x'\le x\le W^2.
+\]
+原始长度窗口因此可以在 $x'$ 上使用。整数参数的尺度界也正确变换：
+\[
+(x')^\alpha\le2^{e(x')}\le2(x')^\alpha
+\ \Longrightarrow\
+x^\alpha\le c\,2^{e(x')}\le2x^\alpha.
+\]
+此外，$k^{400}\le W\le x'$ 给出
+\[
+x^{400}=k^{400}(x')^{400}\le(x')^{401},
+\qquad
+\sqrt{\exp((x')^\varepsilon)}\le\sqrt{\exp(x^\varepsilon)}.
+\]
+\texttt{VVle} 对长度截断参数向下、对上界参数向上具有单调性：有限部分和只会减少，允许的预算只会增大。因此可从原始 $\lfloor(x')^{401}\rfloor$ 长度界得到新尺度的 $\lfloor x^{400}\rfloor$ 长度界。原工程随后用秩估计 $R.t\le\lfloor x^{400}\rfloor$ 得到式\eqref{eq:arith-gchi-request}所需的截断长度。
+
+这里完整解释了 $2\to3/2$ 的窗口缩放和 $401\to400$ 的参数余量。辅助素数对的选择、特征域的构造及秩估计本身，仍引用 \texttt{winPairs}、\texttt{supplyOfAdmOf} 所调用的相应定理。
+
+\paragraph{同一个族必须同时满足两类要求。}
+对于满足 $(\texttt{GChi}\ \psi).\texttt{cls}(\lambda,\mathcal F)$ 的族，\path{ZeroFreeAllOfTopG.lean} 分别提取出：
+\begin{enumerate}
+\item \texttt{HypV}：超过某个阈值，对所有 $i\in I_x$，宿主上的 \texttt{VVle} 长度界成立；
+\item \texttt{EFamC}：超过另一个阈值，对所有 $i\in I_x$，宿主满足后文的显式公式误差条件 \texttt{EAtH}。在这一步，源码选择的误差常数为 $4$。
+\end{enumerate}
+两个结论来自同一个族的类成员证明，因此可以在同一个宿主上联合使用。若分别找出两个互不相干的族，不能直接把它们的结论拼在一起。
+
+\paragraph{几何常数的先后顺序。}
+\texttt{FamilyClassConnected} 的完整量词骨架为
+\begin{equation}
+\begin{split}
+&\exists e_D,e_L\in\mathbb R\quad\exists\varepsilon_1>0\quad
+\forall\varepsilon\in(0,\varepsilon_1)\quad\exists\mathcal F,\\
+&\exists\kappa,c_{HH},e_\kappa,C_L,x_T\quad
+\forall x\ge x_T,\quad
+x\in\mathcal W\Longrightarrow
+\mathrm{ChainTied}(\mathcal F,e_D,e_L,\kappa,c_{HH},e_\kappa,C_L,x).
+\end{split}
+\label{eq:arith-tied-quantifiers}
+\end{equation}
+这里省去的只是“$\mathcal F$ 属于指定类”这一并列条件，仍须保留。$e_D,e_L,\varepsilon_1$ 在选 $\varepsilon$ 之前固定；$\kappa,c_{HH},e_\kappa,C_L,x_T$ 则允许依赖 $\varepsilon$ 和选出的族。式\eqref{eq:arith-window}中的固定指数系数只取决于前一组常数。
+
+\Expl{不能把所有常数都说成与 $\varepsilon$ 无关；源码没有这个要求。需要统一的恰好是最后乘在 $\varepsilon$ 前面的指数系数。其余常数可以变大，因为稍后允许把好窗口选得更远。}
+
+\paragraph{为什么九类几何条件可以在同一个族上成立。}
+这里有一个容易在口头叙述中遗漏的量词问题。源码的 \texttt{Closed}$(\mathcal C,P)$ 并不只是说“某个族满足 $P$”，而是
+\[
+\exists\delta>0\quad\forall\varepsilon\in(0,\delta]
+\quad\exists\mathfrak K\quad
+\forall(\mathcal F,C_H),\quad
+\mathcal C(\mathcal F)\land\mathrm{Large}(\mathcal F,\mathfrak K,C_H)
+\Longrightarrow P(\mathcal F,C_H).
+\]
+$\mathfrak K$ 是若干阈值组成的记录，源码称 \texttt{TransportedAlt}。两个这样的记录可以逐项取较大值 $\mathfrak K\vee\mathfrak K'$；满足较大记录就同时满足二者。故若有两个 \texttt{Closed} 条件，其共同小参数阈值取 $\min\{\delta,\delta'\}$，共同大小记录取 $\mathfrak K\vee\mathfrak K'$，就得到它们的合取。有限多个条件可以重复这一过程。
+
+与之相配的 \texttt{DesignExists} 是
+\[
+\exists\delta_D>0\quad\forall\varepsilon\in(0,\delta_D]
+\quad\forall\mathfrak K\quad\exists(\mathcal F,C_H),
+\]
+使指定的类成员条件、$\mathrm{Large}(\mathcal F,\mathfrak K,C_H)$、所选参数条件及两类尺寸条件同时成立。注意其中是“对每个阈值记录，都存在一个族”。
+
+\path{DesWin.lean} 的 \texttt{topDesWin} 先把九类几何相容性条件合并为一个 \texttt{Closed} 条件，再取它与 \texttt{DesignExists} 的小参数阈值的最小值。固定这样的 $\varepsilon$ 后，\emph{先由合并条件选出 $\mathfrak K$，再把这个 $\mathfrak K$ 送入设计存在性定理，选出同一个族 $\mathcal F$}。这样九类条件确实同时作用于这一个族。最后结合长度条件与秩关系得到所需的几何链。
+
+本段证明的是条件合并和选择顺序的有效性；九类条件的各自证明、以及设计存在性定理的构造内容，仍由原工程中的相应几何定理承担。
+
+\paragraph{从长度预算到几何误差的一步吸收。}
+\path{DivinNOfHypV.lean} 还明确证明：当 $\varepsilon>0$ 时，充分大的 $x$ 满足
+\[
+(\log x)^2\le x^\varepsilon.
+\]
+例如令 $t=\log x>0$，由 $e^{\varepsilon t}\ge(\varepsilon t)^3/6$，当 $t\ge6/\varepsilon^3$ 时就有 $e^{\varepsilon t}\ge t^2$。因此这类对数平方损失可以吸收到一个 $x^\varepsilon$ 中。源码把这一点、\texttt{HypV} 提供的可求和长度预算以及指定的秩相等条件联合使用，得到名为 \texttt{DIVinN} 的几何尺寸控制。完整几何链还需要其他结构输入，不能把这一项当成整条链的全部证明。
+
+\section{显式公式误差条件究竟包含什么}
+\label{sec:arith-eath}
+把源码的有限群框架记为 $\varphi$，其中有有限阿贝尔群 $A$、子群 $A_0$ 和一个指定整数 $o$。对宿主 $H$、有限采样集 $T\subseteq A$，\texttt{EAtH}$(\Lambda,H,T,x,\varepsilon,C)$ 包含以下内容：
+\begin{enumerate}
+\item 宿主群框架的整数 $o$ 与目标特征层 $\Lambda$ 的 $o$ 相等；
+\item 应保留的目标特征及指定例外特征按规定嵌入宿主；
+\item 采样点在各陪集中的分布满足误差界：令
+\[
+\lambda_\gamma=
+\begin{cases}
+4/(3o+1),&\gamma\in A_0,\\
+3/(3o+1),&\gamma\notin A_0,
+\end{cases}
+\]
+则对每个 $\gamma\in A$，
+\begin{equation}
+\left|\#\{t\in T:t-\gamma\in A_0\}-\lambda_\gamma\#T\right|
+\le x^{-1+\varepsilon}\#T;
+\label{eq:arith-shares}
+\end{equation}
+\item 未保留而属于源码 \texttt{Bounded} 类的辅助特征，其归一化平滑和满足点态范数界 $x^{1/2+\varepsilon}$；
+\item 相应本原特征在 $1$ 处的对数导数有界于 $C\log x$。
+\end{enumerate}
+这是 \path{ExplicitFormulaErrorOfHostConditions.lean} 中的结构定义。它表明：辅助误差控制包括特征筛选、陪集计数和两种解析估计，并不是仅仅规定一个总误差符号。
+
+\section{几何链怎样接到解析比较}
+\label{sec:arith-coreath}
+几何链条件 \texttt{ChainTied} 首先存在量化出一组相容数据。\path{LevelGmLeOnFamilyScales.lean} 的 \texttt{tiedCore\_of\_chainTied} 从中选择一个 $i_0\in I_x$，把它整理成对应宿主上的 \texttt{CoreAtH}。
+
+该输入包中有有限索引集 $U_0$、每个 $u\in U_0$ 上非空有限集 $W_u$、顶部索引集、自然数 $m,f$，以及把 $U_0$ 映到 $A$ 的映射 $\operatorname{tr}$。它至少覆盖 $A_0$：
+\[
+\forall s\in A_0\quad\exists u\in U_0,
+\qquad\operatorname{tr}(u)=s.
+\]
+其余条件把这些几何数据与实际的算术和联系起来。按作用可读成下表。
+
+\begin{longtable}{@{}p{.29\textwidth}p{.66\textwidth}@{}}
+\toprule
+源码条件 & 在推导中的用途\\
+\midrule
+\endhead
+\texttt{HostAddCharCompatible} & 对非平凡的宿主加法特征，把辅助参数 $\ell(\psi)$ 识别为相应本原 Dirichlet 特征在 $1$ 处的对数导数。\\
+\texttt{IdentU} & 把几何记录中的主项和实际的有限特征求和逐项识别。\\
+\texttt{SizeData₂}、\texttt{ErrWindows}、\texttt{BNBoundsU} & 给出逐索引几何差值的尺寸与误差控制。\\
+\texttt{SizesA}、\texttt{ThinScales}、\texttt{CostWindows}、\texttt{RestSize} & 控制厚薄区域、尺度移动和后续平均过程中引入的剩余项。\\
+$T_2\subseteq A_0$ & 使下一节的子群特征正交可以用于所选的厚区域。\\
+\bottomrule
+\end{longtable}
+
+这些条件连同 $D.x=x$、$D.\varepsilon=\varepsilon$、
+$C.eDiv\le e_D$、$C.eLoss\le e_L$ 等常数比较，构成了 \texttt{CoreAtH} 的精确定义。表中尚未展开的几何条件仍按其来源引用；本稿不把它们省略成没有前提的数值不等式。
+
+\paragraph{逐项差值的识别。}
+\texttt{IdentU} 给出
+\[
+\operatorname{Main}(u)
+=\sum_{t\in T}\sum_{j=1}^{m}
+\Rea\operatorname{MAIN}\bigl(\ell,a(t),w(\operatorname{tr}(u),j)\bigr).
+\]
+与同一记录中的算术和逐项相减，得到
+\[
+\operatorname{gapA}(\operatorname{tr}(u))
+=\operatorname{ASK}(u)-\operatorname{Main}(u).
+\]
+\path{ChTop.lean} 的 \texttt{ch\_top} 先使用逐单位几何界，再用窗口误差和基数界，把右边控制为
+\begin{equation}
+\operatorname{gapA}(\operatorname{tr}(u))
+\le x^{C_{\rm err}\varepsilon}\mathcal B(x),
+\label{eq:arith-gap}
+\end{equation}
+其中 $\mathcal B(x)\ge0$ 是源码明确给出的尺寸误差括号。由于 $\operatorname{tr}$ 覆盖 $A_0$，这个上界对每个需要平均的 $s\in A_0$ 都成立。原工程还给出
+$C_{\rm err}\le e_D+e_L+3$，从而把式\eqref{eq:arith-gap}中的幂统一放大为 $x^{(e_D+e_L+3)\varepsilon}$。
+
+\section{有限特征正交怎样保留目标项}
+\label{sec:arith-orthogonality}
+令 $E_0=(\mathbb Z/2\mathbb Z)^2$。对有限阿贝尔群 $E_0\times A$ 的复特征 $\psi$，定义
+\[
+\Psi(A_0)=\{\psi:\ \psi(0,a)=1\text{ 对所有 }a\in A_0\}.
+\]
+下面把源码所用的基本正交步骤完整证明。
+
+\begin{lemma}[子群上的有限特征和]
+若 $\chi:A_0\to\mathbb C^\times$ 为特征，则
+\[
+\sum_{a\in A_0}\chi(a)=
+\begin{cases}
+\#A_0,&\chi\equiv1,\\
+0,&\chi\not\equiv1.
+\end{cases}
+\]
+\end{lemma}
+\begin{proof}
+平凡特征的每一项等于 $1$，第一种情况直接成立。若 $\chi$ 非平凡，选取 $a_0$ 使 $\chi(a_0)\ne1$，并令 $S=\sum_a\chi(a)$。映射 $a\mapsto a+a_0$ 置换 $A_0$，故
+\[
+S=\sum_a\chi(a+a_0)=\chi(a_0)\sum_a\chi(a)=\chi(a_0)S.
+\]
+所以 $(1-\chi(a_0))S=0$。第一个因子非零，故 $S=0$。
+\end{proof}
+
+特别地，令 $e_1(a)=((1,0),a)$。对 $s\in A_0$ 和 $t\in A$，利用群元素恒等式
+\[
+-e_1(s+a-t)=e_1(t)+(0,-s)+(0,-a),
+\]
+以及 $-1=1$ 在 $\mathbb Z/2\mathbb Z$ 中成立，得到
+\begin{equation}
+\sum_{a\in A_0}\psi\bigl(-e_1(s+a-t)\bigr)
+=
+\begin{cases}
+\#A_0\,\psi(e_1(t)),&\psi\in\Psi(A_0),\\
+0,&\psi\notin\Psi(A_0).
+\end{cases}
+\label{eq:arith-character-projection}
+\end{equation}
+这对应 \path{ChCore.lean} 的 \texttt{sum\_A}。几何差值在子群上求和后，不满足子群平凡性要求的特征被准确消去。
+
+\paragraph{保留项与辅助项的分离。}
+设 $\mathcal K\subseteq\Psi(A_0)$ 为要保留的有限特征集合，$P_\psi(x)$ 为与宿主相容的归一化平滑和，$w_\psi$ 为保留权重。定义
+\[
+v_\psi(x)=
+\begin{cases}
+w_\psi\Rea P_\psi(x),&\psi\in\mathcal K,\\
+-|P_\psi(x)|,&\psi\notin\mathcal K.
+\end{cases}
+\]
+将有限集合拆成 $\mathcal K$ 与它的补集，就得到完全精确的恒等式
+\begin{equation}
+\sum_{\psi\in\Psi(A_0)}v_\psi(x)
+=\underbrace{\sum_{\psi\in\mathcal K}w_\psi\Rea P_\psi(x)}_{G_{\mathcal K}(x)}
+-\underbrace{\sum_{\psi\in\Psi(A_0)\setminus\mathcal K}|P_\psi(x)|}_{\Sigma(x)}.
+\label{eq:arith-g-minus-sigma}
+\end{equation}
+这就是源码 \texttt{sum\_vv} 的内容。因此辅助项以一个明确的非负误差和出现，不会由于目标只取 $\zeta$ 就自动消失。
+
+\paragraph{从投影到数值界仍需尺度控制。}
+正交恒等式负责筛选特征；要从式\eqref{eq:arith-gap}得到 $G_{\mathcal K}$ 的上界，还需要处理采样点 $a(t)/b$ 与 $x$ 的差异，以及厚薄区域和余项。源码 \texttt{ch\_core} 的前提明确包含
+\[
+\left|\frac{a(t)}b-x\right|\le1,
+\qquad m\le x^{1/2+\varepsilon/2},
+\qquad xm\le k,
+\]
+以及上一节列出的尺寸和误差条件。它通过有限求和、平滑和的移动估计及尺寸不等式，给出
+\begin{equation}
+G_{\mathcal K}(x)\le
+x^{1/2+(C+3)\varepsilon}+\Sigma(x)
+\quad\text{当式\eqref{eq:arith-gap}的指数系数为 }C\ge0.
+\label{eq:arith-chcore}
+\end{equation}
+本节完整展开了筛选恒等式；\texttt{ch\_core} 中全部厚薄区域估计与尺寸约束的构造仍作为原工程定理引用。因而不能说“由特征正交”四个字就已经证明了式\eqref{eq:arith-chcore}的全部内容。
+
+\section{辅助误差的有限求和与指数合并}
+\label{sec:arith-error-sum}
+在原工程宿主中，子群指数 $[A:A_0]=o$。\texttt{CardPsiA.lean} 中的基数关系可以这样理解：$\Psi(A_0)$ 的特征恰好经过商映射
+\[
+E_0\times A\longrightarrow E_0\times(A/A_0).
+\]
+若特征在核 $\{0\}\times A_0$ 上平凡，就可以在每个陪集上选一个代表定义商群特征；不同代表的差在核中，所以定义与代表选择无关。反过来，商群特征拉回后一定在核上平凡；满射性保证这个拉回是单射。因此两边的特征集合一一对应。
+
+使用有限阿贝尔群“复特征的个数等于群阶”的标准对偶事实，可得
+\begin{equation}
+\#\Psi(A_0)=\#\widehat{E_0\times(A/A_0)}
+=\#E_0\cdot[A:A_0]=4o.
+\label{eq:arith-card-psi}
+\end{equation}
+这项标准对偶事实也可由有限阿贝尔群的循环群分解理解：阶为 $n$ 的循环群，其生成元可映到任意一个 $n$ 次单位根，恰有 $n$ 个特征；直积的特征数相乘。这里只引用有限阿贝尔群的标准结构定理，不把它混入新的算术几何假设。
+\texttt{EAtH} 的逐项界及本原特征识别，保证对每个未保留特征有
+$|P_\psi(x)|\le x^{1/2+\varepsilon}$。于是
+\begin{align}
+\Sigma(x)
+&=\sum_{\psi\in\Psi(A_0)\setminus\mathcal K}|P_\psi(x)|\notag\\
+&\le\#\bigl(\Psi(A_0)\setminus\mathcal K\bigr)x^{1/2+\varepsilon}\notag\\
+&\le4o\,x^{1/2+\varepsilon}.
+\label{eq:arith-sigma-general}
+\end{align}
+这是 \path{SigALe.lean} 的 \texttt{sigA\_le} 所完成的推理。特征集合大小和宿主相容性有各自的证明，以上三行是它们成立之后的完整误差合并。
+
+令 $E=e_D+e_L$。对实际构造的数据，核心条件给出 $E\ge0$。把式\eqref{eq:arith-chcore}中的 $C$ 取为 $E+3$，得到
+\begin{align}
+G_{\mathcal K}(x)&\le x^{1/2+(E+6)\varepsilon}+\Sigma(x),\label{eq:arith-main-general}\\
+\Sigma(x)&\le4o\,x^{1/2+\varepsilon}.
+\end{align}
+由于 $x\ge1$、$E\ge0$，
+\[
+x^{1/2+\varepsilon}\le x^{1/2+(E+6)\varepsilon}.
+\]
+再要求 $x^\varepsilon\ge1+4o$，便有
+\begin{align*}
+G_{\mathcal K}(x)
+&\le(1+4o)x^{1/2+(E+6)\varepsilon}\\
+&\le x^\varepsilon x^{1/2+(E+6)\varepsilon}
+=x^{1/2+(E+7)\varepsilon}.
+\end{align*}
+
+专门化到本稿的模 $1$ 主特征时，$o=1$，目标层的保留集合为 $\mathrm{Level.KEPT}=\{1\}$。通过 \path{GmAEq.lean} 的 \texttt{gmA\_eq} 所给出的本原特征与权重识别，宿主上的 $G_{\mathcal K}$ 等于目标层的平滑和，即式\eqref{eq:G}中的 $G$。这里区分宿主加法特征与目标 Dirichlet 特征，避免把两种类型中的平凡元混写。因此
+\begin{align}
+G(x)&\le x^{1/2+(E+6)\varepsilon}+\Sigma(x),\label{eq:arith-main}\\
+\Sigma(x)&\le4x^{1/2+\varepsilon},\label{eq:arith-error}\\
+G(x)&\le x^{1/2+(E+7)\varepsilon}\qquad(x^\varepsilon\ge5).
+\label{eq:arith-final-numeric}
+\end{align}
+
+\Expl{最后的 $7$ 分为 $3+3+1$：几何误差指数放大增加 $3$，\texttt{ch\_core} 的尺度与平均估计增加 $3$，最后用一个 $x^\varepsilon$ 吸收固定系数。这三个损失都乘在可以后选的小参数 $\varepsilon$ 上。}
+
+\section{把全部阈值放进同一个好窗口}
+\label{sec:arith-thresholds}
+到这里还必须核对：各个估计是否真的在同一个 $x$、同一个宿主上成立。
+
+固定 $\varepsilon$ 和已经选出的族 $\mathcal F$。设
+\begin{enumerate}
+\item $x_E$ 是 \texttt{EFamC} 的阈值：对所有 $x\ge x_E$ 和所有 $i\in I_x$，\texttt{EAtH} 成立；
+\item $x_T$ 是几何链的阈值：对所有 $x\ge x_T$ 且 $x\in\mathcal W$，\texttt{ChainTied} 成立；
+\item $x_C$ 是 \texttt{core\_gm} 在这一组固定常数下给出的数值阈值。它已经包括几何大尺度条件、\texttt{ch\_core} 的阈值及 $x^\varepsilon\ge1+4o$。
+\end{enumerate}
+令
+\[
+X_* = \max\{1,x_E,x_T,x_C\}.
+\]
+对任意 $x\ge X_*$ 且 $x\in\mathcal W$：先由几何链选取一个 $i_0\in I_x$，取得该宿主的 \texttt{CoreAtH}；再由“对所有 $i$”成立的误差条件，取得同一 $i_0$ 的 \texttt{EAtH}；最后使用 \texttt{core\_gm}，得到
+\[
+G(x)\le x^{1/2+(E+7)\varepsilon}.
+\]
+这正是 \texttt{windowInequality\_of\_artinInputs} 的三阈值最大值论证。无需让每个宿主都满足几何链；每个好尺度存在一个满足它的宿主已经足够，因为误差条件对全部宿主成立。
+
+现给任意起点 $T\ge1$，使用式\eqref{eq:arith-family-windows}，把起点增大到 $\max\{T,X_*\}$，选取 $Y$ 使
+\[
+Y\ge\max\{T,X_*\},
+\qquad[Y,Y^{3/2}]\subseteq\mathcal W.
+\]
+对这个区间内的每个 $x$，都有 $x\ge X_*$，所以整个区间都满足同一个上界。最后取
+\[
+K=|E+7|+1,\qquad\varepsilon_0=\varepsilon_1,
+\]
+就得到引用定理\ref{thm:arithmetic}。其中 $K$ 在选取 $\varepsilon$ 之前确定；$X_*$ 和 $Y$ 可以在其后确定。这一先后顺序完整保留了后文排除零点所需要的量词。
+
+\section{本章已展开到哪一层}
+本章已经把以下推理写成可逐步检查的数学过程：非负部分和界到可求和性；平方窗口缩放成 $3/2$ 次方窗口；长度截断 $401$ 到 $400$ 的余量；共同几何条件的合取与设计族的选择顺序；统一指数常数与可变阈值的区别；有限群特征正交；保留项与辅助误差的准确拆分；$4o$ 项误差求和；$E+7$ 指数合并；以及在同一宿主和同一窗口上汇合全部条件。
+
+仍作为深定理引用的部分是：产生 \texttt{VWin} 的自守与 Galois 上同调论证；可容许宿主及相关辅助素数的构造；产生相容几何链的全部步骤；逐单位几何比较；以及 \texttt{ch\_core} 中尚未在本章完整转写的尺度与厚薄区域估计。这些事项有原工程的明确入口，不能因本章已经完成接口之间的拼接，就标为已经全部完成了人类文字证明。

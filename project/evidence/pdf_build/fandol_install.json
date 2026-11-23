@@ -1,0 +1,188 @@
+{
+  "installed_at_utc": "2026-11-21T16:55:48.731954+00:00",
+  "download": {
+    "source_url": "https://mirrors.ctan.org/fonts/fandol.zip",
+    "started_at_utc": "2026-11-21T16:54:32.450132+00:00",
+    "attempts": 1,
+    "http_status": 200,
+    "final_url": "https://mirror.ox.ac.uk/sites/ctan.org/fonts/fandol.zip",
+    "headers": {
+      "last-modified": "Sat, 18 Jul 2015 14:25:17 GMT",
+      "etag": "\"1973b96-51b2712d24d40\"",
+      "content-length": "26688406",
+      "content-type": "application/zip"
+    },
+    "success": true,
+    "bytes": 26688406,
+    "sha256": "9278f01b417ded5766d98c3937192a1a6a2c73a5e94a3493fdfc932b2a55005a",
+    "completed_at_utc": "2026-11-21T16:54:47.137176+00:00"
+  },
+  "version": "0.3",
+  "license_declared_in_readme": "GPL + GPL font exception",
+  "copyright_holders": "Fandol team: Clerk Ma & Jie Su",
+  "font_directory": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol",
+  "license_directory": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/doc/fonts/fandol",
+  "fonts": [
+    {
+      "file": "FandolSong-Regular.otf",
+      "bytes": 4947904,
+      "sha256": "a3820003227d4abe31fe28b493200d94a849ccfd078b50a019264f70353020b0",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolSong",
+        "2": "Regular",
+        "4": "FandolSong",
+        "6": "FandolSong-Regular",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    },
+    {
+      "file": "FandolSong-Bold.otf",
+      "bytes": 5777588,
+      "sha256": "ffa76a70e128947a4dd22151d5ee829b23e24ce3cb6fe8ad49891cd1c2d9e9b9",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolSong",
+        "2": "Bold",
+        "4": "FandolSong Bold",
+        "6": "FandolSong-Bold",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    },
+    {
+      "file": "FandolHei-Regular.otf",
+      "bytes": 5808908,
+      "sha256": "4afa97aa8751e0118617df88272b58d43691b5cffb7ea024c4580496e9f34d28",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolHei",
+        "2": "Regular",
+        "4": "FandolHei",
+        "6": "FandolHei-Regular",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    },
+    {
+      "file": "FandolHei-Bold.otf",
+      "bytes": 3581972,
+      "sha256": "42ca2de27b45e16a284768673b6205a5add9e17871ee0e7db9c0d03f061d96fd",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolHei",
+        "2": "Bold",
+        "4": "FandolHei Bold",
+        "6": "FandolHei-Bold",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    },
+    {
+      "file": "FandolKai-Regular.otf",
+      "bytes": 7790552,
+      "sha256": "ea7e7fb4f9b3ac694a68d43946e04d21deed6e8c29a7c2d3081e1a4138f2f827",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolKai",
+        "2": "Regular",
+        "4": "FandolKai",
+        "6": "FandolKai-Regular",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    },
+    {
+      "file": "FandolFang-Regular.otf",
+      "bytes": 6961384,
+      "sha256": "d838ad32ce2244d8144f408c37fe71065aba6fbbc80759a4d2aa2033948d5bc9",
+      "name_records": {
+        "0": "Copyright © 2012-2013, the Fandol team.",
+        "1": "FandolFang R",
+        "2": "Regular",
+        "4": "FandolFang R",
+        "6": "FandolFang-Regular",
+        "13": null,
+        "14": "http://www.gnu.org/licenses/licenses.html"
+      },
+      "cid_ros": [
+        "Adobe",
+        "GB1",
+        5
+      ],
+      "sample_characters": "简体字形汉语证明窗口线关点门国体直骨令",
+      "sample_missing": []
+    }
+  ],
+  "copying_tail": "hort\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<http://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<http://www.gnu.org/philosophy/why-not-lgpl.html>.\n\n  As a special exception, if you create a document which uses this font, and\nembed this font or unaltered portions of this font into the document, this \nfont does not by itself cause the resulting document to be covered by the \nGNU General Public License. This exception does not however invalidate any \nother reasons why the document might be covered by the GNU General Public \nLicense. If you modify this font, you may extend this exception to your version\nof the font, but you are not obligated to do so. If you do not wish to do so,\ndelete this exception statement from your version. \n",
+  "kpsewhich": {
+    "FandolSong-Regular.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolSong-Regular.otf",
+    "FandolSong-Bold.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolSong-Bold.otf",
+    "FandolHei-Regular.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolHei-Regular.otf",
+    "FandolHei-Bold.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolHei-Bold.otf",
+    "FandolKai-Regular.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolKai-Regular.otf",
+    "FandolFang-Regular.otf": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol/FandolFang-Regular.otf"
+  },
+  "success": true,
+  "smoke_validation": {
+    "completed_at_utc": "2026-11-21T16:57:11.754333+00:00",
+    "document_class": "ctexbook",
+    "fontset": "fandol",
+    "additional_setCJK_commands": false,
+    "pages": 2,
+    "pdf_sha256": "8f233cb97337df6580149080572510a19973840aaccf0e70525f00acce19035d",
+    "missing_characters": false,
+    "font_warnings": false,
+    "undefined_references": false,
+    "rendered_page_2_visually_checked": true,
+    "simplified_chinese_sample": "简体字形：汉语、证明、窗口、线、关、点、门、国、体、直、骨、令。",
+    "sample_text_extraction_correct": true,
+    "font_selection": "Standalone OpenType CFF fonts with Adobe-GB1-5; no TTC collection or face index"
+  },
+  "ctex_default_mapping": {
+    "serif": "FandolSong-Regular.otf",
+    "serif_bold": "FandolSong-Bold.otf",
+    "italic": "FandolKai-Regular.otf",
+    "sans_serif": "FandolHei-Regular.otf",
+    "sans_serif_bold": "FandolHei-Bold.otf",
+    "monospace_cjk": "FandolFang-Regular.otf"
+  },
+  "packaging_directory": "/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/fonts/opentype/public/fandol",
+  "packaging_note": "Directory includes six unmodified CTeX-required OTF fonts, original README, COPYING (GPLv3 and font embedding exception), and PROVENANCE.json."
+}

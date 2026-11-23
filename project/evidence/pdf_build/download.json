@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/CTeX-org/ctex-kit/archive/13a22565bdd14d750b604c2f1ed0fa1938cb6cd4.tar.gz",
+  "commit": "13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+  "tag": "ctex-v2.5.10",
+  "started_at_utc": "2026-11-21T16:47:40.533643+00:00",
+  "attempts": 1,
+  "http_status": 200,
+  "final_url": "https://codeload.github.com/CTeX-org/ctex-kit/tar.gz/13a22565bdd14d750b604c2f1ed0fa1938cb6cd4",
+  "success": true,
+  "bytes": 1154159,
+  "sha256": "d7390ae719a3b06fa647fa3923cc819f917b92a94886d30a12485c6687bfc83f",
+  "completed_at_utc": "2026-11-21T16:47:51.606844+00:00"
+}

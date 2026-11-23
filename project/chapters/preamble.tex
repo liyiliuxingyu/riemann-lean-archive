@@ -1,0 +1,71 @@
+\documentclass[UTF8,fontset=fandol,a4paper,openany,oneside]{ctexbook}
+\usepackage{fontspec}
+\setmonofont[Scale=0.80]{DejaVu Sans Mono}
+\usepackage[margin=21mm,top=23mm,bottom=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor,tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\definecolor{InkBlue}{HTML}{19364D}
+\definecolor{Teal}{HTML}{147D80}
+\usepackage{xurl}
+\usepackage[unicode,hidelinks]{hyperref}
+\hypersetup{pdftitle={黎曼猜想：人类可读的证明主线},pdfauthor={基于指定Lean工程的中文数学重构},pdfsubject={ζ专用算术窗口、完整解析推导与深定理引用边界}}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{inputtheorem}[theorem]{引用定理}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{定义}
+\theoremstyle{remark}
+\newtheorem*{remark}{说明}
+\renewcommand{\proofname}{证明}
+\newcommand{\Rea}{\operatorname{Re}}
+\newcommand{\Ima}{\operatorname{Im}}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\Expl}[1]{\par\smallskip\noindent\textbf{这一步的意思。}#1\par\smallskip}
+\setcounter{tocdepth}{1}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.18}
+\allowdisplaybreaks[1]
+\raggedbottom
+\urlstyle{tt}
+\begin{document}
+\begin{titlepage}
+\vspace*{17mm}
+\begin{center}
+{\Large 从形式化证明到可以逐步检查的数学论证\par}
+\vspace{16mm}
+{\Huge\bfseries 黎曼猜想\par}
+\vspace{8mm}
+{\LARGE 人类可读的证明主线\par}
+\vspace{12mm}
+{\large 专门化到黎曼 $\zeta$ 函数\par}
+{\large 算术窗口、极点与高阶导数、函数方程\par}
+\end{center}
+\vspace{16mm}
+\noindent\rule{\textwidth}{0.5pt}
+\par\medskip
+本稿依据指定公开 Lean 工程及先前中文重构稿改写。正文完整展开从算术窗口估计到黎曼猜想的解析推导，并把决定性的算术几何输入准确列为引用定理；该输入的巨大上游证明没有在本稿中全部重写。
+\par\medskip
+\noindent\rule{\textwidth}{0.5pt}
+\vfill
+\noindent 整理日期：2026 年 11 月 22 日（北京时间）\par
+\noindent 阅读基础：微积分、级数与复变函数的基本概念\par
+\noindent 版本性质：第二版；增加完整源码汇编及算术接口展开；非作者原稿\par
+\end{titlepage}
+\frontmatter
+\chapter*{怎样阅读这份证明}
+\addcontentsline{toc}{chapter}{怎样阅读这份证明}
+这份稿件把问题缩减为一个可以记住的矛盾：\textbf{如果临界线右边真的有零点，那么一个经过变换的函数就有极点；这个极点迫使某些高阶导数变大，而算术上构造出的好窗口却不允许它们那么大。}
+
+正文不要求读者先理解整个一般 Dirichlet $L$ 函数理论。只取模 $1$ 的主特征，最终要研究的函数就是 $\zeta$。这会删去目标特征族的许多记号，但不会删去产生窗口的上游算术几何工作。
+
+\textbf{本稿的证明范围必须准确理解：}第\ref{chap:arithmetic}章引用原工程的算术窗口定理；第\ref{chap:window}章完整证明该窗口怎样排除零点；第\ref{chap:finish}章完成参数选择与函数方程的推导。因此，本稿是一篇引用明确深定理的数学证明说明，\emph{不是}把全部上游引理都从基础重新证明的自足专著。把一项关键输入写成“引理”不会自动完成它的证明；它的来源、量词与本稿尚未展开的部分均在正文中列明。
+
+截至本次查阅，Lean 与 Mathlib 社区于 2026 年 11 月 21 日发布的联合声明，已确认提交的命题与形式化证明，并报告命题比较与多个内核检查。该声明晚于前一版视频所采用的 MIT 12:55 UTC 状态快照。此项外部核验与本稿的人类文字重构是两件分别记录的工作；本次没有重新运行全工程核验。源码汇编恢复的是原项目各模块的文本；模块哈希一致性核验与 Lean 内核核验分别记录。原作者的四页公告也说明，论证很长，仍需进一步整理、理解和简化。参见文末资料[1]--[3]。
+
+阅读时，可以先读每章的解释段和最后一章，掌握全链条；再回到第\ref{chap:window}章检查真正承担矛盾的每个不等式。全文不把有限个数值零点当作证明，也不把单侧上界偷换成绝对值上界。
+\tableofcontents
+\mainmatter

@@ -1,0 +1,267 @@
+This is LuaTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (INITEX)
+ restricted system commands enabled.
+(/usr/share/texlive/texmf-dist/tex/generic/tex-ini-files/luatexiniconfig.tex)
+(/usr/share/texlive/texmf-dist/tex/plain/base/plain.tex
+Preloading the plain format: codes, registers, parameters, fonts, more fonts,
+macros, math definitions, output routines, hyphenation
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/hyphen.tex)) (./ctex.dtx
+(./ctxdocstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3docstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+Utility: `docstrip' v2.6b <2022-09-03>
+English documentation    <2024-02-08>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)))
+
+Generating file(s) ctex.sty ctexsize.sty ctexheading.sty ctexart.cls ctexbook.c
+ls ctexrep.cls ctexbeamer.cls ctexcap.sty ctexhook.sty ctexpatch.sty ctex-c5siz
+e.clo ctex-cs4size.clo ctex-heading-article.def ctex-heading-book.def ctex-head
+ing-report.def ctex-heading-beamer.def ctex-scheme-plain.def ctex-scheme-plain-
+article.def ctex-scheme-plain-book.def ctex-scheme-plain-report.def ctex-scheme
+-plain-beamer.def ctex-scheme-chinese.def ctex-scheme-chinese-article.def ctex-
+scheme-chinese-book.def ctex-scheme-chinese-report.def ctex-scheme-chinese-beam
+er.def ctex-name-gbk.cfg ctex-name-utf8.cfg ctex.cfg ctexopts.cfg ctexbackend.c
+fg ctex-engine-pdftex.def ctex-engine-xetex.def ctex-engine-luatex.def ctex-eng
+ine-aptex.def ctex-engine-uptex.def c19rm.fd c19sf.fd c19tt.fd c70rm.fd c70sf.f
+d c70tt.fd jy2zhrm.fd jy2zhsf.fd jy2zhtt.fd jt2zhrm.fd jt2zhsf.fd jt2zhtt.fd ct
+ex-fontset-adobe.def ctex-fontset-fandol.def ctex-fontset-founder.def ctex-font
+set-mac.def ctex-fontset-macnew.def ctex-fontset-macold.def ctex-fontset-ubuntu
+.def ctex-fontset-windows.def translator-theorem-dictionary-ChineseGBK.dict tra
+nslator-theorem-dictionary-ChineseUTF8.dict ctexspa.def ctex-spa-make.tex ctex-
+spa-macro.tex ctex-zhmap-adobe.tex ctex-zhmap-fandol.tex ctex-zhmap-founder.tex
+ ctex-zhmap-mac.tex ctex-zhmap-ubuntu.tex ctex-zhmap-windows.tex ctex.ins READM
+E.md 
+
+Processing file ctex.dtx (style,ctex) -> ctex.sty
+                         (style,ctexsize) -> ctexsize.sty
+                         (style,ctexheading) -> ctexheading.sty
+                         (class,article) -> ctexart.cls
+                         (class,book) -> ctexbook.cls
+                         (class,report) -> ctexrep.cls
+                         (class,beamer) -> ctexbeamer.cls
+                         (ctexcap) -> ctexcap.sty
+                         (ctexhook) -> ctexhook.sty
+                         (ctexpatch) -> ctexpatch.sty
+                         (c5size) -> ctex-c5size.clo
+                         (cs4size) -> ctex-cs4size.clo
+                         (heading,article) -> ctex-heading-article.def
+                         (heading,book) -> ctex-heading-book.def
+                         (heading,report) -> ctex-heading-report.def
+                         (heading,beamer) -> ctex-heading-beamer.def
+File ctex.dtx ended by \endinput.
+Lines  processed: 12368
+Comments removed: 6014
+Comments  passed: 12
+Codelines passed: 5717
+
+
+Lines  processed: 44
+Comments removed: 0
+Comments  passed: 0
+Codelines passed: 44
+
+
+Processing file ctex.dtx (scheme,generic,plain) -> ctex-scheme-plain.def
+                         (scheme,article,plain) -> ctex-scheme-plain-article.de
+f
+                         (scheme,book,plain) -> ctex-scheme-plain-book.def
+                         (scheme,report,plain) -> ctex-scheme-plain-report.def
+                         (scheme,beamer,plain) -> ctex-scheme-plain-beamer.def
+                         (scheme,generic,chinese) -> ctex-scheme-chinese.def
+                         (scheme,article,chinese) -> ctex-scheme-chinese-articl
+e.def
+                         (scheme,book,chinese) -> ctex-scheme-chinese-book.def
+                         (scheme,report,chinese) -> ctex-scheme-chinese-report.
+def
+                         (scheme,beamer,chinese) -> ctex-scheme-chinese-beamer.
+def
+                         (name,GBK) -> ctex-name-gbk.cfg
+                         (name,UTF8) -> ctex-name-utf8.cfg
+                         (config) -> ctex.cfg
+                         (ctexopts) -> ctexopts.cfg
+                         (backend) -> ctexbackend.cfg
+                         (pdftex) -> ctex-engine-pdftex.def
+File ctex.dtx ended by \endinput.
+Lines  processed: 12368
+Comments removed: 6014
+Comments  passed: 12
+Codelines passed: 5717
+
+
+Lines  processed: 44
+Comments removed: 0
+Comments  passed: 0
+Codelines passed: 44
+
+
+Processing file ctex.dtx (xetex) -> ctex-engine-xetex.def
+                         (luatex) -> ctex-engine-luatex.def
+                         (aptex) -> ctex-engine-aptex.def
+                         (uptex) -> ctex-engine-uptex.def
+                         (fd,rm,c19) -> c19rm.fd
+                         (fd,sf,c19) -> c19sf.fd
+                         (fd,tt,c19) -> c19tt.fd
+                         (fd,rm,c70) -> c70rm.fd
+                         (fd,sf,c70) -> c70sf.fd
+                         (fd,tt,c70) -> c70tt.fd
+                         (fd,rm,jy2) -> jy2zhrm.fd
+                         (fd,sf,jy2) -> jy2zhsf.fd
+                         (fd,tt,jy2) -> jy2zhtt.fd
+                         (fd,rm,jt2) -> jt2zhrm.fd
+                         (fd,sf,jt2) -> jt2zhsf.fd
+                         (fd,tt,jt2) -> jt2zhtt.fd
+File ctex.dtx ended by \endinput.
+Lines  processed: 12368
+Comments removed: 6014
+Comments  passed: 12
+Codelines passed: 5717
+
+
+Lines  processed: 44
+Comments removed: 0
+Comments  passed: 0
+Codelines passed: 44
+
+
+Processing file ctex.dtx (fontset,adobe) -> ctex-fontset-adobe.def
+                         (fontset,fandol) -> ctex-fontset-fandol.def
+                         (fontset,founder) -> ctex-fontset-founder.def
+                         (fontset,mac) -> ctex-fontset-mac.def
+                         (fontset,macnew) -> ctex-fontset-macnew.def
+                         (fontset,macold) -> ctex-fontset-macold.def
+                         (fontset,ubuntu) -> ctex-fontset-ubuntu.def
+                         (fontset,windows) -> ctex-fontset-windows.def
+                         (dict,theorem,GBK) -> translator-theorem-dictionary-Ch
+ineseGBK.dict
+                         (dict,theorem,UTF8) -> translator-theorem-dictionary-C
+hineseUTF8.dict
+                         (ctexspa) -> ctexspa.def
+                         (spa,make) -> ctex-spa-make.tex
+                         (spa,macro) -> ctex-spa-macro.tex
+                         (zhmap,adobe) -> ctex-zhmap-adobe.tex
+                         (zhmap,fandol) -> ctex-zhmap-fandol.tex
+                         (zhmap,founder) -> ctex-zhmap-founder.tex
+File ctex.dtx ended by \endinput.
+Lines  processed: 12368
+Comments removed: 6014
+Comments  passed: 12
+Codelines passed: 5717
+
+
+Processing file ctexpunct.spa -> ctexspa.def
+Lines  processed: 44
+Comments removed: 0
+Comments  passed: 0
+Codelines passed: 44
+
+
+Processing file ctex.dtx (zhmap,mac) -> ctex-zhmap-mac.tex
+                         (zhmap,ubuntu) -> ctex-zhmap-ubuntu.tex
+                         (zhmap,windows) -> ctex-zhmap-windows.tex
+                         (install) -> ctex.ins
+                         (readme) -> README.md
+File ctex.dtx ended by \endinput.
+Lines  processed: 12368
+Comments removed: 6014
+Comments  passed: 12
+Codelines passed: 5717
+
+*************************************************************
+*                                                           *
+* To finish the installation you have to move the following *
+* file into proper directories searched by TeX:             *
+*                                                           *
+* The recommended directory is TDS:tex/latex/ctex           *
+*                                                           *
+*     ctex.sty                                              *
+*     ctexsize.sty                                          *
+*     ctexheading.sty                                       *
+*     ctexart.cls                                           *
+*     ctexbook.cls                                          *
+*     ctexrep.cls                                           *
+*     ctexbeamer.cls                                        *
+*     ctexcap.sty                                           *
+*     ctexhook.sty                                          *
+*     ctexpatch.sty                                         *
+*     ctex-c5size.clo                                       *
+*     ctex-cs4size.clo                                      *
+*     ctex-heading-article.def                              *
+*     ctex-heading-book.def                                 *
+*     ctex-heading-report.def                               *
+*     ctex-heading-beamer.def                               *
+*     ctex-scheme-plain.def                                 *
+*     ctex-scheme-plain-article.def                         *
+*     ctex-scheme-plain-book.def                            *
+*     ctex-scheme-plain-report.def                          *
+*     ctex-scheme-plain-beamer.def                          *
+*     ctex-scheme-chinese.def                               *
+*     ctex-scheme-chinese-article.def                       *
+*     ctex-scheme-chinese-book.def                          *
+*     ctex-scheme-chinese-report.def                        *
+*     ctex-scheme-chinese-beamer.def                        *
+*     ctex-name-gbk.cfg                                     *
+*     ctex-name-utf8.cfg                                    *
+*     ctex.cfg                                              *
+*     ctexopts.cfg                                          *
+*     ctexbackend.cfg                                       *
+*     ctex-engine-pdftex.def                                *
+*     ctex-engine-xetex.def                                 *
+*     ctex-engine-luatex.def                                *
+*     ctex-engine-aptex.def                                 *
+*     ctex-engine-uptex.def                                 *
+*     c19rm.fd                                              *
+*     c19sf.fd                                              *
+*     c19tt.fd                                              *
+*     c70rm.fd                                              *
+*     c70sf.fd                                              *
+*     c70tt.fd                                              *
+*     jy2zhrm.fd                                            *
+*     jy2zhsf.fd                                            *
+*     jy2zhtt.fd                                            *
+*     jt2zhrm.fd                                            *
+*     jt2zhsf.fd                                            *
+*     jt2zhtt.fd                                            *
+*     ctex-fontset-adobe.def                                *
+*     ctex-fontset-fandol.def                               *
+*     ctex-fontset-founder.def                              *
+*     ctex-fontset-mac.def                                  *
+*     ctex-fontset-macnew.def                               *
+*     ctex-fontset-macold.def                               *
+*     ctex-fontset-ubuntu.def                               *
+*     ctex-fontset-windows.def                              *
+*     ctexspa.def                                           *
+*     ctex-spa-make.tex                                     *
+*     ctex-spa-macro.tex                                    *
+*     ctex-zhmap-adobe.tex                                  *
+*     ctex-zhmap-fandol.tex                                 *
+*     ctex-zhmap-founder.tex                                *
+*     ctex-zhmap-mac.tex                                    *
+*     ctex-zhmap-ubuntu.tex                                 *
+*     ctex-zhmap-windows.tex                                *
+*     translator-theorem-dictionary-ChineseGBK.dict         *
+*     translator-theorem-dictionary-ChineseUTF8.dict        *
+*                                                           *
+* To produce the documentation run the file ctex.dtx        *
+* through XeLaTeX.                                          *
+*                                                           *
+* Happy TeXing!                                             *
+*                                                           *
+*************************************************************
+Overall statistics:
+Files  processed: 9
+Lines  processed: 62016
+Comments removed: 30070
+Comments  passed: 60
+Codelines passed: 28761
+)
+No pages of output.
+Transcript written on ctex.log.

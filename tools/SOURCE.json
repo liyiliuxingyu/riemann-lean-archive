@@ -1,0 +1,28 @@
+{
+  "source_archive": "黎曼猜想_人类可读证明与续作工程.zip",
+  "source_archive_sha256": "1ce852981028f86d7a47931db6aff339805759b17c1621646189c357bd5baf2d",
+  "files": [
+    {
+      "repository_path": "tools/export_lean_bundle.py",
+      "archive_member": "riemann_human/tools/export_lean_bundle.py",
+      "bytes": 23726,
+      "sha256": "bb7a46ba814847638af7bcc5dc6eb79a9af1284387bedeec0f92adc7189c2edd",
+      "copied_without_modification": true
+    },
+    {
+      "repository_path": "tools/extract_one_module.py",
+      "archive_member": "riemann_human/tools/extract_one_module.py",
+      "bytes": 1368,
+      "sha256": "3b8bf81172175d56e8cfe463da033bcfaa0c67e6a2175c07476d4a633ad21d28",
+      "copied_without_modification": true
+    },
+    {
+      "repository_path": "tools/RHEntry.lean",
+      "archive_member": "riemann_human/tools/RHEntry.lean",
+      "bytes": 601,
+      "sha256": "ea2160eb4b37c4fd7751227041c15115aac2774f44a8bc7dc48f9a12fe1b17a7",
+      "copied_without_modification": true
+    }
+  ],
+  "local_lean_compilation_performed": false
+}

@@ -1,0 +1,94 @@
+{
+  "source_announcement": "https://alpo.ge/remark.pdf",
+  "footnote": 1,
+  "web_reference": "turn515578252view0",
+  "parts": [
+    {
+      "part": 1,
+      "filename": "lean.tar.gz.part01",
+      "url": "https://alpo.ge/lean.tar.gz.part01"
+    },
+    {
+      "part": 2,
+      "filename": "lean.tar.gz.part02",
+      "url": "https://alpo.ge/lean.tar.gz.part02"
+    },
+    {
+      "part": 3,
+      "filename": "lean.tar.gz.part03",
+      "url": "https://alpo.ge/lean.tar.gz.part03"
+    },
+    {
+      "part": 4,
+      "filename": "lean.tar.gz.part04",
+      "url": "https://alpo.ge/lean.tar.gz.part04"
+    },
+    {
+      "part": 5,
+      "filename": "lean.tar.gz.part05",
+      "url": "https://alpo.ge/lean.tar.gz.part05"
+    },
+    {
+      "part": 6,
+      "filename": "lean.tar.gz.part06",
+      "url": "https://alpo.ge/lean.tar.gz.part06"
+    },
+    {
+      "part": 7,
+      "filename": "lean.tar.gz.part07",
+      "url": "https://alpo.ge/lean.tar.gz.part07"
+    },
+    {
+      "part": 8,
+      "filename": "lean.tar.gz.part08",
+      "url": "https://alpo.ge/lean.tar.gz.part08"
+    },
+    {
+      "part": 9,
+      "filename": "lean.tar.gz.part09",
+      "url": "https://alpo.ge/lean.tar.gz.part09"
+    },
+    {
+      "part": 10,
+      "filename": "lean.tar.gz.part10",
+      "url": "https://alpo.ge/lean.tar.gz.part10"
+    },
+    {
+      "part": 11,
+      "filename": "lean.tar.gz.part11",
+      "url": "https://alpo.ge/lean.tar.gz.part11"
+    },
+    {
+      "part": 12,
+      "filename": "lean.tar.gz.part12",
+      "url": "https://alpo.ge/lean.tar.gz.part12"
+    },
+    {
+      "part": 13,
+      "filename": "lean.tar.gz.part13",
+      "url": "https://alpo.ge/lean.tar.gz.part13"
+    },
+    {
+      "part": 14,
+      "filename": "lean.tar.gz.part14",
+      "url": "https://alpo.ge/lean.tar.gz.part14"
+    }
+  ],
+  "known_previous_merged_archive": {
+    "bytes": 239275554,
+    "sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc"
+  },
+  "direct_download_probe": {
+    "part": 1,
+    "method": "Python urllib GET",
+    "result": "HTTP 403 Forbidden",
+    "attempts": 1,
+    "bypass_attempted": false
+  },
+  "prior_part_hash_manifest": {
+    "path": "expected_original_parts.sha256",
+    "source": "Prior preserved light recovery package",
+    "sha256": "78737d01c1bf78ba2bbe917dbc35e7588a12a4a583bdde77eeae5b0143b96367",
+    "this_run_payloads_verified": false
+  }
+}

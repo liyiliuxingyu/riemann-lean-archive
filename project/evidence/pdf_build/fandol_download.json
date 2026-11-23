@@ -1,0 +1,17 @@
+{
+  "source_url": "https://mirrors.ctan.org/fonts/fandol.zip",
+  "started_at_utc": "2026-11-21T16:54:32.450132+00:00",
+  "attempts": 1,
+  "http_status": 200,
+  "final_url": "https://mirror.ox.ac.uk/sites/ctan.org/fonts/fandol.zip",
+  "headers": {
+    "last-modified": "Sat, 18 Jul 2015 14:25:17 GMT",
+    "etag": "\"1973b96-51b2712d24d40\"",
+    "content-length": "26688406",
+    "content-type": "application/zip"
+  },
+  "success": true,
+  "bytes": 26688406,
+  "sha256": "9278f01b417ded5766d98c3937192a1a6a2c73a5e94a3493fdfc932b2a55005a",
+  "completed_at_utc": "2026-11-21T16:54:47.137176+00:00"
+}

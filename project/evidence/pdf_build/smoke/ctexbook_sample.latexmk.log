@@ -1,0 +1,274 @@
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 11 Dec. 2024. Version 4.86.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  ctexbook_sample.tex
+Category 'changed_user':
+  ctexbook_sample.tex
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -file-line-error -no-shell-escape -recorder -output-directory="build"  "ctexbook_sample.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+entering extended mode
+(/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/ctexbook_sample.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexboo
+k.cls
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexbac
+kend.cfg) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexbook 0000/00/00 v2.5.10 Chinese adapter for class book (CTE
+X)
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexhoo
+k.sty)
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexpat
+ch.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexopt
+s.cfg) (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-en
+gine-xetex.def
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/xeCJK/xeCJK.
+sty
+
+LaTeX Warning: You have requested package `xeCJK',
+               but the package provides `[unknown]'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/xeCJK/xeCJK.
+cfg)))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/zhnumber/zhn
+umber.sty
+
+LaTeX Warning: You have requested package `zhnumber',
+               but the package provides `[unknown]'.
+
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/zhnumber/zhn
+umber-utf8.cfg))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-sc
+heme-chinese-book.def
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-na
+me-utf8.cfg))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-cs
+4size.clo))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex.cf
+g) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(build/ctexbook_sample.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(build/ctexbook_sample.out) (build/ctexbook_sample.out)
+(build/ctexbook_sample.toc
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+[1]
+第一章
+
+[1] (build/ctexbook_sample.aux) )
+Output written on build/ctexbook_sample.xdv (2 pages, 11140 bytes).
+Transcript written on build/ctexbook_sample.log.
+Latexmk: Getting log file 'build/ctexbook_sample.log'
+Latexmk: Examining 'build/ctexbook_sample.fls'
+Latexmk: Examining 'build/ctexbook_sample.log'
+Latexmk: Log file says output to 'build/ctexbook_sample.xdv'
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/ctexbook_sample.aux
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -file-line-error -no-shell-escape -recorder -output-directory="build"  "ctexbook_sample.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+entering extended mode
+(/workspace/scratch/e8ff28430def/runtime/tex_human/smoke/ctexbook_sample.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexboo
+k.cls
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexbac
+kend.cfg) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexbook 0000/00/00 v2.5.10 Chinese adapter for class book (CTE
+X)
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexhoo
+k.sty)
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexpat
+ch.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctexopt
+s.cfg) (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-en
+gine-xetex.def
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/xeCJK/xeCJK.
+sty
+
+LaTeX Warning: You have requested package `xeCJK',
+               but the package provides `[unknown]'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/xeCJK/xeCJK.
+cfg)))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/zhnumber/zhn
+umber.sty
+
+LaTeX Warning: You have requested package `zhnumber',
+               but the package provides `[unknown]'.
+
+
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/zhnumber/zhn
+umber-utf8.cfg))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-sc
+heme-chinese-book.def
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-na
+me-utf8.cfg))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex-cs
+4size.clo))
+(/workspace/scratch/e8ff28430def/runtime/tex_human/texmf/tex/latex/ctex/ctex.cf
+g) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(build/ctexbook_sample.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(build/ctexbook_sample.out) (build/ctexbook_sample.out)
+(build/ctexbook_sample.toc
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+[1]
+第一章
+
+[1] (build/ctexbook_sample.aux) )
+Output written on build/ctexbook_sample.xdv (2 pages, 11140 bytes).
+Transcript written on build/ctexbook_sample.log.
+Latexmk: Getting log file 'build/ctexbook_sample.log'
+Latexmk: Examining 'build/ctexbook_sample.fls'
+Latexmk: Examining 'build/ctexbook_sample.log'
+Latexmk: Log file says output to 'build/ctexbook_sample.xdv'
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  build/ctexbook_sample.xdv
+Category 'changed_source_rules':
+  xelatex
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "build/ctexbook_sample.pdf"  "build/ctexbook_sample.xdv"'
+------------
+Latexmk: All targets (build/ctexbook_sample.xdv build/ctexbook_sample.pdf) are up-to-date
+
+
+STDERR:
+
+xdvipdfmx:warning: Couldn't open font map file "pdftex.map".
+xdvipdfmx:warning: Couldn't open font map file "kanjix.map".
+build/ctexbook_sample.xdv -> build/ctexbook_sample.pdf
+[1][2]
+55264 bytes written

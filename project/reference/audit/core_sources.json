@@ -1,0 +1,662 @@
+{
+  "source_root": "/workspace/scratch/e8ff28430def/research/riemann_lean_20261121/source/lean/src",
+  "original_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "scope": "人工读取实际定义与选定证明段；未构建或执行归档中的代码；本文件不代表独立 Lean 内核核验。",
+  "sources": [
+    {
+      "id": "C01",
+      "title_zh": "无附加参数的最终伽罗瓦表示实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title_zh": "IsRecT 的适用类别、局部对应公理及存在/唯一性命题",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+          "line_ranges": [
+            [
+              20,
+              85
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title_zh": "从尖点参数和 Langlands 分段构造局部对应",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line_ranges": [
+            [
+              20,
+              66
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title_zh": "局部表示代数归一化指数",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean",
+          "line_ranges": [
+            [
+              24,
+              26
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title_zh": "Tor、Sqf 的实际条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean",
+          "line_ranges": [
+            [
+              27,
+              33
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title_zh": "TmW 的野惯性特征多项式条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean",
+          "line_ranges": [
+            [
+              18,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "title_zh": "Triv 是特征多项式条件",
+      "sources": [
+        {
+          "path": "Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean",
+          "line_ranges": [
+            [
+              21,
+              21
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "title_zh": "IsQpBig、AwayB、AboveB、PropsB、Row0b 及 Row0 的限制映射",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line_ranges": [
+            [
+              15,
+              86
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "title_zh": "极化配对、对偶扭曲和实位符号",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean",
+          "line_ranges": [
+            [
+              31,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title_zh": "半单表示以不变补空间定义",
+      "sources": [
+        {
+          "path": "Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean",
+          "line_ranges": [
+            [
+              1183,
+              1187
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title_zh": "theta 提升 GoodK 的确切限制",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+          "line_ranges": [
+            [
+              16,
+              24
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "title_zh": "标准加法特征、整数环自对偶性及基底数据",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              98,
+              105
+            ],
+            [
+              140,
+              155
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "title_zh": "Hecke 特征的限制与实位指数",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+          "line_ranges": [
+            [
+              396,
+              398
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              114,
+              115
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean",
+          "line_ranges": [
+            [
+              266,
+              267
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "title_zh": "TLiftK 的完整参数与量词",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+          "line_ranges": [
+            [
+              12,
+              23
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "title_zh": "最高权与分裂位非零局部配对",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              89,
+              112
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean",
+          "line_ranges": [
+            [
+              109,
+              124
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "title_zh": "theta 核确为有理点求和与 Weil 作用",
+      "sources": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+          "line_ranges": [
+            [
+              107,
+              108
+            ]
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line_ranges": [
+            [
+              286,
+              289
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "title_zh": "theta 提升积分、Petersson 矩阵系数",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              22,
+              25
+            ]
+          ]
+        },
+        {
+          "path": "Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean",
+          "line_ranges": [
+            [
+              19,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "title_zh": "Schwartz 函数的 Weil 矩阵系数",
+      "sources": [
+        {
+          "path": "Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean",
+          "line_ranges": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "title_zh": "高度可积性、Rallis、群分解、bump、尾估计、实位与 Schur 命题",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+          "line_ranges": [
+            [
+              57,
+              113
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "title_zh": "AbsNe 的精确命题与测度条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+          "line_ranges": [
+            [
+              183,
+              189
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "title_zh": "AbsNe 的完整证明",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+          "line_ranges": [
+            [
+              5,
+              64
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "title_zh": "d0 的选择及最终非零自守分量构造",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+          "line_ranges": [
+            [
+              141,
+              177
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "title_zh": "theta 非消失的完整组装证明",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+          "line_ranges": [
+            [
+              26,
+              154
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "title_zh": "从已证工具得到 tLiftK",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+          "line_ranges": [
+            [
+              46,
+              49
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+          "line_ranges": [
+            [
+              39,
+              58
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+          "line_ranges": [
+            [
+              4,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "title_zh": "几何种子、同余、迹极限、下降至 Row0b 的实际调用",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line_ranges": [
+            [
+              18,
+              31
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "title_zh": "GeoOne 的实际量词、存在结论及几何实现组装",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean",
+          "line_ranges": [
+            [
+              58,
+              90
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean",
+          "line_ranges": [
+            [
+              18,
+              25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "title_zh": "几何种子 VBase 的连续性、半单性、特征多项式及 Hodge 条件",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean",
+          "line_ranges": [
+            [
+              38,
+              77
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "title_zh": "Lefschetz 到几何实例、再到最终 Row0b 实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "line_ranges": [
+            [
+              7,
+              11
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line_ranges": [
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "title_zh": "Q_l/Z_l、局部数据、负 Tate 扭曲及 Sha 长度",
+      "sources": [
+        {
+          "path": "Formalism/GaloisCohomology/Statement.lean",
+          "line_ranges": [
+            [
+              15,
+              21
+            ],
+            [
+              50,
+              78
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "title_zh": "Sha1 为局部限制核的交；局部群为分解群",
+      "sources": [
+        {
+          "path": "ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+          "line_ranges": [
+            [
+              168,
+              170
+            ]
+          ]
+        },
+        {
+          "path": "ReciprocityTheory/Hypotheses/GalCoh.lean",
+          "line_ranges": [
+            [
+              132,
+              139
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "title_zh": "算术窗口 VWin 的完整数值与量词",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line_ranges": [
+            [
+              12,
+              49
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C32",
+      "title_zh": "从 Row0b 与已证基变换取得 VWin",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line_ranges": [
+            [
+              4,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C33",
+      "title_zh": "局部、自守、Galois 上同调、CM 输入合成窗口",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line_ranges": [
+            [
+              38,
+              74
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C34",
+      "title_zh": "最终 h 同时提供窗口及文献接口实例",
+      "sources": [
+        {
+          "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line_ranges": [
+            [
+              7,
+              14
+            ]
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line_ranges": [
+            [
+              215,
+              218
+            ],
+            [
+              810,
+              813
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "boundary": {
+    "fully_transcribed_proof": "AbsNe 主项/尾项非消失引理。",
+    "expanded_construction": "稳定范围阈值、theta 核与系数、局部数据选择、非零积分及自守分量投影。",
+    "quoted_upstream_proofs": [
+      "Rallis 与 Siegel–Weil、Eisenstein 延拓",
+      "高度可积性及尾估计",
+      "局部 bump 构造",
+      "实位最高权计算",
+      "theta 自守性与谱分量投影",
+      "几何实现与 crystalline/Hodge 比较",
+      "同余、迹极限、基变换下降",
+      "从模性输入到 VWin 的全篇窗口估计"
+    ],
+    "source_gap_claimed": false
+  },
+  "precision_notes": [
+    "AwayB 只在 Tor 且 N=0 下要求完整 WD 相等；tame 条件下只在 deg=0 元素上比较特征多项式。",
+    "Sqf 允许重根；它限制重数至少2的根满足 z^(q_w-1)=1。",
+    "Tor 通过交换子的特征多项式等于(T-1)^n定义；不应直接译为矩阵恒等。",
+    "GoodK.galois 的类型是 HasK E，即存在x^2=-d,d>0；不是 E/Q Galois。",
+    "局部对应 IsRecT 的若干公理只在 Good 表示上要求。",
+    "GeoOne 的若干额外性质分别存在量化，未直接声明同一个rho同时具有全部性质。",
+    "VVle 对每个有限素数集要求上界，不直接以无穷和作定义。",
+    "窗口对满足 WinPair 的辅助素数对条件化；该定义本身不证明这样的素数对存在。"
+  ]
+}

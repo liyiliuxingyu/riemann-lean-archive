@@ -1,0 +1,415 @@
+\chapter{窗口型无零点定理}
+\label{chap:window-proof}
+\label{chap:window}
+
+本章证明一个明确的解析推断：如果归一化的平滑素数和在任意远处的整段窗口上受到控制，那么相应区域内就不能有 $\zeta$ 零点。窗口估计是这一推断的输入；下面完整证明从该输入到无零点结论的过程。
+
+沿用前文的实值函数 $G$、$g(u)=G(e^u)$ 及其拉普拉斯变换 $\Phi$。本章使用前文已经建立的以下性质：$g$ 连续，存在固定 $C_0>0$ 使
+\begin{equation}
+ |g(u)|\le C_0e^{2u}\qquad(u\ge0);
+ \label{eq:win-growth}
+\end{equation}
+当 $\operatorname{Re}s>2$ 时，
+\begin{equation}
+ \Phi(s)=\int_0^\infty g(u)e^{-su}\,du.
+ \label{eq:win-laplace}
+\end{equation}
+此外，$\Phi$ 亚纯延拓到半平面
+\[
+ \mathcal H=\{s\in\mathbb C:\operatorname{Re}s>0\}.
+\]
+它的极点集合 $Z$ 恰为 $\zeta$ 在 $\mathcal H$ 中的零点集合。每个 $\rho\in Z$ 都是 $\Phi$ 的单极点，留数 $c_\rho\ne0$；$\Phi$ 在正实轴上没有极点。这里 $\zeta$ 的 $s=1$ 极点已经在构造 $\Phi$ 时被消去。
+
+\begin{theorem}[窗口型无零点定理]
+\label{thm:window-zeta}
+固定 $0<\theta<1$。假定
+\begin{equation}
+ \forall Y_0\ge1\quad
+ \exists Y\ge Y_0\quad
+ \forall x\in[Y,Y^{3/2}],
+ \qquad G(x)\le x^\theta.
+ \label{eq:win-pointwise}
+\end{equation}
+则 $\Phi$ 在 $\operatorname{Re}s>\theta$ 内没有极点。因此，
+\[
+ \operatorname{Re}s>\theta,\qquad s\ne1
+ \quad\Longrightarrow\quad \zeta(s)\ne0.
+\]
+\end{theorem}
+
+证明将比较同一组高阶导数的两个界。窗口估计给出上界；若存在一个待排除的极点，它又会迫使这些导数具有更大的下界。关键是把两种估计放在同一尺度上。
+
+\section{把窗口上界变成导数上界}
+
+令 $U=\log Y$。幂区间 $[Y,Y^{3/2}]$ 变成对数区间
+\[
+ W_U=[U,3U/2].
+\]
+式 \eqref{eq:win-pointwise} 意味着：对任意 $U_0\ge1$，总能选到 $U\ge U_0$，使
+\begin{equation}
+ g(u)\le e^{\theta u}\qquad(u\in W_U).
+ \label{eq:win-log-window}
+\end{equation}
+这是因为可先对起点 $Y_0=e^{U_0}$ 使用窗口假设，再取对数。以后称满足 \eqref{eq:win-log-window} 的 $U$ 为好尺度。所需的只是好尺度无界。
+
+对整数 $k\ge0$ 和 $\operatorname{Re}z>2$，定义
+\begin{equation}
+ A_k(z)=\frac{(-1)^k}{k!}\Phi^{(k)}(z)
+       =\frac1{k!}\int_0^\infty g(u)u^ke^{-zu}\,du.
+ \label{eq:win-Ak}
+\end{equation}
+第二个等式可以逐次在积分号下求导。确实，在任意这样的 $z$ 的一个小邻域内，实部都有统一下界 $\sigma_0>2$，而第 $k$ 阶被积函数的绝对值由
+\[
+ C_0u^ke^{-(\sigma_0-2)u}
+\]
+控制。它在半轴上可积，因而每一阶求导都有所需的可积控制函数。这也说明 $\Phi$ 在 $\operatorname{Re}z>2$ 全纯。
+
+固定
+\begin{equation}
+ \sigma=336.
+ \label{eq:win-sigma}
+\end{equation}
+所有好尺度都使用这个相同的实部。$336$ 只是让后面的两侧尾估计同时成立的一种方便选择；下面会直接验证这些数值，不把它们当作额外假设。对 $u\ge0$，记
+\[
+ w_k(u)=\frac{u^ke^{-\sigma u}}{k!}\ge0.
+\]
+由于 $g$ 实值，$A_k(\sigma)$ 也是实数。三角不等式给出
+\begin{align}
+ |A_k(\sigma+it)|+\operatorname{Re}A_k(\sigma)
+ &\le \int_0^\infty \bigl(|g(u)|+g(u)\bigr)w_k(u)\,du.
+ \label{eq:win-positive-part}
+\end{align}
+这一步是使用单侧上界的关键。对于实数 $v$，
+\[
+ |v|+v=2\max\{v,0\}.
+\]
+因此只要控制 $g$ 的上方，就能控制 \eqref{eq:win-positive-part} 的右边。若把左边擅自改成两个绝对值之和，就失去了这项性质。
+
+对任意 $a>0$，指数函数的幂级数还给出
+\begin{equation}
+ \frac{u^ke^{-au}}{k!}\le a^{-k}\qquad(u\ge0),
+ \label{eq:win-kernel-max}
+\end{equation}
+因为 $e^{au}\ge(au)^k/k!$。在好窗口内，由
+$|g|+g\le2e^{\theta u}$ 和 \eqref{eq:win-kernel-max}，得到
+\[
+ \int_{W_U}(|g|+g)w_k
+ \le \frac{2}{(\sigma-\theta)^k}\,\frac U2
+ =\frac{U}{(\sigma-\theta)^k}.
+\]
+窗口外则用全局粗界 \eqref{eq:win-growth}。于是对每个好尺度 $U$、每个 $k\ge0$ 及每个 $t\in\mathbb R$，
+\begin{equation}
+ |A_k(\sigma+it)|+\operatorname{Re}A_k(\sigma)
+ \le \frac{U}{(\sigma-\theta)^k}+2C_0T_{U,k},
+ \label{eq:win-before-tail}
+\end{equation}
+其中
+\[
+ T_{U,k}=
+ \int_{[0,\infty)\setminus W_U}
+       \frac{u^ke^{-334u}}{k!}\,du.
+\]
+接下来的工作是控制这一尾积分。我们不能因为窗口外没有算术上界，就把那部分积分删去。
+
+\section{用明确参数把积分核集中到窗口内}
+
+对每个 $U\ge1$，取
+\begin{equation}
+ k=\lceil420U\rceil.
+ \label{eq:win-k-choice}
+\end{equation}
+于是
+\[
+ 420U\le k\le420U+1,\qquad k\ge U.
+\]
+导数阶数与窗口位置一起增大。相应权核的主要贡献落在窗口内部；下面的计算对窗口外剩余的贡献给出统一界。
+
+先记录一个基本积分公式：
+\begin{equation}
+ \frac1{k!}\int_0^\infty u^ke^{-au}\,du
+       =a^{-(k+1)}\qquad(a>0).
+ \label{eq:win-gamma-integral}
+\end{equation}
+它从 $k=0$ 的指数积分出发，逐次分部积分即可得到；指数衰减使无穷远处的边界项为零。
+
+在窗口右侧 $u\ge3U/2$，
+\[
+ e^{-334u}=e^{-320u}e^{-14u}
+       \le e^{-21U}e^{-320u}.
+\]
+在窗口左侧 $0\le u\le U$，
+\[
+ e^{-334u}=e^{-348u}e^{14u}
+       \le e^{14U}e^{-348u}.
+\]
+将两部分非负积分分别扩大到整个半轴，并使用
+\eqref{eq:win-gamma-integral}，得到
+\begin{equation}
+ T_{U,k}\le
+ \frac{e^{-21U}}{320^{k+1}}
+ +\frac{e^{14U}}{348^{k+1}}.
+ \label{eq:win-tail-two}
+\end{equation}
+
+为了与导数上界比较，把两项分别乘以 $\sigma^k=336^k$。由
+$\log(1+x)\le x$（$x>-1$）和 \eqref{eq:win-k-choice}，
+\begin{align*}
+ 336^k\frac{e^{-21U}}{320^{k+1}}
+ &=\frac1{320}
+   \exp\left(-21U+k\log\frac{21}{20}\right)\\
+ &\le\frac1{320}\exp(-21U+k/20)
+ \le\frac{e^{1/20}}{320}
+ \le\frac e{320}.
+\end{align*}
+同样，
+\begin{align*}
+ 336^k\frac{e^{14U}}{348^{k+1}}
+ &=\frac1{348}
+   \exp\left(14U+k\log\frac{28}{29}\right)\\
+ &\le\frac1{348}\exp(14U-k/29)\\
+ &\le\frac1{348}\exp(-14U/29)
+ \le\frac1{348}.
+\end{align*}
+因此可以固定
+\begin{equation}
+ C_1=\frac e{320}+\frac1{348},
+ \qquad
+ T_{U,k}\le\frac{C_1}{\sigma^k}.
+ \label{eq:win-tail-final}
+\end{equation}
+这里的 $C_1$ 与窗口位置 $U$ 无关。
+
+令 $C_2=2C_0C_1$。由于 $0<\theta<1<\sigma$，
+有 $\sigma^{-k}\le(\sigma-\theta)^{-k}$。
+将 \eqref{eq:win-tail-final} 代入
+\eqref{eq:win-before-tail}，得到本章的统一上界：
+\begin{equation}
+ \boxed{\;
+ |A_k(\sigma+it)|+\operatorname{Re}A_k(\sigma)
+ \le\frac{U+C_2}{(\sigma-\theta)^k},
+ \qquad k=\lceil420U\rceil.
+ \;}
+ \label{eq:win-master-upper}
+\end{equation}
+它对每个好尺度 $U\ge1$ 和所有实数 $t$ 同时成立。
+
+\section{在极点附近选出能够比较的两个圆盘}
+
+现在反设存在 $\rho_0\in Z$，满足
+$\operatorname{Re}\rho_0>\theta$。我们将选出一个实中心圆盘，其中没有极点；再竖直移动圆心，得到一个只含一个极点的圆盘。两个圆心都具有相同实部 $\sigma$，因此可以一起代入
+\eqref{eq:win-master-upper}。
+
+首先，由 $\Phi$ 在 $\operatorname{Re}s>2$ 全纯可知
+\begin{equation}
+ \operatorname{Re}\rho\le2<\sigma\qquad(\rho\in Z).
+ \label{eq:win-poles-left}
+\end{equation}
+亚纯函数的极点在 $\mathcal H$ 内没有聚点，所以 $\mathcal H$ 中每个紧集只含有限个极点。
+
+记 $R=\sigma-\theta$。闭圆盘
+$\overline B(\sigma,R)$ 的实部下界为 $\theta>0$，故它紧含于 $\mathcal H$，其中的极点构成有限集。
+
+如果该闭圆盘没有极点，取 $D=R$、$\rho_1=\rho_0$。此时 $B(\sigma,D)$ 无极点，且
+\[
+ 0<\sigma-\operatorname{Re}\rho_1<D.
+\]
+如果闭圆盘中有极点，就在这有限多个极点中取一个离 $\sigma$ 最近的 $\rho_1$，并令
+\[
+ D=|\sigma-\rho_1|\le R.
+\]
+因为 $\sigma$ 不是极点，所以 $D>0$；最小性的定义保证开圆盘 $B(\sigma,D)$ 无极点。又因为正实轴没有极点，$\rho_1$ 非实，因而
+\[
+ D^2=(\sigma-\operatorname{Re}\rho_1)^2
+             +(\operatorname{Im}\rho_1)^2
+       >(\sigma-\operatorname{Re}\rho_1)^2.
+\]
+结合 \eqref{eq:win-poles-left}，仍得
+$0<\sigma-\operatorname{Re}\rho_1<D$。
+
+两种情形都给出了
+\begin{equation}
+ \begin{gathered}
+ 0<D\le\sigma-\theta,\qquad
+ B(\sigma,D)\cap Z=\varnothing,\\
+ \rho_1\in Z,\qquad
+ 0<a:=\sigma-\operatorname{Re}\rho_1<D.
+ \end{gathered}
+ \label{eq:win-free-disc}
+\end{equation}
+这一构造只需要检查紧圆盘中的有限个极点。
+
+\subsection{竖移圆心并打破等距}
+
+令
+\[
+ z_0=\sigma+i\operatorname{Im}\rho_1,
+ \qquad |z_0-\rho_1|=a<D.
+\]
+选择
+\begin{equation}
+ 0<h<\frac12\min\{D-a,\ \sigma-D\}.
+ \label{eq:win-shift-margin}
+\end{equation}
+这是可能的，因为 $D<\sigma$。闭盘
+$\overline B(z_0,D+h)$ 仍在 $\mathcal H$ 内，所以
+\[
+ P=Z\cap\overline B(z_0,D+h)
+\]
+是有限集。
+
+当 $|t-\operatorname{Im}\rho_1|<h$，令 $z=\sigma+it$，则
+\[
+ |z-\rho_1|<h+a<D.
+\]
+此外，$B(z,D)$ 中的每个极点都属于 $P$，因为
+\[
+ |w-z_0|\le |w-z|+|z-z_0|<D+h.
+\]
+这样，一段小范围内所有可能影响最近距离的极点，都包含在同一个有限集合 $P$ 中。
+
+对 $P$ 中两个不同点 $p,q$，两者到 $z=\sigma+it$ 的距离平方之差为
+\begin{align*}
+ &|\sigma+it-p|^2-|\sigma+it-q|^2\\
+ &\quad=(\sigma-\operatorname{Re}p)^2
+       -(\sigma-\operatorname{Re}q)^2
+       +(\operatorname{Im}p)^2-(\operatorname{Im}q)^2
+       -2t(\operatorname{Im}p-\operatorname{Im}q).
+\end{align*}
+如果两点虚部不同，至多一个 $t$ 会使此差为零。
+如果两点虚部相同，则实部不同；由两点都严格位于 $\sigma$ 左侧可知
+$(\sigma-\operatorname{Re}p)^2\ne
+(\sigma-\operatorname{Re}q)^2$，所以没有这样的 $t$。
+
+因此只需从开区间
+$(\operatorname{Im}\rho_1-h,\operatorname{Im}\rho_1+h)$
+中避开有限多个高度，就能使 $P$ 中各点到 $z$ 的距离互不相同。固定这样的 $t$ 与 $z$，取其中唯一的最近极点 $\rho$。它满足
+\[
+ 0<d:=|z-\rho|<D.
+\]
+剩余各点的距离都严格大于 $d$；利用有限性，可以选到半径 $R_1$，使
+\begin{equation}
+ d<R_1<D,\qquad B(z,R_1)\cap Z=\{\rho\}.
+ \label{eq:win-isolated-disc}
+\end{equation}
+若 $P$ 中只有 $\rho$，任取 $d<R_1<D$ 即可。又因
+$R_1<D\le\sigma-\theta$，整个圆盘 $B(z,R_1)$ 都在 $\mathcal H$ 内。
+
+到此已固定两个圆盘：$B(\sigma,D)$ 无极点，
+$B(z,R_1)$ 只含一个单极点 $\rho$。所有选择均只依赖 $\Phi$、$\theta$ 及上述极点，与随后选取的好尺度 $U$ 无关。
+
+\section{唯一最近极点给出导数下界}
+
+选择一个共同的 Cauchy 半径
+\begin{equation}
+ d<r<R_1<D\le\sigma-\theta.
+ \label{eq:win-cauchy-radius}
+\end{equation}
+在 $B(z,R_1)$ 内，减去 $\rho$ 处的主部，得到全纯函数
+\[
+ H(w)=\Phi(w)-\frac{c_\rho}{w-\rho}.
+\]
+这里在 $w=\rho$ 处取可去延拓；极点是单极点，保证只需减去这一项。
+
+记
+\[
+ M_1=\max_{|w-z|=r}|H(w)|,\qquad
+ M_0=\max_{|w-\sigma|=r}|\Phi(w)|.
+\]
+两者有限：第一个圆周位于 $H$ 的全纯圆盘内部，第二个圆周严格位于无极点圆盘 $B(\sigma,D)$ 内。Cauchy 导数估计给出，对每个 $k\ge0$，
+\begin{align}
+ \left|A_k(z)-\frac{c_\rho}{(z-\rho)^{k+1}}\right|
+       &\le\frac{M_1}{r^k},\label{eq:win-pole-cauchy}\\
+ |A_k(\sigma)|&\le\frac{M_0}{r^k}.
+ \label{eq:win-free-cauchy}
+\end{align}
+第一式还使用了
+\[
+ \frac{(-1)^k}{k!}
+ \left(\frac{c_\rho}{w-\rho}\right)^{(k)}_{\!w=z}
+   =\frac{c_\rho}{(z-\rho)^{k+1}}.
+\]
+
+这两个估计把极点的贡献与其余全纯部分分开。极点项按 $d^{-k}$ 增长，而其余部分只需用较慢的 $r^{-k}$ 控制；严格距离差 $d<r$ 保证前者最终占优。
+
+由 \eqref{eq:win-pole-cauchy} 和反三角不等式，
+\[
+ |A_k(z)|\ge\frac{|c_\rho|}{d^{k+1}}-\frac{M_1}{r^k}.
+\]
+另一方面，
+\[
+ \operatorname{Re}A_k(\sigma)
+       \ge-|A_k(\sigma)|\ge-\frac{M_0}{r^k}.
+\]
+令
+\begin{equation}
+ b=\frac{|c_\rho|}{d}>0,\qquad B=M_0+M_1\ge0.
+ \label{eq:win-lower-constants}
+\end{equation}
+于是得到与 \eqref{eq:win-master-upper} 左边完全相同的量的下界：
+\begin{equation}
+ |A_k(z)|+\operatorname{Re}A_k(\sigma)
+       \ge\frac b{d^k}-\frac B{r^k}.
+ \label{eq:win-master-lower}
+\end{equation}
+非零留数保证 $b$ 严格为正。这里无须要求复数留数本身是正实数。
+
+\section{任意远处的好尺度产生矛盾}
+
+现在才让好尺度 $U$ 向无穷远处移动。对每个这样的 $U\ge1$，取
+$k=\lceil420U\rceil$。将
+\eqref{eq:win-master-upper} 与
+\eqref{eq:win-master-lower} 合并，有
+\[
+ \frac b{d^k}
+ \le\frac B{r^k}+\frac{U+C_2}{(\sigma-\theta)^k}.
+\]
+两边乘以 $d^k$，并记
+\[
+ q=\frac dr\in(0,1),
+\]
+由于 $r\le\sigma-\theta$，可得
+\begin{align}
+ b
+ &\le Bq^k+(U+C_2)
+          \left(\frac d{\sigma-\theta}\right)^k\notag\\
+ &\le(B+U+C_2)q^k
+ \le(B+U+C_2)q^U.
+ \label{eq:win-final-contradiction}
+\end{align}
+最后一步使用 $k\ge U$ 与 $0<q<1$。
+
+所有常数 $b,B,C_2,q$ 都已固定，其中 $b>0$。
+写 $q^U=e^{-\alpha U}$，$\alpha=-\log q>0$，即可看出
+\[
+ (B+U+C_2)q^U
+       =(B+C_2+U)e^{-\alpha U}\longrightarrow0.
+\]
+指数衰减超过线性因子的增长。因此存在阈值 $U_*$，使全部 $U\ge U_*$ 的右边都小于 $b$。窗口假设保证仍能选到一个这样的好尺度，与
+\eqref{eq:win-final-contradiction} 矛盾。
+
+故不存在 $\rho_0\in Z$ 满足
+$\operatorname{Re}\rho_0>\theta$。由于 $\mathcal H$ 中的 $\zeta$ 零点恰好成为 $\Phi$ 的极点，定理
+\ref{thm:window-zeta} 得证。\hfill$\square$
+
+这项证明只在选中的窗口内使用算术上界；窗口外的贡献由全局粗界和核尾估计负责。正实轴无极点的性质，则保证可以先找到无极点的实中心圆盘，再通过竖移圆心分离一个非实极点。两项条件各自承担了明确的步骤。
+
+\section{两个反例说明条件不能随意删去}
+取 $0<\theta<\beta<1$。若只假定一个实函数有单侧上界，而不检查实极点，那么
+\[
+g(u)=-e^{\beta u}\le e^{\theta u}
+\]
+甚至在全部 $u\ge0$ 都成立。但它的拉普拉斯变换为
+\[
+\Phi(s)=-\frac1{s-\beta},
+\]
+在 $\beta>\theta$ 有一个留数为负的实极点。因此，“单侧界必然排除所有极点”是错误的。本稿先证明 $\zeta$ 情形没有正实极点，才可以使用后面的圆盘选择。
+
+另取 $g(u)=e^{\beta u}\cos u$，其拉普拉斯变换为
+\[
+\Phi(s)=\frac{s-\beta}{(s-\beta)^2+1},
+\]
+在 $\beta+i$ 和 $\beta-i$ 有极点。然而，对
+$u=(2n+1)\pi$，有 $g(u)<0\le e^{\theta u}$，这样的好点能出现得任意远。甚至在每段余弦为负的固定长度区间上，上界都成立。
+这仍不能排除极点，因为它没有提供本证明需要的、长度随 $U$ 增长的完整窗口 $[U,3U/2]$。
+
+这两个例子说明，我们不能把证明中精确的窗口、实极点条件和导数组合省略后，仅凭“函数有上界”就宣布得到无零点结论。

@@ -1,0 +1,150 @@
+\chapter{怎样把素数信息变成零点信息}
+\label{chap:bridge}
+\section{先把素数计数变得平滑}
+定义冯\,芒戈尔特函数
+\[
+\Lambda(n)=
+\begin{cases}
+\log p,&n=p^a,\ p\text{ 为素数},\ a\ge1,\\
+0,&\text{其他情况}.
+\end{cases}
+\]
+例如 $\Lambda(2)=\log2$、$\Lambda(4)=\log2$、$\Lambda(8)=\log2$，而 $\Lambda(6)=0$。它把素数幂保留下来，正好与 Euler 乘积的对数导数配合。
+
+对实数 $x\ge1$，令
+\begin{align}
+S(x)&=\sum_{1\le n\le x}\Lambda(n)\left(\frac{x}{n}-1\right),\label{eq:S}\\
+G(x)&=S(x)-x\log x+(1+\gamma)x,\label{eq:G}
+\end{align}
+其中 $\gamma$ 是 Euler 常数，$\log$ 为自然对数。求和范围中的 $n$ 是整数。新项在 $x=n$ 时的权重为零，所以跨过一个素数幂时不会突然给 $S$ 加一个非零跳跃。更精确地，在任意紧的 $x$ 区间内，$S$ 是有限多个连续函数 $\Lambda(n)\max\{x/n-1,0\}$ 的和；因此 $S$、$G$ 及 $g(u)=G(e^u)$ 都连续。
+
+例如
+\[
+S(4)=\log2+\frac13\log3;
+\]
+虽然 $4$ 是素数幂，它在此处的权重 $4/4-1$ 恰好为零。
+
+\Expl{平滑不只是为了把图画得好看。权重 $x/n-1$ 的积分可以精确计算，随后会产生一个分母 $s(s-1)$。减去的主项则消掉本来由 $\zeta$ 在 $1$ 的极点造成的干扰。}
+
+\begin{lemma}[无需 RH 的粗增长界]
+\label{lem:growth}
+存在常数 $C_0>0$，对所有 $x\ge1$ 有 $|G(x)|\le C_0x^2$。
+\end{lemma}
+\begin{proof}
+因为 $0\le\Lambda(n)\le\log n\le n$，求和项非负，且
+\[
+0\le S(x)\le x\sum_{1\le n\le x}\frac{\Lambda(n)}n
+\le x\lfloor x\rfloor\le x^2.
+\]
+再由 $\log x\le x$ 和 $x\le x^2$，
+\[
+|G(x)|\le x^2+x^2+(1+|\gamma|)x^2
+=(3+|\gamma|)x^2.
+\]
+可以取 $C_0=3+|\gamma|$。
+\end{proof}
+
+\section{亲手算出 Mellin 变换}
+先在 $\Rea s>2$ 定义
+\[
+\Phi(s)=\int_1^\infty G(x)x^{-s-1}\dd x.
+\]
+上面的粗界保证绝对收敛。对每个正整数 $n$，
+\begin{align*}
+\int_n^\infty\left(\frac{x}{n}-1\right)x^{-s-1}\dd x
+&=\frac1n\frac{n^{1-s}}{s-1}-\frac{n^{-s}}s\\
+&=\frac{n^{-s}}{s(s-1)}.
+\end{align*}
+Euler 乘积在绝对收敛区域给出
+\[
+-\frac{\zeta'(s)}{\zeta(s)}
+=\sum_{n=1}^\infty\frac{\Lambda(n)}{n^s}.
+\]
+交换求和与积分的绝对收敛性可由
+$\sum\Lambda(n)n^{-\Rea s}<\infty$ 及刚算出的实参数积分检验。
+同时，
+\[
+\int_1^\infty x^{-s}\dd x=\frac1{s-1},\qquad
+\int_1^\infty(\log x)x^{-s}\dd x=\frac1{(s-1)^2}.
+\]
+代入定义得到
+\begin{equation}
+\boxed{\displaystyle
+\Phi(s)=-\frac{\zeta'(s)}{s(s-1)\zeta(s)}
+-\frac1{(s-1)^2}+\frac{1+\gamma}{s-1}.}
+\label{eq:Phi}
+\end{equation}
+这个等式先在收敛区域成立，右边随后给出 $\Phi$ 的亚纯延拓。
+
+\section{为什么 \texorpdfstring{$s=1$}{s=1} 不留下一个假极点}
+$\zeta$ 在 $1$ 的展开为
+\[
+\zeta(s)=\frac1{s-1}+\gamma+O(s-1).
+\]
+令 $h(s)=(s-1)\zeta(s)$，在 $1$ 延拓为 $h(1)=1$。则
+$h'(1)=\gamma$，且 $h$ 在 $1$ 的一个邻域内没有零点。式\eqref{eq:Phi}可改写为
+\begin{equation}
+\Phi(s)=-\frac{h'(s)/h(s)+1-(1+\gamma)s}{s(s-1)}.
+\label{eq:Phi-regularized}
+\end{equation}
+分子在 $s=1$ 等于 $\gamma+1-(1+\gamma)=0$，所以分子含有因子 $s-1$。除去它后，$\Phi$ 在 $1$ 是全纯的。
+
+\Expl{如果不先消掉这一项，后面的“发现极点就发现零点”会被 $\zeta$ 本来的极点干扰。式\eqref{eq:G}中的校正项正是为此选择的。}
+
+\section{每个零点都留下一个真正的极点}
+设 $\rho\ne0,1$ 是 $\zeta$ 的 $m$ 重零点，$m\ge1$。在它的邻域写
+\[
+\zeta(s)=(s-\rho)^m a(s),\qquad a(\rho)\ne0.
+\]
+于是
+\[
+\frac{\zeta'(s)}{\zeta(s)}=
+\frac m{s-\rho}+\frac{a'(s)}{a(s)}.
+\]
+代入式\eqref{eq:Phi}，得到
+\begin{equation}
+\Phi(s)=\frac{c_\rho}{s-\rho}+\text{一个在 $\rho$ 附近全纯的函数},
+\qquad c_\rho=-\frac{m}{\rho(\rho-1)}\ne0.
+\label{eq:residue}
+\end{equation}
+因此，在开右半平面 $\Rea s>0$，$\Phi$ 的极点恰好就是 $\zeta$ 的零点，且每个都是单极点。零点即使有较高重数，经过对数导数后也成为单极点，重数只进入非零系数 $c_\rho$。
+
+\section{为何可以省掉实极点的特殊分支}
+\begin{lemma}
+\label{lem:no-real-poles}
+$\Phi$ 在正实轴上没有极点。
+\end{lemma}
+\begin{proof}
+当实数 $r>1$ 时，$\zeta(r)=\sum n^{-r}>0$。当 $0<r<1$ 时，考虑配对后的级数
+\[
+\eta(r)=\sum_{n=1}^\infty\bigl((2n-1)^{-r}-(2n)^{-r}\bigr)>0.
+\]
+每一项严格为正，且级数收敛。更一般地，在任何紧集 $\Rea s\ge a>0$、$|s|\le M$ 上，
+\[
+\left|(2n-1)^{-s}-(2n)^{-s}\right|
+=\left|\int_{2n-1}^{2n}s t^{-s-1}\dd t\right|
+\le M(2n-1)^{-a-1}.
+\]
+所以配对级数局部一致收敛，定义 $\Rea s>0$ 中的全纯函数。在 $\Rea s>1$ 将偶数项分离，可得
+\[
+\eta(s)=(1-2^{1-s})\zeta(s).
+\]
+由恒等定理，该关系延续到 $\Rea s>0$ 且 $s\ne1$。对 $0<r<1$，分母 $1-2^{1-r}<0$，故
+\[
+\zeta(r)=\frac{\eta(r)}{1-2^{1-r}}<0.
+\]
+这排除了所有正实零点；$s=1$ 在 $\Phi$ 中又已可去，因此没有正实极点。
+\end{proof}
+
+最后令
+\begin{equation}
+g(u)=G(e^u),\qquad u\ge0.
+\label{eq:g}
+\end{equation}
+换元 $x=e^u$ 后，
+\begin{equation}
+\Phi(s)=\int_0^\infty g(u)e^{-su}\dd u,
+\qquad |g(u)|\le C_0e^{2u},\qquad \Rea s>2.
+\label{eq:Laplace}
+\end{equation}
+这样，零点已被转化为一个有实值输入的拉普拉斯变换的极点。

@@ -1,0 +1,91 @@
+Lean 源码汇编、调用入口和内核证明导出
+整理日期：2026-11-22（北京时间）
+
+一、三个文件层次
+
+1. RH_AllSources.lean 是原工程 Lean 正文的无损单文件汇编。每个原始模块只按其路径收录一次，正文不改动；原 import、private、namespace、local、open scoped、选项等都保留。模块按已收录内部依赖的拓扑顺序排列。每个模块边界记录原路径、模块名、字节数和 SHA256；另附字节偏移和行号索引。因此可以从这一个文件恢复原模块树，不依赖旁边的索引文件。
+
+它是可读、可搜索和可恢复的源码档案，尚不是一个经过 Lean 编译的单体模块。Lean 的 import 属于文件头，源文件还具有各自的名称、私有声明与局部作用域。简单删除 import 或加若干 namespace 不能保证保留原来的解释和证明。这里没有用 sorry、axiom 或占位声明替换原证明。
+
+2. RHEntry.lean 是放在完整原工程中调用已有定理的极小入口。它 import Main，调用原来的 riemannHypothesis，并提供 #print axioms。它没有把依赖源码复制进来，因此不能代替全源码汇编。入口在本轮尚未完成实际 Lean 编译；需要原工程、固定的工具链和已经构建的依赖。
+
+3. solution.ndjson 是 elaborator 之后、面向内核检查器的证明项导出。它包含表达式、声明和依赖的编码。它与人的证明说明、Lean 源码汇编都不同。#print 某个定理一般仍显示对其他命名定理的引用，不等于已经展开全部依赖；本次源码导出程序也不产生这样的内核文件。
+
+二、原公开定理入口
+
+src/Main.lean 中的原样公开入口是：
+
+theorem riemannHypothesis : RiemannHypothesis := rhOfAll
+theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine := rhOfAll
+theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf := allChi
+theorem LFunction_eq_zero_re : DirichletLZerosOnLine := claimAll.2.1
+theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine := critAll
+
+第一项使用 Mathlib 的 RiemannHypothesis 定义。Statements.lean 也写出了单独的 ζ 零点陈述。它们的内容和依赖核验范围应当分别检查，不能仅从文件名得出结论。
+
+三、无损汇编工具使用
+
+Python 3.11 或更新版本；只使用标准库，无需启动 Lean。
+
+生成：
+  python3 export_lean_bundle.py export --project-root /绝对路径/lean --output /输出路径/RH_AllSources.lean --require-closed-project-imports
+
+默认源码目录为项目内 src。若不同，可另加 --source-root /绝对路径/源码目录。
+
+逐模块校验并与原工程比较：
+  python3 export_lean_bundle.py verify --bundle RH_AllSources.lean --against-root /绝对路径/lean
+
+恢复：
+  python3 export_lean_bundle.py restore --bundle RH_AllSources.lean --destination /空目录/lean
+
+恢复目录必须不存在或为空，工具不会覆盖已有项目。恢复会逐模块验证字节数与 SHA256。附带的 lean-toolchain、lakefile.toml、lake-manifest.json 等配置也会恢复。Mathlib 等外部依赖不在作者这份源码档案中，仍需使用原配置取得它们。
+
+同内容但不同模块名的源文件不会被删除，因为路径参与 Lean 的模块语义。duplicates.jsonl 只报告相同字节，不把不同模块误当作可删除重复文件。dependencies.jsonl 记录源文件头的直接 import 边；它不是声明级或证明项级的完整依赖图。catalog.sqlite 是可再生扫描缓存，可不打包。
+
+四、入口调用和检查层级
+
+原工程工具链：leanprover/lean4:v4.33.1。
+Mathlib 固定 commit：0df444a360eaa60ab8c11dca51a86af692955474。
+
+在完整工程、依赖和原编译环境准备好后，可构建原 Main，再将 RHEntry.lean 放进 src，并运行：
+  lake build Main
+  lake env lean src/RHEntry.lean
+
+这是运行说明，不是本轮已经执行完成的记录。
+
+#print axioms 检查声明的公理依赖；它不能独自证明自然语言题意与所证明的形式命题一致。官方还区分 .olean 的内核重放和 comparator 的命题比对、外部内核检查。当前官方手册的重放示例使用 lean4checker --fresh；2026 年这份工程的社区核验材料也记录了 leanchecker、lean4lean 和其他检查器。不同工具链可执行文件名称和格式版本必须按实际版本核对，不把不同版本混用。
+
+五、已公开的完整内核导出
+
+来源页：https://math.mit.edu/~drew/grh/
+直接下载：https://math.mit.edu/~drew/grh/solution.ndjson.zst
+
+压缩文件字节数：7,699,933,588
+压缩文件 SHA256：61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381
+解压后字节数：61,570,595,788
+解压后 SHA256：5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e
+
+这是来源页提供的已有导出，不是本轮重新生成或重新核验的文件。来源记录导出器为 lean4export v4.33.0（15f6055e），以 Lean v4.33.1 构建，目标以原社区 export-targets.txt 为准。
+
+来源页给出的解压命令是：
+  zstd -d --long=30 solution.ndjson.zst
+
+请保留源页的命题比较配置及独立 challenge；challenge 中的 sorry 是待核对命题的占位，不属于 solution 的证明。不要把 challenge 当作证明文件，也不要把这些占位加入源码汇编。
+
+本轮没有下载并解压这份约 61.6 GB 的内核证明，也没有在当前机器上运行其完整 comparator 或独立内核复核。其公开外部核验结果与本轮字节汇编校验分别记录。
+
+六、官方语义和核验文档
+
+Lean 源文件与模块：
+https://lean-lang.org/doc/reference/latest/Source-Files-and-Modules/
+
+命名空间与节作用域：
+https://lean-lang.org/doc/reference/latest/Namespaces-and-Sections/
+
+证明核验：
+https://lean-lang.org/doc/reference/latest/ValidatingProofs/
+
+内核导出格式：
+https://lean-lang.org/doc/reference/latest/External-Kernels/
+
+这些是当前手册页面；原工程的实际构建仍由所固定的 v4.33.1 工具链决定。脚本的字节校验、依赖排序、恢复结果和原工程 Lean 编译是不同检查，不互相替代。

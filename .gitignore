@@ -1,0 +1,12 @@
+downloads/
+restored/
+*.zip
+*.zst
+RH_AllSources.lean
+RH_AllSources.index.jsonl
+RH_AllSources.dependencies.jsonl
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.token

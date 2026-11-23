@@ -1,0 +1,212 @@
+# RH / Dirichlet GRH 末端数学转写与复核记录
+
+## 交付与范围
+
+- `endpoint_math.tex`：可直接由主 LaTeX 文档 `\input` 的中文章节，不包含 `\documentclass`。完整展开 EveryCharacter 的模 1 特化、RH 的完备化路线、公开主端点实际使用的 Gamma—余弦路线、边界检查、本原 Dirichlet 特征反射与非本原有限 Euler 因子。
+- `EndpointReduction.lean`：仅导入指定官方 mathlib 的小型条件推导，未导入原大型工程。
+- 本任务只读取了所列原工程源码，未执行原工程代码。小型自写复核文件在官方环境中实际编译通过，详见下文。
+- EveryCharacter 在原工程中是已给出证明项的核心定理接口。本章将它作为引用定理；本章没有展开它的全部上游证明，不能据此说原工程缺失该证明。也不能把末端短证明说成已把原工程全部数学逐层写成了论文。
+
+## 精确输入与五个公开端点
+
+源根：`research/riemann_lean_20261121/source/lean/src/`。
+
+### EveryCharacter
+
+定义在 `Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean:13`：
+
+```lean
+def UpperTheory.EveryCharacter : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    1 / 2 < s.re → (χ ≠ 1 ∨ s ≠ 1) →
+      DirichletCharacter.LFunction χ s ≠ 0
+```
+
+`[NeZero N]` 排除零模数；`1` 是主特征。析取 `(χ ≠ 1 ∨ s ≠ 1)` 只排除主特征在 `s = 1` 的极点。
+
+以下接口定义的数学内容相同：
+
+- `UpperTheory.EveryCharacter`。
+- `Claim.HalfPlane`，`CharacterBoxes/HalfPlane.lean:3`。
+- `DirichletLNonvanishingRightOfHalf`，`Statements.lean:6`。
+
+`MainConclusion.lean:10` 中提供：
+
+```lean
+theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=
+  UpperTheory.FinalTheorems.everyCharacter_of_row
+    UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+```
+
+这里是源代码中的定理应用，并不是 `axiom EveryCharacter`。本章未向上展开 `everyCharacter_of_row` 的所有依赖；那是其他章节的任务。
+
+### 公开接口
+
+`Main.lean` 中的五项声明：
+
+| 行 | 名称 | 数学内容 |
+|---|---|---|
+| 4 | `riemannHypothesis` | 官方 `RiemannHypothesis` |
+| 6 | `riemannZeta_eq_zero_re` | 全部非平凡 ζ 零点的实部为 1/2，显式排除负偶数与 s=1 |
+| 8 | `LFunction_ne_zero_of_half_lt_re` | EveryCharacter 的精确右半平面非消失陈述 |
+| 10 | `LFunction_eq_zero_re` | 任意 Dirichlet 特征在开临界带中的零点实部为 1/2 |
+| 12 | `LFunction_eq_zero_re_of_isPrimitive` | 上项本原特征版本 |
+
+`Statements.lean:3,6,10,14` 给出相应的类型定义。
+
+## 公开 RH 的实际调用路线
+
+```text
+Main.riemannHypothesis（源码中的全局名 riemannHypothesis）
+  ← rhOfAll
+  ← Formalism.VW.rh_of_every allChi
+  ← Formalism.VW.rh_of_right (模1特化得到的ζ右半平面非消失)
+```
+
+- `Supplements/Kernels/MainTheorems.lean:7`：`allChi` 引用 `UpperTheory.FinalTheorems.everyCharacter`。
+- 同文件第9行：`rhOfAll` 引用 `Formalism.VW.rh_of_every allChi`。
+- `Formalism/GammaFactorNonvanishing/CritLine.lean:29`：利用官方 `LFunction_modOne_eq` 得到 ζ 非消失，再调用 `rh_of_right`。
+- `Formalism/GammaFactorNonvanishing/RhOfRight.lean:5`：未完备函数方程路线。
+
+### 函数方程和非消失因子
+
+令 `t = 1 − s`，对 `Re(s) < 1/2` 的候选非平凡零点，得到 `Re(t) > 1/2`。
+
+官方函数方程实际是：
+
+\[
+\zeta(1-t)=2(2\pi)^{-t}\Gamma(t)\cos(\pi t/2)\zeta(t),
+\]
+
+前提 `t ≠ 1` 且 `∀n ∈ ℕ, t ≠ −n`。不要只读官方注释中的另一种等价正弦形式，数学稿已按实际 Lean 等式写出。
+
+依次证明：
+
+1. `2(2π)^(−t) ≠ 0`，正实底数的复幂不为零。
+2. `Γ(t) ≠ 0`，因为 `Re(t) > 0`。
+3. `ζ(t) ≠ 0`，使用引用的核心输入。
+4. `cos(πt/2) ≠ 0`。若为零，则 `t = 2k+1`，从而 `s = −2k`，`k ∈ ℤ`。`k<0` 导致 `Re(s)≥2`；`k=0` 导致 `s=0`；`k>0` 导致负偶数平凡零点。三者分别与已知条件矛盾。
+
+全部因子非零与左侧 `ζ(s)=0` 矛盾。这条路线不依赖先证明临界带定位。
+
+## 工程中的另一条 RH 路线：完备化
+
+- `CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean:211`：ζ 右半平面特化。
+- 同文件第215行：`UpperTheory.riemannHypothesis_of_everyCharacter`。
+- `CharacterBoxes/MainConclusion.lean:13` 引用这一条替代路线。
+- `CharacterBoxes/ClaimStrip.lean:75` 的 `Claim.zeta` 则先按实部区域分类，开带内使用 Dirichlet strip 定理，左侧与边界使用完备函数方程。
+
+重要精确事实：
+
+\[
+\Gamma_{\mathbb R}(s)=\pi^{-s/2}\Gamma(s/2),\qquad
+s\ne0\Longrightarrow\zeta(s)=\Lambda(s)/\Gamma_{\mathbb R}(s),
+\]
+
+\[
+\Lambda(1-s)=\Lambda(s),\qquad \zeta(0)=-1/2.
+\]
+
+Lean 的 Gamma 总函数在经典极点处取0，因此源码中有
+
+\[
+\Gamma_{\mathbb R}(s)=0\iff\exists n\in\mathbb N:s=-2n.
+\]
+
+这是总函数约定，不是经典 Gamma 函数存在零点。候选非平凡 ζ 零点首先排除 `s=0`，再排除所有负偶数，才能把 `ζ(s)=0` 消元成 `Λ(s)=0`。
+
+### Re(s)=0 边界
+
+如果采用 `Claim.zeta` 的分类路线，则对 `Re(s)≤0`，反射点满足 `Re(1−s)≥1`。必须使用官方 **闭** 半平面非消失 `riemannZeta_ne_zero_of_one_le_re`；只有欧拉乘积给出的 `>1` 结论不足以覆盖虚轴。点 `s=0` 已由 `ζ(0)=−1/2` 单独排除。
+
+## Dirichlet 临界线论证
+
+### 本原特征
+
+`Formalism/GammaFactorNonvanishing/CritLine.lean:6,11` 以及 `ClaimStrip.lean:35,42`。
+
+令 `a(χ)=0`（偶特征）或 `1`（奇特征），则
+
+\[
+g_\chi(s)=\Gamma_{\mathbb R}(s+a(\chi)).
+\]
+
+在 `Re(s)>0` 时因子非零。源码完备函数采用未乘导子幂的归一化：
+
+\[
+\mathcal L(\chi,s)=g_\chi(s)L(\chi,s).
+\]
+
+用于换写的精确式子是商公式，条件 `s≠0 ∨ N≠1`。
+
+本原特征函数方程：
+
+\[
+\mathcal L(\chi,1-s)=N^{s-1/2}\varepsilon(\chi)\mathcal L(\chi^{-1},s).
+\]
+
+对逆特征应用函数方程，直接由 `\mathcal L(χ,s)=0` 得到 `\mathcal L(χ⁻¹,1−s)=0`。这个方向不需要消去 rootNumber 因子，也不需要额外证明它非零。
+
+### 非本原特征
+
+`ClaimStrip.lean:7,23,59`。
+
+对原特征 χ、导子 M、对应本原特征 ψ，
+
+\[
+L(\chi,s)=L(\psi,s)\prod_{p\mid N}(1-\psi(p)p^{-s}).
+\]
+
+当 `Re(s)>0` 时，
+
+\[
+|\psi(p)p^{-s}|\le p^{-\operatorname{Re}s}<1,
+\]
+
+因此每个有限 Euler 因子非零。把 χ 的开带内零点转移到 ψ，再用本原反射和 EveryCharacter，得到全部 Dirichlet 特征的开带结论。
+
+不能把 `Claim.Strip` 强化为包含 `Re(s)=0` 的声明；非本原有限 Euler 因子确实可能在边界为零。
+
+## 官方 mathlib 对照位置
+
+本地目录：`runtime/lean/mathlib4/`。
+
+- `Mathlib/NumberTheory/LSeries/RiemannZeta.lean`
+  - 106：`completedRiemannZeta_one_sub`。
+  - 151：`riemannZeta_zero`。
+  - 154：`riemannZeta_def_of_ne_zero`。
+  - 178：`riemannZeta_one_sub`。
+  - 185：`RiemannHypothesis`。
+- `Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean`
+  - `Gammaℝ`、`Gammaℝ_def`、`Gammaℝ_ne_zero_of_re_pos`、`Gammaℝ_eq_zero_iff`。
+- `Mathlib/Analysis/SpecialFunctions/Gamma/Beta.lean`
+  - 427：`Gamma_ne_zero` 及极点赋值约定的注释。
+- `Mathlib/NumberTheory/LSeries/DirichletContinuation.lean`
+  - 67：`LFunction_modOne_eq`。
+  - 150：`LFunction_changeLevel`。
+  - 207：`gammaFactor`。
+  - 259：`LFunction_eq_completed_div_gammaFactor`。
+  - 272：`rootNumber`。
+  - 284：`IsPrimitive.completedLFunction_one_sub`。
+- `Mathlib/NumberTheory/LSeries/Nonvanishing.lean:411`
+  - `riemannZeta_ne_zero_of_one_le_re`。
+
+## 小型官方环境复核：实际已完成
+
+工具链负责代理已编译 `EndpointReduction.lean`；本审校再次读取了编译日志与状态JSON。
+
+- Lean：4.33.1。
+- mathlib 提交：`0df444a360eaa60ab8c11dca51a86af692955474`（工具链代理固定的版本）。
+- 执行目录：`runtime/lean/mathlib4/`。
+- 调用：官方工具链 `lake env lean` 加本审校文件绝对路径。
+- 时间：2026-11-21 13:38:16—13:38:20 UTC，即北京时间21:38:16—21:38:20。
+- 退出码：0。
+- 耗时：4.622秒。
+- 源文件 SHA-256：`b174a2a9ff0552f05099ef686c395bc8aeac94c60e292cc49f2cd2e8387ba509`。
+- 原样一次通过，没有修改语法或补充导入。
+- 唯一警告：第149行建议在命题目标里用 `have` 替代 `haveI`，为风格提示，不是未证明目标。
+- `rh_of_right`、`rh_of_every`、`primitive_crit_line`、`dirichlet_crit_line` 的 `#print axioms` 均只列出 `[propext, Classical.choice, Quot.sound]`。
+- 日志：`runtime/lean/evidence/endpoint_reduction_compile.log`。
+- 状态：`runtime/lean/evidence/endpoint_reduction_compile_status.json`。
+
+**范围解释：** `EveryCharacter` 或 `ZetaRightNonvanishing` 是这些定理类型中的显式参数。它们不是 `#print axioms` 所列的全局公理，因此标准三公理输出不能解释为这个小文件本身证明了 EveryCharacter。本次本地通过证明的是末端条件蕴含与中文推导相符，不是对整个大型工程的本地重编译。原工程的外部完整验证证据应独立陈述。

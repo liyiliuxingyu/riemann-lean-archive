@@ -1,0 +1,73 @@
+This is LuaTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (INITEX)
+ restricted system commands enabled.
+(/usr/share/texlive/texmf-dist/tex/generic/tex-ini-files/luatexiniconfig.tex)
+(/usr/share/texlive/texmf-dist/tex/plain/base/plain.tex
+Preloading the plain format: codes, registers, parameters, fonts, more fonts,
+macros, math definitions, output routines, hyphenation
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/hyphen.tex)) (./xeCJK.dtx
+(./ctxdocstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3docstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+Utility: `docstrip' v2.6b <2022-09-03>
+English documentation    <2024-02-08>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)))
+
+Generating file(s) xeCJK.ins xeCJK.sty xeCJKfntef.sty xeCJK-listings.sty xunico
+de-addon.sty xunicode-extra.def xeCJK.cfg xeCJK-example-autofake.tex xeCJK-exam
+ple-fallback.tex xeCJK-example-subCJKblock.tex xeCJK-example-CJKecglue.tex xeCJ
+K-example-checksingle.tex xeCJK-example-CJKfntef.tex xeCJK-example-punctstyle.t
+ex xeCJK-example-verbatim.tex xeCJK-example-CM.tex xeCJK-example-listings.tex x
+eCJK-example-mathblock.tex xunicode-symbols.tex README.md 
+
+Processing file xeCJK.dtx (install) -> xeCJK.ins
+                          (package) -> xeCJK.sty
+                          (fntef) -> xeCJKfntef.sty
+                          (listings) -> xeCJK-listings.sty
+                          (xunicode) -> xunicode-addon.sty
+                          (xunextra) -> xunicode-extra.def
+                          (config) -> xeCJK.cfg
+                          (ex-autofake) -> xeCJK-example-autofake.tex
+                          (ex-fallback) -> xeCJK-example-fallback.tex
+                          (ex-block) -> xeCJK-example-subCJKblock.tex
+                          (ex-ecglue) -> xeCJK-example-CJKecglue.tex
+                          (ex-single) -> xeCJK-example-checksingle.tex
+                          (ex-fntef) -> xeCJK-example-CJKfntef.tex
+                          (ex-punctstyle) -> xeCJK-example-punctstyle.tex
+                          (ex-verb) -> xeCJK-example-verbatim.tex
+                          (ex-cm) -> xeCJK-example-CM.tex
+File xeCJK.dtx ended by \endinput.
+Lines  processed: 14330
+Comments removed: 4880
+Comments  passed: 3
+Codelines passed: 9371
+
+
+Processing file xeCJK.dtx (ex-listings) -> xeCJK-example-listings.tex
+                          (ex-mathblock) -> xeCJK-example-mathblock.tex
+                          (xunicode-symbols) -> xunicode-symbols.tex
+                          (readme) -> README.md
+File xeCJK.dtx ended by \endinput.
+Lines  processed: 14330
+Comments removed: 4880
+Comments  passed: 3
+Codelines passed: 9371
+
+Overall statistics:
+Files  processed: 2
+Lines  processed: 28660
+Comments removed: 9760
+Comments  passed: 6
+Codelines passed: 18742
+)
+No pages of output.
+Transcript written on xeCJK.log.

@@ -1,0 +1,42 @@
+This is LuaTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (INITEX)
+ restricted system commands enabled.
+(/usr/share/texlive/texmf-dist/tex/generic/tex-ini-files/luatexiniconfig.tex)
+(/usr/share/texlive/texmf-dist/tex/plain/base/plain.tex
+Preloading the plain format: codes, registers, parameters, fonts, more fonts,
+macros, math definitions, output routines, hyphenation
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/hyphen.tex)) (./zhnumber.dtx
+(./ctxdocstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3docstrip.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+Utility: `docstrip' v2.6b <2022-09-03>
+English documentation    <2024-02-08>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)))
+
+Generating file(s) zhnumber.ins zhnumber.sty zhnumber-utf8.cfg zhnumber-big5.cf
+g zhnumber-gbk.cfg README.md 
+
+Processing file zhnumber.dtx (install) -> zhnumber.ins
+                             (package) -> zhnumber.sty
+                             (config,utf8) -> zhnumber-utf8.cfg
+                             (config,big5) -> zhnumber-big5.cfg
+                             (config,gbk) -> zhnumber-gbk.cfg
+                             (readme) -> README.md
+File zhnumber.dtx ended by \endinput.
+Lines  processed: 2273
+Comments removed: 795
+Comments  passed: 0
+Codelines passed: 1409
+
+)
+No pages of output.
+Transcript written on zhnumber.log.
