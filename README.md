@@ -8,11 +8,11 @@
 
 `project/` 提供可直接浏览的 267 个工程成员，包括中文稿、PDF、构建材料和选取的源码；3 个巨型 Lean 汇编/索引成员保留在完整工程 ZIP 中。`audits/` 保存 2026-11-23 的两份有限审查及复核证据。
 
-普通 Git 文件保存本说明、公开清单、恢复工具、可浏览工程成员和两份有限审查包。完整工程、巨型源码汇编及注释分卷作为 Releases 附件交付。**当前状态：文件已准备，GitHub 上传尚未完成。** 以下是待上传文件的准确清单；上传完成后应以实际 Release 页面和资产链接为准。
+普通 Git 文件保存本说明、公开清单、恢复工具、可浏览工程成员和两份有限审查包。完整工程、巨型源码汇编及注释分卷作为 Releases 附件交付。**当前状态：281 个仓库文件已上传核对；60 个 Release 附件全部上传并通过 SHA-256 核对。** [打开完整 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)。
 
 | 文件或资料 | 内容与大小 | 交付位置 |
 | --- | --- | --- |
-| `黎曼猜想_人类可读证明与续作工程.zip` | 最新第二版完整工程，270 个文件；286,288,695 字节 | Release 附件 |
+| [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/riemann-human-readable-project.zip) | 最新第二版完整工程，270 个文件；286,288,695 字节 | Release 附件 |
 | `RH_AllSources.lean` | 175,187 个原 Lean 模块及 3 个配置文件的无损汇编；1,101,883,390 字节 | Release 附件；工程 ZIP 内也有一份 |
 | `RH_AllSources.dependencies.jsonl` | 直接导入关系及相关索引；214,948,999 字节 | 完整工程 ZIP 内 |
 | `RH_AllSources.index.jsonl` | 随机访问索引；68,614,751 字节 | 完整工程 ZIP 内 |
@@ -139,7 +139,7 @@ python3 build_pdf.py 黎曼猜想_人类可读证明主线.tex
 
 ## 仓库中的小型工具与附件清单
 
-[release-assets.public.json](release-assets.public.json) 列出全部 60 个预定 Release 附件，当前状态为 `pending`；尚未填写实际下载地址。[SHA256SUMS.release.txt](SHA256SUMS.release.txt) 保存相应 SHA-256。将校验文件和下载附件放在同一目录，可用 `sha256sum -c SHA256SUMS.release.txt` 核验；缺失附件会明确报错。
+[release-assets.public.json](release-assets.public.json) 列出全部 60 个已上传 Release 附件，状态为 `complete`，并保存实际下载地址、附件 ID 和服务器文件名。[SHA256SUMS.release.txt](SHA256SUMS.release.txt) 保存相应 SHA-256。将校验文件和下载附件放在同一目录，可用 `sha256sum -c SHA256SUMS.release.txt` 核验；缺失附件会明确报错。
 
 本仓库的三个 `tools/` 文件从完整工程原样复制，来源与哈希见 [tools/SOURCE.json](tools/SOURCE.json)。如果只下载了独立 `RH_AllSources.lean`，并将它放在仓库根目录的 `downloads/` 下，可直接运行：
 
