@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "verifier": "verify_annotations/1.0",
+  "manifest": "/workspace/scratch/e8ff28430def/output/solution_ndjson_annotated/parts/parts.jsonl",
+  "manifest_sha256": "89ee33df251814f5bad5b464eb477c6c1168ae3c1f20b0c36fe818f3c5a10be8",
+  "parts_verified": 57,
+  "zstd_frames": 57,
+  "records": 1080769508,
+  "first_line": 1,
+  "last_line": 1080769508,
+  "original_bytes": 61570595788,
+  "original_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "expected_original_bytes": 61570595788,
+  "expected_original_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "compressed_bytes": 18876901037,
+  "annotated_bytes": 168547118127,
+  "last_original_line_has_lf": true,
+  "restored_file": null,
+  "checks": ["all compressed sizes and SHA-256 values", "all original volume sizes and SHA-256 values", "all annotated byte counts", "one nonempty annotation per original row", "globally consecutive source line numbers", "basic JSON object-line boundaries", "all manifest record ranges and counts", "global original byte count and SHA-256"],
+  "full_json_semantic_validation": false,
+  "lean_kernel_verification": false,
+  "elapsed_seconds": 257.220548
+}

@@ -1,0 +1,14 @@
+{
+  "final_synthetic_roundtrip": "passed",
+  "files": {
+    "work/ndjson_annotation/tools/annotate_ndjson": {
+      "bytes": 322544,
+      "sha256": "75b5a33678b712ad2cc5f9ab39c49601034daf3275d065fec4e194b96c13a19a"
+    },
+    "work/ndjson_annotation/tools/annotate_ndjson.cpp": {
+      "bytes": 24923,
+      "sha256": "636bbe81c9a00222c036746340ac9de87cc4348f035e1f705ae46008caa84abe"
+    }
+  },
+  "command": "g++ -O3 -DNDEBUG -std=c++17 -pthread annotate_ndjson.cpp vendor/simdjson.cpp -lzstd -lcrypto -o annotate_ndjson"
+}

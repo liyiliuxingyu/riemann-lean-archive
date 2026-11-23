@@ -1,0 +1,60 @@
+{
+  "scope": "Only complete-line acquired prefix, NOT full solution.ndjson",
+  "source": "source/prefix.ndjson",
+  "input_bytes": 7864317,
+  "input_sha256": "f959708c341f065e3b4e29df328f385eb34481462bf1ba9a3fe9c94dc3091380",
+  "source_line_range_inclusive": [
+    1,
+    147492
+  ],
+  "record_counts": {
+    "app": 93353,
+    "axiom": 3,
+    "bvar": 31,
+    "const": 5048,
+    "def": 964,
+    "forallE": 15518,
+    "imax": 7,
+    "inductive": 197,
+    "lam": 15731,
+    "letE": 243,
+    "max": 31,
+    "meta": 1,
+    "natVal": 51,
+    "num": 5231,
+    "opaque": 1,
+    "param": 21,
+    "proj": 409,
+    "quot": 4,
+    "sort": 41,
+    "str": 9131,
+    "strVal": 36,
+    "succ": 22,
+    "thm": 1418
+  },
+  "observed_variant_count": 23,
+  "supported_but_unobserved_variants": [
+    "mdata"
+  ],
+  "table_entry_counts_including_predefined": {
+    "NameIdx": 14363,
+    "LevelIdx": 82,
+    "ExprIdx": 130461
+  },
+  "error_count": 0,
+  "errors": [],
+  "checks": [
+    "all known field names and field types",
+    "enum values",
+    "natural literal string encoding",
+    "all table references precede use",
+    "no duplicate index definitions"
+  ],
+  "not_performed": [
+    "full-file download or checksum verification",
+    "Lean expression type checking",
+    "binder scope validation",
+    "kernel verification",
+    "target theorem identification or proof assessment"
+  ]
+}

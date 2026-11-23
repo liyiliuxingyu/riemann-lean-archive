@@ -1,0 +1,97 @@
+逐行注释示例：均选自完整源文件的真实记录
+每类只选第一次出现的记录，@line 保留原文件行号；以下不是连续的源文件。
+完整数据见全部 solution_annotated.partNNN.txt.zst 分卷。
+此样本覆盖23种实际记录；mdata格式由官方规范说明，不在此人工编造输入。
+
+【meta】
+-- @line 1 导出元信息：格式="3.1.0"；导出器="lean4export"，版本="3.1.0"；Lean版本="4.33.1"，提交="819816b2e0a3bf405af45ae5c7af2491d8f5bee6"。后续N/L/E分别为名称、宇宙层级、表达式表；N0匿名，L0为零层级。
+{"meta":{"exporter":{"name":"lean4export","version":"3.1.0"},"format":{"version":"3.1.0"},"lean":{"githash":"819816b2e0a3bf405af45ae5c7af2491d8f5bee6","version":"4.33.1"}}}
+
+【str】
+-- @line 2 N1：定义层级名称"Eq"，在前缀N0后追加字符串组件"Eq"。
+{"in":1,"str":{"pre":0,"str":"Eq"}}
+
+【param】
+-- @line 4 L1：以名称N2("u_1")标识的宇宙层级参数。
+{"il":1,"param":2}
+
+【sort】
+-- @line 6 E0：Sort(L1)，宇宙层级对应的类型宇宙。
+{"ie":0,"sort":1}
+
+【num】
+-- @line 11 N8：定义层级名称"a._@._internal._hyg.#0"，在前缀N7后追加数字组件0（此数字是组件值）。
+{"in":8,"num":{"i":0,"pre":7}}
+
+【bvar】
+-- @line 12 E1：绑定变量bvar，de Bruijn索引=0；0指使用该节点时的最内层绑定，具体绑定取决于使用路径的上下文。
+{"bvar":0,"ie":1}
+
+【forallE】
+-- @line 15 E4：Π依赖函数类型/全称类型：绑定名=N8，显式参数(default)；绑定类型=E2；主体=E3。
+{"forallE":{"binderInfo":"default","body":3,"name":8,"type":2},"ie":4}
+
+【const】
+-- @line 19 E7：常量引用：名称=N1；实例化宇宙层级=[L1]。
+{"const":{"name":1,"us":[1]},"ie":7}
+
+【app】
+-- @line 20 E8：函数应用，以E7为函数、E2为实参。
+{"app":{"arg":2,"fn":7},"ie":8}
+
+【lam】
+-- @line 56 E38：λ函数抽象：参数名=N14，显式参数(default)；绑定类型=E24；主体=E1。
+{"ie":38,"lam":{"binderInfo":"default","body":1,"name":14,"type":24}}
+
+【inductive】
+-- @line 60 归纳/互归纳声明组：类型1个，构造器1个，递归器1个。【归纳类型：名称=N1("Eq")；宇宙参数名称=[N2]；类型=E6；参数数=2；指标数=1；同组名称all=[N1]；构造器名称=[N9]；嵌套归纳辅助类型数=0；递归出现isRec=false；isUnsafe=false；构造器接受返回该类型的函数isReflexive=false】【构造器：名称=N9("Eq.refl")；宇宙参数名称=[N2]；类型=E12；所属归纳类型=N1；构造器序号=0；参数数=2；字段数=0；isUnsafe=false】【递归器：名称=N10("Eq.rec")；宇宙参数名称=[N11,N2]；类型=E37；同组名称all=[N1]；参数数=2；指标数=1；目标族数=1；次要前提数=1；支持K-like归约k=true；isUnsafe=false；计算规则={N9，字段数=0，右端表达式=E41}】
+{"inductive":{"ctors":[{"cidx":0,"induct":1,"isUnsafe":false,"levelParams":[2],"name":9,"numFields":0,"numParams":2,"type":12}],"recs":[{"all":[1],"isUnsafe":false,"k":true,"levelParams":[11,2],"name":10,"numIndices":1,"numMinors":1,"numMotives":1,"numParams":2,"rules":[{"ctor":9,"nfields":0,"rhs":41}],"type":37}],"types":[{"all":[1],"ctors":[9],"isRec":false,"isReflexive":false,"isUnsafe":false,"levelParams":[2],"name":1,"numIndices":1,"numNested":0,"numParams":2,"type":6}]}}
+
+【quot】
+-- @line 65 商类型包中的声明：名称=N15("Quot")；宇宙参数名称=[N11]；类型=E43；kind=type（商类型）。
+{"quot":{"kind":"type","levelParams":[11],"name":15,"type":43}}
+
+【succ】
+-- @line 123 L4：宇宙层级后继succ(L2)。
+{"il":4,"succ":2}
+
+【def】
+-- @line 160 定义声明：名称=N30("outParam")；宇宙参数名称=[N11]；类型=E116；定义值=E117；展开优先级提示hints=regular(1)；safety=safe；同组名称all=[N30]。hints影响展开次序，不禁止内核为类型检查展开；all不是依赖全集。
+{"def":{"all":[30],"hints":{"regular":1},"levelParams":[11],"name":30,"safety":"safe","type":116,"value":117}}
+
+【max】
+-- @line 172 L9：max(L4,L6)，取两宇宙层级的最大值。
+{"il":9,"max":[4,6]}
+
+【proj】
+-- @line 228 E170：结构字段投影：结构类型名=N31，零起字段序号=0，被投影的结构表达式=E1。
+{"ie":170,"proj":{"idx":0,"struct":1,"typeName":31}}
+
+【natVal】
+-- @line 509 E389：自然数字面量，十进制字符串="0"。
+{"ie":389,"natVal":"0"}
+
+【thm】
+-- @line 3505 定理声明：名称=N630("_private.Init.Prelude.#0.noConfusion_of_Nat.aux")；宇宙参数名称=[]；类型=E2696；证明项=E2702；同组名称all=[N630]。本行记录所给证明项，注释程序不替代内核验证。
+{"thm":{"all":[630],"levelParams":[],"name":630,"type":2696,"value":2702}}
+
+【letE】
+-- @line 4254 E3312：局部let：名称=N760，类型=E3266，取值=E3302，主体=E3311；nondep=false是elaborator标记，不能据此断定主体是否引用变量；默认导出器会把它归一化为false。
+{"ie":3312,"letE":{"body":3311,"name":760,"nondep":false,"type":3266,"value":3302}}
+
+【strVal】
+-- @line 11247 E8993：字符串字面量，内容="Lean"。
+{"ie":8993,"strVal":"Lean"}
+
+【imax】
+-- @line 13853 L27：imax(L2,L3)；第二参数为零时结果为零，否则取两层级的最大值。
+{"il":27,"imax":[2,3]}
+
+【axiom】
+-- @line 16847 公理声明（本行不带证明体）：名称=N2661("propext")；宇宙参数名称=[]；类型=E13681；isUnsafe=false。
+{"axiom":{"isUnsafe":false,"levelParams":[],"name":2661,"type":13681}}
+
+【opaque】
+-- @line 78908 不透明常量声明：名称=N8451("String.Internal.append")；宇宙参数名称=[]；类型=E68711；给定值=E68725；isUnsafe=false；同组名称all=[N8451]。其opaque声明性质与def的hints字段不同。
+{"opaque":{"all":[8451],"isUnsafe":false,"levelParams":[],"name":8451,"type":68711,"value":68725}}
+

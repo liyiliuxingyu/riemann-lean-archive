@@ -1,0 +1,14 @@
+[
+  {
+    "path": "LICENSE.lean4export",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  {
+    "path": "LICENSE.lean4",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/819816b2e0a3bf405af45ae5c7af2491d8f5bee6/LICENSE",
+    "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+    "bytes": 9160
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "decompress_returncode": -13,
+  "engine_returncode": 0,
+  "wall_seconds": 6.6269802540000455,
+  "peak_rss_kib": {
+    "decompress_kib": 524924,
+    "engine_kib": 49144
+  },
+  "max_lines": 10000000,
+  "decompress_sigpipe_expected": true
+}

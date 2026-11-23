@@ -1,0 +1,99 @@
+逐行注释分卷的独立校验与原文恢复
+工具：verify_annotations（C++17，版本 1.0）
+
+一、用途
+
+本工具读取注释包的 parts.jsonl 清单，按清单顺序逐卷解压 .txt.zst，检查每一条原始 JSON 物理行前面恰有一条非空注释：
+
+-- @line N 中文说明
+原始JSON行
+
+它独立于注释生成器：只用 simdjson 读取很小的分卷清单，不重新生成中文说明，也不重复对全部 JSON 作语义解析。
+
+默认运行只计算恢复后的原文哈希，不写出约 61.57 GB 的恢复文件。加上 --restore 才会实际写出原始 solution.ndjson。
+
+二、默认核对的完整原文
+
+原文字节数：61570595788
+原文 SHA-256：
+5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e
+
+工具默认使用这两个值。不要为了让失败变成成功而改成实际错误输出的值。
+
+清单内的每个分卷包含以下九个字段：
+file、first_line、last_line、records、original_bytes、original_sha256、annotated_bytes、compressed_bytes、compressed_sha256。
+
+分卷默认在清单所在目录查找，无需另外指定目录。若清单和分卷分开放，可用 --part-dir 指定分卷目录。清单的 file 必须是单一文件名，不接受含路径的名称。
+
+三、运行：只校验，不生成大文件
+
+把 parts.jsonl 和全部 .txt.zst 分卷放在同一个目录。假设命令行当前目录包含 verify_annotations：
+
+./verify_annotations --manifest /path/to/parts/parts.jsonl --report verification_report.json
+
+成功时退出码为 0，标准输出和指定报告包含 success: true。失败时退出码为 1，标准错误包含失败卷、正在处理的源行号和错误原因。
+
+报告路径必须不存在，以免覆盖已有结果。重复运行时换一个新报告文件名，或自行处理旧报告。
+
+工具会在标准错误输出每个已核验分卷及约每 10 秒一次的进度；这不影响标准输出中的最终 JSON 报告。若要保留运行日志：
+
+./verify_annotations --manifest /path/to/parts/parts.jsonl --report verification_report.json > verification_stdout.json 2> verification_progress.jsonl
+
+四、运行：校验并恢复完整原文
+
+./verify_annotations --manifest /path/to/parts/parts.jsonl --report restoration_report.json --restore /path/to/solution.ndjson
+
+至少需为恢复原文留出 61,570,595,788 字节可用空间，另需保留原有压缩分卷。恢复时逐字节保留源行，包括原始 LF；如果最后一行原本没有换行，工具也不会补换行。CRLF 原文同样逐字节保留。
+
+恢复过程中写入 /path/to/solution.ndjson.partial。只有所有分卷检查及全局原文哈希均通过后，才把结果发布为 /path/to/solution.ndjson。
+
+工具拒绝覆盖已存在的目标文件或 .partial 文件。失败时保留 .partial 作为未完成结果，但不会发布正式恢复文件；其内容尚未通过完整核验，不能当作原文使用。恢复完成时通过同目录硬链接安装正式文件，防止覆盖并发创建的同名文件，因此需要普通 Linux 文件系统支持硬链接。
+
+五、实际检查项目
+
+1. 清单字段完整，文件名不重复，分卷源行范围从 1 开始连续，records 与 first_line/last_line 一致。
+2. 每卷实际压缩字节数及 SHA-256 与清单一致。
+3. Zstandard 解压成功且帧完整；不接受截断帧或坏校验和。
+4. 每卷解压后的注释总字节数与 annotated_bytes 一致。
+5. 严格交替出现注释行和原文行。漏注释、多注释、只有注释没有原文均报错。
+6. 注释前缀必须是 -- @line ，后接规范十进制源行号、空格及非空内容；行号必须在全部分卷间连续。
+7. 原文行须有 JSON 对象的基本边界：去除首尾 JSON 空白后，以 { 开始、以 } 结束。这里不检查对象内部的全部 JSON 语法。
+8. 每卷抽出的原文数量、字节数和 SHA-256 均与清单一致。
+9. 各卷原文按清单顺序拼接后的总字节数和 SHA-256 与预期完整文件一致。
+10. 只有最后一个分卷的最后一条原文允许没有末尾 LF；中间分卷不允许把一条物理源行拆成两卷。
+
+不能从“校验成功”推出的结论：本工具不判断中文说明在数学上是否恰当，不完整解析原始 JSON 的内部语法，不重做 Lean 的类型检查，也不运行证明内核。它证明的是分卷完整性、逐行配对及原文能够按指定哈希无损恢复。
+
+六、构建
+
+附带的可执行文件是 Linux x86_64 动态链接版本。若系统库版本不兼容，使用源码重新编译。
+
+依赖：支持 C++17 的编译器，libzstd 开发库，OpenSSL libcrypto 开发库；simdjson 的固定版本源码和许可证已附在 vendor 目录。
+
+在 tools 目录运行：
+
+g++ -O3 -DNDEBUG -std=c++17 verify_annotations.cpp vendor/simdjson.cpp -lzstd -lcrypto -o verify_annotations
+
+工具本身不依赖 Python，也不依赖 zstd 命令行程序。
+
+Linux 预编译二进制的来源就是附带的 verify_annotations.cpp 和 vendor/simdjson.cpp；未调用网络服务，也不上传输入内容。
+
+七、小样本和特殊参数
+
+只有校验独立的小样本时，才同时覆盖预期字节数和哈希。例如已取得的前 147,492 行：
+
+./verify_annotations --manifest /path/to/prefix/parts.jsonl --expected-bytes 7864317 --expected-sha256 f959708c341f065e3b4e29df328f385eb34481462bf1ba9a3fe9c94dc3091380 --expected-records 147492 --report prefix_report.json
+
+--expected-bytes 和 --expected-sha256 必须同时给出，防止不小心把小样本和完整文件的预期值混用。
+
+--expected-records 可再指定预期总行数；即使不指定，每卷行数及全局连续性也始终检查。
+
+--io-buffer-bytes 控制每个压缩输入块和解压输出块大小，默认 4 MiB，可选 64 字节至 64 MiB。生产运行一般保持默认；很小的缓冲区用于测试行跨缓冲区时的行为。
+
+八、性能与测试
+
+工具用原生 memchr 扫描换行；每 8 MiB 批量更新原文 SHA-256，不为十亿条记录逐条调用 OpenSSL。原文行或注释行跨缓冲区时只保留少量状态，不在内存中保存完整长行。默认主要缓冲区约 16 MiB，另有 Zstandard、清单解析及系统 I/O 的开销；内存占用不随整个文件大小增长。
+
+test_verify_annotations.py 是可选的小样本回归测试，依赖 Python zstandard；正常验证无需运行它。它检查真实生成器输出的前 147,492 行，以及跨卷、无末尾换行、CRLF、超长行、坏注释、漏注释、多注释、错误哈希、截断 Zstandard 等情形。损坏注释测试会重新计算压缩层哈希，确认错误是由逐行结构检查检出。
+
+测试报告和真实全量运行的验证报告具有不同范围。前缀测试通过不等于全量校验已经完成；只有针对完整 parts.jsonl 成功运行的报告，才能用于说明本次全部分卷的原文完整性。

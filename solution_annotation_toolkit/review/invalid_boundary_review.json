@@ -1,0 +1,19 @@
+{
+  "binary_sha256": "684949d28fb58a83136b2a2d962d777b23c0a6937afa321e1f3f4619bc407509",
+  "tests": [
+    {
+      "case": "regular_out_of_uint32",
+      "expected_failure_line": 24,
+      "returncode": 1,
+      "stderr": "{\"event\":\"error\",\"line\":24,\"source_bytes\":1686,\"message\":\"regular hint exceeds UInt32\"}\n",
+      "success_summary_written": false
+    },
+    {
+      "case": "mdata_nonstring_value",
+      "expected_failure_line": 19,
+      "returncode": 1,
+      "stderr": "{\"event\":\"error\",\"line\":19,\"source_bytes\":1299,\"message\":\"INCORRECT_TYPE: The JSON element does not have the requested type.\"}\n",
+      "success_summary_written": false
+    }
+  ]
+}

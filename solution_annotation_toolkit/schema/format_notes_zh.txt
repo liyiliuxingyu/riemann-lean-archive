@@ -1,0 +1,102 @@
+Lean NDJSON 3.1.0：字段与中文注释说明
+
+1. 文件是什么
+
+solution.ndjson.zst 是经过 Zstandard 压缩的逐行 JSON 导出文件。解压后每一行是一个完整 JSON 对象：有的行定义名称，有的行定义宇宙层级，有的行定义共享表达式节点，还有的行打包声明。它不是原始 .lean 源文件；一行也通常不等于一条人类数学推理。
+
+本规范用于解释序列化字段和引用关系。给表达式加中文注释、检查编号是否存在，均不能代替 Lean 内核重新验证整个环境和证明项，也不能单凭文件名认定其中已经证明了某项猜想。
+
+2. 本次核实的版本
+
+真实文件前缀第 1 行是：
+{"meta":{"exporter":{"name":"lean4export","version":"3.1.0"},"format":{"version":"3.1.0"},"lean":{"githash":"819816b2e0a3bf405af45ae5c7af2491d8f5bee6","version":"4.33.1"}}}
+
+已读取并核对官方 leanprover/lean4export 的完整固定提交：
+15f6055e299ad5b89345e533cc2192f4cc00f659
+
+该提交的 format_ndjson.md 明确标为格式 3.1.0；Export.lean 的 exportMetadata 也写入导出器版本 3.1.0 和格式版本 3.1.0，与实际文件首行一致。网站报告的导出器仓库标签 v4.33.0、Lean 4.33.1 和格式 3.1.0 是三个不同概念。
+
+涉及绑定变量、let 标记、展开提示和归纳数据结构的语义，还核对了文件首行给出的 Lean 固定提交 819816b2e0a3bf405af45ae5c7af2491d8f5bee6 中的 src/Lean/Expr.lean、Declaration.lean、Level.lean。
+
+3. 三张独立编号表
+
+in：本行定义一个名称，注释写 Name#编号。Name#0 预先表示匿名名称。
+il：本行定义一个宇宙层级，注释写 Level#编号。Level#0 预先表示层级 0。
+ie：本行定义一个表达式，注释写 Expr#编号。表达式表没有预定义项，第一个实际表达式可编号为 0。
+
+三张表的编号可以相同，含义仍然不同。同一表内编号不得重复，表引用必须先有定义。编号不是原始行号，也不是数学证明步骤号。
+
+例如真实第 4 行 {"il":1,"param":2} 表示：定义 Level#1 为名称 Name#2 所代表的宇宙参数。数字 2 查名称表，不能查层级表。真实第 6 行 {"ie":0,"sort":1} 则定义 Expr#0 = Sort(Level#1)。
+
+某个常量表达式的 const.name 是名称表引用。名称必须先定义，但同名声明行可能稍后才出现；归纳声明组就会出现这种情况。
+
+4. 全部顶层记录种类
+
+元信息（1 种）：meta。
+名称（2 种）：str、num。
+宇宙层级（4 种）：succ、max、imax、param。
+表达式（11 种）：bvar、sort、const、app、lam、forallE、letE、proj、natVal、strVal、mdata。
+声明（6 种）：axiom、def、opaque、thm、quot、inductive。
+
+全部 24 种记录的精确字段、字段类型、引用所属表、枚举和逐类型中文注释范本，见 format_spec.json 的 record_variants。归纳声明的嵌套条目见 nested_structures：InductiveVal、ConstructorVal、RecursorVal、RecursorRule。
+
+inductive 行里 types、ctors、recs 分别装归纳类型、构造器和递归/归纳原理；recursor 的 rules 又装归约规则。完整注释应逐项解释，不应只写“包含多少个元素”而遗漏每项含义。
+
+5. 容易误读的字段
+
+bvar：de Bruijn 绑定距离。0 表示使用处最内层绑定，1 表示再外一层。它不是全局表达式编号。一个共享 bvar 节点在不同表达式路径下可以对应不同变量，不能只根据此行的前后位置给它强行指定变量名。
+
+lam：函数抽象项。forallE：依赖函数类型，也称 Pi 类型；命题情形下表示全称量化。两种记录本身均不能直接称为“证明完成”。其 type 位于原上下文，body 增加一层绑定。
+
+binderInfo：default 是显式参数；implicit 是隐式参数；strictImplicit 是严格隐式参数；instImplicit 是实例隐式参数。参数名只便于显示，实际绑定依靠 de Bruijn 索引。
+
+letE.nondep：elaborator 的非依赖 let/have 标记。true 时 body 仍可使用绑定变量；它不等于“body 中没有变量”。内核类型检查不验证这个标记。固定导出器默认去掉 mdata 时还把该标记统一设为 false，因此 false 也不能据以判断依赖。
+
+proj.idx：从 0 开始的字段序号。num.i：名称中的自然数分量。构造器 cidx、所有 num... 与 nfields：位置或计数。以上都不是名称、层级或表达式表引用。
+
+levelParams：宇宙参数的名称编号数组。const.us：实例化常量的宇宙层级编号数组。二者不能混用。
+
+natVal：自然数字面量用 JSON 字符串保存，避免浮点数精度丢失；应保留完整十进制值。strVal 和 mdata.data 中的文字属于数据，不能当作指令执行。
+
+def.hints：opaque、abbrev 或 {"regular":高度}，影响内核选择先展开哪个定义。这里的 opaque 不表示绝对禁止内核展开，也不等于顶层 opaque 声明。regular 的数值是 UInt32 定义高度，不是引用编号。这些提示也不同于 elaborator 的 reducible/irreducible 属性。
+
+def.safety：safe、unsafe 或 partial。应原样保留类别；partial 不能翻译成“数学证明只完成了一部分”。标签也不能代替本次独立验证的结果。
+
+all：同一个 mutual 块的声明名称；在归纳条目里则是同组归纳类型名称。它不是该声明的全部依赖清单。
+
+axiom：只有类型，没有证明值。thm：给出声明类型及其证明项引用。opaque：也有值，不能当作没有值的公理。注释须区分这些种类。
+
+isReflexive：归纳类型是否有一个构造器接受“返回该归纳类型的函数”作为参数，例如 (Nat → Tree) → Tree。它不表示某个二元关系满足自反律。
+
+recursor.k：是否支持 K-like 归约的标记，不是新增一条公理 K。numNested：嵌套归纳出现产生的辅助数据类型数。numMotives：递归/归纳目标族数量。numMinors：次要前提数量。
+
+6. 注释与异常处理
+
+阅读版应保留每一原始物理行及原行号，并为该行附上对应中文注释。原始 JSON 的字段顺序、数字和字符串不应被改写；移除新增注释后应能逐字节恢复输入。
+
+标准 NDJSON 不允许 // 注释。因此带 // 注释的阅读文件须明确标为文本阅读版，不能直接喂给期待纯 NDJSON 的核验程序。
+
+遇到未知顶层种类、未知受约束字段、未知枚举、缺失字段或类型不符时，必须保留原行，写明“未知/格式异常，未作语义解释”，记录位置并统计。不能猜译、静默跳过或宣称全部语义已解释。mdata.data 的键集合本来就是开放的，不应误报。
+
+即便原始大文件只取得前缀，也可以给该前缀完整逐行加注释，但必须说明准确行号范围，不能把前缀包装成整个文件。
+
+7. 来源与复核
+
+source_hashes.json 给出所有采用的官方固定源码 URL、字节数和 SHA-256。format_spec.json 内也包含这份来源记录。
+
+固定格式文档：
+https://github.com/leanprover/lean4export/blob/15f6055e299ad5b89345e533cc2192f4cc00f659/format_ndjson.md
+
+固定导出代码：
+https://github.com/leanprover/lean4export/blob/15f6055e299ad5b89345e533cc2192f4cc00f659/Export.lean
+
+固定参考解析代码：
+https://github.com/leanprover/lean4export/blob/15f6055e299ad5b89345e533cc2192f4cc00f659/Export/Parse.lean
+
+匹配输入自报版本的 Lean 核心源码：
+https://github.com/leanprover/lean4/tree/819816b2e0a3bf405af45ae5c7af2491d8f5bee6/src/Lean
+
+官方格式说明（可变的 latest 链接，作为补充）：
+https://lean-lang.org/doc/reference/latest/External-Kernels/
+
+注：固定提交里的参考 parser 会跳过第一行元信息，并对部分旧格式作兼容处理。仅“参考 parser 可以读取”不能替代严格格式审计，更不等于证明内核检查成功。

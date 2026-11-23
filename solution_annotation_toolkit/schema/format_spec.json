@@ -1,0 +1,1066 @@
+{
+  "document_kind": "Lean NDJSON source-pinned annotation specification; not a JSON Schema or kernel checker",
+  "schema_document_version": "1.0.0",
+  "language": "zh-CN",
+  "format_version": "3.1.0",
+  "exporter_source_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "exporter_repository_tag_reported_by_host": "v4.33.0",
+  "lean_commit_from_input_metadata": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "input_metadata_observed": {
+    "meta": {
+      "exporter": {
+        "name": "lean4export",
+        "version": "3.1.0"
+      },
+      "format": {
+        "version": "3.1.0"
+      },
+      "lean": {
+        "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+        "version": "4.33.1"
+      }
+    }
+  },
+  "input_metadata_line_sha256_with_lf": "c2bccb21f1ddc32cc5b098cfc347b6d4be68e9d1daea0ccca5f07ea3e5bd7cbf",
+  "version_note_zh": "固定提交的exportMetadata函数写入exporter.version=3.1.0及format.version=3.1.0，真实文件首行也如此。发布标签v4.33.0、Lean版本4.33.1与序列化格式版本3.1.0是不同概念。",
+  "sources": [
+    {
+      "id": "format_ndjson.md",
+      "repository": "leanprover/lean4export",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "path": "format_ndjson.md",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/format_ndjson.md",
+      "bytes": 6098,
+      "sha256": "f82a21e17e4258a1043895d0653ea4333bef8cb07aad2e3d6c1fc4be52b138e3"
+    },
+    {
+      "id": "Export.lean",
+      "repository": "leanprover/lean4export",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "path": "Export.lean",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/Export.lean",
+      "bytes": 15994,
+      "sha256": "1c60d571dc24bfb99e7cbb218d8d489919bbc871238f6db9c76248521fbea998"
+    },
+    {
+      "id": "Export/Parse.lean",
+      "repository": "leanprover/lean4export",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "path": "Export/Parse.lean",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/Export/Parse.lean",
+      "bytes": 20491,
+      "sha256": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286"
+    },
+    {
+      "id": "README.md",
+      "repository": "leanprover/lean4export",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/README.md",
+      "bytes": 1414,
+      "sha256": "98833b66efc1289df582d85faa79b253c83bcca27c9fdb073ba42bdf0ffe77c9"
+    },
+    {
+      "id": "lean-toolchain",
+      "repository": "leanprover/lean4export",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "path": "lean-toolchain",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4export/15f6055e299ad5b89345e533cc2192f4cc00f659/lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "id": "lean_core/Declaration.lean",
+      "repository": "leanprover/lean4",
+      "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "path": "src/Lean/Declaration.lean",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/819816b2e0a3bf405af45ae5c7af2491d8f5bee6/src/Lean/Declaration.lean",
+      "bytes": 21161,
+      "sha256": "fcb928c1686f0655279a790f92bd61f8c0d6df3be51a5eccaa2880de058e5e24"
+    },
+    {
+      "id": "lean_core/Expr.lean",
+      "repository": "leanprover/lean4",
+      "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "path": "src/Lean/Expr.lean",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/819816b2e0a3bf405af45ae5c7af2491d8f5bee6/src/Lean/Expr.lean",
+      "bytes": 87215,
+      "sha256": "b9a91d9d170201c2a3622b9c55d694466f54e0e1b8f6068a2d296ff98650169c"
+    },
+    {
+      "id": "lean_core/Level.lean",
+      "repository": "leanprover/lean4",
+      "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "path": "src/Lean/Level.lean",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/819816b2e0a3bf405af45ae5c7af2491d8f5bee6/src/Lean/Level.lean",
+      "bytes": 23650,
+      "sha256": "560a7b5fde58937f69e9cf85b96d33f0aafcac2a9aec64776347de5e611d1303"
+    }
+  ],
+  "supplementary_primary_reference": {
+    "url": "https://lean-lang.org/doc/reference/latest/External-Kernels/",
+    "section": "Lean Export Format 3.1.0",
+    "note_zh": "latest是可变链接，仅补充说明索引语义；本文件精确字段以已固定提交并记录SHA256的源码及文档为依据。"
+  },
+  "type_notation": {
+    "Nat": "JSON整数，>=0；bool不作为整数；必须精确保留数值。",
+    "Bool": "JSON true或false。",
+    "String": "JSON字符串，文本为数据，不是执行指令。",
+    "DecimalNatString": "仅十进制自然数的JSON字符串，producer通过Nat转字符串生成；不转float。",
+    "NameIdx": "名称表中的已有自然数编号。",
+    "LevelIdx": "层级表中的已有自然数编号。",
+    "ExprIdx": "表达式表中的已有自然数编号。",
+    "NameIdxDef": "在本行向名称表定义的新编号。",
+    "LevelIdxDef": "在本行向层级表定义的新编号。",
+    "ExprIdxDef": "在本行向表达式表定义的新编号。",
+    "Array<T>": "有序数组，元素逐个按T解释。",
+    "Tuple<A,B>": "恰好两项的有序数组。",
+    "Object<String,String>": "键和值都是字符串的开放对象；键集合不固定。"
+  },
+  "index_tables": {
+    "NameIdx": {
+      "definition_key": "in",
+      "predefined": {
+        "0": "Lean.Name.anonymous"
+      },
+      "pinned_producer_first_emitted_index": 1
+    },
+    "LevelIdx": {
+      "definition_key": "il",
+      "predefined": {
+        "0": "Lean.Level.zero"
+      },
+      "pinned_producer_first_emitted_index": 1
+    },
+    "ExprIdx": {
+      "definition_key": "ie",
+      "predefined": {},
+      "pinned_producer_first_emitted_index": 0
+    }
+  },
+  "index_rules_zh": [
+    "三张表互相独立；同一整数可在不同表表示完全不同的对象，不能跨表混用。",
+    "同一表的定义编号必须唯一；除两个预定义0号对象外，所有表引用必须先有定义行。",
+    "固定producer通过表大小分配编号，实际导出为稠密递增；这不是一般格式强制要求。注释器可以把此行为作为指定producer的额外检查，但不应声称任意稀疏编号都违背一般格式。",
+    "仅Name/Level/Expr表引用有前向定义约束；const.name已定义为名称，不表示同名声明行必须已输出。",
+    "bvar、num.i、proj.idx、hints.regular、cidx、numParams/numIndices/numNested/numFields/numMotives/numMinors/nfields是数值，不是表引用。",
+    "levelParams是NameIdx数组；const.us是LevelIdx数组。",
+    "编号本身不是原始行号、证明步骤号或内存地址。",
+    "名称显示成点分形式仅方便阅读，字符串分量本身可能含特殊字符；原分量与NameIdx必须保留，不能假装显示串一定是可复制的Lean源码。"
+  ],
+  "record_variants": {
+    "meta": {
+      "category": "metadata",
+      "shape": {
+        "meta": {
+          "exporter": {
+            "name": {
+              "type": "String",
+              "meaning_zh": "导出器名称。"
+            },
+            "version": {
+              "type": "String",
+              "meaning_zh": "导出器在文件中写入的自描述版本。"
+            }
+          },
+          "lean": {
+            "version": {
+              "type": "String",
+              "meaning_zh": "文件自报的 Lean 版本。"
+            },
+            "githash": {
+              "type": "String",
+              "meaning_zh": "文件自报的 Lean 源码提交。"
+            }
+          },
+          "format": {
+            "version": {
+              "type": "String",
+              "meaning_zh": "NDJSON 序列化格式版本。"
+            }
+          }
+        }
+      },
+      "comment_template_zh": "文件元信息：导出器={meta.exporter.name}，自报导出版本={meta.exporter.version}；格式={meta.format.version}；Lean={meta.lean.version}，提交={meta.lean.githash}。这是来源描述，不是本次运行的证明检查结果。"
+    },
+    "str": {
+      "category": "name",
+      "shape": {
+        "str": {
+          "pre": {
+            "type": "NameIdx",
+            "meaning_zh": "父名称/前缀名称引用。"
+          },
+          "str": {
+            "type": "String",
+            "meaning_zh": "追加的字符串名称分量。"
+          }
+        },
+        "in": {
+          "type": "NameIdxDef",
+          "meaning_zh": "本行新定义的名称编号。"
+        }
+      },
+      "comment_template_zh": "定义名称 Name#{in}：在前缀 Name#{str.pre} 后追加字符串分量 {str.str}。",
+      "reference_fields": {
+        "str.pre": "NameIdx"
+      },
+      "defines": {
+        "in": "NameIdx"
+      }
+    },
+    "num": {
+      "category": "name",
+      "shape": {
+        "num": {
+          "pre": {
+            "type": "NameIdx",
+            "meaning_zh": "父名称/前缀名称引用。"
+          },
+          "i": {
+            "type": "Nat",
+            "meaning_zh": "追加的自然数名称分量；不是名称表编号。"
+          }
+        },
+        "in": {
+          "type": "NameIdxDef",
+          "meaning_zh": "本行新定义的名称编号。"
+        }
+      },
+      "comment_template_zh": "定义名称 Name#{in}：在前缀 Name#{num.pre} 后追加数值分量 {num.i}。",
+      "reference_fields": {
+        "num.pre": "NameIdx"
+      },
+      "defines": {
+        "in": "NameIdx"
+      }
+    },
+    "succ": {
+      "category": "level",
+      "shape": {
+        "succ": {
+          "type": "LevelIdx",
+          "meaning_zh": "被加一的宇宙层级引用。"
+        },
+        "il": {
+          "type": "LevelIdxDef",
+          "meaning_zh": "本行新定义的层级编号。"
+        }
+      },
+      "comment_template_zh": "定义层级 Level#{il} = succ(Level#{succ})，即该宇宙层级加一。",
+      "reference_fields": {
+        "succ": "LevelIdx"
+      },
+      "defines": {
+        "il": "LevelIdx"
+      }
+    },
+    "max": {
+      "category": "level",
+      "shape": {
+        "max": {
+          "type": "Tuple<LevelIdx,LevelIdx>",
+          "meaning_zh": "恰好两个层级引用；取二者的最大层级。"
+        },
+        "il": {
+          "type": "LevelIdxDef",
+          "meaning_zh": "本行新定义的层级编号。"
+        }
+      },
+      "comment_template_zh": "定义层级 Level#{il} = max(Level#{max[0]}, Level#{max[1]})。",
+      "reference_fields": {
+        "max[0]": "LevelIdx",
+        "max[1]": "LevelIdx"
+      },
+      "defines": {
+        "il": "LevelIdx"
+      }
+    },
+    "imax": {
+      "category": "level",
+      "shape": {
+        "imax": {
+          "type": "Tuple<LevelIdx,LevelIdx>",
+          "meaning_zh": "恰好两个层级引用；当第二项取值为0时结果为0，否则取最大值。"
+        },
+        "il": {
+          "type": "LevelIdxDef",
+          "meaning_zh": "本行新定义的层级编号。"
+        }
+      },
+      "comment_template_zh": "定义层级 Level#{il} = imax(Level#{imax[0]}, Level#{imax[1]})：第二项为0时结果为0，否则为最大值。",
+      "reference_fields": {
+        "imax[0]": "LevelIdx",
+        "imax[1]": "LevelIdx"
+      },
+      "defines": {
+        "il": "LevelIdx"
+      }
+    },
+    "param": {
+      "category": "level",
+      "shape": {
+        "param": {
+          "type": "NameIdx",
+          "meaning_zh": "宇宙参数的名称引用。"
+        },
+        "il": {
+          "type": "LevelIdxDef",
+          "meaning_zh": "本行新定义的层级编号。"
+        }
+      },
+      "comment_template_zh": "定义层级 Level#{il}：以名称 Name#{param} 表示的宇宙参数。",
+      "reference_fields": {
+        "param": "NameIdx"
+      },
+      "defines": {
+        "il": "LevelIdx"
+      }
+    },
+    "bvar": {
+      "category": "expression",
+      "shape": {
+        "bvar": {
+          "type": "Nat",
+          "meaning_zh": "de Bruijn 绑定距离，0指当前使用处最内层绑定变量；不是任意全局表的编号。"
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：绑定变量 bvar {bvar}，在使用它的表达式中向外数第 {bvar}+1 个绑定层。",
+      "defines": {
+        "ie": "ExprIdx"
+      },
+      "notes_zh": [
+        "无法仅凭本行确定变量的名称、类型或作用域是否有效。相同 bvar 节点可在不同绑定上下文中共享。",
+        "绑定变量的作用域由表达式 DAG 的使用路径决定，不是 NDJSON 的前后行位置。"
+      ]
+    },
+    "sort": {
+      "category": "expression",
+      "shape": {
+        "sort": {
+          "type": "LevelIdx",
+          "meaning_zh": "Sort 的宇宙层级引用；Level#0表示0。"
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie} = Sort(Level#{sort})。",
+      "reference_fields": {
+        "sort": "LevelIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      },
+      "notes_zh": [
+        "当层级为0时该Sort为Prop；仅凭编号非零不能断言层级求值非零。"
+      ]
+    },
+    "const": {
+      "category": "expression",
+      "shape": {
+        "const": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "所引用常量的名称。"
+          },
+          "us": {
+            "type": "Array<LevelIdx>",
+            "meaning_zh": "依序实例化该常量宇宙参数的层级引用。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：引用常量 Name#{const.name}，宇宙实参为 {const.us}（层级表编号）。",
+      "reference_fields": {
+        "const.name": "NameIdx",
+        "const.us[*]": "LevelIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      },
+      "notes_zh": [
+        "这里的name需要先出现在名称表；并不要求这个名称对应的声明行已经输出。归纳组内可以先引用其名称。",
+        "常量也可以指类型、构造器、递归原理、定义或公理，不能一概称为定理。"
+      ]
+    },
+    "app": {
+      "category": "expression",
+      "shape": {
+        "app": {
+          "fn": {
+            "type": "ExprIdx",
+            "meaning_zh": "函数位置的表达式引用。"
+          },
+          "arg": {
+            "type": "ExprIdx",
+            "meaning_zh": "实参位置的表达式引用。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：将函数位置 Expr#{app.fn} 应用于参数 Expr#{app.arg}。",
+      "reference_fields": {
+        "app.fn": "ExprIdx",
+        "app.arg": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "lam": {
+      "category": "expression",
+      "shape": {
+        "lam": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "绑定变量的显示名称引用；实际绑定由de Bruijn索引表示。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "绑定变量的类型；新变量不在该类型的自身作用域内。"
+          },
+          "body": {
+            "type": "ExprIdx",
+            "meaning_zh": "主体；进入主体时增加一层绑定。"
+          },
+          "binderInfo": {
+            "type": "BinderInfo",
+            "meaning_zh": "显式/隐式/严格隐式/实例隐式参数方式。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：lambda函数/抽象项；变量名 Name#{lam.name}，类型 Expr#{lam.type}，主体 Expr#{lam.body}；参数方式={lam.binderInfo}。",
+      "reference_fields": {
+        "lam.name": "NameIdx",
+        "lam.type": "ExprIdx",
+        "lam.body": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "forallE": {
+      "category": "expression",
+      "shape": {
+        "forallE": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "绑定变量的显示名称引用；实际绑定由de Bruijn索引表示。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "绑定变量的类型；新变量不在该类型的自身作用域内。"
+          },
+          "body": {
+            "type": "ExprIdx",
+            "meaning_zh": "主体；进入主体时增加一层绑定。"
+          },
+          "binderInfo": {
+            "type": "BinderInfo",
+            "meaning_zh": "显式/隐式/严格隐式/实例隐式参数方式。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：依赖函数类型（Pi类型；命题情形下表示全称量化）；变量名 Name#{forallE.name}，类型 Expr#{forallE.type}，主体 Expr#{forallE.body}；参数方式={forallE.binderInfo}。",
+      "reference_fields": {
+        "forallE.name": "NameIdx",
+        "forallE.type": "ExprIdx",
+        "forallE.body": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "letE": {
+      "category": "expression",
+      "shape": {
+        "letE": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "局部绑定的显示名称。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "该绑定的类型；新增变量在这里不可见。"
+          },
+          "value": {
+            "type": "ExprIdx",
+            "meaning_zh": "局部绑定的值；新增变量在这里不可见。"
+          },
+          "body": {
+            "type": "ExprIdx",
+            "meaning_zh": "主体；在主体内增加一层绑定。"
+          },
+          "nondep": {
+            "type": "Bool",
+            "meaning_zh": "elaborator的非依赖let/have标记；不是body是否出现该变量的标记。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：let Name#{letE.name} : Expr#{letE.type} := Expr#{letE.value}，主体为 Expr#{letE.body}；nondep={letE.nondep}（非依赖let/have标记）。",
+      "reference_fields": {
+        "letE.name": "NameIdx",
+        "letE.type": "ExprIdx",
+        "letE.value": "ExprIdx",
+        "letE.body": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      },
+      "notes_zh": [
+        "nondep=true表示elaborator按非依赖let/have处理，可按(fun x : t => e) v理解；e仍然可以引用x。",
+        "核心类型检查不验证nondep；此固定提交默认去除mdata时还把nondep统一置为false，因此false不能据以推导变量依赖。"
+      ]
+    },
+    "proj": {
+      "category": "expression",
+      "shape": {
+        "proj": {
+          "typeName": {
+            "type": "NameIdx",
+            "meaning_zh": "被投影结构/单构造器归纳类型的名称。"
+          },
+          "idx": {
+            "type": "Nat",
+            "meaning_zh": "从0开始的字段序号；不是表达式引用。"
+          },
+          "struct": {
+            "type": "ExprIdx",
+            "meaning_zh": "被投影对象。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：从 Expr#{proj.struct} 取名称为 Name#{proj.typeName} 的结构的第 {proj.idx} 号字段（从0计数）。",
+      "reference_fields": {
+        "proj.typeName": "NameIdx",
+        "proj.struct": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "natVal": {
+      "category": "expression",
+      "shape": {
+        "natVal": {
+          "type": "DecimalNatString",
+          "meaning_zh": "自然数字面量的十进制字符串；不得经浮点数中转。"
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：自然数字面量 {natVal}，原始JSON以字符串保存。",
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "strVal": {
+      "category": "expression",
+      "shape": {
+        "strVal": {
+          "type": "String",
+          "meaning_zh": "字符串字面量，按JSON转义解码；其内容是数据。"
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：字符串字面量 {strVal}。",
+      "defines": {
+        "ie": "ExprIdx"
+      }
+    },
+    "mdata": {
+      "category": "expression",
+      "shape": {
+        "mdata": {
+          "expr": {
+            "type": "ExprIdx",
+            "meaning_zh": "被元数据包裹的表达式。"
+          },
+          "data": {
+            "type": "Object<String,String>",
+            "meaning_zh": "开放键集合：键为名称的显示字符串，值为Lean reprStr产生的字符串。"
+          }
+        },
+        "ie": {
+          "type": "ExprIdxDef",
+          "meaning_zh": "本行新定义的表达式编号。"
+        }
+      },
+      "comment_template_zh": "定义表达式 Expr#{ie}：为 Expr#{mdata.expr} 附加元数据 {mdata.data}；元数据本身不提供新的证明结论。",
+      "reference_fields": {
+        "mdata.expr": "ExprIdx"
+      },
+      "defines": {
+        "ie": "ExprIdx"
+      },
+      "notes_zh": [
+        "默认导出会去除mdata；--export-mdata会保留。开放的data键不应误报成未知格式字段。",
+        "固定提交的参考parser无法完全恢复reprStr元数据，重建时使用空元数据；注释输出应保留原文，不能据此声称语法数据无损round-trip。"
+      ]
+    },
+    "axiom": {
+      "category": "declaration",
+      "shape": {
+        "axiom": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "声明名称在名称表中的编号。"
+          },
+          "levelParams": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "声明的类型表达式编号。"
+          },
+          "isUnsafe": {
+            "type": "Bool",
+            "meaning_zh": "是否带有 unsafe 标记；该字段值本身不是对文件完成验证的证据。"
+          }
+        }
+      },
+      "comment_template_zh": "记录公理声明 Name#{axiom.name}，宇宙参数名称={axiom.levelParams}，类型 Expr#{axiom.type}，isUnsafe={axiom.isUnsafe}。本行没有证明值。",
+      "reference_fields": {
+        "axiom.name": "NameIdx",
+        "axiom.levelParams[*]": "NameIdx",
+        "axiom.type": "ExprIdx"
+      }
+    },
+    "def": {
+      "category": "declaration",
+      "shape": {
+        "def": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "声明名称在名称表中的编号。"
+          },
+          "levelParams": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "声明的类型表达式编号。"
+          },
+          "value": {
+            "type": "ExprIdx",
+            "meaning_zh": "定义体表达式。"
+          },
+          "hints": {
+            "type": "ReducibilityHints",
+            "meaning_zh": "内核定义展开次序的提示。"
+          },
+          "safety": {
+            "type": "DefinitionSafety",
+            "meaning_zh": "safe/unsafe/partial安全性类别。"
+          },
+          "all": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "同一个 mutual 块中的全部声明名称，含自身；不是全部依赖声明。"
+          }
+        }
+      },
+      "comment_template_zh": "记录定义 Name#{def.name}：类型 Expr#{def.type}，定义体 Expr#{def.value}；宇宙参数名称={def.levelParams}，展开提示={def.hints}，safety={def.safety}，同mutual块名称={def.all}。",
+      "reference_fields": {
+        "def.name": "NameIdx",
+        "def.levelParams[*]": "NameIdx",
+        "def.type": "ExprIdx",
+        "def.value": "ExprIdx",
+        "def.all[*]": "NameIdx"
+      },
+      "notes_zh": [
+        "hints中的opaque仅为展开次序提示，不等同顶层opaque声明，也不是禁止内核展开。"
+      ]
+    },
+    "opaque": {
+      "category": "declaration",
+      "shape": {
+        "opaque": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "声明名称在名称表中的编号。"
+          },
+          "levelParams": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "声明的类型表达式编号。"
+          },
+          "value": {
+            "type": "ExprIdx",
+            "meaning_zh": "opaque声明的值；与无证明值的公理不同。"
+          },
+          "all": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "同一个 mutual 块中的全部声明名称，含自身；不是全部依赖声明。"
+          },
+          "isUnsafe": {
+            "type": "Bool",
+            "meaning_zh": "是否带有 unsafe 标记；该字段值本身不是对文件完成验证的证据。"
+          }
+        }
+      },
+      "comment_template_zh": "记录opaque声明 Name#{opaque.name}：类型 Expr#{opaque.type}，值 Expr#{opaque.value}；宇宙参数名称={opaque.levelParams}，同mutual块名称={opaque.all}，isUnsafe={opaque.isUnsafe}。",
+      "reference_fields": {
+        "opaque.name": "NameIdx",
+        "opaque.levelParams[*]": "NameIdx",
+        "opaque.type": "ExprIdx",
+        "opaque.value": "ExprIdx",
+        "opaque.all[*]": "NameIdx"
+      }
+    },
+    "thm": {
+      "category": "declaration",
+      "shape": {
+        "thm": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "声明名称在名称表中的编号。"
+          },
+          "levelParams": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "声明的类型表达式编号。"
+          },
+          "value": {
+            "type": "ExprIdx",
+            "meaning_zh": "此定理声明所提供的证明项表达式。"
+          },
+          "all": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "同一个 mutual 块中的全部声明名称，含自身；不是全部依赖声明。"
+          }
+        }
+      },
+      "comment_template_zh": "记录定理声明 Name#{thm.name}：待对应的命题类型 Expr#{thm.type}，提供的证明项 Expr#{thm.value}；宇宙参数名称={thm.levelParams}，同mutual块名称={thm.all}。本注释未独立执行内核验证。",
+      "reference_fields": {
+        "thm.name": "NameIdx",
+        "thm.levelParams[*]": "NameIdx",
+        "thm.type": "ExprIdx",
+        "thm.value": "ExprIdx",
+        "thm.all[*]": "NameIdx"
+      }
+    },
+    "quot": {
+      "category": "declaration",
+      "shape": {
+        "quot": {
+          "name": {
+            "type": "NameIdx",
+            "meaning_zh": "声明名称在名称表中的编号。"
+          },
+          "levelParams": {
+            "type": "Array<NameIdx>",
+            "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+          },
+          "type": {
+            "type": "ExprIdx",
+            "meaning_zh": "声明的类型表达式编号。"
+          },
+          "kind": {
+            "type": "QuotKind",
+            "meaning_zh": "商类型内核常量类别：type/ctor/lift/ind。"
+          }
+        }
+      },
+      "comment_template_zh": "记录商类型原语 Name#{quot.name}：kind={quot.kind}，类型 Expr#{quot.type}，宇宙参数名称={quot.levelParams}。",
+      "reference_fields": {
+        "quot.name": "NameIdx",
+        "quot.levelParams[*]": "NameIdx",
+        "quot.type": "ExprIdx"
+      }
+    },
+    "inductive": {
+      "category": "declaration",
+      "shape": {
+        "inductive": {
+          "types": {
+            "type": "Array<InductiveVal>",
+            "meaning_zh": "本组归纳类型及相关辅助类型的完整条目。"
+          },
+          "ctors": {
+            "type": "Array<ConstructorVal>",
+            "meaning_zh": "本组构造器的完整条目。"
+          },
+          "recs": {
+            "type": "Array<RecursorVal>",
+            "meaning_zh": "本组递归/归纳原理的完整条目。"
+          }
+        }
+      },
+      "comment_template_zh": "记录一个归纳/相互归纳声明组：types={逐条解释全部InductiveVal}；ctors={逐条解释全部ConstructorVal}；recs={逐条解释全部RecursorVal及其rules}。",
+      "notes_zh": [
+        "构造器与递归原理为同一inductive行里的嵌套条目，不是独立顶层记录类型。",
+        "官方内核会从归纳声明推导recursor及若干描述字段；导出包含这些派生数据以便分析工具使用。"
+      ]
+    }
+  },
+  "nested_structures": {
+    "InductiveVal": {
+      "shape": {
+        "name": {
+          "type": "NameIdx",
+          "meaning_zh": "声明名称在名称表中的编号。"
+        },
+        "levelParams": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+        },
+        "type": {
+          "type": "ExprIdx",
+          "meaning_zh": "声明的类型表达式编号。"
+        },
+        "numParams": {
+          "type": "Nat",
+          "meaning_zh": "固定在各构造器间的参数数量。"
+        },
+        "numIndices": {
+          "type": "Nat",
+          "meaning_zh": "可随构造器变化的类型索引数量。"
+        },
+        "all": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "同相互归纳声明中的全部归纳类型名称，含自身。"
+        },
+        "ctors": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "该归纳类型的构造器名称。"
+        },
+        "numNested": {
+          "type": "Nat",
+          "meaning_zh": "嵌套归纳出现所生成的辅助数据类型数量。"
+        },
+        "isRec": {
+          "type": "Bool",
+          "meaning_zh": "是否递归：该归纳类型是否出现在构造器参数中。"
+        },
+        "isReflexive": {
+          "type": "Bool",
+          "meaning_zh": "至少一个构造器是否接受返回所定义类型的函数作为参数；这里不是关系的自反性。"
+        },
+        "isUnsafe": {
+          "type": "Bool",
+          "meaning_zh": "是否带有 unsafe 标记；该字段值本身不是对文件完成验证的证据。"
+        }
+      },
+      "reference_fields": {
+        "name": "NameIdx",
+        "levelParams[*]": "NameIdx",
+        "type": "ExprIdx",
+        "all[*]": "NameIdx",
+        "ctors[*]": "NameIdx"
+      },
+      "comment_template_zh": "归纳类型 Name#{name}：type=Expr#{type}，levelParams={levelParams}，固定参数数numParams={numParams}，变化索引数numIndices={numIndices}，同组类型all={all}，构造器ctors={ctors}，嵌套辅助类型数numNested={numNested}，递归标记isRec={isRec}，函数返回本类型标记isReflexive={isReflexive}，isUnsafe={isUnsafe}。"
+    },
+    "ConstructorVal": {
+      "shape": {
+        "name": {
+          "type": "NameIdx",
+          "meaning_zh": "声明名称在名称表中的编号。"
+        },
+        "levelParams": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+        },
+        "type": {
+          "type": "ExprIdx",
+          "meaning_zh": "声明的类型表达式编号。"
+        },
+        "induct": {
+          "type": "NameIdx",
+          "meaning_zh": "所属归纳类型名称。"
+        },
+        "cidx": {
+          "type": "Nat",
+          "meaning_zh": "在所属归纳类型构造器列表中的位置编号，从0计数。"
+        },
+        "numParams": {
+          "type": "Nat",
+          "meaning_zh": "该归纳类型的参数数量。"
+        },
+        "numFields": {
+          "type": "Nat",
+          "meaning_zh": "构造器字段数量，不含归纳类型参数。"
+        },
+        "isUnsafe": {
+          "type": "Bool",
+          "meaning_zh": "是否带有 unsafe 标记；该字段值本身不是对文件完成验证的证据。"
+        }
+      },
+      "reference_fields": {
+        "name": "NameIdx",
+        "levelParams[*]": "NameIdx",
+        "type": "ExprIdx",
+        "induct": "NameIdx"
+      },
+      "comment_template_zh": "构造器 Name#{name}：type=Expr#{type}，levelParams={levelParams}，所属类型induct=Name#{induct}，位置cidx={cidx}，参数数numParams={numParams}，字段数numFields={numFields}，isUnsafe={isUnsafe}。"
+    },
+    "RecursorVal": {
+      "shape": {
+        "name": {
+          "type": "NameIdx",
+          "meaning_zh": "声明名称在名称表中的编号。"
+        },
+        "levelParams": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "该声明量化的宇宙参数名称；数组顺序有意义。这里是名称引用，不是层级表引用。"
+        },
+        "type": {
+          "type": "ExprIdx",
+          "meaning_zh": "声明的类型表达式编号。"
+        },
+        "all": {
+          "type": "Array<NameIdx>",
+          "meaning_zh": "生成该递归原理的相互归纳声明中全部归纳类型名称。"
+        },
+        "numParams": {
+          "type": "Nat",
+          "meaning_zh": "参数数量。"
+        },
+        "numIndices": {
+          "type": "Nat",
+          "meaning_zh": "索引数量。"
+        },
+        "numMotives": {
+          "type": "Nat",
+          "meaning_zh": "递归/归纳目标族motive的数量。"
+        },
+        "numMinors": {
+          "type": "Nat",
+          "meaning_zh": "对应构造器分支的次要前提数量。"
+        },
+        "rules": {
+          "type": "Array<RecursorRule>",
+          "meaning_zh": "各构造器对应的iota归约规则。"
+        },
+        "k": {
+          "type": "Bool",
+          "meaning_zh": "是否支持K-like归约；不是本行新增的公理K声明。"
+        },
+        "isUnsafe": {
+          "type": "Bool",
+          "meaning_zh": "是否带有 unsafe 标记；该字段值本身不是对文件完成验证的证据。"
+        }
+      },
+      "reference_fields": {
+        "name": "NameIdx",
+        "levelParams[*]": "NameIdx",
+        "type": "ExprIdx",
+        "all[*]": "NameIdx",
+        "rules[*].ctor": "NameIdx",
+        "rules[*].rhs": "ExprIdx"
+      },
+      "comment_template_zh": "递归/归纳原理 Name#{name}：type=Expr#{type}，levelParams={levelParams}，同组类型all={all}，参数数numParams={numParams}，索引数numIndices={numIndices}，目标族数numMotives={numMotives}，次要前提数numMinors={numMinors}，rules={逐条解释所有RecursorRule}，K-like归约标记k={k}，isUnsafe={isUnsafe}。"
+    },
+    "RecursorRule": {
+      "shape": {
+        "ctor": {
+          "type": "NameIdx",
+          "meaning_zh": "触发此归约规则的构造器名称。"
+        },
+        "nfields": {
+          "type": "Nat",
+          "meaning_zh": "该构造器字段数，不计归纳类型参数。"
+        },
+        "rhs": {
+          "type": "ExprIdx",
+          "meaning_zh": "归约规则右侧表达式。"
+        }
+      },
+      "reference_fields": {
+        "ctor": "NameIdx",
+        "rhs": "ExprIdx"
+      },
+      "comment_template_zh": "构造器ctor=Name#{ctor}的归约规则：字段数nfields={nfields}，右侧rhs=Expr#{rhs}。"
+    }
+  },
+  "enums": {
+    "BinderInfo": {
+      "default": "显式参数，例如(x : A)。",
+      "implicit": "隐式参数，例如{x : A}。",
+      "strictImplicit": "严格隐式参数，例如⦃x : A⦄。",
+      "instImplicit": "实例隐式参数，例如[Decidable P]。"
+    },
+    "ReducibilityHints": {
+      "opaque": "展开次序提示opaque；与另一种hint比较时优先展开另一方，并不禁止内核展开本定义。",
+      "abbrev": "展开次序提示abbrev，通常优先于regular与opaque展开。",
+      "{regular: Nat}": "带UInt32定义高度的regular提示；比较regular定义时优先展开较高者。值是高度，不是引用。producer值范围为0至4294967295。"
+    },
+    "DefinitionSafety": {
+      "safe": "Lean声明安全性枚举safe。该标签不表示本注释器已验证证明。",
+      "unsafe": "Lean声明安全性枚举unsafe；应显式保留并报告。",
+      "partial": "Lean声明安全性枚举partial；不得翻译成“部分完成的数学证明”。"
+    },
+    "QuotKind": {
+      "type": "Quot商类型原语。",
+      "ctor": "Quot.mk商类型构造器原语。",
+      "lift": "Quot.lift商类型提升原语。",
+      "ind": "Quot.ind商类型归纳原语。"
+    }
+  },
+  "binder_scope_zh": [
+    "lam和forallE的type仍在外层上下文，body增加一层绑定。",
+    "letE的type与value仍在外层上下文，body增加一层绑定。",
+    "bvar 0是使用处最内层绑定，bvar 1是再外一层；相同共享节点可在不同使用处对应不同变量名。",
+    "仅逐行语法注释无法证明全部绑定作用域有效；需要从根类型/证明项遍历作用域或运行内核。"
+  ],
+  "pinned_exporter_behavior_zh": [
+    "exportMData默认false；默认移除mdata且统一letE.nondep=false。",
+    "exportUnsafe默认false；可由--export-unsafe开启。文件元信息未记录该CLI选项，不能只据默认值声称输入中不存在unsafe。",
+    "free variable、expression metavariable与level metavariable不属于有效导出变体。",
+    "inductive一行包含整组types/ctors/recs，普通递归原理条目仅在其中出现。",
+    "参考Parse.lean的parseFile直接读过首行而未验证元信息；其成功运行本身不等于完整格式或证明验证。",
+    "参考parser可为旧输入缺失的opaque.isUnsafe取false；但此固定producer始终输出该字段。注释原文件时不得静默补字段或更改原行。",
+    "参考parser的addName/addLevel/addExpr直接insert；注释审计仍应按格式规范报告重复定义，不可将parser行为误当允许重复索引的规范。"
+  ],
+  "coverage_and_unknown_policy_zh": [
+    "每条原始物理行保留其原始UTF-8字节及原行号；注释与该行一一对应。不得重新排序或把JSON重序列化后冒充原文。",
+    "已知记录须解释本variant全部字段；含嵌套数组时解释全部条目及规则，而不只写一个笼统总数。",
+    "遇到未知顶层variant、未知受约束字段、未知枚举、字段缺失或类型不符时，保留原行，标为“未知/格式异常，未作语义解释”，记录原行号与完整字段/值并计数。不能猜测或忽略。",
+    "允许工具继续保留其他可解析行，但只要存在未解释记录，就不得宣称全文件语义注释完全覆盖；应在交付报告明确未解释数量。",
+    "mdata.data为开放键对象；其中任意键值不是新的记录variant，不应按固定字段表误报。",
+    "去除注释后须能逐字节重建原始输入；如交付只是前缀/样本必须显式标注行号范围，不能标成全文件。",
+    "NDJSON不支持//注释。带//注释的阅读版必须用.txt或.jsonl-with-comments等明确说明的扩展名；不得直接交给期待纯NDJSON的内核。",
+    "语法解析、编号检查、逐行覆盖及哈希一致性均不是Lean内核的类型/证明检查。",
+    "表达式记录通常是共享语法树节点，不可一行一行编造数学推理步骤；定理记录只表示文件声明了type及value。"
+  ]
+}

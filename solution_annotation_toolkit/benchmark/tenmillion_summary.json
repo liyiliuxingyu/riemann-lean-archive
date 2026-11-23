@@ -1,0 +1,18 @@
+{
+"success":true,
+"input_fully_consumed":false,
+"records":10000000,
+"original_bytes":537357654,
+"original_sha256":"cb952341d22756691727220f676ef633aab3059125dda6749bafb27627a62e6d",
+"annotated_bytes":1510419222,
+"compressed_bytes":187126583,
+"parts":1,
+"name_definitions":449721,
+"level_definitions":4108,
+"expression_definitions":9476588,
+"name_store_bytes":12776361,
+"unknown_record_types":0,
+"reference_checks":"All typed N/L/E references point to earlier definitions; sequential IDs validated. This is not kernel type checking.",
+"elapsed_seconds":6.58158,
+"counts":{"app":7975826,"axiom":3,"bvar":143,"const":195068,"def":13434,"forallE":521919,"imax":111,"inductive":1130,"lam":765927,"letE":14019,"max":3225,"meta":1,"natVal":72,"num":202892,"opaque":48,"param":97,"proj":3225,"quot":4,"sort":297,"str":246829,"strVal":92,"succ":675,"thm":54963}
+}

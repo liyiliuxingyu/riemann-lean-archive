@@ -1,0 +1,137 @@
+{
+  "success": true,
+  "test_count": 20,
+  "tests": [
+    {
+      "name": "actual_engine_prefix_all_147492_rows",
+      "passed": true,
+      "accepted": true,
+      "records": 147492,
+      "parts": 1,
+      "elapsed_seconds": 0.04536
+    },
+    {
+      "name": "cross_volume_with_lf_and_small_io_fragments",
+      "passed": true,
+      "accepted": true,
+      "records": 64,
+      "parts": 3,
+      "elapsed_seconds": 0.005139
+    },
+    {
+      "name": "cross_volume_preserves_absent_final_lf",
+      "passed": true,
+      "accepted": true,
+      "records": 64,
+      "parts": 3,
+      "elapsed_seconds": 0.013306
+    },
+    {
+      "name": "preserves_original_crlf",
+      "passed": true,
+      "accepted": true,
+      "records": 2,
+      "parts": 1,
+      "elapsed_seconds": 0.005972
+    },
+    {
+      "name": "very_long_lines_with_no_final_lf",
+      "passed": true,
+      "accepted": true,
+      "records": 1,
+      "parts": 1,
+      "elapsed_seconds": 0.008849
+    },
+    {
+      "name": "damaged_comment_prefix",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Bad annotation prefix"
+    },
+    {
+      "name": "wrong_comment_number",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Annotation line number is not globally consecutive"
+    },
+    {
+      "name": "empty_comment",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Empty annotation text"
+    },
+    {
+      "name": "missing_comment",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Bad annotation prefix"
+    },
+    {
+      "name": "extra_comment",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Original line lacks a JSON object boundary"
+    },
+    {
+      "name": "invalid_source_shape",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Original line lacks a JSON object boundary"
+    },
+    {
+      "name": "nonfinal_part_no_lf",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "A non-final volume ends with an original row lacking LF"
+    },
+    {
+      "name": "wrong_compressed_hash",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Compressed SHA-256 mismatch"
+    },
+    {
+      "name": "wrong_source_part_hash",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Restored original SHA-256 mismatch"
+    },
+    {
+      "name": "wrong_source_part_bytes",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Invalid manifest byte counts"
+    },
+    {
+      "name": "wrong_last_line",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Manifest line ranges are not globally consecutive"
+    },
+    {
+      "name": "wrong_record_count",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Manifest line ranges are not globally consecutive"
+    },
+    {
+      "name": "wrong_global_hash",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Global original SHA-256 mismatch"
+    },
+    {
+      "name": "damaged_compressed_payload",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "zstd decompression failed: Restored data doesn't match checksum"
+    },
+    {
+      "name": "truncated_zstd_frame_even_with_matching_manifest_hash",
+      "passed": true,
+      "accepted": false,
+      "detected_error": "Truncated or empty zstd volume"
+    }
+  ],
+  "scope": "Small actual-prefix and targeted round-trip/corruption tests; no full-source run"
+}

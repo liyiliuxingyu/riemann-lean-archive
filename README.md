@@ -6,24 +6,34 @@
 
 ## 交付内容与目录
 
-`project/` 提供可直接浏览的 267 个工程成员，包括中文稿、PDF、构建材料和选取的源码；3 个巨型 Lean 汇编/索引成员保留在完整工程 ZIP 中。`audits/` 保存 2026-11-23 的两份有限审查及复核证据。
+Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程的 267 个常规成员保持原样，随机访问索引另按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 保存 2026-11-23 的两份有限审查及复核证据。
 
-普通 Git 文件保存本说明、公开清单、恢复工具、可浏览工程成员和两份有限审查包。完整工程、巨型源码汇编及注释分卷作为 Releases 附件交付。**当前状态：281 个仓库文件已上传核对；60 个 Release 附件全部上传并通过 SHA-256 核对。** [打开完整 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)。
+**57 卷注释的完整解压正文尚未加入普通 Git：它们合计 168,547,118,127 字节（约 168.55 GB），每卷均超过 100 MiB。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。此次展开的范围、核验方法和剩余部分见 [展开说明](docs/RELEASE_EXPANSION.md)。
 
-| 文件或资料 | 内容与大小 | 交付位置 |
+| 文件或资料 | 内容与大小 | 现在的位置 |
 | --- | --- | --- |
-| [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip) | 最新第二版完整工程，270 个文件；286,288,695 字节 | Release 附件 |
-| `RH_AllSources.lean` | 175,187 个原 Lean 模块及 3 个配置文件的无损汇编；1,101,883,390 字节 | Release 附件；工程 ZIP 内也有一份 |
-| `RH_AllSources.dependencies.jsonl` | 直接导入关系及相关索引；214,948,999 字节 | 完整工程 ZIP 内 |
-| `RH_AllSources.index.jsonl` | 随机访问索引；68,614,751 字节 | 完整工程 ZIP 内 |
-| 中文 PDF、TeX、分章与排版资源 | 31 页 PDF、`ctexbook` 工程、TikZ 图、随附字体及许可证 | 完整工程 ZIP 内 |
-| `proof_process/` | 13 个阶段的源码级数学说明及 33 个关键模块原文 | 完整工程 ZIP 内 |
-| `solution_annotated.part001.txt.zst` 至 `part057.txt.zst` | 共 57 卷逐行注释；压缩合计 18,876,901,037 字节 | 各卷单独作为 Release 附件 |
-| `solution_annotation_toolkit.zip` | 注释与独立核验工具、格式说明、预览、生成报告、来源及许可证；5,923,402 字节 | Release 附件 |
+| 完整 Lean 模块树 | 175,187 个 `.lean` 模块及 3 个配置文件；1,030,536,719 字节 | [project/lean/original/](project/lean/original/) |
+| 最终入口与命题 | 保持原始源码 | [Main.lean](project/lean/original/src/Main.lean)、[Statements.lean](project/lean/original/src/Statements.lean) |
+| `RH_AllSources.index.jsonl` | 原始随机访问索引；68,614,751 字节 | [project/lean/RH_AllSources.index.jsonl](project/lean/RH_AllSources.index.jsonl) |
+| 依赖索引 | 原件 214,948,999 字节，拆为 5 个完整行分卷，可逐字节还原 | [project/lean/dependencies/](project/lean/dependencies/) |
+| 中文 PDF、TeX、分章与排版资源 | 31 页 PDF、`ctexbook` 工程、TikZ 图、随附字体及许可证 | [project/](project/) |
+| 源码级数学说明 | 13 个阶段说明及 33 个关键模块原文 | [project/proof_process/](project/proof_process/) |
+| 注释工具包 | ZIP 内全部 58 个文件，19,600,269 字节；含工具、格式、预览、报告、来源及许可证 | [solution_annotation_toolkit/](solution_annotation_toolkit/) |
+| 57 卷完整注释 | 压缩合计 18,876,901,037 字节；解压约 168.55 GB | 仍为 Release 压缩附件；[逐卷清单和解压说明](annotations/) |
+| `RH_AllSources.lean` | 1,101,883,390 字节的可恢复源码汇编；完整内容已恢复为上述模块树 | [独立 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/RH_AllSources.lean)，工程 ZIP 内也有一份 |
+| 完整工程 ZIP | 270 个原始成员；286,288,695 字节 | [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip) |
 
-`project-files.public.json` 保存完整工程内所有文件的路径、字节数和 SHA-256。`ndjson-files.public.json` 保存 57 卷的文件名、原始行号区间、各项字节数与哈希；它不含个人文件下载页或私人文件标识。
+`project-files.public.json` 仍记录原始工程 ZIP 的 270 个成员，不是当前整个仓库的文件总表。`ndjson-files.public.json` 保存 57 卷的文件名、原始行号区间、字节数与哈希；新增 [annotations/release-parts.json](annotations/release-parts.json) 还给出解压大小及实际下载地址。[docs/release-expansion.json](docs/release-expansion.json) 记录此次展开的目录映射和范围。
 
-完整工程解压后根目录为 `riemann_human/`。建议先阅读其中的 `README_接续说明.txt`，再按需要打开 PDF、TeX 或 `proof_process`。
+克隆仓库后，可以直接阅读 `project/lean/original/src/` 中的源码，无需先下载巨型汇编。原模块路径与 `import` 保持一致；源码根目录为 `project/lean/original/`，其中的 `lakefile.toml` 设置 `srcDir = "src"`。部分目录文件数很多，网页列表可能不便浏览；本地克隆和按完整路径打开文件能避免依赖网页的完整目录展示。
+
+依赖索引的精确还原命令（从仓库根目录运行）：
+
+```bash
+python3 project/lean/dependencies/join_parts.py
+```
+
+脚本会核验全部分卷与完整输出的大小、SHA-256 和行数；已有不同内容的输出文件不会被覆盖。原始工程 ZIP 解压后根目录仍为 `riemann_human/`，其内部 `SHA256SUMS.txt` 与 `verify_package.py` 适用于原 ZIP 布局。普通 Git 目录用模块树和分卷表示两个巨型原件，不能直接据原 ZIP 清单声称这两个单文件已经存在。
 
 ## 校验下载
 
@@ -127,6 +137,9 @@ python3 build_pdf.py 黎曼猜想_人类可读证明主线.tex
 
 本次上传准备对最新工程 ZIP 的全部 270 个成员进行了完整解压读取和 SHA-256 计算：ZIP 成员 CRC 通过，内部校验清单的 269 个文件全部匹配。另核对了 NDJSON 工具包的文件大小与 SHA-256，并逐项比对下载索引和工具包内 57 卷清单的公开字段。本次上传准备没有重新下载全部注释卷、没有重跑全工程 Lean 构建或独立内核检查，也没有再次排版 PDF。
 
+
+2026-11-23 的进一步展开对全部 175,190 个恢复后的源码及配置文件重新计算了 SHA-256，并与原索引逐项核对，全部一致。索引按工程 ZIP 的原字节提取；5 个依赖分卷实际重新连接、读回并核对完整原件的 SHA-256；工具包的 58 个展开文件与 ZIP 逐文件核对。提交时另核对每个新增文件的 Git blob 标识及文件模式，以防暂存过程改变字节。这些是文件完整性检查，不是新的数学证明验证。
+
 完整工程中的 `provenance/`、`evidence/`、`接续状态.json`，以及注释工具包中的生成和复核报告，记录各阶段的具体范围。文件完整性、源码可恢复性与数学证明的正确性应分别评估。
 
 ## 来源与许可
@@ -149,4 +162,4 @@ python3 tools/export_lean_bundle.py restore --bundle downloads/RH_AllSources.lea
 python3 tools/export_lean_bundle.py verify --bundle downloads/RH_AllSources.lean --against-root restored/lean
 ```
 
-完整恢复不需要额外索引。抽取单模块需要完整工程内的随机访问索引；恢复后进行 Lean 构建还需要原定工具链和外部依赖。来源和许可文件的位置见 [docs/SOURCES.md](docs/SOURCES.md) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+完整恢复不需要额外索引。随机访问索引现也位于 `project/lean/RH_AllSources.index.jsonl`；已经克隆仓库时，可直接使用 `project/lean/original/` 中恢复好的模块。进行 Lean 构建仍需要原定工具链和外部依赖。来源和许可文件的位置见 [docs/SOURCES.md](docs/SOURCES.md) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

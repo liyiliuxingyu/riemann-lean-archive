@@ -1,0 +1,33 @@
+ 	{"meta":{"exporter":{"name":"lean4export","version":"3.1.0"},"format":{"version":"3.1.0"},"lean":{"githash":"819816b2e0a3bf405af45ae5c7af2491d8f5bee6","version":"4.33.1"}}}  
+ 	{"in":1,"str":{"pre":0,"str":"α\nline\rreturn\ttab\"quote\\slash LS PS"}}  
+ 	{"in":2,"num":{"pre":1,"i":9223372036854775931}}  
+ 	{"in":3,"str":{"pre":0,"str":"Synthetic"}}  
+ 	{"il":1,"param":1}  
+ 	{"il":2,"succ":0}  
+ 	{"il":3,"max":[1,2]}  
+ 	{"il":4,"imax":[1,0]}  
+ 	{"ie":0,"bvar":9007199254740993}  
+ 	{"ie":1,"sort":0}  
+ 	{"ie":2,"const":{"name":1,"us":[1,3]}}  
+ 	{"ie":3,"app":{"fn":2,"arg":0}}  
+ 	{"ie":4,"lam":{"binderInfo":"default","body":0,"name":1,"type":1}}  
+ 	{"ie":5,"forallE":{"binderInfo":"implicit","body":0,"name":1,"type":1}}  
+ 	{"ie":6,"letE":{"body":0,"name":1,"nondep":true,"type":1,"value":2}}  
+ 	{"ie":7,"proj":{"idx":9007199254740993,"struct":2,"typeName":3}}  
+ 	{"ie":8,"natVal":"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"}  
+ 	{"ie":9,"strVal":"\n\r\t\b\f\u0000\"\\中文  "}  
+ 	{"ie":10,"mdata":{"expr":2,"data":{"line\nkey":"new\nline\rstring\tvalue","空":"正常"}}}  
+ 	{"ie":11,"lam":{"binderInfo":"strictImplicit","body":0,"name":1,"type":1}}  
+ 	{"ie":12,"forallE":{"binderInfo":"instImplicit","body":0,"name":1,"type":1}}  
+ 	{"ie":13,"letE":{"body":0,"name":1,"nondep":false,"type":1,"value":2}}  
+ 	{"axiom":{"name":3,"levelParams":[1],"type":1,"isUnsafe":false}}  
+ 	{"def":{"name":3,"levelParams":[1],"type":1,"value":2,"hints":{"regular":4294967295},"safety":"safe","all":[3]}}  
+ 	{"def":{"name":3,"levelParams":[1],"type":1,"value":2,"hints":"opaque","safety":"partial","all":[3]}}  
+ 	{"def":{"name":3,"levelParams":[1],"type":1,"value":2,"hints":"abbrev","safety":"unsafe","all":[3]}}  
+ 	{"opaque":{"name":3,"levelParams":[1],"type":1,"value":2,"isUnsafe":false,"all":[3]}}  
+ 	{"thm":{"name":3,"levelParams":[1],"type":1,"value":2,"all":[3]}}  
+ 	{"quot":{"name":3,"levelParams":[1],"type":1,"kind":"type"}}  
+ 	{"quot":{"name":3,"levelParams":[1],"type":1,"kind":"ctor"}}  
+ 	{"quot":{"name":3,"levelParams":[1],"type":1,"kind":"lift"}}  
+ 	{"quot":{"name":3,"levelParams":[1],"type":1,"kind":"ind"}}  
+ 	{"inductive":{"types":[{"name":3,"levelParams":[1],"type":1,"numParams":1,"numIndices":2,"all":[3],"ctors":[2],"numNested":3,"isRec":true,"isUnsafe":false,"isReflexive":true}],"ctors":[{"name":2,"levelParams":[1],"type":1,"induct":3,"cidx":0,"numParams":1,"numFields":4,"isUnsafe":false}],"recs":[{"name":1,"levelParams":[1],"type":1,"all":[3],"numParams":1,"numIndices":2,"numMotives":3,"numMinors":4,"rules":[{"ctor":2,"nfields":4,"rhs":2}],"k":true,"isUnsafe":false}]}}  

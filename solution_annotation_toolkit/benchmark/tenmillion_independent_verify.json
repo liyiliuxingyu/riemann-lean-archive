@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "verifier": "verify_annotations/1.0",
+  "manifest": "work/ndjson_annotation/benchmark/tenmillion_output/parts.jsonl",
+  "manifest_sha256": "545e3b03827e3c2ce288dab76c7257cb17d0c490e73c6fbfd738c49d56250006",
+  "parts_verified": 1,
+  "zstd_frames": 1,
+  "records": 10000000,
+  "first_line": 1,
+  "last_line": 10000000,
+  "original_bytes": 537357654,
+  "original_sha256": "cb952341d22756691727220f676ef633aab3059125dda6749bafb27627a62e6d",
+  "expected_original_bytes": 537357654,
+  "expected_original_sha256": "cb952341d22756691727220f676ef633aab3059125dda6749bafb27627a62e6d",
+  "compressed_bytes": 187126583,
+  "annotated_bytes": 1510419222,
+  "last_original_line_has_lf": true,
+  "restored_file": null,
+  "checks": ["all compressed sizes and SHA-256 values", "all original volume sizes and SHA-256 values", "all annotated byte counts", "one nonempty annotation per original row", "globally consecutive source line numbers", "basic JSON object-line boundaries", "all manifest record ranges and counts", "global original byte count and SHA-256"],
+  "full_json_semantic_validation": false,
+  "lean_kernel_verification": false,
+  "elapsed_seconds": 2.352333
+}

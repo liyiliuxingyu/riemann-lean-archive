@@ -1,0 +1,72 @@
+{
+  "source_url": "https://math.mit.edu/~drew/grh/solution.ndjson.zst",
+  "compressed_source_bytes": 7699933588,
+  "compressed_source_sha256": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+  "source_download_verification": {
+    "url": "https://math.mit.edu/~drew/grh/solution.ndjson.zst",
+    "expected_bytes": 7699933588,
+    "expected_sha256": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+    "etag": "\"1caf3a994-660b98979713d\"",
+    "ranges": [
+      {
+        "start": 0,
+        "end_exclusive": 1924983397,
+        "next": 1924983397,
+        "requests": 8
+      },
+      {
+        "start": 1924983397,
+        "end_exclusive": 3849966794,
+        "next": 3849966794,
+        "requests": 8
+      },
+      {
+        "start": 3849966794,
+        "end_exclusive": 5774950191,
+        "next": 5774950191,
+        "requests": 8
+      },
+      {
+        "start": 5774950191,
+        "end_exclusive": 7699933588,
+        "next": 7699933588,
+        "requests": 8
+      }
+    ],
+    "started_utc": "2026-11-21T23:21:00Z",
+    "complete": true,
+    "compressed_sha256_verified": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+    "completed_utc": "2026-11-21T23:24:36Z",
+    "elapsed_seconds_this_run": 216.634,
+    "file": "/workspace/scratch/e8ff28430def/work/ndjson_annotation/source/solution.ndjson.zst"
+  },
+  "expected_original_bytes": 61570595788,
+  "expected_original_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "annotation_source_sha256": "636bbe81c9a00222c036746340ac9de87cc4348f035e1f705ae46008caa84abe",
+  "annotation_binary_sha256": "75b5a33678b712ad2cc5f9ab39c49601034daf3275d065fec4e194b96c13a19a",
+  "format_spec_sha256": "69fd5ea97c099b4223d455c2a0a31d3bf02ed97b78d769e4484b1d9e19f1c981",
+  "started_utc": "2026-11-21T23:31:16.361877+00:00",
+  "compression_level": 1,
+  "compression_workers": 2,
+  "shard_threshold_mib": 320,
+  "scope": "Chinese record annotations and byte preservation; not a kernel proof verification",
+  "engine_command": [
+    "/workspace/scratch/e8ff28430def/work/ndjson_annotation/frozen/annotate_ndjson",
+    "--state-dir",
+    "/workspace/scratch/e8ff28430def/work/ndjson_annotation/full_state",
+    "--summary",
+    "/workspace/scratch/e8ff28430def/output/solution_ndjson_annotated/annotation_summary.json",
+    "--output-dir",
+    "/workspace/scratch/e8ff28430def/output/solution_ndjson_annotated/parts",
+    "--level",
+    "1",
+    "--workers",
+    "2",
+    "--shard-mib",
+    "320",
+    "--expected-bytes",
+    "61570595788",
+    "--expected-sha256",
+    "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e"
+  ]
+}

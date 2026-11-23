@@ -1,0 +1,60 @@
+{
+  "format": "release-expansion-v1",
+  "date": "2026-11-23",
+  "repository": "liyiliuxingyu/riemann-lean-archive",
+  "branch": "main",
+  "release_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122",
+  "scope": "Expanded Lean source tree, engineering index, lossless dependency-index parts and all annotation-toolkit files; full annotated text remains compressed in Release.",
+  "source_tree": {
+    "repository_directory": "project/lean/original",
+    "lean_modules": 175187,
+    "configuration_files": 3,
+    "files": 175190,
+    "bytes": 1030536719,
+    "all_files_sha256_rechecked": true,
+    "source_bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+    "public_upstream_commit": "40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "engineering_zip": {
+    "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip",
+    "sha256": "1ce852981028f86d7a47931db6aff339805759b17c1621646189c357bd5baf2d",
+    "original_members": 270,
+    "unchanged_existing_members": 267,
+    "existing_directory": "project"
+  },
+  "random_access_index": {
+    "repository_path": "project/lean/RH_AllSources.index.jsonl",
+    "bytes": 68614751,
+    "sha256": "712755e19312e53611664c50f54d63cb509f32e8c43e4e876c38635d0fb1262c"
+  },
+  "dependency_index": {
+    "repository_directory": "project/lean/dependencies",
+    "parts": 5,
+    "maximum_part_bytes": 50331648,
+    "original_bytes": 214948999,
+    "original_lines": 909822,
+    "original_sha256": "1321696d0bd1141923163735d6479916ba1bf4061e2e78c7427fa0e3fe36c431",
+    "actual_reassembly_verified": true
+  },
+  "annotation_toolkit": {
+    "repository_directory": "solution_annotation_toolkit",
+    "files": 58,
+    "bytes": 19600269,
+    "archive_sha256": "ca60fc4c602768a1ec8b05f478167116d9d9ec06e5803da7cd1364029db76e3d",
+    "all_files_checked_against_archive": true
+  },
+  "unexpanded_annotation_text": {
+    "status": "not_expanded_into_ordinary_git",
+    "parts": 57,
+    "compressed_bytes": 18876901037,
+    "decompressed_bytes": 168547118127,
+    "all_expanded_parts_exceed_100_mib": true,
+    "manifest": "annotations/release-parts.json"
+  },
+  "validation_boundaries": {
+    "full_lean_build_performed": false,
+    "full_kernel_replay_performed": false,
+    "full_annotation_decompression_repeated": false,
+    "new_paid_storage_enabled": false
+  }
+}

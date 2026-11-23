@@ -1,0 +1,5 @@
+# Preserve the original bytes in the expanded archives and their indexes.
+project/lean/original/** -text -filter -ident
+project/lean/RH_AllSources.index.jsonl -text -filter -ident
+project/lean/dependencies/** -text -filter -ident
+solution_annotation_toolkit/** -text -filter -ident

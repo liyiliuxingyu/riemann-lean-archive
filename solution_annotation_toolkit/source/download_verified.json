@@ -1,0 +1,38 @@
+{
+  "url": "https://math.mit.edu/~drew/grh/solution.ndjson.zst",
+  "expected_bytes": 7699933588,
+  "expected_sha256": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+  "etag": "\"1caf3a994-660b98979713d\"",
+  "ranges": [
+    {
+      "start": 0,
+      "end_exclusive": 1924983397,
+      "next": 1924983397,
+      "requests": 8
+    },
+    {
+      "start": 1924983397,
+      "end_exclusive": 3849966794,
+      "next": 3849966794,
+      "requests": 8
+    },
+    {
+      "start": 3849966794,
+      "end_exclusive": 5774950191,
+      "next": 5774950191,
+      "requests": 8
+    },
+    {
+      "start": 5774950191,
+      "end_exclusive": 7699933588,
+      "next": 7699933588,
+      "requests": 8
+    }
+  ],
+  "started_utc": "2026-11-21T23:21:00Z",
+  "complete": true,
+  "compressed_sha256_verified": "61a8938ad5f5e57397c1c0e3b954916af546d9004ade01c3555744a681b05381",
+  "completed_utc": "2026-11-21T23:24:36Z",
+  "elapsed_seconds_this_run": 216.634,
+  "file": "/workspace/scratch/e8ff28430def/work/ndjson_annotation/source/solution.ndjson.zst"
+}

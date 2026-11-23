@@ -1,0 +1,20 @@
+[
+  {
+    "path": "simdjson.h",
+    "url": "https://raw.githubusercontent.com/simdjson/simdjson/v3.9.4/singleheader/simdjson.h",
+    "bytes": 5023934,
+    "sha256": "88a44cd77e0b443724f52bed7a3b86bcd84ed1c29a451ecc94210fc7d6aef069"
+  },
+  {
+    "path": "simdjson.cpp",
+    "url": "https://raw.githubusercontent.com/simdjson/simdjson/v3.9.4/singleheader/simdjson.cpp",
+    "bytes": 2351558,
+    "sha256": "a0410ae49e2e2fd967330fc22f91d7a06f3f6c5988bf53faa4855c2e3dee2805"
+  },
+  {
+    "path": "LICENSE.simdjson",
+    "url": "https://raw.githubusercontent.com/simdjson/simdjson/v3.9.4/LICENSE",
+    "bytes": 11355,
+    "sha256": "d5f231d9e73f82689c562cc457112ef33097bf3e4294ae33e59a5e18d1ba1620"
+  }
+]
