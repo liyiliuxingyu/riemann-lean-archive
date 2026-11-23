@@ -12,7 +12,7 @@
 
 | 文件或资料 | 内容与大小 | 交付位置 |
 | --- | --- | --- |
-| [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/riemann-human-readable-project.zip) | 最新第二版完整工程，270 个文件；286,288,695 字节 | Release 附件 |
+| [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip) | 最新第二版完整工程，270 个文件；286,288,695 字节 | Release 附件 |
 | `RH_AllSources.lean` | 175,187 个原 Lean 模块及 3 个配置文件的无损汇编；1,101,883,390 字节 | Release 附件；工程 ZIP 内也有一份 |
 | `RH_AllSources.dependencies.jsonl` | 直接导入关系及相关索引；214,948,999 字节 | 完整工程 ZIP 内 |
 | `RH_AllSources.index.jsonl` | 随机访问索引；68,614,751 字节 | 完整工程 ZIP 内 |

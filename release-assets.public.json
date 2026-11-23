@@ -12,7 +12,7 @@
       "role": "Complete current engineering project, 270 members",
       "uploaded_name": "riemann-human-readable-project.zip",
       "asset_id": 783092801,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/riemann-human-readable-project.zip"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip"
     },
     {
       "file": "RH_AllSources.lean",
@@ -21,7 +21,7 @@
       "role": "Reversible source bundle; also included in complete project ZIP",
       "uploaded_name": "RH_AllSources.lean",
       "asset_id": 783094382,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/RH_AllSources.lean"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/RH_AllSources.lean"
     },
     {
       "file": "solution_annotation_toolkit.zip",
@@ -30,7 +30,7 @@
       "role": "Annotation tools, schema, examples and verification reports",
       "uploaded_name": "solution_annotation_toolkit.zip",
       "asset_id": 783097280,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotation_toolkit.zip"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotation_toolkit.zip"
     },
     {
       "file": "solution_annotated.part001.txt.zst",
@@ -41,7 +41,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part001.txt.zst",
       "asset_id": 783098047,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part001.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part001.txt.zst"
     },
     {
       "file": "solution_annotated.part002.txt.zst",
@@ -52,7 +52,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part002.txt.zst",
       "asset_id": 783099621,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part002.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part002.txt.zst"
     },
     {
       "file": "solution_annotated.part003.txt.zst",
@@ -63,7 +63,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part003.txt.zst",
       "asset_id": 783101320,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part003.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part003.txt.zst"
     },
     {
       "file": "solution_annotated.part004.txt.zst",
@@ -74,7 +74,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part004.txt.zst",
       "asset_id": 783102916,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part004.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part004.txt.zst"
     },
     {
       "file": "solution_annotated.part005.txt.zst",
@@ -85,7 +85,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part005.txt.zst",
       "asset_id": 783104788,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part005.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part005.txt.zst"
     },
     {
       "file": "solution_annotated.part006.txt.zst",
@@ -96,7 +96,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part006.txt.zst",
       "asset_id": 783106551,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part006.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part006.txt.zst"
     },
     {
       "file": "solution_annotated.part007.txt.zst",
@@ -107,7 +107,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part007.txt.zst",
       "asset_id": 783108305,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part007.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part007.txt.zst"
     },
     {
       "file": "solution_annotated.part008.txt.zst",
@@ -118,7 +118,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part008.txt.zst",
       "asset_id": 783109934,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part008.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part008.txt.zst"
     },
     {
       "file": "solution_annotated.part009.txt.zst",
@@ -129,7 +129,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part009.txt.zst",
       "asset_id": 783111554,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part009.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part009.txt.zst"
     },
     {
       "file": "solution_annotated.part010.txt.zst",
@@ -140,7 +140,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part010.txt.zst",
       "asset_id": 783113319,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part010.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part010.txt.zst"
     },
     {
       "file": "solution_annotated.part011.txt.zst",
@@ -151,7 +151,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part011.txt.zst",
       "asset_id": 783115125,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part011.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part011.txt.zst"
     },
     {
       "file": "solution_annotated.part012.txt.zst",
@@ -162,7 +162,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part012.txt.zst",
       "asset_id": 783116673,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part012.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part012.txt.zst"
     },
     {
       "file": "solution_annotated.part013.txt.zst",
@@ -173,7 +173,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part013.txt.zst",
       "asset_id": 783118266,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part013.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part013.txt.zst"
     },
     {
       "file": "solution_annotated.part014.txt.zst",
@@ -184,7 +184,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part014.txt.zst",
       "asset_id": 783119939,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part014.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part014.txt.zst"
     },
     {
       "file": "solution_annotated.part015.txt.zst",
@@ -195,7 +195,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part015.txt.zst",
       "asset_id": 783121601,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part015.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part015.txt.zst"
     },
     {
       "file": "solution_annotated.part016.txt.zst",
@@ -206,7 +206,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part016.txt.zst",
       "asset_id": 783123553,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part016.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part016.txt.zst"
     },
     {
       "file": "solution_annotated.part017.txt.zst",
@@ -217,7 +217,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part017.txt.zst",
       "asset_id": 783125694,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part017.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part017.txt.zst"
     },
     {
       "file": "solution_annotated.part018.txt.zst",
@@ -228,7 +228,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part018.txt.zst",
       "asset_id": 783127339,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part018.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part018.txt.zst"
     },
     {
       "file": "solution_annotated.part019.txt.zst",
@@ -239,7 +239,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part019.txt.zst",
       "asset_id": 783135796,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part019.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part019.txt.zst"
     },
     {
       "file": "solution_annotated.part020.txt.zst",
@@ -250,7 +250,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part020.txt.zst",
       "asset_id": 783135797,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part020.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part020.txt.zst"
     },
     {
       "file": "solution_annotated.part021.txt.zst",
@@ -261,7 +261,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part021.txt.zst",
       "asset_id": 783135801,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part021.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part021.txt.zst"
     },
     {
       "file": "solution_annotated.part022.txt.zst",
@@ -272,7 +272,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part022.txt.zst",
       "asset_id": 783137578,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part022.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part022.txt.zst"
     },
     {
       "file": "solution_annotated.part023.txt.zst",
@@ -283,7 +283,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part023.txt.zst",
       "asset_id": 783137579,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part023.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part023.txt.zst"
     },
     {
       "file": "solution_annotated.part024.txt.zst",
@@ -294,7 +294,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part024.txt.zst",
       "asset_id": 783137577,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part024.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part024.txt.zst"
     },
     {
       "file": "solution_annotated.part025.txt.zst",
@@ -305,7 +305,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part025.txt.zst",
       "asset_id": 783139353,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part025.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part025.txt.zst"
     },
     {
       "file": "solution_annotated.part026.txt.zst",
@@ -316,7 +316,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part026.txt.zst",
       "asset_id": 783139355,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part026.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part026.txt.zst"
     },
     {
       "file": "solution_annotated.part027.txt.zst",
@@ -327,7 +327,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part027.txt.zst",
       "asset_id": 783139356,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part027.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part027.txt.zst"
     },
     {
       "file": "solution_annotated.part028.txt.zst",
@@ -338,7 +338,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part028.txt.zst",
       "asset_id": 783141283,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part028.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part028.txt.zst"
     },
     {
       "file": "solution_annotated.part029.txt.zst",
@@ -349,7 +349,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part029.txt.zst",
       "asset_id": 783141280,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part029.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part029.txt.zst"
     },
     {
       "file": "solution_annotated.part030.txt.zst",
@@ -360,7 +360,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part030.txt.zst",
       "asset_id": 783141281,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part030.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part030.txt.zst"
     },
     {
       "file": "solution_annotated.part031.txt.zst",
@@ -371,7 +371,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part031.txt.zst",
       "asset_id": 783143496,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part031.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part031.txt.zst"
     },
     {
       "file": "solution_annotated.part032.txt.zst",
@@ -382,7 +382,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part032.txt.zst",
       "asset_id": 783143488,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part032.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part032.txt.zst"
     },
     {
       "file": "solution_annotated.part033.txt.zst",
@@ -393,7 +393,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part033.txt.zst",
       "asset_id": 783143489,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part033.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part033.txt.zst"
     },
     {
       "file": "solution_annotated.part034.txt.zst",
@@ -404,7 +404,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part034.txt.zst",
       "asset_id": 783146059,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part034.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part034.txt.zst"
     },
     {
       "file": "solution_annotated.part035.txt.zst",
@@ -415,7 +415,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part035.txt.zst",
       "asset_id": 783146061,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part035.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part035.txt.zst"
     },
     {
       "file": "solution_annotated.part036.txt.zst",
@@ -426,7 +426,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part036.txt.zst",
       "asset_id": 783146063,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part036.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part036.txt.zst"
     },
     {
       "file": "solution_annotated.part037.txt.zst",
@@ -437,7 +437,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part037.txt.zst",
       "asset_id": 783148102,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part037.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part037.txt.zst"
     },
     {
       "file": "solution_annotated.part038.txt.zst",
@@ -448,7 +448,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part038.txt.zst",
       "asset_id": 783148103,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part038.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part038.txt.zst"
     },
     {
       "file": "solution_annotated.part039.txt.zst",
@@ -459,7 +459,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part039.txt.zst",
       "asset_id": 783148396,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part039.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part039.txt.zst"
     },
     {
       "file": "solution_annotated.part040.txt.zst",
@@ -470,7 +470,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part040.txt.zst",
       "asset_id": 783150613,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part040.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part040.txt.zst"
     },
     {
       "file": "solution_annotated.part041.txt.zst",
@@ -481,7 +481,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part041.txt.zst",
       "asset_id": 783150616,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part041.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part041.txt.zst"
     },
     {
       "file": "solution_annotated.part042.txt.zst",
@@ -492,7 +492,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part042.txt.zst",
       "asset_id": 783150615,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part042.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part042.txt.zst"
     },
     {
       "file": "solution_annotated.part043.txt.zst",
@@ -503,7 +503,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part043.txt.zst",
       "asset_id": 783152965,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part043.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part043.txt.zst"
     },
     {
       "file": "solution_annotated.part044.txt.zst",
@@ -514,7 +514,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part044.txt.zst",
       "asset_id": 783152968,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part044.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part044.txt.zst"
     },
     {
       "file": "solution_annotated.part045.txt.zst",
@@ -525,7 +525,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part045.txt.zst",
       "asset_id": 783152964,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part045.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part045.txt.zst"
     },
     {
       "file": "solution_annotated.part046.txt.zst",
@@ -536,7 +536,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part046.txt.zst",
       "asset_id": 783155355,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part046.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part046.txt.zst"
     },
     {
       "file": "solution_annotated.part047.txt.zst",
@@ -547,7 +547,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part047.txt.zst",
       "asset_id": 783155353,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part047.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part047.txt.zst"
     },
     {
       "file": "solution_annotated.part048.txt.zst",
@@ -558,7 +558,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part048.txt.zst",
       "asset_id": 783155357,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part048.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part048.txt.zst"
     },
     {
       "file": "solution_annotated.part049.txt.zst",
@@ -569,7 +569,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part049.txt.zst",
       "asset_id": 783157542,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part049.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part049.txt.zst"
     },
     {
       "file": "solution_annotated.part050.txt.zst",
@@ -580,7 +580,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part050.txt.zst",
       "asset_id": 783157539,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part050.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part050.txt.zst"
     },
     {
       "file": "solution_annotated.part051.txt.zst",
@@ -591,7 +591,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part051.txt.zst",
       "asset_id": 783157753,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part051.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part051.txt.zst"
     },
     {
       "file": "solution_annotated.part052.txt.zst",
@@ -602,7 +602,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part052.txt.zst",
       "asset_id": 783159713,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part052.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part052.txt.zst"
     },
     {
       "file": "solution_annotated.part053.txt.zst",
@@ -613,7 +613,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part053.txt.zst",
       "asset_id": 783159714,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part053.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part053.txt.zst"
     },
     {
       "file": "solution_annotated.part054.txt.zst",
@@ -624,7 +624,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part054.txt.zst",
       "asset_id": 783159715,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part054.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part054.txt.zst"
     },
     {
       "file": "solution_annotated.part055.txt.zst",
@@ -635,7 +635,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part055.txt.zst",
       "asset_id": 783161824,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part055.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part055.txt.zst"
     },
     {
       "file": "solution_annotated.part056.txt.zst",
@@ -646,7 +646,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part056.txt.zst",
       "asset_id": 783161822,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part056.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part056.txt.zst"
     },
     {
       "file": "solution_annotated.part057.txt.zst",
@@ -657,7 +657,7 @@
       "role": "Annotated NDJSON volume",
       "uploaded_name": "solution_annotated.part057.txt.zst",
       "asset_id": 783161827,
-      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/untagged-847a26ea3ee02ec29e56/solution_annotated.part057.txt.zst"
+      "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part057.txt.zst"
     }
   ]
 }
