@@ -7,7 +7,7 @@
 <!-- full-annotation-expansion-status -->
 ## 完整注释附件展开进度
 
-57 卷完整注释正在按完整记录对分块上传，已完成 47/57 卷。实际目录、逐卷核验结果和下载入口见 [annotations/unpacked/](annotations/unpacked/)。原始 Release 附件作为备份保留。
+57 卷完整注释正在按完整记录对分块上传，已完成 48/57 卷。实际目录、逐卷核验结果和下载入口见 [annotations/unpacked/](annotations/unpacked/)。原始 Release 附件作为备份保留。
 <!-- /full-annotation-expansion-status -->
 
 ## 交付内容与目录
