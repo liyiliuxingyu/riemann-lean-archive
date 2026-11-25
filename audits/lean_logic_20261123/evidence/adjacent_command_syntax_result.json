@@ -1,0 +1,8 @@
+{
+  "question": "Does the observed decimal numeral immediately followed by open require whitespace in Lean 4.33.1?",
+  "command_source": "import Lean\nset_option maxHeartbeats 1600000open Nat\nexample : (1 : Nat) = 1 := rfl\n",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "scope": "Minimal lexer/parser control only, not compilation of the original long module."
+}

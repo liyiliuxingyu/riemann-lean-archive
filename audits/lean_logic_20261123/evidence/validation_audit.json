@@ -1,0 +1,312 @@
+{
+  "audit_date_beijing": "2026-11-23",
+  "recorded_at_utc": "2026-11-23T12:01:53.444127+00:00",
+  "scope": "Verification evidence, pinned configuration, and current execution feasibility; no source-project compilation or independent kernel recheck performed by this agent.",
+  "configuration": {
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "package_name": "tree",
+    "source_root": "src",
+    "autoImplicit": false,
+    "relaxedAutoImplicit": false,
+    "skip_kernel_flag_found_in_lakefile": false,
+    "lake_manifest_packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "16f02aa7642864af59f1ff0e384a015994db9118",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "6130a47896ce867c6a4a55373441e59e565bad0f",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.33.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ]
+  },
+  "current_environment": {
+    "executables": {
+      "lean": null,
+      "lake": null,
+      "elan": null,
+      "leanchecker": null,
+      "lean4checker": null,
+      "docker": null
+    },
+    "historical_toolchain_path_exists": false,
+    "historical_mathlib_path_exists": false,
+    "cpu_count": 9,
+    "meminfo_selected": [
+      "MemTotal:       10206472 kB",
+      "MemAvailable:    9394340 kB",
+      "SwapTotal:             0 kB",
+      "SwapFree:              0 kB"
+    ],
+    "cgroup": "0::/\n",
+    "memory_limit_file_exposed": false,
+    "new_compilation_performed": false,
+    "new_kernel_recheck_performed": false,
+    "initial_tool_lookup_is_before_root_toolchain_preparation": true,
+    "root_prepared_toolchain_path": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/toolchain/lean-4.33.1-linux/bin/lean",
+    "root_prepared_toolchain_version_rechecked": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "root_prepared_toolchain_version_exit_code": 0,
+    "toolchain_checked_at_utc": "2026-11-23T12:03:19.580798+00:00",
+    "note": "No binaries on PATH at start; root subsequently prepared the exact Lean 4.33.1 toolchain under the audit directory. This agent rechecked --version; the old runtime directory remains absent. No new full project build or external kernel recheck is claimed."
+  },
+  "historical_endpoint_check": {
+    "status": {
+      "command": [
+        "/workspace/scratch/e8ff28430def/runtime/lean/toolchains/lean-4.33.1-linux/bin/lake",
+        "env",
+        "lean",
+        "/workspace/scratch/e8ff28430def/research/riemann_lean_20261121/audit/EndpointReduction.lean"
+      ],
+      "cwd": "/workspace/scratch/e8ff28430def/runtime/lean/mathlib4",
+      "started_at_utc": "2026-11-21T13:38:16.015831+00:00",
+      "ended_at_utc": "2026-11-21T13:38:20.638050+00:00",
+      "elapsed_seconds": 4.622124995999911,
+      "exit_code": 0,
+      "source_sha256": "b174a2a9ff0552f05099ef686c395bc8aeac94c60e292cc49f2cd2e8387ba509",
+      "imports_only_official_mathlib": true,
+      "conditional_theorem_not_full_RH_proof": true,
+      "user_project_executed": false
+    },
+    "source_sha256_now": "b174a2a9ff0552f05099ef686c395bc8aeac94c60e292cc49f2cd2e8387ba509",
+    "hash_matches_status": true,
+    "conditional_only": true,
+    "global_main_riemannHypothesis_checked": false,
+    "reexecuted_now": false
+  },
+  "current_external_evidence": {
+    "status_page": "https://math.mit.edu/~drew/grh/",
+    "status_page_updated_utc": "2026-11-22 16:20",
+    "retrieval_count": 14,
+    "checksum_covered_count": 12,
+    "all_covered_checksums_match": true,
+    "matching_historical_file_count": 8,
+    "axiom_dependencies": [
+      [
+        "riemannHypothesis",
+        "[propext, Classical.choice, Quot.sound]"
+      ],
+      [
+        "riemannZeta_eq_zero_re",
+        "[propext, Classical.choice, Quot.sound]"
+      ],
+      [
+        "LFunction_ne_zero_of_half_lt_re",
+        "[propext, Classical.choice, Quot.sound]"
+      ],
+      [
+        "LFunction_eq_zero_re",
+        "[propext, Classical.choice, Quot.sound]"
+      ],
+      [
+        "LFunction_eq_zero_re_of_isPrimitive",
+        "[propext, Classical.choice, Quot.sound]"
+      ]
+    ],
+    "con_leche_full_accepted": 1468418,
+    "con_leche_compare_five_targets": true,
+    "con_ron_compare_five_targets": true,
+    "nanoda_exit_status_zero": true,
+    "sandbox_build_exit_zero": true,
+    "sandbox_export_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+    "sandbox_export_bytes": 61570595788,
+    "sandbox_olean_exact_matches": 175186,
+    "sandbox_olean_total": 175187,
+    "lean4lean_initial_timeouts": 5,
+    "lean4lean_raised_fuel_successes": 5,
+    "comparator_end_to_end_complete": false,
+    "whole_export_lean_default_and_paranoid_complete": false,
+    "third_party_recheck_not_our_execution": true,
+    "log_hash_bindings_note": "Most small checker logs name solution.ndjson without embedding its SHA256; the publication page and SHA256SUMS bind their provenance. The sandbox timeline itself contains the full export SHA256."
+  },
+  "findings": [
+    {
+      "id": "V01",
+      "kind": "validation_limit",
+      "title": "No fresh local full build or kernel recheck",
+      "confirmed": true,
+      "code_logic_bug": false
+    },
+    {
+      "id": "V02",
+      "kind": "artifact_semantics",
+      "title": "Merged .lean is a reversible archive, not a verified monolithic module",
+      "confirmed": true,
+      "code_logic_bug": false
+    },
+    {
+      "id": "V03",
+      "kind": "validation_scope",
+      "title": "Historical EndpointReduction checks conditional endpoint reductions only",
+      "confirmed": true,
+      "code_logic_bug": false
+    },
+    {
+      "id": "V04",
+      "kind": "external_validation",
+      "title": "Current published exact-target and independent-kernel logs support the original proof",
+      "confirmed": true,
+      "code_logic_bug": false
+    },
+    {
+      "id": "V05",
+      "kind": "validation_limit",
+      "title": "Published complete comparator and whole-export Lean kernel verdict still pending",
+      "confirmed": true,
+      "code_logic_bug": false
+    }
+  ],
+  "confirmed_logical_vulnerabilities_found_by_this_agent": [],
+  "not_claimed": [
+    "all source declarations independently checked by this agent",
+    "all original proof mathematics rewritten or manually verified",
+    "all possible checker implementation bugs excluded"
+  ],
+  "sources": [
+    {
+      "name": "Lean proof validation reference",
+      "url": "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+      "web_ref": "turn555689464view0"
+    },
+    {
+      "name": "MIT status",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "web_ref": "turn417726077view0"
+    },
+    {
+      "name": "axiom audit",
+      "url": "https://math.mit.edu/~drew/grh/audit.log",
+      "web_ref": "turn555689464view1"
+    },
+    {
+      "name": "con-leche full",
+      "url": "https://math.mit.edu/~drew/grh/con-leche-master.log",
+      "web_ref": "turn326657662view0"
+    },
+    {
+      "name": "con-ron compare",
+      "url": "https://math.mit.edu/~drew/grh/con-ron-compare.log",
+      "web_ref": "turn326657662view1"
+    },
+    {
+      "name": "sandbox timeline",
+      "url": "https://math.mit.edu/~drew/grh/sandbox-timeline.txt",
+      "web_ref": "turn326657662view2"
+    }
+  ],
+  "fresh_public_source_identity_check": {
+    "report": "public_source_comparison.json",
+    "script": "compare_public_source.py",
+    "passed": true,
+    "public_source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "archive_sha256": "64399e32d8dbce44d186c2f4ca5ee2a428e66b77d0c0b8a63ce0f8e5f0f8d192",
+    "files_compared": 175190,
+    "source_files": 175187,
+    "configuration_files": 3,
+    "source_bytes": 1030531854,
+    "archive_index_matches": 175190,
+    "archive_restored_exact_byte_matches": 175190,
+    "missing_or_extra_files": false,
+    "not_kernel_verification": true
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "scope": "Source-level direct declaration applications and selected definitions; no full rebuild or locally generated elaborated dependency closure",
+  "date": "2026-11-23",
+  "excerpts": [
+    {
+      "path": "Main.lean",
+      "line_start": 1,
+      "line_end": 4,
+      "file_sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "purpose": "final declaration",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean"
+    },
+    {
+      "path": "Supplements/Kernels/MainTheorems.lean",
+      "line_start": 1,
+      "line_end": 15,
+      "file_sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "purpose": "rhOfAll and allChi",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Supplements/Kernels/MainTheorems.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "line_start": 1,
+      "line_end": 14,
+      "file_sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "purpose": "final everyCharacter chain",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line_start": 810,
+      "line_end": 814,
+      "file_sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "purpose": "final literature application and independent covolume premise",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "line_start": 45,
+      "line_end": 74,
+      "file_sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "purpose": "actual nonempty route; direct anyGeometry arguments",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "line_start": 12,
+      "line_end": 18,
+      "file_sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "purpose": "new top bridge consuming HypsAlt",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "line_start": 20,
+      "line_end": 21,
+      "file_sha256": "c1d3ba89b86a5e8e29274a27baaa7766ad50e103e462d72b835d3c6615d6259e",
+      "purpose": "parametersOfDependence chooses geoCl anyGeometry",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean",
+      "line_start": 19,
+      "line_end": 61,
+      "file_sha256": "98b9e4db79d3c7e7b650dedb897a52f279392a03696134b104891137ffe674ae",
+      "purpose": "Parameters and record compatibility",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean",
+      "line_start": 30,
+      "line_end": 51,
+      "file_sha256": "7431256e8a6c407c4a9f42bde70edd2077884e8ee3af503b3eb01028f72f2bbf",
+      "purpose": "independent weak compatibility field",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+      "line_start": 39,
+      "line_end": 76,
+      "file_sha256": "9fbeb6d441b9a2009da7a1d2cde62729378ede7308bffc0164e5a7de5a07b9e7",
+      "purpose": "construction of hGeo and OpenParameterStatements",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0AtStatement.lean",
+      "line_start": 18,
+      "line_end": 19,
+      "file_sha256": "4db1b18cc73009aba4f57c7bc47bb7feda1d59d930d7ce4d5e9ddeddcb95a9c6",
+      "purpose": "wrapper for hGeo theorem",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0AtStatement.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0At.lean",
+      "line_start": 25,
+      "line_end": 32,
+      "file_sha256": "ce5b05f3c269c708b9ceee897d5eabc07b068780e55ed52df1eb5f38f41a79e4",
+      "purpose": "hGeo combination proof for general Gamma",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0At.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTiesStatement.lean",
+      "line_start": 22,
+      "line_end": 23,
+      "file_sha256": "460663d22a651cc9e08027efe4ad1e7a7af179a0ec0db1fdcc23dfefc4b0c613",
+      "purpose": "class sum wrapper",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTiesStatement.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTies.lean",
+      "line_start": 32,
+      "line_end": 77,
+      "file_sha256": "7fbb96547016f8e324fa32c96f51a04bf1c9402b7822d3793be7482e88f1197f",
+      "purpose": "class sum and ties proof using other inputs",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTies.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedBundlesL3OfOpen.lean",
+      "line_start": 31,
+      "line_end": 46,
+      "file_sha256": "38b99bb13cfbe01cb1752c03b08eed22db748be05a4f8f03dae70863eaecd467",
+      "purpose": "o.geo and independent hCov used",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedBundlesL3OfOpen.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EventualL3OfCovolume.lean",
+      "line_start": 14,
+      "line_end": 20,
+      "file_sha256": "bdee34d7b2c0322613dc9afba23bbaf88293b948dba8f9cf6a329124758b1ae8",
+      "purpose": "covolume implication into L3",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EventualL3OfCovolume.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "line_start": 60,
+      "line_end": 63,
+      "file_sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "purpose": "CovolumeBoundOfX definition",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGood.lean",
+      "line_start": 25,
+      "line_end": 42,
+      "file_sha256": "3353415da3436ea3eb58f886d64ba00b193ab9b56ed79afb5b3cdd3b73a43fc2",
+      "purpose": "LinkedAt and RowGeometricCondition definitions",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGood.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenAndLinkedOfStrongerExtension.lean",
+      "line_start": 28,
+      "line_end": 33,
+      "file_sha256": "49644e6edf3cbd5bbb1cb0e7608c9e6c59e55f22452a1bb33aa2668947e619ed",
+      "purpose": "same Gamma; strengthens norm extension",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenAndLinkedOfStrongerExtension.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+      "line_start": 50,
+      "line_end": 86,
+      "file_sha256": "ebb41248d0b20042bb45eba42ac5eb57af75b42604d3011d55fbf0e1d002c611",
+      "purpose": "AllRowsAlt.rRows consumes independent conditions",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+      "line_start": 41,
+      "line_end": 61,
+      "file_sha256": "80ebd1ee514d8a6a7967fe3e87c775148615416906038a046b27ea9436a2cc1f",
+      "purpose": "AllRowsAlt to nonempty HypsAlt",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/NonemptyHypsOfAllRows.lean",
+      "line_start": 19,
+      "line_end": 99,
+      "file_sha256": "5f2e7ad22b2d3d298ead1ad2de7a51529f37609ad0ed59daeca707ac281e6ebc",
+      "purpose": "construction from AllRowsAlt and existence",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/NonemptyHypsOfAllRows.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+      "line_start": 22,
+      "line_end": 90,
+      "file_sha256": "7c2e3cf200c8adb32d232bf97122dca648fd4e19de132f6d1f07f620171fa8cb",
+      "purpose": "HypsAlt remaining formal conditions",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean"
+    }
+  ],
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005"
+}

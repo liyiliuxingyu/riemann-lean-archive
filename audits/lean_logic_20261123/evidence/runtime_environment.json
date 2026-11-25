@@ -1,0 +1,18 @@
+{
+  "lean_version": "4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean_distribution_url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst",
+  "lean_distribution_bytes": 570405234,
+  "lean_distribution_sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_tar_sha256": "4906567b829fea7e354022c603aeebead7dd2f4ad1a39a91cc42ffae5de46326",
+  "mathlib_cache": {
+    "selected_module_dependency_files": 3550,
+    "first_attempt_exit": 1,
+    "first_attempt_issue": "HTTP 429 at default transfer concurrency",
+    "retry_exit": 0,
+    "retry_parallel_max": 2,
+    "retry_http_429_count": 0
+  }
+}

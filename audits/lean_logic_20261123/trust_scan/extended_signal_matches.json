@@ -1,0 +1,1173 @@
+{
+  "counts": {
+    "custom_elaboration_attribute": 13,
+    "alternate_commands": 18,
+    "foreign_runtime": 163
+  },
+  "matches": [
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Foundations/MemUnitaryGroupIffIsIsometry.lean",
+      "line": 606,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Jets/CmLatticeCommutatorPairingPowEqOneOfGoodLift.lean",
+      "line": 204,
+      "text": "    #X ≤ 𝔠 := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteOfPerfectPairingZmod.lean",
+      "line": 124,
+      "text": "      #X < #Y := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/HermitianBlockFrames/MkLeOfDenseRange.lean",
+      "line": 22,
+      "text": "    #X ≤ #(ℕ → Y) := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnimodularLattice/Transf.lean",
+      "line": 100,
+      "text": "#print axioms transfer_holds"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/GroundTheory/Brauer/CrossedProduct.lean",
+      "line": 242,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/GroundTheory/Brauer/MulDistribMulActionQuotientFixedPoints.lean",
+      "line": 99,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/GroundTheory/ProfiniteCohomology/CupProducts/Cocycles.lean",
+      "line": 36,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+      "line": 22,
+      "text": "#check @PI.UnitaryGroupMassFormula.UJClassMass.hermitian_approximation"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+      "line": 24,
+      "text": "#check @PI.UnitaryGroupMassFormula.UJClassMass.unitary_class_mass"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+      "line": 25,
+      "text": "#print axioms PI.UnitaryGroupMassFormula.UJClassMass.tensor_localization"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+      "line": 26,
+      "text": "#print axioms PI.UnitaryGroupMassFormula.UJClassMass.hermitian_approximation"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+      "line": 27,
+      "text": "#print axioms PI.UnitaryGroupMassFormula.UJClassMass.unitary_class_mass"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/GroundTheory/HeightsAndTheta/Heights/AnalyticLimit/RegularizedMaxC2ExampleRealLine.lean",
+      "line": 331,
+      "text": "theorem System.tendstoC2On_chart_symm_compact (S : System R) (k : Fin A.n) {K : Set (Fin D → ℂ)} (hK : IsCompact K)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/GroundTheory/HeightsAndTheta/Heights/AnalyticLimit/Telescoping.lean",
+      "line": 140,
+      "text": "    unfold System.teleConst"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/GroundTheory/HeightsAndTheta/Heights/AnalyticLimit/LinearWeights.lean",
+      "line": 60,
+      "text": "theorem System.curr_isSmoothPotForm {A : FinHolAtlas D X} {R : RegChartData A} (S : System R)"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/MonodromyZeroOfWeilDeligneRepClassIff.lean",
+      "line": 409,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/ReciprocityTheory/GroupCohomology/DEqZeroOfMemB.lean",
+      "line": 29,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/PIopNorm.lean",
+      "line": 556,
+      "text": "    rw [IO.Iop_of_le _ hle hG, e1, e2]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/PHfTrace.lean",
+      "line": 56,
+      "text": "      have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line": 601,
+      "text": "    have hsd : 0 < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/Statement.lean",
+      "line": 32,
+      "text": "    ∀ La' : AddSubgroup (VC D N N'), Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T La' → IsSemiChar (HfS D T N N') La' (al D T)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/RecursiveLatticeMembership/Bridge.lean",
+      "line": 27,
+      "text": "    exact Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm T x y"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/RecursiveLatticeMembership/Bridge.lean",
+      "line": 34,
+      "text": "    have h := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt T hI x hx y hy"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/RecursiveLatticeMembership/Bridge.lean",
+      "line": 38,
+      "text": "    simp only [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf, altE, HfS_apply, him]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/BoundedHalfModels/AdicBoxOpenness/CentralCharacterLocalHolds.lean",
+      "line": 96,
+      "text": "  · refine (IO.La_le_gen cc δ L L').trans ?_"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/BoundedHalfModels/Assemble.lean",
+      "line": 113,
+      "text": "  have intOf : ∀ Λ : AddSubgroup (VC D N N'), IO.HfInt (tor0 D cc δ) Λ →"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/BoundedHalfModels/Assemble.lean",
+      "line": 159,
+      "text": "  · haveI := IO.La_index_finite cc hcc δ L₀ q.1 L₀' q.2 hAdm hq'.1"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/BoundedHalfModels/MovesComposeOfParts.lean",
+      "line": 63,
+      "text": "  have intOf : ∀ Λ : AddSubgroup (VC D N N'), IO.HfInt (tor0 D cc δ) Λ →"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/HalvesRecursion/BoundedHalfModels/MovesComposeOfParts.lean",
+      "line": 178,
+      "text": "    have := IO.La_index_finite cc hcc δ La La' Lb Lb' hx hy"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 23,
+      "text": "    Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt (tor0 D cc δ) (La D (tor0 D cc δ) L L') :="
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 32,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm T (n • y) x, Hf_nsmul_left, map_mul, Complex.conj_natCast,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 33,
+      "text": "    ← Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 44,
+      "text": "theorem qH_int (T : Tor D) {La' : AddSubgroup (VC D N N')} (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 47,
+      "text": "  obtain ⟨m, hre, hr⟩ := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.self_int T hI hx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 48,
+      "text": "  have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 54,
+      "text": "  apply Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.neg_one_zpow_congr"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 125,
+      "text": "    Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf T x y ^ 2 = kap D T x y := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 126,
+      "text": "  unfold Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf kap"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 133,
+      "text": "    Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf T x y ^ Q = (-1 : ℂ) ^ (-b) := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 134,
+      "text": "  unfold Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 160,
+      "text": "  have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 164,
+      "text": "    rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_left, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 164,
+      "text": "    rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_left, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 165,
+      "text": "      Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right, Complex.add_re, Complex.add_re, Complex.add_re,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 166,
+      "text": "      Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_re_swap T (P • x) (P • y)]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 185,
+      "text": "  set cf0 := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.cf T x y with hcf0"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 215,
+      "text": "    rw [show Wop D T p y G = fun w => wPh D T p y * U D T y G w from rfl, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_smul, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_U]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/NegOneZpowEqOfParity.lean",
+      "line": 215,
+      "text": "    rw [show Wop D T p y G = fun w => wPh D T p y * U D T y G w from rfl, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_smul, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_U]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 327,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm T (c • y) x, Hf_smul_left, map_mul,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 328,
+      "text": "    ← Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 343,
+      "text": "  map_add' y y' := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right T x y y'"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 355,
+      "text": "      rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right, Complex.add_im, hk, hl]; push_cast; ring⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 360,
+      "text": "    have h0 := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right T x a (-a)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 367,
+      "text": "theorem im_int (T : Tor D) {La' : AddSubgroup (VC D N N')} (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 541,
+      "text": "    (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt (tor0 D cc δ) (La D (tor0 D cc δ) L L'))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 556,
+      "text": "    (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt (tor0 D cc δ) (La D (tor0 D cc δ) L L'))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/TestVectorMemSchwartzBruhat.lean",
+      "line": 609,
+      "text": "    (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt (tor0 D cc δ) (La D (tor0 D cc δ) L L'))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/XiMove.lean",
+      "line": 1089,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm T y, Hf_sum_right, map_sum]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/XiMove.lean",
+      "line": 1090,
+      "text": "  exact Finset.sum_congr rfl fun i _ => (Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_herm T y (f i)).symm"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/XiMove.lean",
+      "line": 1172,
+      "text": "  simp only [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_right, Complex.add_im] at h5"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/XiMove.lean",
+      "line": 1325,
+      "text": "    (hS : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.SemiChar (tor0 D cc δ) La) {th : VC D N N' → ℂ}"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/LatticeNormPowers/CloseUnitNorms/XiMove.lean",
+      "line": 1369,
+      "text": "        rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.term_out (tor0 D cc δ) hS hth]"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/NormNatEqOne.lean",
+      "line": 8,
+      "text": "    #X ≤ 𝔠 := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsAnalyticSetupPeriodLatticePair.lean",
+      "line": 160,
+      "text": "  exact_mod_cast (IO.sqrt_d_pos D).ne'"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsAnalyticSetupPeriodLatticePair.lean",
+      "line": 168,
+      "text": "  have h3 := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsAnalyticSetupPeriodLatticePair.lean",
+      "line": 244,
+      "text": "    rw [IO.Hf_herm (tor0 D cc δ) y' ((coord D N N').symm y), Complex.conj_im, hk]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsAnalyticSetupPeriodLatticePair.lean",
+      "line": 266,
+      "text": "    rw [hf_coord, IO.Hf_smul, FL.Hf_embV D (tor0 D cc δ) (fun _ _ => rfl)]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 625,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 625,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 637,
+      "text": "    have hs := IO.semiChar_of_HfInt _ hI x hx y hy"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/ProvisionExtensionLink.lean",
+      "line": 111,
+      "text": "  have hsd : 0 < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/ProvisionExtensionLink.lean",
+      "line": 188,
+      "text": "  have hs : (0 : ℝ) < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/IsometryLinkageTrivialLevel.lean",
+      "line": 65,
+      "text": "    have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/IsometryLinkageAtSplitPrime.lean",
+      "line": 41,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/LinkThetaStatementFamily.lean",
+      "line": 85,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/LinkThetaStatementFamily.lean",
+      "line": 87,
+      "text": "    have h1 := IO.Hf_herm (tor0 D cc δ) x x"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/GlobalOrthonormalBasisFour.lean",
+      "line": 823,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 94,
+      "text": "    Good lam (IO.cf T x y) := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 96,
+      "text": "  rw [Nat.cast_one, mul_one, IO.cf, hq, ← Complex.exp_nat_mul]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 128,
+      "text": "  simp [U, IO.Hf_zero_right]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 145,
+      "text": "    (hx : ∀ y, Pt y → Good lam (IO.cf T x y) ∧ Pt' (x + y)) : Rep lam T Pt' (U D T x F) G := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 147,
+      "text": "  refine ⟨m, fun k => c k * IO.cf T x (s k), fun k => x + s k,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 150,
+      "text": "  have e := IO.U_sum T x (fun k w => c k * U D T (s k) G w) z"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 154,
+      "text": "  rw [IO.U_smul, IO.U_U]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 154,
+      "text": "  rw [IO.U_smul, IO.U_U]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 171,
+      "text": "    (hx : ∀ x ∈ La₂, ∀ y, Pt y → Good lam (IO.cf T x y) ∧ Pt' (x + y))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 278,
+      "text": "theorem im_rat (T : Tor D) {La' : AddSubgroup (VC D N N')} (hI : IO.HfInt T La') {x y : VC D N N'} {n m : ℕ}"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 282,
+      "text": "    rw [← Nat.cast_smul_eq_nsmul ℂ n x, ← Nat.cast_smul_eq_nsmul ℂ m y, IO.Hf_smul]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 321,
+      "text": "  have hI : IO.HfInt (tor0 D cc δ) La2 := hermitian_form_integral_values D cc hcc δ hδ hδ0 N N' M M' hAdm"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 333,
+      "text": "  have cf_good : ∀ x y, Q2 x → Q2 y → Good lam (IO.cf (tor0 D cc δ) x y) := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 342,
+      "text": "      refine ⟨good_cf lam _ x 0 0 (by simp [IO.Hf_zero_right]), by simpa using hx⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/IntStd.lean",
+      "line": 373,
+      "text": "    exact IO.U_smul _ t _ _ z"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateNormalizedVectorIntegralCombTensorPower.lean",
+      "line": 31,
+      "text": "  have hI : IO.HfInt (tor0 D cc δ) La2 := hermitian_form_integral_values D cc hcc δ hδ hδ0 N N' M M' hAdm"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateNormalizedVectorIntegralCombTensorPower.lean",
+      "line": 43,
+      "text": "  have cf_good : ∀ x y, Q2 x → Q2 y → Good lam (IO.cf (tor0 D cc δ) x y) := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateNormalizedVectorIntegralCombTensorPower.lean",
+      "line": 83,
+      "text": "    exact IO.U_smul _ t _ _ z"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 302,
+      "text": "theorem al_mul (T : TaylorLogMetric.Tor D) {La' : AddSubgroup (TaylorLogMetric.VC D N N')} (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 306,
+      "text": "  obtain ⟨m0, h0re, h0r⟩ := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.self_int T hI hx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 307,
+      "text": "  obtain ⟨m1, h1re, h1r⟩ := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.self_int T hI hmx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 320,
+      "text": "    have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 327,
+      "text": "  apply Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.neg_one_zpow_congr"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RowSwApply.lean",
+      "line": 331,
+      "text": "theorem altE_mul (T : TaylorLogMetric.Tor D) {La' : AddSubgroup (TaylorLogMetric.VC D N N')} (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/PairingIndexBounds/SplitPairEquations/TripleSumIndependence/RightMoveTrianglesHold.lean",
+      "line": 22,
+      "text": "      (∀ (r : 𝓞 D.host.E), ∀ x ∈ Λ, J.mulO N N' (r : D.host.E) x ∈ Λ) ∧ Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T Λ)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/IsIntegralOfMemQbar.lean",
+      "line": 135,
+      "text": "  haveI := IO.La_index_finite cc hcc δ (Formalism.MainNotions.StandardLatticesGL3.stdL D N) L (Formalism.MainNotions.StandardLatticesGL3.stdL D N') (Formalism.MainNotions.StandardLatticesGL3.stdL D N') hA0 hA1"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GL3/IsIntegralOfMemQbar.lean",
+      "line": 142,
+      "text": "  haveI := IO.La_index_finite cc hcc δ L L (Formalism.MainNotions.StandardLatticesGL3.stdL D N') L' hA1 hA"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/FamColP.lean",
+      "line": 71,
+      "text": "  IO := h.IO.symm"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/HfTrace.lean",
+      "line": 61,
+      "text": "      have hs := Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/SelfDual.lean",
+      "line": 618,
+      "text": "    have hsd : 0 < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 626,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 626,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line": 638,
+      "text": "    have hs := IO.semiChar_of_HfInt _ hI x hx y hy"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ProvisionExtensionLink.lean",
+      "line": 112,
+      "text": "  have hsd : 0 < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ProvisionExtensionLink.lean",
+      "line": 189,
+      "text": "  have hs : (0 : ℝ) < Real.sqrt D.host.d := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/IsometryLinkageTrivialLevel.lean",
+      "line": 70,
+      "text": "    have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/IsometryLinkageAtSplitPrime.lean",
+      "line": 46,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/BaseLinkOfNonzeroDelta.lean",
+      "line": 88,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/BaseLinkOfNonzeroDelta.lean",
+      "line": 90,
+      "text": "    have h1 := IO.Hf_herm (tor0 D cc δ) x x"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 304,
+      "text": "theorem al_mul (T : TaylorLogMetric.Tor D) {La' : AddSubgroup (TaylorLogMetric.VC D N N')} (hI : Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 308,
+      "text": "  obtain ⟨m0, h0re, h0r⟩ := Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.self_int T hI hx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 309,
+      "text": "  obtain ⟨m1, h1re, h1r⟩ := Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.self_int T hI hmx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 322,
+      "text": "    have hs := Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 329,
+      "text": "  apply Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.neg_one_zpow_congr"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuConc.lean",
+      "line": 333,
+      "text": "theorem altE_mul (T : TaylorLogMetric.Tor D) {La' : AddSubgroup (TaylorLogMetric.VC D N N')} (hI : Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Formalism/LocalToGlobal/KernelLattices/ColumnData/ColumnDataEquations/MuFinal.lean",
+      "line": 24,
+      "text": "      (∀ (r : 𝓞 D.host.E), ∀ x ∈ Λ, J.mulO N N' (r : D.host.E) x ∈ Λ) ∧ Formalism.L2.Ker.Cd.IntegralLatticeDensity.IO.HfInt T Λ)"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/GroundTheory/HeightsAndTheta/Heights/KleimanAmpleness/PCechFlat.lean",
+      "line": 297,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AutomorphicArithmetic/OrbitLabellings/ExistsFrobeniusEquivariantLocalBasisCoordinates.lean",
+      "line": 53,
+      "text": "      have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsContinuousCharacter.lean",
+      "line": 21,
+      "text": "theorem kap_add_nsmul (T : Tor D) {Λ : AddSubgroup (VC D N N')} (hI : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T Λ) (k : ℕ)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsContinuousCharacter.lean",
+      "line": 26,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Hf_add_left, Complex.add_im, him, Complex.exp_eq_exp_iff_exists_int]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsContinuousCharacter.lean",
+      "line": 47,
+      "text": "      (Λ : AddSubgroup (VC D N N')), Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt (tor0 D cc δ) Λ →"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/WopAddLattice.lean",
+      "line": 69,
+      "text": "theorem Wop_add_lattice : ∀ (D : D7) (T : Tor D) (N N' : ℕ) (Λ : AddSubgroup (VC D N N')) (p : ℕ), p.Prime → Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.HfInt T Λ → ∀ G ∈ ThSp D T Λ, ∀ x w : VC D N N', w ∈ Λ → (∃ k : ℕ, p ^ k • x ∈ Λ) → (∃ a b : ℤ, Even (a - b) ∧ Hf D T x w = (((a : ℝ) / Real.sqrt D.host.d : ℝ) : ℂ) + (b : ℂ) * Complex.I) → Wop D T p (x + w) G = Wop D T p x G := by"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/CoherentCohomologyProofs/AwayEquivAwayFracEqIff.lean",
+      "line": 152,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/BlockTheory/HeightDefect/LatticeModelCharts.lean",
+      "line": 82,
+      "text": "    #X ≤ 𝔠 := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/ModuliSpaces/ExistsRetractTensorTriple.lean",
+      "line": 28,
+      "text": "def System.Amp (S : System Xo) : Prop := ∀ i, (S.T i).Amp"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelStructureConditionsAndSplitFibres.lean",
+      "line": 26,
+      "text": "theorem System.levelStructureConditions_and_splitFibres : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscreteValuationRing T] [Field K] [Algebra T K] [IsFractionRing T K] (G G' : Over (Sp T)) [GrpObj G] [GrpObj G'], IsSemiAbelian G → IsSemiAbelian G' → ∀ f : (Over.pullback (spMap (algebraMap T K))).obj G ⟶ (Over.pullback (spMap (algebraMap T K))).obj G', IsMonHom f → ∃! F : G ⟶ G', IsMonHom F ∧ (Over.pullback (spMap (algebraMap T K))).map F = f) → Out.Laws → Out.Laws2 → Out.Laws3 → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (Xo : ∀ l : Level H, Moduli D l), 1 ≤ D.p + D.q → ToroidalLevelCompatibility (H := H) (D := D) → ∀ (S : System Xo) p W hp hW (i : Idx H p), (S.Y p W hp hW i).LevelStructureConditions p ∧ (S.Y p W hp hW i).SplitFibres := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelStructureConditionsAndSplitFibresStatement.lean",
+      "line": 16,
+      "text": "  first | exact @GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | exact GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | (intros; apply GlobalTheory.Models.System.levelStructureConditions_and_splitFibres <;> assumption)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelStructureConditionsAndSplitFibresStatement.lean",
+      "line": 16,
+      "text": "  first | exact @GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | exact GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | (intros; apply GlobalTheory.Models.System.levelStructureConditions_and_splitFibres <;> assumption)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/LevelStructureConditionsAndSplitFibresStatement.lean",
+      "line": 16,
+      "text": "  first | exact @GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | exact GlobalTheory.Models.System.levelStructureConditions_and_splitFibres | (intros; apply GlobalTheory.Models.System.levelStructureConditions_and_splitFibres <;> assumption)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormalisedFamilyLatticeHypAndSmooth.lean",
+      "line": 35,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormalisedFamilyLatticeHypAndSmooth.lean",
+      "line": 35,
+      "text": "    ⟨IO.La_index_ne_zero cc hcc δ L₁ L₂ L₁' L₂' h₁ h₂, IO.La_index_ne_zero cc hcc δ L₂ L₁ L₂' L₁' h₂ h₁⟩⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormalisedFamilyLatticeHypAndSmooth.lean",
+      "line": 47,
+      "text": "    have hs := IO.semiChar_of_HfInt _ hI x hx y hy"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/EqZeroOfInAMul.lean",
+      "line": 93,
+      "text": "@[elab_as_elim] theorem induction_on {p : AK K → Prop} (x : AK K) (mul : ∀ a c, p (inA K a * inO K c))"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsKerPowDvd.lean",
+      "line": 57,
+      "text": "@[elab_as_elim] theorem induction_on {p : CK K → Prop} (x : CK K) (mul : ∀ a c, p (inC K a * inI K c))"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/ExistsEmbeddingCompleteAlgClosedFixedCarrier.lean",
+      "line": 19,
+      "text": "    #C ≤ #A ^ ℵ₀ := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/ExistsEmbeddingCompleteAlgClosedFixedCarrier.lean",
+      "line": 51,
+      "text": "      #L ≤ 𝔠 := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/AlgEntireTranslate.lean",
+      "line": 32,
+      "text": "theorem wPh_mem {D : D7} (T : Tor D) {N N' : ℕ} {La' : AddSubgroup (VC D N N')} (hI : IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/AlgEntireTranslate.lean",
+      "line": 34,
+      "text": "  obtain ⟨m, hm, -⟩ := IO.self_int T hI hx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/AlgEntireTranslate.lean",
+      "line": 35,
+      "text": "  have hs := IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/AlgEntireTranslate.lean",
+      "line": 57,
+      "text": "theorem kap_mem {D : D7} (T : Tor D) {N N' : ℕ} {La' : AddSubgroup (VC D N N')} (hI : IO.HfInt T La')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/AlgEntireTranslate.lean",
+      "line": 80,
+      "text": "    ⟨IO.U_diff _ t hTh.1,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 64,
+      "text": "theorem hfInt_goodLifts (hI : IO.HfInt (tor0 D cc δ) (La D (tor0 D cc δ) L L')) (N₀ n : ℕ) :"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 65,
+      "text": "    IO.HfInt (tor0 D cc δ) (goodLifts D (tor0 D cc δ) lam N₀ n L L') := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 66,
+      "text": "  refine IO.HfInt_closure _ _ ?_"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 88,
+      "text": "  rw [← Nat.cast_smul_eq_nsmul ℂ, ← Nat.cast_smul_eq_nsmul ℂ, smul_smul, IO.Hf_smul] at this"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 89,
+      "text": "  rw [IO.Hf_smul]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 90,
+      "text": "  change IO.Good D _ at this"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 117,
+      "text": "theorem U_mem_ThSp (T : Tor D) {Λ : AddSubgroup (VC D N N')} (hI : IO.HfInt T Λ) {G : VC D N N' → ℂ} (hG : G ∈ ThSp D T Λ)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 119,
+      "text": "  refine ⟨IO.U_diff T t hG.1, ?_⟩"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 124,
+      "text": "  have h2 : (Hf D T t (n₀ • x)).im = ((-b : ℤ) : ℝ) := by rw [IO.Hf_herm, Complex.conj_im, h1]; simp"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 125,
+      "text": "  have h3 : U D T t G z = al D T (n₀ • x) * IO.cf T t (n₀ • x) * U D T (t + n₀ • x) G z := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 126,
+      "text": "    conv_lhs => rw [← IO.fix_eq T hG (nsmul_mem hx n₀)]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 127,
+      "text": "    rw [IO.U_smul, IO.U_U]; ring"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 127,
+      "text": "    rw [IO.U_smul, IO.U_U]; ring"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 128,
+      "text": "  rw [h3, IO.U_U, IO.cf_int T _ _ _ h1, IO.cf_int T _ _ _ h2, add_comm t,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 128,
+      "text": "  rw [h3, IO.U_U, IO.cf_int T _ _ _ h1, IO.cf_int T _ _ _ h2, add_comm t,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 128,
+      "text": "  rw [h3, IO.U_U, IO.cf_int T _ _ _ h1, IO.cf_int T _ _ _ h2, add_comm t,"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 129,
+      "text": "    IO.neg_one_zpow_congr (n := -b) (m := - -b) ⟨-b, by ring⟩]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 135,
+      "text": "  have hx' := IO.La_le_gen cc δ L L' hx"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 345,
+      "text": "    IO.Iop_mem_ThSp _ (IO.semiChar_of_HfInt _ (hermitian_form_integral_values D cc hcc δ hδ h0 N N' L L' hA))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 345,
+      "text": "    IO.Iop_mem_ThSp _ (IO.semiChar_of_HfInt _ (hermitian_form_integral_values D cc hcc δ hδ h0 N N' L L' hA))"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 346,
+      "text": "      (IO.Iop_mem_ThSp _ (IO.semiChar_of_HfInt _ (hermitian_form_integral_values D cc hcc δ hδ h0 N N' L _"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 346,
+      "text": "      (IO.Iop_mem_ThSp _ (IO.semiChar_of_HfInt _ (hermitian_form_integral_values D cc hcc δ hδ h0 N N' L _"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 351,
+      "text": "  rw [IO.U_smul, mul_left_comm, h1.2 x hx z]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 369,
+      "text": "  rw [e, GlobalTheory.ThetaConj.taylor_mul D _ (IO.U_diff _ _ hT.1)]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 405,
+      "text": "theorem kap_add_right (T : Tor D) {Λ : AddSubgroup (VC D N N')} (hI : IO.HfInt T Λ) {w l : VC D N N'} (x : VC D N N')"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 410,
+      "text": "  rw [IO.Hf_add_right, Complex.add_im, him, Complex.exp_eq_exp_iff_exists_int]"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line": 437,
+      "text": "  rw [GlobalTheory.ThetaShift.Wop_add_lattice D _ N N' _ p hp (IO.HfInt_mono _ (mulSub_le n₀ _) hI) _"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/TranslateEntireAlgebraic.lean",
+      "line": 18,
+      "text": "  exact ⟨Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_diff _ s h1.1, fun α => GlobalTheory.ThLoc.algTAll D cc δ B χ hc hδ hχ a b N N' hA s hs α⟩"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsFixedComplexPointOfFixedFieldPoint.lean",
+      "line": 17,
+      "text": "    #S ≤ max #R ℵ₀ := by"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/T2SpaceComplexPointsOfProjVariety.lean",
+      "line": 70,
+      "text": "@[elab_as_elim] theorem induction {P : CxExt σ A → Prop} (x : CxExt σ A)"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeIntertwinerStandardToSkewMemThetaSpace.lean",
+      "line": 19,
+      "text": "    (h : GlobalTheory.InertSign.Nice D T A) : Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.SemiChar T A := by"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeIntertwinerStandardToSkewMemThetaSpace.lean",
+      "line": 26,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_smul, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_U] at hz"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeIntertwinerStandardToSkewMemThetaSpace.lean",
+      "line": 26,
+      "text": "  rw [Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_smul, Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.U_U] at hz"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LatticeIntertwinerStandardToSkewMemThetaSpace.lean",
+      "line": 38,
+      "text": "  exact Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Iop_mem_ThSp (tor0 D ⊤ δ) (semiChar_of_nice hN) he0"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TorusSemicharacterEqNegOnePowTraceExponent.lean",
+      "line": 92,
+      "text": "  have := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TorusSemicharacterEqNegOnePowTraceExponent.lean",
+      "line": 138,
+      "text": "  have hs : ((Real.sqrt D.host.d : ℝ) : ℂ) ≠ 0 := by exact_mod_cast (Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D).ne'"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TorusSemicharacterEqNegOnePowTraceExponent.lean",
+      "line": 219,
+      "text": "  have hs := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.sqrt_d_pos D"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitScalarFourier.lean",
+      "line": 134,
+      "text": "  have hS := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_ne_zero _ hΘ hne"
+    },
+    {
+      "kind": "foreign_runtime",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitScalarFourier.lean",
+      "line": 135,
+      "text": "  have hI := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.Iop_mem_ThSp _ hS he0.1"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsCompleteIsAlgClosedComplexRatVal.lean",
+      "line": 21,
+      "text": "    #X ≤ 𝔠 := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ArithmeticVarietyEmbedsComplex.lean",
+      "line": 14,
+      "text": "    #K ≤ max #A ℵ₀ := by"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsLocallyNoetherianBase.lean",
+      "line": 33,
+      "text": "@[elab_as_elim]"
+    },
+    {
+      "kind": "custom_elaboration_attribute",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/ExactFormsLeClosedForms.lean",
+      "line": 82,
+      "text": "@[elab_as_elim] theorem induction_on {k : ℕ} {P : A.HSm k → Prop} (c : A.HSm k) (h : ∀ α, P (mk A k α)) : P c := by"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemRangeOfSmallTraits.lean",
+      "line": 42,
+      "text": "    #R ≤ 𝔠 → ∀ a b : R, b ≠ 0 → (∀ (V : Type) [CommRing V] [IsDomain V] [IsLocalRing V], GlobalTheory.LN.CDvr V → #V ≤ 𝔠 →"
+    },
+    {
+      "kind": "alternate_commands",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemRangeOfSmallTraits.lean",
+      "line": 371,
+      "text": "    #A ≤ 𝔠 := by"
+    }
+  ]
+}

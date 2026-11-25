@@ -3,3 +3,8 @@ project/lean/original/** -text -filter -ident
 project/lean/RH_AllSources.index.jsonl -text -filter -ident
 project/lean/dependencies/** -text -filter -ident
 solution_annotation_toolkit/** -text -filter -ident
+
+# Preserve every byte of the additional unpacked historical archives.
+audits/lean_geometry_20261123/** -text -filter -ident
+audits/lean_logic_20261123/** -text -filter -ident
+project/third_party/ctex-kit-source/** -text -filter -ident

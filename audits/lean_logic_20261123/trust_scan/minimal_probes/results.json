@@ -1,0 +1,58 @@
+[
+  {
+    "file": "AddDeclNegative.lean",
+    "expected_result": "kernel_type_mismatch",
+    "actual_exit_code": 1,
+    "expectation_met": true,
+    "duration_seconds": 0.779,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/AddDeclNegative.lean:5:0: error: (kernel) declaration type mismatch, 'audit_invalid_added_thm' has type\n  True\nbut it is expected to have type\n  False\n"
+  },
+  {
+    "file": "AddDeclPositive.lean",
+    "expected_result": "success",
+    "actual_exit_code": 0,
+    "expectation_met": true,
+    "duration_seconds": 0.671,
+    "output": ""
+  },
+  {
+    "file": "KCopyNegative.lean",
+    "expected_result": "kernel_type_mismatch",
+    "actual_exit_code": 1,
+    "expectation_met": true,
+    "duration_seconds": 0.909,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyNegative.lean:51:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead\n/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyNegative.lean:69:8: error: (kernel) declaration type mismatch, 'audit_invalid_kcopy' has type\n  True\nbut it is expected to have type\n  False\n"
+  },
+  {
+    "file": "KCopyPositive.lean",
+    "expected_result": "success",
+    "actual_exit_code": 0,
+    "expectation_met": true,
+    "duration_seconds": 0.89,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyPositive.lean:51:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead\n"
+  },
+  {
+    "file": "KExactNegative.lean",
+    "expected_result": "kernel_type_mismatch",
+    "actual_exit_code": 1,
+    "expectation_met": true,
+    "duration_seconds": 0.678,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KExactNegative.lean:11:8: error: (kernel) declaration type mismatch, 'audit_invalid_kexact' has type\n  True\nbut it is expected to have type\n  False\n"
+  },
+  {
+    "file": "KExactPositive.lean",
+    "expected_result": "success",
+    "actual_exit_code": 0,
+    "expectation_met": true,
+    "duration_seconds": 0.703,
+    "output": ""
+  },
+  {
+    "file": "OptionsNegative.lean",
+    "expected_result": "kernel_type_mismatch",
+    "actual_exit_code": 1,
+    "expectation_met": true,
+    "duration_seconds": 0.654,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/OptionsNegative.lean:13:8: error: (kernel) declaration type mismatch, 'audit_invalid_options' has type\n  True\nbut it is expected to have type\n  False\n"
+  }
+]

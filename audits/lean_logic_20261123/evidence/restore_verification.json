@@ -1,0 +1,11 @@
+{
+  "operation": "restore",
+  "module_count": 175187,
+  "auxiliary_count": 3,
+  "source_bytes": 1030531854,
+  "all_embedded_sha256_passed": true,
+  "compared_with_originals": false,
+  "lean_compilation_performed": false,
+  "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+  "destination": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/original"
+}

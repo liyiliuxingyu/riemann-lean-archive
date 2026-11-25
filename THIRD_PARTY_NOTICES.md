@@ -7,7 +7,7 @@
 `黎曼猜想_人类可读证明与续作工程.zip` 保持已核验文件原样。
 
 - Fandol 的许可文件保存在 `riemann_human/texmf/doc/fonts/fandol/COPYING`，并在 `riemann_human/texmf/fonts/opentype/public/fandol/COPYING` 保留一份。
-- CTeX 对应源码归档保存在 `riemann_human/third_party/ctex-kit-source.tar.gz`；组件许可及源码说明以归档和随附文件为准。
+- 原工程 ZIP 的 CTeX 对应源码归档位于 `riemann_human/third_party/ctex-kit-source.tar.gz`。普通 Git 已将它展开为 [project/third_party/ctex-kit-source/](project/third_party/ctex-kit-source/)，保留全部 405 个源码与随附文件；组件许可及版权声明以其中原文件为准。原包映射及校验见 [独立文件说明](docs/INDIVIDUAL_FILES.md)。
 - CTeX、xeCJK、zhnumber、Fandol 的资源和既有声明随完整工程保留。
 - Lean 项目、Mathlib 及其他依赖继续按各自源码与工程配置中的许可和版本处理。本说明不改变上游授权范围。
 

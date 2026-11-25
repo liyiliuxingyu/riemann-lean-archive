@@ -1,0 +1,8 @@
+\input{regression-test}
+
+\documentclass{ctexbook}
+\usepackage{hyperref,cleveref}
+
+\begin{document}
+\input{cleveref-body}
+\end{document}

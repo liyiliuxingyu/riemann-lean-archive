@@ -1,0 +1,153 @@
+anyGeometry 恒真条件与退化模型：黎曼猜想 Lean 工程专项核查
+复核日期：2026 年 11 月 23 日
+
+结论
+
+截图中的定义真实存在，恒真谓词确实被最终证明路线使用；相关构造也确实采用了包含 True、零体积、零度数和零映射的退化模型。这不是仅有一个可疑名称，也不能解释成“只是无关文件被 import”。
+
+但目前检查到的这些事实，没有单独构成“固定的标准黎曼猜想被错误证明”的逻辑反例。一个辅助字段没有强几何含义，不等于最终固定结论没有有效证明。需要分别审查最终目标及其传递定义、完整证明项、公理闭包，以及人类叙述与内部定义是否一致。
+
+本报告既不把这张截图当作已完成的反驳，也不声称已完成全工程重新核验。上一轮审查没有单独追踪 anyGeometry，这份报告补上该项，并保留所有范围限制。
+
+一、核查对象与证据类型
+
+本地源树与上一轮一致，固定到公开版本：
+40e56bab026552e089d7afcfeff08d2defb9c005
+
+上一轮已将恢复的 175,187 个 Lean 模块及 3 个配置文件逐字节与该固定公开源码归档比对。本轮沿用这份源树，没有修改原证明。
+
+本轮实际完成：
+1. 定义和构造的定点源码复核；
+2. 从最终声明到 anyGeometry 的显式源码引用链复核；
+3. 全源树词串统计与命名空间消歧；
+4. 两个仅使用 Lean 核心的独立逻辑实验，保存真实输出；
+5. 阅读外部作者发布的编译后依赖报告及官方验证说明。
+
+本轮未完成：全项目重新构建、由本机导出完整编译后依赖闭包、全量独立内核重放，以及所有定量估计分支的人类数学审读。外部报告的结果不会标作本机重跑结果。
+
+二、截图中哪些代码判断成立
+
+在 OverIx.lean 的第 16–19 行，强 geoOf 要求正整数见证、IsGeoOf 条件以及 HasTrueSurf；anyGeometry 则精确为：
+
+  def anyGeometry : GeoP := fun _ _ _ => True
+
+同文件第 44–47 行的 OAt 记录还具有 lam : LamAre ... 字段。因此把参数选择为 anyGeometry，确实免除了 geo 字段的限制，但没有按定义把整个记录变成恒真。
+
+NotGeoClFalse.lean 第 21–28 行的 GeoCl.base 可把这个恒真见证放进闭包。因此 geoCl anyGeometry 对任何类型正确的输入也都可证；加入 geoCl 并没有补回强 geoOf 的条件。
+
+NotLamAreShift.lean 第 152–161 行分别提供弱构造 oAt_any 和强构造 oAt_geoOf。弱构造使用 trivial；强构造仍需要正整数条件及 IsGeoOf 输入。在已读到的这些接口中，没有发现把 True 直接当作强 geoOf 的证明。
+
+三、它是否真的进入了最终证明
+
+是。源码中可以逐步追到下面的显式引用链：
+
+riemannHypothesis
+→ rhOfAll
+→ allChi
+→ UpperTheory.FinalTheorems.everyCharacter
+→ UpperTheory.FinalTheorems.everyCharacter_of_row
+→ UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
+→ UpperTheory.Lit.every_character_of_theta_integrals_local_matching
+→ UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
+→ anyGeometry
+
+最后一个构造在 SiegelEisensteinSecondTermHypotheses.lean 的第 60、63、67 行将 geoCl anyGeometry 作为实参。Prm1.lean 第 20–21 行的 parametersOfDependence 也直接选择该参数。完整文件路径与对应行号见 evidence/source_application_chain.tsv。
+
+本地证据是源码表达式引用，不只是 import 关系；本地并未据此声称生成了内核依赖图或证明该链最短。
+
+外部 Rosetta 报告基于编译后数据给出八条 value 引用边，并说明所追踪的最终定理不使用强谓词 GlobalTheory.Mem.Top.Bl.geoOf。Harry Tong 的另一版本审计也报告了该弱谓词及若干退化构造可从五个最终声明到达。两份报告均明确区分“依赖可达”和“不可缺少的数学内容”。[S1, S2]
+
+当前实际路线使用 nonempty_hyps_definite_side_of_closed_bound 等新构造。Harry Tong 所检查的版本中，旧 hypsE₂、everyE₂、plugAll 不在最终声明闭包。不能用旧路线代替本轮追到的新路线。[S2]
+
+四、退化模型的事实不能被回避
+
+Inhabited.lean 第 241–306 行的 geoDegenerate 不只是取名为“退化”：Eff、nef、big、vanishOn 等字段确实取 True；pts 取 PUnit；vol、pn、pnK 等取零。
+
+同文件第 829–861 行的 divXFl 使用该模型，并令 Comp 为 PUnit、degM 和 degHH 为零、iMj 为零线性映射。
+
+GeoTiedP.lean 第 152–164 行的 famFlJ 基于 geoDegenerate。TupPinsOfMuIsW.lean 第 155–191 行的弱构造选择 divXFl 和 famFlJ，并将其送入 DivT.geo。
+
+因此，“还有名为 geo 或 Geometry 的字段，所以真实非退化几何已经成立”不是有效的反驳。若人类说明把这些字段自动翻译成已经建立真实曲面、非退化几何或所要求的强实现，那种说明需要改写。
+
+同时，这些退化赋值本身并非逻辑矛盾。是否影响最终结论，要看实际使用的是哪些精确定义和已证明引理，而不是对象的名字是否听起来符合熟悉的几何直觉。
+
+五、为什么尚不能推出最终证明无效
+
+原代码还要求独立条件。例如 LiftLambdaBound.lean 第 60–61 行的 CovolumeBoundOfX 要求最终的 L3 数值界；当前最终路线将 topCovolSlim2_use_alt_alt 的结果作为该输入，而不是仅以 anyGeometry 提供这个界。HypsAlt 也保留存在性、选择、行条件及计数等其他字段。
+
+这只说明不能从一个恒真字段省略全部其他义务，并不表示本报告已经逐项证明那些义务对应正确的人类数学内容。复杂的字段名称和数量同样不是有效性的保证。
+
+更根本的逻辑区别是：对于一个已经固定的命题 P，(True → P) 与 P 等价。证明 True 很容易，但要建立 True → P，仍然需要真正建立 P。两个谓词同属某个 X → Prop 类型，不代表它们的证明可以互换。
+
+因此，若以下三项成立：
+1. 最终目标及其传递引用的定义，与独立可信环境中的标准目标一致；
+2. 最终证明闭合，只依赖明确接受的公理；
+3. 实际完整证明项被可靠内核接受；
+那么内部引入一个恒真辅助谓词，不会使一个假的固定最终结论凭空获得有效证明。
+
+Lean 官方的比较验证说明明确把“目标及其传递定义匹配”“证明项被检查”“没有额外公理”列作不同检查内容。仅有编辑器绿勾不足以涵盖所有这些检查；同样，发现内部定义为 True 也不能推翻已经满足这些条件的结论。[S3]
+
+若要将此疑点升级为最终定理的漏洞报告，需要定位具体问题：最终目标被偷换；未证明假设或额外公理仍在；某个桥接结论不成立；或所宣称的证明核验不可靠。当前局部复核尚未给出这样的证据。
+
+六、实际运行的独立 Lean 对照实验
+
+工具链：Lean 4.33.1。没有导入原 RH 工程。
+
+tests/TrueInterfaceLogic.lean 实际退出码为 0，证明了：
+• 恒真谓词不能自动变成任意强谓词；
+• 对任意 P，(True → P) ↔ P；
+• 不存在 True → False 的函数；
+• 含恒真辅助字段及真实正性字段的结构，仍可合法证明固定目标 0 < 1。
+
+该文件的四项 #print axioms 输出都显示不依赖任何公理。
+
+tests/InvalidTrueBridge.lean 是故意错误的独立示例，实际退出码为 1，报 Type mismatch。它尝试把 anyGeometry 1 的证明当作 realGeometry 1，其中后者定义为 1 = 0。这个失败是预期拒绝，不是原 RH 项目的报错。
+
+实验仅验证一般逻辑区别，不能代替完整原证明核验。真实源文件哈希、退出码和输出见 tests/logic_examples_results.json；可使用 run_logic_examples.py --lean /绝对路径/lean 重跑。
+
+七、“24 个文件对 12 个文件”的统计含义
+
+全库原始词串统计可以重现：
+• anyGeometry：24 个文件，162 次；
+• geoOf 子串：12 个文件，24 次；
+• geoOf 完整标识符：10 个文件，16 次。
+
+geoOf 的结果混合了 Bl.geoOf、TrueGeo.geoOf、DRFlag.geoOf 等不同常量；子串统计还包括 geoOfMatch。该数量不是同一个强几何谓词的语义使用次数。文件出现次数也不能衡量哪个条件在证明中必不可少。
+
+八、对截图结论与上一轮审查的修订
+
+可以确认：额外几何谓词恒真；它位于最终路线；相关弱实现确实允许退化模型。
+
+不能据此确认：“整个几何论证从未建立”“最终标准黎曼猜想证明已被推翻”或“验证器被这行定义欺骗”。这些是需要额外论证的更强主张。
+
+上一轮扫描未发现 sorry、额外公理等常见问题，并不自动排除这种语义争议。本报告补充该检查，而不是把此前有限审查扩大成无漏洞保证。现有结论仍是：本次定位到了必须解释的弱几何接口和退化模型，尚未定位固定最终命题中的无效推理。
+
+资料范围也需说明：未能获取 Nielsen 最新论文的 PDF 全文；本次只评价截图、实际源码及能读到的作者公开评论，不声称反驳了其未读全文中的所有论证。
+
+来源
+
+[S0] 本地复核固定源码版本：
+https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005
+各文件具体路径、行号和 SHA-256 见 evidence 中的索引。
+
+[S1] Rosetta：Where anyGeometry occurs in the checked RH proof
+https://github.com/dial481/riemann-hypothesis-rosetta/blob/main/results/anygeometry.md
+这里引用的是作者发表的编译后依赖数据分析，不是本报告生成的全量内核依赖图。
+
+[S2] Harry Tong：Nielsen/Chu RH critique: compiled dependency audit findings
+https://github.com/harrytong/rh-verification/blob/main/RH_critics_dependency_findings.md
+其受查源码版本为 753431bfe28701f6f3937f664fcaf08daa139c03，与本地固定版本应区分。
+
+[S3] Lean 官方：Validating a Lean Proof
+https://lean-lang.org/doc/reference/latest/ValidatingProofs/
+
+[S4] Frank Chu 原文及作者评论
+https://dev.to/frankchu/grh-proofs-geometry-is-fun-true-in-24-files-2n2b
+
+[S5] MIT 公开核验资料页
+https://math.mit.edu/~drew/grh/
+
+[S6] Lean FRO 与 Mathlib Initiative 的公开声明
+https://leanprover-community.github.io/blog/posts/riemann-hypothesis/
+
+所有结论均按已观察到的证据分级。本报告未修改原工程，也没有将局部实验包装为完整的黎曼猜想证明证书。

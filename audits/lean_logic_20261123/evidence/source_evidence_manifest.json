@@ -1,0 +1,1016 @@
+[
+  {
+    "original_project_path": "lake-manifest.json",
+    "delivered_path": "source_evidence/lake-manifest.json",
+    "bytes": 3221,
+    "sha256": "fee57ee9ed399d0a638ca955e5ad40a37a36eeb9b6dfd9f5964114fa7bbe4774"
+  },
+  {
+    "original_project_path": "lakefile.toml",
+    "delivered_path": "source_evidence/lakefile.toml",
+    "bytes": 1619,
+    "sha256": "b831ad8cac0babb7bf713433259bdfe5163e58c90734e86d71536d4e30ddec4c"
+  },
+  {
+    "original_project_path": "lean-toolchain",
+    "delivered_path": "source_evidence/lean-toolchain",
+    "bytes": 25,
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  {
+    "original_project_path": "src/BuildAid/D1.lean",
+    "delivered_path": "source_evidence/src/BuildAid/D1.lean",
+    "bytes": 168,
+    "sha256": "31929a2acb212f4ff081fcbcf3be3450265e616d41567868214ed6a4d4e36208"
+  },
+  {
+    "original_project_path": "src/BuildAid/D2.lean",
+    "delivered_path": "source_evidence/src/BuildAid/D2.lean",
+    "bytes": 184,
+    "sha256": "26425f890b105125a44aa60967fe39b3f961841c0d720f0f14986b8052c237e0"
+  },
+  {
+    "original_project_path": "src/BuildAid/D3.lean",
+    "delivered_path": "source_evidence/src/BuildAid/D3.lean",
+    "bytes": 165,
+    "sha256": "de55aa305addb1a552941059ea5cca8a48142412652980b79acf28566576654e"
+  },
+  {
+    "original_project_path": "src/BuildAid/D4.lean",
+    "delivered_path": "source_evidence/src/BuildAid/D4.lean",
+    "bytes": 169,
+    "sha256": "4ba5bd9edc7f1a9e4fa769dd8ae34fdb30d0481468325ad5cc85449c873be2ff"
+  },
+  {
+    "original_project_path": "src/BuildAid/D5.lean",
+    "delivered_path": "source_evidence/src/BuildAid/D5.lean",
+    "bytes": 164,
+    "sha256": "b4766a7b0b3187f772e027b76e540bc36689705b7133cfa6db11555ce0cd01f7"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GoodPartEq.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GoodPartEq.lean",
+    "bytes": 12691,
+    "sha256": "693785a6e1f60531b1dc1f62a9a10aef54fc59d6ab501b8df51828e579686494"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsCrisP.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsCrisP.lean",
+    "bytes": 3386,
+    "sha256": "d172849246f8c98320925699c780833a78d50f9b7a979d4adaf30158606c0441"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PlaceModelImp.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PlaceModelImp.lean",
+    "bytes": 16339,
+    "sha256": "ae11832e67ebf87d2110128ca07d4859f2dd8c9ab23c9718222513ef929ffe91"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RealIoX.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RealIoX.lean",
+    "bytes": 6523,
+    "sha256": "29b499b0efa4e8bc72fdac1fba7a17bba4fd4aad0c83a3dc83541407473141ac"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/NegOnePowBoundaryTermsCancel.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/NegOnePowBoundaryTermsCancel.lean",
+    "bytes": 21749,
+    "sha256": "1f515b833ef2a8c92fa25213054888f5ad7eddae2d33a5cf6d95029a1395eccd"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean",
+    "bytes": 1784,
+    "sha256": "207d52cbf7d2c7fb5cc29c525977bd62cb86d97f60e8c1bef6fa48d48d0e4429"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean",
+    "bytes": 2636,
+    "sha256": "21afee859a9a448e5015885591246abe378ab49e80a3e126461e1f7e8c3857cd"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDlogAddCoboundaryAbLocus.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDlogAddCoboundaryAbLocus.lean",
+    "bytes": 12232,
+    "sha256": "ecd4795a23609f1b580560a0edc8dc18508fbb1a986d2d05c681b36c7f19e128"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean",
+    "bytes": 1890,
+    "sha256": "f16e4d34a5569ae070e4c994a7e653228875e3889e29bd1beb64f993f12b6b36"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMeasY.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMeasY.lean",
+    "bytes": 10350,
+    "sha256": "129d70e907e358e4d683623e95ae4f24dd211ec1ec7e87f36f78f6117a2c9f19"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOrderTwoTranslateEvenCubicalBundle.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOrderTwoTranslateEvenCubicalBundle.lean",
+    "bytes": 36341,
+    "sha256": "fa6f8cf48a692f9a5ff6cdae2c57e4eeb5c2d77fa42ab2dff4d76ba7f698600a"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueVectorFieldOfGlobalOneFormValues.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsUniqueVectorFieldOfGlobalOneFormValues.lean",
+    "bytes": 11778,
+    "sha256": "1634ec54b6a0050b5e8f62f0c3dc4c54540858caff5a784f9c700710781b21bc"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FramesTildeGammaValues.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FramesTildeGammaValues.lean",
+    "bytes": 7723,
+    "sha256": "99a63d7c360a02b38886390ad2920722147844a5d0784d7e2eb6b89d68802ae2"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCechOneCoboundaryOfRefinement.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCechOneCoboundaryOfRefinement.lean",
+    "bytes": 2358,
+    "sha256": "bbb3e7fd56039366282618e081a13d43ab16fce91049b52cb07376aa1ea7aaaa"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsProperOfFiniteType.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsProperOfFiniteType.lean",
+    "bytes": 9540,
+    "sha256": "46b2d819955a02c1180b9d9996f7e31b5b837f35876365cb06b3aa6f2437e520"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean",
+    "bytes": 3295,
+    "sha256": "d014ad8c343003d93ae8294e32164bac7c64cfd6d0ceda5ed00c7a5999e60d49"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocGLMemKglob.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocGLMemKglob.lean",
+    "bytes": 9261,
+    "sha256": "7169c23b2cf649010515a1bdd8ce927c054af4e12293f244a018a6507cb81cb1"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "bytes": 4953,
+    "sha256": "63d6d73c6c6124fe59f8d9d39011ae89ced99136e6171f5eece05c7d36fa6303"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean",
+    "bytes": 11767,
+    "sha256": "1ffd0d0463f1c181190decf35c7f9d8b118a3d8179b99d0458f8ff40ec44e03f"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean",
+    "bytes": 27077,
+    "sha256": "08dd140404e9f1dc19f5f92e0bee1b8de77c3ea048750c4b3cc81f1ed733088e"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean",
+    "bytes": 1660,
+    "sha256": "d49d70682b8bd9734f01ce398539a1b04affa57d5dbca5448e392c848be49389"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean",
+    "bytes": 33182,
+    "sha256": "1c1344fc4694c67b921373cd194c2c0cee2f6128ed1924596968ae5410c26b1d"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/ExistsFormalBiextMap.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/ExistsFormalBiextMap.lean",
+    "bytes": 8780,
+    "sha256": "bcfbd604673d770c9f819503e3d5723c093ca2483cf76813533bfde723234de5"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/GermEvGermEvThreePoints.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/GermEvGermEvThreePoints.lean",
+    "bytes": 11991,
+    "sha256": "3cd0dca7402a5914edee4d25386627ebee82594b507f5162e6e0891e9c2ae372"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PSqSmulKaehlerMemSpan.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/PSqSmulKaehlerMemSpan.lean",
+    "bytes": 5349,
+    "sha256": "320efc60af3ac5645f5c60c841d925145db688f6a0345db7d5ca0cbf0d28f341"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsFormFamilyHypothesesChangedSecondNorm.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsFormFamilyHypothesesChangedSecondNorm.lean",
+    "bytes": 17305,
+    "sha256": "47e008bdf605810ea4a9d465e7844c873db15f33dff9cfd15424ee16f5a594b3"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AlgClosureTensorBcrisToBdRInjective.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/AlgClosureTensorBcrisToBdRInjective.lean",
+    "bytes": 5084,
+    "sha256": "63cc364bdf3a5f732d73b7873f55c0b00a2e628310bf93c8a121d4f96478d592"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BcrisOneSubFrobeniusSurjective.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BcrisOneSubFrobeniusSurjective.lean",
+    "bytes": 7248,
+    "sha256": "5f6dcd6e1f26fe812d9233ef64877f459bad34c83cd7d088f12e6836f46e1763"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BcrisRegularSurjectionsOfFontaineTheorem.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BcrisRegularSurjectionsOfFontaineTheorem.lean",
+    "bytes": 2154,
+    "sha256": "fb2fc2e6e38905b9887c90cbe63c41de234d917a5c0480304f35b07a93dbce88"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFinExt.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsFinExt.lean",
+    "bytes": 10557,
+    "sha256": "2e58fdd8083c5e0bf0d318f9aa2939d178998327a842853f1a273661741c16b4"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPowNorm.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsPowNorm.lean",
+    "bytes": 12051,
+    "sha256": "48c3354fac015f2f9a9d49c6c65a86188d9b2635dc8fa5ff124a5567f34173b8"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusEigenFilOneIsUnitExactDegree.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FrobeniusEigenFilOneIsUnitExactDegree.lean",
+    "bytes": 7018,
+    "sha256": "b05156ff311741e3ee94d4e3f7bbcb495794bb8f9f27de5e1b204cc9545428ec"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FundamentalMapSurjective.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FundamentalMapSurjective.lean",
+    "bytes": 17846,
+    "sha256": "c4a35c793037cd229cad0c1c5a8e22a7d6dfa1bdfa6abcf79b26508c83a23b31"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisFactorTiltLogBdRPlus.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GaloisFactorTiltLogBdRPlus.lean",
+    "bytes": 3792,
+    "sha256": "00fcfaf80b1a7394ff558e3e9b7dcba1d4d308422064850efe376f34b7ea7894"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsClassSystem.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsClassSystem.lean",
+    "bytes": 12220,
+    "sha256": "ff6a2ff76ae10c79983f52c17be97819210cef1c2ee210280290d62e0fc4ace1"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LiftSetupOverExtendedDataIntegralFormsEq.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LiftSetupOverExtendedDataIntegralFormsEq.lean",
+    "bytes": 13784,
+    "sha256": "c93ba9fdb2f8f719dab32d7a6bf1f88f18938ca4886ae2d80a3c972d6ca1ce8d"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemMaxUnramifiedOfCrystallineRatio.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemMaxUnramifiedOfCrystallineRatio.lean",
+    "bytes": 5435,
+    "sha256": "5e7b4313eccd6675bba3bc2f9e91a58e3deed6bb47f20b4d72ae4f2807a5336e"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RatCopyIff.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RatCopyIff.lean",
+    "bytes": 12531,
+    "sha256": "92f2393e4cc983c3944a6bc601f5cf022bdf92165a19bd60ccc87bce7d586ac1"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupRelIffSameData.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupRelIffSameData.lean",
+    "bytes": 13422,
+    "sha256": "568628f8e3d4e7b99bed73014556225005875e1315b0da8dd35d96f95d7f94d0"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TieMove.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TieMove.lean",
+    "bytes": 2411,
+    "sha256": "edb6d42513b62bef85e298330cff5a4422bb27855397a7e280f8ab26ba4c191f"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusEigenFilEqQlMulTPow.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusEigenFilEqQlMulTPow.lean",
+    "bytes": 9802,
+    "sha256": "23715205f54861ba625541421d0f084ad1b715839a5bcbad803fc45e68383a3a"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusFontaineTEqMul.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisFrobeniusFontaineTEqMul.lean",
+    "bytes": 2665,
+    "sha256": "84b26ae91ae5b2b496eefbeddc3b1ab0acf8e74d167d7f4fc1e4737afc663e79"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisGaloisActionFontaineTEqCyclotomic.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisGaloisActionFontaineTEqCyclotomic.lean",
+    "bytes": 6876,
+    "sha256": "5f6c8e14d9d2ab8d6b7de86e037d1ac27c338aeeb433acb269e864ef724d43dc"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisToBdRPlusInjective.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AcrisToBdRPlusInjective.lean",
+    "bytes": 2695,
+    "sha256": "b8e5b7dfdd2d19759a4315b35d5510cc9ba6d318fe3ccbb896d0820640d3887e"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BcrisEqAcrisLocalizationPeriodT.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BcrisEqAcrisLocalizationPeriodT.lean",
+    "bytes": 7552,
+    "sha256": "fb782e336e271191acf043eb14da2806c9490deb9b21b96bce0c2d6f11223bbd"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BcrisFrobeniusFixedFilZeroEqQp.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BcrisFrobeniusFixedFilZeroEqQp.lean",
+    "bytes": 4454,
+    "sha256": "c37e0fc01f3f0ef42e6eda2ddff1db9f781ae3267e7511a421f6e5fdd2057740"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BdRGaloisInvariantsEqFinExt.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BdRGaloisInvariantsEqFinExt.lean",
+    "bytes": 8685,
+    "sha256": "b0dd85cc2994a3a43401bd1e83993d286ef8c2cd040a6b4b27851ba7ab46937a"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CanonicalAcrisToBdRPlusUniqueEquivariantApprox.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CanonicalAcrisToBdRPlusUniqueEquivariantApprox.lean",
+    "bytes": 11764,
+    "sha256": "afa0216b22dca7432edbf20e196ff62b712f202c628dc786ab6841be040a3a67"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CharWSeedStd.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CharWSeedStd.lean",
+    "bytes": 9292,
+    "sha256": "c4d38323952e32ef49e72ac2a202cbaeb5ee7a847c25a03185e87acbdbf30175"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EigenAdd.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EigenAdd.lean",
+    "bytes": 8084,
+    "sha256": "fb18619c8a2058e768b4117f76c3d6790ad91cd629056bf674ced52206d909cc"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EqCjOneSmul.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EqCjOneSmul.lean",
+    "bytes": 11315,
+    "sha256": "0286e8427bbc35fe46d95263739d7ffc46586ee93abacdd839b8fb925feb0042"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean",
+    "bytes": 8889,
+    "sha256": "9fdeae7598305e1240ab6c0a10010864df931bd238f87d4feb5ea987da95bd4b"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGIs.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGIs.lean",
+    "bytes": 10633,
+    "sha256": "506dc53de6619cc15a9efd9b5bcb4d01b7a934e2a723fa41df8a045cf31080d8"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsLogTeichmullerAcrisEqMuMulUnit.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsLogTeichmullerAcrisEqMuMulUnit.lean",
+    "bytes": 9050,
+    "sha256": "8dfd4a369d8bbab7d931aa0af6d2162aeea4ea14995b37ed589d7200a4b0768f"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNormalisedReadingTransportedNewTwist.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNormalisedReadingTransportedNewTwist.lean",
+    "bytes": 5241,
+    "sha256": "f576b78897baa6fdb1c0508cf45d8f5ec58f45ca83b05308995bc2efbb5da859"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSelectedRealization.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSelectedRealization.lean",
+    "bytes": 26088,
+    "sha256": "8370fc19690243cf55fb9e495b88aadedc481fe79480798d3b8883ad09aac0fc"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSumFactorial.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSumFactorial.lean",
+    "bytes": 5679,
+    "sha256": "ffdae6dd754ab65768a93ebb668697431d101ced9af46b8f019c3d4448224f26"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FontaineTIsUnitBcrisAndUniformizerBdRPlus.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FontaineTIsUnitBcrisAndUniformizerBdRPlus.lean",
+    "bytes": 5012,
+    "sha256": "6a0210643fc2b24b45e3fb13cf6d953e4c4b9b4a367ed2140a74596fab8f17a6"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FormGroupsModelsActionsMeasuresBasesCharacterise.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FormGroupsModelsActionsMeasuresBasesCharacterise.lean",
+    "bytes": 14138,
+    "sha256": "0c657a8eb47ddc66036d4835fabc9bf5f5d083e2d1d4884d35c4047a3c6943a1"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FrobeniusPeriodRingInjective.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FrobeniusPeriodRingInjective.lean",
+    "bytes": 24135,
+    "sha256": "b9a7e6ddfa660b3bc50fe0fc19bac157f0e324f0f8fffc91f6025ffce37e9142"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GaloisInvariantsBcrisEqMaxUnramified.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GaloisInvariantsBcrisEqMaxUnramified.lean",
+    "bytes": 11267,
+    "sha256": "ee19caa64f115c97cf981f7910fa3124db87b46ec552014645cc74446a186ffb"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KummerNotCoboundary.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KummerNotCoboundary.lean",
+    "bytes": 19861,
+    "sha256": "f04fe2300cfd5f18c038e1cb7561c7f001bf5197e0a4ceb26045cbf5edccd8c8"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LineModelTrueOfFalse.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LineModelTrueOfFalse.lean",
+    "bytes": 16184,
+    "sha256": "a4239af55e0848076b9a4fc5decaf96b223dd1199b635101ab64d70d703c27d8"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalPeriodRingsDataUnramifiedLaws.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalPeriodRingsDataUnramifiedLaws.lean",
+    "bytes": 6786,
+    "sha256": "5bf4cd0e28fef58611fc85f1790fbc0d657624d9a074a38e5b072884c45464c0"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyLocalPeriodRingsData.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyLocalPeriodRingsData.lean",
+    "bytes": 4534,
+    "sha256": "b95286af9eb759f4391377a0530d0167ee642b4f6e9ecf9077190a93d813349c"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RealDatumPrerequisitesUpdateModels.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RealDatumPrerequisitesUpdateModels.lean",
+    "bytes": 17540,
+    "sha256": "1806305b83cbb3ba1d7a13abe0a6b980978d4500c4548f717e4ca0bf85515adb"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "bytes": 19782,
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RigidFrameSymmetricRatioSeries.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RigidFrameSymmetricRatioSeries.lean",
+    "bytes": 19547,
+    "sha256": "de16c25d0b0f85df8976667902985424c4e9195668d6be6418a663a8abfa2490"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RingSpecNormalisedCharacterEq.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RingSpecNormalisedCharacterEq.lean",
+    "bytes": 7777,
+    "sha256": "29f604feb6f7e07de6e4c70fd1dbdba1a9fd2f35db1a0be2ad10d15946bc6e6b"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowsSameGeometricHalf.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowsSameGeometricHalf.lean",
+    "bytes": 13658,
+    "sha256": "1d8eec09526544d09ef0537c8006e86d9ce62197cc5cbc4a2793316cfc22df81"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "bytes": 16532,
+    "sha256": "10844a3c4f248fe97ae1d4b98b8e9b7ecf24200424fddd8a433564a0a01ff82f"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean",
+    "bytes": 12909,
+    "sha256": "3785ba4d678a03a944c207bd013c4e130df18cc5f61473d5848494e97e32af21"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsUniqueRigMulRight.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsUniqueRigMulRight.lean",
+    "bytes": 46248,
+    "sha256": "31eafc7edc2213571e6b2dd37a4472511494d1b263e58e73c9a93b770f469bf8"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean",
+    "bytes": 17513,
+    "sha256": "e955334b8a46e2106c059bd9d5c249e24c10ac51ee9c8299d60bc72cd8447e4c"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean",
+    "bytes": 4079,
+    "sha256": "55077c284a75a14cf2f55a3cd24edd0009f2c91a71be8ce2c38abe7f47f5b5cc"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean",
+    "bytes": 13875,
+    "sha256": "30751e257e3fc223f3a9549e28a874c3fc831e9026c4c856d781d34531a756e0"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean",
+    "bytes": 2510,
+    "sha256": "1f9990c66f2647e4cfad8af630be3b77cc7579299cc7fbb27409c053d646786f"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferBottom.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferBottom.lean",
+    "bytes": 14374,
+    "sha256": "5a9472ea63786c435a371ecbf102908819cbab18af40228fbae469a41a47e8c0"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferFlip.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferFlip.lean",
+    "bytes": 18008,
+    "sha256": "1923ae5b42212d58dcb166cd31d9d32f8c02f7a5635e11c01a727c1d2edeea45"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TwoLeMOf.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TwoLeMOf.lean",
+    "bytes": 10962,
+    "sha256": "1bb6f00a7078b70cc83e8dd797d5a7fce16c06336070422f691f92fba40e2b26"
+  },
+  {
+    "original_project_path": "src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/BiTrivLiftOfIsNilpotent.lean",
+    "delivered_path": "source_evidence/src/Development/AbelianVarietyTheory/Proofs/UniformizationProofs/BiTrivLiftOfIsNilpotent.lean",
+    "bytes": 33302,
+    "sha256": "e64c2a86fc021c01c36ad37a88f4eeee3d1ed4d325347d4d6705c1023c429f27"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/AutomorphicInSphericalLevel.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/AutomorphicInSphericalLevel.lean",
+    "bytes": 20303,
+    "sha256": "9f0507c47eeaabfd0fe6f225e5708ac2ad38ac2251d8a432fca09fbe3ffd35db"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/CongLev.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/CongLev.lean",
+    "bytes": 10608,
+    "sha256": "1911d0aadf087043f7c8d8c34aaf06e273ff1072daf3d9b613bb091e9f89a44b"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/EigGen.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/EigGen.lean",
+    "bytes": 14813,
+    "sha256": "6bf87c1dafcd3785e3cbb2903a661d2cbd98fa30197df89f0c210778af786855"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/FinOrbSubgroupOf.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/GeneralizedEigenspaces/CharacterShapes/FiniteOrbits/FinOrbSubgroupOf.lean",
+    "bytes": 13278,
+    "sha256": "afb7f9c5c17e9fbe3c6365bdb7d26fc8c1d36f946b410ac7efa7c6b782de1bd2"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/WeilDeligneUnramified/LevUnion.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/WeilDeligneUnramified/LevUnion.lean",
+    "bytes": 15272,
+    "sha256": "04b7f5ba30717cb8c7818f36328c9a68f40a6c65ad10753ad88b38b045793676"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+    "bytes": 515,
+    "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+    "bytes": 5193,
+    "sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+    "bytes": 1215,
+    "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+    "bytes": 3776,
+    "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+    "bytes": 1213,
+    "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+    "bytes": 20673,
+    "sha256": "80d57d0936668a1cde784b87c67f680d017962b6cecf0710a51a32b9d8549880"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+    "bytes": 4728,
+    "sha256": "5624f75b4efd8cefe340360a5ba12a5d3c8a72340b54f2db9c76651a91429f00"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+    "bytes": 697,
+    "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+    "bytes": 1791,
+    "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+    "bytes": 2678,
+    "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean",
+    "bytes": 16328,
+    "sha256": "c878433ece962bbb26d789d83fdb8e3bd2c8e0a9d2f11115a7ebf0ae1038d749"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/ExistsHeckeCorrespondenceOnIntegralShimuraModel.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/ExistsHeckeCorrespondenceOnIntegralShimuraModel.lean",
+    "bytes": 13812,
+    "sha256": "f1b86665698294d83e5bc14077217402170b90525b60be8d0563df430be421fc"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+    "bytes": 2933,
+    "sha256": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+    "bytes": 495,
+    "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+    "bytes": 433,
+    "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+    "bytes": 3341,
+    "sha256": "ae05d6b3c6d978d5f7265c69c65385aa4eef63e406c0d4d5adec9c35621c80c9"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+    "bytes": 24668,
+    "sha256": "901ac70f413697a2cf0aea4a35f8d3bc419699c48e01e62a8e06d49503a2e07c"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglands.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglands.lean",
+    "bytes": 13171,
+    "sha256": "9bccf10c351154503b409d5c767f30be14fdb637fb40428ac7a1a796c7135eb1"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowsSameGeometricHalf.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowsSameGeometricHalf.lean",
+    "bytes": 7840,
+    "sha256": "f97f30ff5d63b0c58848133aa0dd632a0e4945d5b7b40a2190e443a800e3049e"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Cup1CoboundaryMemBoundaries.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Cup1CoboundaryMemBoundaries.lean",
+    "bytes": 22558,
+    "sha256": "0cf066d390269283ffa08c36f9bbced97e7e157788b2405f3d1990e377e2db13"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DFormMem.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DFormMem.lean",
+    "bytes": 11995,
+    "sha256": "bb935dc1ad46b52581364bd3b17a2e6d7837e0a3f13955716a15770780461f1b"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedFormCocycle.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedFormCocycle.lean",
+    "bytes": 10327,
+    "sha256": "f50b9e8967588dacc7efd7d89017dfbfe526d7acb09cde07483353600122b2c5"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NewformHeckeEigenvalue.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NewformHeckeEigenvalue.lean",
+    "bytes": 16635,
+    "sha256": "4625364af2a402520830bc9f9403eab10eadd053034ee82e2ff4527b14a6b424"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ShuffleCup1FormulaPositiveDegree.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ShuffleCup1FormulaPositiveDegree.lean",
+    "bytes": 3330,
+    "sha256": "270d10633b733d5ebb753a7815cfd8d7b2bbda417eb7be39a37bcdb26c7fc171"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TaylorDifferentialRepresentative.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TaylorDifferentialRepresentative.lean",
+    "bytes": 15855,
+    "sha256": "1409bcca044b469a74198b3213c3fb55acee81f221db369dc9dcaa36fe9a6053"
+  },
+  {
+    "original_project_path": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedOrbitalSwapConvolution.lean",
+    "delivered_path": "source_evidence/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TwistedOrbitalSwapConvolution.lean",
+    "bytes": 15836,
+    "sha256": "cffa13b075e4c060f52dcf8f82bb563a635815f885ba718746c422ab0b127171"
+  },
+  {
+    "original_project_path": "src/Development/EtaleCohomology/EtaleSheaves/ChasePf.lean",
+    "delivered_path": "source_evidence/src/Development/EtaleCohomology/EtaleSheaves/ChasePf.lean",
+    "bytes": 13956,
+    "sha256": "d4bc0d45dbd38c5776fe440fd2cd0d76ade37f883d2cc6caee59244ca3332fd5"
+  },
+  {
+    "original_project_path": "src/Development/EtaleCohomology/TateTwists/EtaleTensorCycleLocallyLowersTopDegreeOfRowExact.lean",
+    "delivered_path": "source_evidence/src/Development/EtaleCohomology/TateTwists/EtaleTensorCycleLocallyLowersTopDegreeOfRowExact.lean",
+    "bytes": 11137,
+    "sha256": "d306365f2b926515d43bdc084c629a0dca011ad39d877eefa10775d18a41dab6"
+  },
+  {
+    "original_project_path": "src/Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean",
+    "delivered_path": "source_evidence/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean",
+    "bytes": 12410,
+    "sha256": "a173c165e26872a99c33bc9a83e0c734be6b3360aacc03dee151b441b101c8b2"
+  },
+  {
+    "original_project_path": "src/Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean",
+    "delivered_path": "source_evidence/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean",
+    "bytes": 7375,
+    "sha256": "4c6cebe8e328cc731f1cbd188c979814a7a15820d04acda2166b89976fa73cb9"
+  },
+  {
+    "original_project_path": "src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/CechPairings/FaceMapCompSuccAboveCastSucc.lean",
+    "delivered_path": "source_evidence/src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/CechPairings/FaceMapCompSuccAboveCastSucc.lean",
+    "bytes": 26069,
+    "sha256": "b4bf1040a63ab247ee6f4b3c5a84c2ce5a0c4c8470b9958fdc2e326923f331cc"
+  },
+  {
+    "original_project_path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/LocUnrSplit.lean",
+    "delivered_path": "source_evidence/src/Development/WeilBound/ThetaLifts/LatticeBasics/LocUnrSplit.lean",
+    "bytes": 20638,
+    "sha256": "d19347d0ac79299127f603d4b5468f006d5f436701597b468a251cefecbdddc6"
+  },
+  {
+    "original_project_path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/LocUnrSplitL.lean",
+    "delivered_path": "source_evidence/src/Development/WeilBound/ThetaLifts/LatticeBasics/LocUnrSplitL.lean",
+    "bytes": 14015,
+    "sha256": "671dee269f392bfc45c1c73f918b85aa0c84d176e84e91a5ae1b55504cacc3a7"
+  },
+  {
+    "original_project_path": "src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/RhoMapFunctorial.lean",
+    "delivered_path": "source_evidence/src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/RhoMapFunctorial.lean",
+    "bytes": 21744,
+    "sha256": "b11b101941a1fd67d0ebdb5ef713ae77f6372bb185c7859be1b007968440f153"
+  },
+  {
+    "original_project_path": "src/Formalism/EllipticTorsion/EllipticTorsionProofs/Change.lean",
+    "delivered_path": "source_evidence/src/Formalism/EllipticTorsion/EllipticTorsionProofs/Change.lean",
+    "bytes": 7931,
+    "sha256": "21ae9b94bfe2fc26228e83015a3619bb5f25705ebdab9b11d32f02fe13b20262"
+  },
+  {
+    "original_project_path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+    "delivered_path": "source_evidence/src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+    "bytes": 1825,
+    "sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02"
+  },
+  {
+    "original_project_path": "src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+    "delivered_path": "source_evidence/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+    "bytes": 2459,
+    "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HerGenC.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HerGenC.lean",
+    "bytes": 5523,
+    "sha256": "579ac226d6f9e646b2172663d291d3a4f0697b8d2660b81e1ae0f6bad85b9f4e"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CoordinateCommuteRaisingConstant.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CoordinateCommuteRaisingConstant.lean",
+    "bytes": 342067,
+    "sha256": "7d026652cedc95a23ee31802ba3cd7bc0b41cefd38e7f3b684fee58d5a45cf01"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CornerBlockActionInvariant.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CornerBlockActionInvariant.lean",
+    "bytes": 12162,
+    "sha256": "188eccc30cf1e86208f8723724d14a3b90d69403b9b2b34ec7baf89550d6d862"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "bytes": 4649,
+    "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutMainCpt.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutMainCpt.lean",
+    "bytes": 59023,
+    "sha256": "97fbcae09ea8fb69e40390016b724e65ecb0bbf324e8f6ccdd075e9f0074a93b"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/EmbedLoweringConstant.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/EmbedLoweringConstant.lean",
+    "bytes": 29301,
+    "sha256": "d5629854469ec93754a22ca89573730da599faee12294b91459c620c06897856"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LevelNablaStarRelations.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LevelNablaStarRelations.lean",
+    "bytes": 30026,
+    "sha256": "0cae5f3637d2f4c0b114889723964088a683a3105339c699ff86d1175810dab2"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LinearFormRadicalRankOne.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LinearFormRadicalRankOne.lean",
+    "bytes": 17129,
+    "sha256": "d67007c183a065c4a5eefdc45e42a4377ca043dbbbbc87576c26bd73b46d6642"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/ModuleFormPosCompactSupport.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/ModuleFormPosCompactSupport.lean",
+    "bytes": 3008,
+    "sha256": "a99ad32e4aa2397f8900854de770404675f396255bf8bdf402653abe819d9bc5"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RadicalUnipotentFirstBasisEqOne.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RadicalUnipotentFirstBasisEqOne.lean",
+    "bytes": 35732,
+    "sha256": "bad9a3c19589c46a94d0d55595e5ce33d09a7d0ba61dd6fef02dfd45f20045aa"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RttUpperRelationsFromDescent.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RttUpperRelationsFromDescent.lean",
+    "bytes": 44548,
+    "sha256": "316ff21bf397b67bc031601e9de3a48d55cb1af5584547bd3ee2cf182896183d"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SizeStandardCompact.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/SizeStandardCompact.lean",
+    "bytes": 12717,
+    "sha256": "78fcfdebe4c074bf55809a3696ee3dcd47e66c752c01a72a089a9d73806777a4"
+  },
+  {
+    "original_project_path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/VectorIsomorphismCompactSupport.lean",
+    "delivered_path": "source_evidence/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/VectorIsomorphismCompactSupport.lean",
+    "bytes": 7926,
+    "sha256": "89d5a6ed430fc7056b3bcca67b494f1d51799951011945c8639b96d2b3648da4"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/Divisibility/DivisibilityProofs/TuplesP.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/Divisibility/DivisibilityProofs/TuplesP.lean",
+    "bytes": 85856,
+    "sha256": "1e1cc0789db0bab39c8cb4c8055f6aba22614905a56dcbd17cc6e78eee774f75"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean",
+    "bytes": 57535,
+    "sha256": "504c8f33d619c020ccc69abf8439c6d4215218a811ea6489c8cbc6d7b2b717f8"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean",
+    "bytes": 201,
+    "sha256": "f31ce165cd4783d48da9b4c3cd10f037e3e0fccd46aab4532edb54e43a9f350c"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/MeasFr.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/MeasFr.lean",
+    "bytes": 11145,
+    "sha256": "418208f8da0ed7efec909edca2996434493ee23d808cd90e76c744623f357676"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/MeasLev.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/IndefiniteReal/LevelTypeEquivalence/MeasLev.lean",
+    "bytes": 8666,
+    "sha256": "d660f5ac2f62f68ce3df2bf14979fb3826cccceaf365f9b6b1c4f04e3eb98b94"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean",
+    "bytes": 2750,
+    "sha256": "a3c982067143e5288390c77c60efe12dc2c2a0803cdb54ecf6fb913dc8339e11"
+  },
+  {
+    "original_project_path": "src/Formalism/LocalToGlobal/TorsionIntegrality/TorsionTranslationPowers/NonsingularJetNorms/NonsingularNorm.lean",
+    "delivered_path": "source_evidence/src/Formalism/LocalToGlobal/TorsionIntegrality/TorsionTranslationPowers/NonsingularJetNorms/NonsingularNorm.lean",
+    "bytes": 12523,
+    "sha256": "68af85efdf302ed1bb0bb6be6daa18e924b2e877e0f6786bdf62dd2bcba91369"
+  },
+  {
+    "original_project_path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/DensityLemma/PFibreBoundV.lean",
+    "delivered_path": "source_evidence/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/DensityLemma/PFibreBoundV.lean",
+    "bytes": 23268,
+    "sha256": "62cc18788225bba6c4f2820c0a40f60548d451dbe5a1b65fa5b8f7e52c1ae455"
+  },
+  {
+    "original_project_path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GaussianUniqueness/MulMApply.lean",
+    "delivered_path": "source_evidence/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GaussianUniqueness/MulMApply.lean",
+    "bytes": 10039,
+    "sha256": "a5b54721fd46cab4c8f87a3cc042f9f1432e5507daff1f142b9b83ca6ee7fb1f"
+  },
+  {
+    "original_project_path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelImageArithmetic/GlevImageOf.lean",
+    "delivered_path": "source_evidence/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelImageArithmetic/GlevImageOf.lean",
+    "bytes": 6266,
+    "sha256": "875c0ca4e81134d6ee298a749d078cef841aa26ec0161d64948170b2d673248a"
+  },
+  {
+    "original_project_path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnimodularLattice/Transf.lean",
+    "delivered_path": "source_evidence/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LocalUnimodularLattice/Transf.lean",
+    "bytes": 4684,
+    "sha256": "69394617064b5396b27419a62f66635b61aa752e5eab3617ae7ddf0a730cd035"
+  },
+  {
+    "original_project_path": "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+    "delivered_path": "source_evidence/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnitaryClassMass/UnitaryClassMass.lean",
+    "bytes": 1527,
+    "sha256": "d4abc7f7b689071ac81d95087a2961488ffc97b0430803026f29474e82cfcda4"
+  },
+  {
+    "original_project_path": "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/SatisfiesGlRelationsBilinearLeft.lean",
+    "delivered_path": "source_evidence/src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/SatisfiesGlRelationsBilinearLeft.lean",
+    "bytes": 13116,
+    "sha256": "320146b6a67fa931b7f902cca88ca613766a2afbe192aea08d9fe22ca36ddb1f"
+  },
+  {
+    "original_project_path": "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean",
+    "delivered_path": "source_evidence/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean",
+    "bytes": 9384,
+    "sha256": "e347ea040bd1d90518bd5b76f13fc4e1677fd42a51be8d9a9942b477dc0f1294"
+  },
+  {
+    "original_project_path": "src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FBMapPf.lean",
+    "delivered_path": "source_evidence/src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FBMapPf.lean",
+    "bytes": 9041,
+    "sha256": "85df320d9405292dbde4740756a18e385a23c739652e1833a34a999ad9de6ce6"
+  },
+  {
+    "original_project_path": "src/Formalism/SharpRestriction/Divisibility/LocalNonemptiness/SubsingletonRankIndicatorIff.lean",
+    "delivered_path": "source_evidence/src/Formalism/SharpRestriction/Divisibility/LocalNonemptiness/SubsingletonRankIndicatorIff.lean",
+    "bytes": 23412,
+    "sha256": "ad43a68b1755c02e4a31433b77349f8c88aa7944c34b28d1136480fc650d4164"
+  },
+  {
+    "original_project_path": "src/GroundTheory/HeightsAndTheta/Heights/ArithmeticBezout/PProjSecDegree.lean",
+    "delivered_path": "source_evidence/src/GroundTheory/HeightsAndTheta/Heights/ArithmeticBezout/PProjSecDegree.lean",
+    "bytes": 8763,
+    "sha256": "c964f29f1f5e4c599134e099fc7cd635b877c6d2f35f3808df891a01ad5cbb81"
+  },
+  {
+    "original_project_path": "src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PNormalModelPlace.lean",
+    "delivered_path": "source_evidence/src/GroundTheory/HeightsAndTheta/Heights/ComplexAnalyticSets/PNormalModelPlace.lean",
+    "bytes": 20607,
+    "sha256": "a65afb0671069ecf51d43c11f58eec70bb7acaa6b6f3fead3fe5d86fca432dcd"
+  },
+  {
+    "original_project_path": "src/GroundTheory/HeightsAndTheta/Heights/DiscreteValuationNumbers/PJoinDivCycle.lean",
+    "delivered_path": "source_evidence/src/GroundTheory/HeightsAndTheta/Heights/DiscreteValuationNumbers/PJoinDivCycle.lean",
+    "bytes": 9320,
+    "sha256": "08e812189a54a278c5e5d49d472e46ec454602bf1eb552e0ae57c19fcad5079f"
+  },
+  {
+    "original_project_path": "src/Main.lean",
+    "delivered_path": "source_evidence/src/Main.lean",
+    "bytes": 433,
+    "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939"
+  },
+  {
+    "original_project_path": "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/DiscreteValuationRings/ExistsRosatiGen.lean",
+    "delivered_path": "source_evidence/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/DiscreteValuationRings/ExistsRosatiGen.lean",
+    "bytes": 15600,
+    "sha256": "3e894c58047e5ce86469e0431d5511fb260cc0a155f705a427e999267411aba5"
+  },
+  {
+    "original_project_path": "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/Theta1.lean",
+    "delivered_path": "source_evidence/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/Theta1.lean",
+    "bytes": 3354,
+    "sha256": "5077ef0b69e8ac6fdf904a7f053282e6720a59413fa1b78db15940ccca34c757"
+  },
+  {
+    "original_project_path": "src/Statements.lean",
+    "delivered_path": "source_evidence/src/Statements.lean",
+    "bytes": 783,
+    "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  },
+  {
+    "original_project_path": "src/Supplements/Kernels/MainTheorems.lean",
+    "delivered_path": "source_evidence/src/Supplements/Kernels/MainTheorems.lean",
+    "bytes": 740,
+    "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53"
+  },
+  {
+    "original_project_path": "src/Supplements/Kernels/MainTheoremsAll.lean",
+    "delivered_path": "source_evidence/src/Supplements/Kernels/MainTheoremsAll.lean",
+    "bytes": 136,
+    "sha256": "a209a6a2f6ea1cc4abe865996b909bfeef391adcb89d3a948858874cb5956fec"
+  }
+]

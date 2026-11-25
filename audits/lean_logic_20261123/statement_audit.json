@@ -1,0 +1,378 @@
+{
+  "scope": "statement_and_selected_critical_chain",
+  "date_beijing": "2026-11-23",
+  "source_bundle": "work/github_merged_lean/prepared/RH_AllSources.lean",
+  "source_bundle_expected_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+  "source_selection_integrity": {
+    "selected_files": 85,
+    "matches": 85,
+    "mismatches": 0,
+    "evidence": "statement/selected_source_verification.json"
+  },
+  "reviewed_source_items": [
+    {
+      "path": "Main.lean",
+      "reviewed_lines": [
+        1,
+        12
+      ],
+      "file_lines": 12,
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Statements.lean",
+      "reviewed_lines": [
+        1,
+        16
+      ],
+      "file_lines": 16,
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Supplements/Kernels/MainTheorems.lean",
+      "reviewed_lines": [
+        1,
+        16
+      ],
+      "file_lines": 16,
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+      "reviewed_lines": [
+        1,
+        62
+      ],
+      "file_lines": 62,
+      "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+      "reviewed_lines": [
+        1,
+        32
+      ],
+      "file_lines": 32,
+      "sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "reviewed_lines": [
+        1,
+        14
+      ],
+      "file_lines": 14,
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "reviewed_lines": [
+        1,
+        18
+      ],
+      "file_lines": 18,
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "reviewed_lines": [
+        1,
+        104
+      ],
+      "file_lines": 104,
+      "sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+      "reviewed_lines": [
+        210,
+        231
+      ],
+      "file_lines": 231,
+      "sha256": "80d57d0936668a1cde784b87c67f680d017962b6cecf0710a51a32b9d8549880",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "reviewed_lines": [
+        1,
+        38
+      ],
+      "file_lines": 38,
+      "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+      "reviewed_lines": [
+        1,
+        51
+      ],
+      "file_lines": 51,
+      "sha256": "5624f75b4efd8cefe340360a5ba12a5d3c8a72340b54f2db9c76651a91429f00",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "reviewed_lines": [
+        1,
+        80
+      ],
+      "file_lines": 81,
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "reviewed_lines": [
+        1,
+        15
+      ],
+      "file_lines": 16,
+      "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "reviewed_lines": [
+        1,
+        5
+      ],
+      "file_lines": 5,
+      "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+      "reviewed_lines": [
+        1,
+        64
+      ],
+      "file_lines": 64,
+      "sha256": "ae05d6b3c6d978d5f7265c69c65385aa4eef63e406c0d4d5adec9c35621c80c9",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+      "reviewed_lines": [
+        170,
+        198
+      ],
+      "file_lines": 310,
+      "sha256": "901ac70f413697a2cf0aea4a35f8d3bc419699c48e01e62a8e06d49503a2e07c",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "reviewed_lines": [
+        1,
+        66
+      ],
+      "file_lines": 66,
+      "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7",
+      "mode": "static_semantic_review"
+    },
+    {
+      "path": "Supplements/Kernels/MainTheoremsAll.lean",
+      "reviewed_lines": [
+        1,
+        2
+      ],
+      "sha256": "a209a6a2f6ea1cc4abe865996b909bfeef391adcb89d3a948858874cb5956fec",
+      "mode": "byte_hash_verified_extraction_and_static_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "reviewed_lines": [
+        1,
+        8
+      ],
+      "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44",
+      "mode": "byte_hash_verified_extraction_and_static_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+      "reviewed_lines": [
+        1,
+        33
+      ],
+      "sha256": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd",
+      "mode": "byte_hash_verified_extraction_and_static_review"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "reviewed_lines": [
+        1,
+        8
+      ],
+      "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2",
+      "mode": "byte_hash_verified_extraction_and_static_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          91
+        ]
+      ],
+      "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31",
+      "mode": "targeted_static_compact_support_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HermitianCurvatureProofs/ModuleFormPosCompactSupport.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          47
+        ]
+      ],
+      "sha256": "a99ad32e4aa2397f8900854de770404675f396255bf8bdf402653abe819d9bc5",
+      "mode": "targeted_static_compact_support_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HermitianCurvatureProofs/VectorIsomorphismCompactSupport.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          119
+        ]
+      ],
+      "sha256": "89d5a6ed430fc7056b3bcca67b494f1d51799951011945c8639b96d2b3648da4",
+      "mode": "targeted_static_compact_support_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HermitianCurvatureProofs/SizeStandardCompact.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          140
+        ],
+        [
+          189,
+          189
+        ]
+      ],
+      "sha256": "78fcfdebe4c074bf55809a3696ee3dcd47e66c752c01a72a089a9d73806777a4",
+      "mode": "targeted_static_compact_support_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HermitianCurvatureProofs/CutMainCpt.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          130
+        ],
+        [
+          860,
+          945
+        ]
+      ],
+      "sha256": "97fbcae09ea8fb69e40390016b724e65ecb0bbf324e8f6ccdd075e9f0074a93b",
+      "mode": "targeted_static_compact_support_review"
+    },
+    {
+      "path": "Formalism/HermitianCurvature/HerGenC.lean",
+      "reviewed_line_ranges": [
+        [
+          1,
+          80
+        ]
+      ],
+      "sha256": "579ac226d6f9e646b2172663d291d3a4f0697b8d2660b81e1ae0f6bad85b9f4e",
+      "mode": "targeted_static_compact_support_review"
+    }
+  ],
+  "confirmed_logic_defects": [],
+  "findings": [
+    {
+      "id": "S1",
+      "kind": "verified_statement",
+      "path": "src/Main.lean",
+      "line": 4,
+      "description": "The endpoint states RiemannHypothesis directly, with no additional explicit parameter. Its RHS is rhOfAll."
+    },
+    {
+      "id": "S2",
+      "kind": "verified_statement",
+      "path": "src/Statements.lean",
+      "lines": [
+        3,
+        4
+      ],
+      "description": "The project zero formulation matches the pinned Mathlib RiemannHypothesis definition; s=1 and trivial negative even zeros are excluded in the Mathlib definition itself."
+    },
+    {
+      "id": "S3",
+      "kind": "static_no_obvious_gap",
+      "path": "src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+      "lines": [
+        5,
+        62
+      ],
+      "description": "The right-half-plane to RH reduction explicitly handles s=0, reflected s=1, gamma nonvanishing and cosine zeros; no specific missing hypothesis was identified by static reading."
+    },
+    {
+      "id": "S4",
+      "kind": "static_no_obvious_gap",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+      "lines": [
+        5,
+        64
+      ],
+      "description": "The nonzero integral proof retains nonzero finite H measure, finite K measure, integrability, nonzero kappa, positive r, and strict tail bound. It derives needed s*c0 integrability from Fubini and nonzero H measure."
+    },
+    {
+      "id": "S5",
+      "kind": "validation_limitation",
+      "path": "project/reference/lean/EndpointReduction.lean",
+      "line": 74,
+      "description": "EndpointReduction.rh_of_every has an explicit EveryCharacter input. Even successful compilation of this conditional reduction cannot certify the full unconditional project theorem."
+    },
+    {
+      "id": "S6",
+      "kind": "validation_limitation",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "lines": [
+        7,
+        11
+      ],
+      "description": "The unconditional EveryCharacter theorem applies a Row0b theorem. This review follows its wrappers to geometry and theta lift inputs, but does not establish all transitive proof constants or compile them."
+    },
+    {
+      "id": "S7",
+      "kind": "static_no_confirmed_defect",
+      "path": "src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+      "description": "The three replacements target explicitly compact-support formulations; CutMainCpt.limPos_of_limEvTCpt passes positivity from compact approximations through limits. This reading did not identify a dropped compact-support hypothesis, and actual kernel checks of generated declarations remain required."
+    }
+  ],
+  "external_primary_source": {
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+    "ref": "turn888943431view0",
+    "checked": "RiemannHypothesis and riemannZeta definitions; full dependency byte verification not performed"
+  },
+  "kernel_compilation_performed_by_this_agent": false,
+  "all_transitive_dependencies_mathematically_reviewed": false,
+  "audit_harnesses": [
+    {
+      "path": "statement/StatementSemanticsAudit.lean",
+      "imports": "Mathlib",
+      "scope": "Statement equivalence only; not an RH proof",
+      "executed_by_this_agent": false
+    },
+    {
+      "path": "statement/FullProjectAxiomsAudit.lean",
+      "imports": "Main",
+      "scope": "Actual theorem types and axioms after complete project build",
+      "executed_by_this_agent": false
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "audit.log",
+    "url": "https://math.mit.edu/~drew/grh/audit.log",
+    "status": 200,
+    "bytes": 2062,
+    "sha256": "0a1473fce6eed840011f4a76b1c51558fc6f03edd1e6bd1ee542e6c738d87a62",
+    "retrieved_at_utc": "2026-11-23T11:59:45.652723+00:00",
+    "published_sha256": "0a1473fce6eed840011f4a76b1c51558fc6f03edd1e6bd1ee542e6c738d87a62",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "con-leche-master.log",
+    "url": "https://math.mit.edu/~drew/grh/con-leche-master.log",
+    "status": 200,
+    "bytes": 3918,
+    "sha256": "23e27eacb9e8378569474cc185c0e98f6b995b4db0f8df88fd48a921084fed02",
+    "retrieved_at_utc": "2026-11-23T11:59:51.947891+00:00",
+    "published_sha256": "23e27eacb9e8378569474cc185c0e98f6b995b4db0f8df88fd48a921084fed02",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "con-ron-compare.log",
+    "url": "https://math.mit.edu/~drew/grh/con-ron-compare.log",
+    "status": 200,
+    "bytes": 2969,
+    "sha256": "dcf2fbbde0e27ef8828b7d788ea7b9f9f65ba7a8246798ffd47298f89a3ee2ff",
+    "retrieved_at_utc": "2026-11-23T11:59:57.501287+00:00",
+    "published_sha256": "dcf2fbbde0e27ef8828b7d788ea7b9f9f65ba7a8246798ffd47298f89a3ee2ff",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": null
+  },
+  {
+    "name": "sandbox-timeline.txt",
+    "url": "https://math.mit.edu/~drew/grh/sandbox-timeline.txt",
+    "status": 200,
+    "bytes": 7376,
+    "sha256": "610dafdbc29c51433906d59b6e0c5ce8b48808770bf53cf7e2dc8fd93c63792c",
+    "retrieved_at_utc": "2026-11-23T12:00:03.515432+00:00",
+    "published_sha256": "610dafdbc29c51433906d59b6e0c5ce8b48808770bf53cf7e2dc8fd93c63792c",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": null
+  },
+  {
+    "name": "SHA256SUMS",
+    "url": "https://math.mit.edu/~drew/grh/SHA256SUMS",
+    "status": 200,
+    "bytes": 3078,
+    "sha256": "01bbf80af15751e4973cda7d19bd7368981150475b661a32b730550fd1b16795",
+    "retrieved_at_utc": "2026-11-23T12:00:09.417415+00:00",
+    "published_sha256": null,
+    "matches_published_sha256": null,
+    "matches_local_historical_bytes": false
+  },
+  {
+    "name": "Audit.lean",
+    "url": "https://math.mit.edu/~drew/grh/Audit.lean",
+    "status": 200,
+    "bytes": 1828,
+    "sha256": "5d54e164c67969da6169bd9a4d5b990ae9e7a7ffe16345dcebef257b0227d346",
+    "retrieved_at_utc": "2026-11-23T12:00:31.174214+00:00",
+    "published_sha256": "5d54e164c67969da6169bd9a4d5b990ae9e7a7ffe16345dcebef257b0227d346",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "nanoda.log",
+    "url": "https://math.mit.edu/~drew/grh/nanoda.log",
+    "status": 200,
+    "bytes": 852,
+    "sha256": "d4c5360b02d8dd885150c1cc28b616cb6fb5bf5b20d142558d79a7b15ae9d9df",
+    "retrieved_at_utc": "2026-11-23T12:00:31.121671+00:00",
+    "published_sha256": "d4c5360b02d8dd885150c1cc28b616cb6fb5bf5b20d142558d79a7b15ae9d9df",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "con-leche-compare.log",
+    "url": "https://math.mit.edu/~drew/grh/con-leche-compare.log",
+    "status": 200,
+    "bytes": 5875,
+    "sha256": "5a068bf55f24904eea9f05eda947c63d43bdee3c6ab0490e43943a3bd9af1f6e",
+    "retrieved_at_utc": "2026-11-23T12:00:31.174334+00:00",
+    "published_sha256": "5a068bf55f24904eea9f05eda947c63d43bdee3c6ab0490e43943a3bd9af1f6e",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "lean4lean-default-fuel-timeouts.log",
+    "url": "https://math.mit.edu/~drew/grh/lean4lean-default-fuel-timeouts.log",
+    "status": 200,
+    "bytes": 1640,
+    "sha256": "a12a614cf71d456d22f0877071eec366d1d6a4b268f095620eaf75c1a24af35c",
+    "retrieved_at_utc": "2026-11-23T12:00:31.178706+00:00",
+    "published_sha256": "a12a614cf71d456d22f0877071eec366d1d6a4b268f095620eaf75c1a24af35c",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "lean4lean-raised-fuel.log",
+    "url": "https://math.mit.edu/~drew/grh/lean4lean-raised-fuel.log",
+    "status": 200,
+    "bytes": 1131,
+    "sha256": "d2612cd1efeeb40f1c7df282ede78685469b4cc7075757c749b90a5f5059878a",
+    "retrieved_at_utc": "2026-11-23T12:00:31.128526+00:00",
+    "published_sha256": "d2612cd1efeeb40f1c7df282ede78685469b4cc7075757c749b90a5f5059878a",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "comparator.json",
+    "url": "https://math.mit.edu/~drew/grh/comparator.json",
+    "status": 200,
+    "bytes": 460,
+    "sha256": "8ea890e6ccda9cf3983ada343af18a41d12542036875a3936e7925ed5b1582ff",
+    "retrieved_at_utc": "2026-11-23T12:00:31.079478+00:00",
+    "published_sha256": "8ea890e6ccda9cf3983ada343af18a41d12542036875a3936e7925ed5b1582ff",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": true
+  },
+  {
+    "name": "sandbox-build.sh",
+    "url": "https://math.mit.edu/~drew/grh/sandbox-build.sh",
+    "status": 200,
+    "bytes": 5202,
+    "sha256": "40a32f7ee81f4c0bbd80822fff5061c017b7e64a2087789c80130185f7cfff34",
+    "retrieved_at_utc": "2026-11-23T12:00:36.894177+00:00",
+    "published_sha256": "40a32f7ee81f4c0bbd80822fff5061c017b7e64a2087789c80130185f7cfff34",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": null
+  },
+  {
+    "name": "sandbox-build-continue.sh",
+    "url": "https://math.mit.edu/~drew/grh/sandbox-build-continue.sh",
+    "status": 200,
+    "bytes": 3294,
+    "sha256": "3f97814093fc76270a2f5ce4df8771fbd360b364650fbc2b95f18c0aa5dd9fcc",
+    "retrieved_at_utc": "2026-11-23T12:00:36.981786+00:00",
+    "published_sha256": "3f97814093fc76270a2f5ce4df8771fbd360b364650fbc2b95f18c0aa5dd9fcc",
+    "matches_published_sha256": true,
+    "matches_local_historical_bytes": null
+  },
+  {
+    "name": "mit_status_20261123.html",
+    "url": "https://math.mit.edu/~drew/grh/",
+    "status": 200,
+    "bytes": 27863,
+    "sha256": "020ef13ef25ccabe796b4ec7da9bb4242c3e71fb5a5e5d5019526ca3feb4dc78",
+    "retrieved_at_utc": "2026-11-23T12:00:36.942200+00:00",
+    "published_sha256": null,
+    "matches_published_sha256": null,
+    "matches_local_historical_bytes": null
+  }
+]

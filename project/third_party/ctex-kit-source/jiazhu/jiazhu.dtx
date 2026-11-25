@@ -1,0 +1,1615 @@
+% \iffalse meta-comment
+% !TEX program  = XeLaTeX
+%<*internal>
+\iffalse
+%</internal>
+%<*readme>
+jiazhu
+======
+
+`jiazhu` is a LaTeX package written to support `jiazhu` (splitted annotation or
+inline cutting note, 夹注/双行夹注 in simplified Chinese, 割注/warichū in Japanese)
+typesetting for CJK scripts.
+
+You can read the package manual (in Chinese) for more detailed explanations.
+
+Contributing
+------------
+
+This package is a part of the [ctex-kit](https://github.com/CTeX-org/ctex-kit) project.
+
+Issues and pull requests are welcome.
+
+Copyright and Licence
+---------------------
+
+    Copyright (C) 2018-2020 by Qing Lee <sobenlee@gmail.com>
+    Copyright (C)      2020 by Ruixi Zhang <ruixizhang42@gmail.com>
+    ----------------------------------------------------------------------
+
+    This work may be distributed and/or modified under the
+    conditions of the LaTeX Project Public License, either
+    version 1.3c of this license or (at your option) any later
+    version. This version of this license is in
+       http://www.latex-project.org/lppl/lppl-1-3c.txt
+    and the latest version of this license is in
+       http://www.latex-project.org/lppl.txt
+    and version 1.3 or later is part of all distributions of
+    LaTeX version 2005/12/01 or later.
+
+    This work has the LPPL maintenance status `maintained'.
+
+    The Current Maintainer of this work is Qing Lee.
+
+    This package consists of the file  jiazhu.dtx,
+                 and the derived files jiazhu.sty,
+                                       jiazhu.pdf,
+                                       jiazhu.ins,
+                                       jiazhu-test.tex, and
+                                       README.md (this file).
+
+%</readme>
+%<*internal>
+\fi
+\begingroup
+  \def\temp{LaTeX2e}
+\expandafter\endgroup\ifx\temp\fmtname\else
+\csname fi\endcsname
+%</internal>
+%<*install>
+
+\input ctxdocstrip %
+
+\preamble
+
+    Copyright (C) 2018-2020 by Qing Lee <sobenlee@gmail.com>
+    Copyright (C)      2020 by Ruixi Zhang <ruixizhang42@gmail.com>
+--------------------------------------------------------------------------
+
+    This work may be distributed and/or modified under the
+    conditions of the LaTeX Project Public License, either
+    version 1.3c of this license or (at your option) any later
+    version. This version of this license is in
+       http://www.latex-project.org/lppl/lppl-1-3c.txt
+    and the latest version of this license is in
+       http://www.latex-project.org/lppl.txt
+    and version 1.3 or later is part of all distributions of
+    LaTeX version 2005/12/01 or later.
+
+    This work has the LPPL maintenance status `maintained'.
+
+    The Current Maintainer of this work is Qing Lee.
+
+--------------------------------------------------------------------------
+
+\endpreamble
+
+\postamble
+
+    This package consists of the file  jiazhu.dtx,
+                 and the derived files jiazhu.sty,
+                                       jiazhu.pdf,
+                                       jiazhu.ins,
+                                       jiazhu-test.tex, and
+                                       README.md (this file).
+\endpostamble
+
+\declarepostamble\emptypostamble
+\endpostamble
+
+\generate
+  {
+%</install>
+%<*internal>
+    \usedir{source/latex/jiazhu}
+    \file{jiazhu.ins}       {\from{\jobname.dtx}{install}}
+%</internal>
+%<*install>
+    \usedir{tex/latex/jiazhu}
+    \file{jiazhu.sty}       {\from{\jobname.dtx}{package}}
+    \usepreamble\emptypreamble
+    \usepostamble\emptypostamble
+    \usedir{doc/latex/jiazhu}
+    \file{jiazhu-test.tex}  {\from{\jobname.dtx}{test}}
+    \nopreamble\nopostamble
+    \file{README.md}        {\from{\jobname.dtx}{readme}}
+  }
+
+\endbatchfile
+%</install>
+%<*internal>
+\fi
+%</internal>
+%<package>\NeedsTeXFormat{LaTeX2e}
+%<package>\RequirePackage{expl3}
+%<+package>\GetIdInfo$Id$
+%<package>  {Jiazhu/Warichu Support}
+%<package>\ProvidesExplPackage{\ExplFileName}
+%<package>  {\ExplFileDate}{0}{\ExplFileDescription}
+%<*driver>
+\documentclass{ctxdoc}
+\usepackage{jiazhu}
+\ExplSyntaxOn
+\sys_if_platform_windows:TF
+  { \jiazhuset { ideohtratio = 220/256 } }
+  { \jiazhuset { ideohtratio = 0.8 } }
+\ExplSyntaxOff
+\jiazhuset { opening = 〔 , closing = 〕 }
+\newCJKfontfamily\mincho{HaranoAjiMincho}
+\SideBySideExampleSet{xrightmargin=.25\linewidth}
+\begin{document}
+  \DocInput{\jobname.dtx}
+  \IndexLayout
+  \PrintIndex
+\end{document}
+%</driver>
+% \fi
+%
+% \CheckSum{977}
+% \GetFileId{jiazhu.sty}
+%
+% \title{\bfseries\pkg{jiazhu} 宏包}
+% \author{李清\and 张瑞熹}
+% \date{\filedate\qquad\fileversion\thanks{\ctexkitrev{\ExplFileVersion}.}}
+% \maketitle
+%
+% \begin{documentation}
+%
+% \section{简介}
+%
+% \pkg{jiazhu} 是一个 \LaTeX 宏包，用于支持
+% 夹注\jiazhu{夹注（简体中文）、夾注（繁體中文），指夹在正文中间的注解。
+% 夹注一般为两行，故又名双行夹注（简）、雙行夾注（繁）。}^^A
+% 或割注\jiazhu[format=\mincho,jzideohtratio=0.88]{^^A
+% 割注（日本語），本文中で，複数行に割書きした注釈．}排版。
+% 夹注一般只出现在直排（竖排）的文档中，常见于古籍，
+% 横排文档则几乎不用、也不适用夹注。
+%
+% \section{基本用法}
+%
+% \jiazhuset { opening = {} , closing = {} }
+%
+% \begin{function}{\jiazhu}
+%   \begin{syntax}
+%     \cs{jiazhu} \oarg{键值选项} \Arg{夹注内容}
+%   \end{syntax}
+% \end{function}
+%
+% \begin{function}{\jiazhuset}
+%   \begin{syntax}
+%     \cs{jiazhuset} \Arg{键值选项}
+%   \end{syntax}
+% \end{function}
+%
+% \begin{function}{format}
+%   \begin{syntax}
+%     format = \Arg{格式命令}
+%   \end{syntax}
+%   指定夹注的样式，比如 \meta{行距更改}、\meta{字体切换} 等命令。
+%   如果样式为空值，那么夹注与前后正文的字体保持一致。
+%   如果夹注两端有括弧，那么指定的样式也会作用在这对括弧上。
+%   例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu{夹注现在是宋体字}正文\\[5pt]
+%     正文\jiazhu[format=\linespread{1.5}]{夹注行距被扩大了}正文\\[5pt]
+%     正文\jiazhu[format=\sffamily]{夹注现在是黑体字}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{lines}
+%   \begin{syntax}
+%     lines = \Arg{正整数}
+%   \end{syntax}
+%   指定夹注的行数，必须是正整数。默认值是~2。例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[lines=3]{夹注现在变成三行}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{ideohtratio}
+%   \begin{syntax}
+%     ideohtratio = \Arg{数字}
+%   \end{syntax}
+%   \jiazhuset { ideohtratio = 0.5 }^^A
+%   指定汉字的字框高与其字号的比值，是实数
+%   （也接受 \opt{ideohtratio=8/10} 这种分数写法）。
+%   默认值是~0.5。
+%   这篇用户手册在导言区通过 \cs{jiazhuset} 声明了 \opt{ideohtratio=0.8}。
+%   \begin{center}
+%   \footnotesize
+%   \def\textbox{\fbox{\rule[-2.4pt]{0pt}{20pt}\rule{20pt}{0pt}}}
+%   \setlength{\fboxrule}{0.25pt}
+%   \setlength{\fboxsep}{-\fboxrule}
+%   \setbox0=\hbox{\textbox}
+%   \setbox2=\hbox{\rule[-5pt]{0.5pt}{70pt}}
+%   \ht2=0pt
+%   \setbox4=\hbox{$\vcenter{}$}
+%   \rule[-0.25pt]{80pt}{0.5pt}\kern-70pt
+%   \vtop{^^A
+%     \offinterlineskip \copy0 \copy0 \copy0
+%     \hbox to 20pt{\hss\copy2 \hss}\kern5pt
+%     \hbox to 20pt{\hss$\uparrow$\hss}\kern3pt
+%     \hbox to 20pt{\hss 直排基线\hss}\kern3pt
+%     \hbox to 20pt{\hss 字框“高”50\%\hss}^^A
+%   }^^A
+%   \copy0 \copy0 \kern15pt
+%   \lower\ht4\rlap{$\leftarrow$ 横排基线，字框高 88\%}
+%   \end{center}
+%   如果你在横排文档中未经设置就直接输入 \cs{jiazhu}\marg{夹注内容}，那么
+%   你会惊讶\jiazhu{惊讶【形容词】，感到意外、奇怪。}地发现夹注的位置偏下。
+%   这是因为 \opt{ideohtratio=0.5} 的默认值是根据直排文档设定的值。
+%   在横排文档中，\opt{ideohtratio} 的值视具体的字体而定，
+%   一般在 0.8 至 0.88 之间。例如，
+%   \begin{SideBySideExample}[xrightmargin=.27\linewidth]
+%     正文\jiazhu{默认的参数设定是以直排优先的}正文\\[5pt]
+%     正文\jiazhu[ideohtratio=0.8]{调整参数来对齐横排夹注与正文}正文
+%   \end{SideBySideExample}
+%
+%   这里列出几类常见字体对应的 \opt{ideohtratio} 值：
+%   \begin{center}
+%   \def\hfilll{\hskip 0pt plus 1filll\relax}^^A 慎用
+%   \begin{tabular}{cccc}
+%   \toprule
+%   字体厂商 & 直排 & 横排 & 备注\\
+%   \midrule
+%   中易  & 0.5 & 0.859375 \hfilll (220/256)  & Windows 系统字体\\
+%   华文  & 0.5 & 0.8      \hfilll (800/1000) & macOS 系统字体\\
+%   Adobe & 0.5 & 0.88     \hfilll (880/1000) & 思源系列字体\\
+%   \bottomrule
+%   \end{tabular}
+%   \end{center}
+%   该值影响夹注的对齐算法。
+% \end{function}
+%
+% \begin{function}{jzideohtratio}
+%   \begin{syntax}
+%     jzideohtratio = \Arg{数字}
+%   \end{syntax}
+%   额外指定夹注汉字的字框高与其字号的比值，是实数
+%   （也接受 \opt{jzideohtratio=8/10} 这种分数写法）。
+%   如果该值被设为~0，则认为夹注字框高的百分比与正文字框高的百分比相等
+%   （即无需另设）。
+%   如果正文、夹注分别用了来自不同厂商的字体，横排时字框高的百分比就可能不一样，
+%   此时可以通过 \opt{jzideohtratio} 另设夹注字体字框高的百分比。^^A
+%   \jiazhu{可以理解 \opt{ideohtratio} 对应正文用的字体，
+%   而 \opt{jzideohtratio} 则对应夹注（以及夹注括弧）用的字体。
+%   两者一般是相等的，所以只需指定 \opt{ideohtratio}。
+%   如果两者不相等就需要分别设置。}
+%   默认值是~0。
+% \end{function}
+%
+% \begin{function}{ratio}
+%   \begin{syntax}
+%     ratio = \Arg{数字}
+%   \end{syntax}
+%   指定夹注字号与正文字号的比值，是实数
+%   （也接受 \opt{ratio=1/2} 这种分数写法）。
+%   默认值是~2/3。例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[ratio=0.5]{夹注字号是正文字号的 50\%}正文\\
+%     正文\jiazhu[ratio=1/2]{夹注字号是正文字号的 50\%}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{beforeskip}
+%   \begin{syntax}
+%     beforeskip = \Arg{弹性间距}
+%   \end{syntax}
+%   经文多在夹注两端插入少许空白，以此隔开正文与夹注。
+%   \opt{beforeskip} 指定前置于夹注的空白。
+%   默认值是 \tn{smallskipamount}。例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[beforeskip=0pt plus 1pt]{夹注前端紧贴正文}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{afterskip}
+%   \begin{syntax}
+%     afterskip = \Arg{弹性间距}
+%   \end{syntax}
+%   指定后置于夹注的空白。
+%   默认值是 \tn{smallskipamount}。例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[afterskip=0pt plus 1pt]{夹注后端紧贴正文}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{opening}
+%   \begin{syntax}
+%     opening = \Arg{前置内容}
+%   \end{syntax}
+%   指定前置于夹注的括弧。默认不添加。例如，
+%   \begin{SideBySideExample}[xrightmargin=.3\linewidth]
+%     正文\jiazhu[opening=〖]{夹注前置了左空心括号}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{closing}
+%   \begin{syntax}
+%     closing = \Arg{后置内容}
+%   \end{syntax}
+%   指定后置于夹注的括弧。默认不添加。例如，
+%   \begin{SideBySideExample}[xrightmargin=.3\linewidth]
+%     正文\jiazhu[closing=】]{夹注后置了右实心括号}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{bracketratio}
+%   \begin{syntax}
+%     bracketratio = \Arg{数字}
+%   \end{syntax}
+%   指定括弧字号与夹注字号的比值，是实数
+%   （也接受 \opt{bracketratio=5/2} 这种分数写法）。
+%   默认值是~2。例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[opening=（,bracketratio=1]{括弧字号等于夹注字号}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{baselineshift}
+%   \begin{syntax}
+%     baselineshift = \Arg{尺寸}
+%   \end{syntax}
+%   \emph{正常情况下，不需要设定此值！}
+%
+%   如果夹注本身（或者紧随其后的正文）有超常的高度，
+%   那么夹注前后的正文可能会错位。例如，
+%   \begin{SideBySideExample}
+%     \newcommand\ideobaseline{\llap{\rule[-2.1bp]{76.2625pt}{0.2pt}}}
+%     正文\jiazhu[lines=4]{特殊效果}正文错位\ideobaseline
+%   \end{SideBySideExample}
+%
+%   让我们设这个“特殊”夹注所处那一行的行距（\tn{baselineskip}）为
+%   $b$~plus~$y_b$~minus~$z_b$，
+%   又设该夹注与其后同一行正文的最大高度（西文基线以上的部分）为~$h$，
+%   则一旦 $h>b-\tn{lineskiplimit}$，就会出现正文错位的情况。
+%   此时，你可以指定 \opt{baselineshift} 将这个夹注
+%   连同后方的正文一起竖直平移（直排时则水平平移）。
+%   正值表示向上平移（直排时向右），负值表示向下平移（直排时向左）。
+%   设 \tn{lineskip} 为 $l$~plus~$y_l$~minus~$z_l$，
+%   当 $h>b-\tn{lineskiplimit}$ 时，
+%   可以声明 \opt{baselineshift=\meta{$h-b+l$}}。
+%   在上一例中，
+%   $h=(0.8-0.5)\times 10.5\,\mathrm{bp}+2\times 7\,\mathrm{bp}$，
+%   $b=1.2\times 1.2\times 10.5\,\mathrm{bp}$，
+%   $\tn{lineskiplimit}=0\,\mathrm{pt}$，
+%   $l=1\,\mathrm{pt}$。
+%   因此，
+%   \begin{SideBySideExample}
+%     \newcommand\ideobaseline{\llap{\rule[-2.1bp]{76.2625pt}{0.2pt}}}
+%     正文\jiazhu[lines=4,baselineshift=3.0376125pt]%
+%       {特殊效果}正文对齐\ideobaseline
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{halign}
+%   \begin{syntax}
+%     halign = <(justified)|left|right|centered|distributed>
+%   \end{syntax}
+%   指定夹注内容的横向对齐样式。默认值是 \opt{justified}。
+%   其中，\opt{left}、\opt{right}、\opt{centered}
+%   分别为“左对齐”、“右对齐”、“居中对齐”。例如，
+%   \begin{SideBySideExample}[xrightmargin=.22\linewidth]
+%     \jiazhuset{lines=3,ratio=0.5}
+%     正文\jiazhu[halign=left]{This is a three-line example}正文\\[5pt]
+%     正文\jiazhu[halign=right]{This is a three-line example}正文\\[5pt]
+%     正文\jiazhu[halign=centered]{This is a three-line example}正文
+%   \end{SideBySideExample}
+%
+%   另外，\opt{justified}、\opt{distributed} 都是“两端对齐”，它们的区别是：
+%   在 \opt{justified} 样式下，末行左对齐；
+%   在 \opt{distributed} 样式下，末行仍然两端对齐。
+%   例如，
+%   \begin{SideBySideExample}
+%     正文\jiazhu[halign=justified]{㈠㈡㈢㈣㈤㈥㈦㈧㈨}正文\\
+%     正文\jiazhu[halign=distributed]{㈠㈡㈢㈣㈤㈥㈦㈧㈨}正文
+%   \end{SideBySideExample}
+%
+%   \emph{传统排印一般只使用 \opt{justified}，不使用
+%   \opt{left}、\opt{right}、\opt{centered} 或 \opt{distributed}。}
+% \end{function}
+%
+% \begin{function}{valign}
+%   \begin{syntax}
+%     valign = <(middle)|bottom|top>
+%   \end{syntax}
+%   与 \opt{halign} 类似，\opt{valign} 指定夹注内容的纵向对齐样式。
+%   默认值是 \opt{middle}，即中线对齐。
+%   其中，\opt{bottom}、\opt{top}
+%   分别为“底线对齐”、“顶线对齐”。例如，
+%   \begin{SideBySideExample}
+%     \jiazhuset{lines=1,ratio=0.5}
+%     正文\jiazhu[valign=bottom]{夹注现在底线对齐}正文\\
+%     正文\jiazhu[valign=top]{夹注现在顶线对齐}正文
+%   \end{SideBySideExample}
+% \end{function}
+%
+% \begin{function}{shortcut}
+%   \begin{syntax}
+%     shortcut  = \Arg{字符}
+%     shortcut  = \{<开始字符><结束字符>\}
+%     shortcut- = \Arg{字符列表}
+%   \end{syntax}
+% \end{function}
+%
+% \end{documentation}
+%
+% \StopEventually{}
+%
+% \begin{implementation}
+%
+% \section{代码实现}
+%
+%    \begin{macrocode}
+%<*package>
+%<@@=jiazhu>
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\msg_new:nnn { jiazhu } { l3-too-old }
+  {
+    Support~package~'expl3'~too~old. \\\\
+    Please~update~an~up~to~date~version~of~the~bundles\\\\
+    'l3kernel'~and~'l3packages'\\\\
+    using~your~TeX~package~manager~or~from~CTAN.
+  }
+\@ifpackagelater { expl3 } { 2019/03/05 } { }
+  { \msg_error:nn { jiazhu } { l3-too-old } }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_if_exist:NF \NewDocumentCommand
+  { \RequirePackage { xparse } }
+%    \end{macrocode}
+%
+% \begin{macro}[int]{\jiazhu:nn}
+% 主要函数。
+%    \begin{macrocode}
+\cs_new_protected:Npn \jiazhu:nn #1
+  {
+    \group_begin:
+%    \end{macrocode}
+% 水平模式下需要用到 \cs{l_@@_shift_dim}，所以必须在这里提前处理键值选项。
+%    \begin{macrocode}
+      \tl_if_novalue:nF {#1}
+        { \keys_set:nn { jiazhu } {#1} }
+      \mode_if_vertical:TF
+        { \@@_vertical_mode:n }
+        {
+          \mode_if_horizontal:TF
+            {
+              \mode_if_inner:TF
+                { \@@_inner_mode:n }
+                { \@@_horizontal_mode:n }
+            }
+            { \@@_inner_mode:n }
+        }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_vertical_mode:n}
+% 竖直模式下不用计算上一段最后一行的宽度，但要注意处理 \tn{parindent}。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_vertical_mode:n
+  {
+    \mode_leave_vertical:
+    \@@_set_line_width:
+    \bool_set_true:N \l_@@_full_line_bool
+    \bool_set_false:N \l_@@_before_skip_bool
+    \dim_set:Nn \l_@@_remaining_width_dim
+      {
+        \int_compare:nNnTF \tex_lastnodetype:D = \c_one_int
+          { \l_@@_line_width_dim - \tex_parindent:D }
+          { \l_@@_line_width_dim }
+      }
+    \@@_boot:n
+  }
+\bool_new:N \l_@@_full_line_bool
+\dim_new:N \l_@@_remaining_width_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_horizontal_mode:n}
+% 水平模式下需要获取最后一行的宽度，以便将夹注放到段落的后面。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_horizontal_mode:n
+  {
+    \@@_extract_previous_line_width:
+    \@@_set_line_width:
+    \dim_set_eq:NN \l_@@_remaining_width_dim \l_@@_line_width_dim
+    \int_compare:nNnTF \tex_lastnodetype:D = { 12 }
+      {
+        \bool_set_false:N \l_@@_full_line_bool
+        \bool_set_true:N \l_@@_before_skip_bool
+        \dim_sub:Nn \l_@@_remaining_width_dim
+          { \g_@@_previous_line_width_dim }
+      }
+      {
+        \bool_set_true:N \l_@@_full_line_bool
+        \bool_set_false:N \l_@@_before_skip_bool
+      }
+    \@@_boot:n
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_inner_mode:n}
+% 在内部水平或数学模式下，直接将夹注分行输出。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_inner_mode:n
+  {
+    \bool_set_false:N \l_@@_full_line_bool
+    \int_compare:nNnTF \tex_lastnodetype:D = { -1 }
+      { \bool_set_false:N \l_@@_before_skip_bool }
+      { \bool_set_true:N \l_@@_before_skip_bool }
+    \dim_set_eq:NN \l_@@_remaining_width_dim \c_max_dim
+    \@@_boot:n
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_set_line_width:}
+% 当前行的宽度，\tn{hsize} 与 \tn{linewidth} 可能不一致，我们取其较小值。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_line_width:
+  {
+    \dim_set:Nn \l_@@_line_width_dim
+      {
+          \dim_min:nn { \tex_hsize:D } { \linewidth }
+        - \tex_leftskip:D
+        - \tex_rightskip:D
+      }
+  }
+\dim_new:N \l_@@_line_width_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_extract_previous_line_width:}
+% 我们通过在行间数学模式中的 \tn{predisplaysize} 来获取上一行的宽度。
+% 目前的 \tn{parshape} 仅考虑 \LaTeX 的列表环境。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_extract_previous_line_width:
+  {
+    \group_begin:
+      \skip_set_eq:NN \tex_parfillskip:D \c_@@_fil_skip
+      \c_math_toggle_token \c_math_toggle_token
+        \dim_gset_eq:NN \g_@@_previous_line_width_dim \tex_predisplaysize:D
+        \int_set_eq:NN \tex_predisplaypenalty:D  \c_@@_nobreak_int
+        \int_set_eq:NN \tex_postdisplaypenalty:D \c_@@_nobreak_int
+        \skip_set:Nn \tex_abovedisplayskip:D
+          {
+            \dim_compare:nNnTF
+              { \dim_abs:n { \g_@@_previous_line_width_dim } } < \c_max_dim
+              { - \l_@@_shift_dim - \tex_baselineskip:D }
+              { - \l_@@_shift_dim }
+          }
+        \skip_set:Nn \tex_belowdisplayskip:D { - \tex_baselineskip:D }
+        \skip_set_eq:NN \tex_abovedisplayshortskip:D \tex_abovedisplayskip:D
+        \skip_set_eq:NN \tex_belowdisplayshortskip:D \tex_belowdisplayskip:D
+      \c_math_toggle_token \c_math_toggle_token
+    \group_end:
+    \int_set:Nn \tex_prevgraf:D { \tex_prevgraf:D - 3 }
+    \dim_compare:nNnTF
+      { \dim_abs:n { \g_@@_previous_line_width_dim } } < \c_max_dim
+      {
+        \dim_gsub:Nn \g_@@_previous_line_width_dim
+          {
+            \int_compare:nNnTF \tex_parshape:D = \c_one_int
+              { \tex_leftskip:D + 2em + \tex_parshapeindent:D \c_one_int }
+              { \tex_leftskip:D + 2em }
+          }
+        \tex_kern:D \g_@@_previous_line_width_dim
+      }
+      { \dim_gzero:N \g_@@_previous_line_width_dim }
+  }
+\dim_new:N \g_@@_previous_line_width_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{variable}{\c_@@_break_int, \c_@@_nobreak_int}
+% 强制换行/页和禁止换行/页的 penalty 值。
+%    \begin{macrocode}
+\int_const:Nn \c_@@_break_int   { -10000 }
+\int_const:Nn \c_@@_nobreak_int {  10000 }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_boot:n}
+% 准备工作。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_boot:n #1
+  {
+    \@@_tex_parameter:
+    \dim_set:Nn \l_@@_outer_unit_dim { \f@size pt }
+%    \end{macrocode}
+% 初始化设置：夹注的字号设为 $\cs{l_@@_ratio_fp}\times\tn{f@size}$\,pt，
+% 默认的行距取相同值（即设置行间距为零）。
+%    \begin{macrocode}
+    \fp_set:Nn \l_@@_tmp_fp { \l_@@_ratio_fp * \f@size }
+    \fontsize
+      { \fp_use:N \l_@@_tmp_fp }
+      { \fp_use:N \l_@@_tmp_fp }
+%    \end{macrocode}
+% 更新当前的 \tn{baselinestretch} 为~1。
+%    \begin{macrocode}
+    \linespread { 1 }
+%    \end{macrocode}
+% 思源宋体/思源黑体的简体中文版对标点符号的设计有些独特，横排用的全角逗号的
+% 底部低于汉字字框的底端，全角引号的顶部又高于字框的顶端，这会导致 \TeX 往
+% 行间插入 \tn{lineskip}。我们局部把 \tn{lineskiplimit} 设成最小的
+% dimen，相当于局部禁用 \tn{lineskip} 机制，结果是夹注可能会部分重叠
+% （横排就不应该有夹注嘛！希望这个默认的设置能够“防止”横排夹注的滥用）。
+%    \begin{macrocode}
+    \dim_set:Nn \tex_lineskiplimit:D { - \c_max_dim }
+%    \end{macrocode}
+% 接下来是用户自定义的 \opt{format}，并用 \tn{selectfont} 使字体变更生效。
+%    \begin{macrocode}
+    \tl_use:N \l_@@_format_tl
+    \selectfont
+    \dim_set:Nn \l_@@_unit_dim { \f@size pt }
+    \hbox_set:Nn \l_@@_text_box
+      { \tex_ignorespaces:D #1 \tex_unskip:D }
+%    \end{macrocode}
+% 往夹注首行开头插入支架。
+%    \begin{macrocode}
+    \@@_make_jzideoht_strut:
+    \hbox_set:Nn \l_@@_text_box
+      {
+        \@@_insert_jzideoht_strut:
+        \hbox_unpack:N \l_@@_text_box
+      }
+    \@@_make_opening_closing_box:
+%    \end{macrocode}
+% \tn{strutbox} 默认有 $0.3\times\tn{baselineskip}$ 的深度（横排），除
+% \XeLaTeX 外的直排模式下，则有 $0.5\times\tn{baselineskip}$ 的“深度”。
+% 应该足够分割夹注用了。
+%    \begin{macrocode}
+    \dim_set:Nn \tex_splitmaxdepth:D { \box_dp:N \strutbox }
+    \skip_set:Nn \l_@@_good_break_skip
+      { \c_zero_dim plus 0.5\l_@@_outer_unit_dim }
+    \skip_set:Nn \l_@@_unit_stretch_skip
+      { \c_zero_dim plus \l_@@_unit_dim }
+    \@@_set_valign:
+    \@@_set_before_skip:
+    \@@_processing:
+  }
+\fp_new:N \l_@@_tmp_fp
+\box_new:N \l_@@_text_box
+\dim_new:N \l_@@_unit_dim
+\dim_new:N \l_@@_outer_unit_dim
+\skip_new:N \l_@@_unit_stretch_skip
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_tex_parameter:}
+% 为避免警告设置的一些 \TeX 参数。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_tex_parameter:
+  {
+    \@parboxrestore
+    \tex_everypar:D { { \box_set_to_last:N \c_zero_int } }
+    \dim_zero:N \tex_emergencystretch:D
+    \dim_set_eq:NN \tex_hfuzz:D \c_max_dim
+    \dim_set_eq:NN \tex_vfuzz:D \c_max_dim
+    \int_set_eq:NN \tex_hbadness:D \c_max_int
+    \int_set_eq:NN \tex_vbadness:D \c_max_int
+    \int_set:Nn \tex_tolerance:D { 1000 }
+    \skip_zero:N \tex_splittopskip:D
+    \int_zero:N \tex_linepenalty:D
+    \int_zero:N \tex_clubpenalty:D
+    \int_zero:N \tex_widowpenalty:D
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_make_jzideoht_strut:, \@@_insert_jzideoht_strut:}
+% 往每个夹注的首行开头插入一个“支架”。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_make_jzideoht_strut:
+  {
+    \hbox_set:Nn \l_@@_strut_box
+      {
+        \tex_vrule:D
+%    \end{macrocode}
+% 支架的高度等于夹注汉字的字框高，
+% 这能给 \opt{baselineshift} 提供更可靠的参考。
+%    \begin{macrocode}
+          height
+            \fp_compare:nNnTF \l_@@_jzideoht_fp = \c_zero_fp
+              { \fp_use:N \l_@@_ideoht_fp }
+              { \fp_use:N \l_@@_jzideoht_fp }
+            \l_@@_unit_dim
+%    \end{macrocode}
+% 在夹注里 \tn{lineskiplimit} 已经最小了，支架的深度不会起任何作用，
+% 我们设成零即可。
+%    \begin{macrocode}
+          depth \c_zero_dim
+%    \end{macrocode}
+% 支架的宽度当然是零。^^A 也可以改成 \cs{l_@@_unit_dim} 进行视觉 debug
+%    \begin{macrocode}
+          width \c_zero_dim
+        \scan_stop:
+    }
+  }
+\cs_new_protected:Npn \@@_insert_jzideoht_strut:
+  { \hbox_unpack:N \l_@@_strut_box }
+\box_new:N \l_@@_strut_box
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_make_opening_closing_box:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_make_opening_closing_box:
+  {
+    \tl_if_empty:NTF \l_@@_opening_tl
+      { \box_clear:N \l_@@_opening_box }
+      {
+        \hbox_set:Nn \l_@@_opening_box
+          {
+            \fontsize
+              { \fp_use:N \l_@@_bracket_ratio_fp \l_@@_unit_dim }
+              { \c_zero_skip }
+            \selectfont \l_@@_opening_tl
+          }
+        \dim_sub:Nn \l_@@_remaining_width_dim
+          { \box_wd:N \l_@@_opening_box }
+      }
+    \tl_if_empty:NTF \l_@@_closing_tl
+      { \box_clear:N \l_@@_closing_box }
+      {
+        \hbox_set:Nn \l_@@_closing_box
+          {
+            \fontsize
+              { \fp_use:N \l_@@_bracket_ratio_fp \l_@@_unit_dim }
+              { \c_zero_skip }
+            \selectfont \l_@@_closing_tl \tex_unskip:D
+          }
+      }
+  }
+\cs_new_protected:Npn \@@_put_opening_box:
+  {
+    \bool_if:NT \l_@@_before_skip_bool
+      { \skip_horizontal:N \l_@@_before_skip }
+    \box_if_empty:NF \l_@@_opening_box
+      { \@@_put_mark_box:N \l_@@_opening_box }
+    \cs_set_eq:NN \@@_put_opening_box: \prg_do_nothing:
+  }
+\cs_new_protected:Npn \@@_put_closing_box:
+  {
+    \box_if_empty:NF \l_@@_closing_box
+      { \@@_put_mark_box:N \l_@@_closing_box }
+  }
+\box_new:N \l_@@_opening_box
+\box_new:N \l_@@_closing_box
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_set_valign:}
+% \TeX 排放夹注的位置，是以西文基线为准的：
+% \begin{center}
+% \footnotesize
+% \def\textbox{\fbox{\rule[-3.6pt]{0pt}{30pt}\rule{30pt}{0pt}}}
+% \def\jiazhubox{\fbox{\rule[-2.16pt]{0pt}{18pt}\rule{18pt}{0pt}}}
+% \setlength{\fboxrule}{0.25pt}
+% \setlength{\fboxsep}{-\fboxrule}
+% \setbox0=\hbox{\textbox\textbox}
+% \setbox2=\hbox{\jiazhubox\jiazhubox\jiazhubox}
+% \setbox4=\hbox{$\vcenter{}$}
+% \rule[-0.25pt]{150pt}{0.5pt}\kern-135pt
+% \copy0 \kern-65pt
+% \rule[11.15pt]{70pt}{0.5pt}\kern5pt
+% \vbox{\baselineskip=24pt \copy2 \copy2 }\kern-59pt
+% \rule[18.59pt]{64pt}{0.5pt}\kern10pt
+% \lower\ht4\rlap{$\leftarrow$ 西文基线}
+% \end{center}
+% 设 $r$ 为汉字字框高与字号的比值（例如横排时 $r=0.88$，而直排时 $r=0.5$），
+% 其中正文为~$r_{\mathrm{outer}}$、夹注为~$r_{\mathrm{inner}}$；
+% 又设 $s_{\mathrm{outer}}$ 与 $s_{\mathrm{inner}}$ 分别为正文字号与
+% 夹注字号；记夹注的行距为~$b$（夹注的行间距即为 $b-s_{\mathrm{inner}}$）；
+% 最后设夹注有 $n$~行。
+%
+% 为了实现在正文汉字的各处对齐，夹注需要向下平移，平移量各不相同。
+% \begin{itemize}
+%   \item 底线对齐时，不需要考虑多行情况，平移量计算公式为
+%         \[
+%            s_{\mathrm{outer}} \cdot (1 - r_{\mathrm{outer}})
+%          - s_{\mathrm{inner}} \cdot (1 - r_{\mathrm{inner}}) .
+%         \]
+%   \item 中线对齐时，平移量的计算公式为
+%         \[
+%            (r_{\mathrm{inner}} - 0.5) \cdot s_{\mathrm{inner}}
+%          + \frac{(n - 1) \cdot b}{2} - (r_{\mathrm{outer}} - 0.5)
+%          \cdot s_{\mathrm{outer}} , \quad n \ge 1.
+%         \]
+%   \item 顶线对齐时，平移量的计算公式为
+%         \[
+%            r_{\mathrm{inner}} \cdot s_{\mathrm{inner}} + (n - 1) \cdot b
+%          - r_{\mathrm{outer}} \cdot s_{\mathrm{outer}} , \quad n \ge 1.
+%         \]
+% \end{itemize}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_valign:n #1
+  { \cs_set_eq:Nc \@@_set_valign: { @@_set_valign_ #1 : } }
+\cs_new_protected:Npn \@@_set_valign_middle:
+  {
+%    \end{macrocode}
+% 中线对齐时，提前展开 $r-0.5$ 的计算结果，避免后续的重复计算。
+%    \begin{macrocode}
+    \exp_args:Nxx \@@_set_valign_middle_aux:nn
+%    \end{macrocode}
+% 首先是 $r_{\mathrm{inner}}-0.5$ 的计算结果。
+%    \begin{macrocode}
+      {
+        \fp_compare:nNnTF \l_@@_jzideoht_fp = \c_zero_fp
+          { \fp_eval:n { \l_@@_ideoht_fp   - 0.5 } }
+          { \fp_eval:n { \l_@@_jzideoht_fp - 0.5 } }
+      }
+%    \end{macrocode}
+% 其次是 $r_{\mathrm{outer}}-0.5$ 的计算结果。
+%    \begin{macrocode}
+      { \fp_eval:n { \l_@@_ideoht_fp - 0.5 } }
+  }
+\cs_new_protected:Npn \@@_set_valign_middle_aux:nn #1#2
+  {
+%    \end{macrocode}
+% 对于夹注内容盒子的下移量，我们直接套用公式。
+%    \begin{macrocode}
+    \dim_set:Nn \l_@@_box_offset_dim
+      {
+          #1 \l_@@_unit_dim
+        + \int_eval:n { \l_@@_lines_int - 1 } \tex_baselineskip:D / 2
+        - #2 \l_@@_outer_unit_dim
+      }
+%    \end{macrocode}
+% 对于夹注两端括弧盒子的下移量，我们修改 $s_{\mathrm{inner}}$ 为括弧字号，
+% 并取 $n=1$ 即可。
+%    \begin{macrocode}
+    \dim_set:Nn \l_@@_mark_offset_dim
+      {
+          \fp_eval:n { #1 * \l_@@_bracket_ratio_fp } \l_@@_unit_dim
+        - #2 \l_@@_outer_unit_dim
+      }
+  }
+\cs_new_protected:Npn \@@_set_valign_bottom:
+  {
+%    \end{macrocode}
+% 底线对齐时，则展开 $1-r_{\mathrm{outer}}$ 的计算结果。
+%    \begin{macrocode}
+    \exp_args:Nxx \@@_set_valign_bottom_aux:nn
+      {
+        \fp_compare:nNnTF \l_@@_jzideoht_fp = \c_zero_fp
+          { \fp_eval:n { 1 -   \l_@@_ideoht_fp } }
+          { \fp_eval:n { 1 - \l_@@_jzideoht_fp } }
+      }
+      { \fp_eval:n { 1 - \l_@@_ideoht_fp } }
+  }
+\cs_new_protected:Npn \@@_set_valign_bottom_aux:nn #1#2
+  {
+%    \end{macrocode}
+% 夹注内容盒子的下移量
+%    \begin{macrocode}
+    \dim_set:Nn \l_@@_box_offset_dim
+      {
+        #2 \l_@@_outer_unit_dim - #1 \l_@@_unit_dim
+      }
+    \dim_set:Nn \l_@@_mark_offset_dim
+      {
+          #2 \l_@@_outer_unit_dim
+        - \fp_eval:n { #1 * \l_@@_bracket_ratio_fp } \l_@@_unit_dim
+      }
+  }
+%    \end{macrocode}
+% 顶线对齐时
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_valign_top:
+  {
+    \exp_args:Nxx \@@_set_valign_top_aux:nn
+      {
+        \fp_compare:nNnTF \l_@@_jzideoht_fp = \c_zero_fp
+          { \fp_eval:n { \l_@@_ideoht_fp   } }
+          { \fp_eval:n { \l_@@_jzideoht_fp } }
+      }
+      { \fp_eval:n { \l_@@_ideoht_fp } }
+  }
+\cs_new_protected:Npn \@@_set_valign_top_aux:nn #1#2
+  {
+    \dim_set:Nn \l_@@_box_offset_dim
+      {
+          #1 \l_@@_unit_dim
+        + \int_eval:n { \l_@@_lines_int - 1 } \tex_baselineskip:D
+        - #2 \l_@@_outer_unit_dim
+      }
+    \dim_set:Nn \l_@@_mark_offset_dim
+      {
+          \fp_eval:n { #1 * \l_@@_bracket_ratio_fp } \l_@@_unit_dim
+        - #2 \l_@@_outer_unit_dim
+      }
+  }
+\cs_new_eq:NN \@@_set_valign: \@@_set_valign_middle:
+\dim_new:N \l_@@_box_offset_dim
+\dim_new:N \l_@@_mark_offset_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_put_box:N, \@@_put_mark_box:N}
+% 输出夹注盒子，并适当下移保证对齐。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_put_box:N #1
+  {
+    \box_move_down:nn
+      { \l_@@_box_offset_dim }
+      { \box_use_drop:N #1 }
+  }
+\cs_new_protected:Npn \@@_put_mark_box:N #1
+  {
+    \box_move_down:nn
+      { \l_@@_mark_offset_dim }
+      { \box_use_drop:N #1 }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_set_before_skip:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_before_skip:
+  {
+    \tl_if_empty:NTF \l_@@_before_skip_tl
+      { \bool_set_false:N \l_@@_before_skip_bool }
+      {
+        \bool_if:NT \l_@@_before_skip_bool
+          {
+            \skip_set:Nn \l_@@_before_skip
+              { \l_@@_before_skip_tl }
+            \dim_compare:nNnF \l_@@_remaining_width_dim = \c_max_dim
+              {
+                \dim_sub:Nn \l_@@_remaining_width_dim
+                  {
+                      \l_@@_before_skip
+                    - \tex_glueshrink:D \l_@@_before_skip
+                  }
+              }
+          }
+      }
+  }
+\bool_new:N \l_@@_before_skip_bool
+\skip_new:N \l_@@_before_skip
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_set_lines:n}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_lines:n #1
+  {
+    \int_compare:nNnTF {#1} > \c_zero_int
+      {
+        \int_set:Nn \l_@@_lines_int {#1}
+        \@@_make_parshape:n { \l_@@_lines_int }
+      }
+      { \msg_error:nn { jiazhu } { invalid-number } }
+  }
+\cs_new_protected:Npn \@@_make_parshape:n #1
+  {
+    \cs_set_protected:Npx \@@_parshape:
+      {
+        \tex_parshape:D
+          \int_eval:n { #1 + 1 } ~
+          \prg_replicate:nn
+            {#1} { \c_zero_dim \l_@@_remaining_width_dim }
+          \c_zero_dim \c_max_dim \scan_stop:
+      }
+  }
+\int_new:N \l_@@_lines_int
+\cs_new_eq:NN \@@_parshape: \prg_do_nothing:
+\msg_new:nnn { jiazhu } { invalid-number }
+  { Please~specify~a~positive~integer. }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_set_halign:n, \@@_halign:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_set_halign:n #1
+  { \cs_set_eq:Nc \@@_halign: { @@_halign_ #1 : } }
+\cs_new_protected:Npn \@@_halign_justified:
+  {
+    \skip_zero:N \tex_leftskip:D
+    \skip_zero:N \tex_rightskip:D
+    \skip_set_eq:NN \tex_parfillskip:D \c_@@_fil_skip
+  }
+\cs_new_protected:Npn \@@_halign_left:
+  {
+    \skip_zero:N \tex_leftskip:D
+    \skip_set_eq:NN \tex_rightskip:D \l_@@_halign_skip
+    \skip_set_eq:NN \tex_parfillskip:D \c_@@_fil_skip
+  }
+\cs_new_protected:Npn \@@_halign_right:
+  {
+    \skip_set_eq:NN \tex_leftskip:D \l_@@_halign_skip
+    \skip_zero:N \tex_rightskip:D
+    \skip_zero:N \tex_parfillskip:D
+  }
+\cs_new_protected:Npn \@@_halign_centered:
+  {
+    \skip_set_eq:NN \tex_leftskip:D \l_@@_halign_skip
+    \skip_set_eq:NN \tex_rightskip:D \l_@@_halign_skip
+    \skip_zero:N \tex_parfillskip:D
+  }
+\cs_new_protected:Npn \@@_halign_distributed:
+  {
+    \skip_zero:N \tex_leftskip:D
+    \skip_zero:N \tex_rightskip:D
+    \skip_zero:N \tex_parfillskip:D
+    \int_set_eq:NN \tex_tolerance:D \c_max_int
+  }
+\skip_new:N \l_@@_halign_skip
+\cs_new_eq:NN \@@_halign: \@@_halign_justified:
+\skip_const:Nn \c_@@_fil_skip { \c_zero_dim plus 1fil }
+\skip_set_eq:NN \l_@@_halign_skip \c_@@_fil_skip
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_processing:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_processing:
+  {
+      \@@_split_lines:
+      \@@_put_closing_box:
+      \@@_good_break:
+      \@@_hskip:N \l_@@_after_skip_tl
+    \group_end:
+    \tex_ignorespaces:D
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_good_break:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_good_break:
+  {
+    \skip_horizontal:N \l_@@_good_break_skip
+    \tex_penalty:D -100 ~
+    \skip_horizontal:n { -\l_@@_good_break_skip }
+  }
+\skip_new:N \l_@@_good_break_skip
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_hskip:N}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_hskip:N #1
+  { \tl_if_empty:NF #1 { \skip_horizontal:n {#1} } }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_split_lines:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_split_lines:
+  {
+    \dim_set:Nn \l_@@_width_dim
+      {
+        \dim_max:nn
+          { \l_@@_unit_dim }
+          { \box_wd:N \l_@@_text_box / \l_@@_lines_int }
+      }
+    \dim_compare:nNnTF \l_@@_width_dim > \l_@@_remaining_width_dim
+      { \@@_split_parshape_lines: }
+      { \@@_typeset_remaining: }
+  }
+\dim_new:N \l_@@_width_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_split_parshape_lines:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_split_parshape_lines:
+  {
+    \dim_compare:nNnTF \l_@@_remaining_width_dim < \l_@@_unit_dim
+      { \@@_split_parshape_lines_auxi: }
+      { \@@_split_parshape_lines_auxii: }
+  }
+\cs_new_protected:Npn \@@_split_parshape_lines_auxi:
+  {
+    \@@_fill_newline:
+    \dim_set:Nn \l_@@_remaining_width_dim
+      { \l_@@_line_width_dim - \box_wd:N \l_@@_opening_box }
+    \bool_set_true:N \l_@@_full_line_bool
+    \@@_split_lines:
+  }
+\cs_new_protected:Npn \@@_split_parshape_lines_auxii:
+  {
+    \vbox_set:Nn \l_@@_text_box
+      {
+        \bool_if:NTF \l_@@_full_line_bool
+          { \int_set:Nn \tex_looseness:D { -1 } }
+          { \@@_dim_normalize:N \l_@@_remaining_width_dim }
+        \@@_parshape:
+        \hbox_unpack_drop:N \l_@@_text_box
+      }
+    \vbox_set_split_to_ht:NNn \l_@@_typeset_box
+      \l_@@_text_box { \l_@@_lines_int \tex_baselineskip:D }
+    \vbox_set:Nn \l_@@_typeset_box
+      { \vbox_unpack:N \l_@@_typeset_box }
+    \bool_if:NF \l_@@_full_line_bool
+      { \skip_horizontal:N \l_@@_unit_stretch_skip }
+    \@@_typeset:
+    \box_if_empty:NF \l_@@_text_box
+      { \@@_split_remaining_lines: }
+  }
+\cs_new_protected:Npn \@@_fill_newline:
+  {
+    \tex_penalty:D \c_@@_nobreak_int
+    \tex_hfil:D    \@@_newline:
+  }
+\cs_new_protected:Npn \@@_newline:
+  { \tex_penalty:D \c_@@_break_int }
+\box_new:N \l_@@_typeset_box
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_split_remaining_lines:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_split_remaining_lines:
+  {
+    \@@_newline:
+    \dim_set_eq:NN \l_@@_remaining_width_dim \l_@@_line_width_dim
+    \bool_set_true:N \l_@@_full_line_bool
+    \@@_extract_hbox:Nn \l_@@_text_box
+      { \tex_unskip:D \tex_unskip:D \tex_unpenalty:D }
+    \@@_split_lines:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_extract_hbox:Nn}
+% 从 \tn{vbox} 中取出 \tn{hbox}。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_extract_hbox:Nn #1#2
+  {
+    \vbox_set:Nn #1
+      {
+        \vbox_unpack_drop:N #1
+        \box_gset_to_last:N \g_@@_last_box
+      }
+    \hbox_set:Nn #1
+      {
+%    \end{macrocode}
+% 往继续的夹注首行开头插入支架。
+%    \begin{macrocode}
+        \@@_insert_jzideoht_strut:
+        \hbox_unpack_drop:N \g_@@_last_box #2
+      }
+  }
+\box_new:N \g_@@_last_box
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_dim_normalize:N}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_dim_normalize:N #1
+  {
+    \dim_set:Nn #1
+      {
+        \int_div_truncate:nn {#1} { \l_@@_unit_dim }
+        \l_@@_unit_dim
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_typeset:, \@@_typeset_remaining:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_typeset:
+  {
+    \@@_put_opening_box:
+    \@@_put_box:N \l_@@_typeset_box
+  }
+\cs_new_protected:Npn \@@_typeset_remaining:
+  {
+    \@@_dim_normalize:N \l_@@_width_dim
+    \dim_set:Nn \l_@@_step_dim
+      { \l_@@_unit_dim / \l_@@_lines_int }
+    \skip_set_eq:NN \l_@@_halign_skip \l_@@_unit_stretch_skip
+    \@@_typeset_remaining_auxi:
+  }
+\cs_new_protected:Npn \@@_typeset_remaining_auxi:
+  {
+    \vbox_set:Nn \l_@@_typeset_box
+      {
+        \@@_halign:
+        \dim_set_eq:NN \tex_hsize:D \l_@@_width_dim
+        \hbox_unpack:N \l_@@_text_box \par
+        \int_gset_eq:NN \g_@@_lines_int \tex_prevgraf:D
+      }
+    \int_compare:nNnTF \g_@@_lines_int > \l_@@_lines_int
+      { \@@_typeset_remaining_auxii: }
+      { \@@_typeset_remaining_auxiii: }
+  }
+\cs_new_protected:Npn \@@_typeset_remaining_auxii:
+  {
+    \dim_add:Nn \l_@@_width_dim { \l_@@_step_dim }
+    \@@_typeset_remaining_auxi:
+  }
+\cs_new_protected:Npn \@@_typeset_remaining_auxiii:
+  {
+    \@@_extract_max_width:N \l_@@_typeset_box
+    \box_set_wd:Nn \l_@@_typeset_box
+      { \dim_min:nn { \l_@@_max_dim } { \l_@@_width_dim } }
+    \int_compare:nNnF \g_@@_lines_int = \l_@@_lines_int
+      {
+        \box_set_ht:Nn \l_@@_typeset_box
+          {
+            \int_eval:n { \l_@@_lines_int - \g_@@_lines_int }
+            \tex_baselineskip:D + \box_ht:N \l_@@_typeset_box
+          }
+      }
+    \@@_typeset:
+  }
+\dim_new:N \l_@@_step_dim
+\int_new:N \g_@@_lines_int
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_extract_max_width:N}
+% 获取盒子中的实际最大行宽。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_extract_max_width:N #1
+  {
+    \dim_zero:N \l_@@_max_dim
+    \box_if_empty:NF #1
+      {
+        \box_set_eq:NN \l_@@_tmpa_box #1
+        \dim_set:Nn \l_@@_width_dim { \box_wd:N #1 }
+        \@@_extract_max_width_auxi:
+      }
+  }
+\cs_new_protected:Npn \@@_extract_max_width_auxi:
+  {
+    \vbox_set_split_to_ht:NNn \l_@@_tmpb_box
+      \l_@@_tmpa_box { \tex_baselineskip:D }
+    \@@_extract_hbox:Nn \l_@@_tmpb_box
+      { \tex_unskip:D \tex_unskip:D \tex_unpenalty:D }
+    \dim_set:Nn \l_@@_max_dim
+      {
+        \dim_max:nn
+          { \l_@@_max_dim }
+          { \box_wd:N \l_@@_tmpb_box }
+      }
+    \dim_compare:nNnT
+      { \box_wd:N \l_@@_tmpb_box } > \l_@@_width_dim
+      { \@@_extract_max_width_auxii: }
+    \box_if_empty:NF \l_@@_tmpa_box
+      { \@@_extract_max_width_auxi: }
+  }
+\cs_new_protected:Npn \@@_extract_max_width_auxii:
+  {
+    \hbox_set_to_wd:Nnn \l_@@_tmpb_box
+      { \l_@@_width_dim }
+      { \hbox_unpack_drop:N \l_@@_tmpb_box }
+%    \end{macrocode}
+% \tn{badness} 等于 \num{1000000} 表示盒子宽度溢出了。
+%    \begin{macrocode}
+    \int_compare:nNnF \tex_badness:D < { 1 000 000 }
+      {
+        \dim_add:Nn \l_@@_width_dim { \l_@@_step_dim }
+        \@@_extract_max_width_auxii:
+      }
+  }
+\dim_new:N \l_@@_max_dim
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_add_shortcut:n, \@@_remove_shortcuts:n}
+% 设置和删除快捷命令。保险起见，我们只在文档开始时才实际设置快捷命令。
+%    \begin{macrocode}
+\AtBeginDocument { \@@_activate_shortcut: }
+\cs_new_protected:Npn \@@_activate_shortcut:
+  {
+    \seq_if_empty:NF \l_@@_shortcut_seq
+      {
+        \seq_map_function:NN
+          \l_@@_shortcut_seq \@@_add_shortcut_document:n
+      }
+    \cs_set_eq:NN \@@_add_shortcut_aux:n \@@_add_shortcut_document:n
+    \cs_set_eq:NN \@@_remove_shortcut:n \@@_remove_shortcut_document:n
+  }
+\cs_new_protected:Npn \@@_add_shortcut:n #1
+  {
+    \tl_if_blank:nF {#1}
+      { \@@_add_shortcut_aux:n {#1} }
+  }
+\cs_new_protected:Npn \@@_add_shortcut_aux:n
+  { \seq_put_right:Nn \l_@@_shortcut_seq }
+\cs_new_protected:Npn \@@_remove_shortcuts:n #1
+  {
+    \tl_map_inline:nn {#1}
+      { \exp_args:Nf \@@_remove_shortcut:n { \int_to_arabic:n { `##1 } } }
+  }
+\cs_new_protected:Npn \@@_add_shortcut_document:n #1
+  {
+    \tl_if_single_token:nTF {#1}
+      { \@@_set_shortcut_group:N #1 }
+      { \@@_set_shortcut_delimiter:NNw #1 \q_stop }
+  }
+\cs_new_protected:Npn \@@_set_shortcut_group:N #1
+  { \exp_args:Nf \@@_set_shortcut_group:n { \int_to_arabic:n { `#1 } } }
+\cs_new_protected:Npn \@@_set_shortcut_group:n #1
+  {
+    \@@_save_shortcut:n {#1}
+    \char_set_active_eq:nN {#1} \jiazhu
+  }
+\cs_new_protected:Npn \@@_set_shortcut_delimiter:NNw #1#2#3 \q_stop
+  {
+    \@@_set_shortcut_delimiter:NNf #1#2
+      { \int_to_arabic:n { `#1 } }
+  }
+\cs_new_protected:Npn \@@_set_shortcut_delimiter:NNn #1#2
+  {
+    \str_if_eq:nnTF {#1} {#2}
+      { \@@_set_shortcut_delimiter:n }
+      { \@@_set_shortcut_delimiter:Nn #2 }
+  }
+\cs_generate_variant:Nn \@@_set_shortcut_delimiter:NNn { NNf }
+\cs_new_protected:Npn \@@_set_shortcut_delimiter:n #1
+  {
+    \@@_active_char:nn
+      { \@@_set_shortcut_delimiter:Nn } {#1} {#1}
+  }
+\cs_new_protected:Npn \@@_set_shortcut_delimiter:Nn #1#2
+  {
+    \exp_args:Ncc \@@_set_shortcut_delimiter_aux:NNNn
+      { @@_shortcut_ #2 :w }
+      { @@_shortcut_ #2 _aux:w }
+      #1 {#2}
+  }
+\cs_new_protected:Npn \@@_set_shortcut_delimiter_aux:NNNn #1#2#3#4
+  {
+    \@@_save_shortcut:n {#4}
+    \cs_set_protected:Npn #1
+      { \jiazhuoptiongrabber #2 }
+    \cs_set_protected:Npn #2 ##1##2 #3
+      { \jiazhu:nn { ##1 } { ##2 } }
+    \char_set_active_eq:nN {#4} #1
+  }
+\NewDocumentCommand \jiazhuoptiongrabber { +m +o }
+  { #1 {#2} }
+\cs_new_protected:Npn \@@_save_shortcut:n #1
+  {
+    \prop_get:NnNF \l_@@_shortcut_prop {#1} \l_@@_catcode_tl
+      {
+        \@@_save_active_char:n {#1}
+        \prop_put:Nnx \l_@@_shortcut_prop
+          {#1} { \char_value_catcode:n {#1} }
+        \char_set_catcode_active:n {#1}
+      }
+  }
+\cs_new_protected:Npn \@@_remove_shortcut:n
+  { \seq_remove_all:Nn \l_@@_shortcut_seq }
+\cs_new_protected:Npn \@@_remove_shortcut_document:n #1
+  {
+    \prop_pop:NnNT \l_@@_shortcut_prop {#1} \l_@@_catcode_tl
+      {
+        \char_set_catcode:nn {#1} { \l_@@_catcode_tl }
+        \@@_restore_active_char:n {#1}
+      }
+  }
+\cs_new_protected:Npn \@@_save_active_char:n
+  { \@@_active_char_aux:Nn \@@_save_active_char:Nn }
+\cs_new_protected:Npn \@@_restore_active_char:n
+  { \@@_active_char_aux:Nn \@@_restore_active_char:Nn }
+\cs_new_protected:Npn \@@_active_char_aux:Nn #1#2
+  {
+    \group_begin: \exp_args:NNc \group_end:
+    #1 { @@_save_active_ #2 :w } {#2}
+  }
+\cs_new_protected:Npn \@@_save_active_char:Nn #1
+  { \@@_active_char:nn { \cs_set_eq:NN #1 } }
+\cs_new_protected:Npn \@@_restore_active_char:Nn #1#2
+  {
+    \char_set_active_eq:nN {#2} #1
+    \cs_set_eq:NN #1 \tex_undefined:D
+  }
+\group_begin:
+  \char_set_catcode_active:n { 0 }
+  \cs_new_protected:Npn \@@_active_char:nn #1#2
+    {
+      \group_begin:
+        \char_set_lccode:nn { 0 } {#2}
+      \tex_lowercase:D { \group_end: #1 ^^@ }
+    }
+\group_end:
+\tl_new:N \l_@@_catcode_tl
+\seq_new:N \l_@@_shortcut_seq
+\prop_new:N \l_@@_shortcut_prop
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{format}
+% 定义键值选项。
+%    \begin{macrocode}
+\keys_define:nn { jiazhu }
+  {
+    format               .tl_set:N = \l_@@_format_tl ,
+    beforeskip           .tl_set:N = \l_@@_before_skip_tl ,
+    afterskip            .tl_set:N = \l_@@_after_skip_tl ,
+    opening              .tl_set:N = \l_@@_opening_tl ,
+    closing              .tl_set:N = \l_@@_closing_tl ,
+    ideohtratio          .fp_set:N = \l_@@_ideoht_fp ,
+    jzideohtratio        .fp_set:N = \l_@@_jzideoht_fp ,
+    ratio                .fp_set:N = \l_@@_ratio_fp ,
+    bracketratio         .fp_set:N = \l_@@_bracket_ratio_fp ,
+    baselineshift       .dim_set:N = \l_@@_shift_dim ,
+    lines                  .code:n = \@@_set_lines:n {#1} ,
+    shortcut               .code:n = \@@_add_shortcut:n {#1} ,
+    shortcut-              .code:n = \@@_remove_shortcuts:n {#1} ,
+    halign             .choices:nn =
+      { justified , left , right , centered , distributed }
+      { \@@_set_halign:n { \l_keys_choice_tl } } ,
+    valign             .choices:nn =
+      { middle , top , bottom }
+      { \@@_set_valign:n { \l_keys_choice_tl } } ,
+    lines        .value_required:n = true ,
+    halign       .value_required:n = true ,
+    valign       .value_required:n = true ,
+    shortcut     .value_required:n = true ,
+    shortcut-    .value_required:n = true ,
+    beforeskip          .initial:n = \smallskipamount ,
+    afterskip           .initial:n = \smallskipamount ,
+%    \end{macrocode}
+% 我们参考 \url{https://www.w3.org/TR/jlreq/#inline_cutting_note}
+% 来设定下面这些数值选项的默认值。
+%    \begin{macrocode}
+    ideohtratio         .initial:n = 0.5 ,
+    jzideohtratio       .initial:n = 0 ,
+    ratio               .initial:n = 2 / 3 ,
+    bracketratio        .initial:n = 2 ,
+    lines               .initial:n = 2 ,
+    halign              .initial:n = justified ,
+    valign              .initial:n = middle
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\jiazhu, \jiazhuset}
+% 用户命令。
+%    \begin{macrocode}
+\NewDocumentCommand \jiazhu { +o +m }
+  { \jiazhu:nn {#1} {#2} }
+\NewDocumentCommand \jiazhuset { }
+  { \keys_set:nn { jiazhu } }
+%    \end{macrocode}
+% \end{macro}
+%
+% \LuaTeX{} 单独处理。
+%
+%    \begin{macrocode}
+\sys_if_engine_luatex:F
+  {
+    \box_new:N \l_@@_tmpa_box
+    \box_new:N \l_@@_tmpb_box
+    \file_input_stop:
+  }
+%    \end{macrocode}
+%
+% \begin{macro}{\@@_extract_max_width:N}
+%    \begin{macrocode}
+\cs_gset_protected:Npn \@@_extract_max_width:N #1
+  {
+    \box_if_empty:NTF #1
+      { \dim_zero:N \l_@@_max_dim }
+      {
+        \@@_extract_max_width_lua:N #1
+        \dim_set_eq:NN \l_@@_width_dim \l_@@_max_dim
+      }
+  }
+\cs_undefine:N \@@_extract_max_width_auxi:
+\cs_undefine:N \@@_extract_max_width_auxii:
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_extract_max_width_lua:N}
+%    \begin{macrocode}
+\group_begin:
+\char_set_catcode_space:n { 32 }
+\lua_now:n
+  {
+    jiazhu                = jiazhu or { }
+    local jiazhu          = jiazhu
+    local getbox          = tex.getbox
+    local getcount        = tex.getcount
+    local setdimen        = tex.setdimen
+    local scan_int        = token.scan_int
+    local id_hlist        = node.id("hlist")
+    local dnode           = node.direct
+    local getlist         = dnode.getlist
+    local todirect        = dnode.todirect
+    local traverse_id     = dnode.traverse_id
+    local rangedimensions = dnode.rangedimensions
+
+    function jiazhu.extract_max_width ()
+      local box = getbox(scan_int())
+      local width = 0
+      for hlist in traverse_id(id_hlist, getlist(todirect(box))) do
+        local w = rangedimensions(hlist, getlist(hlist))
+        if w > width then width = w end
+      end
+      setdimen("l_@@_max_dim", width)
+    end
+
+    local id = luatexbase.new_luafunction("jiazhu")
+    local t = lua.get_functions_table()
+    t[id] = jiazhu.extract_max_width
+
+    token.set_lua("@@_extract_max_width_lua:N", id, "global", "protected")
+  }
+\group_end:
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}
+%
+% \end{implementation}
+%
+% \Finale
+%
+% \endinput
+%
+% \DisableImplementation
+%
+% \begin{implementation}
+%
+% \section{测试文件}
+%
+%    \begin{macrocode}
+%<*test>
+%    \end{macrocode}
+% 例子来源于 Dian YIN (yindian@ustc) 的 \pkg{gezhu} 宏包。
+%    \begin{macrocode}
+\documentclass{ctexart}
+
+\usepackage{jiazhu}
+
+\jiazhuset { ideohtratio = 0.8 , opening = 〔 , closing = 〕 , shortcut = | }
+
+\ExplSyntaxOn
+  \cs_if_exist_use:NT \xeCJKsetup
+    { { AllowBreakBetweenPuncts } }
+\ExplSyntaxOff
+
+\begin{document}
+
+\setlength\parskip{30pt}
+
+%%\sloppy
+
+\loop
+\noindent\hrulefill\par
+\the\hsize\par
+
+世祖光武皇帝讳秀，字文叔，|{测礼“{祖有功而宗有德}”，光武中兴，故庙称世祖。谥法：“能绍前业曰光，克定祸乱曰武。”伏侯古今注曰：“秀之字曰茂。伯、仲、叔、季，兄弟之次。长兄伯升，次仲，故字文叔焉。”}南阳蔡阳人，|{南阳，郡，今邓州县也。蔡阳，县，故城在今随州枣阳县西南。}高祖九世之孙也，出自景帝生长沙定王发。|{长沙，郡，今潭州县也。}发生舂陵节侯买，|{舂陵，乡名，本属零陵泠道县，在今永州唐兴县北，元帝时徙南阳，仍号舂陵，故城在今随州枣阳县东。事具宗室四王传。}买生郁林太守外，|{郁林，郡，今贵州县。前书曰：“郡守，秦官。秩二千石。景帝更名太守。”}外生钜鹿都尉回，|{钜鹿，郡，今邢州县也。前书曰：“都尉，本{郡尉}，秦官也。掌佐守，典武职，秩比二千石。景帝更名都尉。”}回生南顿令钦，|{南顿，县，属汝南郡，故城在今陈州项城县西。前书曰：“令、长，皆秦官也。万户以上为令，秩千石至六百石；不满万户为长，秩五百石至三百石。”}钦生光武。光武年九岁而孤，养于叔父良。
+
+身长七尺三寸，美须眉，大口，隆准，日角。|{隆，高也。许负云：“鼻头为准。”郑玄尚书中候注云：“日角谓庭中骨起，状如日。”}性勤于稼穑，|{种曰稼，敛曰穑。}而兄伯升好侠养士，常非笑光武事田业，比之高祖兄仲。|{仲，合阳侯喜也，能为产业。见前书。}王莽天凤中，|{王莽始建国六年改为天凤。}乃之长安，受尚书，略通大义。|{东观记曰：“受尚书于中大夫庐江许子威。资用乏，与同舍生韩子合钱买驴，令从者僦，以给诸公费。”}
+
+莽末，天下连岁灾蝗，寇盗锋起。|{言贼锋锐竞起。字或作“蜂”，谕多也。}地皇三年，|{天凤六年改为地皇。}南阳荒饥，|{《韩诗外传》曰：“一谷不升曰歉，二谷不升曰饥，三谷不升曰馑，四谷不升曰荒，五谷不升曰大侵。”}诸家宾客多为小盗。光武避吏新野，|{新野属南阳郡，今邓州县。《续汉书》曰：“伯升宾客劫人，上避吏于新野邓晨家。”}因卖谷于宛。|{《东观记》曰：“时南阳旱饥，而上田独收。”宛，县，属南阳郡，故城今邓州南阳县也。}宛人李通等以图谶说光武云：“刘氏复起，李氏为辅。”|{图，《河图》也。谶，符命之书。谶，验也。言为王者受命之征验也。《易·坤灵图》曰：“汉之臣李阳也。”}光武初不敢当，然独念兄伯升素结轻客，必举大事，且王莽败亡已兆，天下方乱，遂与定谋，于是乃市兵弩。十月，与李通从弟轶等起于宛，时年二十八。
+
+十一月，有星孛于张。|{《前书音义》曰：“孛星光芒短，蓬然。张，南方宿也。”《续汉志》曰：“张为周地。星孛于张，东南行即翼、轸之分。翼、轸，楚地，是楚地将有兵乱。后一年正月，光武起兵舂陵，攻南阳，斩阜、赐等，杀其士众数万人。光武都洛阳，居周地，除秽布新之象。”}光武遂将宾客还舂陵。时伯升已会众起兵。初，诸家子弟恐惧，皆亡逃自匿，曰“伯升杀我”。及见光武绛衣大冠，|{董巴《舆服志》曰：“大冠者，谓武冠，武官冠之。”《东观记》曰：“上时绛衣大冠，将军服也。”}皆惊曰“谨厚者亦复为之”，乃稍自安。伯升于是招新市、平林兵，|{新市，县，属江夏郡，故城在今郢州富水县东北。平林，地名，在今随州随县东北。}与其帅王凤、陈牧西击长聚。|{《广雅》曰：“聚，居也，音慈谕反。”《前书音义》曰：“小于乡曰聚。”}光武初骑牛，杀新野尉乃得马。|{《前书》曰，尉，秦官，秩四百石至二百石也。}进屠唐子乡，|{《例》曰：“多所诛杀曰屠。”唐子乡有唐子山，在今唐州湖阳县西南。}又杀湖阳尉。|{湖阳属南阳郡，今唐州县也。《东观记》曰：“刘终诈称江夏吏，诱杀之。”}军中分财物不均，众恚恨，欲反攻诸刘。光武敛宗人所得物，悉以与之，众乃悦。进拔棘阳，|{县名，属南阳郡，在棘水之阳，古谢国也，故城在今唐州湖阳县西北。棘音己力反。}与王莽前队大夫甄阜、|{王莽置六队，郡置大夫一人，职如太守。南阳为前队，河内为后队，颍川为左队，弘农为右队，河东为兆队，荥阳为祈队。队音遂。}属正梁丘赐|{王莽每队置属正一人，职如都尉。}战于小长安，|{《续汉书》曰淯阳县有小长安聚，故城在今邓州南阳县南。}汉军大败，还保棘阳。
+
+
+\ifdim\hsize > 5cm %
+  \advance\hsize by -4pt %
+\repeat
+
+\end{document}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%</test>
+%    \end{macrocode}
+%
+% \end{implementation}
+%
+% \Finale
+%
+\endinput

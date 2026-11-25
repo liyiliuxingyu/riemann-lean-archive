@@ -1,0 +1,19 @@
+{
+  "scope": "Only equivalence and symbol identity of target statements; does not import or prove Main",
+  "command": [
+    "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/toolchain/lean-4.33.1-linux/bin/lake",
+    "env",
+    "lean",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/statement/StatementSemanticsAuditMinimal.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 8.425,
+  "source_sha256": "e2e051872f9ae718431591b54f46251293736ebbd3de65af59ab34c653f3a06a",
+  "lean_version": "4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "full_project_build_performed": false,
+  "full_export_kernel_replay_performed": false
+}

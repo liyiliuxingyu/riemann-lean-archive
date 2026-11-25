@@ -6,7 +6,7 @@
 
 ## 交付内容与目录
 
-Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程的 267 个常规成员保持原样，随机访问索引另按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 保存 2026-11-23 的两份有限审查及复核证据。
+Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程常规成员及后续展开的第三方源码可直接按文件阅读，随机访问索引按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 的两份有限审查及复核证据也已展开。
 
 **57 卷注释的完整解压正文尚未加入普通 Git：它们合计 168,547,118,127 字节（约 168.55 GB），每卷均超过 100 MiB。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。此次展开的范围、核验方法和剩余部分见 [展开说明](docs/RELEASE_EXPANSION.md)。
 
@@ -18,7 +18,9 @@ Release 中的源码汇编已恢复为完整模块树，工程索引和注释工
 | 依赖索引 | 原件 214,948,999 字节，拆为 5 个完整行分卷，可逐字节还原 | [project/lean/dependencies/](project/lean/dependencies/) |
 | 中文 PDF、TeX、分章与排版资源 | 31 页 PDF、`ctexbook` 工程、TikZ 图、随附字体及许可证 | [project/](project/) |
 | 源码级数学说明 | 13 个阶段说明及 33 个关键模块原文 | [project/proof_process/](project/proof_process/) |
-| 注释工具包 | ZIP 内全部 58 个文件，19,600,269 字节；含工具、格式、预览、报告、来源及许可证 | [solution_annotation_toolkit/](solution_annotation_toolkit/) |
+| 注释工具包 | 原 ZIP 的 58 个文件保留；新增 22,791,733 字节的独立 TXT 样本 | [solution_annotation_toolkit/](solution_annotation_toolkit/) |
+| 两份审计及证据 | 237 个展开文件；压缩扫描记录已转为 JSONL | [audits/](audits/) |
+| CTeX 对应源码 | 原源码包的全部 405 个文件 | [project/third_party/ctex-kit-source/](project/third_party/ctex-kit-source/) |
 | 57 卷完整注释 | 压缩合计 18,876,901,037 字节；解压约 168.55 GB | 仍为 Release 压缩附件；[逐卷清单和解压说明](annotations/) |
 | `RH_AllSources.lean` | 1,101,883,390 字节的可恢复源码汇编；完整内容已恢复为上述模块树 | [独立 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/RH_AllSources.lean)，工程 ZIP 内也有一份 |
 | 完整工程 ZIP | 270 个原始成员；286,288,695 字节 | [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip) |
@@ -34,6 +36,23 @@ python3 project/lean/dependencies/join_parts.py
 ```
 
 脚本会核验全部分卷与完整输出的大小、SHA-256 和行数；已有不同内容的输出文件不会被覆盖。原始工程 ZIP 解压后根目录仍为 `riemann_human/`，其内部 `SHA256SUMS.txt` 与 `verify_package.py` 适用于原 ZIP 布局。普通 Git 目录用模块树和分卷表示两个巨型原件，不能直接据原 ZIP 清单声称这两个单文件已经存在。
+
+## 2026-11-25：优先提供独立文件
+
+此次检查将主分支完整 Git 路径清单与原索引逐项比对：175,187 个 Lean 模块及 3 个配置均存在，没有缺失或多余路径。非 ASCII 路径采用 NUL 分隔读取，避免 Git 的显示转义影响计数。这是路径完整性检查，没有重新读取全部源文件做哈希或运行全工程证明检查。
+
+新增 **643 个从归档展开的文件**：两份审计及证据 237 个、CTeX 源码 405 个、完整测试样本 TXT 1 个。主分支中的两份审计 ZIP 和 CTeX 源码 tar.gz 已由这些普通文件替代，原件仍可从固定 Git 历史或原工程 Release 取得。
+
+- [逻辑审查报告](audits/lean_logic_20261123/审查报告.txt)与 [anyGeometry 专项报告](audits/lean_geometry_20261123/专项核查报告.txt)可直接打开。
+- [注释 TXT 样本](solution_annotation_toolkit/benchmark/prefix_output_v2/solution_annotated.part001.txt)包含原始前 147,492 条记录及注释；它不是完整 Release 的第 1 卷。
+- 普通 Git 当前只保留一个 2,893,018 字节的 `.zst`，供现有压缩读取测试使用。57 卷约 168.55 GB 的完整注释仍以 Release 附件保存。
+- 布局映射、原件取回办法、哈希和检查范围见[独立文件说明](docs/INDIVIDUAL_FILES.md)与[逐文件清单](docs/unpacked-files-20261125.json)。
+
+校验本次展开的 643 个文件：
+
+```bash
+python3 tools/verify_expanded_files.py
+```
 
 ## 校验下载
 
@@ -129,7 +148,7 @@ python3 build_pdf.py 黎曼猜想_人类可读证明主线.tex
 
 这些局部事实尚未定位固定标准最终命题中的无效推理，也不能支持“绝对不存在漏洞”的保证。此前常见关键词扫描未发现问题，不能替代语义审查。相关独立小实验没有导入原 RH 工程，不能代替完整证明检查；外部发布的完整检查记录也不属于本机重跑结果。
 
-本节依据 [Lean 逻辑审查报告与证据](audits/Lean_logic_audit_20261123.zip) 及 [anyGeometry 专项核查与证据](audits/Lean_geometry_audit_20261123.zip)，只概括该两项有限审查的结论与边界。
+本节依据 [Lean 逻辑审查报告与证据](audits/lean_logic_20261123/) 及 [anyGeometry 专项核查与证据](audits/lean_geometry_20261123/)，只概括该两项有限审查的结论与边界。
 
 ## 已完成的核验与没有声称完成的事项
 

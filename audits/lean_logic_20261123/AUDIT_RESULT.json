@@ -1,0 +1,33 @@
+{
+  "audit_date_beijing": "2026-11-23",
+  "created_at_utc": "2026-11-23T12:16:46.449809+00:00",
+  "conclusion": "No confirmed logical vulnerability identified within the stated audit scope.",
+  "complete_absence_of_bugs_proved": false,
+  "original_proof_sources_modified": false,
+  "bundle_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+  "source_module_count": 175187,
+  "source_lines": 17374215,
+  "source_bytes": 1030531854,
+  "public_source_exact_file_matches": 175190,
+  "module_import_graph": {
+    "unique_internal_edges": 753261,
+    "acyclic": true,
+    "main_closure_modules": 175187
+  },
+  "local_statement_semantics_compile": {
+    "exit_code": 0,
+    "scope": "Only equivalence and symbol identity of target statements; does not import or prove Main",
+    "source_sha256": "e2e051872f9ae718431591b54f46251293736ebbd3de65af59ab34c653f3a06a"
+  },
+  "local_small_probes": {
+    "total": 7,
+    "positive_acceptances": 3,
+    "negative_kernel_rejections": 4,
+    "all_expectations_met": true
+  },
+  "manual_reading_items": 27,
+  "full_original_project_build_performed_locally": false,
+  "main_final_theorem_axioms_recomputed_locally": false,
+  "full_proof_export_rechecked_locally": false,
+  "external_complete_checks": "See external_evidence/summary.json; third-party results."
+}

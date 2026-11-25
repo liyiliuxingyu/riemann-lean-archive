@@ -1,0 +1,18 @@
+[
+  {
+    "file": "TrueInterfaceLogic.lean",
+    "sha256": "243a3cbe15846616f4ac93e343078672225e17d7112665dae7d13f228b482586",
+    "exit_code": 0,
+    "expected": "success",
+    "expectation_met": true,
+    "output": "'TrueInterfaceLogic.no_automatic_geometry_bridge' does not depend on any axioms\n'TrueInterfaceLogic.true_imp_iff' does not depend on any axioms\n'TrueInterfaceLogic.true_does_not_imply_false' does not depend on any axioms\n'TrueInterfaceLogic.fixed_arithmetic_target' does not depend on any axioms\n"
+  },
+  {
+    "file": "InvalidTrueBridge.lean",
+    "sha256": "193c4d58c7b9c34f94f08efc4cdc836b380443693a63f13cb7fef8733aaa81b8",
+    "exit_code": 1,
+    "expected": "type mismatch",
+    "expectation_met": true,
+    "output": "/workspace/scratch/e8ff28430def/work/lean_geometry_audit_20261123/claims/InvalidTrueBridge.lean:7:9: error: Type mismatch\n  this\nhas type\n  anyGeometry 1\nbut is expected to have type\n  realGeometry 1\n"
+  }
+]

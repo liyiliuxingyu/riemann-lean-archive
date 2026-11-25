@@ -1,0 +1,32 @@
+{
+  "scope": "Published third-party records retrieved and compared this turn; not local re-execution.",
+  "page": "https://math.mit.edu/~drew/grh/",
+  "page_last_updated_utc": "2026-11-22T16:20:00Z",
+  "checked_theorems": [
+    "riemannHypothesis",
+    "riemannZeta_eq_zero_re",
+    "LFunction_ne_zero_of_half_lt_re",
+    "LFunction_eq_zero_re",
+    "LFunction_eq_zero_re_of_isPrimitive"
+  ],
+  "reported_final_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_source": "https://math.mit.edu/~drew/grh/audit.log",
+  "con_leche_accepted_declarations": 1468418,
+  "con_leche_source": "https://math.mit.edu/~drew/grh/con-leche-master.log",
+  "comparison_sources": [
+    "https://math.mit.edu/~drew/grh/con-leche-compare.log",
+    "https://math.mit.edu/~drew/grh/con-ron-compare.log"
+  ],
+  "sandbox_build_exit": 0,
+  "sandbox_source": "https://math.mit.edu/~drew/grh/sandbox-timeline.txt",
+  "solution_export_sha256": "5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e",
+  "solution_export_bytes": 61570595788,
+  "reported_incomplete": [
+    "full lake comparator",
+    "default/paranoid Lean replay of whole export"
+  ]
+}

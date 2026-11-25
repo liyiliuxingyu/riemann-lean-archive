@@ -1,0 +1,32 @@
+\START
+
+\AUTHOR{Qing Lee, Xiangdong Zeng}
+
+\makeatletter
+\ExplSyntaxOn
+
+\seq_set_map_x:NNn \l_tmpa_seq \c__ctex_headings_seq
+  {
+    \exp_not:c {#1} {#1}
+    \exp_not:N \TIMO
+    \exp_not:N \TEST {#1}
+      {
+        \tl_log:N \exp_not:N \@currentlabel
+        \tl_log:N \exp_not:N \cref@currentlabel
+      }
+    \exp_not:N \OMIT
+  }
+
+\cs_set_protected:Npx \TESTBODY
+  { \seq_use:Nn \l_tmpa_seq { } }
+
+\ExplSyntaxOff
+\makeatother
+
+\OMIT
+\TESTBODY
+\appendix
+\TESTBODY
+\TIMO
+
+\END

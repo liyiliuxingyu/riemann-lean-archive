@@ -1,0 +1,50 @@
+{
+  "format": "public-source-comparison-v1",
+  "checked_at_utc": "2026-11-23T12:06:40.033073+00:00",
+  "scope": "Exact source identity only; no Lean compilation, proof elaboration, or kernel verification.",
+  "public_source_url": "https://codeload.github.com/leanprover-community/riemann-hypothesis/tar.gz/40e56bab026552e089d7afcfeff08d2defb9c005",
+  "public_source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "archive": {
+    "path": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/dependencies/riemann-original-pinned.tar.gz",
+    "bytes": 234744092,
+    "sha256": "64399e32d8dbce44d186c2f4ca5ee2a428e66b77d0c0b8a63ce0f8e5f0f8d192",
+    "expected_sha256": "64399e32d8dbce44d186c2f4ca5ee2a428e66b77d0c0b8a63ce0f8e5f0f8d192",
+    "sha256_matches_expected": true,
+    "top_level_directories": [
+      "riemann-hypothesis-40e56bab026552e089d7afcfeff08d2defb9c005"
+    ],
+    "regular_members": 175190,
+    "directory_members": 3616
+  },
+  "index": {
+    "path": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/statement/RH_AllSources.index.jsonl",
+    "sha256": "712755e19312e53611664c50f54d63cb509f32e8c43e4e876c38635d0fb1262c",
+    "source_records": 175187,
+    "auxiliary_records": 3,
+    "configuration_paths": [
+      "lake-manifest.json",
+      "lakefile.toml",
+      "lean-toolchain"
+    ],
+    "canonical_source_manifest_sha256": "4a577cffd62f473ab4ed8f5347a8dbf462751938570a7d79d0597de343ed203d"
+  },
+  "restored_tree": "/workspace/scratch/e8ff28430def/work/lean_audit_20261123/original",
+  "results": {
+    "passed": true,
+    "checked_files": 175190,
+    "source_bytes": 1030531854,
+    "configuration_bytes": 4865,
+    "archive_index_size_and_sha256_matches": 175190,
+    "archive_restored_exact_byte_matches": 175190,
+    "missing_archive_files": [],
+    "extra_archive_files": [],
+    "missing_restored_files": [],
+    "extra_restored_files": [],
+    "unsafe_or_nonregular_archive_members": [],
+    "nonregular_restored_entries": [],
+    "failures": []
+  },
+  "lean_compilation_performed": false,
+  "kernel_recheck_performed": false,
+  "elapsed_seconds": 51.288
+}

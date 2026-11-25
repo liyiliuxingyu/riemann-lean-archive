@@ -1,0 +1,5 @@
+/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyNegative.lean:51:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead
+/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyNegative.lean:69:8: error: (kernel) declaration type mismatch, 'audit_invalid_kcopy' has type
+  True
+but it is expected to have type
+  False

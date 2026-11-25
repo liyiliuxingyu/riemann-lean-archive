@@ -1,0 +1,129 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Author: Xiangdong Zeng
+============================================================
+TEST 1: LaTeX font size commands
+============================================================
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.52437> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+> \box_wd:N \l_tmpa_box =52.07167pt.
+> \box_ht:N \l_tmpa_box =4.65187pt.
+> \box_dp:N \l_tmpa_box =1.40599pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.52812> on input line ....
+> \box_wd:N \l_tmpa_box =55.53394pt.
+> \box_ht:N \l_tmpa_box =5.37508pt.
+> \box_dp:N \l_tmpa_box =1.6223pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.03374> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+> \box_wd:N \l_tmpa_box =63.93546pt.
+> \box_ht:N \l_tmpa_box =6.46815pt.
+> \box_dp:N \l_tmpa_box =1.94676pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.53937> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+> \box_wd:N \l_tmpa_box =72.14417pt.
+> \box_ht:N \l_tmpa_box =7.54619pt.
+> \box_dp:N \l_tmpa_box =2.27122pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12.045> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+> \box_wd:N \l_tmpa_box =80.29184pt.
+> \box_ht:N \l_tmpa_box =8.60013pt.
+> \box_dp:N \l_tmpa_box =2.59569pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <15.05624> on input line ....
+> \box_wd:N \l_tmpa_box =95.02759pt.
+> \box_ht:N \l_tmpa_box =10.64476pt.
+> \box_dp:N \l_tmpa_box =3.24461pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <18.06749> on input line ....
+> \box_wd:N \l_tmpa_box =113.85779pt.
+> \box_ht:N \l_tmpa_box =12.77371pt.
+> \box_dp:N \l_tmpa_box =3.89354pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <22.08249> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <16.06> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.05249> on input line ....
+> \box_wd:N \l_tmpa_box =137.53647pt.
+> \box_ht:N \l_tmpa_box =15.61232pt.
+> \box_dp:N \l_tmpa_box =4.75877pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <24.09> on input line ....
+> \box_wd:N \l_tmpa_box =150.41924pt.
+> \box_ht:N \l_tmpa_box =17.03163pt.
+> \box_dp:N \l_tmpa_box =5.19139pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <26.09749> on input line ....
+> \box_wd:N \l_tmpa_box =164.6931pt.
+> \box_ht:N \l_tmpa_box =18.45093pt.
+> \box_dp:N \l_tmpa_box =5.62401pt.
+============================================================
+============================================================
+TEST 2: Command `\zihao '
+============================================================
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.01874> on input line ....
+> \box_wd:N \l_tmpa_box =48.51437pt.
+> \box_ht:N \l_tmpa_box =3.59341pt.
+> \box_dp:N \l_tmpa_box =1.08153pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.52061> on input line ....
+> \box_wd:N \l_tmpa_box =47.86813pt.
+> \box_ht:N \l_tmpa_box =3.94171pt.
+> \box_dp:N \l_tmpa_box =1.18968pt.
+> \box_wd:N \l_tmpa_box =52.07167pt.
+> \box_ht:N \l_tmpa_box =4.65187pt.
+> \box_dp:N \l_tmpa_box =1.40599pt.
+> \box_wd:N \l_tmpa_box =55.53394pt.
+> \box_ht:N \l_tmpa_box =5.37508pt.
+> \box_dp:N \l_tmpa_box =1.6223pt.
+> \box_wd:N \l_tmpa_box =63.93546pt.
+> \box_ht:N \l_tmpa_box =6.46815pt.
+> \box_dp:N \l_tmpa_box =1.94676pt.
+> \box_wd:N \l_tmpa_box =72.14417pt.
+> \box_ht:N \l_tmpa_box =7.54619pt.
+> \box_dp:N \l_tmpa_box =2.27122pt.
+> \box_wd:N \l_tmpa_box =80.29184pt.
+> \box_ht:N \l_tmpa_box =8.60013pt.
+> \box_dp:N \l_tmpa_box =2.59569pt.
+> \box_wd:N \l_tmpa_box =94.14896pt.
+> \box_ht:N \l_tmpa_box =10.03348pt.
+> \box_dp:N \l_tmpa_box =3.0283pt.
+> \box_wd:N \l_tmpa_box =95.02759pt.
+> \box_ht:N \l_tmpa_box =10.64476pt.
+> \box_dp:N \l_tmpa_box =3.24461pt.
+> \box_wd:N \l_tmpa_box =102.24686pt.
+> \box_ht:N \l_tmpa_box =11.35442pt.
+> \box_dp:N \l_tmpa_box =3.46092pt.
+> \box_wd:N \l_tmpa_box =113.85779pt.
+> \box_ht:N \l_tmpa_box =12.77371pt.
+> \box_dp:N \l_tmpa_box =3.89354pt.
+> \box_wd:N \l_tmpa_box =137.53647pt.
+> \box_ht:N \l_tmpa_box =15.61232pt.
+> \box_dp:N \l_tmpa_box =4.75877pt.
+> \box_wd:N \l_tmpa_box =150.41924pt.
+> \box_ht:N \l_tmpa_box =17.03163pt.
+> \box_dp:N \l_tmpa_box =5.19139pt.
+> \box_wd:N \l_tmpa_box =164.6931pt.
+> \box_ht:N \l_tmpa_box =18.45093pt.
+> \box_dp:N \l_tmpa_box =5.62401pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <36.135> on input line ....
+> \box_wd:N \l_tmpa_box =223.54208pt.
+> \box_ht:N \l_tmpa_box =25.54744pt.
+> \box_dp:N \l_tmpa_box =7.7871pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <42.15749> on input line ....
+> \box_wd:N \l_tmpa_box =259.40782pt.
+> \box_ht:N \l_tmpa_box =29.80534pt.
+> \box_dp:N \l_tmpa_box =9.08493pt.
+============================================================

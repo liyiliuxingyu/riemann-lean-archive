@@ -1,0 +1,4 @@
+/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KExactNegative.lean:11:8: error: (kernel) declaration type mismatch, 'audit_invalid_kexact' has type
+  True
+but it is expected to have type
+  False

@@ -1,0 +1,216 @@
+name: GitHub action for ctex-kit test
+
+on: [push]
+
+env:
+  CTAN_URL: https://mirrors.rit.edu/CTAN
+  TL_PACKAGES: >-
+    adobemapping
+    amsfonts
+    amsmath
+    atbegshi
+    cjk
+    cjkutils
+    cm
+    ctablestack
+    currfile
+    dvipdfmx
+    ec
+    epstopdf-pkg
+    everysel
+    etex
+    etoolbox
+    euenc
+    fancyhdr
+    fandol
+    filehook
+    fontspec
+    graphics
+    graphics-cfg
+    graphics-def
+    iftex
+    l3build
+    l3experimental
+    l3kernel
+    l3packages
+    latex-bin
+    lm
+    lm-math
+    ltxcmds
+    lualatex-math
+    lualibs
+    luaotfload
+    luatex
+    luatex85
+    luatexbase
+    luatexja
+    metafont
+    mfware
+    ms
+    oberdiek
+    platex-tools
+    tex
+    tex-ini-files
+    tools
+    trimspaces
+    ucharcat
+    ulem
+    unicode-data
+    uplatex
+    varwidth
+    xcolor
+    xetex
+    xkeyval
+    xunicode
+  TL_EXTRA_PACKAGES: >-
+    amscls
+    atveryend
+    auxhook
+    beamer
+    bibunits
+    bigfoot
+    bigintcalc
+    bitset
+    booktabs
+    caption
+    carlisle
+    chinese-jfm
+    cjkpunct
+    cleveref
+    context
+    enumitem
+    environ
+    eso-pic
+    etexcmds
+    everyhook
+    fontaxes
+    footmisc
+    geometry
+    gettitlestring
+    hycolor
+    hyperref
+    infwarerr
+    intcalc
+    ipaex
+    kastrup
+    koma-script
+    kvdefinekeys
+    kvoptions
+    kvsetkeys
+    letltxmacro
+    mweights
+    natbib
+    newtx
+    notoccite
+    ntheorem
+    pdfescape
+    pdflscape
+    pdfpages
+    pdftexcmds
+    pgf
+    pkuthss
+    psnfss
+    refcount
+    rerunfilecheck
+    sansmathaccent
+    setspace
+    soul
+    svn-prov
+    tex-gyre
+    tex-gyre-math
+    thuthesis
+    titlesec
+    tocloft
+    translator
+    ttfutils
+    txfonts
+    unicode-math
+    uniquecounter
+    url
+    xcjk2uni
+    xecjk
+    xits
+    xstring
+    zhmetrics
+    zhmetrics-uptex
+    zhnumber
+  NOTO_SANS_URL: https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/03_NotoSansCJK-OTC.zip
+  NOTO_SERIF_URL: https://github.com/googlefonts/noto-cjk/releases/download/Serif2.001/04_NotoSerifCJKOTC.zip
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install TeX Live
+      run: |
+        export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+        curl -O ${{ env.CTAN_URL }}/systems/texlive/tlnet/install-tl-unx.tar.gz
+        tar -xzf install-tl-unx.tar.gz
+        cd install-tl-20* && ./install-tl --profile ../.github/workflows/texlive.profile
+        tlmgr install ${{ env.TL_PACKAGES }} ${{ env.TL_EXTRA_PACKAGES }}
+        tlmgr update --self --all --no-auto-install --repository=${{ env.CTAN_URL }}/systems/texlive/tlnet/
+    - name: Install Noto fonts
+      run: |
+        curl -LO ${{ env.NOTO_SANS_URL }}
+        curl -LO ${{ env.NOTO_SERIF_URL }}
+        unzip -ojd /usr/share/fonts/truetype/ "*OTC.zip" "*.ttc"
+    - name: Test ctex
+      working-directory: ./ctex
+      run: |
+        export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+        l3build check -q -H
+        l3build check -c test/config-cmap -q -H
+        l3build check -c test/config-contrib -q -H
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install TeX Live
+      run: |
+        export PATH=/tmp/texlive/bin/universal-darwin:$PATH
+        curl -O ${{ env.CTAN_URL }}/systems/texlive/tlnet/install-tl-unx.tar.gz
+        tar -xzf install-tl-unx.tar.gz
+        cd install-tl-20* && ./install-tl --profile ../.github/workflows/texlive.profile
+        tlmgr install ${{ env.TL_PACKAGES }} ${{ env.TL_EXTRA_PACKAGES }}
+        tlmgr update --self --all --no-auto-install --repository=${{ env.CTAN_URL }}/systems/texlive/tlnet/
+    - name: Install Noto fonts
+      run: |
+        curl -LO ${{ env.NOTO_SANS_URL }}
+        curl -LO ${{ env.NOTO_SERIF_URL }}
+        unzip -ojd /Library/Fonts/ "*OTC.zip" "*.ttc"
+    - name: Test ctex
+      working-directory: ./ctex
+      run: |
+        export PATH=/tmp/texlive/bin/universal-darwin:$PATH
+        l3build check -q -H
+        l3build check -c test/config-cmap -q -H
+        l3build check -c test/config-contrib -q -H
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install TeX Live
+      run: |
+        ${env:PATH} = "${{ github.workspace }}\tmp\texlive\bin\win32;" + ${env:PATH}
+        Invoke-WebRequest -Uri ${{ env.CTAN_URL }}/systems/texlive/tlnet/install-tl.zip -OutFile install-tl.zip
+        Expand-Archive install-tl.zip -DestinationPath .
+        Set-Location install-tl-*
+        .\install-tl-windows --no-gui --profile ..\.github\workflows\texlive-win.profile
+        tlmgr install ${{ env.TL_PACKAGES }} ${{ env.TL_EXTRA_PACKAGES }}
+        tlmgr update --self --all --no-auto-install --repository=${{ env.CTAN_URL }}/systems/texlive/tlnet/
+    - name: Install Noto fonts
+      run: |
+        ${env:PATH} = "${{ github.workspace }}\tmp\texlive\bin\win32;" + ${env:PATH}
+        Invoke-WebRequest -Uri ${{ env.NOTO_SANS_URL }}  -OutFile NotoSansCJK-OTC.zip
+        Invoke-WebRequest -Uri ${{ env.NOTO_SERIF_URL }} -OutFile NotoSerifCJK-OTC.zip
+        unzip -ojd C:\Windows\Fonts\ "*OTC.zip" "*.ttc"
+    - name: Test ctex
+      working-directory: ./ctex
+      run: |
+        ${env:PATH} = "${{ github.workspace }}\tmp\texlive\bin\win32;" + ${env:PATH}
+        l3build check -q -H
+        l3build check -c test/config-cmap -q -H
+        l3build check -c test/config-contrib -q -H

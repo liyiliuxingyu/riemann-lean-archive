@@ -1,0 +1,1 @@
+/workspace/scratch/e8ff28430def/work/lean_audit_20261123/trust_scan/minimal_probes/KCopyPositive.lean:51:61: warning: `String.mk` has been deprecated: Use `String.ofList` instead

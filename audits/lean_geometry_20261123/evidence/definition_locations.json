@@ -1,0 +1,1682 @@
+{
+  "scope": "Definition and direct-construction audit; no whole-project compilation.",
+  "date": "2026-11-23",
+  "claims": [
+    {
+      "id": "gamma_trivial",
+      "status": "confirmed_by_definition",
+      "description_zh": "anyGeometry 恒 True，geoCl anyGeometry 由 base True.intro 普遍可证。",
+      "evidence_ids": [
+        "predicate_and_oat",
+        "closure",
+        "weak_to_closure"
+      ]
+    },
+    {
+      "id": "other_obligations",
+      "status": "confirmed_by_definition",
+      "description_zh": "OAt.lam、DivT、GeoTiedP 等义务保留；当前最终应用链由 nonempty_hyps_definite_side_of_closed_bound 构造 HypsAlt，经 every_character_of_theta_integrals_local_matching 调用 every_character_of_green_v_win，并仍要求独立 CovolumeBoundOfX 等输入。保留不等于已核验其证明。",
+      "evidence_ids": [
+        "predicate_and_oat",
+        "div_ex_obligations",
+        "div_t_obligations",
+        "current_hyps_alt_construction_and_consumer",
+        "current_top_plug",
+        "current_covolume_bound"
+      ]
+    },
+    {
+      "id": "degenerate_actual_model",
+      "status": "confirmed_by_direct_construction",
+      "description_zh": "弱 DivEx 实际选择 divXFl/famFlJ/geoDegenerate，含恒真性质、零度量及零映射。",
+      "evidence_ids": [
+        "actual_weak_construction",
+        "remaining_geometry_and_degenerate_family",
+        "actual_degenerate_geometry"
+      ]
+    },
+    {
+      "id": "no_true_to_strong_bridge_in_inspected_code",
+      "status": "limited_negative_finding",
+      "description_zh": "已检查的强分支仍需 hc 与 IsGeoOf 输入；本分工没有定位固定最终数学结论的非法推理。不是全项目正确性结论。",
+      "evidence_ids": [
+        "weak_strong_constructors",
+        "strong_geometry",
+        "parameter_packing",
+        "current_hyps_alt_construction_and_consumer",
+        "current_top_plug"
+      ]
+    },
+    {
+      "id": "name_collision",
+      "status": "confirmed_by_namespace_and_text_count",
+      "description_zh": "12 文件是子串统计，混合 Bl.geoOf、TrueGeo.geoOf、DRFlag.geoOf 和 geoOfMatch。",
+      "evidence_ids": [
+        "predicate_and_oat",
+        "other_geo_of_data",
+        "other_geo_of_theorem"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "predicate_and_oat",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+      "sha256": "b9ba78e313f6c7a601d87a1672429122d7f976a0afdd8bae8e4efed68a7215df",
+      "line_count": 53,
+      "excerpts": [
+        {
+          "start_line": 8,
+          "end_line": 19,
+          "excerpt_sha256_utf8_without_trailing_newline": "84cdb050c0b8c354f62af6205bf4ca6e9c9b60f73c85fed6570d5f9df7190eda"
+        },
+        {
+          "start_line": 29,
+          "end_line": 49,
+          "excerpt_sha256_utf8_without_trailing_newline": "320413dd0c7cb495fd37aaa69fc035c6ba36b990c0499fc614316dd44710c489"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean"
+    },
+    {
+      "id": "closure",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean",
+      "sha256": "54dbd62bbacc19db2294f1c41fd28663522acf498a732f9328ed2086b08b9e38",
+      "line_count": 32,
+      "excerpts": [
+        {
+          "start_line": 11,
+          "end_line": 28,
+          "excerpt_sha256_utf8_without_trailing_newline": "9dbb46bb1d5591311f5a5c3a18ff2fa2fc74743cd52e5923358ee00d05f89395"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean"
+    },
+    {
+      "id": "weak_strong_constructors",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+      "sha256": "acc5c8c8ed2946c1d941a34b94cc04f900a1ec2ebdf4c430107b37073c82e914",
+      "line_count": 165,
+      "excerpts": [
+        {
+          "start_line": 14,
+          "end_line": 36,
+          "excerpt_sha256_utf8_without_trailing_newline": "23417a5e4f595e03ef4698a25ef5ae7234e2ac7b69aca300d292fb25529d6c3a"
+        },
+        {
+          "start_line": 152,
+          "end_line": 161,
+          "excerpt_sha256_utf8_without_trailing_newline": "3d66fd50c74fdc70256636c61180ff74bf5998b1afbab983a8130fa911c81834"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean"
+    },
+    {
+      "id": "strong_geometry",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LargeFor.lean",
+      "sha256": "089549d7893cc91fd8ddb4c179fe873dbbb82fcc1a11be972135616e29ff9245",
+      "line_count": 88,
+      "excerpts": [
+        {
+          "start_line": 66,
+          "end_line": 80,
+          "excerpt_sha256_utf8_without_trailing_newline": "a3f5cb0e711c0e84c042e13cf8215cdb2a3ddf597f09e75a5dbce77ff92f3dd1"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LargeFor.lean"
+    },
+    {
+      "id": "surface_condition",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean",
+      "sha256": "a7cfba998ae7e2ae1febd5751cfbbec7acd5e5d2b78cf51ed3d784d211ab50e2",
+      "line_count": 450,
+      "excerpts": [
+        {
+          "start_line": 305,
+          "end_line": 353,
+          "excerpt_sha256_utf8_without_trailing_newline": "9b655b727af8b86974eb2886301e8296ac38c1551ca181e2f582e00f9f84d2b8"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean"
+    },
+    {
+      "id": "weak_to_closure",
+      "relative_path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean",
+      "sha256": "28da93a35d85267815f63777d2c1da18074723b9b671be259b59d01ab34f1777",
+      "line_count": 85,
+      "excerpts": [
+        {
+          "start_line": 39,
+          "end_line": 49,
+          "excerpt_sha256_utf8_without_trailing_newline": "319515d21d32c2e6c976764fc849e25e2d97d666093a7407d439e89df69dadfa"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean"
+    },
+    {
+      "id": "closure_transfer",
+      "relative_path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionGeometryScalarsTransferSetDivision.lean",
+      "sha256": "b8496e69fa663f75bcc634c4621bf5e43c4629d6483785a9f44fb9f34de95d9b",
+      "line_count": 112,
+      "excerpts": [
+        {
+          "start_line": 100,
+          "end_line": 108,
+          "excerpt_sha256_utf8_without_trailing_newline": "0f47ade5f73ca6a2144d14aaf436d30d6ecbfb1f32856da66f1a8f1fcde7369c"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionGeometryScalarsTransferSetDivision.lean"
+    },
+    {
+      "id": "div_ex_obligations",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimes.lean",
+      "sha256": "41563ec29f4fd3060f7f34377f50104b0694395d7cff3b48465010be6aebaccc",
+      "line_count": 203,
+      "excerpts": [
+        {
+          "start_line": 147,
+          "end_line": 167,
+          "excerpt_sha256_utf8_without_trailing_newline": "9610cf0289125598443469257679892b927a92d2baa9b129628369f0bce0b2c6"
+        },
+        {
+          "start_line": 183,
+          "end_line": 185,
+          "excerpt_sha256_utf8_without_trailing_newline": "fc69ca6843015b9b202435b972c26ee3f32b4d8d9399fd3bdc69dccbf8d203a5"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimes.lean"
+    },
+    {
+      "id": "div_t_obligations",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TiedColumnData.lean",
+      "sha256": "1074541bb0a76862ffbbca64a3ac78a3e827f825af50cfe853a2ce1e46d0395c",
+      "line_count": 154,
+      "excerpts": [
+        {
+          "start_line": 127,
+          "end_line": 133,
+          "excerpt_sha256_utf8_without_trailing_newline": "6a30e1f3686e787b66cb3374264afbce7708e8236990eb0a6ef9528ccd84a846"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TiedColumnData.lean"
+    },
+    {
+      "id": "geo_over",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeoTiedPGraft.lean",
+      "sha256": "fd8ffe4dc4523cfaf349edd06275870a191c65f4a09239671b6957ef135d115c",
+      "line_count": 51,
+      "excerpts": [
+        {
+          "start_line": 12,
+          "end_line": 24,
+          "excerpt_sha256_utf8_without_trailing_newline": "752f57773b584d543d72c81cc957405f4e0f919cd70b5589f33ef3ad9372dc5c"
+        },
+        {
+          "start_line": 45,
+          "end_line": 49,
+          "excerpt_sha256_utf8_without_trailing_newline": "1faa97eed99f37babd7c25a553432625dfa182ab441d711ab57931bf4017fdf5"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeoTiedPGraft.lean"
+    },
+    {
+      "id": "actual_weak_construction",
+      "relative_path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+      "sha256": "2680131c9999c7f44b5d30b410b7206e1d674f1b40165a7c58ec65700c708998",
+      "line_count": 217,
+      "excerpts": [
+        {
+          "start_line": 153,
+          "end_line": 166,
+          "excerpt_sha256_utf8_without_trailing_newline": "bb0d4dc14e1f5012d4a35a3b8817c7ad961b970024bc39babcc0bc7a06b39cc6"
+        },
+        {
+          "start_line": 178,
+          "end_line": 213,
+          "excerpt_sha256_utf8_without_trailing_newline": "02179aee58c8a6f7b207709bb162be71d76a2636a1a9c9483537cfce19247905"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean"
+    },
+    {
+      "id": "remaining_geometry_and_degenerate_family",
+      "relative_path": "Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean",
+      "sha256": "0a1ea1663240f2e7e3efa8c1ce5439e5c8327a220fd47b48582f4b832fe65cc2",
+      "line_count": 187,
+      "excerpts": [
+        {
+          "start_line": 124,
+          "end_line": 144,
+          "excerpt_sha256_utf8_without_trailing_newline": "8e58f256edf80128c3bb61a4347a32952ccf78d32f6b9e5bbd15391e70ecc40a"
+        },
+        {
+          "start_line": 152,
+          "end_line": 164,
+          "excerpt_sha256_utf8_without_trailing_newline": "ea4762128e9c0d8f913a0757a050c3e3234adc25de8b5abaf93da1e9f71a39d2"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean"
+    },
+    {
+      "id": "actual_degenerate_geometry",
+      "relative_path": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+      "sha256": "7a95297aa3205b6d5e033b4352eff0bb406b4cd11cb2e0fac5722c9b4aafde54",
+      "line_count": 924,
+      "excerpts": [
+        {
+          "start_line": 241,
+          "end_line": 306,
+          "excerpt_sha256_utf8_without_trailing_newline": "a1c78643ba749bf34de9b04b04a5050433185419380fd45ddfc6c2e23dd17b8a"
+        },
+        {
+          "start_line": 404,
+          "end_line": 409,
+          "excerpt_sha256_utf8_without_trailing_newline": "6403b9f7d2cb224596c8a8f8d5863fb1a83791dd1d22b379362966ce53a3b48f"
+        },
+        {
+          "start_line": 481,
+          "end_line": 506,
+          "excerpt_sha256_utf8_without_trailing_newline": "8f548e8c0fa636a4d9023a5dced0c7a4a3205f3ca2c554f4ccbe74f818c9c35b"
+        },
+        {
+          "start_line": 829,
+          "end_line": 890,
+          "excerpt_sha256_utf8_without_trailing_newline": "59d7ba83ebafc20cea947c0ed95f6ee2f1a6cc6f06d6f8d732702af7e3bb369a"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean"
+    },
+    {
+      "id": "parameter_packing",
+      "relative_path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean",
+      "sha256": "98b9e4db79d3c7e7b650dedb897a52f279392a03696134b104891137ffe674ae",
+      "line_count": 64,
+      "excerpts": [
+        {
+          "start_line": 16,
+          "end_line": 61,
+          "excerpt_sha256_utf8_without_trailing_newline": "9dc705e4e74fc14f317e8290fc3acfe56a196178a928f577f29297c2a82be223"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean"
+    },
+    {
+      "id": "legacy_plug_all_not_current_application_route",
+      "relative_path": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+      "line_count": 18,
+      "excerpts": [
+        {
+          "start_line": 8,
+          "end_line": 18,
+          "excerpt_sha256_utf8_without_trailing_newline": "1ed478d193845674b2df6a76f3f09dec50cff53f6fa818c9a17ec638262c1ba3"
+        }
+      ],
+      "role_zh": "检查过的旧接口，仅作旁证；不在本次追到的当前最终应用链中，不能用其 Hyps 参数描述当前路线的 HypsAlt 义务。未导出完整 elaborated 依赖闭包。",
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean"
+    },
+    {
+      "id": "current_hyps_alt_construction_and_consumer",
+      "relative_path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "line_count": 76,
+      "excerpts": [
+        {
+          "start_line": 44,
+          "end_line": 73,
+          "excerpt_sha256_utf8_without_trailing_newline": "aab8c84ccee7947ba21d3ed6b3616e629836ffc1cbec8187c715088a25fcf3e8"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+    },
+    {
+      "id": "current_top_plug",
+      "relative_path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "line_count": 19,
+      "excerpts": [
+        {
+          "start_line": 12,
+          "end_line": 18,
+          "excerpt_sha256_utf8_without_trailing_newline": "0ade47ad439f2881e93f4eb94b42f0deb0b5869236597fd41d084ea19207e294"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+    },
+    {
+      "id": "current_covolume_bound",
+      "relative_path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "line_count": 66,
+      "excerpts": [
+        {
+          "start_line": 60,
+          "end_line": 61,
+          "excerpt_sha256_utf8_without_trailing_newline": "7a4740db4f779a2810e867a5eebe7004c25751696b97717c86282a0b56c09ec0"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean"
+    },
+    {
+      "id": "other_geo_of_data",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean",
+      "sha256": "fa71f4919ef3b325b6408d2bfce36fda98de39189c38311cf905be79c9d8513d",
+      "line_count": 695,
+      "excerpts": [
+        {
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256_utf8_without_trailing_newline": "bc15b19cf634ab9460917a0a7a0497a400d3a4f5e07bbed3f5f129d6c1855eb2"
+        },
+        {
+          "start_line": 600,
+          "end_line": 630,
+          "excerpt_sha256_utf8_without_trailing_newline": "08b57358537c3e8d1fa555e967474dbe6028cea2ddaf2b2da3b19eb8d5e6a57b"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean"
+    },
+    {
+      "id": "other_geo_of_theorem",
+      "relative_path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean",
+      "sha256": "72214c4a481282656ea2a064fa4c1c01d6810157225e5aac684c341226981081",
+      "line_count": 528,
+      "excerpts": [
+        {
+          "start_line": 18,
+          "end_line": 18,
+          "excerpt_sha256_utf8_without_trailing_newline": "d6c243003091ca9f4a6f565a47f3e14c3021aa073c6a5cb12c42613e0231c353"
+        },
+        {
+          "start_line": 503,
+          "end_line": 507,
+          "excerpt_sha256_utf8_without_trailing_newline": "c3664f047e3613d97f35e94172f5848867afa6b422810eb25d01dcea7fd3397d"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean"
+    },
+    {
+      "id": "geo_true_constructor",
+      "relative_path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean",
+      "sha256": "a4b538319006161e0fff73db57fcd181e6b233102bb8db10cf2fc493267ddd0e",
+      "line_count": 43,
+      "excerpts": [
+        {
+          "start_line": 14,
+          "end_line": 23,
+          "excerpt_sha256_utf8_without_trailing_newline": "ca259880d19c723118a0213a3c29cd13f6f321445eb4975ec9fe4986c0d105f7"
+        }
+      ],
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean"
+    }
+  ],
+  "lexical_counts": {
+    "raw_anyGeometry": {
+      "file_count": 24,
+      "occurrence_count": 162,
+      "files": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GKeyFin.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 22
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/MultW.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 45
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 153
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 19
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ParMem.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 137
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinkedBundleConstructionExists.lean",
+          "occurrences": 6,
+          "matching_lines": [
+            {
+              "line": 28
+            },
+            {
+              "line": 29
+            },
+            {
+              "line": 30
+            },
+            {
+              "line": 31
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 56
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinkedBundleConstructionExistsStatement.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 12
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/NonemptyHypsOfPublishedUE.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 30
+            },
+            {
+              "line": 38
+            },
+            {
+              "line": 41
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/OpenFirstParametersOfPublishedUE.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 31
+            },
+            {
+              "line": 32
+            },
+            {
+              "line": 34
+            },
+            {
+              "line": 36
+            },
+            {
+              "line": 40
+            },
+            {
+              "line": 42
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 53
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 56
+            },
+            {
+              "line": 58
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LinkOfClosedAtFamily.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 71
+            },
+            {
+              "line": 72
+            },
+            {
+              "line": 73
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberBuiltLinkedGeometric.lean",
+          "occurrences": 23,
+          "matching_lines": [
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 48
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 50
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 52
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 64
+            },
+            {
+              "line": 65
+            },
+            {
+              "line": 73
+            },
+            {
+              "line": 74
+            },
+            {
+              "line": 76
+            },
+            {
+              "line": 77
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberBuiltLinkedGeometricStatement.lean",
+          "occurrences": 5,
+          "matching_lines": [
+            {
+              "line": 9
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean",
+          "occurrences": 14,
+          "matching_lines": [
+            {
+              "line": 40
+            },
+            {
+              "line": 41
+            },
+            {
+              "line": 74
+            },
+            {
+              "line": 76
+            },
+            {
+              "line": 77
+            },
+            {
+              "line": 80
+            },
+            {
+              "line": 83
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusionStatement.lean",
+          "occurrences": 7,
+          "matching_lines": [
+            {
+              "line": 33
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+          "occurrences": 2,
+          "matching_lines": [
+            {
+              "line": 204
+            },
+            {
+              "line": 212
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 57
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 64
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsBaseLatticeOfPrime.lean",
+          "occurrences": 28,
+          "matching_lines": [
+            {
+              "line": 40
+            },
+            {
+              "line": 41
+            },
+            {
+              "line": 42
+            },
+            {
+              "line": 43
+            },
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 48
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 56
+            },
+            {
+              "line": 58
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 68
+            },
+            {
+              "line": 69
+            },
+            {
+              "line": 71
+            },
+            {
+              "line": 72
+            },
+            {
+              "line": 80
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 41
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 52
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 80
+            },
+            {
+              "line": 81
+            },
+            {
+              "line": 83
+            },
+            {
+              "line": 85
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+          "occurrences": 10,
+          "matching_lines": [
+            {
+              "line": 37
+            },
+            {
+              "line": 38
+            },
+            {
+              "line": 39
+            },
+            {
+              "line": 40
+            },
+            {
+              "line": 58
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 69
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberEClosing.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 17
+            },
+            {
+              "line": 19
+            },
+            {
+              "line": 20
+            },
+            {
+              "line": 23
+            },
+            {
+              "line": 26
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 53
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 64
+            },
+            {
+              "line": 65
+            },
+            {
+              "line": 66
+            },
+            {
+              "line": 68
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 21
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 60
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 67
+            }
+          ]
+        }
+      ]
+    },
+    "word_anyGeometry": {
+      "file_count": 24,
+      "occurrence_count": 162,
+      "files": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GKeyFin.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 22
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/MultW.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 45
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 153
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 19
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ParMem.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 137
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinkedBundleConstructionExists.lean",
+          "occurrences": 6,
+          "matching_lines": [
+            {
+              "line": 28
+            },
+            {
+              "line": 29
+            },
+            {
+              "line": 30
+            },
+            {
+              "line": 31
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 56
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/LinkedBundleConstructionExistsStatement.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 12
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/NonemptyHypsOfPublishedUE.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 30
+            },
+            {
+              "line": 38
+            },
+            {
+              "line": 41
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/OpenFirstParametersOfPublishedUE.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 31
+            },
+            {
+              "line": 32
+            },
+            {
+              "line": 34
+            },
+            {
+              "line": 36
+            },
+            {
+              "line": 40
+            },
+            {
+              "line": 42
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 53
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 56
+            },
+            {
+              "line": 58
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LinkOfClosedAtFamily.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 71
+            },
+            {
+              "line": 72
+            },
+            {
+              "line": 73
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberBuiltLinkedGeometric.lean",
+          "occurrences": 23,
+          "matching_lines": [
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 48
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 50
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 52
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 64
+            },
+            {
+              "line": 65
+            },
+            {
+              "line": 73
+            },
+            {
+              "line": 74
+            },
+            {
+              "line": 76
+            },
+            {
+              "line": 77
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberBuiltLinkedGeometricStatement.lean",
+          "occurrences": 5,
+          "matching_lines": [
+            {
+              "line": 9
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean",
+          "occurrences": 14,
+          "matching_lines": [
+            {
+              "line": 40
+            },
+            {
+              "line": 41
+            },
+            {
+              "line": 74
+            },
+            {
+              "line": 76
+            },
+            {
+              "line": 77
+            },
+            {
+              "line": 80
+            },
+            {
+              "line": 83
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusionStatement.lean",
+          "occurrences": 7,
+          "matching_lines": [
+            {
+              "line": 33
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+          "occurrences": 2,
+          "matching_lines": [
+            {
+              "line": 204
+            },
+            {
+              "line": 212
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 57
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 64
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsBaseLatticeOfPrime.lean",
+          "occurrences": 28,
+          "matching_lines": [
+            {
+              "line": 40
+            },
+            {
+              "line": 41
+            },
+            {
+              "line": 42
+            },
+            {
+              "line": 43
+            },
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 46
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 48
+            },
+            {
+              "line": 51
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 56
+            },
+            {
+              "line": 58
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 60
+            },
+            {
+              "line": 68
+            },
+            {
+              "line": 69
+            },
+            {
+              "line": 71
+            },
+            {
+              "line": 72
+            },
+            {
+              "line": 80
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 41
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 52
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 80
+            },
+            {
+              "line": 81
+            },
+            {
+              "line": 83
+            },
+            {
+              "line": 85
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+          "occurrences": 10,
+          "matching_lines": [
+            {
+              "line": 37
+            },
+            {
+              "line": 38
+            },
+            {
+              "line": 39
+            },
+            {
+              "line": 40
+            },
+            {
+              "line": 58
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 69
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberEClosing.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 17
+            },
+            {
+              "line": 19
+            },
+            {
+              "line": 20
+            },
+            {
+              "line": 23
+            },
+            {
+              "line": 26
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "occurrences": 12,
+          "matching_lines": [
+            {
+              "line": 44
+            },
+            {
+              "line": 45
+            },
+            {
+              "line": 47
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 53
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 59
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 64
+            },
+            {
+              "line": 65
+            },
+            {
+              "line": 66
+            },
+            {
+              "line": 68
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 21
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 60
+            },
+            {
+              "line": 63
+            },
+            {
+              "line": 67
+            }
+          ]
+        }
+      ]
+    },
+    "raw_geoOf": {
+      "file_count": 12,
+      "occurrence_count": 24,
+      "files": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/FormsOver.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 57
+            },
+            {
+              "line": 94
+            },
+            {
+              "line": 101
+            },
+            {
+              "line": 105
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 21
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+          "occurrences": 7,
+          "matching_lines": [
+            {
+              "line": 26
+            },
+            {
+              "line": 27
+            },
+            {
+              "line": 30
+            },
+            {
+              "line": 157
+            },
+            {
+              "line": 159
+            },
+            {
+              "line": 161
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 16
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 600
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 503
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AtlasModelComparison.lean",
+          "occurrences": 2,
+          "matching_lines": [
+            {
+              "line": 50
+            },
+            {
+              "line": 53
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsDeRhamFlag.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 69
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFlagClosure.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 66
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsLatticeCoordinatesStep.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 207
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/OrbitalIntegrals/BrMain.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 25
+            },
+            {
+              "line": 39
+            }
+          ]
+        },
+        {
+          "path": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/OrbitalIntegrals/TwistedOrbitalIntegrals/GeoOfMatch.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 7
+            }
+          ]
+        }
+      ]
+    },
+    "word_geoOf": {
+      "file_count": 10,
+      "occurrence_count": 16,
+      "files": [
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/FormsOver.lean",
+          "occurrences": 4,
+          "matching_lines": [
+            {
+              "line": 57
+            },
+            {
+              "line": 94
+            },
+            {
+              "line": 101
+            },
+            {
+              "line": 105
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 21
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+          "occurrences": 3,
+          "matching_lines": [
+            {
+              "line": 27
+            },
+            {
+              "line": 30
+            },
+            {
+              "line": 159
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 16
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 600
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 503
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AtlasModelComparison.lean",
+          "occurrences": 2,
+          "matching_lines": [
+            {
+              "line": 50
+            },
+            {
+              "line": 53
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsDeRhamFlag.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 69
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFlagClosure.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 66
+            }
+          ]
+        },
+        {
+          "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsLatticeCoordinatesStep.lean",
+          "occurrences": 1,
+          "matching_lines": [
+            {
+              "line": 207
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005"
+}

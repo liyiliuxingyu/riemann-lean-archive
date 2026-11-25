@@ -1,0 +1,45 @@
+\input{regression-test}
+
+\RequirePackage{ctexpatch}
+\RequirePackage{etoolbox}
+
+\START
+
+\AUTHOR{Qing Lee, Xiangdong Zeng}
+
+\ExplSyntaxOn
+
+\cs_set_protected:Npn \TEST:w #1#2#3 \q_stop
+  {
+    \exp_args:Nx \TEST { \token_to_str:N #1 \token_to_str:N #2 #3 }
+      { \ctex_parse_name:NN \TEST:NN #2 #2 }
+  }
+\cs_set_protected:Npn \TEST:NN #1#2
+  {
+    \iow_term:x
+      {
+        [ \cs_replacement_spec:N #2 ] \iow_newline:
+        [ \token_to_str:N #1 ]        \iow_newline:
+        [ \cs_replacement_spec:N #1 ]
+      }
+  }
+
+\clist_map_inline:nn
+  {
+    \newcommand           \cmda [ 2 ] [ x ] ,
+    \DeclareRobustCommand \cmdb [ 2 ]       ,
+    \DeclareRobustCommand \cmdc [ 2 ] [ x ] ,
+    \newrobustcmd         \cmdd [ 2 ] [ x ] ,
+    \newcommand           \1    [ 2 ] [ x ] ,
+    \DeclareRobustCommand \2    [ 2 ]       ,
+    \DeclareRobustCommand \3    [ 2 ] [ x ] ,
+    \newrobustcmd         \4    [ 2 ] [ x ] ,
+  }
+  {
+    #1 { ********************************************************** }
+    \TEST:w #1 \q_stop
+  }
+
+\ExplSyntaxOff
+
+\END

@@ -4,7 +4,10 @@
 
 - [全部 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)
 - [57 卷逐卷下载地址、行号范围、大小和 SHA-256](release-parts.json)
-- [注释工具包：读取工具、格式说明、预览和验证报告](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotation_toolkit.zip)
+- [展开的注释工具包：读取工具、格式说明、预览和验证报告](../solution_annotation_toolkit/)
+- [可单独下载的 TXT 样本：原始前 147,492 条记录及注释，22,791,733 字节](../solution_annotation_toolkit/benchmark/prefix_output_v2/solution_annotated.part001.txt)
+
+这个 TXT 是工具包的测试样本，不是完整 Release 第 1 卷。原始工具包 ZIP 继续保留在 Release 供完整归档下载。
 
 ## 数据规模与入库范围
 

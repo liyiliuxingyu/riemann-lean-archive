@@ -1,0 +1,6 @@
+/workspace/scratch/e8ff28430def/work/lean_geometry_audit_20261123/claims/InvalidTrueBridge.lean:7:9: error: Type mismatch
+  this
+has type
+  anyGeometry 1
+but is expected to have type
+  realGeometry 1

@@ -1,0 +1,34 @@
+[
+  {
+    "path": "Lean/AddDecl.lean",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "sha256": "7e6e74107d8f0116dff7cde2de3e60ed556bbab3ca56309311ea90dfc931bd40",
+    "first_line": 22,
+    "last_line": 34,
+    "text": "22: /-- Adds given declaration to the environment, respecting `debug.skipKernelTC`. -/\n23: def Kernel.Environment.addDecl (env : Environment) (opts : Options) (decl : Declaration)\n24:     (cancelTk? : Option IO.CancelToken := none) : Except Exception Environment :=\n25:   if debug.skipKernelTC.get opts then\n26:     addDeclWithoutChecking env decl\n27:   else\n28:     addDeclCore env (Core.getMaxHeartbeats opts).toUSize (maxRecDepth.get opts).toUSize decl cancelTk?\n29: \n30: private def Environment.addDeclAux (env : Environment) (opts : Options) (decl : Declaration)\n31:     (cancelTk? : Option IO.CancelToken := none) : Except Kernel.Exception Environment :=\n32:   env.addDeclCore (Core.getMaxHeartbeats opts).toUSize (maxRecDepth.get opts).toUSize decl cancelTk?\n33:     (!debug.skipKernelTC.get opts)\n34: "
+  },
+  {
+    "path": "Lean/ReducibilityAttrs.lean",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "sha256": "7fa5b42ddae7219a582c6d64aad75f0751c41b011eef15313beff61fb45b3e0e",
+    "first_line": 101,
+    "last_line": 153,
+    "text": "101:     reducibilityExtraExt.addCore env (declName, status) attrKind currNamespace\n102: \n103: /-\n104: TODO: it would be great if we could distinguish between the following two situations\n105: \n106: 1-\n107: ```\n108: @[reducible] def foo := ...\n109: ```\n110: \n111: 2-\n112: ```\n113: def foo := ...\n114: ...\n115: attribute [reducible] foo\n116: ```\n117: \n118: Reason: the second one is problematic if user has add simp theorems or TC instances that include `foo`.\n119: Recall that the discrimination trees unfold `[reducible]` declarations while indexing new entries.\n120: -/\n121: \n122: register_builtin_option allowUnsafeReducibility : Bool := {\n123:   defValue := false\n124:   descr    := \"enables users to modify the reducibility settings for declarations even when such changes are deemed potentially hazardous. For example, `simp` and type class resolution maintain term indices where reducible declarations are expanded.\"\n125: }\n126: \n127: private def validate (declName : Name) (status : ReducibilityStatus) (attrKind : AttributeKind) : CoreM Unit := do\n128:   let suffix := .note \"Use `set_option allowUnsafeReducibility true` to override reducibility status validation\"\n129:   -- Allow global visibility attributes even on non-exported definitions - they may be relevant for\n130:   -- downstream non-`module`s.\n131:   withoutExporting do\n132:   unless allowUnsafeReducibility.get (← getOptions) do\n133:     unless (← getConstInfo declName).isDefinition do\n134:       throwError \"failed to set reducibility status, `{.ofConstName declName}` is not a definition{suffix}\"\n135:     let statusOld := getReducibilityStatusCore (← getEnv) declName\n136:     match attrKind with\n137:     | .scoped =>\n138:       throwError \"failed to set reducibility status for `{.ofConstName declName}`, the `scoped` modifier is not recommended for this kind of attribute{suffix}\"\n139:     | .global =>\n140:       if (← getEnv).getModuleIdxFor? declName matches some _ then\n141:         throwError \"failed to set reducibility status, `{.ofConstName declName}` has not been defined in this file, consider using the `local` modifier{suffix}\"\n142:       match status with\n143:       | .reducible =>\n144:         unless statusOld matches .semireducible do\n145:           throwError \"failed to set `[reducible]`, `{.ofConstName declName}` is not currently `[semireducible]`, but `{statusOld.toAttrString}`{suffix}\"\n146:       | .irreducible =>\n147:         unless statusOld matches .semireducible | .implicitReducible | .instanceReducible do\n148:           throwError \"failed to set `[irreducible]`, `{.ofConstName declName}` is not currently `[semireducible]`, `[implicit_reducible]` nor `[instance_reducible]`, but `{statusOld.toAttrString}`{suffix}\"\n149:       | .implicitReducible =>\n150:         -- Allow `[semireducible] -> [implicit_reducible]` and the upgrade\n151:         -- `[instance_reducible] -> [implicit_reducible]` (so instances can be strengthened to\n152:         -- only unfold during implicit-arg defeq).\n153:         unless statusOld matches .semireducible | .instanceReducible do"
+  },
+  {
+    "path": "Lean/Elab/Quotation/Precheck.lean",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "sha256": "a5024af07142420b76475d6336c9ad4804985245ae817c45514d72660e65e2da",
+    "first_line": 30,
+    "last_line": 45,
+    "text": "30: register_builtin_option quotPrecheck : Bool := {\n31:   defValue := true\n32:   descr    := \"Enable eager name analysis on notations in order to find unbound identifiers early.\n33: Note that type-sensitive syntax (\\\"elaborators\\\") needs special support for this kind of check, so it might need to be turned off when using such syntax.\"\n34: }\n35: \n36: register_builtin_option quotPrecheck.allowSectionVars : Bool := {\n37:   defValue := false\n38:   descr    := \"Allow occurrences of section variables in checked quotations, it is useful when declaring local notation.\"\n39: }\n40: \n41: /--\n42: Registers a double backtick syntax quotation pre-check.\n43: \n44: `@[quot_precheck k]` registers a declaration of type `Lean.Elab.Term.Quotation.Precheck` for the\n45: syntax node kind `k`. It should implement eager name analysis on the passed syntax by throwing an"
+  },
+  {
+    "path": "Lean/Elab/Quotation/Precheck.lean",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "sha256": "a5024af07142420b76475d6336c9ad4804985245ae817c45514d72660e65e2da",
+    "first_line": 91,
+    "last_line": 95,
+    "text": "91: def runPrecheck (stx : Syntax) : TermElabM Unit := do\n92:   let opts ← getOptions\n93:   if quotPrecheck.get opts && hygiene.get opts then\n94:     precheck stx |>.run { quotLCtx := {} }\n95: "
+  }
+]

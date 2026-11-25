@@ -1,0 +1,33 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(files02.aux)
+upldefs.ltx
+jy2mc.fd
+jy2gt.fd
+jt2mc.fd
+jt2gt.fd
+ukinsoku.tex
+regression-test
+regression-test.cfg
+ts1cmr.fd
+book.cls
+bk10.clo
+ctex.sty
+expl3.sty
+l3backend-dvips.def
+ctexhook.sty
+ctexpatch.sty
+fix-cm.sty
+ts1enc.def
+ctexopts.cfg
+ctex-engine-uptex.def
+jt2zhrm.fd
+jy2zhrm.fd
+zhnumber.sty
+zhnumber-utf8.cfg
+ctex-scheme-chinese.def
+ctex-name-utf8.cfg
+indentfirst.sty
+ctex-c5size.clo
+ctex-fontset-fandol.def
+ctex.cfg

@@ -2,6 +2,8 @@
 
 日期：2026-11-23。原 Release：[archive-20261122](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)。
 
+> 后续更新：2026-11-25 将两份审计 ZIP、CTeX 源码归档及小型嵌套压缩内容继续展开，见[独立文件说明](INDIVIDUAL_FILES.md)。本页下列数量和校验记录描述 2026-11-23 的归档布局；当前 Git 中的 CTeX 源码归档已由其全部展开文件替代。
+
 ## 已放入普通 Git 的内容
 
 | 原始内容 | 仓库路径 | 处理结果 |

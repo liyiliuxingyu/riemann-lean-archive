@@ -1,0 +1,177 @@
+Lean 逻辑审查报告
+审查日期：2026 年 11 月 23 日（北京时间）
+
+一、结论
+
+本轮没有发现可确认的逻辑漏洞。这个结论来自全量源码静态扫描、源码版本比对、关键数学归约审读、针对自定义策略的小规模实际 Lean 测试，以及对公开独立核验证据的核对。
+
+本报告不能表述为“已在本机重新验证完整黎曼猜想证明”或“绝对不存在漏洞”。本机没有重新构建全部 175,187 个模块，没有重新执行最终 Main 定理的完整递归公理审计，也没有重新检查完整的 61,570,595,788 字节证明导出。外部已经公布的完整检查结果，在下文单独标明来源。
+
+二、检查的是哪一份代码
+
+对象是之前工程中的 RH_AllSources.lean。它采用 lean-source-bundle-v1 格式，保留原始模块的精确字节、路径和哈希，是可逆源码归档。
+
+本轮恢复后得到：
+  • Lean 源模块：175,187 个。
+  • 原始源码：1,030,531,854 字节、17,374,215 行。
+  • 工程配置：lean-toolchain、lakefile.toml、lake-manifest.json，共 3 个。
+  • 合并文件 SHA-256：b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444。
+  • 固定公开镜像提交：40e56bab026552e089d7afcfeff08d2defb9c005。
+  • Lean：4.33.1，提交 819816b2e0a3bf405af45ae5c7af2491d8f5bee6。
+  • Mathlib：0df444a360eaa60ab8c11dca51a86af692955474。
+
+除检查归档内部哈希，本轮还重新下载固定公开提交并流式比较：175,190 个文件全部与索引的大小和 SHA-256 相符，也与恢复树逐字节相符；多余、缺失、重复及非常规成员均为 0。此项确认当前审查对象与公开固定版本一致，不能代替证明检查。
+
+本轮没有修改原始证明代码。审查器、实验文件及报告保存在独立目录。
+
+证据：evidence/restore_verification.json、evidence/public_source_comparison.json。
+
+三、全库静态扫描与依赖检查
+
+扫描按归档中的精确字节长度逐模块读取，屏蔽源文件自身的行注释、嵌套块注释和字符串，保留行号。扫描范围是上述原项目源码，不含 Lean、Mathlib、Aesop 等外部包的全量源码。
+
+下列代码级关键词命中均为 0：
+  sorry、sorryAx、admit；
+  axiom、axiomDecl；
+  unsafe、unsafeCast、extern、implemented_by；
+  native_decide、native、bv_decide、trustCompiler、ofReduceBool、ofReduceNat；
+  skipKernelTC、debug.skipKernelTC、trustLevel。
+
+同时发现并进一步检查了：4 处 elab、2 处 partial、2 处 addDecl、32 处 run_tac、5 处 run_cmd、87 处 macro 和 88,139 处 set_option。关键词存在与否不能单独裁定证明正确：元程序可以正常生成证明项，而错误恢复或外部依赖也可能产生扫描词表无法直接反映的问题。
+
+标准 import 头部解析得到 753,261 条不同的项目内部导入边，图无环。Main 的传递模块导入闭包覆盖全部 175,187 个模块。没有未解析的非标准本地导入，也没有发现项目文件占用 Init、Lean、Std、Mathlib 等外部模块根名。
+
+这是模块级检查，不是对 elaboration 后全部定理依赖的内核验证。导入分析复用了原导出工具的头部解析器，也不是另一套独立 Lean 语法分析实现。
+
+证据：trust_scan/summary.json、trust_scan/matches.jsonl.gz、trust_scan/key_evidence.json、evidence/module_graph_audit.json。
+
+四、最终目标是否被偷换
+
+src/Main.lean 第 4 行声明：
+
+    theorem riemannHypothesis : RiemannHypothesis := rhOfAll
+
+这个入口没有额外显式假设。src/Statements.lean 中的零点命题是：对复数 s，若 ζ(s)=0，且 s 不是负偶整数、s≠1，则 Re(s)=1/2。
+
+本轮不仅比较了文本，还使用固定的 Lean 和 Mathlib，编译了一个独立的 StatementSemanticsAuditMinimal.lean。它只导入所需的两个 Mathlib 模块，精确复制原 Statements 中的四个定义，并检查：
+  • 源码的零点命题与 Mathlib 的 RiemannHypothesis 定义相等；
+  • 两种表述逻辑等价；
+  • ζ 的符号确实是根命名空间中的 Mathlib riemannZeta；
+  • Dirichlet L 函数的符号确实是 Mathlib 对应声明。
+
+实际编译退出码为 0，用时 8.425 秒。上述四项陈述比较的公理输出均仅为 propext、Classical.choice、Quot.sound。
+
+这验证复制的陈述在干净、固定的 Mathlib 环境中的含义和符号绑定；原 Main 实际环境的对应关系另由下述公开 audit／compare 记录支持。该实验没有导入 Main，也没有构造 RH 的证明。
+
+负偶整数是平凡零点；s=1 是 ζ 的极点。排除这些点来自固定 Mathlib 的原始定义，不能据此认为工程削弱了目标。[R1]
+
+证据：statement/StatementSemanticsAuditMinimal.lean、对应 .log、statement/statement_semantics_run.json。
+
+五、自定义策略是否能绕过内核
+
+1. kexactB
+位置：src/Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean，第 5–8 行。
+它把 elaboration 得到的项直接赋给目标。本轮用原样策略代码做正反例：正确的 True 证明通过；把 True.intro 赋给 False 时，出现明确的内核 declaration type mismatch。
+
+2. kcopy
+位置：src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean，第 18–64 行。
+它递归重建函数、结构构造器和字段投影，再给目标赋值。正确的 True ∧ True 例子通过；错误 False 例子被内核拒绝。partial 在这里修饰生成证明项的元函数，不能直接解读成增加数学公理。
+
+3. cpt_copy_thms 与 addDecl
+位置：src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean，第 63–89 行。
+它替换常量名，并同时变换声明的类型和值，提交的是 defnDecl 或 thmDecl。扫描没有找到 axiomDecl 分支。对同一 addDecl API 的最小实测中，正确定理可加入，错误定理被内核拒绝。这个实验没有执行完整项目里所有自动复制声明。
+
+4. 几个名称容易引起误解的选项
+allowUnsafeReducibility true 有 37 处，quotPrecheck false 有 7 处，hygiene false 有 31 处。本轮对固定 Lean 源码核对了这些选项，并将三者同时开启后运行错误证明实验；内核仍拒绝错误项。选项影响可约性、语法引用与名称处理，其存在仍值得审查，但本轮没有据此找到跳过内核的路径。
+
+总计 7 项实验：3 项正确用例成功、4 项错误用例均由内核明确拒绝。负例的通过标准要求日志出现内核类型不匹配；仅仅语法错误或返回非零状态不算验证成功。早期 addDecl 探针曾有测试自身的语法/monad 问题，已修正后重新运行，交付结果只采用修正后的日志。
+
+这些是具体路径的实测，不是对自定义策略所有输入的完备安全证明。
+
+证据：trust_scan/TRUST_REVIEW.md、trust_scan/minimal_probes/、trust_scan/lean_core_option_evidence.json。
+
+六、关键数学链的人工阅读
+
+本轮记录了 27 项文件或选取范围的静态阅读；另有 85 个保留的原项目源文件与完整归档逐个哈希匹配。85 个文件的一致性检查，不等于逐一重证了其中的数学内容。
+
+重点检查了以下问题：
+  • RhOfRight、CritLine 和 ClaimStrip：反射到 1−s 时是否漏掉 s=0、反射点为 1、Gamma 非零与余弦零点的条件。
+  • 非原始字符的归约：有限 Euler 因子是否可能为零。
+  • AbsNe：主项与尾项的比较是否保留可积性、有限测度、κ≠0、r>0 及严格尾界。所需 K 的正测度可由严格尾界推出。
+  • EveryCharacter：是否只是将关键不消失结论作为最终入口的裸假设。所读包装会代入后续构造出的输入，但整条深层构造链未在本轮逐条重证。
+  • CutCptCopy 与 CutMainCpt：紧支撑版本是否偷偷删掉前提。所读三个替换类型保留紧支撑条件，后续通过近似及极限传递非负性。
+
+以上位置未发现可确认的漏条件或目标替换。VWin 中辅助素数对的存在性、几何和自守理论的大量深层输入，仍超出本轮逐条人工重证范围；不能把阅读边界当作原证明的缺口。
+
+详细位置、范围、哈希和判断见 statement_audit.md 与 statement_audit.json。
+
+七、公开完整验证证据
+
+下面是本轮重新取得并核对的外部记录，执行者与执行环境均不是本机：
+  • audit.log：五个最终定理的依赖仅列出 propext、Classical.choice、Quot.sound。[R2]
+  • con-leche-master.log：完整接受 1,468,418 个声明，退出码 0；峰值 RSS 为 45.62 GiB。[R3]
+  • con-leche / con-ron 的 compare 日志：五个目标逐个通过与 challenge 的匹配。[R4、R5]
+  • sandbox-timeline.txt：独立沙盒 lake build Main 退出 0，导出哈希与已发布导出相同。[R6]
+
+本轮取得的 14 项证据中，有 12 项受当期 SHA256SUMS 覆盖，实算均匹配。下载和哈希相符，只确认取得了站点发布的同一份记录；没有把外部命令在本机重新执行。
+
+验证页面更新至北京时间 2026 年 11 月 23 日 00:20；页面另报告模块级内核重放、nanoda、lean4lean 已通过，而完整 lake comparator 及整个导出的 Lean 默认/paranoid 内核重放仍在运行。不能把仍运行的阶段写成已经完成。[R7]
+
+环境中出现 sorryAx，与最终定理依赖 sorryAx 是不同问题。challenge 里用占位证明描述待核对目标，也不等于 solution 把目标作为假设。应检查实际最终定理的递归公理集合，并独立比对目标含义。[R2、R8]
+
+八、两个最容易误判的地方
+
+（一）RH_AllSources.lean 是可逆归档，需恢复原模块树后构建。保存为一个 .lean 文件、哈希通过或源码行数齐全，都不意味着这个合并文件已经成为可独立编译的单体证明。
+
+（二）旧的 EndpointReduction.lean 明确有：
+
+    theorem rh_of_every (h : EveryCharacter) : RiemannHypothesis := ...
+
+它的数学结论是 EveryCharacter → RiemannHypothesis。该小文件的历史编译成功，只验证条件归约，没有构造 EveryCharacter。文件本身已经说明这一边界，本轮没有将其误报为隐藏漏洞。
+
+九、可继续复核的步骤
+
+本包提供脚本和实际日志，便于重做本轮有限范围检查：
+
+1. 全量源码扫描：
+   python3 trust_scan/scan_bundle.py --bundle /path/to/RH_AllSources.lean --output /path/to/new_scan
+
+2. 小规模内核边界实验（需要 Lean 4.33.1）：
+   python3 trust_scan/minimal_probes/run_probes.py --lean /path/to/lean
+
+3. 目标语义检查：
+   在固定 Mathlib 工程中，通过 lake env lean 运行 statement/StatementSemanticsAuditMinimal.lean。
+   本包记录了实际运行命令、版本、源哈希和退出状态。
+
+4. 完整工程的后续验收：
+   用 scripts/export_lean_bundle.py restore 恢复源码，保留原 lean-toolchain 和 lake-manifest.json；
+   在该原工程运行 lake build Main；
+   成功后，用 lake env lean 运行本包的 statement/FullProjectAxiomsAudit.lean，保存实际公理输出；
+   再按官方验证说明对真实导出执行独立内核及 challenge 比对。[R7、R8]
+
+FullProjectAxiomsAudit.lean 在本包中只是后续可运行的审查文件，本轮没有执行它。不要把它的存在当作成功日志。负向实验文件故意包含错误定理，只供专用 runner 使用，不应加入原工程正常构建目标。
+
+当前机器可见内存约 9.7 GiB、无交换空间，少于公开完整 con-leche 运行的峰值。报告保留这项实际限制，并未声称完成本地完整证明认证。
+
+十、证据索引与参考
+
+本包的 AUDIT_RESULT.json 汇总各检查层次；SHA256SUMS.txt 覆盖包内交付文件。完整 1.10 GB 合并源码及 68 MB 索引已有原工程归档保留，本审查包不重复装入这些大文件。source_evidence/ 中只提供本轮关键阅读或元程序审查涉及的原始源文件，均保留原内容。
+
+[R1] 固定 Mathlib 源码：
+https://raw.githubusercontent.com/leanprover-community/mathlib4/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/LSeries/RiemannZeta.lean
+[R2] 最终定理公理审计：
+https://math.mit.edu/~drew/grh/audit.log
+[R3] con-leche 完整检查：
+https://math.mit.edu/~drew/grh/con-leche-master.log
+[R4] con-leche 目标比较：
+https://math.mit.edu/~drew/grh/con-leche-compare.log
+[R5] con-ron 目标比较：
+https://math.mit.edu/~drew/grh/con-ron-compare.log
+[R6] 独立沙盒构建时间记录：
+https://math.mit.edu/~drew/grh/sandbox-timeline.txt
+[R7] 完整验证页面：
+https://math.mit.edu/~drew/grh/
+[R8] Lean 官方证明验证说明：
+https://lean-lang.org/doc/reference/latest/ValidatingProofs/
+
+最终判断：未发现可确认的逻辑漏洞；当前证据支持这份原工程的形式证明可信度。完整的本地重建、最终定理依赖审计和完整导出复核，仍需在满足条件的环境实际运行后，才可标记为本地通过。

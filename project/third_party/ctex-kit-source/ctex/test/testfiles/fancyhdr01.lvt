@@ -1,0 +1,53 @@
+\input{regression-test}
+
+\documentclass[twoside]{ctexart}
+
+\usepackage[headings]{fancyhdr}
+
+\ctexset{
+  section = {
+    name   = {第,节},
+    number = \chinese{section},
+  },
+  subsection = {
+    name   = {第,小节},
+    number = \chinese{subsection},
+  },
+}
+
+\begin{document}
+
+\section{一级标题 Section Heading}
+\subsection{二级标题 Subsection Heading}
+\clearpage
+
+\START
+\ExplSyntaxOn
+
+\TEST { Left~ header }
+  { \CTEXLogMark \leftmark }
+
+\TEST { Right~ header }
+  { \CTEXLogMark \rightmark }
+
+\ExplSyntaxOff
+\OMIT
+
+\pagestyle{headings}
+\section{一级标题 Section Heading}
+\subsection{二级标题 Subsection Heading}
+\clearpage
+
+\TIMO
+\ExplSyntaxOn
+
+\TEST { Left~ header~ of~ headings }
+  { \CTEXLogMark \leftmark }
+
+\TEST { Right~ header~ of~ headings }
+  { \CTEXLogMark \rightmark }
+
+\ExplSyntaxOff
+\END
+
+\end{document}

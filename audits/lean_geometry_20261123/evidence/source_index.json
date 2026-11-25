@@ -1,0 +1,245 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeoTiedPGraft.lean",
+      "sha256": "fd8ffe4dc4523cfaf349edd06275870a191c65f4a09239671b6957ef135d115c",
+      "bytes": 2632,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeoTiedPGraft.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean",
+      "sha256": "a4b538319006161e0fff73db57fcd181e6b233102bb8db10cf2fc493267ddd0e",
+      "bytes": 2096,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GeometrySectionsEqRiemannRoch.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LargeFor.lean",
+      "sha256": "089549d7893cc91fd8ddb4c179fe873dbbb82fcc1a11be972135616e29ff9245",
+      "bytes": 4869,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LargeFor.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimes.lean",
+      "sha256": "41563ec29f4fd3060f7f34377f50104b0694395d7cff3b48465010be6aebaccc",
+      "bytes": 11268,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimes.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean",
+      "sha256": "54dbd62bbacc19db2294f1c41fd28663522acf498a732f9328ed2086b08b9e38",
+      "bytes": 1284,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+      "sha256": "acc5c8c8ed2946c1d941a34b94cc04f900a1ec2ebdf4c430107b37073c82e914",
+      "bytes": 9100,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+      "sha256": "b9ba78e313f6c7a601d87a1672429122d7f976a0afdd8bae8e4efed68a7215df",
+      "bytes": 2613,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean",
+      "sha256": "fa71f4919ef3b325b6408d2bfce36fda98de39189c38311cf905be79c9d8513d",
+      "bytes": 31180,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RingKrullDimIntegers.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean",
+      "sha256": "a7cfba998ae7e2ae1febd5751cfbbec7acd5e5d2b78cf51ed3d784d211ab50e2",
+      "bytes": 20620,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TiedColumnData.lean",
+      "sha256": "1074541bb0a76862ffbbca64a3ac78a3e827f825af50cfe853a2ce1e46d0395c",
+      "bytes": 9107,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TiedColumnData.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean",
+      "sha256": "72214c4a481282656ea2a064fa4c1c01d6810157225e5aac684c341226981081",
+      "bytes": 30106,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AffineOpenChartCompStructureEqSpMap.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionGeometryScalarsTransferSetDivision.lean",
+      "sha256": "b8496e69fa663f75bcc634c4621bf5e43c4629d6483785a9f44fb9f34de95d9b",
+      "bytes": 6302,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionGeometryScalarsTransferSetDivision.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean",
+      "sha256": "28da93a35d85267815f63777d2c1da18074723b9b671be259b59d01ab34f1777",
+      "bytes": 8884,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean"
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+      "sha256": "2680131c9999c7f44b5d30b410b7206e1d674f1b40165a7c58ec65700c708998",
+      "bytes": 11371,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+      "bytes": 1215,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "bytes": 1213,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean",
+      "sha256": "98b9e4db79d3c7e7b650dedb897a52f279392a03696134b104891137ffe674ae",
+      "bytes": 4974,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EventualL3OfCovolume.lean",
+      "sha256": "bdee34d7b2c0322613dc9afba23bbaf88293b948dba8f9cf6a329124758b1ae8",
+      "bytes": 1827,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EventualL3OfCovolume.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "bytes": 97393,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean",
+      "sha256": "7431256e8a6c407c4a9f42bde70edd2077884e8ee3af503b3eb01028f72f2bbf",
+      "bytes": 4784,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+      "sha256": "80ebd1ee514d8a6a7967fe3e87c775148615416906038a046b27ea9436a2cc1f",
+      "bytes": 7404,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+      "sha256": "7c2e3cf200c8adb32d232bf97122dca648fd4e19de132f6d1f07f620171fa8cb",
+      "bytes": 9797,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "bytes": 6297,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+      "sha256": "ebb41248d0b20042bb45eba42ac5eb57af75b42604d3011d55fbf0e1d002c611",
+      "bytes": 9726,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedBundlesL3OfOpen.lean",
+      "sha256": "38b99bb13cfbe01cb1752c03b08eed22db748be05a4f8f03dae70863eaecd467",
+      "bytes": 5296,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedBundlesL3OfOpen.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTies.lean",
+      "sha256": "7fbb96547016f8e324fa32c96f51a04bf1c9402b7822d3793be7482e88f1197f",
+      "bytes": 9106,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTies.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTiesStatement.lean",
+      "sha256": "460663d22a651cc9e08027efe4ad1e7a7af179a0ec0db1fdcc23dfefc4b0c613",
+      "bytes": 3032,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkedTiesStatement.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/NonemptyHypsOfAllRows.lean",
+      "sha256": "5f2e7ad22b2d3d298ead1ad2de7a51529f37609ad0ed59daeca707ac281e6ebc",
+      "bytes": 7843,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/NonemptyHypsOfAllRows.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenAndLinkedOfStrongerExtension.lean",
+      "sha256": "49644e6edf3cbd5bbb1cb0e7608c9e6c59e55f22452a1bb33aa2668947e619ed",
+      "bytes": 4281,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenAndLinkedOfStrongerExtension.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+      "sha256": "9fbeb6d441b9a2009da7a1d2cde62729378ede7308bffc0164e5a7de5a07b9e7",
+      "bytes": 8927,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "sha256": "c1d3ba89b86a5e8e29274a27baaa7766ad50e103e462d72b835d3c6615d6259e",
+      "bytes": 1674,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0At.lean",
+      "sha256": "ce5b05f3c269c708b9ceee897d5eabc07b068780e55ed52df1eb5f38f41a79e4",
+      "bytes": 3452,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0At.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0AtStatement.lean",
+      "sha256": "4db1b18cc73009aba4f57c7bc47bb7feda1d59d930d7ce4d5e9ddeddcb95a9c6",
+      "bytes": 2532,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGeo0AtStatement.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGood.lean",
+      "sha256": "3353415da3436ea3eb58f886d64ba00b193ab9b56ed79afb5b3cdd3b73a43fc2",
+      "bytes": 4301,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGood.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "bytes": 8752,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "bytes": 1667,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+    },
+    {
+      "path": "Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean",
+      "sha256": "0a1ea1663240f2e7e3efa8c1ce5439e5c8327a220fd47b48582f4b832fe65cc2",
+      "bytes": 10010,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean"
+    },
+    {
+      "path": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+      "sha256": "7a95297aa3205b6d5e033b4352eff0bb406b4cd11cb2e0fac5722c9b4aafde54",
+      "bytes": 38030,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean"
+    },
+    {
+      "path": "Main.lean",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "bytes": 433,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean"
+    },
+    {
+      "path": "Supplements/Kernels/MainTheorems.lean",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "bytes": 740,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Supplements/Kernels/MainTheorems.lean"
+    }
+  ]
+}
