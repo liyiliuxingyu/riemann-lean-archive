@@ -1,7 +1,9 @@
-# 注释分卷：Release 下载清单
+# 完整注释：独立 TXT 与原始 Release
 
-本目录保存 57 卷注释数据的说明和公开清单。**57 卷完整注释已全部展开为普通 TXT 文件，实际完成范围以 [unpacked/](unpacked/) 和其进度清单为准。原 Release 的压缩附件作为备份保留。**
+本目录保存 57 卷注释数据的说明和公开清单。57 卷完整注释已全部展开为 **3,380 个独立 TXT 文件**，合计 **168,547,118,127 字节**，覆盖 **1,080,769,508 条原始 NDJSON 记录**。普通 TXT、每卷清单和完成进度见 [unpacked/](unpacked/)。原 Release 压缩附件作为备份保留。
 
+- [全部 57 卷的独立 TXT 与每卷清单](unpacked/)
+- [完成统计与核验范围](unpacked/progress.json)
 - [全部 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)
 - [57 卷逐卷下载地址、行号范围、大小和 SHA-256](release-parts.json)
 - [展开的注释工具包：读取工具、格式说明、预览和验证报告](../solution_annotation_toolkit/)
@@ -24,9 +26,9 @@
 
 把文本继续拆成每文件严格小于 100 MiB 的片段，可以满足这一单文件大小预算，但数据总量仍约为 156.972 GiB。按最大 104,857,599 bytes、保留原有 57 卷边界计算，任意字节拆分精确需要 1,640 个文件；允许跨卷合并再拆分时，理论最少为 1,608 个文件。若保留完整行或“注释＋原始记录”对，这些数值只是下限，实际文件数需要在流式拆分时确定。
 
-这是一组规模很大的文本数据。拆分不会减少正文总量；Git 对象、打包、推送和克隆的实际成本需要另行评估，不能从 zstd 压缩大小直接推算。当前全量展开工作使用 48 MiB 整记录对分块，实际数量及完成范围见 [unpacked/](unpacked/)；上述数字仅是旧的大小规划下限。
+这是一组规模很大的文本数据。拆分不会减少正文总量；Git 对象、打包、推送和克隆的实际成本需要另行评估，不能从 zstd 压缩大小直接推算。本次全量展开按 48 MiB 上限保留完整记录对，实际得到 3,380 个 TXT；见 [unpacked/](unpacked/)。上述数字仅是旧的大小规划下限。
 
-## 下载并解压一卷
+## 原压缩卷的下载与解压
 
 各卷可独立解压。先下载需要的卷，例如 [第 1 卷](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part001.txt.zst)，并按 [公开清单](release-parts.json) 核对其压缩字节数和 SHA-256。解压需要已安装 `zstd`。
 
@@ -53,6 +55,10 @@
 
 本目录的 [release-parts.json](release-parts.json) 整理自仓库的 [原始分卷元数据](../ndjson-files.public.json)、[Release 附件清单](../release-assets.public.json)，以及注释工具包中的 `parts.jsonl` 和 `independent_verification.json`。下载地址取自已记录的实际 Release 附件地址。
 
-存档的完整验证报告记录了 57 个独立压缩帧、所有压缩卷 SHA-256、逐卷字节数和记录数、连续原始行号，以及恢复原始数据的整体 SHA-256。这里引用该完整回验记录，没有把本次清单整理表述为重新解压全部数据或执行 Lean 内核验证。
+<!-- completed-annotation-verification -->
+本轮已重新读取全部 57 卷压缩源并完成逐卷解压与哈希核验，结果见 [progress.json](unpacked/progress.json) 及各卷的 `manifest.json`。这里的当前完成状态和逐卷哈希来自本轮展开；下文引用的全局原文哈希来自历史完整回验报告，本轮没有重算该全局哈希，也没有执行 Lean 内核验证。
+<!-- /completed-annotation-verification -->
+
+存档的完整验证报告记录了 57 个独立压缩帧、所有压缩卷 SHA-256、逐卷字节数和记录数、连续原始行号，以及恢复原始数据的整体 SHA-256。这里引用的是此前完整回验记录；本轮重新解压全部 57 卷的核验范围见上段及 progress.json，本轮没有执行 Lean 内核验证。
 
 现有完整回验报告没有记录全量最大行长；清单将该值保留为空，不以小样本推断全量最大值。

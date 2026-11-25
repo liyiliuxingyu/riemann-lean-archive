@@ -5,16 +5,18 @@
 本仓库整理文件、保存出处并提供恢复与核验方法。文件汇编、哈希核验和 NDJSON 注释的成功，不能代替 Lean 内核对数学证明的检查。本次整理及后续有限审查没有完成本机完整原工程构建、最终定理的完整递归公理审计或全量独立内核复核。中文数学稿仍有明确标出的上游论证未完全展开，不是独立完整的新证明。
 
 <!-- full-annotation-expansion-status -->
-## 完整注释附件展开进度
+## 完整注释附件展开结果
 
-57 卷完整注释已全部展开为独立 TXT 文件。实际目录、逐卷核验结果和下载入口见 [annotations/unpacked/](annotations/unpacked/)。原始 Release 附件作为备份保留。
+57 卷完整注释已全部展开为 **3,380 个独立 TXT 文件**，合计 **168,547,118,127 字节**，覆盖 **1,080,769,508 条原始 NDJSON 记录**。每个 TXT 不超过 48 MiB，分块保留完整的“注释＋原始 JSON 记录”对。
+
+[按卷浏览与下载](annotations/unpacked/) · [完成清单](annotations/unpacked/progress.json) · [远端文件核验报告](docs/full-annotation-upload-verification-20261125.json)。原始 Release 附件作为备份保留。
 <!-- /full-annotation-expansion-status -->
 
 ## 交付内容与目录
 
 Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程常规成员及后续展开的第三方源码可直接按文件阅读，随机访问索引按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 的两份有限审查及复核证据也已展开。
 
-**完整注释的最新展开与上传状态见上方进度及 annotations/unpacked/。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。此次展开的范围、核验方法和剩余部分见 [展开说明](docs/RELEASE_EXPANSION.md)。
+**57 卷完整注释的完成统计及下载入口见上方结果与 annotations/unpacked/。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。早期展开的范围和核验方法见 [历史展开记录](docs/RELEASE_EXPANSION.md)；57 卷完整注释的最终目录与逐卷清单见 [完整注释目录](annotations/unpacked/)。
 
 | 文件或资料 | 内容与大小 | 现在的位置 |
 | --- | --- | --- |
@@ -51,10 +53,10 @@ python3 project/lean/dependencies/join_parts.py
 
 - [逻辑审查报告](audits/lean_logic_20261123/审查报告.txt)与 [anyGeometry 专项报告](audits/lean_geometry_20261123/专项核查报告.txt)可直接打开。
 - [注释 TXT 样本](solution_annotation_toolkit/benchmark/prefix_output_v2/solution_annotated.part001.txt)包含原始前 147,492 条记录及注释；它不是完整 Release 的第 1 卷。
-- 普通 Git 当前只保留一个 2,893,018 字节的 `.zst`，供现有压缩读取测试使用。57 卷约 168.55 GB 的完整注释继续展开为独立 TXT，实际完成范围见上方进度；原 Release 附件保留。
+- 普通 Git 当前只保留一个 2,893,018 字节的 `.zst`，供现有压缩读取测试使用。57 卷完整注释已全部展开为 3,380 个独立 TXT，共 168,547,118,127 字节，详见[完整注释目录](annotations/unpacked/)；原 Release 附件保留。
 - 布局映射、原件取回办法、哈希和检查范围见[独立文件说明](docs/INDIVIDUAL_FILES.md)与[逐文件清单](docs/unpacked-files-20261125.json)。
 
-校验本次展开的 643 个文件：
+校验此前展开的 643 个文件：
 
 ```bash
 python3 tools/verify_expanded_files.py
@@ -140,7 +142,7 @@ python3 build_pdf.py 黎曼猜想_人类可读证明主线.tex
 | 57 卷压缩字节合计 | 18,876,901,037 |
 | 原始记录类型未识别数 | 0 |
 
-从全部注释卷恢复出的原始 NDJSON 的 SHA-256 为：
+此前完整回验报告记录的原始 NDJSON 全局 SHA-256 为：
 
 ```text
 5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e
@@ -160,12 +162,16 @@ python3 build_pdf.py 黎曼猜想_人类可读证明主线.tex
 
 源码汇编阶段，全部 175,187 个原模块及 3 个配置完成了字节与哈希核验，并实际恢复到目录后逐文件读回比较。中文稿此前完成 PDF 构建与 31 页版面检查。NDJSON 注释此前完成全部 57 卷的独立回读核验，报告保存在对应工具包中。
 
-本次上传准备对最新工程 ZIP 的全部 270 个成员进行了完整解压读取和 SHA-256 计算：ZIP 成员 CRC 通过，内部校验清单的 269 个文件全部匹配。另核对了 NDJSON 工具包的文件大小与 SHA-256，并逐项比对下载索引和工具包内 57 卷清单的公开字段。本次上传准备没有重新下载全部注释卷、没有重跑全工程 Lean 构建或独立内核检查，也没有再次排版 PDF。
+首次归档上传准备对当时的工程 ZIP 的全部 270 个成员进行了完整解压读取和 SHA-256 计算：ZIP 成员 CRC 通过，内部校验清单的 269 个文件全部匹配。另核对了 NDJSON 工具包的文件大小与 SHA-256，并逐项比对下载索引和工具包内 57 卷清单的公开字段。首次归档上传准备没有重新下载全部注释卷、没有重跑全工程 Lean 构建或独立内核检查，也没有再次排版 PDF。
 
 
 2026-11-23 的进一步展开对全部 175,190 个恢复后的源码及配置文件重新计算了 SHA-256，并与原索引逐项核对，全部一致。索引按工程 ZIP 的原字节提取；5 个依赖分卷实际重新连接、读回并核对完整原件的 SHA-256；工具包的 58 个展开文件与 ZIP 逐文件核对。提交时另核对每个新增文件的 Git blob 标识及文件模式，以防暂存过程改变字节。这些是文件完整性检查，不是新的数学证明验证。
 
 完整工程中的 `provenance/`、`evidence/`、`接续状态.json`，以及注释工具包中的生成和复核报告，记录各阶段的具体范围。文件完整性、源码可恢复性与数学证明的正确性应分别评估。
+
+<!-- completed-annotation-verification -->
+本轮完整注释展开重新读取并核验了全部 57 卷压缩源，逐卷检查压缩 SHA-256、解压结构、原文 SHA-256、字节数和记录行号连续性，并记录每个 TXT 的 SHA-256 与 Git blob 标识。实际统计及核验范围见[完成清单](annotations/unpacked/progress.json)。本轮没有重算拼接后的全局原文 SHA-256，也没有执行 Lean 内核验证；上述全局哈希引用此前报告。
+<!-- /completed-annotation-verification -->
 
 ## 来源与许可
 

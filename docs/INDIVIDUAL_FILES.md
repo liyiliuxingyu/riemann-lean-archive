@@ -4,7 +4,9 @@
 
 本次把尚未展开的小型归档继续放入普通 Git，便于直接打开、下载和比较。正式 Lean 源码树、原始索引、Release 附件及历史审计的数学结论没有修改。
 
-> 后续更新：57 卷完整注释正在继续展开上传，实际完成范围见 [完整注释目录](../annotations/unpacked/)。本页记录此前 643 个小型归档展开文件的范围，其中保留大卷压缩附件的安排已由后续工作推进。
+<!-- full-annotation-completion-note -->
+> 当前状态：57 卷完整注释已全部展开为 **3,380 个独立 TXT 文件**，合计 **168,547,118,127 字节**，覆盖 **1,080,769,508 条原始 NDJSON 记录**。实际目录和清单见[完整注释目录](../annotations/unpacked/)及[完成统计](../annotations/unpacked/progress.json)。本页下列数量、旧有保留大卷压缩附件的安排与校验结论，记录此前 643 个小型归档展开文件的阶段；其历史记录保留。
+<!-- /full-annotation-completion-note -->
 
 ## 可直接阅读的内容
 
@@ -22,7 +24,7 @@
 
 这些较大的文本可能超过 GitHub 网页预览限制，但已经是可单独下载的普通 Git 文件。
 
-## 为什么还有压缩文件
+## 此前阶段为何保留压缩文件
 
 当前普通 Git 树保留的唯一压缩文件是：
 
@@ -50,7 +52,7 @@ CTeX 原归档也保存在原工程 Release ZIP 中。没有重写 Git 历史或
 
 包内的 `SHA256SUMS.txt`、`project-files.public.json`、`solution_annotation_toolkit/toolkit_files.json` 和此前展开记录保持其历史含义。尤其是逻辑审计的原校验表仍引用 `trust_scan/matches.jsonl.gz`，它描述的是原 ZIP 布局；不能拿它把现在的 JSONL 误报成内容缺失。需要原 gzip 的精确字节时，应从固定原 ZIP 抽取该成员。重新压缩 JSONL 不保证得到同一份 gzip 字节。
 
-当前布局使用 [unpacked-files-20261125.json](unpacked-files-20261125.json) 的 `files` 清单核验，其中给出全部 643 个展开文件的路径、大小、SHA-256、Git 文件模式及来源映射。
+此前 643 个展开文件使用 [unpacked-files-20261125.json](unpacked-files-20261125.json) 的 `files` 清单核验，其中给出全部 643 个展开文件的路径、大小、SHA-256、Git 文件模式及来源映射。
 
 ## 完成的检查
 

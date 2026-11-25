@@ -4,6 +4,8 @@
 
 [机器可读进度](progress.json)记录实际完成的卷。每卷只有在压缩 SHA-256、解压结构、原文 SHA-256、字节数和记录数全部核验通过后，才随一个提交发布。全部原压缩附件仍保留在 [Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)。
 
+[最终远端文件核验报告](../../docs/full-annotation-upload-verification-20261125.json)核对了全部 57 份清单与 3,380 个 TXT 的远端目录、大小和 Git 对象，并确认原工程子树保持不变。
+
 ## 按卷浏览
 
 | 卷 | 原始记录范围 | 状态 | 独立 TXT 数 |
@@ -72,6 +74,6 @@
 
 这些是导出记录与中文字段注释，不是数学证明步骤编号，也不是可直接编译的 Lean 源文件。正式 Lean 源码位于 `project/lean/original/`，本次上传保持其 Git 子树不变。
 
-可复现工具位于 [tools/](tools/)。用 C++17、libzstd 与 OpenSSL 编译 `split_annotations.cpp`；`upload_annotations.py` 读取同仓库的 `annotations/release-parts.json`，按远端 `progress.json` 续传。认证仅从 `GH_TOKEN` 环境变量或隐藏终端输入读取，不写入仓库。
+可复现工具位于 [tools/](tools/)，使用方法见[上传与续传说明](tools/UPLOAD_README.md)。用 C++17、libzstd 与 OpenSSL 编译 `split_annotations.cpp`；`upload_annotations.py` 读取同仓库的 `annotations/release-parts.json`，按远端 `progress.json` 续传。认证仅从 `GH_TOKEN` 环境变量或隐藏终端输入读取，不写入仓库。
 
 全量原文的历史 SHA-256 为 `5ea74b912147c5c93cc2b6d70cc727cf908df2f62ac6a20480a3fa02f6be244e`。本次逐卷重算原文 SHA-256；没有把分卷哈希声称为新计算的全局哈希，也没有运行 Lean 内核验证。
