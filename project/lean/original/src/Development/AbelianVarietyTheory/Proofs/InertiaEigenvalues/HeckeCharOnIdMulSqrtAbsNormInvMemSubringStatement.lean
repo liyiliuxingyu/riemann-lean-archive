@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharOnIdMulSqrtAbsNormInvMemSubring
-import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 open NumberField IsDedekindDomain
 

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusPointOverFractionField
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT
 set_option maxHeartbeats 1000000 in

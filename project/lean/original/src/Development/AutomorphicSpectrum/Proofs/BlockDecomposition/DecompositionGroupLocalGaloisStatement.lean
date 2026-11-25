@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DecompositionGroupLocalGalois
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNormalised
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAlgHomMulEquivDec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPowCharPowEqSelf

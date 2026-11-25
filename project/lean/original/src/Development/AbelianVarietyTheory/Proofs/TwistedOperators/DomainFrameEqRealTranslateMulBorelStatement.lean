@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DomainFrameEqRealTranslateMulBorel
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RevPosRevPos
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelThetaSpan
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsVacuaAndMultipliers

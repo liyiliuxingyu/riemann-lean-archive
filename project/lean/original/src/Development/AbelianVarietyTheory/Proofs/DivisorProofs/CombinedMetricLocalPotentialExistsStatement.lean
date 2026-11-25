@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombinedMetricLocalPotentialExists
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 open CategoryTheory AlgebraicGeometry NumberField ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
 open GlobalTheory.Cartier GlobalTheory.ProjVar GlobalTheory.TrueGeo GlobalTheory.CxPts GlobalTheory.Mean4O

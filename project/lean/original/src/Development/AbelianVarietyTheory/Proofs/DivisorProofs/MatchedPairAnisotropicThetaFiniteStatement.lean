@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairAnisotropicThetaFinite
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectAverageIndicatorLowerBound
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactSpaceAxis
 open MeasureTheory Filter Topology GlobalTheory.ResLine
 open scoped ENNReal

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompLawsTowerBound
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoRead
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall

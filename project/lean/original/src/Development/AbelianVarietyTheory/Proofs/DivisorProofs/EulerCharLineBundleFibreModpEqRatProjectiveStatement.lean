@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EulerCharLineBundleFibreModpEqRatProjective
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemChart
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

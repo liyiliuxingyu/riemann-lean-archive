@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingLocalMeasurable
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeEvFun
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsPowApply
 open scoped TensorProduct NNReal Matrix

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameWeilDeligneUnderIdentityRelation
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
 import CompanionTheory.EightfoldTheory.ZeroLevelTheory.LocalLanglands.Imports
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsTheRecOfIsRecLit

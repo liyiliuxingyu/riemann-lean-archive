@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesIrreducibleUnram
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.principal_series_irreducible_unram : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]

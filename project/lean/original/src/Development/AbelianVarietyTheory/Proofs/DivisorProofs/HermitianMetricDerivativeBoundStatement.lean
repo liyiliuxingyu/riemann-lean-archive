@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMetricDerivativeBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtConst
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 open GlobalTheory.MatDeriv GlobalTheory.GradedNorm Matrix

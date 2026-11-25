@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartOfTwistedMap
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationBaseChangeModels
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

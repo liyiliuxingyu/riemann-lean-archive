@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvSmulMemRationalHomLatticeScaledOfNormScale
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLsB
 
 open NumberField

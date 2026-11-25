@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PointsIntegralUniqueEmbedding
-import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes

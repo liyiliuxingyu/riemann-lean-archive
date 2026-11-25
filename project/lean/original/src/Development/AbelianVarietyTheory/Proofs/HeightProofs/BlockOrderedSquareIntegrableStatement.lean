@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable
-import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective

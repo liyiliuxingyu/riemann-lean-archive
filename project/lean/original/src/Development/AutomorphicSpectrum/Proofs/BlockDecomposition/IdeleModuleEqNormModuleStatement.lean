@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdeleModuleEqNormModule
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfE
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdeleModuleConjugationInvariantStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdeleModuleBaseChangeSqStatement

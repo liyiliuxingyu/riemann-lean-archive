@@ -1,0 +1,171 @@
+{
+  "source_commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "scope": "Selected source evidence files; the complete tree identity was checked separately in structure/structure_summary.json.",
+  "files": [
+    {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean",
+      "sha256": "54dbd62bbacc19db2294f1c41fd28663522acf498a732f9328ed2086b08b9e38",
+      "bytes": 1284
+    },
+    {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+      "sha256": "acc5c8c8ed2946c1d941a34b94cc04f900a1ec2ebdf4c430107b37073c82e914",
+      "bytes": 9100
+    },
+    {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+      "sha256": "b9ba78e313f6c7a601d87a1672429122d7f976a0afdd8bae8e4efed68a7215df",
+      "bytes": 2613
+    },
+    {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+      "sha256": "2680131c9999c7f44b5d30b410b7206e1d674f1b40165a7c58ec65700c708998",
+      "bytes": 11371
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "sha256": "f6e30ccdcad62546340f9f7ab2e3eb9078c65111127c67605fe658b5d58798cd",
+      "bytes": 5044
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+      "bytes": 1215
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/HalfPlane.lean",
+      "sha256": "6d03105a1174a42db5e15350f3def0fb5ea6fc98c24d19215bac05f4416346f7",
+      "bytes": 505
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "bytes": 1213
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+      "sha256": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd",
+      "bytes": 2933
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2",
+      "bytes": 495
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44",
+      "bytes": 433
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "bytes": 97393
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+      "sha256": "7c2e3cf200c8adb32d232bf97122dca648fd4e19de132f6d1f07f620171fa8cb",
+      "bytes": 9797
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "bytes": 6297
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "sha256": "c1d3ba89b86a5e8e29274a27baaa7766ad50e103e462d72b835d3c6615d6259e",
+      "bytes": 1674
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "bytes": 8752
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "sha256": "f29362501bf62b9b6a7eb933aa0bdf9065414ecca014cf4a9da2970d791b4928",
+      "bytes": 6400
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+      "sha256": "545f4dbcc8b67e0d001951fcad7abaa8250d335a64a6950adf5ce69fee5f30a0",
+      "bytes": 2836
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/CertificateOpenRestriction.lean",
+      "sha256": "c54e17e2de99243f6c098303c60f43f4e1ce5a5f775cf61147433785f677d308",
+      "bytes": 26685
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/OrderReduction/OrderCertificatesMultiplicityOne.lean",
+      "sha256": "f95863276a64532ddc9275c773691c8dc0a4f9de2a9186b7cb93ae3fc52b13e0",
+      "bytes": 49464
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/OrderReductionProperties.lean",
+      "sha256": "24c07e7c7cb309f52a897759c25174a3adbcc4f269c409b0149f2d6fecc90dbb",
+      "bytes": 41327
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/PrincipalizationCertificate.lean",
+      "sha256": "70e9043d68e9fa7c44d2e4400c6f2cdd63cb46844a8de21438fa70700c975a5f",
+      "bytes": 5779
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/RestrictionToOpens.lean",
+      "sha256": "af428340a01bb859219b069bb19312ad8de9d457990f9d581c0e60ac406921d6",
+      "bytes": 30440
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/SmoothOrderOneCenters.lean",
+      "sha256": "15be29f82e4822d71e8aaa34ac2cb5d015df7f708cbe53df140118e3792939b6",
+      "bytes": 20310
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/StrictTransformSmoothness.lean",
+      "sha256": "e77500b3b827d96b703c96e0661a12738aae7fd4ea9ed0046c5f01f387a48a45",
+      "bytes": 57330
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/VanishingIdealHypotheses.lean",
+      "sha256": "85cd98a467c4495363a4419b857145a9e5b09b3c5bc4887ea281ec1ccb51a690",
+      "bytes": 6468
+    },
+    {
+      "path": "project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+      "sha256": "220dcebb73fdb8b64ed86cf1a9643966e40b00d67eb1b47c9d9462c47739d9c3",
+      "bytes": 1540
+    },
+    {
+      "path": "project/lean/original/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+      "sha256": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5",
+      "bytes": 2459
+    },
+    {
+      "path": "project/lean/original/src/Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean",
+      "sha256": "0a1ea1663240f2e7e3efa8c1ce5439e5c8327a220fd47b48582f4b832fe65cc2",
+      "bytes": 10010
+    },
+    {
+      "path": "project/lean/original/src/Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+      "sha256": "7a95297aa3205b6d5e033b4352eff0bb406b4cd11cb2e0fac5722c9b4aafde54",
+      "bytes": 38030
+    },
+    {
+      "path": "project/lean/original/src/Main.lean",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "bytes": 433
+    },
+    {
+      "path": "project/lean/original/src/Statements.lean",
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "bytes": 783
+    },
+    {
+      "path": "project/lean/original/src/Supplements/Kernels/MainTheorems.lean",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "bytes": 740
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackSquareSectionsGlueOfBasis
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Glues
 open CategoryTheory AlgebraicGeometry
 set_option maxHeartbeats 1000000 in

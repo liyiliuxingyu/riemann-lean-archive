@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommutantFullOfLocalLanglands
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsEmptyOfNotAll
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AtMemAnd
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal

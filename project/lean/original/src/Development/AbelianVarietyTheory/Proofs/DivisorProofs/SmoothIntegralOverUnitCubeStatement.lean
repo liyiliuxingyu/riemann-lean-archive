@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothIntegralOverUnitCube
-import Mathlib
 open MeasureTheory Set
 open scoped ContDiff
 set_option maxHeartbeats 1000000 in

@@ -1,0 +1,312 @@
+{
+  "source_commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "scope": "Source review of the anyGeometry/geoCl construction route and explicit callers; no whole-project build or exported compiled declaration dependency graph.",
+  "circular_proof_found_in_reviewed_geometry_route": false,
+  "geometry_condition_weakening_confirmed": true,
+  "weak_condition_used_in_final_source_route": true,
+  "invalid_true_to_strong_geoOf_bridge_located": false,
+  "full_project_build_performed": false,
+  "full_kernel_dependency_closure_checked": false,
+  "findings": [
+    {
+      "id": "G1",
+      "summary": "anyGeometry is constant True; geoOf demands a positive witness, IsGeoOf and HasTrueSurf. OAt also demands LamAre, so OAt anyGeometry is not definitionally True.",
+      "evidence": [
+        "weak_and_strong_predicates",
+        "weak_and_strong_constructors"
+      ]
+    },
+    {
+      "id": "G2",
+      "summary": "GeoCl is an inductive closure with base and step. geoCl anyGeometry is always inhabitable via base trivial; recursive step is not a self-justifying cyclic proof and does not restore geoOf.",
+      "evidence": [
+        "geometry_closure"
+      ]
+    },
+    {
+      "id": "G3",
+      "summary": "The current final source route passes geoCl anyGeometry, but separately passes a CovolumeBoundOfX proof. Its stated conclusion contains an eventual L3 bound; its actual supplier is topCovolSlim2_use_alt_alt, followed by independent-looking source lemmas. Those deep lemmas have not all been semantically re-audited.",
+      "evidence": [
+        "current_route",
+        "numeric_bound_definition",
+        "numeric_bound_source",
+        "bound_supplier",
+        "bound_steps"
+      ]
+    },
+    {
+      "id": "G4",
+      "summary": "Degenerate models with True predicates, zero volumes/degrees and zero iMj are genuinely constructed. divEx_of_ox ignores its three literature-premise arguments and uses a previously constructed weak-model existence theorem; this is not by itself circular reasoning. Do not translate it as proof that a strong geoOf realisation was established.",
+      "evidence": [
+        "degenerate_models",
+        "degenerate_family",
+        "divisor_existence"
+      ]
+    }
+  ],
+  "source_reference_chain": [
+    [
+      "Main.lean:4",
+      "riemannHypothesis",
+      "rhOfAll"
+    ],
+    [
+      "Supplements/Kernels/MainTheorems.lean:9",
+      "rhOfAll",
+      "allChi"
+    ],
+    [
+      "Supplements/Kernels/MainTheorems.lean:7",
+      "allChi",
+      "UpperTheory.FinalTheorems.everyCharacter"
+    ],
+    [
+      "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10-11",
+      "UpperTheory.FinalTheorems.everyCharacter",
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+    ],
+    [
+      "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7-8",
+      "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+    ],
+    [
+      "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810-813",
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+    ],
+    [
+      "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69-73",
+      "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+    ],
+    [
+      "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:59-67",
+      "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "GlobalTheory.Mem.Top.Bl.anyGeometry"
+    ]
+  ],
+  "raw_text_counts": {
+    "anyGeometry": {
+      "files": 24,
+      "occurrences": 162
+    },
+    "word_geoOf_all_namespaces": {
+      "files": 10,
+      "occurrences": 16
+    }
+  },
+  "evidence": {
+    "weak_and_strong_predicates": {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+      "sha256": "b9ba78e313f6c7a601d87a1672429122d7f976a0afdd8bae8e4efed68a7215df",
+      "excerpts": [
+        {
+          "start": 14,
+          "end": 19,
+          "text": "abbrev GeoP : Type 1 := ∀ D : D7, Formalism.L2.Pj.Core D → DivX D → Prop\n\ndef geoOf (Q : ∀ D : D7, GlobalTheory.ShFam.KitClass D) : GeoP := fun D J X =>\n  (∃ c : ℕ, 0 < c ∧ GlobalTheory.ShFam.IsGeoOf (Q D) J c X) ∧ GlobalTheory.ShFam.Pad.HasTrueSurf X\n\ndef anyGeometry : GeoP := fun _ _ _ => True"
+        },
+        {
+          "start": 44,
+          "end": 49,
+          "text": "structure OAt (Γ : GeoP) {w : ColW B f T} {Z : w.Lt} {Wt : Set B.places.Pl} {p0 : BaseLevelRowSide (w.D Z)} (t : RowsT K w Z Wt p0)\n    (X : DivX (w.D Z)) : Type 1 where\n  geo : Γ (w.st Z).toD7 t.r.z.core.toCore X\n  lam : LamAre t.r.Z X\n\ndef OX (Γ : GeoP) : OComponent₂ := fun _ _ _ _ _ _ _ O t => OAt Γ t O.X"
+        }
+      ]
+    },
+    "geometry_closure": {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean",
+      "sha256": "54dbd62bbacc19db2294f1c41fd28663522acf498a732f9328ed2086b08b9e38",
+      "excerpts": [
+        {
+          "start": 21,
+          "end": 28,
+          "text": "inductive GeoCl (Γ : GeoP) : ∀ D : D7, Formalism.L2.Pj.Core D → DivX D → Prop\n  | base {D : D7} {J : Formalism.L2.Pj.Core D} {X : DivX D} : Γ D J X → GeoCl Γ D J X\n  | step {D : D7} (N : ∀ u, Submodule (𝓞 D.what₂.LL) (D.div.Nu u).V) (h : D.what₂.Word → ℝ)\n      {J : Formalism.L2.Pj.Core D} {X : DivX D} : GeoCl Γ D J X → GeoCl Γ (setDiv D N h) (coreS N h J) (divTr N h X)\n\ndef geoCl (Γ : GeoP) : GeoP := GeoCl Γ\n\ntheorem geoCl_of {Γ : GeoP} {D : D7} {J : Formalism.L2.Pj.Core D} {X : DivX D} (h : Γ D J X) : geoCl Γ D J X := GeoCl.base h"
+        }
+      ]
+    },
+    "weak_and_strong_constructors": {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+      "sha256": "acc5c8c8ed2946c1d941a34b94cc04f900a1ec2ebdf4c430107b37073c82e914",
+      "excerpts": [
+        {
+          "start": 152,
+          "end": 161,
+          "text": "theorem oAt_any (t : RowsT K w Z Wt p0) (h : R3.Lam3 t.r.Z) (X : DivX (w.D Z)) :\n    ∃ l, Nonempty (OAt anyGeometry t ((GlobalTheory.ShFam.Pad.SurfSt.of X).put (setLam X l))) := by\n  obtain ⟨cOf, h1, -⟩ := h\n  exact ⟨_, ⟨trivial, lamAre_set t.r.Z cOf (fun σ _ => overIx_of_via (fun i c => (h1 i c).2) σ) X _⟩⟩\n\ntheorem oAt_geoOf (Q) (t : RowsT K w Z Wt p0) (h : R3.Lam3 t.r.Z) {c : ℕ} (hc : 0 < c) (X : DivX (w.st Z).toD7)\n    (hX : GlobalTheory.ShFam.IsGeoOf (Q _) t.r.z.core.toCore c X) :\n    ∃ l, Nonempty (OAt (geoOf Q) t (GlobalTheory.ShFam.Pad.surfSt.put (setLam X l))) := by\n  obtain ⟨cOf, h1, -⟩ := h\n  exact ⟨_, ⟨geoOf_set hc hX _, lamAre_set t.r.Z cOf (fun σ _ => overIx_of_via (fun i c => (h1 i c).2) σ) X _⟩⟩"
+        }
+      ]
+    },
+    "current_route": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "excerpts": [
+        {
+          "start": 44,
+          "end": 45,
+          "text": "theorem nonempty_hyps_definite_side_of_closed_bound : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses → _root_.GlobalTheory.FunPr.ThetaLocalInputs → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching → _root_.GlobalTheory.CovTop.CovolumeBoundOfX → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists), (∀ cDep : ℝ, _root_.GlobalTheory.Fc.RL.LinkedAt (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep) (fun Q L => _root_.GlobalTheory.Fc.R1.SlotNormCondition Q L fun 𝒞 => Formalism.MainNotions.Closed 𝒞 fun Fm _ => _root_.GlobalTheory.NLink.BoundAtTwoThreeFamilyFonAlt Fm)) → Nonempty (_root_.GlobalTheory.Fc.HypsAlt S0.NL _root_.GlobalTheory.Fc.DefiniteSideCondition) := by\n  intro P F hA hM hX hL hN"
+        },
+        {
+          "start": 59,
+          "end": 73,
+          "text": "  have hMono := _root_.GlobalTheory.Glob.open_and_linked_of_stronger_extension_alt hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithList hL (max CF0 CF1))\n    (_root_.GlobalTheory.Mem.LiteralAutomorphy.extensionWithAtProperty hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) (GridA (max CF0 CF1))) SExt.none (geoCl anyGeometry)\n    (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1.1⟩)\n  have hOpenA := hMono.2 hOpen1\n  have hFun := hCF0 (max CF0 CF1) (le_max_left _ _) hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) SExt.none (geoCl anyGeometry)\n    (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1⟩) hOpenA\n  have hL3 := _root_.GlobalTheory.Glob.CovolRow.linked_bundles_l3_of_open_alt P.discreteSeriesCover P.harishChandraModules P.cuspRapidDecay\n    P.casselmanWallach P.rayClassFieldSt hX hL (_root_.GlobalTheory.Mem.LiteralAutomorphy.extensionWithAtProperty hL (_root_.GlobalTheory.HeightCounting.Up.extensionWithOrigin hL (max CF0 CF1)) (GridA (max CF0 CF1)))\n    SExt.none (geoCl anyGeometry) (fun _ _ _ _ _ _ _ _ _ _ _ _ _ x => ⟨x.1.1.1⟩) hOpenA\n  exact _root_.GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt P hRat hL (max CF0 CF1) (GridA (max CF0 CF1)) hEv (hN (max CF0 CF1)) hFun hL3\ntheorem every_character_of_theta_integrals_local_matching (P : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses) (F : _root_.GlobalTheory.FunPr.ThetaLocalInputs) (hA : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree)\n    (hM : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching) (hX : _root_.GlobalTheory.CovTop.CovolumeBoundOfX) (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (hV : VWin) :\n    UpperTheory.EveryCharacter :=\n  _root_.UpperTheory.Top.every_character_of_green_v_win (GlobalTheory.GreenBridge.green_of_regular P.greenRegularCharacters) hV\n    (_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound P F hA hM hX hL fun cDep => _root_.UpperTheory.N.boundAtTwoThree_linked_of_recT P.nLink (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep))"
+        }
+      ]
+    },
+    "default_parameters": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "sha256": "c1d3ba89b86a5e8e29274a27baaa7766ad50e103e462d72b835d3c6615d6259e",
+      "excerpts": [
+        {
+          "start": 20,
+          "end": 21,
+          "text": "@[reducible] def parametersOfDependence (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (cDep : ℝ) : _root_.GlobalTheory.Mem.Top.Bl.Parameters hL :=\n  _root_.GlobalTheory.Mem.Top.Bl.parametersOfExtension (_root_.GlobalTheory.HeightCounting.Up.extensionWithList hL cDep) SExt.none (geoCl anyGeometry)"
+        }
+      ]
+    },
+    "numeric_bound_definition": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "excerpts": [
+        {
+          "start": 17,
+          "end": 19,
+          "text": "def RowsTAlt : Prop := p.PointConditions' ∧ RecTied D L\ndef EventuallyAtAllPoints {eps : ℝ} (Fm : FamP eps) (Q : ∀ (x : ℝ) (hx : Fm.x1 < x) (ι : Fm.Ix x), Pt Fm x hx ι → Prop) : Prop :=\n  ∃ x0 : ℝ, ∀ (x : ℝ) (hx : Fm.x1 < x), x0 ≤ x → ∀ (ι : Fm.Ix x) (p : Pt Fm x hx ι), _root_.GlobalTheory.CovTop.RowsTAlt p → Q x hx ι p"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "text": "def CovolumeBoundOfX : Prop := Closed FamHyp fun Fm CH =>\n  ∃ C0 : ℝ, 0 ≤ C0 ∧ _root_.GlobalTheory.CovTop.EventuallyAtAllPoints Fm fun _ _ _ p => ∀ C, C0 ≤ C → (p.S false).L3 (p.N C CH)\ndef _root_.GlobalTheory.BigTop.CovolumeBound : Prop := Closed FamHyp fun Fm CH =>\n  ∃ C0 : ℝ, 0 ≤ C0 ∧ _root_.GlobalTheory.BigTop.EventuallyAtPoints Fm fun _ _ _ p => ∀ C, C0 ≤ C → (p.S false).L3 (p.N C CH)"
+        }
+      ]
+    },
+    "numeric_bound_source": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "excerpts": [
+        {
+          "start": 810,
+          "end": 813,
+          "text": "theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) (hV : UpperTheory.Top.VWin) : UpperTheory.EveryCharacter :=\n  _root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching (_root_.UpperTheory.LiteratureTheorems.published_results_eigen O) (_root_.UpperTheory.LiteratureTheorems.published_results_first O) (_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).1 (_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).2\n    (_root_.SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt (_root_.UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature O) (_root_.UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature O) PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright (_root_.UpperTheory.LiteratureTheorems.fargues_exact_of_literature O) (_root_.UpperTheory.LiteratureTheorems.zarhin_statement O) (_root_.UpperTheory.LiteratureTheorems.nef_rr_of_literature O) (_root_.UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature O) (_root_.UpperTheory.LiteratureTheorems.toroidal_for_fan_ks_of_literature O) (_root_.UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature O) (_root_.UpperTheory.LiteratureTheorems.point_separation_pair_of_literature O) (_root_.UpperTheory.LiteratureTheorems.ar_degree_of_literature O) (_root_.UpperTheory.LiteratureTheorems.published_results_arithmetic O) (_root_.UpperTheory.LiteratureTheorems.grothendieck_deformation_of_literature O))\n    (_root_.UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature O) hV"
+        }
+      ]
+    },
+    "bound_supplier": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+      "sha256": "545f4dbcc8b67e0d001951fcad7abaa8250d335a64a6950adf5ce69fee5f30a0",
+      "excerpts": [
+        {
+          "start": 16,
+          "end": 22,
+          "text": "theorem topCovolSlim2_use_alt_alt : GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero → GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv → PositivityTheory.MbHsUse.HSUse → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement → HT.FarguesExact → GR.ZarhinStatement → Pub.NefRR → GlobalTheory.Published.SiegelToroidalIntegral → GlobalTheory.Published.ToroidalForFanKS → GlobalTheory.Published.SemiAbelianLieSeminegative → GlobalTheory.Published.PointSeparationPair → GlobalTheory.Published.ArDegree → _root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems → GlobalTheory.Published.GrothendieckDeformation → _root_.GlobalTheory.CovTop.CovolumeBoundOfX :=\n  fun h₁ h₂ hPL hU hBig hFar hZar hRR hS hK hN hSep hDeg hP hGD =>\n    have hX : GlobalTheory.CovTop.HypothesesX := ⟨hK, hN, GlobalTheory.GreenBridge.green_of_regular GlobalTheory.greenRegularCharacters_holds, hSep, _root_.FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula hP⟩\n    have hF := PositivityTheory.Prw.toroidalChartsForFan_of hK\n    have hH : GlobalTheory.CovHt.HypothesesH := ⟨hS, hF, GlobalTheory.Published.toroidalCharts_of_siegel_of_forFan hS hF, hDeg⟩\n    _root_.SelfIntersectionVolumeEstimates.topCovolG_alt_alt ⟨_root_.ChowFormHeightComparison₂.chow_form_height_comparison, _root_.PositivityTheory.Xj7N.small_sections_injective (GlobalTheory.CompanionTheory.Ar.Rec.exists_nonvanishing_of_toroidal hH.sieg hX.ks)⟩ hX hP hH hGD ⟨hP.q6, hP.q8, hP.q13, hP.q7, hP.q10, GlobalTheory.Published.chowFormIntExists_holds, ChowFormCompatibility.chow_form_hyperplane_section, hP.q12⟩\n      (PositivityTheory.HtPt.Ah.deep_slim_use h₁ h₂ hPL hU hBig hFar hZar hRR)"
+        }
+      ]
+    },
+    "bound_steps": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "sha256": "f29362501bf62b9b6a7eb933aa0bdf9065414ecca014cf4a9da2970d791b4928",
+      "excerpts": [
+        {
+          "start": 39,
+          "end": 58,
+          "text": "theorem topCovolG_alt_alt : _root_.SelfIntersectionVolumeEstimates.VolumeEstimateHypotheses → GlobalTheory.CovTop.HypothesesX → _root_.GlobalTheory.CovTop.PublishedHodgeBundleTheorems → GlobalTheory.CovHt.HypothesesH → GlobalTheory.Published.GrothendieckDeformation → GlobalTheory.HSCore.Quoted → GlobalTheory.CompanionTheory.Ar.Plug.DeepStR → _root_.GlobalTheory.CovTop.CovolumeBoundOfX :=\n  by\n  intro hSB hX hP hH hGD hQ hD\n  have hS := hH.sieg\n  have hK := hX.ks\n  have hN := hX.lie\n  have gram := _root_.GlobalTheory.T.covering_gram_of_prints hP\n  have size := _root_.GlobalTheory.T.cov_size_bound\n  have meas := _root_.GlobalTheory.T.covering_meas_of_prints hP\n  have anc := _root_.GlobalTheory.T.anchor_bound\n  have dex := _root_.GlobalTheory.T.covering_deepEx_of_prints hP\n  have dg := _root_.GlobalTheory.T.deepGood_of_toroidal_and_semiabelian hP hGD hQ hS hK hN\n  have fd := _root_.GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints hP\n  have deg := _root_.GlobalTheory.T.coverDegree_of_grothendieck_deformation hX hP hS hK hGD hQ hN dg size fd\n  have sh := _root_.GlobalTheory.T.share_of_deep_good_size_flat_deg_cover_degree hX hP hS hK hGD hQ hN dg size fd deg\n  have ht := _root_.SelfIntersectionVolumeEstimates.height_lower_bound_general_alt hSB hX hGD hQ hP hH hD dg size deg fd\n  have hs := _root_.GlobalTheory.T.coverHeightSum_of_flatDeg_coverDegree_share hX hP hGD hQ hS hK hN dg size fd deg sh\n  have ul := _root_.GlobalTheory.T.uniform_lower_bound_of_sums' dg size deg sh ht hs (_root_.GlobalTheory.T.sum_c_of_deep_good dg)\n  have low := _root_.GlobalTheory.T.liftLowBound_of_cover_estimates size (_root_.GlobalTheory.T.lowDef_of_gram_of_anchor hP gram anc) dex dg (_root_.GlobalTheory.T.covering_ring_of_prints_gram_deepGood hP gram dg) (_root_.GlobalTheory.T.covering_maps_of_gram_deep_size_flatDeg hP hGD hQ hS hK hN gram dg size fd) (_root_.GlobalTheory.T.coverRank_of_coverDegree_and_share hX hP hGD hQ hS hK hN dg size fd deg sh) (_root_.GlobalTheory.T.covering_gmin_of_prints_gram_deep_size hP gram dg size) (_root_.GlobalTheory.T.flat_of_prints_deepGood_flatDeg_anchor hP dg fd anc) ul\n  exact _root_.GlobalTheory.T.covolX_of_truncation_badSet_lambda_lowBound gram (_root_.GlobalTheory.T.lift_recursion_of_gram_bound gram) (_root_.GlobalTheory.T.liftTruncation_of_prints hP) (_root_.GlobalTheory.T.liftBadSet_of_deep_size_flatDeg_share hX hP hGD hQ hS hK hN hX.green gram dex dg size fd deg sh) (_root_.GlobalTheory.T.liftLambdaBound_of_gram_meas hP gram meas) size (_root_.GlobalTheory.T.coreLe_of_gram_meas_liftRational gram meas (_root_.GlobalTheory.T.liftRational_of_prints hP)) low"
+        }
+      ]
+    },
+    "degenerate_models": {
+      "path": "project/lean/original/src/Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+      "sha256": "7a95297aa3205b6d5e033b4352eff0bb406b4cd11cb2e0fac5722c9b4aafde54",
+      "excerpts": [
+        {
+          "start": 241,
+          "end": 306,
+          "text": "@[reducible] def geoDegenerate (F : Type) [Field F] [NumberField F] [StarRing F] (Tau : Type) [Fintype Tau] : DV.Geo F where\n  Var := ℕ\n  dim := fun N => Formalism.DegreeFormula.dimFl Tau N\n  Fn := fun _ => F\n  fnField := fun _ => inferInstanceAs (Field F)\n  fnAlg := fun _ => inferInstanceAs (Algebra F F)\n  Dv := fun N => Tau → Fin N → ℤ\n  dvGrp := fun _ => inferInstance\n  Eff := fun _ _ => True\n  eff_zero := fun _ => trivial\n  eff_add := fun _ _ _ _ _ => trivial\n  H0 := fun _ _ => ⊤\n  degreeZeroCohomology_finiteDimensional := fun _ _ => inferInstance\n  mul_mem_riemannRochSpace_add := fun _ _ _ _ _ _ _ => Submodule.mem_top\n  riemannRoch_mono := fun _ _ _ _ => le_refl _\n  KY := fun _ => 0\n  Cl := fun _ => PUnit\n  properCl := fun _ _ => True\n  subCl := fun _ _ _ => True\n  supp := fun _ _ => PUnit.unit\n  inter := fun N v => if h : 0 < Formalism.DegreeFormula.dimFl Tau N then flagDegZ Tau N (v ⟨0, h⟩) else flagDegZ Tau N 0\n  nef := fun _ _ => True\n  big := fun _ _ => True\n  bpf := fun _ _ _ => True\n  phiBir := fun _ _ _ => True\n  phiNoContr := fun _ _ _ _ => True\n  vanishOn := fun _ _ _ _ => True\n  hdim := fun _ _ _ => 0\n  pts := fun _ _ => PUnit\n  ptsMeas := fun _ _ => ⊤\n  vol := fun _ _ => 0\n  FnC := fun _ _ => ℂ\n  fnCRing := fun _ _ => inferInstanceAs (CommRing ℂ)\n  fnCAlg := fun _ _ => inferInstanceAs (Algebra ℂ ℂ)\n  cx := fun _ σ => σ\n  cx_smul := fun _ σ a f => by\n    show σ (a * f) = σ a * σ f\n    exact map_mul σ a f\n  Met := fun _ _ _ => PUnit\n  mAdd := fun _ _ _ _ _ _ => PUnit.unit\n  mPow := fun _ _ _ _ _ => PUnit.unit\n  fsMet := by intros; exact PUnit.unit\n  pn := fun _ _ _ _ _ _ => 0\n  pnK := fun _ _ _ _ _ _ => 0\n  mSmooth := fun _ _ _ _ => True\n  mPsh := fun _ _ _ _ _ => True\n  redZero := fun _ _ _ _ _ => True\n  agreeOn := fun _ _ _ _ _ _ => True\n  resNorm := by intros; exact 0\n  Adl := fun N => Tau → Fin N → ℤ\n  ofW := fun _ L _ _ => L\n  twist := fun _ L _ _ => L\n  arTop := fun _ _ => 0\n  arVol := fun _ _ => 0\n  nefA := fun _ _ => True\n  supInf := fun _ _ _ _ _ => 0\n  supFin := fun _ _ _ _ _ => 0\n  cutGood := by intros; exact True\n  cutHt := by intros; exact 0\n  cutOrd := by intros; exact 0\n  resFull := by intros; exact True\n  resDeg := by intros; exact 0\n  supInf_ofW := by intros; simp\n  supInf_twist := by intros; simp\n  supFin_twist := by intros; simp\n  regOn := fun _ _ _ _ _ => True"
+        },
+        {
+          "start": 829,
+          "end": 861,
+          "text": "def divXFl : DivX D :=\n  { X0 with\n    geo := geoDegenerate D.what₂.LL D.what₂.Tau\n    Lev := Unit\n    levPr := fun _ => Finset.univ.image D.host.g\n    shv := fun S _ => shimXFl D jC (recN D S) (recJ D S) (recJ_pos D S) (recJ_lt D S)\n    shv_N := fun S _ h => by show recN D S = _; unfold recN; rw [if_pos h]\n    shv_lev := fun _ _ => rfl\n    PlP := fun p _ => PlL D p\n    plpFin := fun p _ => finPl D p\n    plpNe := fun p _ => plL_ne D p\n    wtP := fun p _ => wtL D p\n    divisorWeight_nonneg := fun p _ => wtL_nonneg D p\n    divisorWeight_sum := fun p _ => wtL_sum D p\n    plP := fun p _ => Formalism.BasicNotions.Examples₂.PlOver.plLEquiv D p\n    divisorWeight_def := fun p _ la => Formalism.BasicNotions.Examples₂.PlOver.wtLog_eq D p la\n    jC := fun p _ => jC p\n    Mp := fun _ _ _ _ _ => PUnit\n    md := fun S _ p _ la _ => mdlJunk D p (jC p la) (recN D S) (recJ D S) (recJ_lt D S).le\n    phiFr_unram := fun _ _ _ _ _ _ => rfl\n    CurveM := fun _ _ _ _ _ _ => PUnit\n    degM := fun _ _ _ _ _ _ _ _ => 0\n    htMdl := fun _ _ _ _ _ => PUnit.unit\n    htCurve := fun _ _ _ _ => Equiv.refl _\n    htCurve_deg := fun _ _ _ _ _ => rfl\n    Comp := fun _ => PUnit\n    compFin := fun _ => inferInstance\n    degHH := fun _ _ _ => 0\n    Yv := fun j _ => (datW D () j).N\n    Ybd := fun _ _ => PUnit.unit\n    Lw := fun j _ => lwFl D j\n    iMj := fun j _ => (0 : (X0.MjH j).V →ₗ[D.what₂.LL] D.what₂.LL)\n    iMj_mem := fun _ _ _ => Submodule.mem_top }"
+        }
+      ]
+    },
+    "degenerate_family": {
+      "path": "project/lean/original/src/Formalism/LocalToGlobal/LatticeGeometry/GeoTiedP.lean",
+      "sha256": "0a1ea1663240f2e7e3efa8c1ce5439e5c8327a220fd47b48582f4b832fe65cc2",
+      "excerpts": [
+        {
+          "start": 152,
+          "end": 164,
+          "text": "def famFlJ (jc : ∀ (p : ℕ) [Fact p.Prime], PlL D p → (DV.KW p →+* ℂ)) (KO : Type) [Field KO] [NumberField KO]\n    (eO : 𝓞 KO ≃+* D.what₂.O) (kL : KO →+* D.what₂.LL) (kL_eO : ∀ x : 𝓞 KO, kL (x : KO) = D.what₂.OtoLL (eO x)) :\n    ShimFam D (geoDegenerate D.what₂.LL D.what₂.Tau) PUnit where\n  levPr := fun _ => Finset.univ.image D.host.g\n  levPr_prime := fun _ p hp => by\n    obtain ⟨i, _, rfl⟩ := Finset.mem_image.1 hp\n    exact D.host.g_prime i\n  κg := PUnit.unit\n  levPr_κg := rfl\n  jC := jc\n  ng := ng1\n  U := fun w => shimUFl D jc w\n  forms := formsFl D KO eO kL kL_eO _ _ _ (fun _ _ => true)"
+        }
+      ]
+    },
+    "divisor_existence": {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+      "sha256": "2680131c9999c7f44b5d30b410b7206e1d674f1b40165a7c58ec65700c708998",
+      "excerpts": [
+        {
+          "start": 155,
+          "end": 166,
+          "text": "theorem geoOver_stages (X : Stages) (X₀ : DivX X.toD7) : GeoOver (fun _ => True) X₀ := by\n  let D := X.toD7\n  let eO : 𝓞 X.B.Ks ≃+* D.what₂.O := RingEquiv.refl _\n  let kL : X.B.Ks →+* D.what₂.LL := X.B.Ks.val.toRingHom\n  have hk : ∀ x : 𝓞 X.B.Ks, kL (x : X.B.Ks) = D.what₂.OtoLL (eO x) := fun _ => rfl\n  let jc : ∀ (p : ℕ) [Fact p.Prime], PlL D p → (DV.KW p →+* ℂ) :=\n    fun p _ la => Classical.choose (GlobalTheory.WittFracPlace.exists_jcPin D p la)\n  have hjc : ComplexEmbeddingsCompatible jc := GlobalTheory.ShFam.PinPlace.pinned_tiedFor D jc\n    (fun p _ la => Classical.choose_spec (GlobalTheory.WittFracPlace.exists_jcPin D p la))\n  refine ⟨divXFl D jc X₀, fun _ _ => True, ⟨divXFl D jc X₀, (divXFl D jc X₀).iMj, (divXFl D jc X₀).iMj_mem, rfl⟩,\n    ⟨famFlJ D jc X.B.Ks eO kL hk, fun p _ => Equiv.refl _, fun _ _ _ => Equiv.refl _, tiedX_fl D jc X₀, hjc,\n      fun _ _ _ _ _ => trivial, isoInv_famFlJ D jc X.B.Ks eO kL hk, levInTie_famFlJ D jc X.B.Ks eO kL hk⟩, trivial⟩"
+        },
+        {
+          "start": 178,
+          "end": 191,
+          "text": "theorem exists_divT {𝒮 : Slots} {K : Ctx} (w : ColW B f T) (pin : ColPin w) (Z : w.Lt) (l : Lv4 𝒮 K w Z) :\n    ∃ Y : DivX (w.D Z), Nonempty (DivT l.n Y) ∧ MjAre l.what₂.r.Z Y ∧ (∀ σ, Y.kapR σ = kapSharp (w.D Z)) ∧\n      LamAre l.what₂.r.Z Y := by\n  have hp : GlobalTheory.Mem.HD.TupPins l.n.tp := tupPins_of_muIsW (w.st Z) f T l.Wt w.I.xi l.what₂.mu l.n.tp l.n.xi\n  let X₁ := x0 l.what₂.r.Z l.what₂.r.z.pins l.what₂.r.intersectionNumber_baseChange\n  let X₂ := GlobalTheory.Mem.HD.ReQ.reQ l.n.tp hp w.I.sel pin.above X₁\n  obtain ⟨X, inK, ⟨Xg, iM, hiM, rfl⟩, hG, -⟩ := geoOver_stages (w.st Z) X₂\n  let c := GlobalTheory.Mem.HD.ReQ.reducedDivisorCharacter l.n.tp hp w.I.sel pin.above X₁\n  obtain ⟨h1, h2⟩ := GlobalTheory.Mem.HD.ReQ.reLoc l.n.tp hp w.I.sel pin.above X₁\n  let chr : DivisorCharacterCompatibility (w.D Z) (TC.cf w.I w.l Z) _ l.n.tp (GlobalTheory.GeoGraft.graft Xg X₂ iM hiM) := ⟨c.Qp_iff, c.eQPl, c.qv_eq⟩\n  refine ⟨GlobalTheory.GeoGraft.graft Xg X₂ iM hiM,\n    ⟨{ Qp := qpIs_qpSet w pin Z l.n.tp l.n.xi hp, chr := chr, loc := ⟨h1, ?_⟩, inK := inK, geo := hG }⟩,\n    GlobalTheory.Mem.R3.exists_mjHTie l.what₂.r.Z _ rfl HEq.rfl, fun _ => rfl,\n    lamAre_of_eq l.what₂.r.Z l.what₂.r.intersectionNumber_baseChange _ rfl⟩"
+        },
+        {
+          "start": 204,
+          "end": 213,
+          "text": "theorem divEx_prov (𝒮 : Slots) (hOx : 𝒮.Ox = OX anyGeometry) : DivEx 𝒮 :=\n  StepW.of_all fun _ _ _ _ w _ _ hpin Z l =>\n    let ⟨Y, h1, h2, h3, h4⟩ := exists_divT w hpin.some Z l\n    ⟨Y, h1, h2, h3, fun O t hX hp ht => by\n      rw [hOx]\n      exact ⟨⟨trivial, lamAre_heq hp ht (hX ▸ h4)⟩⟩⟩\n\ntheorem divEx_of_ox : GlobalTheory.NT.RayField → GlobalTheory.Published.PrincipalIdealSt → GlobalTheory.Published.CMCurveGoodOutsidePrimeSt → ∀ 𝒮 : Slots,\n    𝒮.Ox = OX anyGeometry → DivEx 𝒮 :=\n  fun _ _ _ 𝒮 hOx => divEx_prov 𝒮 hOx"
+        }
+      ]
+    },
+    "hypotheses_structure": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+      "sha256": "7c2e3cf200c8adb32d232bf97122dca648fd4e19de132f6d1f07f620171fa8cb",
+      "excerpts": [
+        {
+          "start": 22,
+          "end": 29,
+          "text": "structure HypsAlt (N : FamClass → Prop) (DR : _root_.GlobalTheory.Fc.R1.DefiniteSideType) : Type 1 where\n  𝒜 : FamClass\n  σ : RawSel _root_.GlobalTheory.Fc.BundleCondition 𝒜\n  cT : ℝ → ℝ → ℝ\n  hEx : MinkDiv → UpperTheory.Top.ExS 𝒜 cT\n  hduty : ∀ {eps : ℝ} (Fm : FamP eps), 𝒜 Fm → Duty Fm\n  hRB : ∀ {eps : ℝ} (Fm : FamP eps) (hc : 𝒜 Fm) (x : ℝ) (hx : Fm.x1 < x) (h : ((_root_.GlobalTheory.Fc.familySelection σ) Fm hc).1 ≤ x) (i : Fm.Ix x),\n      _root_.Formalism.IndefR.IndefiniteRealisationBoundedRows ((_root_.GlobalTheory.Fc.selectionBundleOfRawSelection σ) Fm hc x hx h i)"
+        },
+        {
+          "start": 76,
+          "end": 90,
+          "text": "  hServ : _root_.GlobalTheory.Cp.SelectionServed (D3 3 𝒜) fun Fm hc => (_root_.GlobalTheory.Fc.familySelection σ) Fm (d3_a hc)\n  cIc : ℝ\n  hcI : 0 < cIc\n  irrC : Closed (D3 3 𝒜) fun Fm _ => ∃ x0 : ℝ, ∀ x ≥ x0, ∀ i : Fm.Ix x, ∃ A : Formalism.MainNotions.ArithmeticCylinders.AllRows (Fm.D x i),\n      Formalism.MainNotions.ArithmeticCylinders.LabelCountGoodInjective A ∧ Formalism.L2.GlobalTheoryTheory.AllJoin.AllJoinA A ∧\n        Formalism.L2.GlobalTheoryTheory.ConcN.CountAllRows A (Formalism.L2.GlobalTheoryTheory.ConcN.epsC cIc (Fm.D x i).R.r (Fm.D x i).R.f)\n  zL : Closed (D3 3 𝒜) fun Fm _ => ∀ hc : D3 3 𝒜 Fm, ∃ xr : ℝ, ∀ x (hx : Fm.x1 < x) (h : ((_root_.GlobalTheory.Fc.familySelection σ) Fm (d3_a hc)).1 ≤ x), xr ≤ x →\n      ∀ (i : Fm.Ix x) (k : Fin (Fm.D x i).R.m),\n        Function.Surjective (Formalism.L2.DIV.lPrj (Fm.D x i) ((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.A3.A ((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.P0\n          ((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.ψ0 (((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.A3.fam3.toSub2 ((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.Zs) k\n          ((_root_.GlobalTheory.Fc.baseLevelChoiceOfRawSelection σ) Fm (d3_a hc) x hx h i).1.A3.A.μ0).mulVec\n  tie : Closed (D3 3 𝒜) fun Fm _ => RealPlaceSecondLayerConditions Fm\n  hU : ∀ D, MassRatioUnderVolume D\n  hG : ∀ D, GenusMassVolumes.GenusMassAt D 2\n  nRest : N (D3 3 𝒜)"
+        }
+      ]
+    },
+    "final_entry": {
+      "path": "project/lean/original/src/Main.lean",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "excerpts": [
+        {
+          "start": 1,
+          "end": 12,
+          "text": "import Statements\nimport Supplements.Kernels.MainTheoremsAll\n\ntheorem riemannHypothesis : RiemannHypothesis := rhOfAll\n\ntheorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine := rhOfAll\n\ntheorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf := allChi\n\ntheorem LFunction_eq_zero_re : DirichletLZerosOnLine := claimAll.2.1\n\ntheorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine := critAll"
+        }
+      ]
+    },
+    "final_alias": {
+      "path": "project/lean/original/src/Supplements/Kernels/MainTheorems.lean",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "excerpts": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "theorem allChi : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter\n\ntheorem rhOfAll : RiemannHypothesis := Formalism.VW.rh_of_every allChi"
+        }
+      ]
+    },
+    "final_conclusion": {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "excerpts": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "theorem UpperTheory.FinalTheorems.everyCharacter_of_row (h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc) : UpperTheory.EveryCharacter :=\n  UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin ⟨h, UpperTheory.Zero.LLC.recTExists, h⟩ (UpperTheory.One.vwin_of_row h)\n\ntheorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=\n  UpperTheory.FinalTheorems.everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter\n\ntheorem UpperTheory.FinalTheorems.riemannHypothesis : RiemannHypothesis :=\n  UpperTheory.riemannHypothesis_of_everyCharacter UpperTheory.FinalTheorems.everyCharacter"
+        }
+      ]
+    }
+  }
+}

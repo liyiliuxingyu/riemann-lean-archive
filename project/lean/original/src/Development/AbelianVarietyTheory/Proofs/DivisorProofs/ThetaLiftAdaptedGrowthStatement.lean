@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftAdaptedGrowth
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsLeSup
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

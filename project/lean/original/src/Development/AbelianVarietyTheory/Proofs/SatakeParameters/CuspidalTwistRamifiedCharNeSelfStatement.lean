@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalTwistRamifiedCharNeSelf
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 open NumberField IsDedekindDomain Formalism.L2.Host GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

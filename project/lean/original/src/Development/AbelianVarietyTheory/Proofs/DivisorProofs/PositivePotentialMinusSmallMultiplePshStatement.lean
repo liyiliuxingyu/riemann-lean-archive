@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositivePotentialMinusSmallMultiplePsh
-import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 open ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
 set_option maxHeartbeats 1000000 in

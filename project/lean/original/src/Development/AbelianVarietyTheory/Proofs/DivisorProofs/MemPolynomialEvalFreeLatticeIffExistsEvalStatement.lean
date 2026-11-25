@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemPolynomialEvalFreeLatticeIffExistsEval
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.QuotientEigenDifference
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.MultiplicationKernelIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAddValuationIntegerRingNormalizedIff

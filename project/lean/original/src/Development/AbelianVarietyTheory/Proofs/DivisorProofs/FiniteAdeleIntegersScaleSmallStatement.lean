@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdeleIntegersScaleSmall
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombineApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchPartFinIncl
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FundamentalEquivalence.FundamentalContinuity.AdelicIsomorphismStatement

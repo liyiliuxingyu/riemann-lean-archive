@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetWEqNormSqDetOneAddI
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousBlkM
 open MeasureTheory Matrix

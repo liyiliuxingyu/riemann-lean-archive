@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualLatFiniteFree
-import Mathlib
 import Formalism.WachLatticeTwists.LatticeDualFibres.StatDualFibreLattice
 open Formalism.RepresentationBoundsCohomology.LOC
 set_option maxHeartbeats 1000000 in

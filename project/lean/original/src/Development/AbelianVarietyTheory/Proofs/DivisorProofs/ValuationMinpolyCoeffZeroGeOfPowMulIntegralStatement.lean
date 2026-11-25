@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationMinpolyCoeffZeroGeOfPowMulIntegral
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 import Formalism.PairingDivisors.StatementH
 open NumberField Polynomial IsDedekindDomain

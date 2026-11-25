@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDoubleCosetsDefiniteUnitaryMaximalLevel
-import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 open NumberField
 set_option maxHeartbeats 1000000 in

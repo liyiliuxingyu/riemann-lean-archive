@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExactFunctorEquivariantChain
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsBaseEqChain
 import Development.AbelianVarietyTheory.Definitions.Divisors.FaithfulSMulAlgClosure
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf

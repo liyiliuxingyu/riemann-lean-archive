@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalDualEqAddSpan
-import Mathlib
 import Formalism.LocalRingCardinality.DataLevel
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.UG Matrix

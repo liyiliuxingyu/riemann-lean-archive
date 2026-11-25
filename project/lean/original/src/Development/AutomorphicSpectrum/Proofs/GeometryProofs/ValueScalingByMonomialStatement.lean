@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueScalingByMonomial
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemPtsOverOfMemMcPts
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneMemChartLatNm

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordBundleIsoFamilyIffLocallyTrivialTranslati
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcR
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjRestrictSnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDeRhamPoincareDualityOfCubeDual

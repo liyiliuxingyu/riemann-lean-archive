@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CochainFrameExtendsIntegrally
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCochFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 open AlgebraicGeometry CategoryTheory Limits NumberField MonoidalCategory CartesianMonoidalCategory MonObj Matrix Topology

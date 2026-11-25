@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.E0ReadOfEigenLabeling
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoreEq
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff

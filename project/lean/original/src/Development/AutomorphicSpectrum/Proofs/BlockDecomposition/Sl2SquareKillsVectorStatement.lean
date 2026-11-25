@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Sl2SquareKillsVector
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
 open Matrix Finset
 open scoped InnerProductSpace

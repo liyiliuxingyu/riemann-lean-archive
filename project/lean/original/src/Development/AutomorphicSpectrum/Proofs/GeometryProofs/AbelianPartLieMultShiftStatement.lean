@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartLieMultShift
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieMultIffExistsFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel

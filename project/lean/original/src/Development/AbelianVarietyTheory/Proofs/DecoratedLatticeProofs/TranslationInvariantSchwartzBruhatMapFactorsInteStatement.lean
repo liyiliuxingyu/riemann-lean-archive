@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TranslationInvariantSchwartzBruhatMapFactorsInte
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 open MeasureTheory ValuativeRel GlobalTheory.SplitWeil
 set_option maxHeartbeats 1000000 in

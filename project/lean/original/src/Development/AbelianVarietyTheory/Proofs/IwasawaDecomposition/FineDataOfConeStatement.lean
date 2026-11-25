@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FineDataOfCone
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor

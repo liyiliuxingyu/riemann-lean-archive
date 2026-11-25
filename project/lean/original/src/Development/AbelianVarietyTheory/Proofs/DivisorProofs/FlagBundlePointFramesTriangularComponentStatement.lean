@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundlePointFramesTriangularComponent
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothOfAlgClosedUnif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesExist

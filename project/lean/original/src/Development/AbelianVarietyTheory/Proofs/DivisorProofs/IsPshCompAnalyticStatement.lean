@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPshCompAnalytic
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.QuasiPlurisubharmonic
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExt
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll

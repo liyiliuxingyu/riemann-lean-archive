@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimGenericOpen
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartTrdegEqRelDim
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemCartanDoubleCosetOfLatticeBetweenUniformizer
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact

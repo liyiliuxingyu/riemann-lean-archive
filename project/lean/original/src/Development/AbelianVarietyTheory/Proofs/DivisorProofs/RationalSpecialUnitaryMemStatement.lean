@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSpecialUnitaryMem
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarProd
 open Formalism.BasicNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix Filter Topology
 open scoped TensorProduct ENNReal

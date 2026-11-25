@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BalancedFormCellMultiplicityPos
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultCellsAmong
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfToRealRel

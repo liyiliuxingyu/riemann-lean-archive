@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HermitianIntegralVectorsPairing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallDvdPow

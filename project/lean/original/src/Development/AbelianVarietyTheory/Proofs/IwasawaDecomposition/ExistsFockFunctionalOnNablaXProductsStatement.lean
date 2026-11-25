@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFockFunctionalOnNablaXProducts
-import Mathlib
 import Formalism.UnipotentAdelicQuotients.WeylLatDual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualWeylEqSpanColProd
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe

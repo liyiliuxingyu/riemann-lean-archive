@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScoreRigidityPermEqOne
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TZero
 open Finset GlobalTheory.CompanionTheory.CoefId
 set_option maxHeartbeats 1000000 in

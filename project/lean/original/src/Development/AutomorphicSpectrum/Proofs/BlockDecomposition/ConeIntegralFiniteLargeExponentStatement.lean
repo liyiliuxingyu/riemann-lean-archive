@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeIntegralFiniteLargeExponent
-import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.RegularClassTraces.RegClassFin
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore

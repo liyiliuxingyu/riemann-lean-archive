@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimePrimesNotOverBadPrimePlace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelNotMemRowSG

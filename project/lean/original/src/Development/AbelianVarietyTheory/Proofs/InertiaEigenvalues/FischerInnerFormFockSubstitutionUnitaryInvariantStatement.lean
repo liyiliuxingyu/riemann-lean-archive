@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FischerInnerFormFockSubstitutionUnitaryInvariant
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FisSelfReNonneg
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TranslateMemCoefLatFn
 open Formalism.BasicNotions Formalism.IndefR.Datum Formalism.IndefR.Links

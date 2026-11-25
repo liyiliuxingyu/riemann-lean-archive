@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteAdeleOfSplitPlacesIdempotentSum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RedMFrMapAdjZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatOEqHatA
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevel

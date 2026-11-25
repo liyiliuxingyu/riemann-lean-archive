@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JHypUnipotentTorusEquivariance
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnifConst
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedValuationParitySignCharacterKernelNormStatement

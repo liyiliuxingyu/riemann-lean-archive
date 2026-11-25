@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIndexPreservedByAction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsTateZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFormCongrOfEventuallyEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelActionPreservesFlatForm

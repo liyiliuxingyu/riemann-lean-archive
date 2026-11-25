@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MongeAmpereDensityBound
-import Mathlib
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 open ReciprocityTheory.AnForm
 set_option maxHeartbeats 1000000 in

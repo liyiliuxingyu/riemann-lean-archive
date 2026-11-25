@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiamondMatrixMulCommModGamma1CapGamma0
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSet
 open scoped MatrixGroups TensorProduct

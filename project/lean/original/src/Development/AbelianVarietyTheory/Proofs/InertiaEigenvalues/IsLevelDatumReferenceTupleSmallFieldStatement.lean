@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLevelDatumReferenceTupleSmallField
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRatScalarMulIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsScaleOfChar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjFunBaseRoot

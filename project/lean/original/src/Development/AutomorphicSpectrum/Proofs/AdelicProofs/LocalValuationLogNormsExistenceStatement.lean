@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocalValuationLogNormsExistence
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 open NumberField IsDedekindDomain GlobalTheory.CompanionTheory.Ar.Fl

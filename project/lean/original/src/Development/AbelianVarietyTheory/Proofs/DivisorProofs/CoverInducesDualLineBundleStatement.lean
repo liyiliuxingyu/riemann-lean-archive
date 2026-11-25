@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverInducesDualLineBundle
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegFlagged
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleSectionLiftsMetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineBundleInducedArith

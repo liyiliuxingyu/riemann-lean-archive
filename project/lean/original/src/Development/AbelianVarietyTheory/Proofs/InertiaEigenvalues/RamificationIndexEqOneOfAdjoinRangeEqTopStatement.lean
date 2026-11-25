@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RamificationIndexEqOneOfAdjoinRangeEqTop
-import Mathlib
 import GroundTheory.LocalFields.UnramifiedNormSurj
 import GroundTheory.LocalFields.UnramifiedGalois
 open ValuativeRel

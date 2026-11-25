@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinePairExtensionCosSqBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqOfNonneg
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

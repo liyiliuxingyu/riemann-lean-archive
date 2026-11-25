@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleLiftOfMumfordBundleLiftSqZero
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle

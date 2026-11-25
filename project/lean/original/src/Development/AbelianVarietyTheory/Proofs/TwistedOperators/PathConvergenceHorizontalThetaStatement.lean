@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PathConvergenceHorizontalTheta
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsChainPols
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RangeSndRel
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique

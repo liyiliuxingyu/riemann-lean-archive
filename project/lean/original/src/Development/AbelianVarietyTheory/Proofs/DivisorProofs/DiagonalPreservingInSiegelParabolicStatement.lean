@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalPreservingInSiegelParabolic
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalUnitaryGroupIsoGLStatement

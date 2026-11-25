@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LinearIndependentCoordinatesDenominator
-import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.GramMat

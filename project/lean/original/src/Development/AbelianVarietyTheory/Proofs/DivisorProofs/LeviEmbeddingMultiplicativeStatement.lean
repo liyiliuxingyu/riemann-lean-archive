@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingMultiplicative
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarOfIsCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatHomOfGAdSymm

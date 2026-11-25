@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardH1LevelRepFormula
-import Mathlib
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.GaloisCohomology.LocalTateDualityK
 import Formalism.WachLatticeTwists.CharacterSplitJumps.Statement

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatWachLetterRingCompletionOfDenseSaturated
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 open Formalism.BasicNotions
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordMultiplierThickeningChartSections
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartExpOn
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd

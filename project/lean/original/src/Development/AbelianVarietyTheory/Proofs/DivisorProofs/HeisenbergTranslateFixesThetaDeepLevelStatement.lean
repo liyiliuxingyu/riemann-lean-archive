@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergTranslateFixesThetaDeepLevel
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CharLem
 

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectQuotientMeasureConjugationInvariant
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SupMeas
 
 open MeasureTheory Pointwise

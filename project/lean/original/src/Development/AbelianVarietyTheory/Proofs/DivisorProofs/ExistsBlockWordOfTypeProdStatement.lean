@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockWordOfTypeProd
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 open NumberField MvPolynomial ReciprocityTheory.MultiplicativeHeights ReciprocityTheory.GeometryOfNumbersTheory

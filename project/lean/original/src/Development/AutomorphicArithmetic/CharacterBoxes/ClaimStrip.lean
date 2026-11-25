@@ -1,3 +1,4 @@
+import Formalism.GammaFactorNonvanishing.GammaFactor
 import Development.AutomorphicArithmetic.CharacterBoxes.HalfPlane
 
 open Complex
@@ -33,11 +34,8 @@ theorem prim_zero {N : ℕ} [NeZero N] (χ : DirichletCharacter ℂ N) [NeZero �
     exact absurd hp0 (factor_ne_zero _ hs0 p (Nat.prime_of_mem_primeFactors hp))
 
 theorem gamma_ne_zero {M : ℕ} [NeZero M] (φ : DirichletCharacter ℂ M) {t : ℂ} (ht : 0 < t.re) :
-    DirichletCharacter.gammaFactor φ t ≠ 0 := by
-  rcases φ.even_or_odd with hφ | hφ
-  · rw [hφ.gammaFactor_def]; exact Complex.Gammaℝ_ne_zero_of_re_pos ht
-  · rw [hφ.gammaFactor_def]
-    exact Complex.Gammaℝ_ne_zero_of_re_pos (by rw [Complex.add_re, Complex.one_re]; linarith)
+    DirichletCharacter.gammaFactor φ t ≠ 0 :=
+  Formalism.VW.gammaFactor_ne_zero φ ht
 
 theorem prim_reflect {M : ℕ} [NeZero M] (ψ : DirichletCharacter ℂ M) (hψ : ψ.IsPrimitive) {s : ℂ}
     (hs0 : 0 < s.re) (hs1 : s.re < 1) (h : DirichletCharacter.LFunction ψ s = 0) :

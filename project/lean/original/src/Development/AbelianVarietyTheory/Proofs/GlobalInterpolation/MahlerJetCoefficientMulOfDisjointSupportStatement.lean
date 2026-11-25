@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MahlerJetCoefficientMulOfDisjointSupport
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LatIntZero
 open GlobalTheory.MomN
 set_option maxHeartbeats 1000000 in

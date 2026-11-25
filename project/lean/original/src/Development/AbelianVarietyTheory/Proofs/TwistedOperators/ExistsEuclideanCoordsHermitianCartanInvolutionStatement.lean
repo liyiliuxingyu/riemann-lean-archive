@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEuclideanCoordsHermitianCartanInvolution
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FderivCompress
 open MeasureTheory Complex Matrix GlobalTheory.RealWeil GlobalTheory.Mem.Lift
 open scoped RealInnerProductSpace Real ComplexOrder

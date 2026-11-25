@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitalIntegralTensorBoundHypProof
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ConstC
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.orbitalIntegralTensorBoundHyp_proof : GlobalTheory.TypeAsm.TensC := by

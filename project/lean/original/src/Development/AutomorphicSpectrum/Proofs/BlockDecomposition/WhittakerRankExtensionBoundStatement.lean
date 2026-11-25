@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRankExtensionBound
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.UnlinkedRealize
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientRealisedBySubrepsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenericSubquotientIffWhittakerQuotientStatement

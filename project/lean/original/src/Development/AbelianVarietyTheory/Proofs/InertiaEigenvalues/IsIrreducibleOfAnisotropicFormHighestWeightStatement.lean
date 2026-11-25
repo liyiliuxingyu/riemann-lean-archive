@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleOfAnisotropicFormHighestWeight
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx

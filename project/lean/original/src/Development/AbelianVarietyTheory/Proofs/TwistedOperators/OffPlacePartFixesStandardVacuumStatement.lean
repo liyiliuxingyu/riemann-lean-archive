@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OffPlacePartFixesStandardVacuum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationGdetKapAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulMtCutPartCompl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow

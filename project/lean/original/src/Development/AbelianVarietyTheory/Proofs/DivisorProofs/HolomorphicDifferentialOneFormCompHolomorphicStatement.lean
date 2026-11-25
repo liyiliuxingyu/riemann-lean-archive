@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicDifferentialOneFormCompHolomorphic
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFormsMulClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelAtEqSumDOne

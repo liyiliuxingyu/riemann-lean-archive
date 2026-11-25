@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTwistedPlace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AtMemAnd
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoreEq

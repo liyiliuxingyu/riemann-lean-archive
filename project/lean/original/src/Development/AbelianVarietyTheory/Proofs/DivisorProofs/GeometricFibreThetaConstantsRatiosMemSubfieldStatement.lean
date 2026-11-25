@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricFibreThetaConstantsRatiosMemSubfield
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

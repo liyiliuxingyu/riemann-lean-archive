@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PowMemArithmeticSubgroupOfStabilizer
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneAddSmulVecMulVecMulVec
 open ReciprocityTheory.ChartRestriction.G.FD NumberField GlobalTheory.UnipKill
 set_option maxHeartbeats 1000000 in

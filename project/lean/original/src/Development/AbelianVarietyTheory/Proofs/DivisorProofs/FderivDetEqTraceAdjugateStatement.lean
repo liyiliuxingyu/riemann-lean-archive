@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FderivDetEqTraceAdjugate
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtConst
 open Matrix GlobalTheory.MatDeriv
 open scoped Topology

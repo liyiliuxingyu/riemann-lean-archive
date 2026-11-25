@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionalSpecializes
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel

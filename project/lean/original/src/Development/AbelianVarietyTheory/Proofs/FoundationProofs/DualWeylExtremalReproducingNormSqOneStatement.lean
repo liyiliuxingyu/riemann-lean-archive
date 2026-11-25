@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualWeylExtremalReproducingNormSqOne
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsUnitaryMulTriangular
 open GlobalTheory.DualWeyl MvPolynomial NumberField
 set_option maxHeartbeats 1000000 in

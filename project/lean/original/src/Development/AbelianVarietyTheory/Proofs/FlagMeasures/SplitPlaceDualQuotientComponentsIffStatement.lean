@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceDualQuotientComponentsIff
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Formalism.LocalToGlobal.HermitianForms.TiedStep
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G

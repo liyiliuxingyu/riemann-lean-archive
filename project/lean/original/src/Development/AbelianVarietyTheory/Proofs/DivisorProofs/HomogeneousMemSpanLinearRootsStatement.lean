@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousMemSpanLinearRoots
-import Mathlib
 import Formalism.DegreeFormula.FlagDegFormula
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.homogeneous_mem_span_linear_roots : ∀ (ι : Type) [Fintype ι] [DecidableEq ι] (N d : ℕ) (Q : MvPolynomial (ι × Fin N) ℝ), Q.IsHomogeneous d →

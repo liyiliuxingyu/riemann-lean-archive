@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobInvMulMemIner
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations GlobalTheory.BKGal GlobalTheory.Per
 set_option maxHeartbeats 1000000 in

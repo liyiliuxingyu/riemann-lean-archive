@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleAffinePolynomialCoords
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqCurve
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentPullPull
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict

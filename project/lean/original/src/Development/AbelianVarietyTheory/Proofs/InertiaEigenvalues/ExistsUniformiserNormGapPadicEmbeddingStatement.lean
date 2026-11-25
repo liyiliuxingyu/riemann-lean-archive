@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniformiserNormGapPadicEmbedding
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NatCastMemPlaceAt
 open NumberField IsDedekindDomain Formalism.L2.Pj GlobalTheory.GeoTie
 set_option maxHeartbeats 1000000 in

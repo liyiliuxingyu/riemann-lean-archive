@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckePhiFourierTransformSigmaZeroEq
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 open Complex GlobalTheory.HeckeTwo
 set_option maxHeartbeats 1000000 in

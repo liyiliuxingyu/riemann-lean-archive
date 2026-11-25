@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalDegreeMatrixCoefficientNorm
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableMulInner
 open MeasureTheory GlobalTheory.CompanionTheory.UnitaryFramesMetricPeriods GlobalTheory.CompanionTheory.RgHeA
 open scoped InnerProductSpace ComplexConjugate

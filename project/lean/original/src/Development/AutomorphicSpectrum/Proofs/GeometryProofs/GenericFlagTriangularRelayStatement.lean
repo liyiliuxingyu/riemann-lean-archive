@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagTriangularRelay
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericLuDecompositionUnique
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LuFactorsGenerateSameField

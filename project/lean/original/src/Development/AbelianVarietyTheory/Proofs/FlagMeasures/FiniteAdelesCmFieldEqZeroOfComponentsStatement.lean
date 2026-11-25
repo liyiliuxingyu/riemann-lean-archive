@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAdelesCmFieldEqZeroOfComponents
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SerFixOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteCosetsHeckeSetAtSplitPlaceOutsideLevel
 open NumberField IsDedekindDomain ReciprocityTheory.Aut

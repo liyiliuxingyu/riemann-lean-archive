@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
 import Development.AutomorphicArithmetic.LocalEmbeddings.ArchFlip

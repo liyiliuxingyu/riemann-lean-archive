@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeTorsionPointsRestrictBijective
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDefiniteDatumGoodObj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateCondCongr
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitOnInjectiveOfCommRing

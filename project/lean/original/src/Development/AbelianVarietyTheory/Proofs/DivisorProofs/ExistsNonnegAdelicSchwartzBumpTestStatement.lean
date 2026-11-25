@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonnegAdelicSchwartzBumpTest
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
 import GroundTheory.GlobalFields.Adele.Discrete

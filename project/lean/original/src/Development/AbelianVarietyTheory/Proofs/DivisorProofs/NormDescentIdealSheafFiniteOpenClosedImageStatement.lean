@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormDescentIdealSheafFiniteOpenClosedImage
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonUnitAt
 open AlgebraicGeometry CategoryTheory Limits IsLocalRing
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.LocM

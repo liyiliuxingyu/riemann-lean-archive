@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicComplementDetNonzero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsZeroOfLev
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoDatumExists
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart

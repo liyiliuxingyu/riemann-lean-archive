@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePushforwardEulerCharTwist
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteCohOfForallModification
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualPullback

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffCutoff
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousAndSmul
 open Filter Topology Set Metric MeasureTheory GlobalTheory.ChernReg
 open scoped ContDiff

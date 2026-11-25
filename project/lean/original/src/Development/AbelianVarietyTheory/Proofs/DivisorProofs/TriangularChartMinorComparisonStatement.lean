@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularChartMinorComparison
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNonarchimedeanW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFrameRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FnEquivApply

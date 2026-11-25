@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLocalLatticeIffOfFiniteAdelicCompletionMap
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatIffOfSelfDual
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv

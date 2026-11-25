@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftQMk
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConstOneMem
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.HasPresCutCocycleLocalCoefficient

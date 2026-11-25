@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitInertFactorizationUnitaryLatticeStabi
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorRationalTranslateMemThetaFunctions
 open scoped Pointwise

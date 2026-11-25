@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfTraceDualElement
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ConjugateOrderData
 open NumberField IsDedekindDomain TensorProduct GlobalTheory.CMVal GlobalTheory.IndefiniteRowSideFullHecke.DifferentConductorValuations
 open Classical

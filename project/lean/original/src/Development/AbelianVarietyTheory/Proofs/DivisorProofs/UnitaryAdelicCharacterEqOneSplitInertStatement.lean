@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicCharacterEqOneSplitInert
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 
 open NumberField MeasureTheory

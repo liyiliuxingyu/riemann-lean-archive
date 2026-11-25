@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuedTwoEqOneInertPlaceCmField
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanRhoTEqTop
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PiEqOfFinPart
 noncomputable section

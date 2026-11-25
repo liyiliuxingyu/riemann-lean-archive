@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankOneThetaTotal
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
 open GlobalTheory.CompanionTheory.ThTot
 set_option maxHeartbeats 1000000 in

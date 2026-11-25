@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenspaceDecompositionInternal
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj GlobalTheory.CompanionTheory.Ar
 set_option maxHeartbeats 1000000 in

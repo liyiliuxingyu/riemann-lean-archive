@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualMapsEqOfEqualPairings
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaSuccPow
 
 set_option autoImplicit false

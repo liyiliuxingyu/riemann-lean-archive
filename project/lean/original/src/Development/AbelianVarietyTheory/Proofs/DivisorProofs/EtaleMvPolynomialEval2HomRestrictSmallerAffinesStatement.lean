@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleMvPolynomialEval2HomRestrictSmallerAffines
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBaseFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.P22
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified

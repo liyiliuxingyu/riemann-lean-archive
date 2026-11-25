@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsConjLevelElemExponentShimura
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Klm
 open scoped MatrixGroups TensorProduct

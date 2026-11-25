@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalOrbitGLNearOne
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMulVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClopenCoset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZpowMulVec

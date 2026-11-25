@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPairSpaceLinearMapViaPartialFourier
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions

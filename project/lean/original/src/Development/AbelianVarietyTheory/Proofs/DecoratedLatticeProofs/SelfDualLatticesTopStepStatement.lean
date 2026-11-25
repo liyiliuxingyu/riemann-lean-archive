@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticesTopStep
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SymRead
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RatioOKOfRootOfUnity

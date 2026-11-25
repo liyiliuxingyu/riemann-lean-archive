@@ -1,0 +1,17 @@
+project/lean/original/src/Supplements/Kernels/MainTheorems.lean:7:theorem allChi : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean:13:def UpperTheory.EveryCharacter : Prop :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean:17:    (h : Nonempty (Hyps (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) DRS)) : UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7:theorem UpperTheory.FinalTheorems.everyCharacter_of_row (h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc) : UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10:theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean:207:import Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean:211:theorem UpperTheory.zeta_ne_zero_of_everyCharacter (h : UpperTheory.EveryCharacter) : ∀ s : ℂ, 1 / 2 < s.re → s ≠ 1 → riemannZeta s ≠ 0 := fun s hs h1 => by
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean:215:theorem UpperTheory.riemannHypothesis_of_everyCharacter (h : UpperTheory.EveryCharacter) : RiemannHypothesis := by
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean:29:import Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean:69:    UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:1:import Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:17:    (h : Nonempty (_root_.GlobalTheory.Fc.HypsAlt (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) _root_.GlobalTheory.Fc.DefiniteSideCondition)) : UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:71:    UpperTheory.EveryCharacter :=
+project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean:2:import Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
+project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean:7:theorem Formalism.VW.critLine (h : UpperTheory.EveryCharacter) (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (hχ : χ.IsPrimitive) (s : ℂ)
+project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean:25:theorem Formalism.VW.rh_of_every (h : UpperTheory.EveryCharacter) : RiemannHypothesis :=
+project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810:theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) (hV : UpperTheory.Top.VWin) : UpperTheory.EveryCharacter :=

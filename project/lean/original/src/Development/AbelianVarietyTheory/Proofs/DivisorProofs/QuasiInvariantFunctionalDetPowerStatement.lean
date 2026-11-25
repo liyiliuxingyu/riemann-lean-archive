@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiInvariantFunctionalDetPower
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsZeroOfLev
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRk
 open scoped TensorProduct NNReal Matrix

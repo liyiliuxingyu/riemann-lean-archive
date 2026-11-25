@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualLatticePairingEqInvUniformizer
-import Mathlib
 import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable
 import Formalism.GaloisCohomology.LocalTateDualityK
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FactorMemCocyclesPowQuot

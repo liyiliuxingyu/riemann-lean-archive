@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecializesOfPointLocalRingLeSeparated
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
 open CategoryTheory AlgebraicGeometry

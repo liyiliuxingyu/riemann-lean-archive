@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeckeKernelCosetFramedPoint
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTransferEquiv
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.HalfDepthValuations
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.HkSupSizedOfHkSup

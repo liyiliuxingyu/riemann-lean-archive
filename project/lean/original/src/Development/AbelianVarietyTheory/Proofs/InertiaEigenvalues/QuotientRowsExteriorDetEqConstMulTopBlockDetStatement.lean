@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientRowsExteriorDetEqConstMulTopBlockDet
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivOfNotLinearIndependent
 open Matrix Formalism.IndefR.Datum GlobalTheory.ExportSeries
 set_option maxHeartbeats 1000000 in

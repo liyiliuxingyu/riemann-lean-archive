@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeDictionaryFrameMemOpenFrames
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem

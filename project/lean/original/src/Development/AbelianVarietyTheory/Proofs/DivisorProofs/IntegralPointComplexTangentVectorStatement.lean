@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointComplexTangentVector
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DrAtNonneg
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameImageTrivialOffLevelPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTransAlt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DecoStabTrivial
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords

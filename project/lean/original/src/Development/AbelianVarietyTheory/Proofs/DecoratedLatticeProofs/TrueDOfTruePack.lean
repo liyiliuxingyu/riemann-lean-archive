@@ -26,10 +26,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.We
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LinkSPos
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TruePack
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MiPinnedWithFinIff
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TruePack
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue
 
 noncomputable section
 

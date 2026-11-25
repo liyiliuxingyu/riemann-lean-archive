@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowIdempotentAdelicLatticeModPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinMapsOfForall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksMem

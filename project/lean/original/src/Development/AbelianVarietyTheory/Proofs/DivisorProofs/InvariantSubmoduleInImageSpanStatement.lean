@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantSubmoduleInImageSpan
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLocType
 
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarishChandraTypeDualWeylModuleFockNorm
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.LocalRingCardinality.DataCoeff
 set_option maxHeartbeats 1000000 in

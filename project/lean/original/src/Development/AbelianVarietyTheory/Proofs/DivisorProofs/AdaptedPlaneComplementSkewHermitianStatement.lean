@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneComplementSkewHermitian
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 
 open scoped TensorProduct Matrix

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryTwistChainRelation
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Live
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevSph

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuleFreeOfRegularOfFreeQuotientLocal
-import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PurityFree
 open IsLocalRing

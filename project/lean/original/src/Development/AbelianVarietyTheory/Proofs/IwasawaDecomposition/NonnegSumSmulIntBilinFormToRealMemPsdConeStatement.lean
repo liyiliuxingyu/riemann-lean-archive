@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonnegSumSmulIntBilinFormToRealMemPsdCone
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SumMulEqZeroOfSumToReal
 open GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan
 set_option maxHeartbeats 1000000 in

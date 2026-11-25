@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LimitVectorMemOEAndAinf
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep

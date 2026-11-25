@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedPullbackNonvanishingOfPulledSection
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExtAlong
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsSchwartzBruhatCompactSupportNonzero
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsCovolOne
 import GroundTheory.HeightsAndTheta.Theta.AdelicFourier
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TraceGramDetNeZero

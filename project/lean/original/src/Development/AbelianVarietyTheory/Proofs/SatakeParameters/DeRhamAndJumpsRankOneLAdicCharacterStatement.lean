@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DeRhamAndJumpsRankOneLAdicCharacter
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdOfMono0L
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharAbove
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalWdSpace

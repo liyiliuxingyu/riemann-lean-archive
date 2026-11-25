@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftToCompleteDvrOfFinite
-import Mathlib
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
 open IsLocalRing
 set_option maxHeartbeats 1000000 in

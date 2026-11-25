@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvertibleTranslateSchwartzFunctional
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeIntZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarOIsAddHaar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModelEigenContinuous

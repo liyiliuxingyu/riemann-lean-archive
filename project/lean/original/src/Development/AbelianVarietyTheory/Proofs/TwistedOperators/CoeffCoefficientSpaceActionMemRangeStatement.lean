@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoeffCoefficientSpaceActionMemRange
-import Mathlib
 import Formalism.LocalToGlobal.Divisibility.CoefMod
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReprMemOfCoeff
 open Formalism.L2.DIV MvPolynomial

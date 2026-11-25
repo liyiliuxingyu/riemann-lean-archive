@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepMapSectionRange
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormSqColGrLineOfOrthogonal
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.RestrictPullbackIsoHomAppPullbackSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColSec

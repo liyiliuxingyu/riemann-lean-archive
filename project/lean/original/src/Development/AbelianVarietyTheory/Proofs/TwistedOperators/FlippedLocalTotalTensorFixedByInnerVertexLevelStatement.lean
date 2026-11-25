@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlippedLocalTotalTensorFixedByInnerVertexLevel
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsClasses
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsEqSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MovFn

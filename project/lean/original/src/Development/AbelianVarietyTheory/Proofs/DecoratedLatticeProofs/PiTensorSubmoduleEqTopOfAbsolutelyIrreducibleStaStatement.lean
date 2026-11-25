@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PiTensorSubmoduleEqTopOfAbsolutelyIrreducibleSta
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurAndTensorSubmodule
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarOfComm

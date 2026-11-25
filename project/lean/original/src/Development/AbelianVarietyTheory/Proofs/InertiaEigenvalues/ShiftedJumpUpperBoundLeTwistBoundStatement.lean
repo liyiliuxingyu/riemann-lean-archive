@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ShiftedJumpUpperBoundLeTwistBound
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemIntPts
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOfSummableFundamentalDomain
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierZeroHolds
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

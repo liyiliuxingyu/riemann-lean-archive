@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermitianFormCharPoly
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 open NumberField IsDedekindDomain Matrix Polynomial Filter Formalism.UG GlobalTheory.BCT
 open scoped Classical

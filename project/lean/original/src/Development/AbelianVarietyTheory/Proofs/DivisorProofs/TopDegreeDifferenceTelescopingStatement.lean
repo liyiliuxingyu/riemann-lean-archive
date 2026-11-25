@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopDegreeDifferenceTelescoping
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FirstChernLeviEqConstant
 open GlobalTheory.Mean4O
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingOperatorsKernelLift
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubPairRight
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsHomLocBijectiveGrSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetSum

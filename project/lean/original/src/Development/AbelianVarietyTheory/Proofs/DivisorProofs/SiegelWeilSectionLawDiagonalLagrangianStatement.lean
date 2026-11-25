@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelWeilSectionLawDiagonalLagrangian
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
 open scoped TensorProduct Matrix

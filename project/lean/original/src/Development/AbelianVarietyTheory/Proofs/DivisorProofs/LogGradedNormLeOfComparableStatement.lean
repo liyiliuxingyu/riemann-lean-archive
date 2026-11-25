@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogGradedNormLeOfComparable
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 open scoped ComplexOrder Matrix
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotOneSubIdempotentEqMul
-import Mathlib
 open scoped TensorProduct
 universe u
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameLocalTorusAction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocIdeleEqIdl
 
 open scoped TensorProduct NNReal Matrix

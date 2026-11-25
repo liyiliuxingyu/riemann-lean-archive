@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CartanExponentsNonnegMinusculeTopProduct
-import Mathlib
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsMulMinusculeTopTerm
 open IsDedekindDomain NumberField Matrix

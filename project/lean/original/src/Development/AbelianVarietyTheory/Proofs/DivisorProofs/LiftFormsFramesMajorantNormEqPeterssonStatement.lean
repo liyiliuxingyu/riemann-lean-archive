@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftFormsFramesMajorantNormEqPetersson
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 import Formalism.LocalToGlobal.IndefiniteReal.CxLemmas

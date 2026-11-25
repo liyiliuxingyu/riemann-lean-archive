@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetSeriesSummableShifted
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
 open Filter Topology
 set_option maxHeartbeats 1000000 in

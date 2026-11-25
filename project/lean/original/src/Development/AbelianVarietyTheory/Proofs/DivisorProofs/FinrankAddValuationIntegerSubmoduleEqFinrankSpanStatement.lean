@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankAddValuationIntegerSubmoduleEqFinrankSpan
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.MultiplicationKernelIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreEig
 open GlobalTheory.IndefiniteRowSideFullHecke.MultiplicationKernelIdentity GlobalTheory.HermitianPreEigenvalues Polynomial Module

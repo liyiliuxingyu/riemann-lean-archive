@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsIsoMorphismRestrictOfIsHomId
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsIsoMorphismRestrictOfLocalDominantSections
 open AlgebraicGeometry CategoryTheory Limits GlobalTheory.ZH
 set_option maxHeartbeats 1000000 in

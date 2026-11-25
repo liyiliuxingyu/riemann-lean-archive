@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTopologicalIso
-import Mathlib
 import ReciprocityTheory.Hypotheses.GalCoh
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.IsUnramifiedOutsideIffLeMaxUnramifiedOutside
 import GroundTheory.ProfiniteCohomology.ContinuousCochains

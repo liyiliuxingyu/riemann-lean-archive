@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceIntegralOfSmallAtOtherPlaces
-import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 open NumberField IsDedekindDomain Formalism.L2.Pj
 set_option maxHeartbeats 1000000 in

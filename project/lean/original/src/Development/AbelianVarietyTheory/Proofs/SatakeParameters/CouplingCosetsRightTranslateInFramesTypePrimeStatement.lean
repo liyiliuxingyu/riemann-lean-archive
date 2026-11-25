@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CouplingCosetsRightTranslateInFramesTypePrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopEqProd
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChartPointRightTranslateByLevelCoupledStep

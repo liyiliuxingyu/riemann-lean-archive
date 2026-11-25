@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CovariantVectorToFunctionFormCoeffMemRange
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReprMemOfCoeff
 open Formalism.L2.DIV MvPolynomial

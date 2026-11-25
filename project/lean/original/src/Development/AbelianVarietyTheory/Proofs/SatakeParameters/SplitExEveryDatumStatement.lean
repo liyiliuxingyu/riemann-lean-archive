@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatum
-import Mathlib
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
 open Formalism.BasicNotions NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

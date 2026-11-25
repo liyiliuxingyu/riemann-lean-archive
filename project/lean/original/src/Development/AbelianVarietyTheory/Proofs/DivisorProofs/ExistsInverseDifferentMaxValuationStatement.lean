@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInverseDifferentMaxValuation
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 open NumberField IsDedekindDomain
 open scoped Matrix

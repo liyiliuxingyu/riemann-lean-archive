@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilVacuumLatticeIndicator
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 open scoped TensorProduct NNReal Matrix

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoKernelPhiLineContinuousIntegrable
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 open NumberField Complex MeasureTheory
 

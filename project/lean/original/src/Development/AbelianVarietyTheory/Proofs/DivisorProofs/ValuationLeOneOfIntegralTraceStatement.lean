@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfIntegralTrace
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 open NumberField IsDedekindDomain GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 set_option maxHeartbeats 1000000 in

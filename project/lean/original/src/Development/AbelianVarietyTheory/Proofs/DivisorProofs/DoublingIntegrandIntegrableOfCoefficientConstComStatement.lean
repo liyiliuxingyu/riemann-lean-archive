@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingIntegrandIntegrableOfCoefficientConstCom
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModModT
 
 open NumberField MeasureTheory IsDedekindDomain UniqueFactorizationMonoid

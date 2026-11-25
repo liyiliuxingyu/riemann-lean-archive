@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneSkewIdealCoprime
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 open NumberField IsDedekindDomain GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped nonZeroDivisors

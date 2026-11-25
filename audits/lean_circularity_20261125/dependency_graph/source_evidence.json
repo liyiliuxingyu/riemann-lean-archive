@@ -1,0 +1,35 @@
+{
+  "reviewed_source_commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "files": [
+    {
+      "path": "project/tools/export_lean_bundle.py",
+      "sha256": "bb7a46ba814847638af7bcc5dc6eb79a9af1284387bedeec0f92adc7189c2edd",
+      "bytes": 23726
+    },
+    {
+      "path": "project/provenance/full_export_validation.json",
+      "sha256": "040eb8c94f91a5b61fb7659b54f0403e5eeaf928931d67a1e117c5a590090b72",
+      "bytes": 5817
+    },
+    {
+      "path": "solution_annotation_toolkit/schema/format_notes_zh.txt",
+      "sha256": "6f5815e7420350ff1c2b65436f46c4341cb22d9f9027227d34a21b975f6c00d6",
+      "bytes": 7932
+    },
+    {
+      "path": "solution_annotation_toolkit/annotation_summary.json",
+      "sha256": "785230f8fd440690b8f3c54fba44cbe0b7eac77a4e8ebb7a7067f1c7b96f59fc",
+      "bytes": 893
+    },
+    {
+      "path": "solution_annotation_toolkit/independent_verification.json",
+      "sha256": "a82c26b49b81ed4aee65714b7b9bfc84d35a361a362c5886220ba35b0d71264d",
+      "bytes": 1215
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/PrincipalizationCertificate.lean",
+      "sha256": "70e9043d68e9fa7c44d2e4400c6f2cdd63cb46844a8de21438fa70700c975a5f",
+      "bytes": 5779
+    }
+  ]
+}

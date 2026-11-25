@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice
-import Mathlib
 open scoped Matrix
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

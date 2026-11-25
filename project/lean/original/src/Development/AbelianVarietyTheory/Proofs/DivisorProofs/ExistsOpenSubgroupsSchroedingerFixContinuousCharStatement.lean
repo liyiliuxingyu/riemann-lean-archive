@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenSubgroupsSchroedingerFixContinuousChar
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedWeilDatumCMPreservesSchwartzHeisenberStatement

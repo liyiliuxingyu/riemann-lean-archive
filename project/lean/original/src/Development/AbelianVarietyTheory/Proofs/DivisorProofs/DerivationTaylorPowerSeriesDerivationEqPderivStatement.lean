@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationTaylorPowerSeriesDerivationEqPderiv
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
 open IsLocalRing GlobalTheory.FormalOrigin
 set_option maxHeartbeats 1000000 in

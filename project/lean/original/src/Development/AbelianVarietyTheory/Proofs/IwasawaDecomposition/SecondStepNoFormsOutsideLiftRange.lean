@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr

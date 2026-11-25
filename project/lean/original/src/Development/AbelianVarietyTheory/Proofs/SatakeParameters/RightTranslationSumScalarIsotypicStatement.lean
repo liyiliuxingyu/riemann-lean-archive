@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RightTranslationSumScalarIsotypic
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSpherical
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReducedFormOfLocalInputs
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodIdempotentFixesOfOnlySeriesOfLabelActs
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N
 set_option maxHeartbeats 1000000 in

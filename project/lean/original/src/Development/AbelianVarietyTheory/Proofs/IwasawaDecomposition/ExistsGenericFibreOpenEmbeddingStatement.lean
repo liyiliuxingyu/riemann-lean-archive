@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGenericFibreOpenEmbedding
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

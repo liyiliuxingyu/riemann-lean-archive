@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BallIndicatorSmallerBallsSum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WEMulNUMulTD
 open ValuativeRel
 set_option maxHeartbeats 1000000 in

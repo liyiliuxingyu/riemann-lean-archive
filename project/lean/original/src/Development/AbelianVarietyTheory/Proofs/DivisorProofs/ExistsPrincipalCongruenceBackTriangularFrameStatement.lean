@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrincipalCongruenceBackTriangularFrame
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CongruenceActionMemFrameOrbit
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionMemCuspForms
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FamilyUnifExpUnique

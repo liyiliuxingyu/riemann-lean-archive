@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCofactorTwistHighestWeight
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GlobSpecOfExists
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas

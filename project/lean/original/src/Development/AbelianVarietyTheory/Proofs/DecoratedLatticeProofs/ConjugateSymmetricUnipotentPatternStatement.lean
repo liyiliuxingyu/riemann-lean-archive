@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateSymmetricUnipotentPattern
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPatOne
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 set_option maxHeartbeats 1000000 in

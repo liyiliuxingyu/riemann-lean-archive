@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParametersSpacingAndGap
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
 import Development.AbelianVarietyTheory.Definitions.Foundations.StrictInterlaceIffDescEnum
 open Formalism.L2.Theta

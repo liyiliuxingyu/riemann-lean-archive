@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CorankSumsBoundWithExpLoss
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CollSBound
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopEvaluationThresholdZero

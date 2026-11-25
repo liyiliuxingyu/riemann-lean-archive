@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLatticeVolumeOrderData
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FibreMassEq
 open scoped Matrix NNReal ENNReal TensorProduct

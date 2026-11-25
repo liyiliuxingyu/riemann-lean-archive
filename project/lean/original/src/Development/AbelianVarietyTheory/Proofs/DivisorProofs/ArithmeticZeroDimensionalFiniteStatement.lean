@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticZeroDimensionalFinite
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
 open CategoryTheory AlgebraicGeometry GlobalTheory ReciprocityTheory.ChartRestriction.G.Geo.Tor
 

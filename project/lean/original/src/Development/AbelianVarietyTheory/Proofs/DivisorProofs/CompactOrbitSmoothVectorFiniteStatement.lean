@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOrbitSmoothVectorFinite
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeSocleOverOfSimple
 open scoped Topology
 set_option maxHeartbeats 1000000 in

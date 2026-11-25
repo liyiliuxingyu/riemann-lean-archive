@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeSectionsIsotropicCommutatorPairingPower
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeSubAFiniteFree

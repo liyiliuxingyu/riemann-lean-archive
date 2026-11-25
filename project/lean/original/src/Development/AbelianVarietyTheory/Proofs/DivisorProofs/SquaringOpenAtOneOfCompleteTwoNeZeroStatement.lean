@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneOfCompleteTwoNeZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
 open NumberField IsDedekindDomain GlobalTheory.QSA
 open scoped Quaternion Topology

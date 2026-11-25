@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubharmonicLogConvexityQuotient
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.EventuallyDifferentiableAtOfContDiffAtTwo
 open scoped ContDiff
 set_option maxHeartbeats 1000000 in

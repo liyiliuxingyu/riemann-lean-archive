@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoincareValueBoundOnCube
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
 open MeasureTheory Matrix Finset
 open scoped ContDiff

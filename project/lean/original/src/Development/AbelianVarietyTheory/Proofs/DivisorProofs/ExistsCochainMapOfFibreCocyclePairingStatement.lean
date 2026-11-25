@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCochainMapOfFibreCocyclePairing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveBundleFormulaOfUnitOnEtalePoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrivV
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass

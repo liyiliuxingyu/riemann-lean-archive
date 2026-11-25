@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricCharacterMulOfTame
-import Mathlib
 import Formalism.LocalToGlobal.Divisibility.QLocTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsUnrM

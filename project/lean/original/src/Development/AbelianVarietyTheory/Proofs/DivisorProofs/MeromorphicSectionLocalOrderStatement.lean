@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeromorphicSectionLocalOrder
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemChart
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

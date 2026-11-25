@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TheoremBLocalDegreeSumBounds
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypeJumps
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas

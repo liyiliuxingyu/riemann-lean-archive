@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ClassTermConvergesOfLintegralUnfoldingEq
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.NonFieldTypeVanishing
 open MeasureTheory Set GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal

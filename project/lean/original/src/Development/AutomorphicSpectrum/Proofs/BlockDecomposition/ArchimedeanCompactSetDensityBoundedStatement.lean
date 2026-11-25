@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanCompactSetDensityBounded
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSplitK
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanSiegelWeilIntegralIdentityStatement

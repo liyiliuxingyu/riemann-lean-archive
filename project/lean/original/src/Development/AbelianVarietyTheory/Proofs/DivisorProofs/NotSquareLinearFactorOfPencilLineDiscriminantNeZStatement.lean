@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotSquareLinearFactorOfPencilLineDiscriminantNeZ
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.JoinCastSucc
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FramedLatticeZeroCycleHeight

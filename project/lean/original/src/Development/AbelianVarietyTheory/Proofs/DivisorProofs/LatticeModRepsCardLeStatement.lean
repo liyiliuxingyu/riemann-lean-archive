@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeModRepsCardLe
-import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
 open NumberField ReciprocityTheory.ChartRestriction.G.FD
 set_option maxHeartbeats 1000000 in

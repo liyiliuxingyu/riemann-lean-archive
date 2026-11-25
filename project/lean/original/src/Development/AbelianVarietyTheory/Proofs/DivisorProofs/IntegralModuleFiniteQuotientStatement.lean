@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModuleFiniteQuotient
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemNilRad
 open Matrix GlobalTheory.TorFin
 open scoped ContDiff

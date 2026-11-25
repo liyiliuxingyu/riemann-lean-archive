@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeEighthPowerProductMonHom
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull

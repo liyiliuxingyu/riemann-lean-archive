@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIntegralFinsetSum
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAddFundamentalDomainLatticeDomain
 open Matrix MeasureTheory Set Filter Topology

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeCoordsRationalPointMulEqCoordMatrix
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitOff
 import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetKapIff

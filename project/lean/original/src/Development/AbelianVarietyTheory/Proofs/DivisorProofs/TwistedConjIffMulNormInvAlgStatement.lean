@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedConjIffMulNormInvAlg
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMat

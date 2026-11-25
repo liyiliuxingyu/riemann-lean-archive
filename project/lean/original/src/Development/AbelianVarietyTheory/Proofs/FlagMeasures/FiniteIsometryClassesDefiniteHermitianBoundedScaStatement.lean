@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteIsometryClassesDefiniteHermitianBoundedSca
-import Mathlib
 import Formalism.HermitianLattices.FinalNeighbourConstruct
 import Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound

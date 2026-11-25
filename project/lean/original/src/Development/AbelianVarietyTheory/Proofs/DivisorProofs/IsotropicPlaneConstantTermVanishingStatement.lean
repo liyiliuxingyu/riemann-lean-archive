@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicPlaneConstantTermVanishing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsZeroOfLev
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsLeSup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerActionContinuous
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairRApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTranslationSeminormBound
 open scoped SchwartzMap

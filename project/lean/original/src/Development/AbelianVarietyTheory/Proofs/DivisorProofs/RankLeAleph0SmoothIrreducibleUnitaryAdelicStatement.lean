@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankLeAleph0SmoothIrreducibleUnitaryAdelic
-import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsFinTyp
 open NumberField
 set_option maxHeartbeats 1000000 in

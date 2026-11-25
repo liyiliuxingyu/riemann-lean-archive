@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisConjugateHolomorphicUniformization
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PeriodComparison
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective

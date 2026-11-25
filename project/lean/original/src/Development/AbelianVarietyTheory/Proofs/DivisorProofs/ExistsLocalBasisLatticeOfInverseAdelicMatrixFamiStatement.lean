@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalBasisLatticeOfInverseAdelicMatrixFami
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
 import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
 import Formalism.PolynomialDimension.WeylDim

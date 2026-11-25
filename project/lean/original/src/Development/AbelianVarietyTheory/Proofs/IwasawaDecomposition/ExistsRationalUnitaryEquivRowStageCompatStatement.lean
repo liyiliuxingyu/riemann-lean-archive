@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRationalUnitaryEquivRowStageCompat
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFiniteAdelicPointAsMatrixMemFlagIwahori

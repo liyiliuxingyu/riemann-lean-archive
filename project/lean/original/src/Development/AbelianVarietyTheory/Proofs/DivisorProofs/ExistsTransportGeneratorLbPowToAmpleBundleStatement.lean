@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransportGeneratorLbPowToAmpleBundle
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMumfordFamOfSubsingleton
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMinAt

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFlagPointStalk
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionCellFl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMulApplyEqZeroOfMinor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellOpenImmersion

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyLocalIntegersIffPowerBasisCoordsAll
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoordEquivApply
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyAlgebraMapMemIntegers
 open MeasureTheory Set Filter Polynomial NumberField IsDedekindDomain

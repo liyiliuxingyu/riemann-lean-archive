@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFunctionDenominator
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsMulVal
 set_option autoImplicit false
 noncomputable section

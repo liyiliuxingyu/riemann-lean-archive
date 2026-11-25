@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformAdelicSchwartzHasFiniteLevelCM
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRatPairIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLintegralSqEqMulSetLIntegralThetaTransformStatement

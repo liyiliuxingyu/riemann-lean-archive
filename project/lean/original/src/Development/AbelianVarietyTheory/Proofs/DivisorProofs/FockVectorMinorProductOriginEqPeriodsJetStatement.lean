@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVectorMinorProductOriginEqPeriodsJet
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 
 open NumberField MeasureTheory

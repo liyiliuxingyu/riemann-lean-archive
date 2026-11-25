@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UniformizerPowerTorusMemNormalUnitarySubgroup
-import Mathlib
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawa
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB

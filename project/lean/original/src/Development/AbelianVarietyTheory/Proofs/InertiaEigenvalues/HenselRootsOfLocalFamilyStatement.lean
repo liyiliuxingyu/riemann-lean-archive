@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HenselRootsOfLocalFamily
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BoundAtTwoAndThreeForFamily
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore
 import Formalism.SharpRestriction.LevelLetterCocycles.IdempotentChoiceDepthZero

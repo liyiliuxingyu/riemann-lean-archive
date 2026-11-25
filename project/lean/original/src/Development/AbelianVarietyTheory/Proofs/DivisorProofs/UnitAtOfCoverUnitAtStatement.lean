@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitAtOfCoverUnitAt
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducesPl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeModelInducesRootMetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricOfSameNorms

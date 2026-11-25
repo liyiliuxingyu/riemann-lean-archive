@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoZeroOfOpenSetLinearRoots
-import Mathlib
 import Formalism.DegreeFormula.FlagDegFormula
 open MvPolynomial Formalism.DegreeFormula Filter Topology
 set_option maxHeartbeats 1000000 in

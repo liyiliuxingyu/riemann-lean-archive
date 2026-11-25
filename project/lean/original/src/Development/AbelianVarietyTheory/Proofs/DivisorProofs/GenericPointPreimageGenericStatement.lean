@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointPreimageGeneric
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenFiniteCompDegreeMul
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits

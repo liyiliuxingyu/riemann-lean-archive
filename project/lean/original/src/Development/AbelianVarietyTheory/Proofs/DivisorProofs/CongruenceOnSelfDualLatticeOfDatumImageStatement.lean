@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceOnSelfDualLatticeOfDatumImage
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv

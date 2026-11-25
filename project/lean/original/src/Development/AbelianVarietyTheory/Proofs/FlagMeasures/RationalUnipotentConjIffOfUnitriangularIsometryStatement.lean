@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnipotentConjIffOfUnitriangularIsometry
-import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.VolPin
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish

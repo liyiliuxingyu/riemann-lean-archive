@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderTranslationInvariant
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct
 set_option maxHeartbeats 1000000 in

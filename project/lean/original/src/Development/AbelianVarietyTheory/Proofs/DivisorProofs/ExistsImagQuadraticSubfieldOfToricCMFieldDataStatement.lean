@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsImagQuadraticSubfieldOfToricCMFieldData
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
 open NumberField GlobalTheory.CMVal GlobalTheory.IndefiniteRowSideFullHecke.LatticeNormTransport

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleStageDivisorStrictHenselisationOrigin
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstClosedPts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
 open IsLocalRing Polynomial

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnProductTransitionMatrices
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualWeylEqSpanColProd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual
 open MvPolynomial

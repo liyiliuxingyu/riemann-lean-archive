@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularFamilyEventuallySmoothPsh
-import Mathlib
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.AnalyticForms.LeviForms.TailCutA
 import ReciprocityTheory.AnalyticForms.PotentialTheory.AnalyticSubsetChartLocal

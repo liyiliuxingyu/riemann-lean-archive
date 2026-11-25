@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenProjectionInEigenspace
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved

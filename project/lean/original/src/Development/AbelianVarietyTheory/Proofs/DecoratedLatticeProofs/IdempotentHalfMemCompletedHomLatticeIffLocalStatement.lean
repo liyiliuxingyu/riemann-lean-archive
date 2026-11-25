@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdempotentHalfMemCompletedHomLatticeIffLocal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GaussianReadingFiniteRationalHeisenbergTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmAtSmulRight

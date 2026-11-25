@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPreimagePositiveResidueDegree
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLocalSubringGenericPoint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLeOfIsAlgebraic

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCosetIndicatorReadingSphericalOffModulus
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModModT
 
 open NumberField MeasureTheory IsDedekindDomain UniqueFactorizationMonoid

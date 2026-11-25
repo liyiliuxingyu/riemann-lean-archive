@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteCurveArithModelClosure
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemChart
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

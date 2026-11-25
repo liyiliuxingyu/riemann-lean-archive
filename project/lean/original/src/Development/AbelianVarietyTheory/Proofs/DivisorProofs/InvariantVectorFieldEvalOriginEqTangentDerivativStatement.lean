@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldEvalOriginEqTangentDerivativ
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalRingDualNumber

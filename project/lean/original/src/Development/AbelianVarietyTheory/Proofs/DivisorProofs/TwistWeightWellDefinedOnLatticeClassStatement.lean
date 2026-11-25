@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistWeightWellDefinedOnLatticeClass
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

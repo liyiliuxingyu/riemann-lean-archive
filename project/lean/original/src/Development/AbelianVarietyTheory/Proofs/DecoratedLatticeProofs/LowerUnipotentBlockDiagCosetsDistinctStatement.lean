@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LowerUnipotentBlockDiagCosetsDistinct
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
 import Formalism.LocalToGlobal.Columns.HeckeSp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BlockDetLowUEmb

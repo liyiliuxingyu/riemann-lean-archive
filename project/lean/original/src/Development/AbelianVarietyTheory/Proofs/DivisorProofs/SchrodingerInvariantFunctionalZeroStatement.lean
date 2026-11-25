@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerInvariantFunctionalZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
 open scoped SchwartzMap
 set_option maxHeartbeats 1000000 in

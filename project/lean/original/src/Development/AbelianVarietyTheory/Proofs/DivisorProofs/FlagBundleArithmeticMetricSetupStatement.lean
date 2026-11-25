@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleArithmeticMetricSetup
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingHomOfGeneric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieFrames

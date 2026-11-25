@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardHermitianLatticesGluedAlongLine
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory

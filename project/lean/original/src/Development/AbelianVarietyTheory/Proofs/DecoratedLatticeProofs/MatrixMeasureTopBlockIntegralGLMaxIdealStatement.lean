@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixMeasureTopBlockIntegralGLMaxIdeal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 open MeasureTheory Matrix Formalism.IndefR.Datum

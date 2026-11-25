@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDivisorMulIntegralUnitFiniteAdelesAwayP
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowEqPowOfModEqSim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudeActionAdelicLatticeStatement

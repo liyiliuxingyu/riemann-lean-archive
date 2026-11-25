@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightPullbackFirstBlock
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantTermBound
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

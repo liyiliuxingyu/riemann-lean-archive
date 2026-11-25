@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedLineStabilizer
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLineStab

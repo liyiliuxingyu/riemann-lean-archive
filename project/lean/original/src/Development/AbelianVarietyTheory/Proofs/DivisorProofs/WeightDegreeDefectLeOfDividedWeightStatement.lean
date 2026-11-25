@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightDegreeDefectLeOfDividedWeight
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DividedWeightUnique
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubProdLeSumOfLe

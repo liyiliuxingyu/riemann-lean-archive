@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientSemisimpleRestriction
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
 open GlobalTheory.PRep GlobalTheory.SmGL
 set_option maxHeartbeats 1000000 in

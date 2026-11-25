@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisorDecompositionFlagSteps
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetDivZero
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain Filter Topology Matrix

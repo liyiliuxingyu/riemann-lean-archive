@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalizationHermitianDualEq
-import Mathlib
 import Formalism.LocalToGlobal.Columns.HeckeInertComm
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PatchAtSelf

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlowupDivisorTrivialOnFibers
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

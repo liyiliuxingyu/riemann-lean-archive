@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DescNEqXPowMulIterateDerivative
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIterateDerivative
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal Matrix
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactLatticeUnitCovolume
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFundamentalDomain
 open MeasureTheory
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanInfLogNormEmbeddingEqLogNormDiv
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 import Formalism.PairingDivisors.StatementH
 open NumberField Polynomial IsDedekindDomain

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionRegularFunctionsGoodPrimes
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFrameRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodReductionExtendsRegular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgebraicPointSpecializing

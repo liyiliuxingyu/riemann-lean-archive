@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteCoverProjSpaceReducedFibreOrigin
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ToPtIdPtBijective

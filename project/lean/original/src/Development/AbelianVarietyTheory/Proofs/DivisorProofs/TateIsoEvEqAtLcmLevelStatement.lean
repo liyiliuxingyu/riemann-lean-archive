@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateIsoEvEqAtLcmLevel
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
 
 noncomputable section

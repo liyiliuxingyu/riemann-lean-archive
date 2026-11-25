@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleSectionsAvoidClosedPoints
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLifts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionHeightLowerBound
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAmpleLBOfRelAmpleOfIsAffine

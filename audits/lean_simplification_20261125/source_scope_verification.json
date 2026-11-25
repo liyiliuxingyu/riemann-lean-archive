@@ -1,0 +1,17 @@
+{
+  "format": "lean-source-change-scope-v1",
+  "baseline_commit": "b32465bf0a42b702d7834fbb5f983fe413fa5aa6",
+  "source_directory": "project/lean/original/src",
+  "modified_source_files": 19901,
+  "added_source_files": [
+    "project/lean/original/src/Formalism/GammaFactorNonvanishing/GammaFactor.lean"
+  ],
+  "deleted_source_files": [],
+  "all_and_only_reviewed_source_files_changed": true,
+  "all_final_source_hashes_match": true,
+  "all_source_file_modes_preserved": true,
+  "all_three_build_configurations_unchanged": true,
+  "final_changed_source_path_hash_pairs_sha256": "318dd4a11012a7159d7b2615bce07b65a37f74eb570b80fad109aef403b1931a",
+  "scope": "Checks the complete tracked/untracked source difference set and final file hashes; does not elaborate declarations or perform a whole-project build.",
+  "passed": true
+}

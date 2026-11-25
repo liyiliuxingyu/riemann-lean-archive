@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiSqGenericPointEqMonomialMulSymmetric
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDominantToUnitLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar

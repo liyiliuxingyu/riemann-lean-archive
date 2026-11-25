@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryCoverLiftBlockDiagonal
-import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousExptPY
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.PolarU Matrix MeasureTheory

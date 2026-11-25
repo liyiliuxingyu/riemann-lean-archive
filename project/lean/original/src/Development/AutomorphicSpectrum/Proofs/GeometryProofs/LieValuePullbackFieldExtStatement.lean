@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieValuePullbackFieldExt
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtComplexEmbedding
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Matrix

@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.LocalWhittakerDuality.WhittakerFunctionalEquationAdditive
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Aq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaIntegralRightTranslateInvariantStatement

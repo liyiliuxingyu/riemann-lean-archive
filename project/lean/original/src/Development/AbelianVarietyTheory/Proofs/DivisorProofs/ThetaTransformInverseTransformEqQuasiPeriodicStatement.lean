@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformInverseTransformEqQuasiPeriodic
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrandPeriodic
 

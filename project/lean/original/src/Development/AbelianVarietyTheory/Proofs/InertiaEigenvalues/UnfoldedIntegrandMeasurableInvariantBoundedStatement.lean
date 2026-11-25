@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedIntegrandMeasurableInvariantBounded
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTermZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CellLintegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOfMemSmoothSpan

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FractionFieldCoordsGenerated
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EtaleLocalizationAtPrimeTensorOfLowHeight
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar

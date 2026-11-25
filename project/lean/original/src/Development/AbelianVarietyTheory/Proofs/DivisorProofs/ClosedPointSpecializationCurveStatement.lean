@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointSpecializationCurve
-import Mathlib
 open CategoryTheory AlgebraicGeometry
 
 set_option maxHeartbeats 1000000 in

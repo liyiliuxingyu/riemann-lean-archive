@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsBaseLevelVectorInGoodAlgebraicFormsSpan
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodGeneric
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil

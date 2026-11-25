@@ -4,6 +4,14 @@
 
 本仓库整理文件、保存出处并提供恢复与核验方法。文件汇编、哈希核验和 NDJSON 注释的成功，不能代替 Lean 内核对数学证明的检查。本次整理及后续有限审查没有完成本机完整原工程构建、最终定理的完整递归公理审计或全量独立内核复核。中文数学稿仍有明确标出的上游论证未完全展开，不是独立完整的新证明。
 
+## 2026-11-25 简化工作分支
+
+本分支在归档基线之上删除了 **20,058 条重复 import**，并将三处 Gamma 因子非零论证共用一个引理、简化一处商映射连续性证明。共修改 **19,901 个既有 Lean 文件**、新增 **1 个共享引理模块**，Lean 源码净减少 **326,922 字节**。导入清理通过逐字节复核与官方解析对照；四个目标定理的独立编译、实际类型和公理依赖比较通过。尚未完成全工程重新构建。
+
+完整修改清单、复核命令、已通过检查及后续候选见 [Lean 简化审计记录](audits/lean_simplification_20261125/README.md)。原 Release、索引和历史哈希记录对应 [原始归档基线](https://github.com/liyiliuxingyu/riemann-lean-archive/tree/b32465bf0a42b702d7834fbb5f983fe413fa5aa6)；本分支源码字节已发生有记录的改变，旧归档清单不是精简版的哈希清单。
+
+另已完成[循环证明定向核查](audits/lean_circularity_20261125/README.md)：当前内部模块导入图无环，已读主链、几何接口与证书解释链未定位到可确认的循环证明；完整声明依赖闭包与最终公理审计仍未完成。该轮只新增审计记录，没有修改 Lean 源码。
+
 ## 交付内容与目录
 
 Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程的 267 个常规成员保持原样，随机访问索引另按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 保存 2026-11-23 的两份有限审查及复核证据。
@@ -12,7 +20,7 @@ Release 中的源码汇编已恢复为完整模块树，工程索引和注释工
 
 | 文件或资料 | 内容与大小 | 现在的位置 |
 | --- | --- | --- |
-| 完整 Lean 模块树 | 175,187 个 `.lean` 模块及 3 个配置文件；1,030,536,719 字节 | [project/lean/original/](project/lean/original/) |
+| 完整 Lean 模块树 | 175,188 个 `.lean` 模块及 3 个配置文件；本分支当前 1,030,209,797 字节 | [project/lean/original/](project/lean/original/) |
 | 最终入口与命题 | 保持原始源码 | [Main.lean](project/lean/original/src/Main.lean)、[Statements.lean](project/lean/original/src/Statements.lean) |
 | `RH_AllSources.index.jsonl` | 原始随机访问索引；68,614,751 字节 | [project/lean/RH_AllSources.index.jsonl](project/lean/RH_AllSources.index.jsonl) |
 | 依赖索引 | 原件 214,948,999 字节，拆为 5 个完整行分卷，可逐字节还原 | [project/lean/dependencies/](project/lean/dependencies/) |

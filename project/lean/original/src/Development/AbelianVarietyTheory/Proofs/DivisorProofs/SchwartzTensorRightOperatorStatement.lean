@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTensorRightOperator
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTemperateGrowthElim
 
 open GlobalTheory.SliceSchwartz

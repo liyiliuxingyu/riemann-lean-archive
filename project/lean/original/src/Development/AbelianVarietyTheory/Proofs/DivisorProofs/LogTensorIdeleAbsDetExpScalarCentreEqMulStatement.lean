@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogTensorIdeleAbsDetExpScalarCentreEqMul
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCovolumeCommonAdelicFixatorOfColumnsStatement

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodHolomorphicContinuation
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExponentialFamilyPeriods
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
 import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton

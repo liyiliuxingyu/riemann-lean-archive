@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeFrameFlagCurvature
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeFrameGram
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCurvatureForms
 open Matrix Complex ComplexConjugate GlobalTheory.HermFrame GlobalTheory.IndefiniteRowSideFullHecke.HodgeFrameGram

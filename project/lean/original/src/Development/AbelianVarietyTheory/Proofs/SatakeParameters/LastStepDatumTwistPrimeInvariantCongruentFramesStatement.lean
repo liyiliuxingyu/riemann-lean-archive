@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastStepDatumTwistPrimeInvariantCongruentFrames
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TwistEmptyOfChartsEx

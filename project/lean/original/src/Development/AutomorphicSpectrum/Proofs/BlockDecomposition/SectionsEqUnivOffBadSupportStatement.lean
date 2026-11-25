@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionsEqUnivOffBadSupport
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsetOfClosedFibre
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinReesClosedSystem

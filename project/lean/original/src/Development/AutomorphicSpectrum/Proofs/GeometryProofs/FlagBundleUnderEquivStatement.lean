@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagBundleUnderEquiv
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed

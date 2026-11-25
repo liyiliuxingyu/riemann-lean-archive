@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliCoeffDualWeylEqCoeffProd
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalPol
 open Formalism.CohomologicalDescent.DepthNonnegative GlobalTheory.ExpFrame Formalism.CohomologicalDescent.LD GlobalTheory.CapelliLink
 set_option maxHeartbeats 1000000 in

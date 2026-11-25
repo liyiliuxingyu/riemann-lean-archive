@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelDetIdealSelfDualNormOne
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Ker
 set_option maxHeartbeats 1000000 in

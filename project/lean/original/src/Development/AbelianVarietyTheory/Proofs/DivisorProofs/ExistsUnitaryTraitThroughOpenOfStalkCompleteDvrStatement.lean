@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryTraitThroughOpenOfStalkCompleteDvr
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UValThruTopOfDisjoint
 import Development.AbelianVarietyTheory.Definitions.Divisors.SharpOverIff
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory IsLocalRing NumberField

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentationRestrictionIntertwinerExists
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLocType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlCastRfl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictionSubmoduleFunctionalInjectiveStatement

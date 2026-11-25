@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChTwoBlockDiagonalSum
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExtFormAdjEqNegSecondForm
 open Matrix Filter Topology GlobalTheory.HermFrame
 set_option maxHeartbeats 1000000 in

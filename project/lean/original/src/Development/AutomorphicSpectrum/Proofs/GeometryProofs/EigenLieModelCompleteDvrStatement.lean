@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLieModelCompleteDvr
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalFractionField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway

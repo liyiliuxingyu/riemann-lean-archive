@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermFamiliesCongrModUnitriangular
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
 open Formalism.MainNotions.S
 set_option maxHeartbeats 1000000 in

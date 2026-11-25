@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeSeparatesEmbeddings
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 open NumberField GlobalTheory.CMVal GlobalTheory.LatJet
 set_option maxHeartbeats 1000000 in

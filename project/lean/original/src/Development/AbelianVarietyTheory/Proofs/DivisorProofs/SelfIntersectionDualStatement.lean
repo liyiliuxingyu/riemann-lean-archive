@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionDual
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnnSeqShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt

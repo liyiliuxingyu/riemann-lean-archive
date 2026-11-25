@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGaloisExtensionOfEmbedding
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationLtOneOfEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalEmbeddingRangeEqField

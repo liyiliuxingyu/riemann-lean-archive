@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CdpGaloisLeOneOfAlgebraicRatFunc
-import Mathlib
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Brauer
 open GroundTheory.ProfCoh

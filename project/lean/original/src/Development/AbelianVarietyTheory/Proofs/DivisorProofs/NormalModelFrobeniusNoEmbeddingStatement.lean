@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelFrobeniusNoEmbedding
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroPresZeroMod
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing

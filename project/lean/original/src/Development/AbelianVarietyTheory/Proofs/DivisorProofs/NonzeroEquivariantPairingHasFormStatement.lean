@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonzeroEquivariantPairingHasForm
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 open MvPolynomial Formalism.BasicNotions.TH GlobalTheory.CharPair

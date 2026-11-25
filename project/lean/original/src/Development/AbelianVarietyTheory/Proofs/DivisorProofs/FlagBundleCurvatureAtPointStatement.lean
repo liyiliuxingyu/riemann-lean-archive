@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleCurvatureAtPoint
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnCosSq
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory

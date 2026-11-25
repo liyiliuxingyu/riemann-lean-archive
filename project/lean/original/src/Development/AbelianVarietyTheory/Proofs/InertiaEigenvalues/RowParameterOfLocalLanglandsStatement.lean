@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowParameterOfLocalLanglands
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodCuspidalParameterLocalSideStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedPlaceLocalIndexStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AtMemAnd

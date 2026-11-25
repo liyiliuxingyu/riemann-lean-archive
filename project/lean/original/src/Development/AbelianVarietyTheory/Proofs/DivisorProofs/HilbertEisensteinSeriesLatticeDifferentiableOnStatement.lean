@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinSeriesLatticeDifferentiableOn
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 open scoped nonZeroDivisors
 set_option maxHeartbeats 1000000 in

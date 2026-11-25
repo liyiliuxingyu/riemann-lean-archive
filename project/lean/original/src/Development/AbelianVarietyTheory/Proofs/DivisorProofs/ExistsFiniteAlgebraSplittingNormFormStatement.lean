@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAlgebraSplittingNormForm
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIdeal
 open MvPolynomial
 set_option maxHeartbeats 1000000 in

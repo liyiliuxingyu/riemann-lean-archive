@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinesPolarisedPullbackInjective
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMemberP
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinePolarisedMonomialPeriodsMonomialData

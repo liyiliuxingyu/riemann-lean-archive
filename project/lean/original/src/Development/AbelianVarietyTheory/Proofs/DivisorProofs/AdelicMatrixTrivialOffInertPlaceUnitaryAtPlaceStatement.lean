@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicMatrixTrivialOffInertPlaceUnitaryAtPlace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinMapsOfForall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiCols

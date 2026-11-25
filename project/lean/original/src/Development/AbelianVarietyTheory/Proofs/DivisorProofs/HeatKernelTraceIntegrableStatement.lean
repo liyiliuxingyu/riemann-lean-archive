@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatKernelTraceIntegrable
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullFullL
 open Matrix MeasureTheory Set Filter Topology

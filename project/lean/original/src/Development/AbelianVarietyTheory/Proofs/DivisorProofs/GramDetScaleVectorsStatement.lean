@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetScaleVectors
-import Mathlib
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ConjSymm
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory
 set_option maxHeartbeats 1000000 in

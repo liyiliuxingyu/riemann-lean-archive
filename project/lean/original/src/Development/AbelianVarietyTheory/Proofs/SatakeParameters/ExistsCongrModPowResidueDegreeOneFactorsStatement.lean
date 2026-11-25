@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCongrModPowResidueDegreeOneFactors
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DegOneIffSurjective
 open NumberField IsDedekindDomain HeckeValGen GlobalTheory.HeckeSplit
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLocalIntegralPointsMemOpenSubgroupDefi
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductOfLocalLevelsUnitaryIsOpenIsCompactIsLeve
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLocalCompactSmall

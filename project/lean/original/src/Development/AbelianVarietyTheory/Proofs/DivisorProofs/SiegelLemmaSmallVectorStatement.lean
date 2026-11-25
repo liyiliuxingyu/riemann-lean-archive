@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelLemmaSmallVector
-import Mathlib
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory
 open scoped ComplexOrder

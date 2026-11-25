@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombinedAdelicMetricIdentity
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsComb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeightSmoothNormalizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsUnitRescalingStatement

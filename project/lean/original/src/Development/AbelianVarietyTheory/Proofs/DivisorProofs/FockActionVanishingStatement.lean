@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionVanishing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 open scoped TensorProduct Matrix
 set_option maxHeartbeats 1000000 in

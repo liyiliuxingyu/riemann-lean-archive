@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberLiesOverRescaleFrames
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwistAtEach
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

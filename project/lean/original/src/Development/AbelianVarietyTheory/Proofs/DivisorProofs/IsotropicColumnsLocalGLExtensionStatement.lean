@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicColumnsLocalGLExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockCentre
 import Development.AbelianVarietyTheory.Definitions.Foundations.GLintEqKOAndPrincEqKOne

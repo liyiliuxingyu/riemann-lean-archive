@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSystemSplitFibres
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison

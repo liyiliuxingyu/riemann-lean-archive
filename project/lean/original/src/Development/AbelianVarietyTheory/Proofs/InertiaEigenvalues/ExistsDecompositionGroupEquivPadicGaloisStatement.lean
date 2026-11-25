@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDecompositionGroupEquivPadicGalois
-import Mathlib
 import Formalism.GaloisCohomology.LocalTateDualityK
 import ReciprocityTheory.Hypotheses.GalCohDefs
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc

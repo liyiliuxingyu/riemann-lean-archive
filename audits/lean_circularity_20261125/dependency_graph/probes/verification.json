@@ -1,0 +1,66 @@
+{
+  "scope": "Three isolated Init-only compiler behavior examples. These do not import or verify the RH source project.",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_project_build_performed": false,
+  "results": [
+    {
+      "name": "Conditional",
+      "source_file": "Conditional.lean",
+      "source_sha256": "049710a407f78d32406cdd422a297adfa3d995c138067dcd07ad6912345aaa29",
+      "command": [
+        "<fixed-lean-4.33.1>",
+        "-M",
+        "512",
+        "-j",
+        "1",
+        "-DmaxHeartbeats=200000",
+        "Conditional.lean"
+      ],
+      "returncode": 0,
+      "stdout": "conditional (P : Prop) (h : P) : P\n'conditional' does not depend on any axioms\n",
+      "stderr": ""
+    },
+    {
+      "name": "NaturalRecursion",
+      "source_file": "NaturalRecursion.lean",
+      "source_sha256": "b0b8c5e628746607d8a6888dfc81e352753f4f3943849229830c42f5f2f63e5c",
+      "command": [
+        "<fixed-lean-4.33.1>",
+        "-M",
+        "512",
+        "-j",
+        "1",
+        "-DmaxHeartbeats=200000",
+        "NaturalRecursion.lean"
+      ],
+      "returncode": 0,
+      "stdout": "naturalRecursion (n : Nat) : n = n\n'naturalRecursion' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "name": "BadCircular",
+      "source_file": "BadCircular.lean",
+      "source_sha256": "030954a4526a8e61e2d59a01f313ce1ad23c2653a169116b90674ffcb3ede1d3",
+      "command": [
+        "<fixed-lean-4.33.1>",
+        "-M",
+        "512",
+        "-j",
+        "1",
+        "-DmaxHeartbeats=200000",
+        "BadCircular.lean"
+      ],
+      "returncode": 1,
+      "stdout": "BadCircular.lean:4:8: error: fail to show termination for\n  badCircular\nwith errors\nfailed to infer structural recursion:\nNot considering parameter P of badCircular:\n  it is unchanged in the recursive calls\nno parameters suitable for structural recursion\n\nwell-founded recursion cannot be used, `badCircular` does not take any (non-fixed) arguments\n",
+      "stderr": ""
+    }
+  ],
+  "checks": {
+    "conditional_compiles": true,
+    "conditional_has_no_axiom_dependencies": true,
+    "decreasing_recursion_compiles": true,
+    "self_reference_rejected": true,
+    "self_reference_failure_mentions_termination": true
+  },
+  "all_expected_behaviors_observed": true
+}

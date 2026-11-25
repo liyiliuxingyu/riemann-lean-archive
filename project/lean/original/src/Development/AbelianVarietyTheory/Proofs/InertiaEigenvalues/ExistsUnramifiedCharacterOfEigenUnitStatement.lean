@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnramifiedCharacterOfEigenUnit
-import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation

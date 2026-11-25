@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CommutativeHeckeActsByScalarOnFixedVectors
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIdempotentElemCharIdem
 open Formalism.UG GlobalTheory.PRep GlobalTheory.LFun

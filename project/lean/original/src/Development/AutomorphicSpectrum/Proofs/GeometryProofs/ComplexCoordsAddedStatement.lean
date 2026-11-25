@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsAdded
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed

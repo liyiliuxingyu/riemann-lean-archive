@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeInfIsotropicEqSumFractionalIdealSmul
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Ia
 open NumberField

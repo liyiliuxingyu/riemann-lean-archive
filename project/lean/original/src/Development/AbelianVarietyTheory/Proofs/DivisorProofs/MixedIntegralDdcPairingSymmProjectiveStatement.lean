@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralDdcPairingSymmProjective
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.ContinuousBcPt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar

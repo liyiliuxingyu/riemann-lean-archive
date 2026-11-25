@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticMemClosureGenerators
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisedOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticBlockGeneratorsLagrangianNormalF
 open scoped TensorProduct Matrix

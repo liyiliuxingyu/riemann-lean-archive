@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaZeroMeanLogLeConstMul
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignedLogMeans
 open Formalism.BasicNotions
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyOfSectionPlaces
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.LocCompareSplit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwCentSwTw
 open NumberField IsDedekindDomain Matrix Polynomial Filter

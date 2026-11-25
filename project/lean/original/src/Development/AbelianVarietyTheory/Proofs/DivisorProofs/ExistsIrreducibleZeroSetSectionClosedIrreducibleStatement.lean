@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIrreducibleZeroSetSectionClosedIrreducible
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioOfWeight
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 open CategoryTheory AlgebraicGeometry TopologicalSpace

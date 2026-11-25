@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulFix
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SplitPlaceThetaFunctionVacuumConjugatePlace
 open scoped TensorProduct Matrix

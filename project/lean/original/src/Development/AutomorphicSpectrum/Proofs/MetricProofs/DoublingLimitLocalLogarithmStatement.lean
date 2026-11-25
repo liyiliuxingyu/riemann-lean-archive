@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DoublingLimitLocalLogarithm
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IterDifferentiableOn
 open Set Filter Topology Metric
 set_option maxHeartbeats 1000000 in

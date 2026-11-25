@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescendedNormIdealSheafFiniteNormal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonUnitAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationTransferModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIdeal

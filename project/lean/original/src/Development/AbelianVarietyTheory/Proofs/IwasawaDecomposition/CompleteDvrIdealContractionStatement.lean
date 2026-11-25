@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompleteDvrIdealContraction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InRealConeSelf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorArcBlowup
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMonomialLevelFormDvr

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InducedRepresentationCharacter
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BrauerDegreeZero
 open GlobalTheory.Published
 set_option maxHeartbeats 1000000 in

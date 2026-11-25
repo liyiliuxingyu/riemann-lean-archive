@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIInfKerSemilinearStandardBasis
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 open Module
 set_option maxHeartbeats 1000000 in

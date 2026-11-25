@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassGroupIdelicFiniteIndex
-import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteChars
 open IsDedekindDomain NumberField

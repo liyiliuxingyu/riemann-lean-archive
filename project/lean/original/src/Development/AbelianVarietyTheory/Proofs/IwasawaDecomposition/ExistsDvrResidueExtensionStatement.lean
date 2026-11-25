@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDvrResidueExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 open IsLocalRing GlobalTheory.LN
 set_option maxHeartbeats 1000000 in

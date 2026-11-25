@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhaseConditionSubIntegralMatrix
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 set_option maxHeartbeats 1000000 in

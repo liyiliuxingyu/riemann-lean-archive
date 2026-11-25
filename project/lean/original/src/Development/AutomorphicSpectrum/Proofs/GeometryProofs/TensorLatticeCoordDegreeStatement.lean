@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TensorLatticeCoordDegree
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues

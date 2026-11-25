@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoleResOfPrint
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinResidueLine
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone

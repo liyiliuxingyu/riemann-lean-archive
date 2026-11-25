@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestDegreeComponentInvariant
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemTensSpan
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

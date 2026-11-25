@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeisenbergInvariantThetaMeanSquareForm
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntAFSmulMemLatOF
 open scoped TensorProduct Matrix Topology
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

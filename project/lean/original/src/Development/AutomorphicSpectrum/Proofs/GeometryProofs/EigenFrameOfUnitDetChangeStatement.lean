@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameOfUnitDetChange
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Formalism.LocalToGlobal.ProjectiveLattices.RulInst

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassRatioStatement
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S
 set_option maxHeartbeats 1000000 in

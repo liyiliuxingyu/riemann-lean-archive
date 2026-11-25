@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HhPowerSumEqBoundaryForm
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ArBirational
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperFact

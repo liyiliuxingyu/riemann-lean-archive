@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodRelationPreservesLevelFormLatticeNorm
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReadPk
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameForm
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain Formalism.L2.DIV Formalism.L2.Rows

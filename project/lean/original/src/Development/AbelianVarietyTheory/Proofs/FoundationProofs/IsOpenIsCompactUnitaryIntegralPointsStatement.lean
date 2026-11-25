@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactUnitaryIntegralPoints
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
 open Formalism.UG GlobalTheory.PRep GlobalTheory.LFun
 set_option maxHeartbeats 1000000 in

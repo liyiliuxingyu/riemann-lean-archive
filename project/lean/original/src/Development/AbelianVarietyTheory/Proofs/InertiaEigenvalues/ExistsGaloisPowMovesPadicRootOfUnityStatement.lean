@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisPowMovesPadicRootOfUnity
-import Mathlib
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.GaloisCohomology.LocalTateDualityK
 import ReciprocityTheory.Hypotheses.GalCohDefs

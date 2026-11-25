@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoboundarySemistableTensorColumns
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FiltrationZeroMembership
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ToMatrixRepOf

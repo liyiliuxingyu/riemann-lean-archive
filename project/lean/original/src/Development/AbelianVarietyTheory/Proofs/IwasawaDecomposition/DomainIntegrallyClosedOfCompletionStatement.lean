@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DomainIntegrallyClosedOfCompletion
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProperToroidalModelStructureMap
 open IsLocalRing GlobalTheory.Toroidal TensorProduct
 set_option maxHeartbeats 1000000 in

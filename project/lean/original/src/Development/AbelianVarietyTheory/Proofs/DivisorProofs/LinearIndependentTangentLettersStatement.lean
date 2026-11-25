@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearIndependentTangentLetters
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermFamGramPosSemidef
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieCoordLat

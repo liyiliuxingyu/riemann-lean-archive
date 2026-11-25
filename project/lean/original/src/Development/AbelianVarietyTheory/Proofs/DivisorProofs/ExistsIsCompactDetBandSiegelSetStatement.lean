@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsCompactDetBandSiegelSet
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
 import GroundTheory.AutomorphicForms.ReductionSiegel

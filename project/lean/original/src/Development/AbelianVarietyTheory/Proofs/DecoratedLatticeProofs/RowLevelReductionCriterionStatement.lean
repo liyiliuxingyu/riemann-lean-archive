@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowLevelReductionCriterion
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BesselCompatibility
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt

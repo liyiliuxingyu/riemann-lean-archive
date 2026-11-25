@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiCoordinateNormInvariantDegDataPullback
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastMore
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NormPsiPullLocalRingsOfIntegersStatement

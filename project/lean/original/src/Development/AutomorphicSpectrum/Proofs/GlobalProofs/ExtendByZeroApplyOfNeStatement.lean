@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExtendByZeroApplyOfNe
-import Mathlib
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 import Formalism.FormalDegreeBessel.StatementG
 open Matrix

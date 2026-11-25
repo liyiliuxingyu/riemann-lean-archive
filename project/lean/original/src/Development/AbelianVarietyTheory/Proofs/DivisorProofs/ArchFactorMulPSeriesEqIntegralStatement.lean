@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchFactorMulPSeriesEqIntegral
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormWt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussZero

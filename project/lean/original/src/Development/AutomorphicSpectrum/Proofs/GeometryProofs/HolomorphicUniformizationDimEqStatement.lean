@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicUniformizationDimEq
-import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqZeroOfFderivEqZero
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ContinuousOnValue

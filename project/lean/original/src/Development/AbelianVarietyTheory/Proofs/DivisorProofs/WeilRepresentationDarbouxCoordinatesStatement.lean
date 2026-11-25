@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationDarbouxCoordinates
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
 open scoped TensorProduct Matrix

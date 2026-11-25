@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreConnectedOfBaseChange
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
 open CategoryTheory Limits AlgebraicGeometry
 set_option maxHeartbeats 1000000 in

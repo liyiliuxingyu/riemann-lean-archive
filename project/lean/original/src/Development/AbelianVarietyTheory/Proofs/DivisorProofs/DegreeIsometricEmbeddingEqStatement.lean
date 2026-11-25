@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeIsometricEmbeddingEq
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecJets4
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.MatrixLemma
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel

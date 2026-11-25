@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselLineContractionHeisenbergInvariant
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsUnitarySupportedAtPlaceOfMulEqIdem
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousKappa

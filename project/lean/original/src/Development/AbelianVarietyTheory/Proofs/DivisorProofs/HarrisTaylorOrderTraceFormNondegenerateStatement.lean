@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorOrderTraceFormNondegenerate
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 open NumberField
 open scoped TensorProduct

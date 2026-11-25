@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntegralGLAtPrimeOfCongruentOneModPow
-import Mathlib
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

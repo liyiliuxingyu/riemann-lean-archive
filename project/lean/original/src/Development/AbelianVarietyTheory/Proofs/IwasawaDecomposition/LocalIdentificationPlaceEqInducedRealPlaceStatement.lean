@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalIdentificationPlaceEqInducedRealPlace
-import Mathlib
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieIwLevTieOf
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.FullTiedCBase
 import Formalism.LocalRingCardinality.DataErr

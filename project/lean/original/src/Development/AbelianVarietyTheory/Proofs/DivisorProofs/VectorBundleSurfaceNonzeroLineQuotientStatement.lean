@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorBundleSurfaceNonzeroLineQuotient
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisUniformizerRingStable
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SelmerWindowSums
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankCyclotomicExtAndCyclotomicCharSurjective

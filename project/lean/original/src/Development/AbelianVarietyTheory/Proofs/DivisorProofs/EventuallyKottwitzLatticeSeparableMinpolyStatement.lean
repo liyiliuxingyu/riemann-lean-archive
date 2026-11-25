@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyKottwitzLatticeSeparableMinpoly
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitsConjOfMinpolyEqOfSeparable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordL

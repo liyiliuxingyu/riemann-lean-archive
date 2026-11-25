@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralGeneratorRigidificationAllLevels
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HRedFst
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigin
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionValueZero

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeodesicJetHolomorphic
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolSprayApply
 open Filter Topology Matrix
 open scoped ContDiff

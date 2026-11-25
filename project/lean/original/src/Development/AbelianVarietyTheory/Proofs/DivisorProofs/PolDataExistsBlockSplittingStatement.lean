@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolDataExistsBlockSplitting
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHermNDSmulSkewForm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver

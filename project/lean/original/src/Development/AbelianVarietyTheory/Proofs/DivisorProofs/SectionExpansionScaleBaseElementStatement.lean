@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionExpansionScaleBaseElement
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordConstruction
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExteriorCoeffRatioRegular
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Formalism.LocalToGlobal.ProjectiveLattices.RulInst

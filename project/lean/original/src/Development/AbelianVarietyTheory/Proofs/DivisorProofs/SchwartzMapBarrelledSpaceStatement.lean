@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsINeZeroKind
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 

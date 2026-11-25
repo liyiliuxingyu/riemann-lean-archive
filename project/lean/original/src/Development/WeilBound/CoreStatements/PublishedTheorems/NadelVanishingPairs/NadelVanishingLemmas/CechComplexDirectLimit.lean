@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.IsIsoTermComparisonRestrictScalars
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechComplexDirectLimit
 open CategoryTheory Limits Filter GlobalTheory

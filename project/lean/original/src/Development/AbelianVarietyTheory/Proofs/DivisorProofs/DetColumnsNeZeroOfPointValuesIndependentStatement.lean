@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetColumnsNeZeroOfPointValuesIndependent
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMultiplicationFlatColumnsEvalStatement

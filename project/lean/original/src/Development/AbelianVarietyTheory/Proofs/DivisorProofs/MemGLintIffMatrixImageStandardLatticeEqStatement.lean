@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemGLintIffMatrixImageStandardLatticeEq
-import Mathlib
 import Formalism.SatakeDualWeyl.Statement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemMatLat
 open Polynomial Matrix GlobalTheory.LatOrb

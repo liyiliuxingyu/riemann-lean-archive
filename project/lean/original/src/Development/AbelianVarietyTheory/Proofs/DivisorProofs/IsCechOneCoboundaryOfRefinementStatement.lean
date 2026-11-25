@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechOneCoboundaryOfRefinement
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsInvDer
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PreimageTranslate
 open AlgebraicGeometry CategoryTheory GlobalTheory.KS

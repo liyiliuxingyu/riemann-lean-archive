@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpRefinementCoefficientFamily
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass

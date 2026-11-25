@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjUniversalTripleIdentification
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLabAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyUWit
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory IsLocalRing NumberField

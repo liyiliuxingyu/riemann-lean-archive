@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagRootDivisorLocallyAmple
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain Filter Topology Matrix

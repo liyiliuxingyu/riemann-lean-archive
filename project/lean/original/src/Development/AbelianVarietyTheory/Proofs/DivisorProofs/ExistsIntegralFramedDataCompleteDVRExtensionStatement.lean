@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralFramedDataCompleteDVRExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKeySectionValuationBoundsDifferent
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

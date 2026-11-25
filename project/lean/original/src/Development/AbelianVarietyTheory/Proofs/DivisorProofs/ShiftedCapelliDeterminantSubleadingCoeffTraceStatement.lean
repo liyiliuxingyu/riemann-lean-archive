@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftedCapelliDeterminantSubleadingCoeffTrace
-import Mathlib
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemNilRad
 open Matrix GlobalTheory.TorFin

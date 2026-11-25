@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverOverFiniteExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneCompOfIsGrpPullback
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory

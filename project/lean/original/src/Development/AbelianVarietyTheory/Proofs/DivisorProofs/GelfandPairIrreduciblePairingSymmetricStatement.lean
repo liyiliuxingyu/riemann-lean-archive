@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandPairIrreduciblePairingSymmetric
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DixmierCommutantScalar
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.gelfand_pair_irreducible_pairing_symmetric : ∀ (G : Type) [Group G] (K : Subgroup G), (∀ g : G, (K.map (MulAut.conj g).toMonoidHom).relIndex K ≠ 0) →

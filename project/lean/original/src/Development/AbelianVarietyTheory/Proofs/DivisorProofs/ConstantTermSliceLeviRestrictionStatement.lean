@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermSliceLeviRestriction
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkGLOneCorner

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTorsionModuleExtendingResidueMaps
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
 open CategoryTheory GlobalTheory.SelFun
 set_option maxHeartbeats 1000000 in

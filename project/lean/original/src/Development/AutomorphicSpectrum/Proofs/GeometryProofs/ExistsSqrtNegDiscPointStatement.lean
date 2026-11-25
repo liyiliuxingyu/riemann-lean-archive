@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSqrtNegDiscPoint
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DeterminantConditionSpreadsOfDensePoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondIffOfFieldExtension

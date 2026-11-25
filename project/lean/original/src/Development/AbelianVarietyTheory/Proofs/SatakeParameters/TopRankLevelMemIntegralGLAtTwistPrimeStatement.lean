@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TopRankLevelMemIntegralGLAtTwistPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopEqProd
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ

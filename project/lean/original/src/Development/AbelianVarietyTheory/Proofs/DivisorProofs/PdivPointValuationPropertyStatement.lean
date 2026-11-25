@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PdivPointValuationProperty
-import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PlaceShiftSt
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset

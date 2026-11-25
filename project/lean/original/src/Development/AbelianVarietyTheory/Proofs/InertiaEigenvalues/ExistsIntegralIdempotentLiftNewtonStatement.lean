@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralIdempotentLiftNewton
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
 open GlobalTheory.UnitDiscAlg
 set_option maxHeartbeats 1000000 in

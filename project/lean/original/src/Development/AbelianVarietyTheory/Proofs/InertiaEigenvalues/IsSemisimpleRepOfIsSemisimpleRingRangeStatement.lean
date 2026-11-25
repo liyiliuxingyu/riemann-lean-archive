@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSemisimpleRepOfIsSemisimpleRingRange
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 open Formalism.MainNotions.N
 set_option maxHeartbeats 1000000 in

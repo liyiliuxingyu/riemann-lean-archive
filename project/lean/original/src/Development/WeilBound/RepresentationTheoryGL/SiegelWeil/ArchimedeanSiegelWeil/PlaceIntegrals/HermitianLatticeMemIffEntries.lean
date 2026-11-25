@@ -1,6 +1,5 @@
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianLatticeMemIffEntries
 import Mathlib
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GramNear
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

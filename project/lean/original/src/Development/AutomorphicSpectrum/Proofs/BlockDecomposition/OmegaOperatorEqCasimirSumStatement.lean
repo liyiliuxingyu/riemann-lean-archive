@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmegaOperatorEqCasimirSum
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspRapidDecaySiegelGL
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIwasawaDecompositionUpperUnitriangularInte
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasNormGroups
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChevalleyUnits

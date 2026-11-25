@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetPowerProductMulMemDelWShiftIff
-import Mathlib
 import Formalism.UnipotentAdelicQuotients.WeylLatDual
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFunApply
 open GlobalTheory.IntegralityCompare

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemilinearLiftBijectiveLocalization
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 open GlobalTheory.DeRham
 set_option maxHeartbeats 1000000 in

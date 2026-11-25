@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermCenterActionSmoothForm
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegral
 open NumberField MeasureTheory GlobalTheory.CuspRep

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationTangentComb
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValFam
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealNormPrincipalInExtension
-import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 open NumberField GroundTheory.Heights₂.Heights
 open scoped nonZeroDivisors

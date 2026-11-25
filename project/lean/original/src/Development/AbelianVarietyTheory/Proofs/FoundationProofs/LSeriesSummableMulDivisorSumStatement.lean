@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LSeriesSummableMulDivisorSum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SummableCardDivisorsSqDivOneAddRpowStatement
 open Complex Filter Topology
 set_option maxHeartbeats 1000000 in

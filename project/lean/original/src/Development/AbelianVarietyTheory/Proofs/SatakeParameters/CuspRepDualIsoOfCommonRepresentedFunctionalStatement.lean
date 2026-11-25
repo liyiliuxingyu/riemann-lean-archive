@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspRepDualIsoOfCommonRepresentedFunctional
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByOne
 open NumberField Formalism.L2.Host GlobalTheory.CuspRep GlobalTheory.ContraPair
 set_option maxHeartbeats 1000000 in

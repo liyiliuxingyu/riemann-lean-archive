@@ -1,0 +1,69 @@
+{
+  "candidate_files_before_duplicate_patch": 116375,
+  "candidate_files_after_duplicate_patch": 116483,
+  "newly_exposed_by_duplicate_patch": 108,
+  "unmodified_anchor_modules": 7859,
+  "max_relay_length": 25,
+  "main_dfs_postorder_identical": true,
+  "main_dfs_postorder_nodes": 175535,
+  "before_trace_sha256": "bc1a1682be19a3a69813fa0d2330965726bfc7c5ac4a8b321009928ace0f471e",
+  "after_trace_sha256": "bc1a1682be19a3a69813fa0d2330965726bfc7c5ac4a8b321009928ace0f471e",
+  "proof_model": "For a legacy plain source beginning [Mathlib, A, ...], if A begins [Mathlib, ...], deleting the first Mathlib preserves dependency-first DFS completion order from every dependency-closed initial loaded set. Simultaneous deletions terminate at unchanged Mathlib anchors because the internal graph is finite and acyclic; induction from those anchors preserves the order. The complete Main DFS trace was also compared before and after all modeled deletions.",
+  "limits": [
+    "No source rewritten; no Lean build or elaboration performed.",
+    "External modules, including Mathlib and implicit Init, are opaque. Their implementation was not inspected by this script.",
+    "The order model does not establish semantic equivalence of arbitrary elaborator extensions that observe direct-import metadata, nor unchanged build dependencies or trace metadata.",
+    "This is a separate potentially large patch class and should pass a full pinned-toolchain build gate before integration."
+  ],
+  "examples": [
+    {
+      "source": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.Bracket",
+      "via": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "anchor": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "relay_length": 1
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.CloudPair",
+      "via": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "anchor": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "relay_length": 1
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PstMul",
+      "via": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "anchor": "CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace",
+      "relay_length": 1
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.KrullDimension.TopologicalKrullDimModel",
+      "via": "Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap",
+      "anchor": "Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap",
+      "relay_length": 1
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.CuspidalRestrictsToInduced",
+      "via": "Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne",
+      "anchor": "Formalism.LatticeSlopes.Statement",
+      "relay_length": 10
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndDim",
+      "via": "Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne",
+      "anchor": "Formalism.LatticeSlopes.Statement",
+      "relay_length": 10
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndFacts",
+      "via": "Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne",
+      "anchor": "Formalism.LatticeSlopes.Statement",
+      "relay_length": 10
+    },
+    {
+      "source": "CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndIrr",
+      "via": "Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne",
+      "anchor": "Formalism.LatticeSlopes.Statement",
+      "relay_length": 10
+    }
+  ],
+  "changes_applied": false
+}

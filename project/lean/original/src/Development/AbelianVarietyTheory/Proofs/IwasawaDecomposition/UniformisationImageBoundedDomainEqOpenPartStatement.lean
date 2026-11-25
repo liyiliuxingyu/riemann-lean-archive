@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationImageBoundedDomainEqOpenPart
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointPoly
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
 import Formalism.DegreeFormula.Statement

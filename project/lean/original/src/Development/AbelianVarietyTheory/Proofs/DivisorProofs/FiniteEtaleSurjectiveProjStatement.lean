@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEtaleSurjectiveProj
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftZero
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.Et.TrivTors
 

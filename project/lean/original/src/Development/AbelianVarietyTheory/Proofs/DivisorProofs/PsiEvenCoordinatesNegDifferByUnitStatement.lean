@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiEvenCoordinatesNegDifferByUnit
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelToroidalPolCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SecCmp

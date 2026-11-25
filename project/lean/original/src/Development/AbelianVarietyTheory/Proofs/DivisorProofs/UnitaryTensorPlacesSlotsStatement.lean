@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryTensorPlacesSlots
-import Mathlib
 
 open Matrix
 open scoped Classical

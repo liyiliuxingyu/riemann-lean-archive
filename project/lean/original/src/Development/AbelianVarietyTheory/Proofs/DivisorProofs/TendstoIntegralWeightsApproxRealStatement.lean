@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoIntegralWeightsApproxReal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 open MvPolynomial GlobalTheory.FlagPoly Formalism.DegreeFormula Filter Topology
 set_option maxHeartbeats 1000000 in

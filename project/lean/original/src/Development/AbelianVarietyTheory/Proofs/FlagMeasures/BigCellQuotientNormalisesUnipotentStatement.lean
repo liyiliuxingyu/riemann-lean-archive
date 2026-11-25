@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellQuotientNormalisesUnipotent
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPtRepTrDat
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundlePowerSectionNonzeroAtOrigin
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefTwistPull
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EndoEqOfSections
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuationNonnegIffSpanMultiplicationTranslates

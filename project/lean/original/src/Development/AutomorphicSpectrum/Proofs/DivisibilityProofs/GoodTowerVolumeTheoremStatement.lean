@@ -1,7 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GoodTowerVolumeTheorem
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExistsPosOfFamilyExists
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair

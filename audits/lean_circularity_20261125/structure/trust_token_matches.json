@@ -1,0 +1,968 @@
+[
+  {
+    "path": "project/lean/original/src/BuildAid/D1.lean",
+    "sha256": "31929a2acb212f4ff081fcbcf3be3450265e616d41567868214ed6a4d4e36208",
+    "line": 4,
+    "token": "run_cmd",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"CompanionTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D1.lean",
+    "sha256": "31929a2acb212f4ff081fcbcf3be3450265e616d41567868214ed6a4d4e36208",
+    "line": 4,
+    "token": "modifyEnv",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"CompanionTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D2.lean",
+    "sha256": "26425f890b105125a44aa60967fe39b3f961841c0d720f0f14986b8052c237e0",
+    "line": 4,
+    "token": "run_cmd",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"CrystallineSemistableComparison\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D2.lean",
+    "sha256": "26425f890b105125a44aa60967fe39b3f961841c0d720f0f14986b8052c237e0",
+    "line": 4,
+    "token": "modifyEnv",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"CrystallineSemistableComparison\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D3.lean",
+    "sha256": "de55aa305addb1a552941059ea5cca8a48142412652980b79acf28566576654e",
+    "line": 4,
+    "token": "run_cmd",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"GlobalTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D3.lean",
+    "sha256": "de55aa305addb1a552941059ea5cca8a48142412652980b79acf28566576654e",
+    "line": 4,
+    "token": "modifyEnv",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"GlobalTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D4.lean",
+    "sha256": "4ba5bd9edc7f1a9e4fa769dd8ae34fdb30d0481468325ad5cc85449c873be2ff",
+    "line": 4,
+    "token": "run_cmd",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"PositivityTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D4.lean",
+    "sha256": "4ba5bd9edc7f1a9e4fa769dd8ae34fdb30d0481468325ad5cc85449c873be2ff",
+    "line": 4,
+    "token": "modifyEnv",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"PositivityTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D5.lean",
+    "sha256": "b4766a7b0b3187f772e027b76e540bc36689705b7133cfa6db11555ce0cd01f7",
+    "line": 4,
+    "token": "run_cmd",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"UpperTheory\""
+  },
+  {
+    "path": "project/lean/original/src/BuildAid/D5.lean",
+    "sha256": "b4766a7b0b3187f772e027b76e540bc36689705b7133cfa6db11555ce0cd01f7",
+    "line": 4,
+    "token": "modifyEnv",
+    "code_line": "run_cmd Lean.modifyEnv fun env => Lean.LibrarySuggestions.nameDenyListExt.addEntry env \"UpperTheory\""
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/GoodPartEq.lean",
+    "sha256": "693785a6e1f60531b1dc1f62a9a10aef54fc59d6ab501b8df51828e579686494",
+    "line": 17,
+    "token": "macro",
+    "code_line": "scoped macro \"tr_via \" P:term:max e:term:max h:term:max : tactic => `(tactic| kexactB (cast (congrArg $P $e) (kc% $h)))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PlaceModelImp.lean",
+    "sha256": "ae11832e67ebf87d2110128ca07d4859f2dd8c9ab23c9718222513ef929ffe91",
+    "line": 27,
+    "token": "macro",
+    "code_line": "scoped macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RealIoX.lean",
+    "sha256": "29b499b0efa4e8bc72fdac1fba7a17bba4fd4aad0c83a3dc83541407473141ac",
+    "line": 90,
+    "token": "macro",
+    "code_line": "scoped macro \"tr_delta\" : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RealIoX.lean",
+    "sha256": "29b499b0efa4e8bc72fdac1fba7a17bba4fd4aad0c83a3dc83541407473141ac",
+    "line": 99,
+    "token": "macro",
+    "code_line": "scoped macro \"tr_leaves \" a:term:max b:term:max : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RealIoX.lean",
+    "sha256": "29b499b0efa4e8bc72fdac1fba7a17bba4fd4aad0c83a3dc83541407473141ac",
+    "line": 111,
+    "token": "macro",
+    "code_line": "scoped macro \"tr_clause \" a:term:max b:term:max h:term:max : tactic => `(tactic| (tr_delta; tr_leaves $a $b; kexactB $h))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/NegOnePowBoundaryTermsCancel.lean",
+    "sha256": "1f515b833ef2a8c92fa25213054888f5ad7eddae2d33a5cf6d95029a1395eccd",
+    "line": 114,
+    "token": "macro",
+    "code_line": "macro \"fin_index_simp\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean",
+    "sha256": "207d52cbf7d2c7fb5cc29c525977bd62cb86d97f60e8c1bef6fa48d48d0e4429",
+    "line": 12,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.LocalLatticeBound.exists_bound_latLoc"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ExistsBoundAbsLocalLatticeCompletionEntries.lean",
+    "sha256": "207d52cbf7d2c7fb5cc29c525977bd62cb86d97f60e8c1bef6fa48d48d0e4429",
+    "line": 13,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.LocalLatticeBound.exists_bound_latLoc"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean",
+    "sha256": "21afee859a9a448e5015885591246abe378ab49e80a3e126461e1f7e8c3857cd",
+    "line": 24,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.SummableSeriesBounds.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BoundedPowerSeriesEvaluationDivisibility.lean",
+    "sha256": "21afee859a9a448e5015885591246abe378ab49e80a3e126461e1f7e8c3857cd",
+    "line": 25,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.SummableSeriesBounds.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsDlogAddCoboundaryAbLocus.lean",
+    "sha256": "ecd4795a23609f1b580560a0edc8dc18508fbb1a986d2d05c681b36c7f19e128",
+    "line": 20,
+    "token": "macro",
+    "code_line": "local macro \"opens_le\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean",
+    "sha256": "f16e4d34a5569ae070e4c994a7e653228875e3889e29bd1beb64f993f12b6b36",
+    "line": 22,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.SquareLiftLemmas.exists_hom_jet"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsJetExtensionSquareZero.lean",
+    "sha256": "f16e4d34a5569ae070e4c994a7e653228875e3889e29bd1beb64f993f12b6b36",
+    "line": 23,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.SquareLiftLemmas.exists_hom_jet"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMeasY.lean",
+    "sha256": "129d70e907e358e4d683623e95ae4f24dd211ec1ec7e87f36f78f6117a2c9f19",
+    "line": 20,
+    "token": "macro",
+    "code_line": "scoped macro \"obt \" p:Lean.Parser.Tactic.rcasesPatMed \" := \" e:term : tactic => `(tactic| (have x := $e; obtain $p := x))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FramesTildeGammaValues.lean",
+    "sha256": "99a63d7c360a02b38886390ad2920722147844a5d0784d7e2eb6b89d68802ae2",
+    "line": 70,
+    "token": "run_tac",
+    "code_line": "  run_tac do"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCechOneCoboundaryOfRefinement.lean",
+    "sha256": "bbb3e7fd56039366282618e081a13d43ab16fce91049b52cb07376aa1ea7aaaa",
+    "line": 8,
+    "token": "macro",
+    "code_line": "local macro \"opens_le\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsProperOfFiniteType.lean",
+    "sha256": "46b2d819955a02c1180b9d9996f7e31b5b837f35876365cb06b3aa6f2437e520",
+    "line": 30,
+    "token": "macro",
+    "code_line": "macro \"lbt\" : tactic => `(tactic| (repeat (first | assumption | apply pull_isLB)))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean",
+    "sha256": "d014ad8c343003d93ae8294e32164bac7c64cfd6d0ceda5ed00c7a5999e60d49",
+    "line": 10,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.InjectiveAlgebraHomExistence.exists_ringHom_comp_algebraMap_eq"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsRootMapMinpolyIffExistsRingHomExtension.lean",
+    "sha256": "d014ad8c343003d93ae8294e32164bac7c64cfd6d0ceda5ed00c7a5999e60d49",
+    "line": 11,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.InjectiveAlgebraHomExistence.exists_ringHom_comp_algebraMap_eq"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "sha256": "63d6d73c6c6124fe59f8d9d39011ae89ced99136e6171f5eece05c7d36fa6303",
+    "line": 38,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.QuotientMapComposition.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "sha256": "63d6d73c6c6124fe59f8d9d39011ae89ced99136e6171f5eece05c7d36fa6303",
+    "line": 39,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.QuotientMapComposition.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "sha256": "63d6d73c6c6124fe59f8d9d39011ae89ced99136e6171f5eece05c7d36fa6303",
+    "line": 61,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.QuotientMapComposition.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationPreservesRingPullbackSquare.lean",
+    "sha256": "63d6d73c6c6124fe59f8d9d39011ae89ced99136e6171f5eece05c7d36fa6303",
+    "line": 62,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.QuotientMapComposition.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean",
+    "sha256": "1ffd0d0463f1c181190decf35c7f9d8b118a3d8179b99d0458f8ff40ec44e03f",
+    "line": 31,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.SpectralLemmaFirst.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MatchedDiffsInvariantSubspace.lean",
+    "sha256": "1ffd0d0463f1c181190decf35c7f9d8b118a3d8179b99d0458f8ff40ec44e03f",
+    "line": 32,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.SpectralLemmaFirst.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean",
+    "sha256": "08dd140404e9f1dc19f5f92e0bee1b8de77c3ea048750c4b3cc81f1ed733088e",
+    "line": 131,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.NatSmulMemOfSpan.exists_nat_smul_mem"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/BasedFlagPairLatticeContainment.lean",
+    "sha256": "08dd140404e9f1dc19f5f92e0bee1b8de77c3ea048750c4b3cc81f1ed733088e",
+    "line": 132,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.NatSmulMemOfSpan.exists_nat_smul_mem"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean",
+    "sha256": "d49d70682b8bd9734f01ce398539a1b04affa57d5dbca5448e392c848be49389",
+    "line": 14,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.DeterminantRealSandwich.det_real_family"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/DetMatrixSandwichLinearMap.lean",
+    "sha256": "d49d70682b8bd9734f01ce398539a1b04affa57d5dbca5448e392c848be49389",
+    "line": 15,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.DeterminantRealSandwich.det_real_family"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean",
+    "sha256": "1c1344fc4694c67b921373cd194c2c0cee2f6128ed1924596968ae5410c26b1d",
+    "line": 153,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.InnerSumZeroSpan.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PowLePowRatio.lean",
+    "sha256": "1c1344fc4694c67b921373cd194c2c0cee2f6128ed1924596968ae5410c26b1d",
+    "line": 154,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.InnerSumZeroSpan.main"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/ExistsFormalBiextMap.lean",
+    "sha256": "bcfbd604673d770c9f819503e3d5723c093ca2483cf76813533bfde723234de5",
+    "line": 87,
+    "token": "macro",
+    "code_line": "local macro \"no_const\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/ExistsFormalBiextMap.lean",
+    "sha256": "bcfbd604673d770c9f819503e3d5723c093ca2483cf76813533bfde723234de5",
+    "line": 96,
+    "token": "macro",
+    "code_line": "local macro \"push_map\" h:ident : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/GermEvGermEvThreePoints.lean",
+    "sha256": "3cd0dca7402a5914edee4d25386627ebee82594b507f5162e6e0891e9c2ae372",
+    "line": 87,
+    "token": "macro",
+    "code_line": "local macro \"gp\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/FormalGroupCharts/GermEvGermEvThreePoints.lean",
+    "sha256": "3cd0dca7402a5914edee4d25386627ebee82594b507f5162e6e0891e9c2ae372",
+    "line": 92,
+    "token": "macro",
+    "code_line": "local macro \"push_ev\" loc:(Lean.Parser.Tactic.location)? : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsClassSystem.lean",
+    "sha256": "ff6a2ff76ae10c79983f52c17be97819210cef1c2ee210280290d62e0fc4ace1",
+    "line": 29,
+    "token": "macro",
+    "code_line": "scoped macro \"geo_cases \" h:ident D:ident D':ident : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IsClassSystem.lean",
+    "sha256": "ff6a2ff76ae10c79983f52c17be97819210cef1c2ee210280290d62e0fc4ace1",
+    "line": 94,
+    "token": "macro",
+    "code_line": "scoped macro \"base_cases \" r:ident B:ident B':ident : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LiftSetupOverExtendedDataIntegralFormsEq.lean",
+    "sha256": "c93ba9fdb2f8f719dab32d7a6bf1f88f18938ca4886ae2d80a3c972d6ca1ce8d",
+    "line": 15,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RatCopyIff.lean",
+    "sha256": "92f2393e4cc983c3944a6bc601f5cf022bdf92165a19bd60ccc87bce7d586ac1",
+    "line": 16,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SetupRelIffSameData.lean",
+    "sha256": "568628f8e3d4e7b99bed73014556225005875e1315b0da8dd35d96f95d7f94d0",
+    "line": 21,
+    "token": "macro",
+    "code_line": "scoped macro \"set_cases \" h1:ident h2:ident N:ident N':ident X:ident X':ident : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TieMove.lean",
+    "sha256": "edb6d42513b62bef85e298330cff5a4422bb27855397a7e280f8ab26ba4c191f",
+    "line": 15,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CharWSeedStd.lean",
+    "sha256": "c4d38323952e32ef49e72ac2a202cbaeb5ee7a847c25a03185e87acbdbf30175",
+    "line": 16,
+    "token": "macro",
+    "code_line": "local macro \"qmove \" h:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/EqCjOneSmul.lean",
+    "sha256": "0286e8427bbc35fe46d95263739d7ffc46586ee93abacdd839b8fb925feb0042",
+    "line": 69,
+    "token": "macro",
+    "code_line": "local macro \"qmove \" h:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean",
+    "sha256": "9fdeae7598305e1240ab6c0a10010864df931bd238f87d4feb5ea987da95bd4b",
+    "line": 60,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.PrimeBelow.exists_below"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsExtTwistedPlaces.lean",
+    "sha256": "9fdeae7598305e1240ab6c0a10010864df931bd238f87d4feb5ea987da95bd4b",
+    "line": 61,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.PrimeBelow.exists_below"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGIs.lean",
+    "sha256": "506dc53de6619cc15a9efd9b5bcb4d01b7a934e2a723fa41df8a045cf31080d8",
+    "line": 81,
+    "token": "run_tac",
+    "code_line": "  run_tac do"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNormalisedReadingTransportedNewTwist.lean",
+    "sha256": "f576b78897baa6fdb1c0508cf45d8f5ec58f45ca83b05308995bc2efbb5da859",
+    "line": 13,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsSelectedRealization.lean",
+    "sha256": "8370fc19690243cf55fb9e495b88aadedc481fe79480798d3b8883ad09aac0fc",
+    "line": 43,
+    "token": "macro",
+    "code_line": "local macro:max \"kq% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FormGroupsModelsActionsMeasuresBasesCharacterise.lean",
+    "sha256": "0c657a8eb47ddc66036d4835fabc9bf5f5d083e2d1d4884d35c4047a3c6943a1",
+    "line": 18,
+    "token": "macro",
+    "code_line": "local macro \"ksub \" h:ident x:ident y:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FormGroupsModelsActionsMeasuresBasesCharacterise.lean",
+    "sha256": "0c657a8eb47ddc66036d4835fabc9bf5f5d083e2d1d4884d35c4047a3c6943a1",
+    "line": 30,
+    "token": "macro",
+    "code_line": "local macro \"tie_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FormGroupsModelsActionsMeasuresBasesCharacterise.lean",
+    "sha256": "0c657a8eb47ddc66036d4835fabc9bf5f5d083e2d1d4884d35c4047a3c6943a1",
+    "line": 81,
+    "token": "macro",
+    "code_line": "local macro \"pre_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LineModelTrueOfFalse.lean",
+    "sha256": "a4239af55e0848076b9a4fc5decaf96b223dd1199b635101ab64d70d703c27d8",
+    "line": 9,
+    "token": "macro",
+    "code_line": "local macro \"opens_le_auto\" : tactic => `(tactic| (refine SetLike.le_def.2 fun z hz => ?_; simp only [TopologicalSpace.Opens.mem_inf] at hz ⊢; tauto))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RealDatumPrerequisitesUpdateModels.lean",
+    "sha256": "1806305b83cbb3ba1d7a13abe0a6b980978d4500c4548f717e4ca0bf85515adb",
+    "line": 18,
+    "token": "macro",
+    "code_line": "scoped macro \"obt \" p:Lean.Parser.Tactic.rcasesPatMed \" := \" e:term : tactic => `(tactic| (have x := $e; obtain $p := x))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707",
+    "line": 18,
+    "token": "macro",
+    "code_line": "local macro \"ksub \" h:ident x:ident y:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707",
+    "line": 25,
+    "token": "macro",
+    "code_line": "local macro \"pre_sub\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707",
+    "line": 30,
+    "token": "macro",
+    "code_line": "local macro \"keq \" n:ident x:term:max y:term:max h:term:max : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707",
+    "line": 161,
+    "token": "macro",
+    "code_line": "local macro \"tie_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReferenceTupleWeilDatumVectorPolynomialMapEnlarg.lean",
+    "sha256": "886711e2d1f4b63417047751fc1aab835d29d29a782a86c9bda9fc41db0f8707",
+    "line": 213,
+    "token": "macro",
+    "code_line": "local macro \"pre_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RigidFrameSymmetricRatioSeries.lean",
+    "sha256": "de16c25d0b0f85df8976667902985424c4e9195668d6be6418a663a8abfa2490",
+    "line": 49,
+    "token": "macro",
+    "code_line": "macro \"jet_tac\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RingSpecNormalisedCharacterEq.lean",
+    "sha256": "29f604feb6f7e07de6e4c70fd1dbdba1a9fd2f35db1a0be2ad10d15946bc6e6b",
+    "line": 75,
+    "token": "macro",
+    "code_line": "scoped macro \"copy_cases \" h:ident D:ident D':ident : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "sha256": "10844a3c4f248fe97ae1d4b98b8e9b7ecf24200424fddd8a433564a0a01ff82f",
+    "line": 19,
+    "token": "macro",
+    "code_line": "local macro \"ksub \" h:ident x:ident y:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "sha256": "10844a3c4f248fe97ae1d4b98b8e9b7ecf24200424fddd8a433564a0a01ff82f",
+    "line": 53,
+    "token": "macro",
+    "code_line": "local macro \"tie_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "sha256": "10844a3c4f248fe97ae1d4b98b8e9b7ecf24200424fddd8a433564a0a01ff82f",
+    "line": 72,
+    "token": "macro",
+    "code_line": "local macro \"coef_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ThetaLiftAtReferenceTupleOverEnlargedBase.lean",
+    "sha256": "10844a3c4f248fe97ae1d4b98b8e9b7ecf24200424fddd8a433564a0a01ff82f",
+    "line": 183,
+    "token": "macro",
+    "code_line": "local macro \"pre_cases\" : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean",
+    "sha256": "3785ba4d678a03a944c207bd013c4e130df18cc5f61473d5848494e97e32af21",
+    "line": 36,
+    "token": "macro",
+    "code_line": "local macro \"no_const\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/IntegralChartFormalBiext.lean",
+    "sha256": "3785ba4d678a03a944c207bd013c4e130df18cc5f61473d5848494e97e32af21",
+    "line": 46,
+    "token": "macro",
+    "code_line": "local macro \"push_map\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/ModuliProofs/ExistsUniqueRigMulRight.lean",
+    "sha256": "31eafc7edc2213571e6b2dd37a4472511494d1b263e58e73c9a93b770f469bf8",
+    "line": 601,
+    "token": "macro",
+    "code_line": "local macro \"grp_comb \" e:term : tactic => `(tactic| ("
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean",
+    "sha256": "e955334b8a46e2106c059bd9d5c249e24c10ac51ee9c8299d60bc72cd8447e4c",
+    "line": 70,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.NatMulIsIntegralSatakeParameters.exists_nsmul_mem"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean",
+    "sha256": "e955334b8a46e2106c059bd9d5c249e24c10ac51ee9c8299d60bc72cd8447e4c",
+    "line": 71,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.NatMulIsIntegralSatakeParameters.exists_nsmul_mem"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean",
+    "sha256": "55077c284a75a14cf2f55a3cd24edd0009f2c91a71be8ce2c38abe7f47f5b5cc",
+    "line": 20,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.WittRootsOfUnity.inWf_of_mem_Kur"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedWeierstrassCurveTransformCoefficientsW.lean",
+    "sha256": "55077c284a75a14cf2f55a3cd24edd0009f2c91a71be8ce2c38abe7f47f5b5cc",
+    "line": 21,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.WittRootsOfUnity.inWf_of_mem_Kur"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean",
+    "sha256": "30751e257e3fc223f3a9549e28a874c3fc831e9026c4c856d781d34531a756e0",
+    "line": 206,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.AlgClosedResidueField.isAlgClosed_residueField"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ValuationRingModel.lean",
+    "sha256": "30751e257e3fc223f3a9549e28a874c3fc831e9026c4c856d781d34531a756e0",
+    "line": 207,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.AlgClosedResidueField.isAlgClosed_residueField"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean",
+    "sha256": "1f9990c66f2647e4cfad8af630be3b77cc7579299cc7fbb27409c053d646786f",
+    "line": 22,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact @_root_.GlobalTheory.ParahoricConjugateOpen.relIndex_conj_parahoric"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexTwoBlockParahoricConjTorusDiagElement.lean",
+    "sha256": "1f9990c66f2647e4cfad8af630be3b77cc7579299cc7fbb27409c053d646786f",
+    "line": 23,
+    "token": "run_tac",
+    "code_line": "  | (run_tac Lean.Elab.Tactic.liftMetaTactic (fun g => do pure [← g.revertAll])); exact _root_.GlobalTheory.ParahoricConjugateOpen.relIndex_conj_parahoric"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferBottom.lean",
+    "sha256": "5a9472ea63786c435a371ecbf102908819cbab18af40228fbae469a41a47e8c0",
+    "line": 24,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TransferFlip.lean",
+    "sha256": "1923ae5b42212d58dcb166cd31d9d32f8c02f7a5635e11c01a727c1d2edeea45",
+    "line": 28,
+    "token": "macro",
+    "code_line": "local macro:max \"kc% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TwoLeMOf.lean",
+    "sha256": "1bb6f00a7078b70cc83e8dd797d5a7fce16c06336070422f691f92fba40e2b26",
+    "line": 72,
+    "token": "macro",
+    "code_line": "local macro:max \"kd% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TwoLeMOf.lean",
+    "sha256": "1bb6f00a7078b70cc83e8dd797d5a7fce16c06336070422f691f92fba40e2b26",
+    "line": 74,
+    "token": "macro",
+    "code_line": "local macro \"copyDec% \" d:term:max : term =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/TwoLeMOf.lean",
+    "sha256": "1bb6f00a7078b70cc83e8dd797d5a7fce16c06336070422f691f92fba40e2b26",
+    "line": 78,
+    "token": "macro",
+    "code_line": "local macro \"copyIsV% \" h:term:max : term =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean",
+    "sha256": "c878433ece962bbb26d789d83fdb8e3bd2c8e0a9d2f11115a7ebf0ae1038d749",
+    "line": 34,
+    "token": "macro",
+    "code_line": "local macro \"sl2\" : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/UnitaryActions/ContinuousAdelicGL2OfContinuousEntries.lean",
+    "sha256": "c878433ece962bbb26d789d83fdb8e3bd2c8e0a9d2f11115a7ebf0ae1038d749",
+    "line": 36,
+    "token": "macro",
+    "code_line": "local macro \"gl2\" : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/ExistsHeckeCorrespondenceOnIntegralShimuraModel.lean",
+    "sha256": "f1b86665698294d83e5bc14077217402170b90525b60be8d0563df430be421fc",
+    "line": 103,
+    "token": "macro",
+    "code_line": "local macro \"cp \" m:term:max : term =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglands.lean",
+    "sha256": "9bccf10c351154503b409d5c767f30be14fdb637fb40428ac7a1a796c7135eb1",
+    "line": 29,
+    "token": "macro",
+    "code_line": "local macro:max \"kq% \" e:term:max : term => `((by kexactB $e))"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Cup1CoboundaryMemBoundaries.lean",
+    "sha256": "0cf066d390269283ffa08c36f9bbced97e7e157788b2405f3d1990e377e2db13",
+    "line": 96,
+    "token": "macro",
+    "code_line": "macro \"fin_order\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/DFormMem.lean",
+    "sha256": "bb935dc1ad46b52581364bd3b17a2e6d7837e0a3f13955716a15770780461f1b",
+    "line": 85,
+    "token": "macro",
+    "code_line": "local macro \"fa\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/GradedFormCocycle.lean",
+    "sha256": "f50b9e8967588dacc7efd7d89017dfbfe526d7acb09cde07483353600122b2c5",
+    "line": 15,
+    "token": "macro",
+    "code_line": "local macro \"fa\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NewformHeckeEigenvalue.lean",
+    "sha256": "4625364af2a402520830bc9f9403eab10eadd053034ee82e2ff4527b14a6b424",
+    "line": 23,
+    "token": "macro",
+    "code_line": "local macro \"gl2\" : tactic => `(tactic| (apply Units.ext; ext i j; fin_cases i <;> fin_cases j <;>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ShuffleCup1FormulaPositiveDegree.lean",
+    "sha256": "270d10633b733d5ebb753a7815cfd8d7b2bbda417eb7be39a37bcdb26c7fc171",
+    "line": 29,
+    "token": "macro",
+    "code_line": "macro \"fin_order'\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TaylorDifferentialRepresentative.lean",
+    "sha256": "1409bcca044b469a74198b3213c3fb55acee81f221db369dc9dcaa36fe9a6053",
+    "line": 59,
+    "token": "macro",
+    "code_line": "local macro \"fa\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/EtaleCohomology/EtaleSheaves/ChasePf.lean",
+    "sha256": "d4bc0d45dbd38c5776fe440fd2cd0d76ade37f883d2cc6caee59244ca3332fd5",
+    "line": 105,
+    "token": "macro",
+    "code_line": "macro \"meq\" : tactic => `(tactic| first"
+  },
+  {
+    "path": "project/lean/original/src/Development/EtaleCohomology/TateTwists/EtaleTensorCycleLocallyLowersTopDegreeOfRowExact.lean",
+    "sha256": "d306365f2b926515d43bdc084c629a0dca011ad39d877eefa10775d18a41dab6",
+    "line": 9,
+    "token": "macro",
+    "code_line": "local macro \"TI \" w:term:max : term => `({p : ℤ × ℤ // p.1 + p.2 = $w})"
+  },
+  {
+    "path": "project/lean/original/src/Development/EtaleCohomology/TateTwists/EtaleTensorCycleLocallyLowersTopDegreeOfRowExact.lean",
+    "sha256": "d306365f2b926515d43bdc084c629a0dca011ad39d877eefa10775d18a41dab6",
+    "line": 11,
+    "token": "macro",
+    "code_line": "local macro \"TF \" C:term:max J:term:max U:term:max w:term:max : term =>"
+  },
+  {
+    "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/PrincipalizationCertificate.lean",
+    "sha256": "70e9043d68e9fa7c44d2e4400c6f2cdd63cb46844a8de21438fa70700c975a5f",
+    "line": 10,
+    "token": "mutual",
+    "code_line": "mutual"
+  },
+  {
+    "path": "project/lean/original/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean",
+    "sha256": "a173c165e26872a99c33bc9a83e0c734be6b3360aacc03dee151b441b101c8b2",
+    "line": 34,
+    "token": "macro",
+    "code_line": "macro \"zz\" : tactic => `(tactic| repeat' with_reducible first"
+  },
+  {
+    "path": "project/lean/original/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CbBase.lean",
+    "sha256": "a173c165e26872a99c33bc9a83e0c734be6b3360aacc03dee151b441b101c8b2",
+    "line": 81,
+    "token": "macro",
+    "code_line": "macro \"evs\" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean",
+    "sha256": "4c6cebe8e328cc731f1cbd188c979814a7a15820d04acda2166b89976fa73cb9",
+    "line": 42,
+    "token": "macro",
+    "code_line": "macro \"ztac\" : tactic => `(tactic| repeat' (first"
+  },
+  {
+    "path": "project/lean/original/src/Development/WeilBound/CoreStatements/HodgeTatePoints/CcBase.lean",
+    "sha256": "4c6cebe8e328cc731f1cbd188c979814a7a15820d04acda2166b89976fa73cb9",
+    "line": 81,
+    "token": "macro",
+    "code_line": "macro \"evs\" \" at \" h:ident : tactic => `(tactic| simp (disch := ztac) only [FGLaw.add, ev_mul', ev_one, ev_ev, evV_cons,"
+  },
+  {
+    "path": "project/lean/original/src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/CechPairings/FaceMapCompSuccAboveCastSucc.lean",
+    "sha256": "b4bf1040a63ab247ee6f4b3c5a84c2ce5a0c4c8470b9958fdc2e326923f331cc",
+    "line": 227,
+    "token": "macro",
+    "code_line": "macro \"fin_tac\" : tactic => `(tactic| (funext x; first | (apply Fin.ext; simp only [Function.comp_apply, vsA, vpA, Fin.val_succ, Fin.val_castSucc, Fin.val_zero, Fin.val_last, id]; split_ifs <;> omega) | (simp only [Function.comp_apply, vbb, vsA, Fin.val_succ, Fin.val_castSucc, Fin.val_zero, Fin.val_last]; split_ifs <;> first | rfl | (exfalso; omega))))"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/DistinguishedUnitIdeals/DistinguishedOrderProofs/RhoMapFunctorial.lean",
+    "sha256": "b11b101941a1fd67d0ebdb5ef713ae77f6372bb185c7859be1b007968440f153",
+    "line": 10,
+    "token": "macro",
+    "code_line": "local macro \"modx\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/EllipticTorsion/EllipticTorsionProofs/Change.lean",
+    "sha256": "21ae9b94bfe2fc26228e83015a3619bb5f25705ebdab9b11d32f02fe13b20262",
+    "line": 66,
+    "token": "macro",
+    "code_line": "macro \"change_aux_intm\" : tactic => `(tactic| (repeat (first"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CoordinateCommuteRaisingConstant.lean",
+    "sha256": "7d026652cedc95a23ee31802ba3cd7bc0b41cefd38e7f3b684fee58d5a45cf01",
+    "line": 573,
+    "token": "macro",
+    "code_line": "local macro \"mx2_dg\" : tactic => `(tactic| (simp only [pA, pbA, cA, ciA, cbA, cbiA, zA, ziA, zbA, zbiA, ggA, ggiA, nabA_eq, nabsA_eq, sc, Matrix.scalar_apply, Matrix.diagonal_mul_diagonal, Matrix.diagonal_add, Matrix.diagonal_sub, ← Matrix.diagonal_one]; congr 1; funext π))"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CornerBlockActionInvariant.lean",
+    "sha256": "188eccc30cf1e86208f8723724d14a3b90d69403b9b2b34ec7baf89550d6d862",
+    "line": 72,
+    "token": "macro",
+    "code_line": "local macro \"blks\" : tactic => `(tactic| simp only [Ux3.block3_apply, Matrix.fromBlocks_apply₁₁, Matrix.fromBlocks_apply₁₂,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31",
+    "line": 41,
+    "token": "partial",
+    "code_line": "partial def go (env : Environment) (n : Name) (st : NameSet × NameSet × Array Name) : NameSet × NameSet × Array Name :="
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31",
+    "line": 78,
+    "token": "addDecl",
+    "code_line": "      addDecl (.defnDecl { d with name := n', type := subst tainted d.type, value := subst tainted d.value })"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31",
+    "line": 82,
+    "token": "addDecl",
+    "code_line": "      addDecl (.thmDecl { t with name := n', type := subst tainted t.type, value := subst tainted t.value })"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/CutCptCopy.lean",
+    "sha256": "2142903f6f9f969f51e2129acd7b8b00db9d3e99dacacd5c512f33654b1c0b31",
+    "line": 87,
+    "token": "elab",
+    "code_line": "elab \"cpt_copy_thms\" : command => do"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/EmbedLoweringConstant.lean",
+    "sha256": "d5629854469ec93754a22ca89573730da599faee12294b91459c620c06897856",
+    "line": 12,
+    "token": "macro",
+    "code_line": "local macro \"noncomm_match_scalars\" : tactic => `(tactic|"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LevelNablaStarRelations.lean",
+    "sha256": "0cae5f3637d2f4c0b114889723964088a683a3105339c699ff86d1175810dab2",
+    "line": 353,
+    "token": "macro",
+    "code_line": "local macro \"mx2_dg\" : tactic => `(tactic| (simp only [pA, pbA, cA, ciA, cbA, cbiA, zA, ziA, zbA, zbiA, ggA, ggiA, nabA_eq, nabsA_eq, sc,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/LinearFormRadicalRankOne.lean",
+    "sha256": "d67007c183a065c4a5eefdc45e42a4377ca043dbbbbc87576c26bd73b46d6642",
+    "line": 55,
+    "token": "macro",
+    "code_line": "local macro \"blks\" : tactic => `(tactic| simp only [Ux3.block3_apply, Matrix.fromBlocks_apply₁₁, Matrix.fromBlocks_apply₁₂,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RadicalUnipotentFirstBasisEqOne.lean",
+    "sha256": "bad9a3c19589c46a94d0d55595e5ce33d09a7d0ba61dd6fef02dfd45f20045aa",
+    "line": 412,
+    "token": "macro",
+    "code_line": "local macro \"blks\" : tactic => `(tactic| simp only [Ux3.block3_apply, Matrix.fromBlocks_apply₁₁, Matrix.fromBlocks_apply₁₂,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RadicalUnipotentFirstBasisEqOne.lean",
+    "sha256": "bad9a3c19589c46a94d0d55595e5ce33d09a7d0ba61dd6fef02dfd45f20045aa",
+    "line": 526,
+    "token": "macro",
+    "code_line": "local macro \"blks\" : tactic => `(tactic| simp only [Ux3.block3_apply, Matrix.fromBlocks_apply₁₁, Matrix.fromBlocks_apply₁₂,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/HermitianCurvature/HermitianCurvatureProofs/RttUpperRelationsFromDescent.lean",
+    "sha256": "316ff21bf397b67bc031601e9de3a48d55cb1af5584547bd3ee2cf182896183d",
+    "line": 30,
+    "token": "macro",
+    "code_line": "macro \"distrib_module\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean",
+    "sha256": "504c8f33d619c020ccc69abf8439c6d4215218a811ea6489c8cbc6d7b2b717f8",
+    "line": 231,
+    "token": "macro",
+    "code_line": "macro \"pos_tac\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/IndefiniteForms/IndefiniteTree/FunctionalLowerBoundOfConditionsNumeric.lean",
+    "sha256": "504c8f33d619c020ccc69abf8439c6d4215218a811ea6489c8cbc6d7b2b717f8",
+    "line": 234,
+    "token": "macro",
+    "code_line": "macro \"onele_tac\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/IndefiniteReal/HeckeNonvanishing/Imports.lean",
+    "sha256": "f31ce165cd4783d48da9b4c3cd10f037e3e0fccd46aab4532edb54e43a9f350c",
+    "line": 5,
+    "token": "elab",
+    "code_line": "elab \"kexactB \" e:term : tactic => withMainContext do"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean",
+    "sha256": "a3c982067143e5288390c77c60efe12dc2c2a0803cdb54ecf6fb913dc8339e11",
+    "line": 18,
+    "token": "partial",
+    "code_line": "partial def copyAt (probe : Bool) (e tgt : Expr) (path : String) (fuel : Nat) : StateT (Array String) MetaM Expr := do"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean",
+    "sha256": "a3c982067143e5288390c77c60efe12dc2c2a0803cdb54ecf6fb913dc8339e11",
+    "line": 53,
+    "token": "elab",
+    "code_line": "elab \"kcopy \" t:term : tactic => withMainContext do"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/NumberFieldFamilies/OwnStruct.lean",
+    "sha256": "a3c982067143e5288390c77c60efe12dc2c2a0803cdb54ecf6fb913dc8339e11",
+    "line": 60,
+    "token": "elab",
+    "code_line": "elab \"#kcopy_probe \" t:term \" : \" ty:term : command => Command.runTermElabM fun _ => do"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/LocalToGlobal/TorsionIntegrality/TorsionTranslationPowers/NonsingularJetNorms/NonsingularNorm.lean",
+    "sha256": "68af85efdf302ed1bb0bb6be6daa18e924b2e877e0f6786bdf62dd2bcba91369",
+    "line": 70,
+    "token": "macro",
+    "code_line": "macro \"integ\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/DensityLemma/PFibreBoundV.lean",
+    "sha256": "62cc18788225bba6c4f2820c0a40f60548d451dbe5a1b65fa5b8f7e52c1ae455",
+    "line": 175,
+    "token": "macro",
+    "code_line": "macro \"nbt\" : tactic => `(tactic| (simp only [unipotentBlockMatrix, Matrix.of_apply]; split_ifs <;>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/GaussianUniqueness/MulMApply.lean",
+    "sha256": "a5b54721fd46cab4c8f87a3cc042f9f1432e5507daff1f142b9b83ca6ee7fb1f",
+    "line": 12,
+    "token": "macro",
+    "code_line": "macro \"lvo\" : tactic => `(tactic| (intro a b c h1 h2; (try dsimp only at h1 h2 ⊢); omega))"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LevelImageArithmetic/GlevImageOf.lean",
+    "sha256": "875c0ca4e81134d6ee298a749d078cef841aa26ec0161d64948170b2d673248a",
+    "line": 12,
+    "token": "macro",
+    "code_line": "local macro \"ifarith\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean",
+    "sha256": "e347ea040bd1d90518bd5b76f13fc4e1677fd42a51be8d9a9942b477dc0f1294",
+    "line": 7,
+    "token": "macro",
+    "code_line": "macro \"fIwasawa_omega\" : tactic =>"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/SharpRestriction/Divisibility/GeneratorPowers/FBMapPf.lean",
+    "sha256": "85df320d9405292dbde4740756a18e385a23c739652e1833a34a999ad9de6ce6",
+    "line": 153,
+    "token": "macro",
+    "code_line": "local macro \"fbm\" : tactic => `(tactic| (simp only [map_mul, map_one, FGLaw.add, map_ev', mp_cons, mp_nil, mp_pt, mp_zero,"
+  },
+  {
+    "path": "project/lean/original/src/Formalism/SharpRestriction/Divisibility/LocalNonemptiness/SubsingletonRankIndicatorIff.lean",
+    "sha256": "ad43a68b1755c02e4a31433b77349f8c88aa7944c34b28d1136480fc650d4164",
+    "line": 276,
+    "token": "macro",
+    "code_line": "macro \"exists_prescribed_local_data\" : tactic => `(tactic| (intros; first | trivial | rfl | exact Subsingleton.elim _ _ | simp))"
+  },
+  {
+    "path": "project/lean/original/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/DiscreteValuationRings/ExistsRosatiGen.lean",
+    "sha256": "3e894c58047e5ce86469e0431d5511fb260cc0a155f705a427e999267411aba5",
+    "line": 34,
+    "token": "macro",
+    "code_line": "macro \"secTac\" : tactic => `(tactic| (simp [Sum.forall, Fin.forall_fin_succ, Over.w, Over.w_assoc, eSec, Matrix.cons_val_zero, Matrix.cons_val_succ]))"
+  },
+  {
+    "path": "project/lean/original/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/Theta1.lean",
+    "sha256": "5077ef0b69e8ac6fdf904a7f053282e6720a59413fa1b78db15940ccca34c757",
+    "line": 25,
+    "token": "macro",
+    "code_line": "macro \"ones\" : tactic => `(tactic| (repeat (first | erw [map_one] | erw [one_zpow] | erw [one_pow] | erw [inv_one] | erw [_root_.mul_one] | erw [_root_.one_mul])))"
+  }
+]

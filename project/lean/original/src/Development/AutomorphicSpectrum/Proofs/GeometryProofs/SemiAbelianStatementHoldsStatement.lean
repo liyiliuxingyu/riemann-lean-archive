@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiAbelianStatementHolds
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair

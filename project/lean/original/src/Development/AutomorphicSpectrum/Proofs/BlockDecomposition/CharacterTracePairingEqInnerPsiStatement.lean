@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterTracePairingEqInnerPsi
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoConstPowMulPowPowZero
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsAlgebraMapEqRoot
 open PowerSeries GlobalTheory.BK Filter Topology
 set_option maxHeartbeats 1000000 in

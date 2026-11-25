@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCoefficientReductionCup
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC

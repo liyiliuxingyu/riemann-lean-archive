@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationConstantOfPowerEq
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsEqnIffGeneratesAtInv
 

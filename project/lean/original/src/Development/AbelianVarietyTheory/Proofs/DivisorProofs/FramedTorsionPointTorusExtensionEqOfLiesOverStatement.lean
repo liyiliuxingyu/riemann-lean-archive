@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramedTorsionPointTorusExtensionEqOfLiesOver
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumFConstMul

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterFiniteIdeleValueEq
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
 
 open NumberField IsDedekindDomain

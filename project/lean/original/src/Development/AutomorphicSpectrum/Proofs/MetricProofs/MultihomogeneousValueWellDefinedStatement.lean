@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultihomogeneousValueWellDefined
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo GlobalTheory.CompanionTheory.Ar.Small Filter Topology
 set_option maxHeartbeats 1000000 in

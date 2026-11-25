@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResSurjectiveNilpotentKer
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSchemeOfThickenings
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreimageUpOpen
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite

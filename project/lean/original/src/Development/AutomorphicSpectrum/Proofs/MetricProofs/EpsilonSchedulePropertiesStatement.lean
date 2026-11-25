@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EpsilonScheduleProperties
-import Mathlib
 import ReciprocityTheory.AnalyticForms.LeviForms.RegGlue
 import ReciprocityTheory.AnalyticForms.LeviForms.RegChartC
 import ReciprocityTheory.AnalyticForms.LeviForms.TailCut

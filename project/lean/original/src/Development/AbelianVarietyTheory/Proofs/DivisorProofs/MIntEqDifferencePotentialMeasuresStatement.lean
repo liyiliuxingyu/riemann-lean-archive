@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MIntEqDifferencePotentialMeasures
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTChartSource
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M

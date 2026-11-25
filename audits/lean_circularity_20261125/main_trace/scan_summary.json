@@ -1,0 +1,22 @@
+{
+  "commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "scan_scope": "project/lean/original/src",
+  "full_project_build_performed": false,
+  "scans": {
+    "rh_final_tokens": {
+      "pattern": "\\bRiemannHypothesis\\b|\\briemannHypothesis\\b|\\brhOfAll\\b|\\ballChi\\b|\\bFinalTheorems\\.everyCharacter\\b",
+      "matching_lines": 53,
+      "result_file": "rh_final_tokens.txt"
+    },
+    "every_character": {
+      "pattern": "\\bEveryCharacter\\b",
+      "matching_lines": 17,
+      "result_file": "every_character.txt"
+    },
+    "core_name_redefinitions": {
+      "pattern": "^((private|protected|noncomputable) )?(def|abbrev|axiom|theorem|opaque) (RiemannHypothesis|riemannZeta|DirichletCharacter\\.LFunction)\\b|^notation.*RiemannHypothesis|^local.*RiemannHypothesis",
+      "matching_lines": 0,
+      "result_file": "core_name_redefinitions.txt"
+    }
+  }
+}

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExpansionScaledSectionCoordinates
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SvalUpSec
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDivOfExpandsAt
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CstDvdOfCstMulEqZero

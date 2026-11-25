@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaAveragingIntegralFormula
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarMeasureIwasawaQuotient
 open MeasureTheory
 open scoped NNReal ENNReal

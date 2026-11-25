@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIsotropicLeCard
-import Mathlib
 
 open Matrix
 set_option maxHeartbeats 1000000 in

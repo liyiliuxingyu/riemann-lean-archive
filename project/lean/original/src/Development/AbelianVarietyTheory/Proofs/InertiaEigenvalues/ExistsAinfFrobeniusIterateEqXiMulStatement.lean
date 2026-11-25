@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAinfFrobeniusIterateEqXiMul
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
 open Formalism
 open scoped Formalism.Per

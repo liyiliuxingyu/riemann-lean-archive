@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowTypeCharacterBlockSumOneEq
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.XiAtPenultimateEqXiCpl1
 import Formalism.LocalToGlobal.Columns.KOneCharacterTrivialNearOne
 import Formalism.LocalToGlobal.Columns.ChainTwTopQ

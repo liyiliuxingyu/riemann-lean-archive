@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetModuleInStagesRefinedBlocks
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientOfEquiv
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.JacStages
 set_option maxHeartbeats 1000000 in

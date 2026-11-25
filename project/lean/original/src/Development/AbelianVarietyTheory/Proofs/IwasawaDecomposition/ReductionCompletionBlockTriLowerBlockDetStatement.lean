@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReductionCompletionBlockTriLowerBlockDet
-import Mathlib
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLevel
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap

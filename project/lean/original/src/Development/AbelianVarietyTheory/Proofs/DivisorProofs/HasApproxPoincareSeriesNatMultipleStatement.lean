@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasApproxPoincareSeriesNatMultiple
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ThetaSetupStructureMapComp
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonUnitAt
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory IsLocalRing

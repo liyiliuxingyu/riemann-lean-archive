@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHolomorphicSubAtlasSmoothClosedSubscheme
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.ContinuousBcPt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar

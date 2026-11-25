@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FixedVectorOfMemIsotypicComponent
-import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 open Formalism.L2 Formalism.AUTREP ReciprocityTheory.Aut NumberField
 set_option maxHeartbeats 1000000 in

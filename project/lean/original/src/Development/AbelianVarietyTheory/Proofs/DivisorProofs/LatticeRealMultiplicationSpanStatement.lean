@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeRealMultiplicationSpan
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsHolFormConst
 open NumberField GlobalTheory.RealMult
 set_option maxHeartbeats 1000000 in

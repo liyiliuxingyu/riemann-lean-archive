@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiGeneratorValueAddEndomorphismsCubical
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BalTau
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTauLattice
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds

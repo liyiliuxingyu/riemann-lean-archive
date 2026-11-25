@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanImageInterOfFlatLinearlyDisjoint
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MemRangeOfForallHeightEqOneOfIsReflexive
 open GlobalTheory.Desc

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightSpacesSpan
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CPoly
 open Matrix Finset

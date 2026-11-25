@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFramesRespectCubicalStructures
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumFConstMul

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalFiniteModelOfExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FaithfulSMulAlgClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRingOver
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing TensorProduct

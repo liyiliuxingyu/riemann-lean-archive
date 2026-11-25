@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationMulLeOneOfTraceApproxIdempotentIntegral
-import Mathlib
 open NumberField IsDedekindDomain
 open Classical
 set_option maxHeartbeats 1000000 in

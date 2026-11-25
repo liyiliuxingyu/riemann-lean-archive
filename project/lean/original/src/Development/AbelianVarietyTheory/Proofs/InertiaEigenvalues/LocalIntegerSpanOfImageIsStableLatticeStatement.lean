@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalIntegerSpanOfImageIsStableLattice
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLStable
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOfClosure

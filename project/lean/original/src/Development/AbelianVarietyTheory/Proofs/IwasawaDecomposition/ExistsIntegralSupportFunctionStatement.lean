@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegralSupportFunction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InRealConeSelf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntBilinFormToRealMemBalancedPsdCone
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

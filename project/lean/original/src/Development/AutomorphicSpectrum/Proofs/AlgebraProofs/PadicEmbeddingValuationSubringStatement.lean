@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicEmbeddingValuationSubring
-import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ThmFlatA
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TupleIntegralFormsRowPlaceByPlace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EWtApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UfGLRatHom
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords

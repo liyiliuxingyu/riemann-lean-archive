@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierEtaleKEqIntegralPartialFourier
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnifConst
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

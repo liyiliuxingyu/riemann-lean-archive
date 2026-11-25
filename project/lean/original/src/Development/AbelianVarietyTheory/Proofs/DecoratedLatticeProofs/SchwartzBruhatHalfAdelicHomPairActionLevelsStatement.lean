@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatHalfAdelicHomPairActionLevels
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne

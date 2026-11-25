@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFamilySurjectiveIffGeometricPoint
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaAwayPowSelf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom

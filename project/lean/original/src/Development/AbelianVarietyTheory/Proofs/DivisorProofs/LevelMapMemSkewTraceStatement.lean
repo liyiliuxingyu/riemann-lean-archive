@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapMemSkewTrace
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodRing
 open Matrix GlobalTheory.SUCong
 set_option maxHeartbeats 1000000 in

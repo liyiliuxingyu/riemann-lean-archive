@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilradicalChangeOfVariables
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousConjNilSymm
 open Matrix MeasureTheory PositivityTheory.Rg.BcB PositivityTheory.Rg.Tf.Loc
 set_option maxHeartbeats 1000000 in

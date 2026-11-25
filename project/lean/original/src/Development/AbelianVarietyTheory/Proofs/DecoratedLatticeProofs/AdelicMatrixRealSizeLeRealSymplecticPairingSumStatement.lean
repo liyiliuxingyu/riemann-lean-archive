@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixRealSizeLeRealSymplecticPairingSum
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate

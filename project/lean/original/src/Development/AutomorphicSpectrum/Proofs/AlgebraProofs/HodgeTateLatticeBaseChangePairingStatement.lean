@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeTateLatticeBaseChangePairing
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsCompactUnitaryPointsAtPlaceFstMemCompact
 open GlobalTheory.CompanionTheory.Ar.HT NumberField TensorProduct
 set_option maxHeartbeats 1000000 in

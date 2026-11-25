@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankMaximalRealEven
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
 open NumberField
 set_option maxHeartbeats 1000000 in

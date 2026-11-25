@@ -1,0 +1,39 @@
+{
+  "source_commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "files_read": 8,
+  "source_project_build_performed": false,
+  "files": [
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/PrincipalizationCertificate.lean",
+      "sha256": "70e9043d68e9fa7c44d2e4400c6f2cdd63cb46844a8de21438fa70700c975a5f"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/SmoothOrderOneCenters.lean",
+      "sha256": "15be29f82e4822d71e8aaa34ac2cb5d015df7f708cbe53df140118e3792939b6"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/VanishingIdealHypotheses.lean",
+      "sha256": "85cd98a467c4495363a4419b857145a9e5b09b3c5bc4887ea281ec1ccb51a690"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/CertificateOpenRestriction.lean",
+      "sha256": "c54e17e2de99243f6c098303c60f43f4e1ce5a5f775cf61147433785f677d308"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/RestrictionToOpens.lean",
+      "sha256": "af428340a01bb859219b069bb19312ad8de9d457990f9d581c0e60ac406921d6"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/StrictTransformSmoothness.lean",
+      "sha256": "e77500b3b827d96b703c96e0661a12738aae7fd4ea9ed0046c5f01f387a48a45"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/OrderReductionProperties.lean",
+      "sha256": "24c07e7c7cb309f52a897759c25174a3adbcc4f269c409b0149f2d6fecc90dbb"
+    },
+    {
+      "path": "project/lean/original/src/Development/ResolutionOfSingularities/EmbeddedResolution/IdealPrincipalization/OrderReduction/OrderCertificatesMultiplicityOne.lean",
+      "sha256": "f95863276a64532ddc9275c773691c8dc0a4f9de2a9186b7cb93ae3fc52b13e0"
+    }
+  ]
+}

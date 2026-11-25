@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InertPlaceLocalTraceCharacterConductorIntegers
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanRhoTEqTop
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PiEqOfFinPart
 noncomputable section

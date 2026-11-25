@@ -1,0 +1,165 @@
+{
+  "phase": "gamma",
+  "lean_version": "4.33.1",
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "scope": "Standalone baseline/candidate proof and API checks, not a full project build",
+  "compilations": [
+    {
+      "module": "GammaFactorBaseline",
+      "source_sha256": "86746d3cc11e677b9ad9dedf80a5c217f61d95d751a17147dec9eb0050dcec06",
+      "command": [
+        "lean",
+        "-M",
+        "4096",
+        "-j",
+        "2",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-R",
+        "audits/lean_simplification_20261125/proof_tests",
+        "-o",
+        "<temporary-olean-directory>/GammaFactorBaseline.olean",
+        "audits/lean_simplification_20261125/proof_tests/GammaFactorBaseline.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 38.338,
+      "stdout": "'Formalism.VW.gammaFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Claim.gamma_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "GammaFactorStandalone",
+      "source_sha256": "4602c5dd596b1a779b3b418658a0322357e84e6ef478bd39ffd554258329dea2",
+      "command": [
+        "lean",
+        "-M",
+        "4096",
+        "-j",
+        "2",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-R",
+        "audits/lean_simplification_20261125/proof_tests",
+        "-o",
+        "<temporary-olean-directory>/GammaFactorStandalone.olean",
+        "audits/lean_simplification_20261125/proof_tests/GammaFactorStandalone.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 19.247,
+      "stdout": "'Formalism.VW.gammaFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Claim.gamma_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "api_comparison": {
+    "method": "Separate processes export complete ConstantInfo.type Lean.Expr constructor representations and exact universe parameter representations; Python compares these byte-for-byte after Lean Name.eraseMacroScopes is applied only to bound-variable names; constant names, binder annotations, levels, metadata and all type structure are preserved. Raw structure equality is also reported. Axioms are parsed from each successful compiler invocation's #print axioms.",
+    "exports": [
+      {
+        "command": [
+          "lean",
+          "-M",
+          "4096",
+          "-j",
+          "1",
+          "--run",
+          "audits/lean_simplification_20261125/proof_tests/ExportApiTypes.lean",
+          "GammaFactorBaseline",
+          "Formalism.VW.gammaFactor_ne_zero",
+          "Claim.gamma_ne_zero",
+          "GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 32.048
+      },
+      {
+        "command": [
+          "lean",
+          "-M",
+          "4096",
+          "-j",
+          "1",
+          "--run",
+          "audits/lean_simplification_20261125/proof_tests/ExportApiTypes.lean",
+          "GammaFactorStandalone",
+          "Formalism.VW.gammaFactor_ne_zero",
+          "Claim.gamma_ne_zero",
+          "GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 38.153
+      }
+    ],
+    "returncode": 0,
+    "declarations": [
+      {
+        "declaration": "Formalism.VW.gammaFactor_ne_zero",
+        "type_expr_identical": true,
+        "type_expr_same_after_binder_hygiene_erasure": true,
+        "level_parameters_identical": true,
+        "baseline_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "candidate_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "axioms_identical": true,
+        "no_sorryAx": true,
+        "both_theorems": true,
+        "baseline_type_expr": "Lean.Expr.forallE\n  `N\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    `χ\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n            (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instField [])))))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `s\n      (Lean.Expr.const `Complex [])\n      (Lean.Expr.forallE\n        `hs\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n              (Lean.Expr.const `Real.instLT []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instZero []))))\n          (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 3))\n                (Lean.Expr.bvar 2))\n              (Lean.Expr.bvar 1)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.lit (Lean.Literal.natVal 0)))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instZero []))))\n        (Lean.BinderInfo.default))\n      (Lean.BinderInfo.implicit))\n    (Lean.BinderInfo.default))\n  (Lean.BinderInfo.implicit)",
+        "candidate_type_expr": "Lean.Expr.forallE\n  `N\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    `χ\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n            (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instField [])))))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `s\n      (Lean.Expr.const `Complex [])\n      (Lean.Expr.forallE\n        `hs\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n              (Lean.Expr.const `Real.instLT []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instZero []))))\n          (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 3))\n                (Lean.Expr.bvar 2))\n              (Lean.Expr.bvar 1)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.lit (Lean.Literal.natVal 0)))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instZero []))))\n        (Lean.BinderInfo.default))\n      (Lean.BinderInfo.implicit))\n    (Lean.BinderInfo.default))\n  (Lean.BinderInfo.implicit)",
+        "passed": true
+      },
+      {
+        "declaration": "Claim.gamma_ne_zero",
+        "type_expr_identical": false,
+        "type_expr_same_after_binder_hygiene_erasure": true,
+        "level_parameters_identical": true,
+        "baseline_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "candidate_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "axioms_identical": true,
+        "no_sorryAx": true,
+        "both_theorems": true,
+        "baseline_type_expr": "Lean.Expr.forallE\n  `M\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    (Lean.Name.mkNum (Lean.Name.mkStr (Lean.Name.mkStr (Lean.Name.mkNum `inst.«_@».GammaFactorBaseline 1312625852) \"_hygCtx\") \"_hyg\") 5)\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `NeZero [Lean.Level.zero]) (Lean.Expr.const `Nat []))\n        (Lean.Expr.app\n          (Lean.Expr.app (Lean.Expr.const `MulZeroClass.toZero [Lean.Level.zero]) (Lean.Expr.const `Nat []))\n          (Lean.Expr.const `Nat.instMulZeroClass [])))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `φ\n      (Lean.Expr.app\n        (Lean.Expr.app\n          (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n                (Lean.Expr.const `Complex []))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.const `Complex.instField [])))))\n        (Lean.Expr.bvar 1))\n      (Lean.Expr.forallE\n        `t\n        (Lean.Expr.const `Complex [])\n        (Lean.Expr.forallE\n          `ht\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instLT []))\n              (Lean.Expr.app\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                  (Lean.Expr.lit (Lean.Literal.natVal 0)))\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                  (Lean.Expr.const `Real.instZero []))))\n            (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.app\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 4))\n                  (Lean.Expr.bvar 2))\n                (Lean.Expr.bvar 1)))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.const `Complex.instZero []))))\n          (Lean.BinderInfo.default))\n        (Lean.BinderInfo.implicit))\n      (Lean.BinderInfo.default))\n    (Lean.BinderInfo.instImplicit))\n  (Lean.BinderInfo.implicit)",
+        "candidate_type_expr": "Lean.Expr.forallE\n  `M\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    (Lean.Name.mkNum (Lean.Name.mkStr (Lean.Name.mkStr (Lean.Name.mkNum `inst.«_@».GammaFactorStandalone 1312625852) \"_hygCtx\") \"_hyg\") 5)\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `NeZero [Lean.Level.zero]) (Lean.Expr.const `Nat []))\n        (Lean.Expr.app\n          (Lean.Expr.app (Lean.Expr.const `MulZeroClass.toZero [Lean.Level.zero]) (Lean.Expr.const `Nat []))\n          (Lean.Expr.const `Nat.instMulZeroClass [])))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `φ\n      (Lean.Expr.app\n        (Lean.Expr.app\n          (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n                (Lean.Expr.const `Complex []))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.const `Complex.instField [])))))\n        (Lean.Expr.bvar 1))\n      (Lean.Expr.forallE\n        `t\n        (Lean.Expr.const `Complex [])\n        (Lean.Expr.forallE\n          `ht\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instLT []))\n              (Lean.Expr.app\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                  (Lean.Expr.lit (Lean.Literal.natVal 0)))\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                  (Lean.Expr.const `Real.instZero []))))\n            (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.app\n                (Lean.Expr.app\n                  (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 4))\n                  (Lean.Expr.bvar 2))\n                (Lean.Expr.bvar 1)))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n                (Lean.Expr.const `Complex.instZero []))))\n          (Lean.BinderInfo.default))\n        (Lean.BinderInfo.implicit))\n      (Lean.BinderInfo.default))\n    (Lean.BinderInfo.instImplicit))\n  (Lean.BinderInfo.implicit)",
+        "passed": true
+      },
+      {
+        "declaration": "GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero",
+        "type_expr_identical": true,
+        "type_expr_same_after_binder_hygiene_erasure": true,
+        "level_parameters_identical": true,
+        "baseline_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "candidate_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "axioms_identical": true,
+        "no_sorryAx": true,
+        "both_theorems": true,
+        "baseline_type_expr": "Lean.Expr.forallE\n  `q\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    `χ\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n            (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instField [])))))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `s\n      (Lean.Expr.const `Complex [])\n      (Lean.Expr.forallE\n        `hs\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n              (Lean.Expr.const `Real.instLT []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instZero []))))\n          (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 3))\n                (Lean.Expr.bvar 2))\n              (Lean.Expr.bvar 1)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.lit (Lean.Literal.natVal 0)))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instZero []))))\n        (Lean.BinderInfo.default))\n      (Lean.BinderInfo.implicit))\n    (Lean.BinderInfo.default))\n  (Lean.BinderInfo.implicit)",
+        "candidate_type_expr": "Lean.Expr.forallE\n  `q\n  (Lean.Expr.const `Nat [])\n  (Lean.Expr.forallE\n    `χ\n    (Lean.Expr.app\n      (Lean.Expr.app\n        (Lean.Expr.app (Lean.Expr.const `DirichletCharacter [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.const `CommGroupWithZero.toCommMonoidWithZero [Lean.Level.zero])\n            (Lean.Expr.const `Complex []))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.const `Semifield.toCommGroupWithZero [Lean.Level.zero])\n              (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Field.toSemifield [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instField [])))))\n      (Lean.Expr.bvar 0))\n    (Lean.Expr.forallE\n      `s\n      (Lean.Expr.const `Complex [])\n      (Lean.Expr.forallE\n        `hs\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `LT.lt [Lean.Level.zero]) (Lean.Expr.const `Real []))\n              (Lean.Expr.const `Real.instLT []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.lit (Lean.Literal.natVal 0)))\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Real []))\n                (Lean.Expr.const `Real.instZero []))))\n          (Lean.Expr.app (Lean.Expr.const `Complex.re []) (Lean.Expr.bvar 0)))\n        (Lean.Expr.app\n          (Lean.Expr.app\n            (Lean.Expr.app (Lean.Expr.const `Ne [Lean.Level.succ (Lean.Level.zero)]) (Lean.Expr.const `Complex []))\n            (Lean.Expr.app\n              (Lean.Expr.app\n                (Lean.Expr.app (Lean.Expr.const `DirichletCharacter.gammaFactor []) (Lean.Expr.bvar 3))\n                (Lean.Expr.bvar 2))\n              (Lean.Expr.bvar 1)))\n          (Lean.Expr.app\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `OfNat.ofNat [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.lit (Lean.Literal.natVal 0)))\n            (Lean.Expr.app\n              (Lean.Expr.app (Lean.Expr.const `Zero.toOfNat0 [Lean.Level.zero]) (Lean.Expr.const `Complex []))\n              (Lean.Expr.const `Complex.instZero []))))\n        (Lean.BinderInfo.default))\n      (Lean.BinderInfo.implicit))\n    (Lean.BinderInfo.default))\n  (Lean.BinderInfo.implicit)",
+        "passed": true
+      }
+    ]
+  },
+  "all_passed": true,
+  "source_project_full_build_performed": false,
+  "scope_note": "These tests extract the four declaration interfaces into a fixed Mathlib environment. They do not compile the full original project modules or Main. Bound-name hygiene erasure affects binder names only; complete type structure, BinderInfo, constants, levels, metadata and user-visible names remain in the comparison."
+}

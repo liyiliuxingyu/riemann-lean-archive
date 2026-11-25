@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartSectionNotMemComponents
-import Mathlib
 import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.PoincareLelong
 import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.SheetDensityEqSetSheetDensity
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed

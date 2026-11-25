@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReads
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 
 open NumberField MeasureTheory

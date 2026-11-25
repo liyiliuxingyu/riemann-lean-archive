@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositiveDefiniteLeadingMinorInverseBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtConst
 open Matrix GlobalTheory.MatDeriv
 open scoped Topology

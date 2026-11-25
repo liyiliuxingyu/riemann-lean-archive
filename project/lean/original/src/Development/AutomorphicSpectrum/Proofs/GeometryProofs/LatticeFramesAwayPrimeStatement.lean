@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFramesAwayPrime
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomFixedPullbackRepresentableGlue
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToRingActOpOfRingAct
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyHomFixRepTrivial
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover

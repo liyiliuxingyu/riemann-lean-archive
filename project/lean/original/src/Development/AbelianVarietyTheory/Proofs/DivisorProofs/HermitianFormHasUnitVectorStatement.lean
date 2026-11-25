@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormHasUnitVector
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodRing
 open Matrix
 set_option maxHeartbeats 1000000 in

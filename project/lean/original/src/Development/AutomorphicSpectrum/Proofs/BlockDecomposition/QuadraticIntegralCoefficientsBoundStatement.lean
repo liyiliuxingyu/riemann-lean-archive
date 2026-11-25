@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticIntegralCoefficientsBound
-import Mathlib
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbBar

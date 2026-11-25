@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupPullbackTangentVectorsCompat
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepLatZero
 open NumberField GlobalTheory.ShFam.Pad AlgebraicGeometry CategoryTheory
 

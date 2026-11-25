@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenSubgroups
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 open NumberField IsDedekindDomain Filter Topology
 set_option maxHeartbeats 1000000 in

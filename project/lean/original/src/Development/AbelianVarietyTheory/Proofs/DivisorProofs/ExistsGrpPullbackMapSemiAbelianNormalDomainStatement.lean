@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGrpPullbackMapSemiAbelianNormalDomain
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBaseAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

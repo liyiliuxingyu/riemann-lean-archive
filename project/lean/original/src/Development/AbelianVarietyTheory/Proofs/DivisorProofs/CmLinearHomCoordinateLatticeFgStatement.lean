@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmLinearHomCoordinateLatticeFg
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLinearHomProd
 open NumberField
 set_option maxHeartbeats 1000000 in

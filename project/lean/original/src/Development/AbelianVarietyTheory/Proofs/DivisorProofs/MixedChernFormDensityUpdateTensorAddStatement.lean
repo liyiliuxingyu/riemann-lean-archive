@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormDensityUpdateTensorAdd
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.ContinuousBcPt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar

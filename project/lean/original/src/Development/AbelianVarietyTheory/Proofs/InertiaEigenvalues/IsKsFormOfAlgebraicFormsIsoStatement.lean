@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKsFormOfAlgebraicFormsIso
-import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.RatDatOfReal
 open NumberField Formalism.IndefR.NX
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CartanOffBlockSubmatrix
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SingularValueFrame
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.CartanCoshPower
 import Formalism.LocalRingCardinality.SpanPowerMembership.SignSplitEquivInl

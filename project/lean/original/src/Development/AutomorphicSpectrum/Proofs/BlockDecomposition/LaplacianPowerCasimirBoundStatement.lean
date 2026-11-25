@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianPowerCasimirBound
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.CalcSteps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Lap
 open MeasureTheory Matrix Finset Filter Topology

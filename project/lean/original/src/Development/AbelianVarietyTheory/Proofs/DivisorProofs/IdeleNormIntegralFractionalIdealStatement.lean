@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleNormIntegralFractionalIdeal
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeIntZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TmulMemLocId

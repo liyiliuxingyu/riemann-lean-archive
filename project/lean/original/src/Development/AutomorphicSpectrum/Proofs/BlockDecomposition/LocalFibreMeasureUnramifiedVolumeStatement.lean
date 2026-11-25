@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFibreMeasureUnramifiedVolume
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFibreMeasureUnramifiedFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FibreMassEq

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicFourierMemSchwartzTotallyReal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsWeilFormulas
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicPoissonSummationAnyHaar
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FourierInversion

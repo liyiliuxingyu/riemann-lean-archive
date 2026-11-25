@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowIrreducibleKStable
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EabIsKCInr
 open MvPolynomial Formalism.BasicNotions.TH
 set_option maxHeartbeats 1000000 in

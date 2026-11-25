@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceWedgeSelfEqZero
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCurvatureForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovariantSecondFundamentalForm
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg

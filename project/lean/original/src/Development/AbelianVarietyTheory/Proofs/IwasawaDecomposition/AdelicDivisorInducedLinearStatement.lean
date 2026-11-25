@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedLinear
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsHodgeFrameIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
 import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt

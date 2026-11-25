@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MbarSemipositiveNefSmallR
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeVolSlopeOfTendsto
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsX
 open NumberField IsDedekindDomain Filter Topology

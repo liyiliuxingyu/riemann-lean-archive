@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzAdelicSliceSmooth
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvFinMkPt
 
 open scoped TensorProduct

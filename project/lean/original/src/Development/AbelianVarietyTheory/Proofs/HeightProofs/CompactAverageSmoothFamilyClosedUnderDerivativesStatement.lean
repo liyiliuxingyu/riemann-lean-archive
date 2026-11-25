@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactAverageSmoothFamilyClosedUnderDerivatives
-import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP

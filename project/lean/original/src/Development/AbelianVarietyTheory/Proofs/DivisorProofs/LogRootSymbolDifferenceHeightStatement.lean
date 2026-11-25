@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogRootSymbolDifferenceHeight
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QDivBdQ
 open NumberField IsDedekindDomain Filter Topology
 open Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.Geo.Tor

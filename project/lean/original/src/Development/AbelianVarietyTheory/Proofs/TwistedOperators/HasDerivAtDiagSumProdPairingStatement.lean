@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtDiagSumProdPairing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairInfApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockFormApply
 open MeasureTheory

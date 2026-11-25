@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReducedFiniteFreePointsSeparate
-import Mathlib
 set_option autoImplicit false
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

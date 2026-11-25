@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasAllKTypesOfClosureDiscreteSeriesCoefficients
-import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FinitePartTypes
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists

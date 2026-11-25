@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltrationDistinctCharactersSplit
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusThreeBlockApply
 open GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.LeviBlockExponent GlobalTheory.IndJacBlock
 set_option maxHeartbeats 1000000 in

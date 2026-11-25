@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantInducedIsAdmissible
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMidJacAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus
 

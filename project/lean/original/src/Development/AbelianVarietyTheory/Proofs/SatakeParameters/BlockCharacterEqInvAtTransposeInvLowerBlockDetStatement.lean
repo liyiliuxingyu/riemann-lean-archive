@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlockCharacterEqInvAtTransposeInvLowerBlockDet
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValLeOneOfMemKO
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjSPV

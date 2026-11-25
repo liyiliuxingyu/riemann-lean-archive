@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalChartAbelianFibre
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoUniformlyOfFamAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TruncatedPotentialLogGrowth

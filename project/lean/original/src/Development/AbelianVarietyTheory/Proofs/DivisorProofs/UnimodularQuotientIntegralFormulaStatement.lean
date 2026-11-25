@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnimodularQuotientIntegralFormula
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipParLeUnipFlag
 import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalUnramifiedIntegralValue
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 open scoped TensorProduct NNReal Matrix

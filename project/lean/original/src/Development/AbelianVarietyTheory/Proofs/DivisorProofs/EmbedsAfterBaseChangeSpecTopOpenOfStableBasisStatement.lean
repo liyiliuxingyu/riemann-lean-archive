@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbedsAfterBaseChangeSpecTopOpenOfStableBasis
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WchartCompLe
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PolarizedAbelianEmbeddingBySections
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PullSec

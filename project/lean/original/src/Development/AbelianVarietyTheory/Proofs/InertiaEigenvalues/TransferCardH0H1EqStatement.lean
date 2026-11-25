@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TransferCardH0H1Eq
-import Mathlib
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.GaloisCohomology.LocalTateDualityK
 import ReciprocityTheory.Hypotheses.GalCohDefs

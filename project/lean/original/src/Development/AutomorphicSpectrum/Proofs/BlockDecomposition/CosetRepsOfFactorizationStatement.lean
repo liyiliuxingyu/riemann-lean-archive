@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetRepsOfFactorization
-import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.UnitaryExtremality.SatPowNonvan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsStrictDom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPermWOne

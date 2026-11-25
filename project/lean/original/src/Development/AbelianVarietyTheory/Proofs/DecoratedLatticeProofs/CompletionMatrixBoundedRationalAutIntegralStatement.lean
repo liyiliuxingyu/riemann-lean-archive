@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompletionMatrixBoundedRationalAutIntegral
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 import Formalism.LocalToGlobal.Columns.ChainTwAn
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsGLExistsUnique

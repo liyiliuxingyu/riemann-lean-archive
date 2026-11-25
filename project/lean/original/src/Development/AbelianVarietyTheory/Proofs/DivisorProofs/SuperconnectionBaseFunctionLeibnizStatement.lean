@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnectionBaseFunctionLeibniz
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameAtApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAddVectorScalar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DBaseApply

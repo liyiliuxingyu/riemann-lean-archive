@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TranslatedMatrixCoefficientInAdaptedFrame
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Adapted

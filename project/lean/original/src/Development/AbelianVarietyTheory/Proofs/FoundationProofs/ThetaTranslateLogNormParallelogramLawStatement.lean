@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslateLogNormParallelogramLaw
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh

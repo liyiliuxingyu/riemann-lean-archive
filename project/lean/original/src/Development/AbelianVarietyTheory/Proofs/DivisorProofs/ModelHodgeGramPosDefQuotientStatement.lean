@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelHodgeGramPosDefQuotient
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeFrameGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelHodgeGram
 open Matrix

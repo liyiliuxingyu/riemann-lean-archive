@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContDiffHeisenbergSuperpositionThetaFunctionReal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction

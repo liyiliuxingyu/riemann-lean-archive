@@ -1,7 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullGeneratorFactorPairingGenericMumfordBundle
 import Development.AbelianVarietyTheory.Definitions.Divisors.FacAlg
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordConstruction
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartBundleLatticeGenerators
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle chartRing)

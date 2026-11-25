@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteSymmetricMulDifference
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 open MvPolynomial GlobalTheory.LineForm
 set_option maxHeartbeats 1000000 in

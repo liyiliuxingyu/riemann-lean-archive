@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFourierSchwartzBruhatPlane
-import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.KFiniteThetaLifts.RationalPrimesBelowPlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetInd
 open NumberField IsDedekindDomain MeasureTheory Matrix Filter Topology

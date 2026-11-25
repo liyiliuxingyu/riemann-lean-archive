@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefinitePairUnitVacuumRealPointNeZero
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace

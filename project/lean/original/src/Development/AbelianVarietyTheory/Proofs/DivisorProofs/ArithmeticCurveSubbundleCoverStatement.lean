@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticCurveSubbundleCover
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppInjectiveOfFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueDegreeOfIsOpenImmersion

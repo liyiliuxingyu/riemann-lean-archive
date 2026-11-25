@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleIntegralClosureTorsorOfFractionFields
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapMaximalIdealEqOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodIffEtaleAt
 open IsLocalRing Polynomial

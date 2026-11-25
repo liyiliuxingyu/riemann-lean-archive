@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InjectiveCellMap
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsClosedFlagsIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniMatBlockTriangular
 open Module TopologicalSpace GlobalTheory.FlagPts

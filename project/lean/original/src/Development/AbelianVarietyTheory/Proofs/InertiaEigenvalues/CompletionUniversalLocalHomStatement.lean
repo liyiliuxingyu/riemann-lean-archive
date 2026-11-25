@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionUniversalLocalHom
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ProjectionSurjective
 open IsLocalRing GlobalTheory.Pat
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionShapeOfTorsionCounts
-import Mathlib
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.GaloisCohomology.LocalTateDualityK
 import Formalism.WachLatticeTwists.CharacterSplitJumps.Statement

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermPairCountBoundOfSiegelMassRatios
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PerRowC
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 set_option maxHeartbeats 1000000 in

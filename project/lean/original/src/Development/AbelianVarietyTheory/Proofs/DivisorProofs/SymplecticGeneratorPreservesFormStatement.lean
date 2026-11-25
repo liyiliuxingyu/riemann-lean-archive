@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticGeneratorPreservesForm
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisedOne
 
 open scoped Matrix

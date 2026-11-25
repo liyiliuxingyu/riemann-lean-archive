@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelCharacterOfLocalLanglands
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EigenCompatibleOfBadSet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AtMemAnd
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal

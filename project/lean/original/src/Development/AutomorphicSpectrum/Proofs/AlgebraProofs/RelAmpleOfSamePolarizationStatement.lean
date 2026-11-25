@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelAmpleOfSamePolarization
-import Mathlib
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.IsPolarisationOfRelAmple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NearIsIsoOfIsProperOfFinitePresentation
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfFibres

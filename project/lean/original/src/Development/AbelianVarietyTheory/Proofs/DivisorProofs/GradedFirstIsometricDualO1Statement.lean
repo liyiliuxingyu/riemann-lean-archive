@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedFirstIsometricDualO1
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalInnerProductLift
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemSmallSecTrivShift
 open CategoryTheory AlgebraicGeometry TopologicalSpace Matrix

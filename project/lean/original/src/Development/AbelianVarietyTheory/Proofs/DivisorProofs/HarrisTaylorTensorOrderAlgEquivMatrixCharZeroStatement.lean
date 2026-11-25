@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorTensorOrderAlgEquivMatrixCharZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

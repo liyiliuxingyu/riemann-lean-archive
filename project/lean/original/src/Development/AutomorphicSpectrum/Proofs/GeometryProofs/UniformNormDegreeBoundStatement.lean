@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormDegreeBound
-import Mathlib
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX

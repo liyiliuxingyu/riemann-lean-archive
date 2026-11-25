@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelFiniteCoverNormal
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocGrLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitting

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantInducedRepEquivProduct
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMidJacAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothDetPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTorusCharacter

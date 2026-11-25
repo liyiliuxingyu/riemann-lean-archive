@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PosDefUniformBoundsNearPoint
-import Mathlib
 open Matrix
 open scoped Topology ComplexOrder
 set_option maxHeartbeats 1000000 in

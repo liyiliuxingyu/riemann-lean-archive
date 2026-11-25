@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeCharacterIntegralZero
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FintypeResidue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFunctionalSectionNonvanishing
 open MeasureTheory Matrix GroundTheory.LocalField GroundTheory.Automorphic
