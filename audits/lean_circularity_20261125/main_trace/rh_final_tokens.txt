@@ -1,0 +1,53 @@
+project/lean/original/src/Supplements/Kernels/MainTheorems.lean:7:theorem allChi : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter
+project/lean/original/src/Supplements/Kernels/MainTheorems.lean:9:theorem rhOfAll : RiemannHypothesis := Formalism.VW.rh_of_every allChi
+project/lean/original/src/Supplements/Kernels/MainTheorems.lean:13:  Formalism.VW.critLine allChi N χ hχ s h0 h1 hz
+project/lean/original/src/Supplements/Kernels/MainTheorems.lean:16:  ⟨allChi, Claim.strip allChi, Claim.zeta allChi⟩
+project/lean/original/src/Main.lean:4:theorem riemannHypothesis : RiemannHypothesis := rhOfAll
+project/lean/original/src/Main.lean:6:theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine := rhOfAll
+project/lean/original/src/Main.lean:8:theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf := allChi
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean:100:theorem zeta_iff : Zeta ↔ RiemannHypothesis := Iff.rfl
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10:theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:13:theorem UpperTheory.FinalTheorems.riemannHypothesis : RiemannHypothesis :=
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:14:  UpperTheory.riemannHypothesis_of_everyCharacter UpperTheory.FinalTheorems.everyCharacter
+project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean:215:theorem UpperTheory.riemannHypothesis_of_everyCharacter (h : UpperTheory.EveryCharacter) : RiemannHypothesis := by
+project/lean/original/src/Formalism/JacobiWeightFamilies/Statement.lean:71:  RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/PowerBoundGivesRiemannHypothesis.lean:15:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SChain.lean:95:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SChain.lean:101:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SChain.lean:250:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/GrowthBoundGivesRiemannHypothesis.lean:134:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/GrowthBoundGivesRiemannHypothesis.lean:141:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/GrowthBoundGivesRiemannHypothesis.lean:181:    (∀ ε : ℝ, 0 < ε → ε < ε₁ → ∃ x₀ : ℝ, ∀ x : ℝ, x₀ ≤ x → ReducedGrowthInequalityDataExists Cd C ε x) → RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Losses5OfLossHypD.lean:112:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Losses5OfLossHypD.lean:123:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Losses5OfLossHypD.lean:196:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Losses5OfLossHypD.lean:207:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/FixedEpsilonConcreteGrowthBound.lean:108:  RiemannHypothesis
+project/lean/original/src/Formalism/ZetaRealNonvanish.lean:74:def RHofHalfPlane : Prop := (∀ s : ℂ, 1 / 2 < s.re → riemannZeta s ≠ 0) → RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SmoothedRemainderRealIntegralFormula.lean:383:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SmoothedRemainderRealIntegralFormula.lean:406:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SmoothedRemainderRealIntegralFormula.lean:431:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SmoothedRemainderRealIntegralFormula.lean:449:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SmoothedRemainderRealIntegralFormula.lean:470:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Chain2aCoreNoAnalytic.lean:396:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Chain2aCoreNoAnalytic.lean:402:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Chain2aCoreNoAnalytic.lean:508:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/Chain2aCoreNoAnalytic.lean:578:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:143:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:290:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:525:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:663:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:674:    RiemannHypothesis
+project/lean/original/src/Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:781:    RiemannHypothesis
+project/lean/original/src/Formalism/WideWeightTheorem/Statement.lean:83:  RiemannHypothesis
+project/lean/original/src/Formalism/HalfLinks/Statement.lean:149:  RiemannHypothesis
+project/lean/original/src/Formalism/ThickAverageLoss/Statement.lean:139:  RiemannHypothesis
+project/lean/original/src/Formalism/ThickAverageLoss/Statement.lean:172:  RiemannHypothesis
+project/lean/original/src/Formalism/SharpRestriction/GlobalSchurBounds/RamificationTwoAndConjugationAtQAndD.lean:1004:    (h7 : FamilyTopBoundAbsolute Fm ε0) (hS : SizesFe Fm ε0) : RiemannHypothesis := by
+project/lean/original/src/Formalism/StatementOC.lean:71:  RiemannHypothesis
+project/lean/original/src/Formalism/SharpRestriction/GlobalSchurBounds/ZetaZeroFreeRegion.lean:267:  (∃ ε0 : ℝ, 0 < ε0 ∧ AdmFe Fm ε0 ∧ SizesFe Fm ε0) → RiemannHypothesis
+project/lean/original/src/Formalism/LocalToGlobal/GlobalTheory/ConcTop.lean:104:    RiemannHypothesis
+project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean:25:theorem Formalism.VW.rh_of_every (h : UpperTheory.EveryCharacter) : RiemannHypothesis :=
+project/lean/original/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean:5:theorem Formalism.VW.rh_of_right (hz : ∀ s : ℂ, 1 / 2 < s.re → s ≠ 1 → riemannZeta s ≠ 0) : RiemannHypothesis := by
+project/lean/original/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean:6:  unfold RiemannHypothesis
+project/lean/original/src/Formalism/Statement.lean:48:  RiemannHypothesis ∧ ∀ s : ℂ, 1 / 2 < s.re → DirichletCharacter.LFunction χ s ≠ 0

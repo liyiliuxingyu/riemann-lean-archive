@@ -1,0 +1,61 @@
+{
+  "format": "lean-baseline-module-import-archive-audit-v1",
+  "archived_source_baseline_commit": "b32465bf0a42b702d7834fbb5f983fe413fa5aa6",
+  "scope": "Archived source module header imports only; not theorem/declaration constant dependencies.",
+  "module_count": 175187,
+  "records": 909822,
+  "internal_import_occurrences": 753569,
+  "external_import_occurrences": 156253,
+  "unique_internal_import_edges": 753261,
+  "repeated_internal_import_edges": 308,
+  "external_module_count": 348,
+  "import_modifiers_counts": {
+    "": 909822
+  },
+  "all_parts_and_concatenated_sha256_match": true,
+  "concatenated_sha256": "1321696d0bd1141923163735d6479916ba1bf4061e2e78c7427fa0e3fe36c431",
+  "parts": [
+    {
+      "file": "RH_AllSources.dependencies.part001.jsonl",
+      "bytes": 50331484,
+      "records": 213615,
+      "sha256": "83c4c3d474cd54afe538e560d44cecce1cb5929712ea883e84d78e5c44d80fbf",
+      "matches_manifest": true
+    },
+    {
+      "file": "RH_AllSources.dependencies.part002.jsonl",
+      "bytes": 50331578,
+      "records": 216960,
+      "sha256": "45cb0073fbec71c181699252e07f7c5f59bd15e80636bf6eaf842f3534f79d3c",
+      "matches_manifest": true
+    },
+    {
+      "file": "RH_AllSources.dependencies.part003.jsonl",
+      "bytes": 50331374,
+      "records": 205024,
+      "sha256": "9d30784e2de475d92153e1aac4b629229dfcdc80a114e81d3b726eb22189e1ff",
+      "matches_manifest": true
+    },
+    {
+      "file": "RH_AllSources.dependencies.part004.jsonl",
+      "bytes": 50331634,
+      "records": 208498,
+      "sha256": "51d8fd9b028d8a325e6f1ce8aca26e480e40e1a806edb9401f2d6badb791b9a6",
+      "matches_manifest": true
+    },
+    {
+      "file": "RH_AllSources.dependencies.part005.jsonl",
+      "bytes": 13622929,
+      "records": 65725,
+      "sha256": "f33475d7e58f2eebe0a79f13ae4a002fc8aec084a3338c7495edb1120cdfe121",
+      "matches_manifest": true
+    }
+  ],
+  "self_import_edges": [],
+  "topological_nodes_processed": 175187,
+  "internal_module_graph_acyclic": true,
+  "cyclic_or_cycle_dependent_remaining_nodes": 0,
+  "declaration_level_cycle_check_performed": false,
+  "kernel_type_checking_performed": false,
+  "current_simplification_source_graph_rebuilt": false
+}

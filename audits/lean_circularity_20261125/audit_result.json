@@ -1,0 +1,17 @@
+{
+  "audit_date": "2026-11-25",
+  "source_commit": "a132f8e71629fed5febae6733f31b08171f3183a",
+  "confirmed_circular_proof_found_in_reviewed_routes": false,
+  "complete_absence_of_circular_proofs_established": false,
+  "module_import_graph_acyclic": true,
+  "source_modules_scanned": 175188,
+  "unique_internal_import_edges": 753264,
+  "geometry_predicate_weakening_confirmed": true,
+  "invalid_true_to_strong_geometry_bridge_located": false,
+  "mutual_certificate_interpreter_uses_structural_induction": true,
+  "source_project_build_performed": false,
+  "elaborated_declaration_dependency_graph_constructed": false,
+  "final_theorem_recursive_axioms_recomputed": false,
+  "original_lean_sources_modified": false,
+  "selected_source_evidence_files": 33
+}
