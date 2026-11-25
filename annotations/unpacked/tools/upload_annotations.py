@@ -76,6 +76,8 @@ class Uploader:
         self.api = urllib.request.build_opener(NoRedirect())
         self.started = time.monotonic()
         self.event_log = self.root / "events.jsonl"
+        self.document_cache = {}
+        self.document_cache_head = None
 
     def event(self, **item):
         item["elapsed_seconds"] = round(time.monotonic() - self.started, 2)
@@ -91,11 +93,22 @@ class Uploader:
             "X-GitHub-Api-Version": "2022-11-28",
             "User-Agent": "RiemannAnnotationFileUpload",
         })
-        try:
-            with self.api.open(request, timeout=45) as response:
-                return json.load(response)
-        except urllib.error.HTTPError as error:
-            raise RuntimeError(f"Authenticated GitHub API returned HTTP {error.code}") from None
+        for attempt in range(1, 6):
+            try:
+                with self.api.open(request, timeout=45) as response:
+                    return json.load(response)
+            except urllib.error.HTTPError as error:
+                if error.code not in (429, 500, 502, 503, 504) or attempt == 5:
+                    raise RuntimeError(f"Authenticated GitHub API returned HTTP {error.code}") from None
+                delay = max(2 ** attempt, int(error.headers.get("Retry-After", "0")))
+                self.event(type="api_read_retry", status=error.code, attempt=attempt, retry_seconds=delay)
+                time.sleep(delay)
+            except (urllib.error.URLError, TimeoutError):
+                if attempt == 5:
+                    raise RuntimeError("Authenticated GitHub API read failed after retries") from None
+                self.event(type="api_read_retry", status="network", attempt=attempt)
+                time.sleep(2 ** attempt)
+        raise AssertionError("Unreachable API retry state")
 
     def git(self, directory, *arguments, input=None, allow_error=False):
         command = ["git"]
@@ -148,8 +161,19 @@ class Uploader:
         return directory
 
     def read_blob(self, directory, path, required=True):
+        cacheable = path in {"README.md", "annotations/README.md", "annotations/release-parts.json",
+                             "docs/INDIVIDUAL_FILES.md", ".gitattributes", PREFIX + "/progress.json"}
+        head = self.git(directory, "rev-parse", "HEAD").stdout.decode().strip() if cacheable else None
+        if cacheable and head == self.document_cache_head and path in self.document_cache:
+            return self.document_cache[path]
         result = self.git(directory, "show", "HEAD:" + path, allow_error=not required)
-        return result.stdout if result.returncode == 0 else None
+        raw = result.stdout if result.returncode == 0 else None
+        if cacheable and raw is not None:
+            if head != self.document_cache_head:
+                self.document_cache = {}
+                self.document_cache_head = head
+            self.document_cache[path] = raw
+        return raw
 
     def initial_progress(self):
         return {
@@ -334,12 +358,13 @@ class Uploader:
                 assert progress["completed_original_records"] == 1080769508
             add_blob(f"{PREFIX}/progress.json", encoded(progress))
             add_blob(f"{PREFIX}/README.md", self.make_readme(progress))
-            for path, raw in self.updated_docs(directory, progress).items():
+            document_updates = self.updated_docs(directory, progress)
+            for path, raw in document_updates.items():
                 add_blob(path, raw)
             if number == 1:
                 for name in ("split_annotations.cpp", "test_split_annotations.py", "test_results.json", "README.md"):
                     add_blob(f"{PREFIX}/tools/{name}", (self.args.splitter.parent / name).read_bytes())
-                add_blob(f"{PREFIX}/tools/upload_annotations.py", Path(__file__).read_bytes())
+            add_blob(f"{PREFIX}/tools/upload_annotations.py", Path(__file__).read_bytes())
             message = f"Expand verified full annotation volume {number:03d} into {len(files)} TXT files".encode()
             importer.stdin.write((f"commit refs/heads/main\ncommitter ChatGPT <noreply@openai.com> {int(time.time())} +0000\ndata {len(message)}\n").encode())
             importer.stdin.write(message + b"\n")
@@ -368,6 +393,8 @@ class Uploader:
             assert after == head, "Published branch differs from prepared commit"
             remote_tree = self.get("/git/commits/" + head)["tree"]["sha"]
             assert remote_tree == tree, "Published tree differs from prepared tree"
+            self.document_cache_head = head
+            self.document_cache = {**document_updates, PREFIX + "/progress.json": encoded(progress)}
             receipt = {"part": number, "commit": head, "tree": tree, "parent": parent,
                        "remote_verified": True, "chunks": len(files), "annotated_bytes": offset,
                        "records": part["records"], "progress": progress}
