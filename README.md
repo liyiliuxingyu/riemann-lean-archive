@@ -6,7 +6,7 @@
 
 ## 2026-11-25 简化工作分支
 
-本分支在归档基线之上删除了 **20,058 条重复 import**，涉及 **19,897 个 Lean 文件**，净减少 **326,844 字节**。保留原模块路径、定理和证明正文；全部修改已通过逐字节复核及固定 Lean 4.33.1 官方导入头部解析对照。尚未完成全工程重新构建。
+本分支在归档基线之上删除了 **20,058 条重复 import**，并将三处 Gamma 因子非零论证共用一个引理、简化一处商映射连续性证明。共修改 **19,901 个既有 Lean 文件**、新增 **1 个共享引理模块**，Lean 源码净减少 **326,922 字节**。导入清理通过逐字节复核与官方解析对照；四个目标定理的独立编译、实际类型和公理依赖比较通过。尚未完成全工程重新构建。
 
 完整修改清单、复核命令、已通过检查及后续候选见 [Lean 简化审计记录](audits/lean_simplification_20261125/README.md)。原 Release、索引和历史哈希记录对应 [原始归档基线](https://github.com/liyiliuxingyu/riemann-lean-archive/tree/b32465bf0a42b702d7834fbb5f983fe413fa5aa6)；本分支源码字节已发生有记录的改变，旧归档清单不是精简版的哈希清单。
 
@@ -18,7 +18,7 @@ Release 中的源码汇编已恢复为完整模块树，工程索引和注释工
 
 | 文件或资料 | 内容与大小 | 现在的位置 |
 | --- | --- | --- |
-| 完整 Lean 模块树 | 175,187 个 `.lean` 模块及 3 个配置文件；本分支当前 1,030,209,875 字节 | [project/lean/original/](project/lean/original/) |
+| 完整 Lean 模块树 | 175,188 个 `.lean` 模块及 3 个配置文件；本分支当前 1,030,209,797 字节 | [project/lean/original/](project/lean/original/) |
 | 最终入口与命题 | 保持原始源码 | [Main.lean](project/lean/original/src/Main.lean)、[Statements.lean](project/lean/original/src/Statements.lean) |
 | `RH_AllSources.index.jsonl` | 原始随机访问索引；68,614,751 字节 | [project/lean/RH_AllSources.index.jsonl](project/lean/RH_AllSources.index.jsonl) |
 | 依赖索引 | 原件 214,948,999 字节，拆为 5 个完整行分卷，可逐字节还原 | [project/lean/dependencies/](project/lean/dependencies/) |

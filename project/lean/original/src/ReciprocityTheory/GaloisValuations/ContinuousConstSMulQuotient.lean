@@ -181,10 +181,8 @@ def H1ur : Submodule R (H1 rhoD) :=
 
 variable (Mplus : Submodule R M) (hMplus : ∀ g, Mplus ≤ Mplus.comap (rhoD g))
 
-theorem continuous_mkQ : Continuous (Mplus.mkQ) := by
-  first
-  | exact continuous_quot_mk
-  | exact continuous_coinduced_rng
+theorem continuous_mkQ : Continuous (Mplus.mkQ) :=
+  (Submodule.isQuotientMap_mkQ Mplus).continuous
 
 instance continuousConstSMul_quotient (N : Submodule R M) : ContinuousConstSMul R (M ⧸ N) :=
   ⟨fun c => by

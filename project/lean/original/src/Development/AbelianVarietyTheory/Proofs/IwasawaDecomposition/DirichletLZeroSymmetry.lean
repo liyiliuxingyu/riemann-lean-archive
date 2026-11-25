@@ -1,3 +1,4 @@
+import Formalism.GammaFactorNonvanishing.GammaFactor
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
 
@@ -9,10 +10,8 @@ section
 variable {q : ℕ}
 
 theorem zsym_gammaFactor_ne_zero (χ : DirichletCharacter ℂ q) {s : ℂ} (hs : 0 < s.re) :
-    χ.gammaFactor s ≠ 0 := by
-  rcases χ.even_or_odd with h | h <;> rw [h.gammaFactor_def]
-  · exact Gammaℝ_ne_zero_of_re_pos hs
-  · exact Gammaℝ_ne_zero_of_re_pos (by simp; linarith)
+    χ.gammaFactor s ≠ 0 :=
+  Formalism.VW.gammaFactor_ne_zero χ hs
 
 theorem zsym_differentiable_gammaFactor_inv (χ : DirichletCharacter ℂ q) :
     Differentiable ℂ (fun s => (χ.gammaFactor s)⁻¹) := by

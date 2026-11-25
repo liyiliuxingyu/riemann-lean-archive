@@ -1,0 +1,61 @@
+{
+  "format": "lean-local-proof-simplification-v1",
+  "baseline_commit": "b32465bf0a42b702d7834fbb5f983fe413fa5aa6",
+  "files": [
+    {
+      "path": "project/lean/original/src/Formalism/GammaFactorNonvanishing/GammaFactor.lean",
+      "before_sha256": null,
+      "after_sha256": "473fa7fa775dafd99f76f04b7ad9773aac885f931bf52792514ddeaf9311c590",
+      "before_bytes": 0,
+      "after_bytes": 452,
+      "before_lines": 0,
+      "after_lines": 9
+    },
+    {
+      "path": "project/lean/original/src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+      "before_sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02",
+      "after_sha256": "220dcebb73fdb8b64ed86cf1a9643966e40b00d67eb1b47c9d9462c47739d9c3",
+      "before_bytes": 1825,
+      "after_bytes": 1540,
+      "before_lines": 32,
+      "after_lines": 28
+    },
+    {
+      "path": "project/lean/original/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "before_sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03",
+      "after_sha256": "f6e30ccdcad62546340f9f7ab2e3eb9078c65111127c67605fe658b5d58798cd",
+      "before_bytes": 5193,
+      "after_bytes": 5044,
+      "before_lines": 104,
+      "after_lines": 102
+    },
+    {
+      "path": "project/lean/original/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DirichletLZeroSymmetry.lean",
+      "before_sha256": "0746d6ae0e76ff223332946c2663466e181074205510d6a2e56f739e5fe0fa0b",
+      "after_sha256": "b85bf95527b16dc902d7501c77bbdf99518de635e3c3d024816088bb21d1b201",
+      "before_bytes": 5000,
+      "after_bytes": 4930,
+      "before_lines": 102,
+      "after_lines": 101
+    },
+    {
+      "path": "project/lean/original/src/ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+      "before_sha256": "610c38bcf79837ed06292f22f6ce7ccdb40dc8df503e0ed41a06e71e9224b55f",
+      "after_sha256": "d272db9d6780691c479d761147a61d88bff2f143e9d2bec06a6c5eeb94b4e417",
+      "before_bytes": 8957,
+      "after_bytes": 8931,
+      "before_lines": 207,
+      "after_lines": 205
+    }
+  ],
+  "isolated_declaration_checks_passed": true,
+  "full_project_build_performed": false,
+  "source_bytes_reduced": 78,
+  "source_lines_reduced": 0,
+  "preserved_theorem_names": [
+    "ReciprocityTheory.Gal.continuous_mkQ",
+    "Formalism.VW.gammaFactor_ne_zero",
+    "Claim.gamma_ne_zero",
+    "GlobalTheory.Mem.An.zsym_gammaFactor_ne_zero"
+  ]
+}

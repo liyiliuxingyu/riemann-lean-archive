@@ -17,16 +17,33 @@
     "remaining_source_bytes": 1030205010,
     "only_header_line_deletions": true
   },
-  "mathematical_declarations_modified": false,
+  "mathematical_declarations_modified": true,
   "official_parser_files_compared": 19897,
   "official_parser_headers_compared": 39794,
   "source_project_full_build_performed": false,
   "source_project_full_build_passed": false,
   "whole_project_kernel_verification_performed": false,
-  "pending_proof_refactorings": [
-    "Share three gamma-factor nonvanishing proofs while preserving existing theorem APIs",
-    "Replace continuous_mkQ fallback with the standard quotient-map continuity theorem"
-  ],
+  "pending_proof_refactorings": [],
   "other_candidates_applied": false,
-  "source_archive_note": "The Release bundle, original index/hash manifests and historical expansion report still describe the baseline archive. This branch intentionally changes source bytes; use this audit manifest for the import cleanup."
+  "source_archive_note": "The Release bundle, original index/hash manifests and historical expansion report still describe the baseline archive. This branch intentionally changes source bytes; use this audit manifest for the import cleanup.",
+  "existing_theorem_interfaces_preserved_in_isolated_checks": true,
+  "local_proof_simplifications": {
+    "gamma_proof_copies_before": 3,
+    "gamma_shared_proof_after": 1,
+    "public_gamma_theorems_retained": 3,
+    "continuous_mkq_unreachable_fallback_removed": true,
+    "theorem_interfaces_compared": 4,
+    "new_project_modules": 1,
+    "existing_source_files_modified": 4,
+    "net_source_bytes_reduced": 78,
+    "net_source_lines_reduced": 0,
+    "all_isolated_checks_passed": true,
+    "new_axiom_dependencies": []
+  },
+  "current_module_count": 175188,
+  "source_files_modified_total": 19901,
+  "source_files_added_total": 1,
+  "source_bytes_reduced_total": 326922,
+  "current_source_bytes": 1030204932,
+  "current_source_lines": 17354157
 }
