@@ -10,8 +10,11 @@ import datetime
 import fcntl
 import threading
 import uuid
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit
 import getpass
+import io
+import ssl
+import httpx
 import hashlib
 import json
 import os
@@ -30,12 +33,12 @@ ORIGIN = "https://github.com/" + REPOSITORY + ".git"
 API = "https://api.github.com/repos/" + REPOSITORY
 PREFIX = "annotations/unpacked"
 CHUNK_BYTES = 48 * 1024 * 1024
-TOOL_VERSION = "2026-11-25.staging-v3"
+TOOL_VERSION = "2026-11-25.staging-v3-httpx-v3"
 PACK_BUDGET = 700 * 1024 * 1024
 
 UPLOAD_README = """# 完整注释的分块与并行上传
 
-该工具使用 Linux 的 memfd、Git fast-import 与 GitHub GitData API，把经过核验的 Release 卷拆成普通 TXT 文件。需要正常模式的 Python 3（禁止 -O）、Git、gh、C++17 编译器、libzstd 和 OpenSSL。
+该工具使用 Linux 的 memfd、Git fast-import 与 GitHub GitData API，把经过核验的 Release 卷拆成普通 TXT 文件。需要正常模式的 Python 3（禁止 -O）、Git、gh、C++17 编译器、libzstd、OpenSSL 和 httpx==0.28.1（可用 python3 -m pip install httpx==0.28.1 安装）。
 
 编译分块器：
 
@@ -57,7 +60,9 @@ python3 annotations/unpacked/tools/upload_annotations.py --catalog annotations/r
 
 只有 main 的实际卷子树核验通过后，才用带精确预期 SHA 的 Git lease 删除本运行的临时分支；lease 失败时保留分支。staged/ 内的接续记录在推送前保存，断线后可读回核对，避免盲目重传。main 更新成功但随后的读取失败，也可在重启时通过主分支进度和子树核验恢复完成状态。
 
-GET 与可重复的Git对象创建请求对429/5xx作有限重试，并尊重Retry-After秒数。主分支更新或分支删除结果不明时先读回状态。Git传输设置低速超时和单命令30分钟超时。
+GET 与可重复的Git对象创建请求对429/5xx作有限重试，并尊重Retry-After秒数。主分支更新或分支删除结果不明时先读回状态。Git传输设置低速超时和单命令30分钟超时。临时分支推送失败后先读回精确提交；已成功则直接继续，出现其他提交则停止。只有确认分支不存在且错误属于可识别的暂时传输故障或远端临时 pack 文件缺失，才保留同一已核验本地 pack，在5秒、15秒退避后最多重试两次；每次重试前再次核对分支，期间可被其他 worker 的失败唤醒停止。
+
+GitHub API 使用可跨线程共享的 httpx.Client 和最多12条持久连接；系统 ssl.create_default_context() 保持证书与主机名核验，代理和 no_proxy 选择与 urllib 的 HTTPS 路由相同，不启用无关的 ALL_PROXY SOCKS 路由。认证请求固定在 API 主机，不跟随重定向。Release 下载和 Git 上传传输保持原逻辑。
 
 --workers 可以为1、2或3；--stop-after-part N 会在完整处理到第N卷后停止。再次用同一工作目录运行即可按远端已核验清单与本地暂存收据续作。完整源记录对不会拆开，正文不改写换行、不增加标题、不重新编码。
 
@@ -80,6 +85,90 @@ def sha256_file(path):
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, request, fp, code, msg, headers, newurl):
         raise RuntimeError("Refusing an authenticated API redirect")
+
+
+class ApiResponse(io.BytesIO):
+    """Small already-read response with urllib's context/read/status interface."""
+    def __init__(self, content, status, headers):
+        super().__init__(content)
+        self.status = status
+        self.headers = headers
+
+
+class PersistentApiOpener:
+    """urllib-compatible API transport; its httpx.Client is shared across threads."""
+    def __init__(self):
+        target = urlsplit(API)
+        self.origin = (target.scheme, target.hostname, target.port or 443)
+        assert target.scheme == "https" and not target.username and not target.password
+        context = ssl.create_default_context()
+        assert context.check_hostname and context.verify_mode == ssl.CERT_REQUIRED
+        # Match urllib's HTTPS proxy and no_proxy route. Explicit selection avoids
+        # loading an unrelated ALL_PROXY SOCKS route and its optional dependency.
+        proxy_url = None if urllib.request.proxy_bypass(target.netloc) else urllib.request.getproxies().get("https")
+        # The proxy may use plain HTTP CONNECT while the target remains HTTPS.
+        # httpcore rejects a proxy SSL context for an HTTP (non-TLS) proxy.
+        proxy_context = context if proxy_url and urlsplit(proxy_url).scheme == "https" else None
+        proxy = httpx.Proxy(proxy_url, ssl_context=proxy_context) if proxy_url else None
+        try:
+            self.client = httpx.Client(
+                verify=context, proxy=proxy, trust_env=False,
+                follow_redirects=False, timeout=45.0,
+                limits=httpx.Limits(max_connections=12, max_keepalive_connections=12, keepalive_expiry=120.0),
+            )
+        except Exception as error:
+            raise RuntimeError("API transport initialization failed: " + type(error).__name__) from None
+
+    def open(self, request, timeout=45):
+        target = urlsplit(request.full_url)
+        if (target.scheme, target.hostname, target.port or 443) != self.origin or target.username or target.password:
+            raise RuntimeError("Refusing an API request outside the fixed HTTPS origin")
+        try:
+            response = self.client.request(
+                request.get_method(), request.full_url,
+                headers=dict(request.header_items()), content=request.data,
+                timeout=timeout, follow_redirects=False,
+            )
+        except httpx.RequestError as error:
+            # Keep existing retry and ambiguous-write handling, without logging
+            # request headers, proxy URLs, or raw transport exception strings.
+            raise urllib.error.URLError(type(error).__name__) from None
+        try:
+            content, status, headers = response.content, response.status_code, response.headers
+        finally:
+            response.close()
+        if 300 <= status < 400:
+            raise RuntimeError("Refusing an authenticated API redirect")
+        if status >= 400:
+            raise urllib.error.HTTPError(request.full_url, status, "API request failed", headers, io.BytesIO(content))
+        return ApiResponse(content, status, headers)
+
+    def close(self):
+        self.client.close()
+
+
+def staging_push_retry_category(error):
+    """Allow only recognizable transient transport or remote temporary-pack errors."""
+    message = str(error).lower()
+    permanent = ("authentication failed", "permission denied", "access denied", "repository not found",
+                 "pre-receive hook declined", "protected branch", "large files detected",
+                 "exceeds github's file size limit", "no space left on device", "disk quota exceeded",
+                 "corrupt", "checksum mismatch", "non-fast-forward")
+    if any(marker in message for marker in permanent):
+        return None
+    if ("index-pack failed" in message and "no such file or directory" in message
+            and any(marker in message for marker in ("unable to write file", "unable to rename temporary pack"))):
+        return "remote_temporary_pack_missing"
+    transport = ("git command timed out", "connection reset by peer", "connection timed out",
+                 "operation timed out", "connection was reset", "failed to connect", "connection refused",
+                 "could not resolve host", "could not resolve proxy", "the remote end hung up unexpectedly",
+                 "unexpected disconnect while reading sideband packet", "send failure: broken pipe",
+                 "gnutls_recv error (-110)")
+    if (any(marker in message for marker in transport)
+            or re.search(r"\bcurl (?:16|18|28|52|55|56|92)\b", message)
+            or re.search(r"(?:http(?:/\S+)?\s+|returned error:\s*)(?:408|429|500|502|503|504)\b", message)):
+        return "transient_transport"
+    return None
 
 
 class ApiError(RuntimeError):
@@ -123,7 +212,7 @@ class Uploader:
         self.basic_env = dict(self.git_env)
         self.basic_env.pop("GH_TOKEN", None)
         self.basic_env.pop("GITHUB_TOKEN", None)
-        self.api = urllib.request.build_opener(NoRedirect())
+        self.api = PersistentApiOpener()
         self.started = time.monotonic()
         self.event_log = self.root / "events.jsonl"
         self.event_lock = threading.Lock()
@@ -154,9 +243,12 @@ class Uploader:
                              "uploader_sha256": hashlib.sha256(self.tool_bytes["upload_annotations.py"]).hexdigest(),
                              "splitter_source_sha256": hashlib.sha256(self.tool_bytes["split_annotations.cpp"]).hexdigest(),
                              "source_buffer": "Linux sealed memfd; at most 336997274 bytes per worker",
-                             "pack_budget_per_worker_bytes": PACK_BUDGET}
+                             "pack_budget_per_worker_bytes": PACK_BUDGET,
+                             "api_transport": "httpx persistent HTTP/1.1; system SSL context; urllib HTTPS proxy routing",
+                             "dependencies": {"httpx": httpx.__version__}}
         self.tool_bytes["version.json"] = encoded(self.tool_version)
         self.tool_bytes["UPLOAD_README.md"] = UPLOAD_README.encode()
+        self.tool_bytes["requirements.txt"] = b"httpx==0.28.1\n"
 
     def event(self, **item):
         item["elapsed_seconds"] = round(time.monotonic() - self.started, 2)
@@ -573,6 +665,41 @@ class Uploader:
             raise
 
 
+    def push_stage_commit(self, directory, head, branch, number):
+        """Retry the same verified commit only after confirming its ref is absent."""
+        assert branch == self.branch_for(number)
+        ref_path = "/git/ref/heads/" + quote(branch, safe="/")
+        for attempt in range(3):
+            self.ensure_running()
+            if attempt:
+                # A previous push may become visible while backing off. Never
+                # overwrite a ref, and do not retransmit a confirmed success.
+                ref = self.api_json("GET", ref_path, missing_ok=True)
+                if ref is not None:
+                    assert ref["object"]["sha"] == head, "Staging ref changed before retry; preserve it and stop"
+                    return
+            try:
+                self.git(directory, "push", "origin", head + ":refs/heads/" + branch)
+                return
+            except RuntimeError as error:
+                # Check ambiguity even for an otherwise non-retryable failure.
+                # A failed readback is not evidence of absence and propagates.
+                ref = self.api_json("GET", ref_path, missing_ok=True)
+                if ref is not None:
+                    assert ref["object"]["sha"] == head, "Staging ref changed after push; preserve it and stop"
+                    return
+                category = staging_push_retry_category(error)
+                if category is None or attempt == 2:
+                    raise
+                delay = (5, 15)[attempt]
+                self.event(type="staging_push_retry", part=number, failed_attempt=attempt + 1,
+                           next_attempt=attempt + 2, delay_seconds=delay, category=category)
+                self.ensure_running()
+                self.abort_event.wait(delay)
+                self.ensure_running()
+        raise AssertionError("Unreachable staging push retry state")
+
+
     def stage_part(self, number):
         """Upload one verified orphan volume tree, without changing main."""
         self.ensure_running()
@@ -635,13 +762,7 @@ class Uploader:
             assert observed is None, "Staging ref appeared concurrently; do not overwrite it"
             self.event(type="volume_staging_push", part=number, commit=head,
                        observed_task_disk_bytes=self.disk_usage_bytes())
-            try:
-                self.git(directory, "push", "origin", head + ":refs/heads/" + branch)
-            except RuntimeError:
-                # A disconnected successful push must not cause the same data to be sent blindly again.
-                ref = self.api_json("GET", "/git/ref/heads/" + quote(branch, safe="/"), missing_ok=True)
-                if ref is None or ref["object"]["sha"] != head:
-                    raise
+            self.push_stage_commit(directory, head, branch, number)
             assert self.verify_stage(stage), "Staging branch is missing after push"
             stage["status"] = "staged"
             self.write_stage_receipt(stage)
@@ -916,6 +1037,7 @@ def main():
         uploader.token = ""
         uploader.git_env.pop("GH_TOKEN", None)
         token = ""
+        uploader.api.close()
 
 
 if __name__ == "__main__":

@@ -224,18 +224,39 @@
       "manifest_sha256": "621859363a0e22b4dbf5014b29fc0926fd3378578f7857b3ea39697d184ae08d",
       "subtree_sha": "83f3970dbeb2f4aced3dc7170c9d8d08b85831f4",
       "tool_version": "2026-11-25.staging-v3"
+    },
+    {
+      "part": 15,
+      "source_file": "solution_annotated.part015.txt.zst",
+      "source_compressed_sha256": "8a0f30c6d3e40ebafed317d719d5857688ac5cfa0c74f01be81e577c8540e8ad",
+      "first_line": 267322759,
+      "last_line": 286309042,
+      "records": 18986284,
+      "annotated_bytes": 2961206587,
+      "annotated_sha256": "64c251cccf70a534695cc804ab16c3ba3d6fbc3dcf56ad333bf067ed228c1554",
+      "original_bytes": 1085053821,
+      "original_sha256": "2ed73210c566c66ae5de69c7db546b503f9161276297435eafc5bc9b1e9c4bb0",
+      "chunks": 59,
+      "manifest": "annotations/unpacked/part015/manifest.json",
+      "manifest_sha256": "72dc3bcd817d0a88da159e156ee04475b8df7141b743369739ad9113e6b56562",
+      "subtree_sha": "50befdf2e8d3df4bebeeaa0092a8e35c428bffbc",
+      "tool_version": "2026-11-25.staging-v3-httpx-v3"
     }
   ],
   "global_original_sha256_recomputed": false,
   "verification_scope": "Every complete source volume is SHA-256 checked before decompression; each original-volume hash, record count, byte count and line-label sequence is rechecked. Every output chunk is SHA-256 checked and its Git blob SHA-1 is compared with Git. No Lean proof checking.",
-  "completed_annotated_bytes": 41087788637,
-  "completed_original_records": 267322758,
-  "completed_chunks": 825,
+  "completed_annotated_bytes": 44048995224,
+  "completed_original_records": 286309042,
+  "completed_chunks": 884,
   "current_tool_version": {
-    "version": "2026-11-25.staging-v3",
-    "uploader_sha256": "6945f33b1c6415de2799f874c1a67151a45db92f6c06455057ddafda0d103372",
+    "version": "2026-11-25.staging-v3-httpx-v3",
+    "uploader_sha256": "8efb8b0ba93fd8be0b8579cb3e455fb0850f1e5dc094ea9b5b76596016680f62",
     "splitter_source_sha256": "ba0242c3231566c56d75ef93c18d25efb16a706b1d61b85a0846252847eea7d1",
     "source_buffer": "Linux sealed memfd; at most 336997274 bytes per worker",
-    "pack_budget_per_worker_bytes": 734003200
+    "pack_budget_per_worker_bytes": 734003200,
+    "api_transport": "httpx persistent HTTP/1.1; system SSL context; urllib HTTPS proxy routing",
+    "dependencies": {
+      "httpx": "0.28.1"
+    }
   }
 }
