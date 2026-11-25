@@ -1,6 +1,6 @@
 # 注释分卷：Release 下载清单
 
-本目录保存 57 卷注释数据的说明和公开清单。**完整注释正在分卷展开为普通 TXT 文件，实际完成范围以 [unpacked/](unpacked/) 和其进度清单为准。原 Release 的压缩附件作为备份保留。**
+本目录保存 57 卷注释数据的说明和公开清单。**57 卷完整注释已全部展开为普通 TXT 文件，实际完成范围以 [unpacked/](unpacked/) 和其进度清单为准。原 Release 的压缩附件作为备份保留。**
 
 - [全部 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122)
 - [57 卷逐卷下载地址、行号范围、大小和 SHA-256](release-parts.json)

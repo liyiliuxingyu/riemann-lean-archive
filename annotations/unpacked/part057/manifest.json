@@ -1,0 +1,125 @@
+{
+  "schema": "annotation-volume-chunks-v1",
+  "status": "complete",
+  "part": 57,
+  "source": {
+    "file": "solution_annotated.part057.txt.zst",
+    "first_line": 1078753472,
+    "last_line": 1080769508,
+    "records": 2016037,
+    "original_bytes": 122245900,
+    "original_sha256": "15ba4c81babb0accb06ff5e87ed44c9da34dde758bd752a49ad60936d1a6d360",
+    "annotated_bytes": 337139153,
+    "compressed_bytes": 36347058,
+    "compressed_sha256": "17b2e53cde2fb07223560c6876a43fdc97e5cd4582f9ac6d132f2907f49ec218",
+    "annotated_physical_lines": 4032074,
+    "download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part057.txt.zst"
+  },
+  "actual": {
+    "type": "complete",
+    "first_line": 1078753472,
+    "last_line": 1080769508,
+    "records": 2016037,
+    "chunks": 7,
+    "annotated_bytes": 337139153,
+    "annotated_sha256": "9f6f24cb42b107e2be660c7af6ff9e09043df06ad69d85db95b3ba0e5092151a",
+    "original_bytes": 122245900,
+    "original_sha256": "15ba4c81babb0accb06ff5e87ed44c9da34dde758bd752a49ad60936d1a6d360",
+    "maximum_record_pair_bytes": 1627,
+    "compressed_bytes_read": 36347058,
+    "zstd_frames": 1,
+    "last_original_has_lf": true
+  },
+  "chunk_max_bytes": 50331648,
+  "chunks": [
+    {
+      "path": "annotations/unpacked/part057/chunk0001.txt",
+      "bytes": 50331644,
+      "sha256": "2b8bc7dfbfda015ce733769349530c8729a0b3845a4d042fecee6d0fede76e5c",
+      "git_blob_sha1": "3f77ee0f31dbdbd6b6f32807850d81dab62ca5b8",
+      "first_line": 1078753472,
+      "last_line": 1079059690,
+      "records": 306219,
+      "annotated_start_byte": 0,
+      "annotated_end_byte_exclusive": 50331644
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0002.txt",
+      "bytes": 50331581,
+      "sha256": "ba1f537559305492862563645de4ae3f128ff2a9d052f7cd1368b8c10f5213d6",
+      "git_blob_sha1": "f0a0368980b563e27547cd0469d89332be6b7b68",
+      "first_line": 1079059691,
+      "last_line": 1079363312,
+      "records": 303622,
+      "annotated_start_byte": 50331644,
+      "annotated_end_byte_exclusive": 100663225
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0003.txt",
+      "bytes": 50331552,
+      "sha256": "9a79463ca93cc49358085fc43d51bd941272e16103f5740371df7042e6c89dc6",
+      "git_blob_sha1": "f1691d96efcfec6f754993a9f5475ccd522e06ed",
+      "first_line": 1079363313,
+      "last_line": 1079664811,
+      "records": 301499,
+      "annotated_start_byte": 100663225,
+      "annotated_end_byte_exclusive": 150994777
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0004.txt",
+      "bytes": 50331555,
+      "sha256": "c7f56cece5dc61dfc4254493db30aaf4e64c3e67170ee7ec26fad41e21ba3a9b",
+      "git_blob_sha1": "37adce0c9f0c51f30b1dc0ae41fe0bc5c821fac4",
+      "first_line": 1079664812,
+      "last_line": 1079966208,
+      "records": 301397,
+      "annotated_start_byte": 150994777,
+      "annotated_end_byte_exclusive": 201326332
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0005.txt",
+      "bytes": 50331567,
+      "sha256": "9f454aae216c1a005eacffd80ca7e5f2b77a5a08c1a3b78bd517389f3ec28fb3",
+      "git_blob_sha1": "afa4e715ec0c7a165df46f14aaf41da5d43f2074",
+      "first_line": 1079966209,
+      "last_line": 1080267623,
+      "records": 301415,
+      "annotated_start_byte": 201326332,
+      "annotated_end_byte_exclusive": 251657899
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0006.txt",
+      "bytes": 50331511,
+      "sha256": "97e42ce34519540282105602af515391d627d23fa683adc8cd3245efd41f1cb9",
+      "git_blob_sha1": "a967357cfee6ce35afcf628cb5b69293a98868c6",
+      "first_line": 1080267624,
+      "last_line": 1080563715,
+      "records": 296092,
+      "annotated_start_byte": 251657899,
+      "annotated_end_byte_exclusive": 301989410
+    },
+    {
+      "path": "annotations/unpacked/part057/chunk0007.txt",
+      "bytes": 35149743,
+      "sha256": "c08f4f4031da4b319ee8643f511f1fb78b9a7f1455f9ae0da64da483ca59437b",
+      "git_blob_sha1": "c6021f1251fb81623dc10f6045c03fc17fa2effa",
+      "first_line": 1080563716,
+      "last_line": 1080769508,
+      "records": 205793,
+      "annotated_start_byte": 301989410,
+      "annotated_end_byte_exclusive": 337139153
+    }
+  ],
+  "tool_version": {
+    "version": "2026-11-25.staging-v3-httpx-v3",
+    "uploader_sha256": "8efb8b0ba93fd8be0b8579cb3e455fb0850f1e5dc094ea9b5b76596016680f62",
+    "splitter_source_sha256": "ba0242c3231566c56d75ef93c18d25efb16a706b1d61b85a0846252847eea7d1",
+    "source_buffer": "Linux sealed memfd; at most 336997274 bytes per worker",
+    "pack_budget_per_worker_bytes": 734003200,
+    "api_transport": "httpx persistent HTTP/1.1; system SSL context; urllib HTTPS proxy routing",
+    "dependencies": {
+      "httpx": "0.28.1"
+    }
+  },
+  "byte_preservation": "Concatenate chunks in this listed order to recover exact decompressed bytes."
+}
