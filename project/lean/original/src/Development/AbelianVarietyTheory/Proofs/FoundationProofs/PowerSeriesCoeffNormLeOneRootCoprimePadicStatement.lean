@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowerSeriesCoeffNormLeOneRootCoprimePadic
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh
 open scoped BigOperators
 set_option maxHeartbeats 1000000 in

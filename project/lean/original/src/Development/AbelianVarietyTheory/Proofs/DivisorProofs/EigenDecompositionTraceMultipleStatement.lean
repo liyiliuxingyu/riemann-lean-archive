@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenDecompositionTraceMultiple
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps
 open GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.SandwichMaps
 set_option maxHeartbeats 1000000 in

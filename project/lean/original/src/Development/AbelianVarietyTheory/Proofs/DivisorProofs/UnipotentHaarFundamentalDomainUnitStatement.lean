@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentHaarFundamentalDomainUnit
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAutSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermUnipotentIntegral
 open scoped TensorProduct NNReal Matrix

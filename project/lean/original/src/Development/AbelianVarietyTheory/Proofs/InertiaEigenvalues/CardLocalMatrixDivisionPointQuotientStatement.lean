@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardLocalMatrixDivisionPointQuotient
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsIotaAt
 open NumberField IsDedekindDomain
 

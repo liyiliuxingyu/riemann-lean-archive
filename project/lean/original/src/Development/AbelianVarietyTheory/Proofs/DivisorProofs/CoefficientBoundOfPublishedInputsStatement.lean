@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientBoundOfHyp
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg
 open GlobalTheory.SumSize GlobalTheory.RowClaim GlobalTheory.ArchTens
 set_option maxHeartbeats 1000000 in

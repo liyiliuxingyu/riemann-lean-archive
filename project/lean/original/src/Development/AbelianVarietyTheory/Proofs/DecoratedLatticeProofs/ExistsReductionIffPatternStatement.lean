@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsReductionIffPattern
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPatOne
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BesselCompatibility
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero

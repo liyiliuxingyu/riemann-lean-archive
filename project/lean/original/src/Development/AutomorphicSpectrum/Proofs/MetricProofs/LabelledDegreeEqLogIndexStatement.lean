@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LabelledDegreeEqLogIndex
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
 open NumberField GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp GroundTheory.Heights₂.Heights
 set_option maxHeartbeats 1000000 in

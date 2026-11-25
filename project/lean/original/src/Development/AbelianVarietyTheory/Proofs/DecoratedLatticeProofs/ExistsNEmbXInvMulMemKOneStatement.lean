@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNEmbXInvMulMemKOne
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UpZeroMemLev
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevelIffSymmetricPositionEntryPattern
 open ValuativeRel Matrix

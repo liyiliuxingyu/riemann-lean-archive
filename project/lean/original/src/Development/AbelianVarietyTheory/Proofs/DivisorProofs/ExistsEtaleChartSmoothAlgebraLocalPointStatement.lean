@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleChartSmoothAlgebraLocalPoint
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtChart
 open IsLocalRing
 set_option maxHeartbeats 1000000 in

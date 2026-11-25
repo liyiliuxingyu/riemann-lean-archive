@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousNormFactorFlatLineOrthonormalFrame
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
 import Development.AbelianVarietyTheory.Definitions.Divisors.VolMeasureOfAdd
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ImDiagEqTrace

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimesNotSelfConjugateDisjointTypeTwist
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Formalism.LocalToGlobal.Columns.TiedUpDnA
 import Formalism.LocalToGlobal.Columns.TiedUpDnLoc

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupFamilyZariskiDense
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetGNeZero
 open Classical MvPolynomial
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSignatureDiagonalisingBasis
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CcGASmoothAndRderMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactConjugate

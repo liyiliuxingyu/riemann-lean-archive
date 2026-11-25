@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudyHessianPosDefOfChart
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernRealClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernFormPullback

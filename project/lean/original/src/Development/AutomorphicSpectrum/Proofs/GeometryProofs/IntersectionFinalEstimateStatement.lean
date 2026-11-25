@@ -1,7 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionFinalEstimate
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBaseDegreeSettingStrict
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel

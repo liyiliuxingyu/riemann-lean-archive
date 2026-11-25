@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenFrameFunctionCompare
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrossTZeroRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullAwChainsBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveTotalOfColumns

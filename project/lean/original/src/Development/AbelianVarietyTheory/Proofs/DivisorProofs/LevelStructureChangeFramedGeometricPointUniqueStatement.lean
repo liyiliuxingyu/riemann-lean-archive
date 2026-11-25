@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureChangeFramedGeometricPointUnique
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
 open CategoryTheory NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.LevPull

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceIsomorphismLocalCompatible
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
 import CompanionTheory.EightfoldTheory.ZeroLevelTheory.LocalLanglands.Imports
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.WeilDeligne GlobalTheory.LocGL GlobalTheory.LocLanglands

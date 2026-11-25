@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateHalfVacuumTranslateSumIsThetaFockVacuum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFlipDet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlipIdxNeZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdemSumMulOfSubset

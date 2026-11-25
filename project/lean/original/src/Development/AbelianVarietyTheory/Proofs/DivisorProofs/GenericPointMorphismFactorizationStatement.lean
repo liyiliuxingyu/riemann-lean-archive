@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointMorphismFactorization
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
 open CategoryTheory AlgebraicGeometry
 set_option maxHeartbeats 1000000 in

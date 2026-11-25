@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveGenericFibreSectionRestriction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockUniOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdaptedMinorNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockUnipotentTriangularizingStatement

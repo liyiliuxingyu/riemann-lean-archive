@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralUnitPowDecayLe
-import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.LocallyConstantMajorants.GammaSplitting.UnipotentTateFunctionalEquation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MajorantScaled
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralKernelUniformBound

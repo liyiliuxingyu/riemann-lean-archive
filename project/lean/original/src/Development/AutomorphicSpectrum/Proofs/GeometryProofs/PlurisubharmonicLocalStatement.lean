@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PlurisubharmonicLocal
-import Mathlib
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
 open Filter Topology
 set_option maxHeartbeats 1000000 in

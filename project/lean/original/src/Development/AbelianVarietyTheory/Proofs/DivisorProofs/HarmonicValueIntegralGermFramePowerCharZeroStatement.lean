@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarmonicValueIntegralGermFramePowerCharZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetsOnCopiesAny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.PolyBetween

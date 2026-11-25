@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitUnitaryIdempotentTendsto
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseAdeleExtInfiniteFinite
 
 open scoped TensorProduct NNReal Matrix

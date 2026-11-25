@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SymplecticPolydiscPeriodBasis
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 open Filter Topology Matrix
 set_option maxHeartbeats 1000000 in

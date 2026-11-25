@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockDataLevelFormsTransportFieldMap
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChange
 open NumberField
 set_option maxHeartbeats 1000000 in

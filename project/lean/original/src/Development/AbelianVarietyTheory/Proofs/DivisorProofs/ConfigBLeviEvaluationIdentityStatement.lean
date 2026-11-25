@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLeviEvaluationIdentity
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocPart
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

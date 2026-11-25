@@ -9,11 +9,9 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatti
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharFinitePartRationalEqExpTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJetGaussianEntireOriginGridFrames
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CmBaseFieldIntegersAndCurveIdealFacts
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasSign
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField Matrix MvPolynomial
 open GlobalTheory.SignedHC GlobalTheory.ChiGrid Formalism.L2.DIV Formalism.L2.Ker GlobalTheory.FunObj

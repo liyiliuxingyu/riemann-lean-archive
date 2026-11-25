@@ -1,0 +1,32 @@
+{
+  "format": "lean-simplification-summary-v1",
+  "date": "2026-11-25",
+  "baseline_commit": "b32465bf0a42b702d7834fbb5f983fe413fa5aa6",
+  "branch": "simplify/lean-redundancy-20261125",
+  "source_directory": "project/lean/original/src",
+  "original_modules": 175187,
+  "original_source_lines": 17374215,
+  "original_source_bytes": 1030531854,
+  "duplicate_import_cleanup": {
+    "changed_files": 19897,
+    "removed_lines": 20058,
+    "removed_bytes": 326844,
+    "duplicate_mathlib_lines": 19750,
+    "duplicate_internal_module_lines": 308,
+    "remaining_source_lines": 17354157,
+    "remaining_source_bytes": 1030205010,
+    "only_header_line_deletions": true
+  },
+  "mathematical_declarations_modified": false,
+  "official_parser_files_compared": 19897,
+  "official_parser_headers_compared": 39794,
+  "source_project_full_build_performed": false,
+  "source_project_full_build_passed": false,
+  "whole_project_kernel_verification_performed": false,
+  "pending_proof_refactorings": [
+    "Share three gamma-factor nonvanishing proofs while preserving existing theorem APIs",
+    "Replace continuous_mkQ fallback with the standard quotient-map continuity theorem"
+  ],
+  "other_candidates_applied": false,
+  "source_archive_note": "The Release bundle, original index/hash manifests and historical expansion report still describe the baseline archive. This branch intentionally changes source bytes; use this audit manifest for the import cleanup."
+}

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdditiveCharacterCongruenceInvariance
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeIdxUnique
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseLevelDatumLevelEq
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue

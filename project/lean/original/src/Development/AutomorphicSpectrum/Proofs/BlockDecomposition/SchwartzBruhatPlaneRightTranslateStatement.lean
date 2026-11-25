@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.KFiniteThetaLifts.RationalPrimesBelowPlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetInd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBruhatPlaneRightTranslate

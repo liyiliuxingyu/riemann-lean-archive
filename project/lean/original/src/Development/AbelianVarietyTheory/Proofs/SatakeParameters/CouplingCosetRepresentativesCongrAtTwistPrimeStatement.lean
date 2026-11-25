@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CouplingCosetRepresentativesCongrAtTwistPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopEqProd
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ

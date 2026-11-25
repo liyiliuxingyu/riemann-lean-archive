@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivalenceGeneratedTorusRel
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKMOne
 open NumberField Matrix GlobalTheory.AdLat GlobalTheory.UCls
 set_option maxHeartbeats 1000000 in

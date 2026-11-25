@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SmulGluedLatticeFirstPositionCases
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiesOnRamOfInvariant
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.DualLiftInvariance
 open GlobalTheory.LatPair ValuativeRel

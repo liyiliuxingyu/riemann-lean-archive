@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DrAtSpMapEqDrVia
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DrViaNonneg
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff
 open NumberField IsDedekindDomain Filter Topology

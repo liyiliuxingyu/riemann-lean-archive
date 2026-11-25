@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSystemValueEqRootMulThetaConstant
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen
 open AlgebraicGeometry CategoryTheory GlobalTheory.ZH
 set_option maxHeartbeats 1000000 in

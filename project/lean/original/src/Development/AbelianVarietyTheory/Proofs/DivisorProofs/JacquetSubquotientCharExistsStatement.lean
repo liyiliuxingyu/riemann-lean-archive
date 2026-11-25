@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetSubquotientCharExists
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMidJacAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDetProdConstAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittRankLeSignatureSum

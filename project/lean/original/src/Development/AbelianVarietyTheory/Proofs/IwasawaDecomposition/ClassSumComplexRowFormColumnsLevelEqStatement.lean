@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumComplexRowFormColumnsLevelEq
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReadPk
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerEqOfNormSq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivOfBases

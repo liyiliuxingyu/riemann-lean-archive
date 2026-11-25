@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualFrameHermitianFormTraceRealPlaces
-import Mathlib
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementJ
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases

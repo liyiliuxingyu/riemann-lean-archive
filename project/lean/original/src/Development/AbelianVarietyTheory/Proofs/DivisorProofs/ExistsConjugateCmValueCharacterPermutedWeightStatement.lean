@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjugateCmValueCharacterPermutedWeight
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
 open NumberField GlobalTheory.CMVal
 set_option maxHeartbeats 1000000 in

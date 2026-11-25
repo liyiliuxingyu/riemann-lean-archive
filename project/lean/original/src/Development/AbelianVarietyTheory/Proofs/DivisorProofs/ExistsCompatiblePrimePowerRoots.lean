@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusPointOverFractionField
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

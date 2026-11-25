@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingTransitionMapIsLocalHomInjecti
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
 open IsLocalRing GlobalTheory.Henselisation
 set_option maxHeartbeats 1000000 in

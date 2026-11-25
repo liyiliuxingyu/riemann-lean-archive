@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorDeterminantPairEquiv
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlCastRfl
 open GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.IndLineGL
 open scoped TensorProduct

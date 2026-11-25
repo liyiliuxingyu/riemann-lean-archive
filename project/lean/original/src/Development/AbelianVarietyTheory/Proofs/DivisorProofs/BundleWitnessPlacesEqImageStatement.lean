@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BundleWitnessPlacesEqImage
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.MapBaseTiedSel
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IsLinked
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPins3RealTOf

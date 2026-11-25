@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LastRowDiagonalMulMemLatticeIff
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocFacOfNeg
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemMspan
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne

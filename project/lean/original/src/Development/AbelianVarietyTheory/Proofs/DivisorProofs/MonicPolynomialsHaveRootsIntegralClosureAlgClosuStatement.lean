@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonicPolynomialsHaveRootsIntegralClosureAlgClosu
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HInv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul

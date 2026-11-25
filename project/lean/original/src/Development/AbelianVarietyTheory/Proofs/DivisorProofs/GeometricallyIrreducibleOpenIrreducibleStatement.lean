@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyIrreducibleOpenIrreducible
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitChartAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelOpenNoetherian
 

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsWeightNilradicalIntegralOne
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousConjNilSymm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableNilrad
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralFiberDecompositionInvariantStatement

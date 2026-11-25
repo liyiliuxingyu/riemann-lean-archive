@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreRationalFunctionRank
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBaseIff

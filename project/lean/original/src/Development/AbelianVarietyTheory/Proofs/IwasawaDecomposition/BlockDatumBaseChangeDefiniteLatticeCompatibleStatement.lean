@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockDatumBaseChangeDefiniteLatticeCompatible
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChangeAt
 open NumberField
 open scoped Matrix

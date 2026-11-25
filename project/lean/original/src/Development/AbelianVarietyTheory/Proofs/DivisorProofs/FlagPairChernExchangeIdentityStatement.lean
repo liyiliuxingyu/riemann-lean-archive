@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairChernExchangeIdentity
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BracketIndepOfCofactors
 open MvPolynomial Formalism.BasicNotions Formalism.BasicNotions.DV

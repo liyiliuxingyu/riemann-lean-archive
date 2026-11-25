@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormLambdaEqTwoSumCrossing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperFact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WinSet
 open MvPolynomial GlobalTheory.FlagPoly GlobalTheory.FlagForm GlobalTheory.FlagCurve Formalism.DegreeFormula

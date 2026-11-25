@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryFormEqBlockMinusLow
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperFact
 open MvPolynomial GlobalTheory.FlagPoly GlobalTheory.FlagForm Formalism.DegreeFormula
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralChartCoverCuspFormNoPole
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BddGood
 import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
 import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec

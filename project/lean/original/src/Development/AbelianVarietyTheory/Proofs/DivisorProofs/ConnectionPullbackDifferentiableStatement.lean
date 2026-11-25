@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionPullbackDifferentiable
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAddVectorScalar
 open Matrix Set Filter Topology
 open GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe GlobalTheory.TorsionForm GlobalTheory.TorsionForm.Pullback

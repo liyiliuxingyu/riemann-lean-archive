@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeLineLatticeEqLogIndex
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusExt
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory GlobalTheory.LieHt

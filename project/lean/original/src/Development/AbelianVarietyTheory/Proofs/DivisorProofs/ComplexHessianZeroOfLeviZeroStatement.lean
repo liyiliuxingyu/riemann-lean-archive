@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexHessianZeroOfLeviZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessRelFnB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalfWeightLocPot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviAtLinearCombinationPotential

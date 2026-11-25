@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLocalIdealOfCountLeOrder
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValAtOfUnder
 
 noncomputable section

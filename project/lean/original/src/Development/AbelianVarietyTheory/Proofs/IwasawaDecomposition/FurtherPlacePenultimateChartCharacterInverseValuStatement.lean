@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FurtherPlacePenultimateChartCharacterInverseValu
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartWiden
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValLtOfRedM
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne

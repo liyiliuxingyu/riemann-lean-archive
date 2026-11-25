@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSumRankinSelbergSchurTermFinsuppEulerProduct
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTermZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurDir
 open MeasureTheory

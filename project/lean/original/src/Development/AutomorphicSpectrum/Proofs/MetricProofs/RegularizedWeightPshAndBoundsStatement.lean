@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightPshAndBounds
-import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement

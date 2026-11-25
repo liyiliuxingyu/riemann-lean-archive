@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantExpansionBound
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExtFormAdjEqNegSecondForm
 open Matrix GlobalTheory.HermFrame
 open scoped ComplexOrder

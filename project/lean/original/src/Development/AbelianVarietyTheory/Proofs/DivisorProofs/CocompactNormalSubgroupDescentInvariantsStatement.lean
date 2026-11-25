@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactNormalSubgroupDescentInvariants
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
 open MeasureTheory
 set_option maxHeartbeats 1000000 in

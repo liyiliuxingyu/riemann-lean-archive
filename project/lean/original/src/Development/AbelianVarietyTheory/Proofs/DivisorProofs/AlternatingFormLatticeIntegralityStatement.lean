@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingFormLatticeIntegrality
-import Mathlib
 open NumberField
 open scoped nonZeroDivisors
 set_option maxHeartbeats 1000000 in

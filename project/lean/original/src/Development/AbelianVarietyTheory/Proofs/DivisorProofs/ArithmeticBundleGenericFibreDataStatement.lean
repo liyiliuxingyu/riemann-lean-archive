@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleGenericFibreData
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBaseIff

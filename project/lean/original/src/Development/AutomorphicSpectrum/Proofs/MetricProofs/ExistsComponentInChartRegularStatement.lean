@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsComponentInChartRegular
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DetMemSubring
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameCoeffsRegularInChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits

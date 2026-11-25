@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactDoublingProductDecomp
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompReixMemAdm
 open scoped TensorProduct NNReal Matrix

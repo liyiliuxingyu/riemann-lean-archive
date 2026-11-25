@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerRegularImpliesGeneration
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemNonzeroLocusSecOfRat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerNonzeroIffIndependent
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCoordNeZero

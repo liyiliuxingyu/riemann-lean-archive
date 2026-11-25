@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TopStepVectorTheta
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StageY
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RatioOKOfRootOfUnity

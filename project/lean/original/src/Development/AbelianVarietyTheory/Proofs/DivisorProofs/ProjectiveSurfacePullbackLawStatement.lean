@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveSurfacePullbackLaw
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor

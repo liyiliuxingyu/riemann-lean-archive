@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightDifferentiableLogarithmic
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Qf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightVectorExplicitFormula
 open Ad3.LR Ad3.LR.DTr GlobalTheory.CompanionTheory.DInt2

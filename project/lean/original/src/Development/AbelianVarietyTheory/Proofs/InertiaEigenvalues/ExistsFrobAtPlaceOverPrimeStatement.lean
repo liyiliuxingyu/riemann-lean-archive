@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobAtPlaceOverPrime
-import Mathlib
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 open ReciprocityTheory.Gal Pointwise NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

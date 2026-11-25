@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsilonSumLeviZero
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.InverseChamberMap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsOfCZero
 open MeasureTheory Finset GlobalTheory.Chamber

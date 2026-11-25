@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClearingIntegerShortSeriesIntegralCoprimeLevel
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralFourierCoeffClassIndicatorLevelPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulShortNonneg
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IndexRangeMatrix

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBasisCardEqDim
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepLatZero
 open NumberField GlobalTheory.ShFam.Pad AlgebraicGeometry CategoryTheory
 set_option maxHeartbeats 1000000 in

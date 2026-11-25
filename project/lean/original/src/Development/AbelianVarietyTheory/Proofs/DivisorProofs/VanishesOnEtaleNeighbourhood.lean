@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittExtensionDiagonalGramTuples
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotIsUnramifiedAtOfSqEqNegPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

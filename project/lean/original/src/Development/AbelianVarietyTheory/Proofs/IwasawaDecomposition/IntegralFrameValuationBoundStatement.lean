@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralFrameValuationBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasPRatio
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultiplicationLatticeSecond
 open AlgebraicGeometry CategoryTheory Limits NumberField MonObj

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismOnExtensionPointwise
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
 open GlobalTheory.K5 Polynomial
 open scoped NNReal

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryConjugatorOfSplitIdempotents
-import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 open Matrix
 set_option maxHeartbeats 1000000 in

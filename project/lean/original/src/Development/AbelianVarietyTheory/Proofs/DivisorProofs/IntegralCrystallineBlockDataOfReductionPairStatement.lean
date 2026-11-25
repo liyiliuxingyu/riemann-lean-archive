@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCrystallineBlockDataOfReductionPair
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBlock
 open NumberField GlobalTheory.ExpFrame
 set_option maxHeartbeats 1000000 in

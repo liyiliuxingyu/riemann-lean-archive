@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftRepOfEntriesInImage
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SplitRep
 open Formalism.ConjugateSelfDual Formalism.MainNotions.N Polynomial
 set_option maxHeartbeats 1000000 in

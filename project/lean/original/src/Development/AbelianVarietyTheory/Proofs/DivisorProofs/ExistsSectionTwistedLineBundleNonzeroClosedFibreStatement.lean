@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionTwistedLineBundleNonzeroClosedFibre
-import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.DegExp
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Out
 set_option maxHeartbeats 1000000 in

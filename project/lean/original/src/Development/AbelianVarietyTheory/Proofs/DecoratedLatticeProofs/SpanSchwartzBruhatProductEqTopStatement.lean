@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanSchwartzBruhatProductEqTop
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ProdFnMemSB
 open GlobalTheory.SplitWeil GlobalTheory.LocFlat.CFac
 set_option maxHeartbeats 1000000 in

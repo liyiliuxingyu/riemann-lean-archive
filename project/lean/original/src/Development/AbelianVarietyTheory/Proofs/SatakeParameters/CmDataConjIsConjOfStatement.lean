@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmDataConjIsConjOf
-import Mathlib
 import Formalism.LocalRingCardinality.DataSpaces
 import Formalism.LocalToGlobal.Divisibility.TuplesLemmas
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.L2.DIV

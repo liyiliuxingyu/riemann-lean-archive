@@ -1,0 +1,42 @@
+{
+  "before": {
+    "command": [
+      "lean",
+      "-o",
+      "Before.olean",
+      "Before.lean"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.713,
+    "stdout": "theorem duplicate_import_probe : ∀ (n : Nat), n + 0 = n :=\nfun n => Nat.add_zero n\n'duplicate_import_probe' does not depend on any axioms\n",
+    "stderr": ""
+  },
+  "after": {
+    "command": [
+      "lean",
+      "-o",
+      "After.olean",
+      "After.lean"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.489,
+    "stdout": "theorem duplicate_import_probe : ∀ (n : Nat), n + 0 = n :=\nfun n => Nat.add_zero n\n'duplicate_import_probe' does not depend on any axioms\n",
+    "stderr": ""
+  },
+  "environment": {
+    "command": [
+      "lean",
+      "--run",
+      "EnvironmentProbe.lean"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 12.503,
+    "stdout": "direct import entries: 4 -> 2\neffective imported module closure: identical (1114 modules)\nimported declaration names, types, values and universe parameters: identical (117079 declarations)\nimported axioms: Classical.choice, Lean.ofReduceBool, Lean.ofReduceNat, Lean.trustCompiler, Quot.lcInv, Quot.sound, isScalarObj, lcAny, lcCast, lcErased, lcProof, lcUnreachable, lcVoid, propext, sorryAx\nPASS: exact duplicates of ordinary imports have matching effective environments in this probe.\n",
+    "stderr": ""
+  },
+  "theorem_and_axiom_output_identical": true,
+  "all_passed": true,
+  "scope": "Small ordinary-import deduplication probe under official Lean v4.33.1; not a whole-project build.",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "scope_note": "The axiom names listed by EnvironmentProbe are declarations available in the imported Lean/Std environment, not the dependency list of the Riemann Hypothesis proof. The test theorem itself has no axiom dependencies."
+}

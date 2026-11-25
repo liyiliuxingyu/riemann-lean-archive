@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmArchimedeanSplitBijective
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombineApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchPartFinIncl
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite

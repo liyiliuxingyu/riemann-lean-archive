@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaZeroTermNormInvariance
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsReps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitValueZeroDiagonalNormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FieldValueZeroDiagonalNormStatement

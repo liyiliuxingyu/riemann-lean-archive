@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaExpansionOfSectionPowerGeThre
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonzeroAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartExpOn
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif

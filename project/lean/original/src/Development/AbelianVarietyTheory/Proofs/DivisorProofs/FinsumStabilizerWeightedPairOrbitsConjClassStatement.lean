@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumStabilizerWeightedPairOrbitsConjClass
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemStabilizerIff
 open scoped Classical
 set_option maxHeartbeats 1000000 in

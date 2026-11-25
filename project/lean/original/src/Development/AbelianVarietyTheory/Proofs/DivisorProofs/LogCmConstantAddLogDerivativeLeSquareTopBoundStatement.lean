@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogCmConstantAddLogDerivativeLeSquareTopBound
-import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 open GlobalTheory.SqTop GlobalTheory.FunObj.SqNum GlobalTheory.CMVal
 set_option maxHeartbeats 1000000 in

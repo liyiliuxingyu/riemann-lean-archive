@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdLowestKTypeDimsIndepComplexEmbedding
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OneMeasureSizes
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeftMulUnitaryRepresentation
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToEndDApply
 open GlobalTheory.LocFinIso
 set_option maxHeartbeats 1000000 in

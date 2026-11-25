@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicEmbeddingPlaceExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff
 open NumberField IsDedekindDomain GlobalTheory.TrueGeo
 set_option maxHeartbeats 1000000 in

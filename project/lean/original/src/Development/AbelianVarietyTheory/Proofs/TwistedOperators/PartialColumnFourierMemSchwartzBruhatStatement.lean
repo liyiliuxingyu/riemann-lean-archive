@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PartialColumnFourierMemSchwartzBruhat
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasurePreservingPiCurry
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.SplitFlip GlobalTheory.ColFourier
 set_option maxHeartbeats 1000000 in

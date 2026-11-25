@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund

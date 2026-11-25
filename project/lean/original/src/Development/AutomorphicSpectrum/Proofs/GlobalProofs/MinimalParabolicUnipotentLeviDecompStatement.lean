@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MinimalParabolicUnipotentLeviDecomp
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsKInfEqMul
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Matrix

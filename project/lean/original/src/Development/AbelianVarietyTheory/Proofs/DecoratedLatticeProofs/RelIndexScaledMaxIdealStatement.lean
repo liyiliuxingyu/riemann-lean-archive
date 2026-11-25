@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RelIndexScaledMaxIdeal
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
 open ValuativeRel GlobalTheory.SplitWeil
 set_option maxHeartbeats 1000000 in

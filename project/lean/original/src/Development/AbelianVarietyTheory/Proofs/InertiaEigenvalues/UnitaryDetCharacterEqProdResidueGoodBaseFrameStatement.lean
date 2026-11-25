@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryDetCharacterEqProdResidueGoodBaseFrame
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacC
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterProductFormula

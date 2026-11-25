@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicHyperbolicComplement
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroup
 open Matrix
 set_option maxHeartbeats 1000000 in

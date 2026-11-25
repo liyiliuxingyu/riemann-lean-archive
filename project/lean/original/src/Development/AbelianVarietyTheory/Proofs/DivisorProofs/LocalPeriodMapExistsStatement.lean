@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPeriodMapExists
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
 
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj

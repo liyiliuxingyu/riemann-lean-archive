@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumEigenAtAllPlaces
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvFinMkPt
 
 open scoped TensorProduct

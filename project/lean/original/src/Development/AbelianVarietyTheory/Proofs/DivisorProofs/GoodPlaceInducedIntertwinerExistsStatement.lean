@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPlaceInducedIntertwinerExists
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipAugLeJacKer
 

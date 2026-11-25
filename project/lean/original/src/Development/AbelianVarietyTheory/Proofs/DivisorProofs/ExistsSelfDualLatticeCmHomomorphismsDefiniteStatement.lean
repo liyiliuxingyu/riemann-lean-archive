@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualLatticeCmHomomorphismsDefinite
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
 open NumberField
 set_option maxHeartbeats 1000000 in

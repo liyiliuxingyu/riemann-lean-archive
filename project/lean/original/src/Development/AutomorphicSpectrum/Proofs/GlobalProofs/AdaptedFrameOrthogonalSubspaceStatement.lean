@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdaptedFrameOrthogonalSubspace
-import Mathlib
 open Matrix
 
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCombinationJetsAlgebraicConjEqConjSeries
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbLLMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairIntAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow

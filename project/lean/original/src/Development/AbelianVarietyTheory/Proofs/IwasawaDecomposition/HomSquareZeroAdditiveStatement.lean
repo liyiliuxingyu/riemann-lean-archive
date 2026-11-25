@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HomSquareZeroAdditive
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MulCoeEqZero
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
 

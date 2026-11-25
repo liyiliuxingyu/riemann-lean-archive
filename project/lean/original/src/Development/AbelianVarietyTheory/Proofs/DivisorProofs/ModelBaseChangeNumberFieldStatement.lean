@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelBaseChangeNumberField
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocGrLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegFlagged
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitting

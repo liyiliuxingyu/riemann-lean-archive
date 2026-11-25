@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureTorsionPointsBijective
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsMulVal
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj WithConv
 open scoped TensorProduct

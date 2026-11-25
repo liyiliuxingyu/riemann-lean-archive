@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperFlatSectionEqZeroOfThickenings
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThickFibIsPullback
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits GlobalTheory.SpecialConn
 set_option maxHeartbeats 1000000 in

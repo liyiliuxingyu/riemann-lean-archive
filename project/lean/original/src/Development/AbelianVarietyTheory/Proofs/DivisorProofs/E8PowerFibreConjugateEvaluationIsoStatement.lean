@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.E8PowerFibreConjugateEvaluationIso
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

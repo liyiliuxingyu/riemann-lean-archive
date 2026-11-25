@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameReductionEqOneOfCongruentModIdeal
-import Mathlib
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 open NumberField IsDedekindDomain Formalism.L2 Formalism.L2.DIV

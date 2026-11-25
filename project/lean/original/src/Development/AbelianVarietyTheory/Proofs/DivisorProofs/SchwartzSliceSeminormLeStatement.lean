@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzSliceSeminormLe
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTemperateGrowthProdMkConst
 open scoped SchwartzMap ContDiff
 open GlobalTheory.SchwartzFstOp

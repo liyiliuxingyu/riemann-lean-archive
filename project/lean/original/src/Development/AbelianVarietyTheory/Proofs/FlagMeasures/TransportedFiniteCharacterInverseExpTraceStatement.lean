@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TransportedFiniteCharacterInverseExpTrace
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LevelMatchIff
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrLink
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.EmbeddingTraceSumAlt.NormUnitsOfCalculation

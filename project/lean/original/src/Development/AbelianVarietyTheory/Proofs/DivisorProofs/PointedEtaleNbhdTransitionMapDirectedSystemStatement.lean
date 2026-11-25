@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNbhdTransitionMapDirectedSystem
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveResidueCompEtaleHenselian
 open IsLocalRing GlobalTheory.Henselisation

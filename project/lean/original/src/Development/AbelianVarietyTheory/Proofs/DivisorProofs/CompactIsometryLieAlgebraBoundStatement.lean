@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactIsometryLieAlgebraBound
-import Mathlib
 open scoped Matrix
 
 set_option maxHeartbeats 1000000 in

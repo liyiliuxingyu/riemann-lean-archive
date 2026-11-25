@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedGramDualReverse
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelGramPosSemidef
 open Matrix GlobalTheory.HermFrame GlobalTheory.GradedNorm GlobalTheory.CurvInterp
 open scoped ComplexOrder

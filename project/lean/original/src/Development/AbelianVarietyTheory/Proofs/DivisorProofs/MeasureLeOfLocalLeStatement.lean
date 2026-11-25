@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureLeOfLocalLe
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDensityPushforwardIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedSubsetPartitionNull

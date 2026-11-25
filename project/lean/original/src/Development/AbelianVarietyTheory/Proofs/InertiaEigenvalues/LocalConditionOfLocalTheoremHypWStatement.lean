@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalConditionOfLocalTheoremHypW
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypeJumps
 import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.JointConditionTameBound

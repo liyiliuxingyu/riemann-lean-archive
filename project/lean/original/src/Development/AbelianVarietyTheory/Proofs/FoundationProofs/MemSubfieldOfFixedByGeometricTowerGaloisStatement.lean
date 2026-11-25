@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSubfieldOfFixedByGeometricTowerGalois
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraMapZpInjective

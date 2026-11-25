@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorsOfConstantsAllPrimesOfClosedFibre
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstClosedPts
 open IsLocalRing Polynomial
 set_option maxHeartbeats 1000000 in

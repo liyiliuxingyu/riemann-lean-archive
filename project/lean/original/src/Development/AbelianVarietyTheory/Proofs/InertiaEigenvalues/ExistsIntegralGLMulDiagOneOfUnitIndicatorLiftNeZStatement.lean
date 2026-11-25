@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralGLMulDiagOneOfUnitIndicatorLiftNeZ
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormMulApplyLeOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLeMaxUltra
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

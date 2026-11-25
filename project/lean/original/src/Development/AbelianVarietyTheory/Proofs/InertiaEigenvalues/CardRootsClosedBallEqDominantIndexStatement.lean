@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardRootsClosedBallEqDominantIndex
-import Mathlib
 open Polynomial
 open Classical
 set_option maxHeartbeats 1000000 in

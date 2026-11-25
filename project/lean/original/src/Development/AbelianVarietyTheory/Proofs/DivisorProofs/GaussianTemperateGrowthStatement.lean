@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianTemperateGrowth
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPApply
 open GlobalTheory.ArchSch
 set_option maxHeartbeats 1000000 in

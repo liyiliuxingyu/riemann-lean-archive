@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInstanceFramesOfDiagonalFrameSelfDual
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.UnimodInst
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialGrowthOfPeriodicIntegralSpans
-import Mathlib
 open Filter Topology
 
 set_option maxHeartbeats 1000000 in

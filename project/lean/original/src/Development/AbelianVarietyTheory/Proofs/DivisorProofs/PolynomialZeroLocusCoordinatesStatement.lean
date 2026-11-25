@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialZeroLocusCoordinates
-import Mathlib
 import Formalism.UnipotentAdelicQuotients.ClassNumberFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormGroupToPadicPointsDegreeOneEqUnitaryPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TC

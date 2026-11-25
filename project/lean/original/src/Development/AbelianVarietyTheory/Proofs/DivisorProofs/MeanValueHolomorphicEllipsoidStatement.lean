@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanValueHolomorphicEllipsoid
-import Mathlib
 open MeasureTheory
 open scoped ComplexOrder
 set_option maxHeartbeats 1000000 in

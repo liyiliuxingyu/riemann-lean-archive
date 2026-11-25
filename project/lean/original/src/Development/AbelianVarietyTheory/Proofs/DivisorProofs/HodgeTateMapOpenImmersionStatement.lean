@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateMapOpenImmersion
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PtMapDualBCLeft
 
 set_option autoImplicit false

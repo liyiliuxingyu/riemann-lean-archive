@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmpleNsmul
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemSupportBDIff
 open GlobalTheory GlobalTheory.ProjVar
 set_option maxHeartbeats 1000000 in

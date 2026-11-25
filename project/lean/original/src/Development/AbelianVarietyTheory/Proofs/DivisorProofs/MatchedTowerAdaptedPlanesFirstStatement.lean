@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTowerAdaptedPlanesFirst
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipParLeUnipFlag
 import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftDef

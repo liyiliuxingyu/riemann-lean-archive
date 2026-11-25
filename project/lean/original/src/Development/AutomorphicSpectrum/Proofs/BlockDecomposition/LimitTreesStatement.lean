@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitTrees
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankPosOfLeaves
 open GlobalTheory.CompanionTheory.EGlue
 set_option maxHeartbeats 1000000 in

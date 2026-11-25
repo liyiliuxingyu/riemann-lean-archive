@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionLowerEntryMultiplicationLaw
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChLApply
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData
 set_option maxHeartbeats 1000000 in

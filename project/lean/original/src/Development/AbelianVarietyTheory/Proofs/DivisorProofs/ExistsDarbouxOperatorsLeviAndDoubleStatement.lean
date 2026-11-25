@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDarbouxOperatorsLeviAndDouble
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DblActId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisedOne
 open scoped TensorProduct NNReal ENNReal Matrix Classical

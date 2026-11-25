@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PrincipalPlaceComponentStabilisesLatticeTwisted
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsLevMeas
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn

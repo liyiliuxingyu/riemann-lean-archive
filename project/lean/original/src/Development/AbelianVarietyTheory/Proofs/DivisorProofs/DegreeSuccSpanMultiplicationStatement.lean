@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeSuccSpanMultiplication
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemDegLE
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

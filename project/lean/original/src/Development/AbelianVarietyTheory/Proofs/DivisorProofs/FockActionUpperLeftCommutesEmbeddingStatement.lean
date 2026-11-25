@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionUpperLeftCommutesEmbedding
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSNeZero
 open MvPolynomial Formalism.BasicNotions.TH GlobalTheory.CharPair
 set_option maxHeartbeats 1000000 in

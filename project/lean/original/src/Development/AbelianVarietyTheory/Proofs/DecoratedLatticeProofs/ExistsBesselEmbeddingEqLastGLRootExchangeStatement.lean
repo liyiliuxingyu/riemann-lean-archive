@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsBesselEmbeddingEqLastGLRootExchange
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemTranslate
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsBiSmooth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselPeriodRightTranslationInvariant

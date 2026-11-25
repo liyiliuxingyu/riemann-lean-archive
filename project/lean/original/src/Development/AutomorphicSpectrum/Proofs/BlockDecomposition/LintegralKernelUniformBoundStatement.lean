@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralKernelUniformBound
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Kern
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.MajC Ad3.K.LC Ad3.K.LC.B
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ComplexPadicNormKappaSplitPrime
-import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BaseEx
 open NumberField Formalism.BasicNotions Classical Formalism.MainNotions Formalism.L2.Ker
 set_option maxHeartbeats 1000000 in

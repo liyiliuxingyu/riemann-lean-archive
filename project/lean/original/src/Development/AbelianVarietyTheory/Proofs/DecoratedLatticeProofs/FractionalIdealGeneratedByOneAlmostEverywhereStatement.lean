@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FractionalIdealGeneratedByOneAlmostEverywhere
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
 open Formalism.BasicNotions IsDedekindDomain NumberField
 set_option maxHeartbeats 1000000 in

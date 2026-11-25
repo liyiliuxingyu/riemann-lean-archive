@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermMatrixRepParabolicDoubleCoset
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockProductIsomorphism
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCuspidalIffCompositions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsColReduced

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRealAdeleCoordinatesCmType
-import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.DualExponentDensity
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ActionCoordinates

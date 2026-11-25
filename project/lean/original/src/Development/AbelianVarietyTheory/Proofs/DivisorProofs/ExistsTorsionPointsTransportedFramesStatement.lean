@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionPointsTransportedFrames
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

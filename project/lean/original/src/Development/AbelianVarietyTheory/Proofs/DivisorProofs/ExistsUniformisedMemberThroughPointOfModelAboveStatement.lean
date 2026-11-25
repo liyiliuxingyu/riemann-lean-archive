@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisedMemberThroughPointOfModelAbove
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeImageLowerBlocks
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdjOne
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

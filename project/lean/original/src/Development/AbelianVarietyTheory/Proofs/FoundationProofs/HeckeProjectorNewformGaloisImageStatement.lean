@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeProjectorNewformGaloisImage
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.LiftApplyOfMemAdmissibleSubalgebra
 import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.Newform
 open scoped MatrixGroups TensorProduct

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEighthPowerEndomorphismActingByMatrix
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsE8WeightedBundle
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

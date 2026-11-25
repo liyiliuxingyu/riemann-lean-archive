@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalTypeClosurePreservedByArchCompactIntertw
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BarKHomSurjective
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 open NumberField GlobalTheory.CuspRep GlobalTheory.Published GlobalTheory.IdemAdj

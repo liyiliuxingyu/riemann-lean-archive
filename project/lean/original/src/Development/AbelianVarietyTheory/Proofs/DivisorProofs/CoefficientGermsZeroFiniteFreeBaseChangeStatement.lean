@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientGermsZeroFiniteFreeBaseChange
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCarriedAlong
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarriedOver
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

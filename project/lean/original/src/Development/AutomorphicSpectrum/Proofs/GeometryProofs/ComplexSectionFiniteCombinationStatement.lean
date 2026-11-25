@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexSectionFiniteCombination
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NoCommonZeroCombVal
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentEndomorphismImageCommutesBaseChange
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsQProjOverCompImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSemiAbelianImage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormallyUnramifiedAdjointRingActionScheme

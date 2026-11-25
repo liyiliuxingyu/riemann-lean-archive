@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetEvaluationPowerSeries
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RosLevel
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry IsLocalRing
 open scoped CategoryTheory.Obj

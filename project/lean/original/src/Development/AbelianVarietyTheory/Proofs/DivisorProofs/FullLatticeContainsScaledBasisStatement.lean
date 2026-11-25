@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullLatticeContainsScaledBasis
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPart
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory GlobalTheory.LieHt GlobalTheory.LieRead
 set_option maxHeartbeats 1000000 in

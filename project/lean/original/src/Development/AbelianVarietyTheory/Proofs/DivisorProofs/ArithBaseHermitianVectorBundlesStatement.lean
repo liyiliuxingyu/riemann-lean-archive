@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithBaseHermitianVectorBundles
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBaseIff

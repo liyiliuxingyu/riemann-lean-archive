@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLeviTorusEvaluation
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocPart
 
 open scoped TensorProduct NNReal Matrix

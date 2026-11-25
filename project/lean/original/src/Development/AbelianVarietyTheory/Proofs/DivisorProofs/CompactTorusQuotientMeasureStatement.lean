@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusQuotientMeasure
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordMeasure
 open MeasureTheory
 open scoped NNReal ENNReal

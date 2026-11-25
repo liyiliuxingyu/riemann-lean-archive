@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalInverseQuantitativeBall
-import Mathlib
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 open MeasureTheory
 set_option maxHeartbeats 1000000 in

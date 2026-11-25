@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightMaximalLePrimeAddDim
-import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyCM
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bridge
 set_option maxHeartbeats 1000000 in

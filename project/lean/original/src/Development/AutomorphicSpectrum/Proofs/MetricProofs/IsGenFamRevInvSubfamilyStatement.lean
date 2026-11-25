@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsGenFamRevInvSubfamily
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GenUIsGenFam
 open AlgebraicGeometry CategoryTheory NumberField Matrix

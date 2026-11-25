@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientSpaceEndomorphismScalarSchur
-import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeTie
 set_option autoImplicit false
 noncomputable section

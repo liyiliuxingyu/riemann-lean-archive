@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPartialFourierIntertwine
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.schrodinger_partial_fourier_intertwine : ∀ {V U : Type} [NormedAddCommGroup V] [NormedSpace ℝ V] [FiniteDimensional ℝ V]

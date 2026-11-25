@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeSubrepresentationExists
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToEndDApply
 open GlobalTheory.LocFinIso
 set_option maxHeartbeats 1000000 in

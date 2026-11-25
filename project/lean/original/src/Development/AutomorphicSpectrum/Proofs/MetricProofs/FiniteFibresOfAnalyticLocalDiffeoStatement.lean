@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteFibresOfAnalyticLocalDiffeo
-import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPtsBddConv
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailMass

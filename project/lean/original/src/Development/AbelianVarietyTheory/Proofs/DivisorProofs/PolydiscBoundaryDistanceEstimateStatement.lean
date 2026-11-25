@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolydiscBoundaryDistanceEstimate
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalSectionSmoothPolydiscStatement

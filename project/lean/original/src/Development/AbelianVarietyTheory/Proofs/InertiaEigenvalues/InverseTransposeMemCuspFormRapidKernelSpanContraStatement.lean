@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InverseTransposeMemCuspFormRapidKernelSpanContra
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemContraIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 import Development.AbelianVarietyTheory.Definitions.Divisors.MeasurableCompInfGL

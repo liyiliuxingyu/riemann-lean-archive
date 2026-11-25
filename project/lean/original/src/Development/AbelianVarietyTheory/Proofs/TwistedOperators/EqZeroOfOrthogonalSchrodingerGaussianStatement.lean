@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfOrthogonalSchrodingerGaussian
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzTranslate
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 open GlobalTheory.RealWeil MeasureTheory

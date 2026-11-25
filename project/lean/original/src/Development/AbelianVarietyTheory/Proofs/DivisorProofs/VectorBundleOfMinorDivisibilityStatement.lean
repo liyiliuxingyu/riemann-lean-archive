@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorBundleOfMinorDivisibility
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFrameOfForallExists
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing

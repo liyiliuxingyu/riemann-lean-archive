@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankSchwartzBruhatLeAleph0
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisFin
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.FinHeis
 set_option maxHeartbeats 1000000 in

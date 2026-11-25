@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverFunctionFieldMapEq
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualRef
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelNeg

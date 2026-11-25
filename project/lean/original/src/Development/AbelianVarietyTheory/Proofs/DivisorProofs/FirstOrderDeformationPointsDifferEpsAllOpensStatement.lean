@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstOrderDeformationPointsDifferEpsAllOpens
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsChartPtChartPt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineHomOfField

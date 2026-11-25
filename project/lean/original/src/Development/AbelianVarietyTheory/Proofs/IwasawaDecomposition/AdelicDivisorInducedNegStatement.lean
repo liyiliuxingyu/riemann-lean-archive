@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedNeg
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ImaginaryRootNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetsOfParOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPow

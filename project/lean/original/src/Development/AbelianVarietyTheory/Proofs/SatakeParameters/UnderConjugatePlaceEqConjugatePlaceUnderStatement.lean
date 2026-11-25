@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnderConjugatePlaceEqConjugatePlaceUnder
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RegPolOfRepOf
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N

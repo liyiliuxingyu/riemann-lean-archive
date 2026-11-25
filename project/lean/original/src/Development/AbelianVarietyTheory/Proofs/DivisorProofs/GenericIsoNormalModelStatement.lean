@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoNormalModel
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

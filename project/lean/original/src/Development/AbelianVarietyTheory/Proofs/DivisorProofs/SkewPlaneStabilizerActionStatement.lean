@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneStabilizerAction
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipParLeUnipFlag
 import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2

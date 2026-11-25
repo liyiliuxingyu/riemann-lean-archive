@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsDetOnStableSubspaceExpSmul
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 open Matrix
 set_option maxHeartbeats 1000000 in

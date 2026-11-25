@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSFockColumnSubstitutionUnitary
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
 open Classical MeasureTheory
 set_option maxHeartbeats 1000000 in

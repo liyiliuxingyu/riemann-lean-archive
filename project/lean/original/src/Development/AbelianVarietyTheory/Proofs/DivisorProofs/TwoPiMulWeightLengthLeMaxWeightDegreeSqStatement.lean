@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoPiMulWeightLengthLeMaxWeightDegreeSq
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThreeLeScaleOfPowBound
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.OrientationExclusive
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPageRunRecord

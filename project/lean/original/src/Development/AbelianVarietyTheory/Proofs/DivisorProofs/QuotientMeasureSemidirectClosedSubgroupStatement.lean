@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientMeasureSemidirectClosedSubgroup
-import Mathlib
 open MeasureTheory
 
 set_option maxHeartbeats 1000000 in

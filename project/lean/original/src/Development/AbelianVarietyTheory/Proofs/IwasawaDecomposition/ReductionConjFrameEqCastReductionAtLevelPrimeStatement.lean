@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReductionConjFrameEqCastReductionAtLevelPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemParLevOfQ
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq

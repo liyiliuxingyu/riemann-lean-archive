@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPeriodMapCompInjectiveRealLinear
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHolPeriods
 open Matrix GlobalTheory.PELU
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor (hermForm)

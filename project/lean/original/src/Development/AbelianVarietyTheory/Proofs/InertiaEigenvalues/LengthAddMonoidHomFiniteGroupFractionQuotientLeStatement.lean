@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthAddMonoidHomFiniteGroupFractionQuotientLe
-import Mathlib
 import Formalism.CharacterColumnKernels.StatementRho
 open Formalism.NG
 set_option maxHeartbeats 1000000 in

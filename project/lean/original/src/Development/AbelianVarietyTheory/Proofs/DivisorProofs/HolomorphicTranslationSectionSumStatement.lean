@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicTranslationSectionSum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactUnitPair
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.CxPts
 open GlobalTheory.CxForm (relCot dRel)

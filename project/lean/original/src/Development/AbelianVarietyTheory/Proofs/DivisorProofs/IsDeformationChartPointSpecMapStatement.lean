@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeformationChartPointSpecMap
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsChartPtChartPt
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

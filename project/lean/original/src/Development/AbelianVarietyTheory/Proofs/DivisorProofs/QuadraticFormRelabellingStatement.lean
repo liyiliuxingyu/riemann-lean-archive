@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticFormRelabelling
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootSub
 open NumberField MvPolynomial
 open Formalism.BasicNotions Formalism.DegreeFormula GlobalTheory.FlagPoly GlobalTheory.Mean4O GlobalTheory.ShFam GlobalTheory.ShFam.Pad

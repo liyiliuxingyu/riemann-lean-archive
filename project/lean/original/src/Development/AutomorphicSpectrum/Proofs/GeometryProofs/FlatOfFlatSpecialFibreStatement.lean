@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatOfFlatSpecialFibre
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModuleFlatOfFlatAndFibreFlatStatement
 open TensorProduct
 set_option maxHeartbeats 1000000 in

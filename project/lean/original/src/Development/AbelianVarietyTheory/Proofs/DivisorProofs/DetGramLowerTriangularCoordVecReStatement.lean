@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetGramLowerTriangularCoordVecRe
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
 import Development.AbelianVarietyTheory.Definitions.Divisors.VolMeasureOfAdd
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ImDiagEqTrace

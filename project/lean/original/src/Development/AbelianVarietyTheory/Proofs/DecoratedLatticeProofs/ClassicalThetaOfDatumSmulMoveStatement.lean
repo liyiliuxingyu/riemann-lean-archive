@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ClassicalThetaOfDatumSmulMove
-import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

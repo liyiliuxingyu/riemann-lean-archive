@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartSectionTrivialisation
-import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactUnitPair
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj

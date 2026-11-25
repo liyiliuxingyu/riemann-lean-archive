@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicDiscriminantDualBasisBound
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IdemEvalAndDualDiffIff
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ValuesOfDiscrFormula

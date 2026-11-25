@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHolds
-import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlagModelStatement
 open GlobalTheory.CompanionTheory.Ar
 set_option maxHeartbeats 1000000 in

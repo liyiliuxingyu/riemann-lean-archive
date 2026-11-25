@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalFramesFamily
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFrameOfForallExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelNonvanishingWeights

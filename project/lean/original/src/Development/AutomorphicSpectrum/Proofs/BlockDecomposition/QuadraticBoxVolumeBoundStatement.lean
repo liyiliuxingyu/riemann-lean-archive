@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxVolumeBound
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoreR
 open MeasureTheory Topology GlobalTheory.CompanionTheory.WeilSiegel.Inf0
 open scoped ENNReal NNReal Matrix

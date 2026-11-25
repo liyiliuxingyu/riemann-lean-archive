@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrime
-import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

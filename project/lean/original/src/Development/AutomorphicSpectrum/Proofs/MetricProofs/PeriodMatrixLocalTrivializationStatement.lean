@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodMatrixLocalTrivialization
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 open Matrix Metric GroundTheory.Heights₂.Heights.Regular GlobalTheory.CompanionTheory.Ar.Flat
 set_option maxHeartbeats 1000000 in

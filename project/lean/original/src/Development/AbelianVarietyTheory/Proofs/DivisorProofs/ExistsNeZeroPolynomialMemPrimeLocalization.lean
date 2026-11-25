@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusEmbeddingLieInjective
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocIndEtaleIsDomainIsIntegrallyClosed
 open GlobalTheory.EtC

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisActionPeriodProduct
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import GroundTheory.PAdicHodge.ExistsGalFixCyclotomicLayerCycloCharNeOne
 noncomputable section

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemUnipotentRadicalIffIotaMemAdelicRadical
-import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FundamentalEquivalence.AdBridge

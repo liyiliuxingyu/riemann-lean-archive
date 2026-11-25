@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocallyConstantTestRepresentationTensorProduct
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorRepApply
 open GlobalTheory.JR GlobalTheory.JR.WeilProd
 set_option maxHeartbeats 1000000 in

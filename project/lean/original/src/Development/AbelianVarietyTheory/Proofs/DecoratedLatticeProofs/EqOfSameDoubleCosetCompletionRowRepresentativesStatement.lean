@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EqOfSameDoubleCosetCompletionRowRepresentatives
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 import Formalism.LocalToGlobal.Columns.ChainTw
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.NormalRepresentationLattice

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LambdaValueEdgeSum
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChainEdge
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BesselCompatibility
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero

@@ -1,5 +1,4 @@
 import Mathlib
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis

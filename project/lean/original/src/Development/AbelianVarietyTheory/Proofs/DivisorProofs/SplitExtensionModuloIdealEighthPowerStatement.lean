@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitExtensionModuloIdealEighthPower
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.E8LB
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton

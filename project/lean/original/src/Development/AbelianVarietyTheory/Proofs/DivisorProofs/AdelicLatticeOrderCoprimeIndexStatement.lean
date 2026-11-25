@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLatticeOrderCoprimeIndex
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PolarisationModuleIndex
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.IndefiniteRowSideFullHecke.PolarisationModuleIndex
 set_option maxHeartbeats 1000000 in

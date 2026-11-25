@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameMatrixUnitsIrreducible
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagBundleIff
 open CategoryTheory AlgebraicGeometry GlobalTheory
 set_option maxHeartbeats 1000000 in

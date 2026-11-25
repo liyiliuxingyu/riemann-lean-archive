@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncAtOfStalkIdEqSpanProd
-import Mathlib
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open AlgebraicGeometry CategoryTheory ReciprocityTheory.AnForm.R
 set_option maxHeartbeats 1000000 in

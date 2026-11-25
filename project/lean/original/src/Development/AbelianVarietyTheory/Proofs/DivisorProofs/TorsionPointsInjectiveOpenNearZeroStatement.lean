@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointsInjectiveOpenNearZero
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpOverFstComp
 set_option autoImplicit false
 noncomputable section

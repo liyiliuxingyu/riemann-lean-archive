@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGluedLineBundleSectionCover
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeatOperatorGluedPullbackBundlePower
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Semi
 open GlobalTheory.KS (rsT)

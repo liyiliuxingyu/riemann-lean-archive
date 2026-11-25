@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreConnectedOfProper
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 open CategoryTheory Limits AlgebraicGeometry

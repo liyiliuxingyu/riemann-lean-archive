@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepInverseCharacterLocalComponentChainTame
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq

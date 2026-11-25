@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteColumnConfigurationsWitnesses
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldValuesMemFixedField
 import Formalism.LocalToGlobal.Columns.PathCountSymmetricHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SameCfgRefl

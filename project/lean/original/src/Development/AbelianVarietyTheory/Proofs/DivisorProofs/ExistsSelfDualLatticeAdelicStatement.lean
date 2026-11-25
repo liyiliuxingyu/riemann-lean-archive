@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualLatticeAdelic
-import Mathlib
 import Formalism.SatakeDualWeyl.Statement
 open scoped Matrix
 

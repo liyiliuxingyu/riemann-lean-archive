@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPdivGroupForPoint
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LieInj
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ScholzeWeinsteinB
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricChartIntegralGLEqLatticeStabilizer
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsLevMeas
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn

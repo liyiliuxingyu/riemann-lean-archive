@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPointFactorsOpenImmersion
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitNatCastRes
 
 set_option autoImplicit false

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AugmentationLengthColengthBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadNatZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTermZero
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ZintZero

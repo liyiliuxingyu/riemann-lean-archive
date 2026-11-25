@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightInvariantUnderSubgroup
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftMemLiftSpace
 open GlobalTheory.ThK.SplitInv
 set_option maxHeartbeats 1000000 in

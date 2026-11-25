@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralDualOfIndependentModUniformizer
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 open Matrix
 set_option maxHeartbeats 1000000 in

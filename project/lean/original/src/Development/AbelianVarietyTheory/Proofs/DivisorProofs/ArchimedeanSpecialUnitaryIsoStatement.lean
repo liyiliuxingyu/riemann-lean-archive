@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSpecialUnitaryIso
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarProd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicSplit
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele

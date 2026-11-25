@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenspaceBasisExists
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SumEmbeddingDualInt
 open NumberField

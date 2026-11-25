@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryEndomorphismsTorsionExtendSemiAbelian
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabRange
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

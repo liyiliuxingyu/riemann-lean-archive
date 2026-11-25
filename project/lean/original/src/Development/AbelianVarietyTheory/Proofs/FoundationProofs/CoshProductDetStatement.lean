@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoshProductDet
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SingularValueFrame
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.RealRankSubgroupMembership

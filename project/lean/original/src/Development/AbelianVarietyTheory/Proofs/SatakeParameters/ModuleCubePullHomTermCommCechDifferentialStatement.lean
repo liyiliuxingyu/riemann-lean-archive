@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ModuleCubePullHomTermCommCechDifferential
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FlatHermRootLineDegree
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechModulesFunctorShortExactOfIsAffineOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CechAbPullApp

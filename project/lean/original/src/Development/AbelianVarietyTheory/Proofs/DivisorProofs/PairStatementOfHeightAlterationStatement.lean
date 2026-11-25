@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairStatementOfHeightAlteration
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VdivLnIdFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration

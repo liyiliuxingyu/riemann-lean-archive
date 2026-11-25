@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingGammaStabilizerUnique
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitHomVal
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

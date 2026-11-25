@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartTrdegValuationBound
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdmissibleRepresentationFactorisation
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpMapResMap
 open AlgebraicGeometry CategoryTheory Limits NumberField

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenFiniteAdeleRing
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
 open NumberField IsDedekindDomain GlobalTheory.QSA
 open scoped Quaternion Topology

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixNormInvariantUnimodular
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTriSelf
 open GlobalTheory.TriFrame
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryFinalTwist
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeIdxUnique
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseLevelDatumLevelEq
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue

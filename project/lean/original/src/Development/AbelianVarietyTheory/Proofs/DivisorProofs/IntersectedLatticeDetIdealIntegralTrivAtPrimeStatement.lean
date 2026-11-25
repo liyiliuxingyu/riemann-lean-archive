@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntersectedLatticeDetIdealIntegralTrivAtPrime
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulShortNonneg
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IndexRangeMatrix
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsLocalRing

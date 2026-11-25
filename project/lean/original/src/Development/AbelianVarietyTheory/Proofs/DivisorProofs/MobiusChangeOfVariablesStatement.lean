@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MobiusChangeOfVariables
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FsOne
 open MeasureTheory
 open scoped ComplexOrder ENNReal

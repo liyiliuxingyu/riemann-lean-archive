@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDedFracLocalizationAway
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Models
 set_option maxHeartbeats 1000000 in

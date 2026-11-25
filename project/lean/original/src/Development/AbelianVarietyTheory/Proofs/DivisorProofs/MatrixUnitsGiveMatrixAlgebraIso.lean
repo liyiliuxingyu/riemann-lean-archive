@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteUnitaryHaarBallLowerBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntVZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyIntegralTensorPointsSharpStableRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupActionRingHom

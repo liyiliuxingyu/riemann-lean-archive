@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurePreservingPolarGaussianProbabilityComplex
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFirstCoords
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import ReciprocityTheory.SemistableReduction.SJCoreA

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentStabilizerRelativelyCompact
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeEvFun
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsPowApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingLocalMeasurable

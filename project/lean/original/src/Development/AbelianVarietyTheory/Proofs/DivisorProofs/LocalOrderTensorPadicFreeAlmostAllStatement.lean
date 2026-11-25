@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOrderTensorPadicFreeAlmostAll
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreCompat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsScalarTowerCenAlgebra
 open scoped TensorProduct

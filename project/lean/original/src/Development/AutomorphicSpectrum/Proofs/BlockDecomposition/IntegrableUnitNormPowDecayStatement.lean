@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableUnitNormPowDecay
-import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.LocallyConstantMajorants.GammaSplitting.ComplexMatrixMajorantIntegrable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableMulCIff
 open MeasureTheory Matrix

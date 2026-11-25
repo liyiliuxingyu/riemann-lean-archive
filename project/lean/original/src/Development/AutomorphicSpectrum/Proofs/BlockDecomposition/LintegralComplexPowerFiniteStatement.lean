@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralComplexPowerFinite
-import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousBlkM
 open MeasureTheory Matrix

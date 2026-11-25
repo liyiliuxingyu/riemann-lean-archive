@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinitePlaceValuationCompRingEquiv
-import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

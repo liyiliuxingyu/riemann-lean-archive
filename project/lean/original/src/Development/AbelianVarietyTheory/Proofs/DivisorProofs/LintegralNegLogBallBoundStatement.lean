@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNegLogBallBound
-import Mathlib
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegrableMonomialMulConjComplexGaussian
 open MeasureTheory

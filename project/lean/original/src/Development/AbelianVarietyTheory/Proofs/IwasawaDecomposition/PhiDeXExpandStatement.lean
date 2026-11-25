@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDeXExpand
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IncreasingRowChoicePerColumn
 open MvPolynomial
 set_option maxHeartbeats 1000000 in

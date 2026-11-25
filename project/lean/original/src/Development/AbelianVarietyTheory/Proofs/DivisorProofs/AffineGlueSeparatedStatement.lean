@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineGlueSeparated
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecEquivResM
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.AffGlue
 set_option maxHeartbeats 1000000 in

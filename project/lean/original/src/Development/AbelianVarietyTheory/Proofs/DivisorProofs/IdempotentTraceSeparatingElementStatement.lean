@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentTraceSeparatingElement
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
 open NumberField GlobalTheory.HTLat GlobalTheory.EigenSplit Classical
 open scoped TensorProduct NNReal

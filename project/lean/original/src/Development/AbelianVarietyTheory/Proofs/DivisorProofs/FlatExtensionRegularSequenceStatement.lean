@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatExtensionRegularSequence
-import Mathlib
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open ReciprocityTheory.AnForm.R.FinalTheorems
 set_option maxHeartbeats 1000000 in

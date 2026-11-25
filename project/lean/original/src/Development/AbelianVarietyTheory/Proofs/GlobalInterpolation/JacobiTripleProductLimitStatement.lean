@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.JacobiTripleProductLimit
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MultipliableTpFactor
 open Complex
 open scoped Real

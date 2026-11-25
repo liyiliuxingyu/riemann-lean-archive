@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonic
-import Mathlib
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 open Formalism.REAL Finset
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionRowCapelliFormula
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EabIsKCInr
 open MvPolynomial Formalism.BasicNotions.TH
 set_option maxHeartbeats 1000000 in

@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPowerEmbedding
-import Mathlib
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.DegreeFormula

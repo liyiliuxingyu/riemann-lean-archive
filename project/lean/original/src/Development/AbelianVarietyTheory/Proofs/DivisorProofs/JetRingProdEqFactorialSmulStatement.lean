@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetRingProdEqFactorialSmul
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 open GlobalTheory.LatJet
 open scoped Classical

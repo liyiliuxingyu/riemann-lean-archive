@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteComplexPointsTransversalZeros
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FRatioSelf
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory

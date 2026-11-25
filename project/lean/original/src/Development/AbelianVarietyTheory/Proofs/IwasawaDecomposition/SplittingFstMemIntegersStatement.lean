@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplittingFstMemIntegers
-import Mathlib
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 import Formalism.LocalRingCardinality.DataLevel
 open NumberField IsDedekindDomain

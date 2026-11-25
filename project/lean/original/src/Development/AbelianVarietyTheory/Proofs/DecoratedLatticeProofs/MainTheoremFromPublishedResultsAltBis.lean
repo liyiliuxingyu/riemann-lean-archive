@@ -27,7 +27,6 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.We
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LinkSPos
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TruePack
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MiPinnedWithFinIff
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.MiS GlobalTheory.Fam GlobalTheory.MiTop
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 open scoped InnerProductSpace TensorProduct

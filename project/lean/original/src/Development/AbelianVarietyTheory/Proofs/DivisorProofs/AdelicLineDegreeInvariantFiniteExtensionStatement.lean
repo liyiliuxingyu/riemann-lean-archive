@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineDegreeInvariantFiniteExtension
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 open NumberField IsDedekindDomain Module GlobalTheory.FlatLine
 set_option maxHeartbeats 1000000 in

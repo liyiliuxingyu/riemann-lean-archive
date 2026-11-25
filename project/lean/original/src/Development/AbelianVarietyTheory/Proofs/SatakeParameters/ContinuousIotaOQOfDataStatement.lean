@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIotaOQOfData
-import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 open Formalism.BasicNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

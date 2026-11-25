@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentIntegralOverRing
-import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverZpOfInFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsExtendLin

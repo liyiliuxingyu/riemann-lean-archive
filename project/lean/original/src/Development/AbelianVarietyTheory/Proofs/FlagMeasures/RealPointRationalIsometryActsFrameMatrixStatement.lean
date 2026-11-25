@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealPointRationalIsometryActsFrameMatrix
-import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LoopTerm
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RatCoordCont

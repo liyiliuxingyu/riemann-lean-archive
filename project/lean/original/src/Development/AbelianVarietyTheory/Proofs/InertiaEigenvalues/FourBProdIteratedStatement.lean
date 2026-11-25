@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourBProdIterated
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 open GlobalTheory.JR MeasureTheory
 set_option maxHeartbeats 1000000 in

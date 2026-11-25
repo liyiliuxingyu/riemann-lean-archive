@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjTranslatedRowEvaluationLevelProjectorFixed
-import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
 import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding

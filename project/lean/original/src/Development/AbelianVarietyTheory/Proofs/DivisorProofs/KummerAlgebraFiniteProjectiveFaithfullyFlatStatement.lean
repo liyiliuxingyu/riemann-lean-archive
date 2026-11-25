@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerAlgebraFiniteProjectiveFaithfullyFlat
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapEqMk
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

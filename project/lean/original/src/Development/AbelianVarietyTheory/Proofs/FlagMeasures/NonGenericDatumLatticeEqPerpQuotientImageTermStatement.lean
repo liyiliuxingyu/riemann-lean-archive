@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonGenericDatumLatticeEqPerpQuotientImageTerm
-import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
 open Formalism.MainNotions.S
 

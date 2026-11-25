@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiFlatMapSupportFiniteCells
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx
 set_option maxHeartbeats 1000000 in

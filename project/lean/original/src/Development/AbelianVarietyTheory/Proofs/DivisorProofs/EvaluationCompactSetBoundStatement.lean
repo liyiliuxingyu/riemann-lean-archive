@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationCompactSetBound
-import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MajINonneg
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
 

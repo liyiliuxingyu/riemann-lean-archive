@@ -1,6 +1,5 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLocalIdealNotMem
-import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCompactIsOpenUnitsAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCharEqValZpow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TmulMemLocId
