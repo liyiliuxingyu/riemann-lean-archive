@@ -1,0 +1,33 @@
+{
+  "schema": "ordinary-git-annotation-expansion-v1",
+  "repository": "liyiliuxingyu/riemann-lean-archive",
+  "source_release_tag": "archive-20261122",
+  "status": "in_progress",
+  "chunk_max_bytes": 50331648,
+  "boundary": "whole annotation plus original JSON record pairs; bytes preserved",
+  "total_parts": 57,
+  "total_annotated_bytes_expected": 168547118127,
+  "total_original_records_expected": 1080769508,
+  "completed_parts": [
+    {
+      "part": 1,
+      "source_file": "solution_annotated.part001.txt.zst",
+      "source_compressed_sha256": "0bac128afb799ca4ae7da74d87e424e135918631cfd14441659457c76751b17b",
+      "first_line": 1,
+      "last_line": 18288865,
+      "records": 18288865,
+      "annotated_bytes": 2776654701,
+      "annotated_sha256": "6d6cc0f6238c0962cb6b372cb602c21386ee58fb7c13fc23fa13ddefb403a75f",
+      "original_bytes": 993522858,
+      "original_sha256": "5905c56f777d237b1f2814cc5af550ac556b9991f5ae5a970b5f008f20a8e1b7",
+      "chunks": 56,
+      "manifest": "annotations/unpacked/part001/manifest.json",
+      "manifest_sha256": "7dd224b0a38f86283c8e799a29d41d91c474a6d2550e470123056db183b2e15d"
+    }
+  ],
+  "global_original_sha256_recomputed": false,
+  "verification_scope": "Every complete source volume is SHA-256 checked before decompression; each original-volume hash, record count, byte count and line-label sequence is rechecked. Every output chunk is SHA-256 checked and its Git blob SHA-1 is compared with Git. No Lean proof checking.",
+  "completed_annotated_bytes": 2776654701,
+  "completed_original_records": 18288865,
+  "completed_chunks": 56
+}

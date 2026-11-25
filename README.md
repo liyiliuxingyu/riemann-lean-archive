@@ -4,11 +4,17 @@
 
 本仓库整理文件、保存出处并提供恢复与核验方法。文件汇编、哈希核验和 NDJSON 注释的成功，不能代替 Lean 内核对数学证明的检查。本次整理及后续有限审查没有完成本机完整原工程构建、最终定理的完整递归公理审计或全量独立内核复核。中文数学稿仍有明确标出的上游论证未完全展开，不是独立完整的新证明。
 
+<!-- full-annotation-expansion-status -->
+## 完整注释附件展开进度
+
+57 卷完整注释正在按完整记录对分块上传，已完成 1/57 卷。实际目录、逐卷核验结果和下载入口见 [annotations/unpacked/](annotations/unpacked/)。原始 Release 附件作为备份保留。
+<!-- /full-annotation-expansion-status -->
+
 ## 交付内容与目录
 
 Release 中的源码汇编已恢复为完整模块树，工程索引和注释工具包也已展开到普通 Git 文件。原工程常规成员及后续展开的第三方源码可直接按文件阅读，随机访问索引按原字节提取；大于单文件上限的依赖索引按完整行拆为 5 卷。`audits/` 的两份有限审查及复核证据也已展开。
 
-**57 卷注释的完整解压正文尚未加入普通 Git：它们合计 168,547,118,127 字节（约 168.55 GB），每卷均超过 100 MiB。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。此次展开的范围、核验方法和剩余部分见 [展开说明](docs/RELEASE_EXPANSION.md)。
+**完整注释的最新展开与上传状态见上方进度及 annotations/unpacked/。** 全部 60 个原 Release 附件仍在 [归档 Release](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122) 中，已有逐项 SHA-256 核验记录。此次展开的范围、核验方法和剩余部分见 [展开说明](docs/RELEASE_EXPANSION.md)。
 
 | 文件或资料 | 内容与大小 | 现在的位置 |
 | --- | --- | --- |
@@ -21,7 +27,7 @@ Release 中的源码汇编已恢复为完整模块树，工程索引和注释工
 | 注释工具包 | 原 ZIP 的 58 个文件保留；新增 22,791,733 字节的独立 TXT 样本 | [solution_annotation_toolkit/](solution_annotation_toolkit/) |
 | 两份审计及证据 | 237 个展开文件；压缩扫描记录已转为 JSONL | [audits/](audits/) |
 | CTeX 对应源码 | 原源码包的全部 405 个文件 | [project/third_party/ctex-kit-source/](project/third_party/ctex-kit-source/) |
-| 57 卷完整注释 | 压缩合计 18,876,901,037 字节；解压约 168.55 GB | 仍为 Release 压缩附件；[逐卷清单和解压说明](annotations/) |
+| 57 卷完整注释 | 压缩合计 18,876,901,037 字节；解压约 168.55 GB | [独立 TXT 与实时进度](annotations/unpacked/)；[原附件清单](annotations/) |
 | `RH_AllSources.lean` | 1,101,883,390 字节的可恢复源码汇编；完整内容已恢复为上述模块树 | [独立 Release 附件](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/RH_AllSources.lean)，工程 ZIP 内也有一份 |
 | 完整工程 ZIP | 270 个原始成员；286,288,695 字节 | [riemann-human-readable-project.zip](https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip) |
 
@@ -45,7 +51,7 @@ python3 project/lean/dependencies/join_parts.py
 
 - [逻辑审查报告](audits/lean_logic_20261123/审查报告.txt)与 [anyGeometry 专项报告](audits/lean_geometry_20261123/专项核查报告.txt)可直接打开。
 - [注释 TXT 样本](solution_annotation_toolkit/benchmark/prefix_output_v2/solution_annotated.part001.txt)包含原始前 147,492 条记录及注释；它不是完整 Release 的第 1 卷。
-- 普通 Git 当前只保留一个 2,893,018 字节的 `.zst`，供现有压缩读取测试使用。57 卷约 168.55 GB 的完整注释仍以 Release 附件保存。
+- 普通 Git 当前只保留一个 2,893,018 字节的 `.zst`，供现有压缩读取测试使用。57 卷约 168.55 GB 的完整注释继续展开为独立 TXT，实际完成范围见上方进度；原 Release 附件保留。
 - 布局映射、原件取回办法、哈希和检查范围见[独立文件说明](docs/INDIVIDUAL_FILES.md)与[逐文件清单](docs/unpacked-files-20261125.json)。
 
 校验本次展开的 643 个文件：

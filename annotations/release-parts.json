@@ -3,10 +3,13 @@
   "description": "Public inventory of 57 annotated-text Zstandard volumes stored as GitHub Release attachments.",
   "storage": {
     "compressed_parts_location": "GitHub Release attachments only",
-    "decompressed_text_in_regular_git": false,
+    "decompressed_text_in_regular_git": true,
     "release_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/tag/archive-20261122",
     "release_tag": "archive-20261122",
-    "this_directory_contains": "Documentation and metadata only; no decompressed annotation volume is stored here."
+    "this_directory_contains": "Source inventory, documentation, and verified decompressed TXT volumes under unpacked/; consult unpacked/progress.json for actual completed scope.",
+    "decompressed_text_complete": false,
+    "decompressed_parts_completed": 1,
+    "decompressed_text_directory": "annotations/unpacked/"
   },
   "sources": {
     "annotation_metadata": "../ndjson-files.public.json",

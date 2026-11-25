@@ -1,0 +1,140 @@
+{
+  "scope": "streaming split roundtrip and failure handling; not Lean proof verification",
+  "passed": 19,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "real_sample_forced_1MiB_chunks",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 22,
+      "seconds": 0.603
+    },
+    {
+      "name": "non_one_start_exact_pair_cap",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 2,
+      "seconds": 0.027
+    },
+    {
+      "name": "CRLF_preserved",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 2,
+      "seconds": 0.024
+    },
+    {
+      "name": "final_original_without_LF",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 2,
+      "seconds": 0.035
+    },
+    {
+      "name": "no_LF_rejected_without_flag",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.01
+    },
+    {
+      "name": "wrong_line_number",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.011
+    },
+    {
+      "name": "empty_annotation",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.036
+    },
+    {
+      "name": "missing_original",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.048
+    },
+    {
+      "name": "bad_original_boundary",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.031
+    },
+    {
+      "name": "record_pair_over_limit",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.012
+    },
+    {
+      "name": "manifest_last_mismatch",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.019
+    },
+    {
+      "name": "existing_chunk_not_overwritten",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.011
+    },
+    {
+      "name": "ack_rejected",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 1,
+      "seconds": 0.022
+    },
+    {
+      "name": "ack_requires_parent_cleanup",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 1,
+      "seconds": 0.011
+    },
+    {
+      "name": "truncated_zstd",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.011
+    },
+    {
+      "name": "zstd_trailing_garbage",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.028
+    },
+    {
+      "name": "concatenated_zstd_frames",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 3,
+      "seconds": 0.009
+    },
+    {
+      "name": "lines_cross_decompression_buffers",
+      "passed": true,
+      "success_expected": true,
+      "chunks_emitted": 1,
+      "seconds": 0.14
+    },
+    {
+      "name": "cross_buffer_pair_over_limit",
+      "passed": true,
+      "success_expected": false,
+      "chunks_emitted": 0,
+      "seconds": 0.063
+    }
+  ]
+}
