@@ -530,13 +530,30 @@
       "manifest_sha256": "cf5e1ea788e815082f4cddffa8f3cb0bb8cbdd58c3f35e00504641412fd7bbce",
       "subtree_sha": "4f203e3cd999d89e6402fb140057dfcae64f12ec",
       "tool_version": "2026-11-25.staging-v3-httpx-v3"
+    },
+    {
+      "part": 33,
+      "source_file": "solution_annotated.part033.txt.zst",
+      "source_compressed_sha256": "3ea99b07f314049b7cb9ef86a1cfdb0fba120dc990d0078c30f458c34f734880",
+      "first_line": 621226359,
+      "last_line": 640803425,
+      "records": 19577067,
+      "annotated_bytes": 3053480333,
+      "annotated_sha256": "4d59afadcdc14734dc05b8427779ef1a2e40a1857ae769098187bf4e843c543b",
+      "original_bytes": 1117786944,
+      "original_sha256": "9397791855031649176e056438fc5732c413981d3790892a118131dd29c2acbe",
+      "chunks": 61,
+      "manifest": "annotations/unpacked/part033/manifest.json",
+      "manifest_sha256": "231308d26e84ae4d7973ad5c76e4a5d3c6fa72a48c275422d47ba0451c76d75b",
+      "subtree_sha": "fd9fbc8767277d162ad5199b195a1372d7fb150b",
+      "tool_version": "2026-11-25.staging-v3-httpx-v3"
     }
   ],
   "global_original_sha256_recomputed": false,
   "verification_scope": "Every complete source volume is SHA-256 checked before decompression; each original-volume hash, record count, byte count and line-label sequence is rechecked. Every output chunk is SHA-256 checked and its Git blob SHA-1 is compared with Git. No Lean proof checking.",
-  "completed_annotated_bytes": 96125972245,
-  "completed_original_records": 621226358,
-  "completed_chunks": 1927,
+  "completed_annotated_bytes": 99179452578,
+  "completed_original_records": 640803425,
+  "completed_chunks": 1988,
   "current_tool_version": {
     "version": "2026-11-25.staging-v3-httpx-v3",
     "uploader_sha256": "8efb8b0ba93fd8be0b8579cb3e455fb0850f1e5dc094ea9b5b76596016680f62",
