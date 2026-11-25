@@ -8,7 +8,7 @@
     "release_tag": "archive-20261122",
     "this_directory_contains": "Source inventory, documentation, and verified decompressed TXT volumes under unpacked/; consult unpacked/progress.json for actual completed scope.",
     "decompressed_text_complete": false,
-    "decompressed_parts_completed": 51,
+    "decompressed_parts_completed": 52,
     "decompressed_text_directory": "annotations/unpacked/"
   },
   "sources": {
