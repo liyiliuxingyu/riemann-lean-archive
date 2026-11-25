@@ -158,11 +158,26 @@
       "chunks": 60,
       "manifest": "annotations/unpacked/part010/manifest.json",
       "manifest_sha256": "8e670247a7aa501a167ec2e1d88fa071f751b2910713d65c5d2539fa81bf8675"
+    },
+    {
+      "part": 11,
+      "source_file": "solution_annotated.part011.txt.zst",
+      "source_compressed_sha256": "ce0ef7bd21bfc5ef0455879a900b70e19d3b2d22c6b20ff28e9c6c46e96b8842",
+      "first_line": 190041808,
+      "last_line": 209864616,
+      "records": 19822809,
+      "annotated_bytes": 3078647237,
+      "annotated_sha256": "0c8b67674b78db93bb8db8fcddc2c0b580b24f003fd4044e4825a1dca6733d68",
+      "original_bytes": 1125548311,
+      "original_sha256": "80475f9ff69e26ef9bf0d872b50db7afc9d61fa3f2cb7afda3ca3be06a36fb98",
+      "chunks": 62,
+      "manifest": "annotations/unpacked/part011/manifest.json",
+      "manifest_sha256": "7897f4f6306f99aead7f2c0a04b139260ebd5618b58fef94bd86d55702444712"
     }
   ],
   "global_original_sha256_recomputed": false,
   "verification_scope": "Every complete source volume is SHA-256 checked before decompression; each original-volume hash, record count, byte count and line-label sequence is rechecked. Every output chunk is SHA-256 checked and its Git blob SHA-1 is compared with Git. No Lean proof checking.",
-  "completed_annotated_bytes": 29083575065,
-  "completed_original_records": 190041807,
-  "completed_chunks": 584
+  "completed_annotated_bytes": 32162222302,
+  "completed_original_records": 209864616,
+  "completed_chunks": 646
 }
