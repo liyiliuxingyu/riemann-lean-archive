@@ -1,0 +1,31 @@
+{
+  "schema": "grh-compact-integration-snapshot-v1",
+  "checked_at_utc": "2026-11-26T05:09:49.464052+00:00",
+  "candidate_code_commit": "c01eb3d7b21c4884b6c31b492f85635d4cd0669c",
+  "baseline_commit": "328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27",
+  "upstream_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "upstream_manifest_sha256": "67a71d1bca6dbba0ef41e37bd260b9674bbff31a6914442ef0f4e64b65ab53a2",
+  "upstream_files_checked": 807,
+  "upstream_file_mismatches": [],
+  "preserved_trees": [
+    {
+      "path": "project/lean/original",
+      "baseline_tree_sha1": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+      "candidate_tree_sha1": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+      "unchanged": true
+    },
+    {
+      "path": "project/lean/original/src",
+      "baseline_tree_sha1": "b41b516b1f7baee4d83ced235ecc71fd43c97695",
+      "candidate_tree_sha1": "b41b516b1f7baee4d83ced235ecc71fd43c97695",
+      "unchanged": true
+    },
+    {
+      "path": "annotations",
+      "baseline_tree_sha1": "f3b35589ee1f34906661921bdeb158f89968b823",
+      "candidate_tree_sha1": "f3b35589ee1f34906661921bdeb158f89968b823",
+      "unchanged": true
+    }
+  ],
+  "scope": "File provenance and Git tree comparison only; not a Lean build or proof validation result."
+}

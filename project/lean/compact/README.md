@@ -14,7 +14,7 @@
 
 生产源码、构建配置、导入图和清单的静态核验已通过。本机官方 Lean 安装与精确依赖固定通过，但完整 Mathlib 缓存因磁盘不足而失败，尚未在本机完成 Main 构建。完整构建、五个出口的精确类型及公理检查由仓库的 `Compact Lean build and public interface` 工作流执行；以实际运行结果及 JSON 报告为准，不能把上游自报的通过情况当成本仓库已经复现。
 
-详细记录见 [`../../../audits/lean_compact_20261126/`](../../../audits/lean_compact_20261126/) 和 [仓库简化说明](../../../docs/LEAN_COMPACT.md)。
+详细记录见 [`../../../audits/lean_compact_20261126/`](../../../audits/lean_compact_20261126/) 和 [仓库简化说明](../../../docs/LEAN_COMPACT.md)。从五个出口追溯核心依赖，可先读[中文代码导航](../../../docs/LEAN_COMPACT_GUIDE.md)。
 
 ## 构建与验收
 
