@@ -1,0 +1,58 @@
+{
+  "schema": "grh-compact-local-build-attempt-v1",
+  "recorded_at_utc": "2026-11-26T04:48:43+00:00",
+  "upstream_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "status": "blocked_before_project_build",
+  "toolchain": {
+    "pin": "leanprover/lean4:v4.35.0",
+    "actual_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "official_archive_url": "https://github.com/leanprover/lean4/releases/download/v4.35.0/lean-4.35.0-linux.tar.zst",
+    "archive_bytes": 594481375,
+    "archive_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+    "archive_sha256_verified": true,
+    "archive_unpacked_logical_bytes": 3137937793,
+    "archive_removed_after_verified_install": true
+  },
+  "dependency_lock": {
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "manifest_dependency_count": 9,
+    "shallow_revisions_verified": true
+  },
+  "cache_attempt": {
+    "command": [
+      "lake",
+      "exe",
+      "cache",
+      "get"
+    ],
+    "LEAN_NUM_THREADS": "2",
+    "requested_cache_files": 9031,
+    "exit_code": 1,
+    "failure": "No space left on device (os error 28) during official cache download/decompression",
+    "full_log_sha256": "701c20f933358d3319b8427a601fc0ee3135edfb979f2e00c755861eebc1d6ce",
+    "successful_complete_cache": false,
+    "failed_reproducible_build_outputs_removed": true,
+    "compressed_ltar_files_removed": 7222,
+    "compressed_ltar_bytes_reclaimed": 363508139
+  },
+  "actual_checks": {
+    "lean_version_command_passed": true,
+    "official_archive_sha256_passed": true,
+    "fixed_dependency_head_checks_passed": true,
+    "cache_executable_built": true,
+    "grh_main_built": false,
+    "five_export_axiom_report_run": false,
+    "comparator_run": false,
+    "independent_kernel_replay_run": false,
+    "focused_mathlib_interface_check_run": false,
+    "bootstrap_check_only_passed_for_all_nine_dependencies": true
+  },
+  "environment_observation": {
+    "cpu_count": 9,
+    "MemTotal_KiB": 10206472,
+    "disk_total_bytes": 20957446144,
+    "initial_free_bytes": 7832711168,
+    "free_after_cleanup_bytes": 4401987584
+  },
+  "next_step": "Run the fixed compact project, interface checks and PrintAxioms in the separate GitHub Actions job with sufficient disk; this local attempt is not a successful proof build."
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "directory": "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/semantic_review/probes/root_layout_uso__r76",
+  "module_root": "scripts",
+  "output_directory": "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/semantic_review/probes/root_layout_uso__r76/.lake/build/lib/lean",
+  "manual_lean_path_override_used": false,
+  "mathlib_downloaded": false,
+  "actual_grh_main_built": false,
+  "steps": [
+    {
+      "step": 0,
+      "command": [
+        "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "python3",
+        "-c",
+        "import os; print(os.environ.get(\"LEAN_PATH\", \"\"))"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/semantic_review/probes/root_layout_uso__r76/.lake/build/lib/lean:/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/runtime/lean-4.35.0-linux/lib/lean\n",
+      "stderr": "info: InterfaceLayoutProbe: no previous manifest, creating one from scratch\ninfo: toolchain not updated; already up-to-date\n"
+    },
+    {
+      "step": 1,
+      "command": [
+        "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=scripts",
+        "-o",
+        "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/semantic_review/probes/root_layout_uso__r76/.lake/build/lib/lean/ArchiveInterfaceAudit.olean",
+        "scripts/ArchiveInterfaceAudit.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "step": 2,
+      "command": [
+        "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=scripts",
+        "-o",
+        "/workspace/scratch/e8ff28430def/work/simplify_lsernau_20261126/semantic_review/probes/root_layout_uso__r76/.lake/build/lib/lean/LayoutConsumer.olean",
+        "scripts/LayoutConsumer.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "INTERFACE_OK LayoutProbe.good; expected=LayoutProbe.ExpectedTrue; axioms=[]\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+STAGE lean-version
+
+STAGE lake-version
+
+STAGE source-integrity
+
+STAGE dependencies
+
+STAGE mathlib-cache
+
+STAGE clean-compressed-cache
+
+STAGE expected-statements
+
+STAGE interface-auditor
+
+STAGE full-build
+
+Build completed successfully (9843 jobs).
+
+STAGE public-interface
+
+INTERFACE_OK riemannHypothesis; expected=ArchiveExpected.RiemannZetaZerosOnLine; axioms=[propext,
+ Classical.choice,
+ Quot.sound]
+
+INTERFACE_OK riemannZeta_eq_zero_re; expected=ArchiveExpected.RiemannZetaZerosOnLine; axioms=[propext,
+ Classical.choice,
+ Quot.sound]
+
+INTERFACE_OK LFunction_ne_zero_of_half_lt_re; expected=ArchiveExpected.DirichletLNonvanishingRightOfHalf; axioms=[propext,
+ Classical.choice,
+ Quot.sound]
+
+INTERFACE_OK LFunction_eq_zero_re; expected=ArchiveExpected.DirichletLZerosOnLine; axioms=[propext,
+ Classical.choice,
+ Quot.sound]
+
+INTERFACE_OK LFunction_eq_zero_re_of_isPrimitive; expected=ArchiveExpected.PrimitiveDirichletLZerosOnLine; axioms=[propext,
+ Classical.choice,
+ Quot.sound]
+
+STAGE axioms
+
+'riemannHypothesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+'riemannZeta_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+'LFunction_ne_zero_of_half_lt_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+'LFunction_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+'LFunction_eq_zero_re_of_isPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+STAGE final-source-integrity
+
+STAGE final-dependency-lock
+
+{"passed": true, "theorems": {"riemannHypothesis": ["Classical.choice", "Quot.sound", "propext"], "riemannZeta_eq_zero_re": ["Classical.choice", "Quot.sound", "propext"], "LFunction_ne_zero_of_half_lt_re": ["Classical.choice", "Quot.sound", "propext"], "LFunction_eq_zero_re": ["Classical.choice", "Quot.sound", "propext"], "LFunction_eq_zero_re_of_isPrimitive": ["Classical.choice", "Quot.sound", "propext"]}}

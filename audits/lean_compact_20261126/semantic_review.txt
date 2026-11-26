@@ -1,0 +1,100 @@
+语义接口复核：参照 lsernau/grh-lean 简化原 Lean 工程
+
+固定版本
+原仓库：liyiliuxingyu/riemann-lean-archive
+原提交：328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27
+参照仓库：lsernau/grh-lean
+参照提交：72fead102f663d5c7a407964a13dc0cf9d977207
+
+1. 已直接核对的结果
+
+原 project/lean/original/src/Statements.lean 与参照仓库两个版本的
+src/Statements.lean 完全逐字节相同，均为 783 字节，Git blob 为：
+1cd1bce93344065936b2b392b23306254e0785ef。
+
+五个出口保留了相同的表面目标：Mathlib 的 RiemannHypothesis、显式非平凡
+ζ 零点命题、全部 Dirichlet 特征的右半平面非零命题、全部特征在开临界带的
+零点命题、原始特征在开临界带的零点命题。
+
+重要的范围细节：
+* 右半平面条件为 χ ≠ 1 或 s ≠ 1，不是“且”。
+* 模数是所有满足 NeZero N 的自然数，临界带结论不只覆盖原始特征。
+* 临界带条件是 0 < Re(s) < 1；并未声称非原始特征的 Euler 因子在 Re(s)=0
+  上产生的零点也落在 Re(s)=1/2。
+* 原始特征出口仍保留 IsPrimitive 参数。新版证明忽略该参数，是因为一般
+  特征结论已经覆盖此特例，不能据此把接口参数直接删去。
+* 这里 GRH 的对象是 Dirichlet L 函数，不能扩写成所有 Artin 或自守 L 函数。
+
+旧、新固定 Mathlib 中 RiemannHypothesis、riemannZeta 与
+DirichletCharacter.LFunction 三个定义的源码正文也分别相同。两份相关源文件
+的整体 Git blob 不同；检查到的差异是导入列表和其他证明语法。
+这不是全部传递依赖、整个编译环境或两个 Lean 版本等价的证明。
+
+2. 建议采用的结构
+
+保留原归档，把 compact 作为单独的固定版本 Lake 工程。
+不要把引入另一套证明实现描述为已经证明“原来全部模块都冗余”。
+旧 Main 导入 Supplements.Kernels.MainTheoremsAll；仅更换一个出口的证明项，
+不会自动减少这个庞大导入闭包。
+
+可以明确简化的出口是：
+
+theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine :=
+  fun N _ χ _ ↦ LFunction_eq_zero_re N χ
+
+它利用一般特征结论推得原始特征特例，保持原定理类型。现有
+ArchiveExpected.primitive_of_all 给出了这个逻辑归约的独立条件形式。
+
+3. 交给完整构建后的接口验收文件
+
+ArchiveExpectedStatements.lean
+  仅导入两个固定官方 Mathlib 模块，不导入任何提交项目的证明模块；先在
+  独立环境中形成完整目标式，以免候选项目增加的记号或实例影响目标定义。
+  包含 RH 定义的 rfl 桥梁和有显式前提的 primitive_of_all。
+
+ArchiveInterfaceAudit.lean
+  仅读取已编译声明的 ConstantInfo；要求是 theorem、无额外宇宙参数、类型与
+  预期式定义相等，并核对 forall/arrow 绑定参数的显式或隐式标志；公理仅允许
+  propext、Classical.choice、Quot.sound。代码不引入任何证明公理。
+
+ArchiveInterfaceCheck.lean
+  将实际五个出口分别赋给预期目标，让内核检查赋值；再执行上述元数据检查，
+  最后打印五个赋值定理的公理依赖。
+
+建议的运行方式：先完整 lake build，再在该项目的 lake env 中运行 Python。
+由 Python 复制环境，将独立输出目录前置到 LEAN_PATH，依次执行：
+
+lean --root=检查源码目录 -o 输出目录/ArchiveExpectedStatements.olean 检查源码目录/ArchiveExpectedStatements.lean
+lean --root=检查源码目录 -o 输出目录/ArchiveInterfaceAudit.olean 检查源码目录/ArchiveInterfaceAudit.lean
+lean --root=检查源码目录 -o 输出目录/ArchiveInterfaceCheck.olean 检查源码目录/ArchiveInterfaceCheck.lean
+
+每步必须检查退出码；最后一份日志必须含五项 INTERFACE_OK。
+--root 很重要：检查源码在项目目录外时，不应让 Lean 从项目当前目录推断模块名。
+不要把原始本机 .olean 拷贝到不同操作系统或工具链的 CI；应从三份 .lean 重编译。
+
+4. 当前实际验证状态（本子任务本机范围）
+
+已通过：
+* 原 Statements 与两版参照 Statements 的字节和 Git blob 核对。
+* 上述三项 Mathlib 定义源码正文的版本对照。
+* ArchiveInterfaceAudit.lean 用官方 Lean 4.35.0 实际编译。
+* 纯 Lean 正例通过；六个负例被拒绝：额外显式参数、额外隐式参数、参数显隐
+  变化、错误目标、以 axiom 冒充 theorem、证明额外依赖自定义公理。
+
+尚未在本机执行：
+* 含 Mathlib 导入的 ArchiveExpectedStatements.lean。
+* 实际 Main 的五个出口验收与完整 compact 工程构建。
+
+原因：全 Mathlib 缓存解压超过本机可用存储空间；根任务安排 CI 构建，不再
+在本机获取局部缓存。这些待执行项必须以 CI 的真实日志另行记录。
+
+本复核没有声称已经证明跨 Lean 版本的完整环境等价，也没有声称独立完成了
+全部数学论证的人类审查。
+
+5. 文件使用边界
+
+semantic_review.json 为机器可读证据，含固定来源 URL、文件哈希和状态。
+probes/ 只含本机负例测试，其中有刻意不可信的 axiom 夹具；它们不属于数学
+项目，不能被 Main、接口验收模块或正常证明构建导入。
+mathlib_sources/ 是临时只读对照副本，非必要项目依赖。发布项目时只需采用
+三份接口 .lean、报告和必要说明，无需复制 .olean、probes/ 或 Mathlib 副本。

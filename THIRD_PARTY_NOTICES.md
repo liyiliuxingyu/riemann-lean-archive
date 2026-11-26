@@ -26,3 +26,7 @@
 ## 小型入口工具
 
 `tools/export_lean_bundle.py`、`tools/extract_one_module.py`、`tools/RHEntry.lean` 从完整工程原样复制，来源和内容哈希见 `tools/SOURCE.json`。本次整理未添加新的全局许可声明，未改写这些文件的原注释。
+
+## lsernau/grh-lean 紧凑版
+
+`project/lean/compact/` 的生产源码与构建配置取自 `lsernau/grh-lean` 提交 `72fead102f663d5c7a407964a13dc0cf9d977207`，上游版权声明为 Copyright 2026 Anthropic, PBC，许可为 Apache 2.0。原 `LICENSE`、`NOTICE`、`ATTRIBUTION.md` 已完整保留；原 README 保存为 `UPSTREAM_README.md`。逐文件映射和本仓库集成改动见 `UPSTREAM.json`。本说明不把该组件许可扩展到仓库内其他历史材料。

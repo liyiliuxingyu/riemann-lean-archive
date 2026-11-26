@@ -1,0 +1,146 @@
+{
+  "schema": "compact-delivery-verifier-fixtures-v1",
+  "passed": true,
+  "checked_at_utc": "2026-11-26T12:33:17.059071+00:00",
+  "scope": "Synthetic small Git repositories and fabricated CI metadata only; no Lean build, original archive read or mathematical validation. Windows-style paths are checked synthetically; this run is not a Windows execution test.",
+  "verifier_sha256": "d932cd611859a6acddaa56fed1de98d8ef308db0aab345856ecc0349a45a712f",
+  "fixture_suite_sha256": "e464fa2a15aff1b2d17c978f30ca1b6b72890f4afb5e8b28af43390f5bfa075e",
+  "cases": [
+    {
+      "case": "baseline",
+      "expected_accept": true,
+      "returncode": 0,
+      "observed_accept": true,
+      "error": null,
+      "passed": true
+    },
+    {
+      "case": "sparse_archive_body_not_read",
+      "expected_accept": true,
+      "returncode": 0,
+      "observed_accept": true,
+      "error": null,
+      "passed": true
+    },
+    {
+      "case": "ignored_cache",
+      "expected_accept": true,
+      "returncode": 0,
+      "observed_accept": true,
+      "error": null,
+      "passed": true
+    },
+    {
+      "case": "missing_file",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "[Errno 2] No such file or directory: '/tmp/compact-integrity-fixture-owyfw7su/project/lean/compact/src/Main.lean'",
+      "passed": true
+    },
+    {
+      "case": "same_size_changed_file",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "SHA-256 mismatch: project/lean/compact/src/Main.lean",
+      "passed": true
+    },
+    {
+      "case": "extra_source",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Exact root mismatch: project/lean/compact; missing=[]; extra=['project/lean/compact/src/Extra.lean']",
+      "passed": true
+    },
+    {
+      "case": "ci_passed_false",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "CI acceptance flag is not true: passed",
+      "passed": true
+    },
+    {
+      "case": "ci_input_hash_differs",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "CI input differs from delivered file record: project/lean/compact/src/Main.lean",
+      "passed": true
+    },
+    {
+      "case": "ci_input_omitted",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "CI input coverage is incomplete: ['project/lean/compact/src/Main.lean']",
+      "passed": true
+    },
+    {
+      "case": "wrong_anchor",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Git anchor mismatch: archive",
+      "passed": true
+    },
+    {
+      "case": "duplicate_record",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Duplicate path in files: project/lean/compact/src/Main.lean",
+      "passed": true
+    },
+    {
+      "case": "path_traversal",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Unsafe relative path: '../outside.txt'",
+      "passed": true
+    },
+    {
+      "case": "windows_drive_path",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Unsafe relative path: 'C:/outside.txt'",
+      "passed": true
+    },
+    {
+      "case": "source_symlink",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Symlink is not allowed: project/lean/compact/src/Main.lean",
+      "passed": true
+    },
+    {
+      "case": "failed_stage_under_passed_flag",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "CI stage did not pass: full-build",
+      "passed": true
+    },
+    {
+      "case": "extra_axiom",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Unexpected or repeated axiom in riemannHypothesis",
+      "passed": true
+    },
+    {
+      "case": "output_must_not_replace_manifest",
+      "expected_accept": false,
+      "returncode": 1,
+      "observed_accept": false,
+      "error": "Report output would overwrite an input file",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "format": "jsonl-byte-parts-v1",
+  "description": "Lossless byte-preserving parts split only after complete JSONL lines.",
+  "maximum_part_bytes": 50331648,
+  "line_numbers": "1-based, inclusive; binary LF line boundaries; final unterminated line counts as one line.",
+  "byte_offsets": "0-based; start_byte inclusive, end_byte_exclusive exclusive.",
+  "source": {
+    "archive": "黎曼猜想_人类可读证明与续作工程.zip",
+    "archive_sha256": "1ce852981028f86d7a47931db6aff339805759b17c1621646189c357bd5baf2d",
+    "member": "riemann_human/lean/RH_AllSources.dependencies.jsonl"
+  },
+  "original": {
+    "file": "RH_AllSources.dependencies.jsonl",
+    "bytes": 214948999,
+    "sha256": "1321696d0bd1141923163735d6479916ba1bf4061e2e78c7427fa0e3fe36c431",
+    "line_count": 909822,
+    "ends_with_newline": true
+  },
+  "part_count": 5,
+  "parts": [
+    {
+      "number": 1,
+      "file": "RH_AllSources.dependencies.part001.jsonl",
+      "bytes": 50331484,
+      "line_count": 213615,
+      "first_line": 1,
+      "start_byte": 0,
+      "ends_with_newline": true,
+      "sha256": "83c4c3d474cd54afe538e560d44cecce1cb5929712ea883e84d78e5c44d80fbf",
+      "end_byte_exclusive": 50331484,
+      "last_line": 213615
+    },
+    {
+      "number": 2,
+      "file": "RH_AllSources.dependencies.part002.jsonl",
+      "bytes": 50331578,
+      "line_count": 216960,
+      "first_line": 213616,
+      "start_byte": 50331484,
+      "ends_with_newline": true,
+      "sha256": "45cb0073fbec71c181699252e07f7c5f59bd15e80636bf6eaf842f3534f79d3c",
+      "end_byte_exclusive": 100663062,
+      "last_line": 430575
+    },
+    {
+      "number": 3,
+      "file": "RH_AllSources.dependencies.part003.jsonl",
+      "bytes": 50331374,
+      "line_count": 205024,
+      "first_line": 430576,
+      "start_byte": 100663062,
+      "ends_with_newline": true,
+      "sha256": "9d30784e2de475d92153e1aac4b629229dfcdc80a114e81d3b726eb22189e1ff",
+      "end_byte_exclusive": 150994436,
+      "last_line": 635599
+    },
+    {
+      "number": 4,
+      "file": "RH_AllSources.dependencies.part004.jsonl",
+      "bytes": 50331634,
+      "line_count": 208498,
+      "first_line": 635600,
+      "start_byte": 150994436,
+      "ends_with_newline": true,
+      "sha256": "51d8fd9b028d8a325e6f1ce8aca26e480e40e1a806edb9401f2d6badb791b9a6",
+      "end_byte_exclusive": 201326070,
+      "last_line": 844097
+    },
+    {
+      "number": 5,
+      "file": "RH_AllSources.dependencies.part005.jsonl",
+      "bytes": 13622929,
+      "line_count": 65725,
+      "first_line": 844098,
+      "start_byte": 201326070,
+      "ends_with_newline": true,
+      "sha256": "f33475d7e58f2eebe0a79f13ae4a002fc8aec084a3338c7495edb1120cdfe121",
+      "end_byte_exclusive": 214948999,
+      "last_line": 909822
+    }
+  ]
+}

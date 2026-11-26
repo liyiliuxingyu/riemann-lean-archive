@@ -1,0 +1,118 @@
+{
+  "schema": "grh-reference-interface-semantic-review-v1",
+  "archive_repository": "liyiliuxingyu/riemann-lean-archive",
+  "archive_commit": "328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27",
+  "reference_repository": "lsernau/grh-lean",
+  "reference_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "statements_git_blob_sha1": "1cd1bce93344065936b2b392b23306254e0785ef",
+  "statements_bytes": 783,
+  "statements_identical_between_archive_readable_compact": true,
+  "archive_main_git_blob_sha1": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+  "versions": {
+    "archive_lean": "4.33.1",
+    "archive_mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "reference_lean": "4.35.0",
+    "reference_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+  },
+  "export_mapping": [
+    {
+      "root_theorem": "riemannHypothesis",
+      "explicit_expected_definition": "ArchiveExpected.RiemannZetaZerosOnLine"
+    },
+    {
+      "root_theorem": "riemannZeta_eq_zero_re",
+      "explicit_expected_definition": "ArchiveExpected.RiemannZetaZerosOnLine"
+    },
+    {
+      "root_theorem": "LFunction_ne_zero_of_half_lt_re",
+      "explicit_expected_definition": "ArchiveExpected.DirichletLNonvanishingRightOfHalf"
+    },
+    {
+      "root_theorem": "LFunction_eq_zero_re",
+      "explicit_expected_definition": "ArchiveExpected.DirichletLZerosOnLine"
+    },
+    {
+      "root_theorem": "LFunction_eq_zero_re_of_isPrimitive",
+      "explicit_expected_definition": "ArchiveExpected.PrimitiveDirichletLZerosOnLine"
+    }
+  ],
+  "endpoint_scope": {
+    "zeta_nontrivial_exceptions": "Negative even integers -2*(n+1), n a natural number; s != 1; the type separately has a zeta-zero premise.",
+    "dirichlet_moduli": "All natural N with NeZero N, not only primitive characters.",
+    "right_half_plane_pole_guard": "chi != 1 OR s != 1; excludes precisely the simultaneous principal-character/s=1 case.",
+    "zero_strip": "0 < Re(s) < 1; it does not claim that imprimitive Euler-factor zeros on Re(s)=0 lie on Re(s)=1/2.",
+    "primitive_export": "The primitive-character hypothesis remains in the public type; the new proof ignores it because the theorem for all characters is stronger.",
+    "grh_domain": "Dirichlet L-functions only, not an arbitrary class of all automorphic or Artin L-functions."
+  },
+  "mathlib_definition_text_comparisons": [
+    {
+      "declaration": "RiemannHypothesis",
+      "file": "RiemannZeta.lean",
+      "declaration_source_identical": true,
+      "source_text": "def RiemannHypothesis : Prop :=\n  ∀ (s : ℂ) (_ : riemannZeta s = 0) (_ : ¬∃ n : ℕ, s = -2 * (n + 1)) (_ : s ≠ 1), s.re = 1 / 2",
+      "scope": "Only this definition text, not all transitive dependencies or compiled cross-version environments."
+    },
+    {
+      "declaration": "riemannZeta",
+      "file": "RiemannZeta.lean",
+      "declaration_source_identical": true,
+      "source_text": "def riemannZeta := hurwitzZetaEven 0",
+      "scope": "Only this definition text, not all transitive dependencies or compiled cross-version environments."
+    },
+    {
+      "declaration": "DirichletCharacter.LFunction",
+      "file": "DirichletContinuation.lean",
+      "declaration_source_identical": true,
+      "source_text": "noncomputable def LFunction (χ : DirichletCharacter ℂ N) (s : ℂ) : ℂ := ZMod.LFunction χ s",
+      "scope": "Only this definition text, not all transitive dependencies or compiled cross-version environments."
+    }
+  ],
+  "safe_local_simplification": {
+    "theorem": "LFunction_eq_zero_re_of_isPrimitive",
+    "proposed_body": "fun N _ chi _ => LFunction_eq_zero_re N chi",
+    "reason": "Specialize the already stated result for all Dirichlet characters; preserve the existing theorem type.",
+    "original_project_full_build_performed": false,
+    "dependency_warning": "Changing the proof term alone does not remove imported original modules; Main still imports Supplements.Kernels.MainTheoremsAll."
+  },
+  "recommended_integration": "Separate pinned Lake project preserving the original archive; use explicit-interface checks after building compact Main. Do not describe replacement of the old implementation as a machine-proven cross-version equivalence.",
+  "acceptance_files": {
+    "ArchiveExpectedStatements.lean": {
+      "bytes": 2200,
+      "sha256": "fbe21fa39b0fa58cbf4f82acef98f864d3d330920a86c1918a5a03faefe30e35"
+    },
+    "ArchiveInterfaceAudit.lean": {
+      "bytes": 2364,
+      "sha256": "2ccb2f3f37abf57ea79016b92b92b8c5293e18c0169e3994d97536e7ab4d21af"
+    },
+    "ArchiveInterfaceCheck.lean": {
+      "bytes": 2374,
+      "sha256": "e3b0d58006049ad49adf0dbe4b7c2fdf6012b11f3f2bca87b1f791f364d3b2ca"
+    }
+  },
+  "this_agent_local_checks": {
+    "core_audit_helper_compiled": true,
+    "lean_version": "4.35.0",
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "positive_fixture_accepted": true,
+    "negative_fixtures_rejected": [
+      "additional_explicit_parameter",
+      "additional_implicit_parameter",
+      "binder_visibility_change",
+      "wrong_target",
+      "axiom_instead_of_theorem",
+      "extra_axiom_dependency"
+    ],
+    "expected_mathlib_statements_compiled": false,
+    "five_actual_exports_compiled": false,
+    "reason_for_pending": "Full Mathlib cache exceeded available local storage. Parent directs all actual Main/interface acceptance to CI; no focused cache was fetched for these checks.",
+    "cross_version_environment_equivalence_proved": false,
+    "mathematical_proof_independently_audited": false
+  },
+  "source_links": {
+    "archive_statements": "https://github.com/liyiliuxingyu/riemann-lean-archive/blob/328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27/project/lean/original/src/Statements.lean",
+    "archive_main": "https://github.com/liyiliuxingyu/riemann-lean-archive/blob/328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27/project/lean/original/src/Main.lean",
+    "compact_main": "https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact/src/Main.lean",
+    "compact_zero_symmetry": "https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact/src/Lib/General/NumberTheory/ZeroSymmetry.lean",
+    "readable_zero_symmetry": "https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh/src/Lib/Analytic/ZeroSymmetry.lean"
+  }
+}

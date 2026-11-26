@@ -1,0 +1,306 @@
+{
+  "schema": "grh-compact-independent-ci-log-review-v1",
+  "reviewed_at_utc": "2026-11-26T12:16:55.545216+00:00",
+  "repository": "liyiliuxingyu/riemann-lean-archive",
+  "run_id": 45758680116,
+  "job_id": 139703283039,
+  "tested_commit": "c01eb3d7b21c4884b6c31b492f85635d4cd0669c",
+  "run_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/actions/runs/45758680116",
+  "job_conclusion": "success",
+  "job_started_at_utc": "2026-11-26T04:59:55Z",
+  "job_completed_at_utc": "2026-11-26T07:29:16Z",
+  "full_build_success_log_present": true,
+  "full_build_jobs": 9843,
+  "full_build_started_at_utc": "2026-11-26T05:01:25.775032+00:00",
+  "full_build_completed_at_utc": "2026-11-26T07:28:58.2286941Z",
+  "full_build_seconds_from_log": 8852.454,
+  "public_interface_checks": [
+    {
+      "actual": "riemannHypothesis",
+      "expected": "ArchiveExpected.RiemannZetaZerosOnLine",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "actual": "riemannZeta_eq_zero_re",
+      "expected": "ArchiveExpected.RiemannZetaZerosOnLine",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "actual": "LFunction_ne_zero_of_half_lt_re",
+      "expected": "ArchiveExpected.DirichletLNonvanishingRightOfHalf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "actual": "LFunction_eq_zero_re",
+      "expected": "ArchiveExpected.DirichletLZerosOnLine",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "actual": "LFunction_eq_zero_re_of_isPrimitive",
+      "expected": "ArchiveExpected.PrimitiveDirichletLZerosOnLine",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "theorem_axioms": {
+    "riemannHypothesis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "riemannZeta_eq_zero_re": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LFunction_ne_zero_of_half_lt_re": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LFunction_eq_zero_re": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LFunction_eq_zero_re_of_isPrimitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "final_success_summary": {
+    "passed": true,
+    "theorems": {
+      "riemannHypothesis": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "riemannZeta_eq_zero_re": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "LFunction_ne_zero_of_half_lt_re": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "LFunction_eq_zero_re": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "LFunction_eq_zero_re_of_isPrimitive": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "stages_from_log": [
+    {
+      "name": "lean-version",
+      "started_at_utc": "2026-11-26T05:00:12.180634+00:00",
+      "elapsed_until_next_stage_seconds": 0.172
+    },
+    {
+      "name": "lake-version",
+      "started_at_utc": "2026-11-26T05:00:12.352591+00:00",
+      "elapsed_until_next_stage_seconds": 0.145
+    },
+    {
+      "name": "source-integrity",
+      "started_at_utc": "2026-11-26T05:00:12.497618+00:00",
+      "elapsed_until_next_stage_seconds": 2.357
+    },
+    {
+      "name": "dependencies",
+      "started_at_utc": "2026-11-26T05:00:14.854298+00:00",
+      "elapsed_until_next_stage_seconds": 8.617
+    },
+    {
+      "name": "mathlib-cache",
+      "started_at_utc": "2026-11-26T05:00:23.471651+00:00",
+      "elapsed_until_next_stage_seconds": 52.925
+    },
+    {
+      "name": "clean-compressed-cache",
+      "started_at_utc": "2026-11-26T05:01:16.397059+00:00",
+      "elapsed_until_next_stage_seconds": 4.488
+    },
+    {
+      "name": "expected-statements",
+      "started_at_utc": "2026-11-26T05:01:20.885329+00:00",
+      "elapsed_until_next_stage_seconds": 3.126
+    },
+    {
+      "name": "interface-auditor",
+      "started_at_utc": "2026-11-26T05:01:24.011601+00:00",
+      "elapsed_until_next_stage_seconds": 1.763
+    },
+    {
+      "name": "full-build",
+      "started_at_utc": "2026-11-26T05:01:25.775032+00:00",
+      "elapsed_until_next_stage_seconds": 8852.501
+    },
+    {
+      "name": "public-interface",
+      "started_at_utc": "2026-11-26T07:28:58.275952+00:00",
+      "elapsed_until_next_stage_seconds": 5.977
+    },
+    {
+      "name": "axioms",
+      "started_at_utc": "2026-11-26T07:29:04.253278+00:00",
+      "elapsed_until_next_stage_seconds": 4.756
+    },
+    {
+      "name": "final-source-integrity",
+      "started_at_utc": "2026-11-26T07:29:09.009375+00:00",
+      "elapsed_until_next_stage_seconds": 2.564
+    },
+    {
+      "name": "final-dependency-lock",
+      "started_at_utc": "2026-11-26T07:29:11.573181+00:00"
+    }
+  ],
+  "artifact": {
+    "id": 15095728132,
+    "name": "compact-lean-validation-45758680116-1",
+    "size_in_bytes": 36324,
+    "url": "https://api.github.com/repos/liyiliuxingyu/riemann-lean-archive/actions/artifacts/15095728132",
+    "archive_download_url": "https://api.github.com/repos/liyiliuxingyu/riemann-lean-archive/actions/artifacts/15095728132/zip",
+    "expired": false,
+    "created_at": "2026-11-26T07:29:12Z",
+    "expires_at": "2026-11-29T07:29:11Z",
+    "updated_at": "2026-11-26T07:29:12Z",
+    "digest": "sha256:91c79096749483aee821f7b279289615a16360b74216ad28631a9ee486e6192c",
+    "workflow_run": {
+      "id": 45758680116,
+      "repository_id": 1467518482,
+      "head_repository_id": 1467518482,
+      "head_branch": "simplify/grh-compact-20261126",
+      "head_sha": "c01eb3d7b21c4884b6c31b492f85635d4cd0669c"
+    }
+  },
+  "downloaded_job_log_sha256": "e6c38318acf0231bc2e817686383d6f4d4b45e5806183c4472311e968fa0d7f8",
+  "downloaded_job_log_bytes": 306928,
+  "independent_kernel_replay_performed": false,
+  "comparator_performed": false,
+  "mathematical_peer_review_performed": false,
+  "resource_measurement_scope": "Runner label, elapsed times, and starting/ending free-disk snapshots were checked. Peak disk usage, CPU utilization, and peak RSS were not measured; the free-disk difference is not a cache-only size measurement.",
+  "artifact_cross_check": {
+    "passed": true,
+    "validation_json_sha256": "ea091822c179d61864da2d6c9a57ed64a241ddf9462e0aa9ce530fdfadf7ea4d",
+    "all_13_stages_passed_with_returncode_zero": true,
+    "all_named_stage_logs_present": true,
+    "initial_and_final_source_integrity_reports_identical": true,
+    "recorded_full_build_seconds": 8852.495,
+    "production_build_sorry_warning_count": 0,
+    "initial_free_disk_bytes": 88205934592,
+    "final_free_disk_bytes": 70860816384,
+    "free_disk_difference_bytes": 17345118208,
+    "artifact_members": [
+      {
+        "name": "axioms.log",
+        "bytes": 435,
+        "sha256": "2c7b168860c39a4b4afd417a327bbbd8a2a0615372655c5d4bd329fb06e7f3d5"
+      },
+      {
+        "name": "clean-compressed-cache.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "dependencies.log",
+        "bytes": 956,
+        "sha256": "4b09019026757dc1ef0cc2dee00f7eaa151b89077293848bcecf4389af617960"
+      },
+      {
+        "name": "expected-statements.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "final-dependency-lock.log",
+        "bytes": 974,
+        "sha256": "99696341ff204d158ebbd2da06d8996c41efe8734e01104b961bffa82282d892"
+      },
+      {
+        "name": "final-source-integrity.json",
+        "bytes": 1073,
+        "sha256": "c14dbae01ccad4ae91bd9594e33d60cf5cfb00aabd4767361a9927e20a084e8c"
+      },
+      {
+        "name": "final-source-integrity.log",
+        "bytes": 991,
+        "sha256": "08f06497adfbcc07b2ca0584c6729bc3b1904c4f0c54116b624cfce6e159ee45"
+      },
+      {
+        "name": "full-build.log",
+        "bytes": 185703,
+        "sha256": "c94863bec9334f14ce8e07038014efe83385cff5be7a3dfa650ba3213116f5a6"
+      },
+      {
+        "name": "interface-auditor.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "lake-version.log",
+        "bytes": 53,
+        "sha256": "165f92ed239a8c7db772bf5ee9d58c59357b489951582a12c86dc9d8e06b23a2"
+      },
+      {
+        "name": "lean-version.log",
+        "bytes": 106,
+        "sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+      },
+      {
+        "name": "mathlib-cache.log",
+        "bytes": 7428,
+        "sha256": "116e6dc28c9a585c2cb25c9da811eb41c6e4f2d522309758cd4c988abdc265d9"
+      },
+      {
+        "name": "public-interface.log",
+        "bytes": 1297,
+        "sha256": "f6502384dbf1edb6454bbefde1b31ef52cf81689797287c481522e1e2b7b24e8"
+      },
+      {
+        "name": "source-integrity.json",
+        "bytes": 1073,
+        "sha256": "c14dbae01ccad4ae91bd9594e33d60cf5cfb00aabd4767361a9927e20a084e8c"
+      },
+      {
+        "name": "source-integrity.log",
+        "bytes": 991,
+        "sha256": "08f06497adfbcc07b2ca0584c6729bc3b1904c4f0c54116b624cfce6e159ee45"
+      },
+      {
+        "name": "validation.json",
+        "bytes": 5540,
+        "sha256": "ea091822c179d61864da2d6c9a57ed64a241ddf9462e0aa9ce530fdfadf7ea4d"
+      }
+    ]
+  }
+}
