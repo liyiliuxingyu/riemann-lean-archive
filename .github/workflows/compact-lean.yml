@@ -26,7 +26,6 @@ jobs:
     timeout-minutes: 360
     env:
       LEAN_NUM_THREADS: '2'
-      MATHLIB_CACHE_DIR: ${{ runner.temp }}/grh-mathlib-cache
     steps:
       - name: Check out only the compact project
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -47,6 +46,8 @@ jobs:
           printf '%s\n' "$RUNNER_TEMP/lean-4.35.0-linux/bin" >> "$GITHUB_PATH"
       - name: Build and validate the five exports
         working-directory: project/lean/compact
+        env:
+          MATHLIB_CACHE_DIR: ${{ runner.temp }}/grh-mathlib-cache
         run: python3 scripts/ci_validate.py
       - name: Preserve validation report and logs
         if: always()
