@@ -1,0 +1,218 @@
+{
+  "schema": "grh-compact-build-validation-v1",
+  "passed": true,
+  "started_at_utc": "2026-11-26T05:00:12.178907+00:00",
+  "github_run_id": "45758680116",
+  "github_run_attempt": "1",
+  "source_commit": "c01eb3d7b21c4884b6c31b492f85635d4cd0669c",
+  "upstream_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_num_threads": "2",
+  "initial_free_disk_bytes": 88205934592,
+  "stages": [
+    {
+      "name": "lean-version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.032,
+      "log": "lean-version.log"
+    },
+    {
+      "name": "lake-version",
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.038,
+      "log": "lake-version.log"
+    },
+    {
+      "name": "source-integrity",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/verify_sources.py",
+        "--output",
+        "/home/runner/work/riemann-lean-archive/riemann-lean-archive/project/lean/compact/verification-output/source-integrity.json"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.331,
+      "log": "source-integrity.log"
+    },
+    {
+      "name": "dependencies",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/bootstrap_dependencies.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 8.616,
+      "log": "dependencies.log"
+    },
+    {
+      "name": "mathlib-cache",
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 52.916,
+      "log": "mathlib-cache.log"
+    },
+    {
+      "name": "clean-compressed-cache",
+      "command": [
+        "lake",
+        "exe",
+        "cache",
+        "clean!"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 4.459,
+      "log": "clean-compressed-cache.log"
+    },
+    {
+      "name": "expected-statements",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--root=scripts",
+        "-o",
+        "/home/runner/work/riemann-lean-archive/riemann-lean-archive/project/lean/compact/.lake/build/lib/lean/ArchiveExpectedStatements.olean",
+        "scripts/ArchiveExpectedStatements.lean"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 3.082,
+      "log": "expected-statements.log"
+    },
+    {
+      "name": "interface-auditor",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--root=scripts",
+        "-o",
+        "/home/runner/work/riemann-lean-archive/riemann-lean-archive/project/lean/compact/.lake/build/lib/lean/ArchiveInterfaceAudit.olean",
+        "scripts/ArchiveInterfaceAudit.lean"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 1.752,
+      "log": "interface-auditor.log"
+    },
+    {
+      "name": "full-build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 8852.495,
+      "log": "full-build.log"
+    },
+    {
+      "name": "public-interface",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--root=scripts",
+        "scripts/ArchiveInterfaceCheck.lean"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 5.976,
+      "log": "public-interface.log"
+    },
+    {
+      "name": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "scripts/PrintAxioms.lean"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 4.755,
+      "log": "axioms.log"
+    },
+    {
+      "name": "final-source-integrity",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/verify_sources.py",
+        "--output",
+        "/home/runner/work/riemann-lean-archive/riemann-lean-archive/project/lean/compact/verification-output/final-source-integrity.json"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.563,
+      "log": "final-source-integrity.log"
+    },
+    {
+      "name": "final-dependency-lock",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/bootstrap_dependencies.py",
+        "--check-only"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.246,
+      "log": "final-dependency-lock.log"
+    }
+  ],
+  "full_main_build_passed": true,
+  "public_interface_check_passed": true,
+  "axiom_check_passed": true,
+  "independent_kernel_replay_performed": false,
+  "comparator_performed": false,
+  "mathematical_peer_review_performed": false,
+  "current_free_disk_bytes": 70860816384,
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "upstream_manifest_sha256": "67a71d1bca6dbba0ef41e37bd260b9674bbff31a6914442ef0f4e64b65ab53a2",
+  "theorem_axioms": {
+    "riemannHypothesis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "riemannZeta_eq_zero_re": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LFunction_ne_zero_of_half_lt_re": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LFunction_eq_zero_re": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LFunction_eq_zero_re_of_isPrimitive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_at_utc": "2026-11-26T07:29:11.819847+00:00"
+}

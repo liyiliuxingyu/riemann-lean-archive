@@ -56,5 +56,13 @@
     "full_kernel_replay_performed": false,
     "full_annotation_decompression_repeated": false,
     "new_paid_storage_enabled": false
+  },
+  "historical_snapshot": true,
+  "superseded_status_navigation": {
+    "date": "2026-11-26",
+    "current_overview": "docs/COMPLETENESS.md",
+    "annotation_progress": "annotations/unpacked/progress.json",
+    "current_inventory_review": "audits/repository_completeness_20261126/inventory_report.json",
+    "note": "The 2026-11-23 scope and validation fields above are retained as historical facts. All 57 annotation volumes were subsequently expanded and verified; current status is recorded at these paths."
   }
 }

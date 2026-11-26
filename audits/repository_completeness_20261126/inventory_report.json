@@ -1,0 +1,2600 @@
+{
+  "schema": "repository-inventory-recheck-v1",
+  "repository": "liyiliuxingyu/riemann-lean-archive",
+  "checked_at_utc": "2026-11-26T12:22:18.960066+00:00",
+  "baseline_commit": "328dc7d7b7c747d8a9e56130787ce7a3c8c3ed27",
+  "candidate_commit": "85df6b6d6975c1e64fcfcd4f65eacd60070495c1",
+  "local_git_head_observed": "85df6b6d6975c1e64fcfcd4f65eacd60070495c1",
+  "file_presence_and_manifest_consistency_passed": true,
+  "errors": [],
+  "annotation": {
+    "tree_sha1": "f3b35589ee1f34906661921bdeb158f89968b823",
+    "recursive_api_truncated": false,
+    "tree_entries": 3508,
+    "parts": 57,
+    "txt_files": 3380,
+    "annotated_bytes": 168547118127,
+    "original_records": 1080769508,
+    "original_bytes": 61570595788,
+    "compressed_bytes": 18876901037,
+    "record_range_contiguous": [
+      1,
+      1080769508
+    ],
+    "all_chunk_paths_sizes_modes_git_blob_ids_match": true,
+    "manifest_git_blob_ids_unchanged_since_prior_verification": true,
+    "volumes": [
+      {
+        "part": 1,
+        "manifest": "annotations/unpacked/part001/manifest.json",
+        "manifest_git_blob_sha1": "ce2e9bf4529ecd27fe69ca01b304a38362f58848",
+        "tree_sha1": "e8d4249fc40fbfcd55f3e7ea1d6bc42d4343fe0d",
+        "chunks": 56,
+        "bytes": 2776654701,
+        "first_record": 1,
+        "last_record": 18288865,
+        "records": 18288865
+      },
+      {
+        "part": 2,
+        "manifest": "annotations/unpacked/part002/manifest.json",
+        "manifest_git_blob_sha1": "8e27d6f13c24ef8a2c095e253915edc4213fd745",
+        "tree_sha1": "1f2802af5cd27f9b55b08e93fe3d5c717498adfe",
+        "chunks": 58,
+        "bytes": 2902484783,
+        "first_record": 18288866,
+        "last_record": 37491998,
+        "records": 19203133
+      },
+      {
+        "part": 3,
+        "manifest": "annotations/unpacked/part003/manifest.json",
+        "manifest_git_blob_sha1": "b93da635f6e627b79a342dbb89cd2df4387b32e9",
+        "tree_sha1": "2f9fa2c0aa8e3976faf49fdd02b679400118618b",
+        "chunks": 58,
+        "bytes": 2868929550,
+        "first_record": 37491999,
+        "last_record": 56719420,
+        "records": 19227422
+      },
+      {
+        "part": 4,
+        "manifest": "annotations/unpacked/part004/manifest.json",
+        "manifest_git_blob_sha1": "8f8e145e38a57701c769019507e0c2638ca31389",
+        "tree_sha1": "2be1b0ada3035934106a0594bae91bde46f35a52",
+        "chunks": 58,
+        "bytes": 2894097802,
+        "first_record": 56719421,
+        "last_record": 76116061,
+        "records": 19396641
+      },
+      {
+        "part": 5,
+        "manifest": "annotations/unpacked/part005/manifest.json",
+        "manifest_git_blob_sha1": "e763643207dec07c62f16d0784c771faaf1f1351",
+        "tree_sha1": "0ae210a1cdcd08a1c135a9f99a16a8811c9ced4f",
+        "chunks": 58,
+        "bytes": 2894095516,
+        "first_record": 76116062,
+        "last_record": 95483096,
+        "records": 19367035
+      },
+      {
+        "part": 6,
+        "manifest": "annotations/unpacked/part006/manifest.json",
+        "manifest_git_blob_sha1": "dbf7f65d0b7489114756f52086d83987590ec2e4",
+        "tree_sha1": "d5ff2ddfbe82f3afd40920a85680fe7a5804daf0",
+        "chunks": 58,
+        "bytes": 2894097284,
+        "first_record": 95483097,
+        "last_record": 114257364,
+        "records": 18774268
+      },
+      {
+        "part": 7,
+        "manifest": "annotations/unpacked/part007/manifest.json",
+        "manifest_git_blob_sha1": "c43d8885b0734d1e21f071816819f7636e40f3ae",
+        "tree_sha1": "ed8e4c2aca4f04f98c4a50e2d079f23ff2a95a38",
+        "chunks": 60,
+        "bytes": 2969594843,
+        "first_record": 114257365,
+        "last_record": 133240510,
+        "records": 18983146
+      },
+      {
+        "part": 8,
+        "manifest": "annotations/unpacked/part008/manifest.json",
+        "manifest_git_blob_sha1": "012b12f6056f4fea3f32fc7e149cdac4005ab919",
+        "tree_sha1": "55ff183d4a2368462071b6ef8f88fcf35785bff4",
+        "chunks": 59,
+        "bytes": 2952818747,
+        "first_record": 133240511,
+        "last_record": 152130228,
+        "records": 18889718
+      },
+      {
+        "part": 9,
+        "manifest": "annotations/unpacked/part009/manifest.json",
+        "manifest_git_blob_sha1": "0c653b9797c6e06772e3bfd059efdf1bdb944bdc",
+        "tree_sha1": "6c60aeb31af0dd6a9409d2e450233c23010ddeca",
+        "chunks": 59,
+        "bytes": 2944429540,
+        "first_record": 152130229,
+        "last_record": 170813167,
+        "records": 18682939
+      },
+      {
+        "part": 10,
+        "manifest": "annotations/unpacked/part010/manifest.json",
+        "manifest_git_blob_sha1": "1d425714541ff29cf63f9bcef8edafa49b073adc",
+        "tree_sha1": "83de6572b25377e84a7f4d7e5c9e401d4e8fb5c9",
+        "chunks": 60,
+        "bytes": 2986372299,
+        "first_record": 170813168,
+        "last_record": 190041807,
+        "records": 19228640
+      },
+      {
+        "part": 11,
+        "manifest": "annotations/unpacked/part011/manifest.json",
+        "manifest_git_blob_sha1": "883130d667a9bc5339f32202f8b4e40c72db767b",
+        "tree_sha1": "4f3a13e4dd746462063ae9cd3bdefccc3098971f",
+        "chunks": 62,
+        "bytes": 3078647237,
+        "first_record": 190041808,
+        "last_record": 209864616,
+        "records": 19822809
+      },
+      {
+        "part": 12,
+        "manifest": "annotations/unpacked/part012/manifest.json",
+        "manifest_git_blob_sha1": "611c74281fc08a1a48505e020205b9a506c85982",
+        "tree_sha1": "eb5383cf7541f35728b5f071c8c395076a0f4a1c",
+        "chunks": 59,
+        "bytes": 2961209020,
+        "first_record": 209864617,
+        "last_record": 228898700,
+        "records": 19034084
+      },
+      {
+        "part": 13,
+        "manifest": "annotations/unpacked/part013/manifest.json",
+        "manifest_git_blob_sha1": "5b581903d87834185160a7945d387754c1682f68",
+        "tree_sha1": "3ff32a1e74bd019e25e0caf8c757da0f47d57b6b",
+        "chunks": 60,
+        "bytes": 2994761454,
+        "first_record": 228898701,
+        "last_record": 248211080,
+        "records": 19312380
+      },
+      {
+        "part": 14,
+        "manifest": "annotations/unpacked/part014/manifest.json",
+        "manifest_git_blob_sha1": "ccf7e63d8fa3626327b1f7237d94173b302ef674",
+        "tree_sha1": "83f3970dbeb2f4aced3dc7170c9d8d08b85831f4",
+        "chunks": 60,
+        "bytes": 2969595861,
+        "first_record": 248211081,
+        "last_record": 267322758,
+        "records": 19111678
+      },
+      {
+        "part": 15,
+        "manifest": "annotations/unpacked/part015/manifest.json",
+        "manifest_git_blob_sha1": "b28005df6afad0cb502afb4d34404a182d69f041",
+        "tree_sha1": "50befdf2e8d3df4bebeeaa0092a8e35c428bffbc",
+        "chunks": 59,
+        "bytes": 2961206587,
+        "first_record": 267322759,
+        "last_record": 286309042,
+        "records": 18986284
+      },
+      {
+        "part": 16,
+        "manifest": "annotations/unpacked/part016/manifest.json",
+        "manifest_git_blob_sha1": "fc2d8499f5a4c945bcff2a30e8a0020956ac944d",
+        "tree_sha1": "c1d424e43955cdf32d8da876059d56e366e5ccac",
+        "chunks": 60,
+        "bytes": 2986372724,
+        "first_record": 286309043,
+        "last_record": 305498459,
+        "records": 19189417
+      },
+      {
+        "part": 17,
+        "manifest": "annotations/unpacked/part017/manifest.json",
+        "manifest_git_blob_sha1": "b87d561263b520978d512a6686a9bcda232798c5",
+        "tree_sha1": "f22165453d8959ef3620d9cf4a9619a21beda9e8",
+        "chunks": 60,
+        "bytes": 2969594785,
+        "first_record": 305498460,
+        "last_record": 324600290,
+        "records": 19101831
+      },
+      {
+        "part": 18,
+        "manifest": "annotations/unpacked/part018/manifest.json",
+        "manifest_git_blob_sha1": "f79371d994c2677eb99c901381f6670538ceb67a",
+        "tree_sha1": "5fd29af826c43243204761640f1af22cf90d0ab1",
+        "chunks": 60,
+        "bytes": 2977984810,
+        "first_record": 324600291,
+        "last_record": 343689733,
+        "records": 19089443
+      },
+      {
+        "part": 19,
+        "manifest": "annotations/unpacked/part019/manifest.json",
+        "manifest_git_blob_sha1": "ef6ed16bed8038bf6ad59942cce3cd62b45b1f8c",
+        "tree_sha1": "b3dd68ef1594ba10b99f1d2d6c677fe642e1b638",
+        "chunks": 60,
+        "bytes": 2986373882,
+        "first_record": 343689734,
+        "last_record": 362742347,
+        "records": 19052614
+      },
+      {
+        "part": 20,
+        "manifest": "annotations/unpacked/part020/manifest.json",
+        "manifest_git_blob_sha1": "9cf738e8fdeed935a6d16da518353dbaa9f3b547",
+        "tree_sha1": "58289bf48215de97e85a4ecd5d5c5b51fb6be3a4",
+        "chunks": 62,
+        "bytes": 3095426190,
+        "first_record": 362742348,
+        "last_record": 382857884,
+        "records": 20115537
+      },
+      {
+        "part": 21,
+        "manifest": "annotations/unpacked/part021/manifest.json",
+        "manifest_git_blob_sha1": "72d2224be43a1418a40031ffa0f9259d850830e0",
+        "tree_sha1": "dc995ebbee46acd7505573b6780b8cbc8a1a18e3",
+        "chunks": 59,
+        "bytes": 2952817663,
+        "first_record": 382857885,
+        "last_record": 401759461,
+        "records": 18901577
+      },
+      {
+        "part": 22,
+        "manifest": "annotations/unpacked/part022/manifest.json",
+        "manifest_git_blob_sha1": "ba61b1ef682fc58f40ebfa0876708d2859a2a78b",
+        "tree_sha1": "0f2da4e940eca1d6eed38d5bd4ad3e48dded2b19",
+        "chunks": 59,
+        "bytes": 2961206994,
+        "first_record": 401759462,
+        "last_record": 420687778,
+        "records": 18928317
+      },
+      {
+        "part": 23,
+        "manifest": "annotations/unpacked/part023/manifest.json",
+        "manifest_git_blob_sha1": "d638b2b98d03fdfe64764a72efffb979f37c28ce",
+        "tree_sha1": "27cbc1c45439b21e41b561c7ba96e29089f7a565",
+        "chunks": 61,
+        "bytes": 3061871071,
+        "first_record": 420687779,
+        "last_record": 440351029,
+        "records": 19663251
+      },
+      {
+        "part": 24,
+        "manifest": "annotations/unpacked/part024/manifest.json",
+        "manifest_git_blob_sha1": "8aad63f2fc3bb07d1b52524d06ce3eee9b01e427",
+        "tree_sha1": "00ed6364c6ba88001a8746651e9bac5c28156861",
+        "chunks": 59,
+        "bytes": 2961207881,
+        "first_record": 440351030,
+        "last_record": 459220178,
+        "records": 18869149
+      },
+      {
+        "part": 25,
+        "manifest": "annotations/unpacked/part025/manifest.json",
+        "manifest_git_blob_sha1": "31eba96c9dbc331e659eea363dac81ee9d8d1394",
+        "tree_sha1": "f8725b82cb7f64c1ed1565457d4ea4dd20af673c",
+        "chunks": 60,
+        "bytes": 2994763130,
+        "first_record": 459220179,
+        "last_record": 478428791,
+        "records": 19208613
+      },
+      {
+        "part": 26,
+        "manifest": "annotations/unpacked/part026/manifest.json",
+        "manifest_git_blob_sha1": "bc225298f2e6909737b02190dcbd147f19cac5f6",
+        "tree_sha1": "16093be142a9c0143db57607edb1f3b960b94af3",
+        "chunks": 60,
+        "bytes": 2994763008,
+        "first_record": 478428792,
+        "last_record": 497657657,
+        "records": 19228866
+      },
+      {
+        "part": 27,
+        "manifest": "annotations/unpacked/part027/manifest.json",
+        "manifest_git_blob_sha1": "c06d3096b02e1d78d3056e11dba5e5ed3d7609e6",
+        "tree_sha1": "9220d6e4d55c821a51f62c5a4611c284f8b159e7",
+        "chunks": 61,
+        "bytes": 3053483328,
+        "first_record": 497657658,
+        "last_record": 517313838,
+        "records": 19656181
+      },
+      {
+        "part": 28,
+        "manifest": "annotations/unpacked/part028/manifest.json",
+        "manifest_git_blob_sha1": "e0ea96d696fc3621fdeb9c358292b6dadd824354",
+        "tree_sha1": "48edc548994da66fc1b713a9b9b706e724422cf9",
+        "chunks": 62,
+        "bytes": 3112202188,
+        "first_record": 517313839,
+        "last_record": 537365564,
+        "records": 20051726
+      },
+      {
+        "part": 29,
+        "manifest": "annotations/unpacked/part029/manifest.json",
+        "manifest_git_blob_sha1": "14a440fb8c3bb33e3b963e5c75cdecbaa121da9f",
+        "tree_sha1": "d68c5e0d485712c90dca40f6c60c537a44c0280e",
+        "chunks": 75,
+        "bytes": 3732963027,
+        "first_record": 537365565,
+        "last_record": 561927675,
+        "records": 24562111
+      },
+      {
+        "part": 30,
+        "manifest": "annotations/unpacked/part030/manifest.json",
+        "manifest_git_blob_sha1": "9b5a97ca657a3ca72fc8ae966ce8de1b36ccf600",
+        "tree_sha1": "f72b88f413189682064ab850690e84df5742e4fb",
+        "chunks": 61,
+        "bytes": 3019927138,
+        "first_record": 561927676,
+        "last_record": 581323719,
+        "records": 19396044
+      },
+      {
+        "part": 31,
+        "manifest": "annotations/unpacked/part031/manifest.json",
+        "manifest_git_blob_sha1": "19a990c3625be96ed618a5af04780414310b70fe",
+        "tree_sha1": "87e936537ed4be67e7d807ed5c4a921ed7ad609a",
+        "chunks": 62,
+        "bytes": 3112204373,
+        "first_record": 581323720,
+        "last_record": 601331372,
+        "records": 20007653
+      },
+      {
+        "part": 32,
+        "manifest": "annotations/unpacked/part032/manifest.json",
+        "manifest_git_blob_sha1": "93ff8675279614b0e282aaf9db50ecdf7758d03e",
+        "tree_sha1": "4f203e3cd999d89e6402fb140057dfcae64f12ec",
+        "chunks": 62,
+        "bytes": 3103814829,
+        "first_record": 601331373,
+        "last_record": 621226358,
+        "records": 19894986
+      },
+      {
+        "part": 33,
+        "manifest": "annotations/unpacked/part033/manifest.json",
+        "manifest_git_blob_sha1": "ca84f85b88f8af2d1ee6ea1bbc1b576d17aec4e0",
+        "tree_sha1": "fd9fbc8767277d162ad5199b195a1372d7fb150b",
+        "chunks": 61,
+        "bytes": 3053480333,
+        "first_record": 621226359,
+        "last_record": 640803425,
+        "records": 19577067
+      },
+      {
+        "part": 34,
+        "manifest": "annotations/unpacked/part034/manifest.json",
+        "manifest_git_blob_sha1": "72f0152ef68aff46bd6666300754eca6fe9c0b10",
+        "tree_sha1": "e7462da0402fa5523035eab8480c355167dc5de1",
+        "chunks": 61,
+        "bytes": 3019927272,
+        "first_record": 640803426,
+        "last_record": 660213115,
+        "records": 19409690
+      },
+      {
+        "part": 35,
+        "manifest": "annotations/unpacked/part035/manifest.json",
+        "manifest_git_blob_sha1": "d179939e00a7c877e8b81ba8b6545d424eb6140c",
+        "tree_sha1": "baea145e769cfaf73eab5421def58b543afa7332",
+        "chunks": 60,
+        "bytes": 2977984721,
+        "first_record": 660213116,
+        "last_record": 679150088,
+        "records": 18936973
+      },
+      {
+        "part": 36,
+        "manifest": "annotations/unpacked/part036/manifest.json",
+        "manifest_git_blob_sha1": "9405ec804353d65e71ff81afeaee71ed24451333",
+        "tree_sha1": "39a89cda66b38e6f46d9513def11e65d8946fb0f",
+        "chunks": 60,
+        "bytes": 2977983407,
+        "first_record": 679150089,
+        "last_record": 698120093,
+        "records": 18970005
+      },
+      {
+        "part": 37,
+        "manifest": "annotations/unpacked/part037/manifest.json",
+        "manifest_git_blob_sha1": "ebc99cb3a0cf4745e4e2672750e2b3710ecdf6e4",
+        "tree_sha1": "55f146623f6d91c7c7c5286ae8aa738cb4dbfd72",
+        "chunks": 61,
+        "bytes": 3019928319,
+        "first_record": 698120094,
+        "last_record": 717464142,
+        "records": 19344049
+      },
+      {
+        "part": 38,
+        "manifest": "annotations/unpacked/part038/manifest.json",
+        "manifest_git_blob_sha1": "4d026858bcb54d1b8656e5cebabb1ddb8e6224f2",
+        "tree_sha1": "e9325ced2daf0ec52b0a6b3205affe04d913c495",
+        "chunks": 59,
+        "bytes": 2961208357,
+        "first_record": 717464143,
+        "last_record": 736267293,
+        "records": 18803151
+      },
+      {
+        "part": 39,
+        "manifest": "annotations/unpacked/part039/manifest.json",
+        "manifest_git_blob_sha1": "9397b5b66c687bd5b632b679857e11d6be5b5bf0",
+        "tree_sha1": "35094bf40fc89bc9f37c918d4e36e9def99beae7",
+        "chunks": 59,
+        "bytes": 2952818279,
+        "first_record": 736267294,
+        "last_record": 755085450,
+        "records": 18818157
+      },
+      {
+        "part": 40,
+        "manifest": "annotations/unpacked/part040/manifest.json",
+        "manifest_git_blob_sha1": "1ab6b505b5d9237953eee62f06e5dc563b4d1ebb",
+        "tree_sha1": "8b35c231c845b536e3aaf791524f35a01996de14",
+        "chunks": 59,
+        "bytes": 2952817329,
+        "first_record": 755085451,
+        "last_record": 773999950,
+        "records": 18914500
+      },
+      {
+        "part": 41,
+        "manifest": "annotations/unpacked/part041/manifest.json",
+        "manifest_git_blob_sha1": "6d5d4b37e26c76f943f38da0f5128ba2aa526849",
+        "tree_sha1": "e937c69349e7a18f3edebefc437c0e30c12f9799",
+        "chunks": 60,
+        "bytes": 2969596369,
+        "first_record": 773999951,
+        "last_record": 793036334,
+        "records": 19036384
+      },
+      {
+        "part": 42,
+        "manifest": "annotations/unpacked/part042/manifest.json",
+        "manifest_git_blob_sha1": "b558a3457f14e2c9698478bc8a1fbebe91149f7a",
+        "tree_sha1": "dfdac1b4220164d4e4bc371347858be3b96b4b20",
+        "chunks": 59,
+        "bytes": 2961208255,
+        "first_record": 793036335,
+        "last_record": 811945662,
+        "records": 18909328
+      },
+      {
+        "part": 43,
+        "manifest": "annotations/unpacked/part043/manifest.json",
+        "manifest_git_blob_sha1": "04d993046799d0f717e7e8243e49e26eeb653775",
+        "tree_sha1": "3c481940865ed5fffc488075d09929804ec6f27a",
+        "chunks": 59,
+        "bytes": 2952817611,
+        "first_record": 811945663,
+        "last_record": 830785751,
+        "records": 18840089
+      },
+      {
+        "part": 44,
+        "manifest": "annotations/unpacked/part044/manifest.json",
+        "manifest_git_blob_sha1": "70715d65f02df5c5ea0feb1320e7c33cd4459f9e",
+        "tree_sha1": "c212d5da6515109d8208db88efe8be47d7fa7f98",
+        "chunks": 60,
+        "bytes": 2969596179,
+        "first_record": 830785752,
+        "last_record": 849755117,
+        "records": 18969366
+      },
+      {
+        "part": 45,
+        "manifest": "annotations/unpacked/part045/manifest.json",
+        "manifest_git_blob_sha1": "0ba23a0c05a786397edb098391e6fa957fca604d",
+        "tree_sha1": "5bcaa85e5794ee73e1ebcc876a3c2be94286ce59",
+        "chunks": 60,
+        "bytes": 3003150781,
+        "first_record": 849755118,
+        "last_record": 869042898,
+        "records": 19287781
+      },
+      {
+        "part": 46,
+        "manifest": "annotations/unpacked/part046/manifest.json",
+        "manifest_git_blob_sha1": "df406411139733da252a0f24a762c0dc16f75e9a",
+        "tree_sha1": "831eebe3482ab93acf49d4f4e2d5b87caac85b96",
+        "chunks": 60,
+        "bytes": 3011537524,
+        "first_record": 869042899,
+        "last_record": 888425946,
+        "records": 19383048
+      },
+      {
+        "part": 47,
+        "manifest": "annotations/unpacked/part047/manifest.json",
+        "manifest_git_blob_sha1": "3b61e8b41bbabc640c7d649f1707e92be450868e",
+        "tree_sha1": "09764fbaa8038cb5cef69b4a15cf2c6e2bdac8d1",
+        "chunks": 60,
+        "bytes": 2994760332,
+        "first_record": 888425947,
+        "last_record": 907543878,
+        "records": 19117932
+      },
+      {
+        "part": 48,
+        "manifest": "annotations/unpacked/part048/manifest.json",
+        "manifest_git_blob_sha1": "11c35c9d83a63c4fe81d99f2835beb4858619fa6",
+        "tree_sha1": "e4743029544f9e352ed02f2c55ce2b749b7f5f3e",
+        "chunks": 60,
+        "bytes": 2977985845,
+        "first_record": 907543879,
+        "last_record": 926376576,
+        "records": 18832698
+      },
+      {
+        "part": 49,
+        "manifest": "annotations/unpacked/part049/manifest.json",
+        "manifest_git_blob_sha1": "a2f077e8d9ad1039465f9d4f763ef1f7a3860298",
+        "tree_sha1": "20bbf92f88355e6e94b9d613b29c836a3e3ccbbd",
+        "chunks": 60,
+        "bytes": 2986372489,
+        "first_record": 926376577,
+        "last_record": 945378659,
+        "records": 19002083
+      },
+      {
+        "part": 50,
+        "manifest": "annotations/unpacked/part050/manifest.json",
+        "manifest_git_blob_sha1": "82361efbf0cc709b4a09638511fb0a7dca11e490",
+        "tree_sha1": "38fe620dec59961900f0fa8e08233129cdc27a61",
+        "chunks": 60,
+        "bytes": 2994764933,
+        "first_record": 945378660,
+        "last_record": 964371139,
+        "records": 18992480
+      },
+      {
+        "part": 51,
+        "manifest": "annotations/unpacked/part051/manifest.json",
+        "manifest_git_blob_sha1": "7684e1efa0cd6b4784ebed4b400131e4136d0244",
+        "tree_sha1": "7db5718a2e55a0ec5096b256e3c21c872fa8c996",
+        "chunks": 60,
+        "bytes": 2994763527,
+        "first_record": 964371140,
+        "last_record": 983245851,
+        "records": 18874712
+      },
+      {
+        "part": 52,
+        "manifest": "annotations/unpacked/part052/manifest.json",
+        "manifest_git_blob_sha1": "ee93385e01e4a51228ae421790c31ab320a708c7",
+        "tree_sha1": "364545147ba9555c31b02afdac2f78ae98539120",
+        "chunks": 60,
+        "bytes": 2986372547,
+        "first_record": 983245852,
+        "last_record": 1002221572,
+        "records": 18975721
+      },
+      {
+        "part": 53,
+        "manifest": "annotations/unpacked/part053/manifest.json",
+        "manifest_git_blob_sha1": "ab35a9ab4afbd5ed0842fc7187ca5e001c4dbeab",
+        "tree_sha1": "0cd4ae8c6c8d16655aef986cf2a6d08b52916887",
+        "chunks": 61,
+        "bytes": 3028317418,
+        "first_record": 1002221573,
+        "last_record": 1021069854,
+        "records": 18848282
+      },
+      {
+        "part": 54,
+        "manifest": "annotations/unpacked/part054/manifest.json",
+        "manifest_git_blob_sha1": "6263574eb8a4cb046547ea535c49895492ad67ad",
+        "tree_sha1": "9b23426f0e0de94c1cfe69366139dca5be55543e",
+        "chunks": 62,
+        "bytes": 3112205842,
+        "first_record": 1021069855,
+        "last_record": 1040241803,
+        "records": 19171949
+      },
+      {
+        "part": 55,
+        "manifest": "annotations/unpacked/part055/manifest.json",
+        "manifest_git_blob_sha1": "01b4937ef5e9ddd4c3414fb2cc3a2a2feb719cf4",
+        "tree_sha1": "50de12b8e98eddaed0e37b175a440f2f58da335b",
+        "chunks": 63,
+        "bytes": 3145758717,
+        "first_record": 1040241804,
+        "last_record": 1059743830,
+        "records": 19502027
+      },
+      {
+        "part": 56,
+        "manifest": "annotations/unpacked/part056/manifest.json",
+        "manifest_git_blob_sha1": "b8f30f6d5f4fb15379aa8d58961103c8bd32093c",
+        "tree_sha1": "d5d628549c4b893fef829f510b1cad24a2b8ddfc",
+        "chunks": 62,
+        "bytes": 3078650343,
+        "first_record": 1059743831,
+        "last_record": 1078753471,
+        "records": 19009641
+      },
+      {
+        "part": 57,
+        "manifest": "annotations/unpacked/part057/manifest.json",
+        "manifest_git_blob_sha1": "8c2a5361c49e5e2b84461ac94add4a86676ded40",
+        "tree_sha1": "db15f50085fbcef8cab89f01efe54ae27b35dbde",
+        "chunks": 7,
+        "bytes": 337139153,
+        "first_record": 1078753472,
+        "last_record": 1080769508,
+        "records": 2016037
+      }
+    ]
+  },
+  "release": {
+    "id": 455476972,
+    "tag": "archive-20261122",
+    "assets": 60,
+    "bytes": 20270996524,
+    "all_names_ids_sizes_server_sha256_digests_match": true,
+    "asset_metadata": [
+      {
+        "id": 783092801,
+        "name": "riemann-human-readable-project.zip",
+        "size": 286288695,
+        "digest": "sha256:1ce852981028f86d7a47931db6aff339805759b17c1621646189c357bd5baf2d",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/riemann-human-readable-project.zip"
+      },
+      {
+        "id": 783094382,
+        "name": "RH_AllSources.lean",
+        "size": 1101883390,
+        "digest": "sha256:b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/RH_AllSources.lean"
+      },
+      {
+        "id": 783097280,
+        "name": "solution_annotation_toolkit.zip",
+        "size": 5923402,
+        "digest": "sha256:ca60fc4c602768a1ec8b05f478167116d9d9ec06e5803da7cd1364029db76e3d",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotation_toolkit.zip"
+      },
+      {
+        "id": 783098047,
+        "name": "solution_annotated.part001.txt.zst",
+        "size": 336061402,
+        "digest": "sha256:0bac128afb799ca4ae7da74d87e424e135918631cfd14441659457c76751b17b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part001.txt.zst"
+      },
+      {
+        "id": 783099621,
+        "name": "solution_annotated.part002.txt.zst",
+        "size": 336728539,
+        "digest": "sha256:78642f14610574539d02fe473d9584dc3b8a4dc56607d5df375e08e17f5f0e22",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part002.txt.zst"
+      },
+      {
+        "id": 783101320,
+        "name": "solution_annotated.part003.txt.zst",
+        "size": 336073474,
+        "digest": "sha256:c4851e2fef80a3abba723c53cb636ade35132c941e156e6554e1c459f11dedfe",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part003.txt.zst"
+      },
+      {
+        "id": 783102916,
+        "name": "solution_annotated.part004.txt.zst",
+        "size": 336096131,
+        "digest": "sha256:54c72df27d4fa7a64808fc14803213588dd4bd40818d972541e9dcc4a10a0898",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part004.txt.zst"
+      },
+      {
+        "id": 783104788,
+        "name": "solution_annotated.part005.txt.zst",
+        "size": 336356419,
+        "digest": "sha256:352012d225535eb8ec3753d041c4dc7df07a04c94f4fdd3bae93e317147c5add",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part005.txt.zst"
+      },
+      {
+        "id": 783106551,
+        "name": "solution_annotated.part006.txt.zst",
+        "size": 336379422,
+        "digest": "sha256:c3ea8cfdbf95905ca75b4e0e52147fb8d202380653ab1c96745c1fadc4c6ba81",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part006.txt.zst"
+      },
+      {
+        "id": 783108305,
+        "name": "solution_annotated.part007.txt.zst",
+        "size": 336596693,
+        "digest": "sha256:f3e374c0f5314492cc3d4016a26b3931f4d44385e9351ed1424dd51dfb88b884",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part007.txt.zst"
+      },
+      {
+        "id": 783109934,
+        "name": "solution_annotated.part008.txt.zst",
+        "size": 336555898,
+        "digest": "sha256:41636745b8e9744088d8d3627945433440bf512f165067aaefc53c24e9cc6754",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part008.txt.zst"
+      },
+      {
+        "id": 783111554,
+        "name": "solution_annotated.part009.txt.zst",
+        "size": 336126899,
+        "digest": "sha256:0e48361f3e7739af3d48c9250512bfc3f7a22ffbfeae6f8814a7d86de5fe00ec",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part009.txt.zst"
+      },
+      {
+        "id": 783113319,
+        "name": "solution_annotated.part010.txt.zst",
+        "size": 336840467,
+        "digest": "sha256:3095b769ad328df01f00fa2fef6811c95473601e947f0d249a63e6b281caec37",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part010.txt.zst"
+      },
+      {
+        "id": 783115125,
+        "name": "solution_annotated.part011.txt.zst",
+        "size": 336034432,
+        "digest": "sha256:ce0ef7bd21bfc5ef0455879a900b70e19d3b2d22c6b20ff28e9c6c46e96b8842",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part011.txt.zst"
+      },
+      {
+        "id": 783116673,
+        "name": "solution_annotated.part012.txt.zst",
+        "size": 336120873,
+        "digest": "sha256:30f4a93fbf2c30e43a4532b8d13e8a2b8088d0c6c59c1c85feb81f4db407cea9",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part012.txt.zst"
+      },
+      {
+        "id": 783118266,
+        "name": "solution_annotated.part013.txt.zst",
+        "size": 336866422,
+        "digest": "sha256:d5677db5b5d4da61d361ec64974829df2c1c753ac70e7092eb57211924845255",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part013.txt.zst"
+      },
+      {
+        "id": 783119939,
+        "name": "solution_annotated.part014.txt.zst",
+        "size": 336079530,
+        "digest": "sha256:fed4e086ddad70d8e39a61f8b1a35a5c32a41ca4fda69e7fe269ef21c4f2b4a4",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part014.txt.zst"
+      },
+      {
+        "id": 783121601,
+        "name": "solution_annotated.part015.txt.zst",
+        "size": 336570106,
+        "digest": "sha256:8a0f30c6d3e40ebafed317d719d5857688ac5cfa0c74f01be81e577c8540e8ad",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part015.txt.zst"
+      },
+      {
+        "id": 783123553,
+        "name": "solution_annotated.part016.txt.zst",
+        "size": 336557251,
+        "digest": "sha256:57f9eb4530333f6b1e13d9fdd523e8c96fe52471438d31432db3bb770fb83d13",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part016.txt.zst"
+      },
+      {
+        "id": 783125694,
+        "name": "solution_annotated.part017.txt.zst",
+        "size": 336741314,
+        "digest": "sha256:7b8599da26305f8dc3fef1ba6373db090377c5aa604831ebb2689ee23e319652",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part017.txt.zst"
+      },
+      {
+        "id": 783127339,
+        "name": "solution_annotated.part018.txt.zst",
+        "size": 336693237,
+        "digest": "sha256:0178344053756ef0b16aae5bc65f707ac8f8934a6473155b6dddd849b6b5fcd6",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part018.txt.zst"
+      },
+      {
+        "id": 783135796,
+        "name": "solution_annotated.part019.txt.zst",
+        "size": 336289956,
+        "digest": "sha256:cc30c1aa7b79adcf34472713b7f39c4eadac5841befd80c3879d1924fa4fa4ee",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part019.txt.zst"
+      },
+      {
+        "id": 783135797,
+        "name": "solution_annotated.part020.txt.zst",
+        "size": 336164143,
+        "digest": "sha256:0289da9752c1a9906d656565dc90d12c9e465b4a024e7ec25995fb6645b59fa6",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part020.txt.zst"
+      },
+      {
+        "id": 783135801,
+        "name": "solution_annotated.part021.txt.zst",
+        "size": 336425776,
+        "digest": "sha256:9d5dd93241c258aef56dcf7574e66ea6c83d504f10d98c3579a029b876a32bf7",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part021.txt.zst"
+      },
+      {
+        "id": 783137578,
+        "name": "solution_annotated.part022.txt.zst",
+        "size": 336620609,
+        "digest": "sha256:665b84c2a97f5be892e84af6ee90a1bc320ea022177b172c40666cd1d6e5905b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part022.txt.zst"
+      },
+      {
+        "id": 783137579,
+        "name": "solution_annotated.part023.txt.zst",
+        "size": 336513491,
+        "digest": "sha256:6a276a342adbcd2354d7828385e5aa8d3c55fc301b78d70c86306a1a8fcbbc77",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part023.txt.zst"
+      },
+      {
+        "id": 783137577,
+        "name": "solution_annotated.part024.txt.zst",
+        "size": 336207665,
+        "digest": "sha256:85422e6c9ec747f1a00e5fcc82c5913bf98ce1a66aa67eb262d0f8b74042d934",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part024.txt.zst"
+      },
+      {
+        "id": 783139353,
+        "name": "solution_annotated.part025.txt.zst",
+        "size": 336584467,
+        "digest": "sha256:3c18aa4e9ef537453df0ddeed26d138ea0c57f1ffa89f2b4ae1f83f53503f79e",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part025.txt.zst"
+      },
+      {
+        "id": 783139355,
+        "name": "solution_annotated.part026.txt.zst",
+        "size": 336186887,
+        "digest": "sha256:eaacf7765fb0b086861fa823f093cf6328e153d33636d560195395c1ee2f3c7d",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part026.txt.zst"
+      },
+      {
+        "id": 783139356,
+        "name": "solution_annotated.part027.txt.zst",
+        "size": 336576908,
+        "digest": "sha256:dc10ab9e348c895337992b82c06188d239ed4cd84d000b6956e7058ac231b4de",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part027.txt.zst"
+      },
+      {
+        "id": 783141283,
+        "name": "solution_annotated.part028.txt.zst",
+        "size": 336317951,
+        "digest": "sha256:e2e908eb1103d69c2d1634a23b3cd88c34fa2cb6ab64a51d0dd10450944fac12",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part028.txt.zst"
+      },
+      {
+        "id": 783141280,
+        "name": "solution_annotated.part029.txt.zst",
+        "size": 336305992,
+        "digest": "sha256:54bf8179942213bf0435845134c64a5dee1e46be6210e00e20463e99c2e46760",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part029.txt.zst"
+      },
+      {
+        "id": 783141281,
+        "name": "solution_annotated.part030.txt.zst",
+        "size": 336499076,
+        "digest": "sha256:43a960b8eac6f2f9a1f0d6ccd086d2844e174a98ee8583ef13187e896f0544e2",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part030.txt.zst"
+      },
+      {
+        "id": 783143496,
+        "name": "solution_annotated.part031.txt.zst",
+        "size": 336369610,
+        "digest": "sha256:7254416065944bb232aada861c8d53945fac0d33eca44915c23eb9c919ecd974",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part031.txt.zst"
+      },
+      {
+        "id": 783143488,
+        "name": "solution_annotated.part032.txt.zst",
+        "size": 336746815,
+        "digest": "sha256:b4438c8380c5330d6b9fea402a66e4e23a72ad198d1fbd63cc25eb4c4f0da144",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part032.txt.zst"
+      },
+      {
+        "id": 783143489,
+        "name": "solution_annotated.part033.txt.zst",
+        "size": 336067177,
+        "digest": "sha256:3ea99b07f314049b7cb9ef86a1cfdb0fba120dc990d0078c30f458c34f734880",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part033.txt.zst"
+      },
+      {
+        "id": 783146059,
+        "name": "solution_annotated.part034.txt.zst",
+        "size": 336500248,
+        "digest": "sha256:016c3fb3fbc3aeea994d440ceb083c33be3a09495ee0c42588910ce489b72fad",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part034.txt.zst"
+      },
+      {
+        "id": 783146061,
+        "name": "solution_annotated.part035.txt.zst",
+        "size": 336026843,
+        "digest": "sha256:931c7e23456e1d792473a4c7952d987cdeaf7ac183e5fa0ebd9e2d372fe43f03",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part035.txt.zst"
+      },
+      {
+        "id": 783146063,
+        "name": "solution_annotated.part036.txt.zst",
+        "size": 336246226,
+        "digest": "sha256:5993d6a06910aed616f73c09193d218184ce5b9e52fe309ed49f65de5322d43b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part036.txt.zst"
+      },
+      {
+        "id": 783148102,
+        "name": "solution_annotated.part037.txt.zst",
+        "size": 336341509,
+        "digest": "sha256:25da929564f13677184a1a0f1968a71a0945f0fe13f8dd49229036a34ebb8f01",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part037.txt.zst"
+      },
+      {
+        "id": 783148103,
+        "name": "solution_annotated.part038.txt.zst",
+        "size": 336735318,
+        "digest": "sha256:a2928d91ca293495678ed567147b8431e394b6125df921f3e15e5cd071fa4043",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part038.txt.zst"
+      },
+      {
+        "id": 783148396,
+        "name": "solution_annotated.part039.txt.zst",
+        "size": 336568899,
+        "digest": "sha256:fe6fb147f91af7e468bcde25b1e8baf65aa30d85217ecf14f0cfc6831f9ffb95",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part039.txt.zst"
+      },
+      {
+        "id": 783150613,
+        "name": "solution_annotated.part040.txt.zst",
+        "size": 336128516,
+        "digest": "sha256:05d25d72d459818fb360543cf6303c350bdecc387ff3c5b01b17610a2f07185d",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part040.txt.zst"
+      },
+      {
+        "id": 783150616,
+        "name": "solution_annotated.part041.txt.zst",
+        "size": 336366683,
+        "digest": "sha256:2448613437e3116c3242f80735f889498eddbac57bb65f68f391c812c2870d6b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part041.txt.zst"
+      },
+      {
+        "id": 783150615,
+        "name": "solution_annotated.part042.txt.zst",
+        "size": 336537123,
+        "digest": "sha256:c544dead8b54b40ae0dc02a02667ecc329a5e48c6e6cfb183324c09ea12880e4",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part042.txt.zst"
+      },
+      {
+        "id": 783152965,
+        "name": "solution_annotated.part043.txt.zst",
+        "size": 336997274,
+        "digest": "sha256:211faebfd4124642b38bda3cad207282f96746b388a1b88005167c22cc3bc7e6",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part043.txt.zst"
+      },
+      {
+        "id": 783152968,
+        "name": "solution_annotated.part044.txt.zst",
+        "size": 336195827,
+        "digest": "sha256:181a62a277620c879f46014a30ab164605c8339b0168a7c566d80c20fde1564c",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part044.txt.zst"
+      },
+      {
+        "id": 783152964,
+        "name": "solution_annotated.part045.txt.zst",
+        "size": 336082918,
+        "digest": "sha256:2fecb33281431471b40d7c9dbbfd3f839163a26e1f239552223da7876d0d3327",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part045.txt.zst"
+      },
+      {
+        "id": 783155355,
+        "name": "solution_annotated.part046.txt.zst",
+        "size": 336763656,
+        "digest": "sha256:69152bda72799875ebc51a038a87e55c75eb7926c8cf962e830c46474a7bf412",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part046.txt.zst"
+      },
+      {
+        "id": 783155353,
+        "name": "solution_annotated.part047.txt.zst",
+        "size": 336872798,
+        "digest": "sha256:ab6489779fadd0fc345867b7849749619ffe4d4c8c872c1abc827178fb7b0e26",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part047.txt.zst"
+      },
+      {
+        "id": 783155357,
+        "name": "solution_annotated.part048.txt.zst",
+        "size": 336422190,
+        "digest": "sha256:61f7846e396ae1612e5601da621bbe2f083fbae6194f4f5c808b09ebe073988c",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part048.txt.zst"
+      },
+      {
+        "id": 783157542,
+        "name": "solution_annotated.part049.txt.zst",
+        "size": 336702235,
+        "digest": "sha256:fbca699377420975b98e3434be68f20ebea579be4ec03d4eead1b7fdf4b80743",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part049.txt.zst"
+      },
+      {
+        "id": 783157539,
+        "name": "solution_annotated.part050.txt.zst",
+        "size": 336748210,
+        "digest": "sha256:366fccae888b590a23549c892b11a9c1ed707e422321d98b33ca5f7b54ca71a0",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part050.txt.zst"
+      },
+      {
+        "id": 783157753,
+        "name": "solution_annotated.part051.txt.zst",
+        "size": 336478716,
+        "digest": "sha256:f11b992e30c1e2d62bc18eebb8fb9e0c812b5dea58231fafaa80df8de5d48ba4",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part051.txt.zst"
+      },
+      {
+        "id": 783159713,
+        "name": "solution_annotated.part052.txt.zst",
+        "size": 336252916,
+        "digest": "sha256:a7a2e82bc731baa44c5a2d80e82c4a6ac768026f9372b412cffe300fc0dfbfdb",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part052.txt.zst"
+      },
+      {
+        "id": 783159714,
+        "name": "solution_annotated.part053.txt.zst",
+        "size": 336687348,
+        "digest": "sha256:169264b180055ac9f0d1af872d52f5c8dd66ddb6dde628d1df558a0cb76461fc",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part053.txt.zst"
+      },
+      {
+        "id": 783159715,
+        "name": "solution_annotated.part054.txt.zst",
+        "size": 336673757,
+        "digest": "sha256:262b7080ed40b9430b56f3170e42a74296739acca503b49c09b441e7d92539be",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part054.txt.zst"
+      },
+      {
+        "id": 783161824,
+        "name": "solution_annotated.part055.txt.zst",
+        "size": 336305551,
+        "digest": "sha256:61e47318a0e0d82e51068702f993c132ffe230f427abcc1f4641c34d78c2d179",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part055.txt.zst"
+      },
+      {
+        "id": 783161822,
+        "name": "solution_annotated.part056.txt.zst",
+        "size": 336564186,
+        "digest": "sha256:3a369a4eea95a12b0f3d7baae9a04f2f0dac3b360377350349af7b3d277d119b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part056.txt.zst"
+      },
+      {
+        "id": 783161827,
+        "name": "solution_annotated.part057.txt.zst",
+        "size": 36347058,
+        "digest": "sha256:17b2e53cde2fb07223560c6876a43fdc97e5cd4582f9ac6d132f2907f49ec218",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/liyiliuxingyu/riemann-lean-archive/releases/download/archive-20261122/solution_annotated.part057.txt.zst"
+      }
+    ]
+  },
+  "original_source": {
+    "tree_sha1": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+    "source_tree_sha1": "b41b516b1f7baee4d83ced235ecc71fd43c97695",
+    "preserved_between_main_and_candidate": true,
+    "files": 175190,
+    "lean_files": 175187,
+    "configuration_files": 3,
+    "non_ascii_paths": 394
+  },
+  "project_archive_members": {
+    "total": 270,
+    "original_paths_present": 267,
+    "all_present_sizes_match": true,
+    "converted_members": [
+      {
+        "original_path": "project/lean/RH_AllSources.dependencies.jsonl",
+        "original_bytes": 214948999,
+        "original_sha256": "1321696d0bd1141923163735d6479916ba1bf4061e2e78c7427fa0e3fe36c431",
+        "kind": "lossless_jsonl_parts",
+        "destination": "project/lean/dependencies/",
+        "parts": 5
+      },
+      {
+        "original_path": "project/lean/RH_AllSources.lean",
+        "original_bytes": 1101883390,
+        "original_sha256": "b2ee6d0afdf4472ca2d135e4f1157d740d33622c70ed664882d5532333881444",
+        "kind": "expanded_source_tree",
+        "destination": "project/lean/original/",
+        "original_retained_in_release": true
+      },
+      {
+        "original_path": "project/third_party/ctex-kit-source.tar.gz",
+        "original_bytes": 1154159,
+        "original_sha256": "d7390ae719a3b06fa647fa3923cc819f917b92a94886d30a12485c6687bfc83f",
+        "kind": "expanded_archive",
+        "destination": "project/third_party/ctex-kit-source/",
+        "files": 405
+      }
+    ],
+    "present_members": [
+      {
+        "path": "project/README_接续说明.txt",
+        "bytes": 5358,
+        "git_blob_sha1": "fdbe9299440393e0b1db734930eec12601de6951"
+      },
+      {
+        "path": "project/assemble.py",
+        "bytes": 843,
+        "git_blob_sha1": "b9e836c7e6023b7dabfa9dc5dff25ce8df5096e2"
+      },
+      {
+        "path": "project/build_pdf.py",
+        "bytes": 5390,
+        "git_blob_sha1": "cae85485a4de3508e647f9c851f48f3dcfe21a7f"
+      },
+      {
+        "path": "project/chapters/appendix.tex",
+        "bytes": 5820,
+        "git_blob_sha1": "37fe72d2a57e5a2c4cbe529d375f5d41c46f396c"
+      },
+      {
+        "path": "project/chapters/arithmetic.tex",
+        "bytes": 27345,
+        "git_blob_sha1": "0de64b4015b4d56b91fb6374c0e186530a238392"
+      },
+      {
+        "path": "project/chapters/bridge.tex",
+        "bytes": 5328,
+        "git_blob_sha1": "5ec82dd87d54a4947c1530362adb14ef52c4fe4f"
+      },
+      {
+        "path": "project/chapters/finish.tex",
+        "bytes": 4117,
+        "git_blob_sha1": "f2e287ab8b17926749b4cab182cb681a3d0f2456"
+      },
+      {
+        "path": "project/chapters/overview.tex",
+        "bytes": 4585,
+        "git_blob_sha1": "8f8953e4ebfa630b43e4788d178a33f041d6097e"
+      },
+      {
+        "path": "project/chapters/preamble.tex",
+        "bytes": 4448,
+        "git_blob_sha1": "f389350a57abf7f88ce1f01549abcf4a32cc276c"
+      },
+      {
+        "path": "project/chapters/source_delivery.tex",
+        "bytes": 5029,
+        "git_blob_sha1": "2d03bd55557f72050dcab6309507516a3daa9b38"
+      },
+      {
+        "path": "project/chapters/window_proof.tex",
+        "bytes": 14984,
+        "git_blob_sha1": "6964e6874a48fff1be266c4020502a22e7ee2e40"
+      },
+      {
+        "path": "project/evidence/arithmetic_expansion_review.json",
+        "bytes": 19609,
+        "git_blob_sha1": "7d6d4606881115e83d32a361c40fb6ad0eab26e1"
+      },
+      {
+        "path": "project/evidence/final_review.json",
+        "bytes": 1680,
+        "git_blob_sha1": "3c07ab5b936572db14942f82fb349034758f2374"
+      },
+      {
+        "path": "project/evidence/pdf_build/compatible_setup.json",
+        "bytes": 20515,
+        "git_blob_sha1": "3412a4d38d2f5670be46f6ce5fec54e84fc32c10"
+      },
+      {
+        "path": "project/evidence/pdf_build/download.json",
+        "bytes": 573,
+        "git_blob_sha1": "62dbc9d6e525e87fd9ba502bcfa66d807d2e4b06"
+      },
+      {
+        "path": "project/evidence/pdf_build/environment.json",
+        "bytes": 518,
+        "git_blob_sha1": "887aad937132fe3bdc9a81e660c5ba6ce027bfc6"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_download.json",
+        "bytes": 598,
+        "git_blob_sha1": "bc3b9b715864a46eddc5c40671c294ebd3dadc03"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_install.json",
+        "bytes": 8818,
+        "git_blob_sha1": "03b6b68486422f3682d480102e250fa6a12ef675"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_smoke/ctexbook_fandol.build.json",
+        "bytes": 2041,
+        "git_blob_sha1": "9aa36d5cd26404add1df8901b8a015a965ea7c2e"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_smoke/ctexbook_fandol.latexmk.log",
+        "bytes": 14584,
+        "git_blob_sha1": "15894c8533de0e6b07baa30347fc1cc7aee2653e"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_smoke/ctexbook_fandol.pdfinfo.txt",
+        "bytes": 433,
+        "git_blob_sha1": "8ed7f4cc72d96bf8308fe274b754090bd3b1b50e"
+      },
+      {
+        "path": "project/evidence/pdf_build/fandol_smoke/embedded_fonts.txt",
+        "bytes": 1128,
+        "git_blob_sha1": "bfc09862d017a64d646b9bb0aac1d13007004c6e"
+      },
+      {
+        "path": "project/evidence/pdf_build/format-xelatex.log",
+        "bytes": 5741,
+        "git_blob_sha1": "e5fe6a1543088d39b0245af243bf4098aad2d1c0"
+      },
+      {
+        "path": "project/evidence/pdf_build/smoke/ctexbook_sample.build.json",
+        "bytes": 2020,
+        "git_blob_sha1": "cd9d8bd697ee8a9c76ac8bb90c0fe289002509b9"
+      },
+      {
+        "path": "project/evidence/pdf_build/smoke/ctexbook_sample.latexmk.log",
+        "bytes": 13396,
+        "git_blob_sha1": "474b206dee45a93efdcd164446988e0f11ee1f51"
+      },
+      {
+        "path": "project/evidence/pdf_build/smoke/ctexbook_sample.pdfinfo.txt",
+        "bytes": 433,
+        "git_blob_sha1": "fbc101a7be3147b2d9e390bc886e4fb5f0dfd162"
+      },
+      {
+        "path": "project/evidence/pdf_build/unpack-ctex.log",
+        "bytes": 12950,
+        "git_blob_sha1": "b7b6d88bb7c3f62c03f624e0e7e4e72879201f7a"
+      },
+      {
+        "path": "project/evidence/pdf_build/unpack-xeCJK.log",
+        "bytes": 3231,
+        "git_blob_sha1": "7df77bcd50b70a5e5c471ebf17aa87a7ecb6cd05"
+      },
+      {
+        "path": "project/evidence/pdf_build/unpack-zhnumber.log",
+        "bytes": 1733,
+        "git_blob_sha1": "116540d51b20df1df1c888144fa045b7cc195d1a"
+      },
+      {
+        "path": "project/evidence/pdf_build/黎曼猜想_人类可读证明主线.build.json",
+        "bytes": 2089,
+        "git_blob_sha1": "4c1d7c4e8c810dea74b2893021c894eef228e04b"
+      },
+      {
+        "path": "project/evidence/pdf_build/黎曼猜想_人类可读证明主线.latexmk.log",
+        "bytes": 29574,
+        "git_blob_sha1": "5d8127d644000d9fbb2cd427a399540dc2c806a7"
+      },
+      {
+        "path": "project/evidence/pdf_build/黎曼猜想_人类可读证明主线.pdfinfo.txt",
+        "bytes": 639,
+        "git_blob_sha1": "8fcb3ceca7329cd7a6da255414ebb654cb4f0e57"
+      },
+      {
+        "path": "project/lean/RH_AllSources.duplicates.jsonl",
+        "bytes": 3530,
+        "git_blob_sha1": "0a462d51265c4b04bfa67c2841a0f4e643533dfa"
+      },
+      {
+        "path": "project/lean/RH_AllSources.index.jsonl",
+        "bytes": 68614751,
+        "git_blob_sha1": "3a8d9d2d4953ae7ce71c95959b356836b080fc7d"
+      },
+      {
+        "path": "project/lean/RH_AllSources.summary.json",
+        "bytes": 923,
+        "git_blob_sha1": "05738299082f27ff0caf67440f7b776b7a651a25"
+      },
+      {
+        "path": "project/lean/RH_AllSources.unresolved.json",
+        "bytes": 35694,
+        "git_blob_sha1": "ecce5f05bad3e78c78064a529cc92e1fa316e8f8"
+      },
+      {
+        "path": "project/proof_process/export_review.json",
+        "bytes": 97,
+        "git_blob_sha1": "e9dff3a68dd5d0f8672f151033e2f6e11c57294f"
+      },
+      {
+        "path": "project/proof_process/证明过程_数学说明与关键源码.txt",
+        "bytes": 211214,
+        "git_blob_sha1": "6e29de0ec2ff4b78881fa4c2a95ecde42f44c274"
+      },
+      {
+        "path": "project/proof_process/证明过程_结构化索引.json",
+        "bytes": 198007,
+        "git_blob_sha1": "b4bc16a6cb56e9ec09f6d6c5232683f2968e9693"
+      },
+      {
+        "path": "project/provenance/assemble_validate.py",
+        "bytes": 4952,
+        "git_blob_sha1": "b976aabf41747e3c8f5cbc442550fd0ca53d46ce"
+      },
+      {
+        "path": "project/provenance/expected_original_parts.sha256",
+        "bytes": 1190,
+        "git_blob_sha1": "10c2435b34bdd6b50cfc6486f8d97309d808784b"
+      },
+      {
+        "path": "project/provenance/extract_mirror.py",
+        "bytes": 5776,
+        "git_blob_sha1": "a17a1bb28f8b2ec339ad45ac5ab4726dbbb1de8c"
+      },
+      {
+        "path": "project/provenance/full_export_validation.json",
+        "bytes": 5817,
+        "git_blob_sha1": "ee816aa874a190b2b0e1b00872c92c766c358944"
+      },
+      {
+        "path": "project/provenance/lean_module_semantics_review.json",
+        "bytes": 2137,
+        "git_blob_sha1": "1ff0b47d267f3b882f5975c16f47d4785012b85c"
+      },
+      {
+        "path": "project/provenance/mirror_commit.json",
+        "bytes": 1402,
+        "git_blob_sha1": "7270f9d53a1d8a7464e82d9a984faf80749bb302"
+      },
+      {
+        "path": "project/provenance/mirror_download.json",
+        "bytes": 576,
+        "git_blob_sha1": "9f03596cd6bc69beeaa88d5f31be97e663b93195"
+      },
+      {
+        "path": "project/provenance/mirror_validation.json",
+        "bytes": 17306,
+        "git_blob_sha1": "317822ae9c072ea7f7029f4b853570ffa2d2339b"
+      },
+      {
+        "path": "project/provenance/source_parts.json",
+        "bytes": 2395,
+        "git_blob_sha1": "36fd44bfa1fd8eef813b8b375bfc8a3b850b17a0"
+      },
+      {
+        "path": "project/reference/audit/analytic_windows_review.txt",
+        "bytes": 6224,
+        "git_blob_sha1": "92069b8a54426c96fd4ad382b7fd2c571989283e"
+      },
+      {
+        "path": "project/reference/audit/core_audit.txt",
+        "bytes": 14747,
+        "git_blob_sha1": "863fc8ce560f06a4836c1fb621fd5eb7338719dd"
+      },
+      {
+        "path": "project/reference/audit/core_sources.json",
+        "bytes": 17399,
+        "git_blob_sha1": "9fb88840c8542f7ea33b92d109ba4c95d3e9a1aa"
+      },
+      {
+        "path": "project/reference/audit/endpoint_notes.txt",
+        "bytes": 9257,
+        "git_blob_sha1": "dc0bb4d0439975a65e3eba479bf95ef4b9ab6b12"
+      },
+      {
+        "path": "project/reference/audit/import_summary.json",
+        "bytes": 642,
+        "git_blob_sha1": "34c50cd9c82bb31b0566f0e257ae51bd7ff4de0a"
+      },
+      {
+        "path": "project/reference/audit/pdf_visual_review_01_12.txt",
+        "bytes": 624,
+        "git_blob_sha1": "d6cd22f607eafc5c30c4a2ec6583c364039273ef"
+      },
+      {
+        "path": "project/reference/audit/pdf_visual_review_13_24.txt",
+        "bytes": 2949,
+        "git_blob_sha1": "dbb7a4de130bfa2eac40dd625a6ac3c0463f85e1"
+      },
+      {
+        "path": "project/reference/audit/pdf_visual_review_25_34.txt",
+        "bytes": 3420,
+        "git_blob_sha1": "9c9be51e0b6fa609afbdafc2d657d44839f73cab"
+      },
+      {
+        "path": "project/reference/lean/EndpointReduction.lean",
+        "bytes": 6950,
+        "git_blob_sha1": "b69271da3658405b0a33407b4f270cb862b148d4"
+      },
+      {
+        "path": "project/reference/lean/lakefile.toml",
+        "bytes": 272,
+        "git_blob_sha1": "9a5477035ce1e59e9c55c0c218cd3c4feda56c15"
+      },
+      {
+        "path": "project/reference/lean/lean-toolchain",
+        "bytes": 25,
+        "git_blob_sha1": "a8afa7d1b02d96f0671eba854a8dc4b416beb473"
+      },
+      {
+        "path": "project/reference/source_index.json",
+        "bytes": 55286,
+        "git_blob_sha1": "ee1b146651d4015ea08cc89e6224ab2c333fdeaa"
+      },
+      {
+        "path": "project/reference/source_selection/mathlib/Mathlib/Analysis/SpecialFunctions/Gamma/Beta.lean",
+        "bytes": 28664,
+        "git_blob_sha1": "612bc27a5af0f7c696a7ed1a4a84f67b3d91979e"
+      },
+      {
+        "path": "project/reference/source_selection/mathlib/Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean",
+        "bytes": 9148,
+        "git_blob_sha1": "b0ee5de3dd9c499446af6ccaedd6003d7fed1821"
+      },
+      {
+        "path": "project/reference/source_selection/mathlib/Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+        "bytes": 18979,
+        "git_blob_sha1": "9ccc38f52d669a88285a904e59dbb562ade5aba5"
+      },
+      {
+        "path": "project/reference/source_selection/mathlib/Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+        "bytes": 21780,
+        "git_blob_sha1": "610bd56365d49c5ffa9ebeb29e0a383c768248e2"
+      },
+      {
+        "path": "project/reference/source_selection/mathlib/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+        "bytes": 12306,
+        "git_blob_sha1": "3c92195fce20df7fda41cfd823b3266f83cf3070"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/lake-manifest.json",
+        "bytes": 3221,
+        "git_blob_sha1": "b4d1ec31575a26b2159ec3a262b482bc051f3f6f"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/lakefile.toml",
+        "bytes": 1619,
+        "git_blob_sha1": "07e85dc8afcf28b4885a8f092154c8b74c8cf800"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/lean-toolchain",
+        "bytes": 25,
+        "git_blob_sha1": "a8afa7d1b02d96f0671eba854a8dc4b416beb473"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+        "bytes": 28971,
+        "git_blob_sha1": "4d0d94fd3fd9368e5428c05402979d6dd5123b4d"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/Definitions/Divisors/HilbertNinetyQuotientHomEqIff.lean",
+        "bytes": 27099,
+        "git_blob_sha1": "a35c253c12eb916b088bd7b5fe8d8066428b5636"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/Definitions/Foundations/NotIsSplitOfIsInertAt.lean",
+        "bytes": 22942,
+        "git_blob_sha1": "e62d792ba69e771362d85d4b0de4ca3123d45c3b"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/Definitions/GaloisGeometry/DualIsConjByOne.lean",
+        "bytes": 2266,
+        "git_blob_sha1": "dc0a4a025840a82e7e119e05378c19da82bd2a91"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean",
+        "bytes": 11412,
+        "git_blob_sha1": "79bf083d6dd5e25a85a230c10f1e9f3a87d774c3"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GaloisRepOfPolarizedCuspidal.lean",
+        "bytes": 7782,
+        "git_blob_sha1": "dcc8497d9ab02bf7b102e99c12bf35644f3424b5"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+        "bytes": 6603,
+        "git_blob_sha1": "23b7a05606074da30e6f8eb3b3821e877a968d3e"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+        "bytes": 515,
+        "git_blob_sha1": "4cba179acd45ac08d3cad21f51c9b9d62715a9a4"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+        "bytes": 5193,
+        "git_blob_sha1": "60b3e96d81c2cb7d821d14c978b38bd9fd0d97f8"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+        "bytes": 6424,
+        "git_blob_sha1": "5321920359316653b7627951429a6d7555c311b0"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+        "bytes": 1215,
+        "git_blob_sha1": "6ac769568b67f85f33565ba3e1eef7b91f53c55f"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+        "bytes": 3776,
+        "git_blob_sha1": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "bytes": 1213,
+        "git_blob_sha1": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/RiemannHypothesisOfEveryCharacter.lean",
+        "bytes": 20673,
+        "git_blob_sha1": "c6dfef5bfa62aa0ef1cd1481833e1cd2475cbbbc"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/ShapeWin.lean",
+        "bytes": 4728,
+        "git_blob_sha1": "884e55f808de32034259a8bb2d74043e2e933430"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+        "bytes": 697,
+        "git_blob_sha1": "339885b77069601fb716a60739369805241e8222"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+        "bytes": 1791,
+        "git_blob_sha1": "54d1b4b84e8c4b97c98379f0bf1bd6bf2f3b2da1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "bytes": 1636,
+        "git_blob_sha1": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+        "bytes": 25006,
+        "git_blob_sha1": "878f5077bc382426c7da988e5a375b85deeaa7de"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+        "bytes": 3793,
+        "git_blob_sha1": "ce06a34a9e0b1b332e10d3b7efb04a06e9ab77f5"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCauchy.lean",
+        "bytes": 1731,
+        "git_blob_sha1": "f415cdd3e7743dda02d46040c0cb1cc4fde5eb5b"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean",
+        "bytes": 1434,
+        "git_blob_sha1": "dc8287f2dbe7c767dcb77893eaf53d07092ed1f3"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+        "bytes": 4357,
+        "git_blob_sha1": "947dae363ce629febcba27b1b70355438f8639a0"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean",
+        "bytes": 1132,
+        "git_blob_sha1": "46a0dc63f21009582a2dda61c1267e9aad88bde5"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean",
+        "bytes": 1838,
+        "git_blob_sha1": "bf6f3c703e6ae4f7fa37d4a7fd59eaa2e2aeeeda"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean",
+        "bytes": 807,
+        "git_blob_sha1": "b230a9e40c3710eac205f32ceb8a44f2d003b647"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+        "bytes": 5357,
+        "git_blob_sha1": "6a177498987e1ef453727131bf2004bc797a01a2"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+        "bytes": 4189,
+        "git_blob_sha1": "e5ec846b37b8879944576a38c83013814a6f1fe7"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleReLe.lean",
+        "bytes": 2825,
+        "git_blob_sha1": "205c7380b79e78b2752ed67aeb069f2a9d12cc77"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+        "bytes": 2999,
+        "git_blob_sha1": "dde1c159371538875c28374574ca7e452b0450d9"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+        "bytes": 668,
+        "git_blob_sha1": "2ed00ad3aa862f3e522686557fb8f559b17fc002"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+        "bytes": 6721,
+        "git_blob_sha1": "0e55797bac5320acf02d9acc832ca53df716e436"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+        "bytes": 9681,
+        "git_blob_sha1": "7915058f10b33a52652290cd887cbccdc00e676a"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+        "bytes": 6547,
+        "git_blob_sha1": "cda93b0185260d72395d2ef2c90314e0fa7128ef"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean",
+        "bytes": 9533,
+        "git_blob_sha1": "11776c96437e9a4e53fbc3ff06c5e2e8e3c640bc"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean",
+        "bytes": 6556,
+        "git_blob_sha1": "675a25d278977948c8327f0e1e2e31fb3a990a7d"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+        "bytes": 20079,
+        "git_blob_sha1": "1f7fdc4409d2f1185700764c51d5c17a907d76e1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+        "bytes": 2678,
+        "git_blob_sha1": "54fd0de979e0dad6ac7709ad8ecbec8a29e21872"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+        "bytes": 2933,
+        "git_blob_sha1": "4d4d9506494734f28fce7d39bac1a50650ecf148"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+        "bytes": 495,
+        "git_blob_sha1": "869a5e68fcff90c1ee29a6dae75594ed8a59ada9"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/GeometricRealizationOfWeightOne.lean",
+        "bytes": 2269,
+        "git_blob_sha1": "a3966183e2d20f54fc7109a14dcf14979d89d8e1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/HodgeTrAt.lean",
+        "bytes": 13285,
+        "git_blob_sha1": "604ffa570273fb3b322d4418da2248f8f35cdffd"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+        "bytes": 665,
+        "git_blob_sha1": "4af6c909184001b272f7bfc504eac4606dcda763"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+        "bytes": 433,
+        "git_blob_sha1": "f769999ac5e49241993e5efbf81e4d2cded18acd"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/ZetaCharacterDivisibility/InsideRefl.lean",
+        "bytes": 9603,
+        "git_blob_sha1": "dce71220999583ccee4d97ce933e0361ed5e592f"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+        "bytes": 3341,
+        "git_blob_sha1": "c04ecf97717ee43cc5c397098c2f425df93548fa"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+        "bytes": 6633,
+        "git_blob_sha1": "4f15d099a42672d333d3eac45cebedbdaec7bd98"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+        "bytes": 1971,
+        "git_blob_sha1": "4b36fc43e988270944cef2fc1b5e9ee1493fc275"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+        "bytes": 24668,
+        "git_blob_sha1": "8941c842b256473c103e2d04ef94e902534ed4b5"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+        "bytes": 17070,
+        "git_blob_sha1": "42831f56b9baacfaca0cde1207a1337882556e4c"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+        "bytes": 316,
+        "git_blob_sha1": "e9101ee7d8551561a1d6ca3b18fdcfe84dbfc713"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+        "bytes": 5585,
+        "git_blob_sha1": "c621b46b313d554ed00af05fb0ab8eb4c5050c60"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+        "bytes": 11017,
+        "git_blob_sha1": "b2582efa4d9f75ff74c839246fb385a6e20a2e28"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+        "bytes": 4517,
+        "git_blob_sha1": "c1e81ba09c0e00fba45da9250509c36a72714bc1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConj.lean",
+        "bytes": 9852,
+        "git_blob_sha1": "600ef95a75276bd9ee68b1d831b3b741fd5195d1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjAlt.lean",
+        "bytes": 6524,
+        "git_blob_sha1": "486af16ec21e4f8c5a482e1481769093b9448bd4"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+        "bytes": 5507,
+        "git_blob_sha1": "0a1eab0eb68defc45b4e62d19fbfd01dad459344"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+        "bytes": 6283,
+        "git_blob_sha1": "baddfb181bfefea1533526863033f99b63bb4d17"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+        "bytes": 3557,
+        "git_blob_sha1": "268786576f96cb5a2cea5fab2da4cf4f291c1116"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+        "bytes": 2897,
+        "git_blob_sha1": "0ba3621036f19146e7e67fa9c0e8a1c38661a097"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+        "bytes": 4613,
+        "git_blob_sha1": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+        "bytes": 1122,
+        "git_blob_sha1": "2dc9b4e690951c66ffe443e279fcada259bcce13"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+        "bytes": 3034,
+        "git_blob_sha1": "d08c25d0cb674297482bec9a235401c14bfb22fa"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "bytes": 2182,
+        "git_blob_sha1": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+        "bytes": 3181,
+        "git_blob_sha1": "e9c80e2017ec149ac559bc20c184b9264b9ec0c2"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+        "bytes": 1904,
+        "git_blob_sha1": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+        "bytes": 7489,
+        "git_blob_sha1": "01e60174b728fc6b473a308c5bf5dbffbe017afe"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+        "bytes": 97393,
+        "git_blob_sha1": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/WeilBound/CoreStatements/AutomorphicKernels/LocalGlobalCompatibility/TemperedLocalGlobal/LocalGlobalOfIwahori.lean",
+        "bytes": 5152,
+        "git_blob_sha1": "ca358167a1c6bf3a15b5c1e0960290db6dd01c9f"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/WeilBound/ThetaLifts/LatticeBasics/HodgeTateFromSandwich.lean",
+        "bytes": 10426,
+        "git_blob_sha1": "7233f58bf9d877b5f3a5d84cfe4a90b862a3758b"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Development/WeilBound/ThetaLifts/LatticeBasics/PairsStable.lean",
+        "bytes": 12382,
+        "git_blob_sha1": "15cdb3b0663f439d9ce45052db1299255f4196c9"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/GaloisCohomology/Statement.lean",
+        "bytes": 8427,
+        "git_blob_sha1": "0799e9bcd8aa191ffaa90ab005453a53381bacea"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+        "bytes": 1825,
+        "git_blob_sha1": "95fa4da5c50119db164aa93944d106f22fdb576d"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+        "bytes": 2459,
+        "git_blob_sha1": "3604637147a33e72248faddd775ea750e7846ead"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/LevelLetterCocycles/DataN.lean",
+        "bytes": 71611,
+        "git_blob_sha1": "3d5ea7e38ae7ff6a7fae481011bc05e4490b5a84"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean",
+        "bytes": 7650,
+        "git_blob_sha1": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+        "bytes": 7338,
+        "git_blob_sha1": "ed60b4b997cd4703713660b185b9e43fd95559a1"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean",
+        "bytes": 3625,
+        "git_blob_sha1": "aee05935e7bac6625cd4e07fef4912722d796780"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+        "bytes": 8117,
+        "git_blob_sha1": "a6ac464a67f99a546566ee3a3e0fd1db1f4c2550"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean",
+        "bytes": 1825,
+        "git_blob_sha1": "099d96fec932b03a505ea79a81c45bcc3fbf0ea3"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Main.lean",
+        "bytes": 433,
+        "git_blob_sha1": "dbd5db70bc11b35f18fa5751216ab335321e7bfc"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+        "bytes": 8957,
+        "git_blob_sha1": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/ReciprocityTheory/Hypotheses/GalCoh.lean",
+        "bytes": 16010,
+        "git_blob_sha1": "a4e5044d290790dfc54db004228d49cd9fdb77e5"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Statements.lean",
+        "bytes": 783,
+        "git_blob_sha1": "1cd1bce93344065936b2b392b23306254e0785ef"
+      },
+      {
+        "path": "project/reference/source_selection/original/lean/src/Supplements/Kernels/MainTheorems.lean",
+        "bytes": 740,
+        "git_blob_sha1": "6a542d7ce969a791fd12ce575f587e6bc29044bf"
+      },
+      {
+        "path": "project/reference/先前中文重构稿.pdf",
+        "bytes": 467067,
+        "git_blob_sha1": "429158eda9ca9c23585ddcca4845ba636f7e52a1"
+      },
+      {
+        "path": "project/texmf/doc/fonts/fandol/COPYING",
+        "bytes": 35737,
+        "git_blob_sha1": "9ac870dee2c1b2bc99df88dad8f42ffd6a02b35a"
+      },
+      {
+        "path": "project/texmf/doc/fonts/fandol/README",
+        "bytes": 645,
+        "git_blob_sha1": "dcccb19d3a0329f0055a50e8092de3090fdbb001"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/COPYING",
+        "bytes": 35737,
+        "git_blob_sha1": "9ac870dee2c1b2bc99df88dad8f42ffd6a02b35a"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolFang-Regular.otf",
+        "bytes": 6961384,
+        "git_blob_sha1": "539c41f27eb40ea65005751ab328a31ebc2f06ba"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolHei-Bold.otf",
+        "bytes": 3581972,
+        "git_blob_sha1": "b4707d1a3d71fdd2982daa43b2630b7a47dc982d"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolHei-Regular.otf",
+        "bytes": 5808908,
+        "git_blob_sha1": "a7afa402774bb76003234e69baffd23c417b64b2"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolKai-Regular.otf",
+        "bytes": 7790552,
+        "git_blob_sha1": "30e90cb84f7d23b61b2649adba156f3fcc5206fa"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolSong-Bold.otf",
+        "bytes": 5777588,
+        "git_blob_sha1": "5e9271ee5481e445196f79b05dd4222e1a7b2e9b"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/FandolSong-Regular.otf",
+        "bytes": 4947904,
+        "git_blob_sha1": "589bd7cfd4232ec8bd41f233026c2c68b61c3b1b"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/PROVENANCE.json",
+        "bytes": 8818,
+        "git_blob_sha1": "03b6b68486422f3682d480102e250fa6a12ef675"
+      },
+      {
+        "path": "project/texmf/fonts/opentype/public/fandol/README",
+        "bytes": 645,
+        "git_blob_sha1": "dcccb19d3a0329f0055a50e8092de3090fdbb001"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c19rm.fd",
+        "bytes": 1839,
+        "git_blob_sha1": "36285d98bfdc59c36c9d318b282239a37dbd2527"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c19sf.fd",
+        "bytes": 1833,
+        "git_blob_sha1": "d9f648e5f81f9836e7ff275170e4acefee74d162"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c19tt.fd",
+        "bytes": 1824,
+        "git_blob_sha1": "9f1e763927fc95556ebfcccf14ab58f21f3a8241"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c70rm.fd",
+        "bytes": 1820,
+        "git_blob_sha1": "04da4ec137ec19884d12251159e312c949ac7ed7"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c70sf.fd",
+        "bytes": 1814,
+        "git_blob_sha1": "3aa65f3173f4a85515650a4a9453d00d52367e74"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/c70tt.fd",
+        "bytes": 1805,
+        "git_blob_sha1": "866a09276f224019752ea27f28ec5894891a7aef"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-c5size.clo",
+        "bytes": 2541,
+        "git_blob_sha1": "87643914d541f27a800a161d1919be3c8fffc44d"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-cs4size.clo",
+        "bytes": 2562,
+        "git_blob_sha1": "40e87bc0e59e30ce10c6581e1d67900d5c6a3889"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-engine-aptex.def",
+        "bytes": 10085,
+        "git_blob_sha1": "593f69bf6d66f041f4b7302c06d51f0fe38ed200"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-engine-luatex.def",
+        "bytes": 46469,
+        "git_blob_sha1": "41e824a8469b52d483137e51737a0764df65d4b0"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-engine-pdftex.def",
+        "bytes": 20222,
+        "git_blob_sha1": "6b6334cb7a3a7883c49e2413a276e310d546dc4b"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-engine-uptex.def",
+        "bytes": 10080,
+        "git_blob_sha1": "a9c86813668034b5211101127898dd46f8ea169a"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-engine-xetex.def",
+        "bytes": 4685,
+        "git_blob_sha1": "35905480f0cf312f67456015d422a57961a5186d"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-adobe.def",
+        "bytes": 4068,
+        "git_blob_sha1": "5291196894d5b0341b4faa53571a5b7b85c2cdb5"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-fandol.def",
+        "bytes": 4479,
+        "git_blob_sha1": "7eb07754ee516f7fe61bc45b5988abfbe60676b8"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-founder.def",
+        "bytes": 4356,
+        "git_blob_sha1": "ed66870aef45b2e97853d1e85032eb955cbceadc"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-mac.def",
+        "bytes": 1352,
+        "git_blob_sha1": "c2ebce48d425c3f19e7889c67eb63f9e602d93e9"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-macnew.def",
+        "bytes": 5275,
+        "git_blob_sha1": "cc23639c8eda5669540522b50cea581958007823"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-macold.def",
+        "bytes": 1993,
+        "git_blob_sha1": "8e56846d811ac13973c50fe7e22d968d2603d9cd"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-ubuntu.def",
+        "bytes": 3909,
+        "git_blob_sha1": "8fa170e1c90308d2a71e0cc01d21c36d615f6954"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-fontset-windows.def",
+        "bytes": 4877,
+        "git_blob_sha1": "f5672a28af3d58607d7611231f58d7203d55c304"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-heading-article.def",
+        "bytes": 24660,
+        "git_blob_sha1": "e32ee9f4d0df1b1e6a678af0c708c81b4de67ced"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-heading-beamer.def",
+        "bytes": 9002,
+        "git_blob_sha1": "1c8c8732fe711a2da6b935a282a71a8937eb829f"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-heading-book.def",
+        "bytes": 28178,
+        "git_blob_sha1": "917ae0707ef521220421eb380bd46eed22481e7a"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-heading-report.def",
+        "bytes": 28043,
+        "git_blob_sha1": "281647796be537b7d2f4c9ba575bba3747e042e0"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-name-gbk.cfg",
+        "bytes": 1655,
+        "git_blob_sha1": "22428ee46ef852d92bd1c154a66d0af4dc994273"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-name-utf8.cfg",
+        "bytes": 1695,
+        "git_blob_sha1": "4943bb58fab9f2d3a87152c5b593ab91027275fd"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-chinese-article.def",
+        "bytes": 4547,
+        "git_blob_sha1": "0a3e318108140f26872d70b69ea16de59cd38689"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-chinese-beamer.def",
+        "bytes": 2710,
+        "git_blob_sha1": "b683aa9c393ca33f0045f227ca06131401a87789"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-chinese-book.def",
+        "bytes": 5115,
+        "git_blob_sha1": "e5541151ddb14f97d18da54a7709971ccb01c4d5"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-chinese-report.def",
+        "bytes": 5125,
+        "git_blob_sha1": "f209fe6ec80079274130462992d0668aaaa0c1fd"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-chinese.def",
+        "bytes": 2234,
+        "git_blob_sha1": "d904e433a5c0ef8037f5d922e7f0d94cee63392a"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-plain-article.def",
+        "bytes": 4014,
+        "git_blob_sha1": "d5624ff19961bbca40863c92f79859c3466d53b8"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-plain-beamer.def",
+        "bytes": 2339,
+        "git_blob_sha1": "681a8b9d77b7c7c2ab47f993b085fbf21f7c61b3"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-plain-book.def",
+        "bytes": 4727,
+        "git_blob_sha1": "20665ca0a5cdd4bf81d8b6ead6eb31c7baffdb04"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-plain-report.def",
+        "bytes": 4737,
+        "git_blob_sha1": "d8c1a53b6806b6b18daaf09f02e8283b6be8a459"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-scheme-plain.def",
+        "bytes": 1202,
+        "git_blob_sha1": "d3228b17107b6f4527f4ded8d109e87804687433"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-spa-macro.tex",
+        "bytes": 2870,
+        "git_blob_sha1": "0ef38370c2db94230141327ec5feed16b493d722"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-spa-make.tex",
+        "bytes": 2885,
+        "git_blob_sha1": "b495ee7b8495f8ebe2b38350d7beaaced91a405b"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-adobe.tex",
+        "bytes": 4230,
+        "git_blob_sha1": "de30bda13dd2b92509a26dd20f2cd598cf5023cd"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-fandol.tex",
+        "bytes": 4159,
+        "git_blob_sha1": "a2dfeb57cbb96f2edaed5270d501115ccce725dd"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-founder.tex",
+        "bytes": 5516,
+        "git_blob_sha1": "c8b08b9ca01ce9647cf4a28ee9ae628ab00a90ca"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-mac.tex",
+        "bytes": 4608,
+        "git_blob_sha1": "8f63aa253021b3c42cfe9c3d7c594db36980817f"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-ubuntu.tex",
+        "bytes": 4113,
+        "git_blob_sha1": "277dbd2f6db496f66052475560ee47a2e8d32fd3"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex-zhmap-windows.tex",
+        "bytes": 5818,
+        "git_blob_sha1": "1d5a835b0e3f89d38546473d099accbfdc60eed8"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex.cfg",
+        "bytes": 1155,
+        "git_blob_sha1": "4e6e2b3294f7d240b6471e7adfa3f7973f7bb7ff"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex.ins",
+        "bytes": 17657,
+        "git_blob_sha1": "d5d741f33210405414785a12260c8bb8924ab77d"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctex.sty",
+        "bytes": 32575,
+        "git_blob_sha1": "dc168dcc26c24b9e18be303278bff2cbd4630bfe"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexart.cls",
+        "bytes": 55144,
+        "git_blob_sha1": "328e21203f9d46fca24b9c78f3f96612da1c5e2b"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexbackend.cfg",
+        "bytes": 1904,
+        "git_blob_sha1": "d3ebf513ec1406b36672860a4fd0b187792cf1bf"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexbeamer.cls",
+        "bytes": 39307,
+        "git_blob_sha1": "e3314898938ed1bff6fa61c130ecae330d73459d"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexbook.cls",
+        "bytes": 58672,
+        "git_blob_sha1": "f857cad8a82bfe200ab78ac19474e78d8c588546"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexcap.sty",
+        "bytes": 1763,
+        "git_blob_sha1": "76340d58b24483baa5eb9790436eaacc650b9a22"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexheading.sty",
+        "bytes": 8531,
+        "git_blob_sha1": "fc39d7aefb14462b7ad5b32c38f3112e704e8b31"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexhook.sty",
+        "bytes": 6430,
+        "git_blob_sha1": "40fd235d4f433ed5f605127de317f8d1f5b6fb4a"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexopts.cfg",
+        "bytes": 1216,
+        "git_blob_sha1": "db74079cb1a4bd73a708ab6924054323fdc083c9"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexpatch.sty",
+        "bytes": 8373,
+        "git_blob_sha1": "c91c61e900c4fb17df6c8a0be0db341fa37458ea"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexrep.cls",
+        "bytes": 58529,
+        "git_blob_sha1": "340cca0f17d87d8400586b92219c12b599c8c659"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexsize.sty",
+        "bytes": 10321,
+        "git_blob_sha1": "a62cdbbc71c0f204e6af40d488f597510553f301"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/ctexspa.def",
+        "bytes": 10881,
+        "git_blob_sha1": "4ea57ea473e36d8214111ab2d9af13bd91564462"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jt2zhrm.fd",
+        "bytes": 1365,
+        "git_blob_sha1": "229419b3d441b560a24ebea102acb1564cf1d181"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jt2zhsf.fd",
+        "bytes": 1305,
+        "git_blob_sha1": "a5ca9c1feac856c2a3b16070290d7166ffce1683"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jt2zhtt.fd",
+        "bytes": 1196,
+        "git_blob_sha1": "c81c32e652f379bc52ccce73f8e74c70c6c7d8c1"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jy2zhrm.fd",
+        "bytes": 1365,
+        "git_blob_sha1": "e301afd1c2540826b0da76ad3716004f0571a272"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jy2zhsf.fd",
+        "bytes": 1305,
+        "git_blob_sha1": "f248cf0a8c6a557198f2390c7940af7b3166aea9"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/jy2zhtt.fd",
+        "bytes": 1196,
+        "git_blob_sha1": "2a0c5e7b55e9780016a2a09e0fc89c80694e5601"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/translator-theorem-dictionary-ChineseGBK.dict",
+        "bytes": 4320,
+        "git_blob_sha1": "d9f9b297a90454b8005b25dbbadecc7d06c028cb"
+      },
+      {
+        "path": "project/texmf/tex/latex/ctex/translator-theorem-dictionary-ChineseUTF8.dict",
+        "bytes": 4520,
+        "git_blob_sha1": "bc5ea083ae9c4013bd6a476dc47679a1eea9f97c"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-CJKecglue.tex",
+        "bytes": 736,
+        "git_blob_sha1": "41c3a087fbd5a3163601f39d6402ea689a933c26"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-CJKfntef.tex",
+        "bytes": 3760,
+        "git_blob_sha1": "26ae75b7c2c0f9d6f095db278edabf7285b1ec20"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-CM.tex",
+        "bytes": 685,
+        "git_blob_sha1": "9d8ba25dc9155ee26f9905a9982388c59b3b1368"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-autofake.tex",
+        "bytes": 3059,
+        "git_blob_sha1": "2c35f512225677c205a58608f97e8bbcbf75c70c"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-checksingle.tex",
+        "bytes": 944,
+        "git_blob_sha1": "d3c37feff522fb4b5c1e8eda6d5af030d9fd17c0"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-fallback.tex",
+        "bytes": 1740,
+        "git_blob_sha1": "473abf793cbd1ccc4bfce9eb3905089692b433ae"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-listings.tex",
+        "bytes": 2393,
+        "git_blob_sha1": "266ce45653c35009508c7ea164916325d280ce53"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-mathblock.tex",
+        "bytes": 1055,
+        "git_blob_sha1": "08dcac3ca7a04f61fa0768850e2ad32160d311a3"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-punctstyle.tex",
+        "bytes": 4350,
+        "git_blob_sha1": "eeea39297f98dbc5a7f4db25a05ec5c650748340"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-subCJKblock.tex",
+        "bytes": 5031,
+        "git_blob_sha1": "fa6cac040eff1213a48490f77a6419e441db98db"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-example-verbatim.tex",
+        "bytes": 2233,
+        "git_blob_sha1": "f37cb46eff1179ea90b02acfadfc689632bd4c0c"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK-listings.sty",
+        "bytes": 13854,
+        "git_blob_sha1": "a3064c2092cec4bc98de331fc61c0e7065d2828a"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK.cfg",
+        "bytes": 332,
+        "git_blob_sha1": "c9e5a3b9e2e72600db526f0f33f2d8480eae55ab"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK.ins",
+        "bytes": 7936,
+        "git_blob_sha1": "8009def8af39eb63063b2792005a1f43a6678851"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJK.sty",
+        "bytes": 183004,
+        "git_blob_sha1": "aaa72a1bbea4914267cf1df844dc38e640490ef8"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xeCJKfntef.sty",
+        "bytes": 39012,
+        "git_blob_sha1": "2dea288fa124cd992335306b077f0bc406bc28c9"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xunicode-addon.sty",
+        "bytes": 26410,
+        "git_blob_sha1": "e284dc6b646385e8b643c9483736070a01d37586"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xunicode-extra.def",
+        "bytes": 61608,
+        "git_blob_sha1": "80fae89fe24323bb4b14b82bc731863fa4a3866b"
+      },
+      {
+        "path": "project/texmf/tex/latex/xeCJK/xunicode-symbols.tex",
+        "bytes": 7401,
+        "git_blob_sha1": "999f68ffd7d1011fce919a1b3b5d94215d1d31fb"
+      },
+      {
+        "path": "project/texmf/tex/latex/zhnumber/zhnumber-big5.cfg",
+        "bytes": 4861,
+        "git_blob_sha1": "c22288e87ef347d92cf5cd04abb291315d036400"
+      },
+      {
+        "path": "project/texmf/tex/latex/zhnumber/zhnumber-gbk.cfg",
+        "bytes": 5528,
+        "git_blob_sha1": "fcfd7dccccc27be6af4982af8e7e0e848eccb189"
+      },
+      {
+        "path": "project/texmf/tex/latex/zhnumber/zhnumber-utf8.cfg",
+        "bytes": 5621,
+        "git_blob_sha1": "6356adac15831d2f0ba20eba1238cbc13005856e"
+      },
+      {
+        "path": "project/texmf/tex/latex/zhnumber/zhnumber.ins",
+        "bytes": 3379,
+        "git_blob_sha1": "4acf307a1316895610031e5af9347f226d2722cb"
+      },
+      {
+        "path": "project/texmf/tex/latex/zhnumber/zhnumber.sty",
+        "bytes": 38081,
+        "git_blob_sha1": "8bbb1203ff672d7cc1bdd8c5e5a96b38d724ccb9"
+      },
+      {
+        "path": "project/tools/RHEntry.lean",
+        "bytes": 601,
+        "git_blob_sha1": "844a13a90f238e060a4deffe4e88e40e5b343142"
+      },
+      {
+        "path": "project/tools/export_lean_bundle.py",
+        "bytes": 23726,
+        "git_blob_sha1": "adb86f9a51ee064c1d9ae00f0c8a92459991e6d0"
+      },
+      {
+        "path": "project/tools/export_proof_process.py",
+        "bytes": 8480,
+        "git_blob_sha1": "06cbceb7b63fe19895a61c5d7644419ba9e1ef97"
+      },
+      {
+        "path": "project/tools/extract_one_module.py",
+        "bytes": 1368,
+        "git_blob_sha1": "7612daffdcb99fcf15fdfebd564bddd525129f5d"
+      },
+      {
+        "path": "project/tools/源码汇编与内核导出说明.txt",
+        "bytes": 6205,
+        "git_blob_sha1": "9e22cbe4b7b90b90dbcb381acdc585135758e1d5"
+      },
+      {
+        "path": "project/verify_package.py",
+        "bytes": 946,
+        "git_blob_sha1": "dfeee0a85aaa1085ad33f3bd930a00c998e2f82c"
+      },
+      {
+        "path": "project/接续状态.json",
+        "bytes": 3892,
+        "git_blob_sha1": "bb6565f9a2fb103eb25dee9a51081c1c2fac2687"
+      },
+      {
+        "path": "project/黎曼猜想_人类可读证明主线.pdf",
+        "bytes": 625798,
+        "git_blob_sha1": "4299533be8e8a15d403bf2b3601fc2f0cb6c9c25"
+      },
+      {
+        "path": "project/黎曼猜想_人类可读证明主线.tex",
+        "bytes": 71924,
+        "git_blob_sha1": "bce858e08f1d972ff89a901e5a081ef37ae46749"
+      },
+      {
+        "path": "project/SHA256SUMS.txt",
+        "bytes": 36496,
+        "git_blob_sha1": "a2226108543302b2e6d87a4fa37e79657505809d"
+      }
+    ]
+  },
+  "prior_archive_expansions": {
+    "files_checked": 643,
+    "all_paths_sizes_modes_match": true,
+    "groups": {
+      "audits": 237,
+      "project": 405,
+      "solution_annotation_toolkit": 1
+    }
+  },
+  "dependency_index": {
+    "parts": 5,
+    "bytes": 214948999,
+    "records": 909822,
+    "continuity_and_sizes_match": true,
+    "tree_sha1": "0330ce6f991e3991f03d5e6403e2d4fa59f8b863",
+    "files": [
+      {
+        "path": "project/lean/dependencies/RH_AllSources.dependencies.part001.jsonl",
+        "bytes": 50331484,
+        "git_blob_sha1": "5a07e26d06a80ae74ce2f1e6faafb8e75fff6fbb"
+      },
+      {
+        "path": "project/lean/dependencies/RH_AllSources.dependencies.part002.jsonl",
+        "bytes": 50331578,
+        "git_blob_sha1": "f727ff38d632234dac1ad60ea76144bf6ecb4a30"
+      },
+      {
+        "path": "project/lean/dependencies/RH_AllSources.dependencies.part003.jsonl",
+        "bytes": 50331374,
+        "git_blob_sha1": "a43bfdd97f14ae8e527ce6c337749e93177acc39"
+      },
+      {
+        "path": "project/lean/dependencies/RH_AllSources.dependencies.part004.jsonl",
+        "bytes": 50331634,
+        "git_blob_sha1": "2990cfd3a7e3fa23a4b440146f3dbe138ead9221"
+      },
+      {
+        "path": "project/lean/dependencies/RH_AllSources.dependencies.part005.jsonl",
+        "bytes": 13622929,
+        "git_blob_sha1": "b2192d2b6a1867fa25459d9dd9eac3b6905b7d4e"
+      }
+    ]
+  },
+  "toolkit": {
+    "tree_sha1": "07a4b0701839200c046013190e81341acb9aa0ba",
+    "preserved_between_main_and_candidate": true,
+    "ordinary_files": 59,
+    "includes_one_new_decompressed_test_fixture": true
+  },
+  "metadata_currentness_issues": [
+    {
+      "path": "ndjson-files.public.json",
+      "field": "upload_status",
+      "observed": "pending",
+      "recommended": "complete; retain the explicit metadata-only scope for this new recheck"
+    }
+  ],
+  "historical_inventory_notes": [
+    "project-files.public.json remains the original ZIP member catalogue; its classifications describe initial delivery planning. Nineteen PDF-build evidence files now exist at ordinary Git paths.",
+    "docs/release-expansion.json is a dated 2026-11-23 snapshot. Its then-unexpanded annotation status is superseded by annotations/unpacked/progress.json and the 2026-11-25 verification report."
+  ],
+  "verification_scope": {
+    "fresh_remote_git_metadata_and_manifest_comparison": true,
+    "fresh_original_source_path_enumeration_without_blob_download": true,
+    "all_large_content_bytes_downloaded_or_sha256_recomputed": false,
+    "release_asset_content_downloaded": false,
+    "whole_annotation_decompression_repeated": false,
+    "prior_byte_verification_records_reused_when_git_trees_unchanged": true,
+    "mathematical_proof_or_compilation_check_performed_by_this_audit": false
+  },
+  "evidence": {
+    "prior_annotation_report": "docs/full-annotation-upload-verification-20261125.json",
+    "annotation_progress": "annotations/unpacked/progress.json",
+    "expanded_file_inventory": "docs/unpacked-files-20261125.json",
+    "original_project_catalog": "project-files.public.json",
+    "dependency_manifest": "project/lean/dependencies/manifest.json",
+    "input_snapshot_sha256": "242809d9374c8919d26233beb8634b69451481c8fe89c30d8cab73a505ad5869"
+  }
+}

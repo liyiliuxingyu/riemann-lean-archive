@@ -1,0 +1,44 @@
+name: Repository delivery integrity
+
+on:
+  push:
+    branches: [main, simplify/grh-compact-20261126]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out delivery files and Git trees
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /README.md
+            /THIRD_PARTY_NOTICES.md
+            /.gitattributes
+            /.gitignore
+            /*public.json
+            /.github/workflows/
+            /project/lean/compact/
+            /docs/
+            /audits/lean_compact_20261126/
+            /audits/repository_completeness_20261126/
+            /tools/verify_compact_delivery.py
+      - name: Verify files, retained archive trees and successful CI inputs
+        run: python3 tools/verify_compact_delivery.py --output "$RUNNER_TEMP/delivery-integrity.json"
+      - name: Summarize the verification scope
+        if: success()
+        run: |
+          printf '%s\n' '## Delivery integrity passed' 'The checked files match the delivery manifest. Retained archive Git objects and the inputs of the recorded successful full Lean build are unchanged.' 'This job does not rebuild Lean or redownload the large annotation text.' >> "$GITHUB_STEP_SUMMARY"

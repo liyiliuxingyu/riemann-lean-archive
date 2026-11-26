@@ -1895,5 +1895,8 @@
       "classification": "ordinary_git_candidate",
       "license_or_notice": false
     }
-  ]
+  ],
+  "inventory_role": "Original engineering ZIP member inventory; not the current repository file count",
+  "current_layout_manifest": "audits/repository_completeness_20261126/inventory_report.json",
+  "current_layout_note": "All 270 archive members are accounted for: 267 original Git paths plus 3 documented lossless layout conversions. Historical classification fields describe the initial inventory; 19 archived build-evidence files now also exist as ordinary Git files."
 }

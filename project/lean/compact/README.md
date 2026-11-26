@@ -1,6 +1,6 @@
-# GRH 紧凑版候选工程
+# GRH 紧凑版工程
 
-本目录引入 [lsernau/grh-lean](https://github.com/lsernau/grh-lean) 的 `grh-compact`，固定在提交 `72fead102f663d5c7a407964a13dc0cf9d977207`。这是基于上游完整重写的独立候选工程；原始归档仍在 [`../original/`](../original/)。本目录没有把旧工程的内部模块逐一替换，也不声称两个 Lean 版本的全部环境已证明等价。
+本目录引入 [lsernau/grh-lean](https://github.com/lsernau/grh-lean) 的 `grh-compact`，固定在提交 `72fead102f663d5c7a407964a13dc0cf9d977207`。这是基于上游完整重写的独立工程；原始归档仍在 [`../original/`](../original/)。本目录没有把旧工程的内部模块逐一替换，也不声称两个 Lean 版本的全部环境已证明等价。
 
 ## 实际规模与接口
 
@@ -12,7 +12,11 @@
 
 ## 当前验证状态
 
-生产源码、构建配置、导入图和清单的静态核验已通过。本机官方 Lean 安装与精确依赖固定通过，但完整 Mathlib 缓存因磁盘不足而失败，尚未在本机完成 Main 构建。完整构建、五个出口的精确类型及公理检查由仓库的 `Compact Lean build and public interface` 工作流执行；以实际运行结果及 JSON 报告为准，不能把上游自报的通过情况当成本仓库已经复现。
+**本仓库已实际通过完整构建、五个公开出口的精确类型及公理检查。** [GitHub Actions 运行 45758680116](https://github.com/liyiliuxingyu/riemann-lean-archive/actions/runs/45758680116) 于 2026-11-26 完成，13 个阶段全部通过；`lake build` 用时 8852.495 秒，完成 9843 个构建任务。五个定理的公理均仅为 `propext`、`Classical.choice`、`Quot.sound`。
+
+实际被测提交为 `c01eb3d7b21c4884b6c31b492f85635d4cd0669c`。[原始 validation.json](../../../audits/lean_compact_20261126/ci_run_45758680116/validation.json)、[接口日志](../../../audits/lean_compact_20261126/ci_run_45758680116/public-interface.log)及[公理日志](../../../audits/lean_compact_20261126/ci_run_45758680116/axioms.log)已作为普通文件保存，不依赖临时 artifact 的保留期限。仓库完整性检查会比较当前证明输入与该次成功运行所用输入的哈希。
+
+此前本机因磁盘不足未能取得完整 Mathlib 缓存的失败记录仍保留，它与后来成功的远端构建分别记录。上述成功范围不包括 Comparator、其他独立内核重放或数学同行评议。
 
 详细记录见 [`../../../audits/lean_compact_20261126/`](../../../audits/lean_compact_20261126/) 和 [仓库简化说明](../../../docs/LEAN_COMPACT.md)。从五个出口追溯核心依赖，可先读[中文代码导航](../../../docs/LEAN_COMPACT_GUIDE.md)。
 

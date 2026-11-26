@@ -1,6 +1,6 @@
 {
   "source_url": "https://math.mit.edu/~drew/grh/solution.ndjson.zst",
-  "upload_status": "pending",
+  "upload_status": "complete",
   "part_count": 57,
   "records": 1080769508,
   "original_bytes": 61570595788,
@@ -648,5 +648,16 @@
       "compressed_bytes": 36347058,
       "compressed_sha256": "17b2e53cde2fb07223560c6876a43fdc97e5cd4582f9ac6d132f2907f49ec218"
     }
-  ]
+  ],
+  "inventory_status_updated_on": "2026-11-26",
+  "current_repository_layout": {
+    "directory": "annotations/unpacked/",
+    "txt_files": 3380,
+    "bytes": 168547118127,
+    "original_records": 1080769508,
+    "progress_manifest": "annotations/unpacked/progress.json",
+    "verification_report": "audits/repository_completeness_20261126/inventory_report.json",
+    "verification_kind": "Remote Git metadata and continuity checks linked to prior byte verification by unchanged Git objects",
+    "full_body_redownloaded_this_round": false
+  }
 }

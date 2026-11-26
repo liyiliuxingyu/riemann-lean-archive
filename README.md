@@ -2,11 +2,25 @@
 
 黎曼猜想相关 Lean 源码、中文数学说明、可恢复的源码单文件汇编，以及 `solution.ndjson.zst` 逐行中文注释的工程归档。
 
-本仓库整理文件、保存出处并提供恢复与核验方法。文件汇编、哈希核验和 NDJSON 注释的成功，不能代替 Lean 内核对数学证明的检查。本次整理及后续有限审查没有完成本机完整原工程构建、最终定理的完整递归公理审计或全量独立内核复核。中文数学稿仍有明确标出的上游论证未完全展开，不是独立完整的新证明。
+本仓库整理文件、保存出处并提供恢复与核验方法。**紧凑版工程已在本仓库的 GitHub Actions 中完成完整构建、五个公开定理的类型检查和公理依赖检查**，实际运行与原始报告见下方。原始 Lean 4.33.1 大工程尚未完整重编；独立内核重放和数学同行评议尚未执行。中文数学稿仍有明确标出的上游论证未完全展开。
 
-## Lean 紧凑版候选（2026-11-26）
+## 已验证的 Lean 紧凑版（2026-11-26）
 
-参照 `lsernau/grh-lean` 新增[独立紧凑版工程](project/lean/compact/)，生产源码为 794 个文件、7,420,187 字节、112,827 个物理行，五个公开陈述与原归档一致。采用独立固定的 Lean 4.35.0 / Mathlib 环境，提供完整构建及实际类型、公理验收。当前状态与边界见[简化说明](docs/LEAN_COMPACT.md)和[审计记录](audits/lean_compact_20261126/)。原始档案保持。
+参照 `lsernau/grh-lean` 引入[独立紧凑版工程](project/lean/compact/)，生产源码为 794 个文件、7,420,187 字节、112,827 个物理行，五个公开陈述与原归档一致。固定 Lean 4.35.0 / Mathlib `56a00585…`。本仓库 [CI 运行 45758680116](https://github.com/liyiliuxingyu/riemann-lean-archive/actions/runs/45758680116) 的 13 个阶段全部通过；完整构建耗时 8852.495 秒，五个出口均仅依赖 `propext`、`Classical.choice`、`Quot.sound`。
+
+[原始验证 JSON](audits/lean_compact_20261126/ci_run_45758680116/validation.json) · [五项公理日志](audits/lean_compact_20261126/ci_run_45758680116/axioms.log) · [中文代码导航](docs/LEAN_COMPACT_GUIDE.md) · [验证范围说明](docs/LEAN_COMPACT.md)。验证对应源码提交 `c01eb3d7b21c4884b6c31b492f85635d4cd0669c`，后续交付文件清单会核对当前证明输入与该次成功运行一致。
+
+## 仓库完整性与续作
+
+本轮重新核对了原工程模块树、57 卷完整注释、60 个 Release 附件及工程 ZIP 成员的当前目录映射。详细范围见[完整性说明](docs/COMPLETENESS.md)，继续工作的入口及尚未完成事项见[接续说明](docs/CONTINUATION.md)。
+
+在按说明取得必要小文件的工作副本中，从仓库根目录运行：
+
+```bash
+python3 tools/verify_compact_delivery.py
+```
+
+该检查核对紧凑工程和验收资料的逐文件哈希、实际通过 CI 的证明输入，以及大型原始归档的 Git 对象标识；它不会下载或重新散列 168.55 GB 注释正文，也不重新运行 Lean。`Repository delivery integrity` 工作流会在主分支和 PR 上执行同一检查。完整 Lean 重编使用 `Compact Lean build and public interface` 的手动运行入口，或紧凑工程 README 中的命令。
 
 <!-- full-annotation-expansion-status -->
 ## 完整注释附件展开结果
