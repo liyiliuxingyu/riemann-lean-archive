@@ -1,0 +1,70 @@
+{
+  "revision": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "scope": "Static lexical scan and explicit import graph only; no build or axiom closure verified by this scan. Nested comments and string contents masked; not a Lean parser.",
+  "editions": {
+    "grh": {
+      "src_lean_files": 803,
+      "lib_files": 495,
+      "new_files": 306,
+      "bytes": 30050271,
+      "physical_lines": 477124,
+      "nonblank_lines": 432527,
+      "noncomment_code_lines": 299902,
+      "main_import_closure_size": 803,
+      "unreachable_modules": [],
+      "unknown_external_imports": [
+        "Mathlib",
+        "Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card",
+        "Mathlib.LinearAlgebra.Projectivization.Basic",
+        "Mathlib.LinearAlgebra.Projectivization.Cardinality",
+        "Mathlib.Probability.Kernel.Composition.IntegralCompProd",
+        "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+        "Mathlib.Probability.Kernel.WithDensity"
+      ],
+      "lib_import_new": [],
+      "explicit_import_graph_is_dag": true,
+      "trust_keyword_matches": [],
+      "metaprogramming_declarations": [],
+      "selected_syntax_counts": {
+        "by": 55243,
+        "simp": 22526,
+        "simpa": 9377,
+        "grind": 1779,
+        "exact": 10705,
+        "first": 42,
+        "choose": 1066,
+        "epsilon": 34,
+        "seal": 135
+      }
+    },
+    "grh-compact": {
+      "src_lean_files": 794,
+      "lib_files": 573,
+      "new_files": 219,
+      "bytes": 7420187,
+      "physical_lines": 112827,
+      "nonblank_lines": 95030,
+      "noncomment_code_lines": 76149,
+      "main_import_closure_size": 794,
+      "unreachable_modules": [],
+      "unknown_external_imports": [
+        "Mathlib"
+      ],
+      "lib_import_new": [],
+      "explicit_import_graph_is_dag": true,
+      "trust_keyword_matches": [],
+      "metaprogramming_declarations": [],
+      "selected_syntax_counts": {
+        "by": 21704,
+        "simp": 12789,
+        "simpa": 4590,
+        "grind": 2713,
+        "exact": 882,
+        "first": 90,
+        "choose": 1279,
+        "epsilon": 25,
+        "seal": 145
+      }
+    }
+  }
+}

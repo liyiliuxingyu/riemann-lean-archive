@@ -1,0 +1,6 @@
+✔ [42/42] Built cache:exe (889ms)
+Attempting to download 9031 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+Downloaded: 7189 file(s) [attempted 7189/9031 = 79%, 198 KB/s]<task>/runtime/mathlib_cache/507fe8f74c359eb3.ltar: No space left on device (os error 28)
+<task>/runtime/mathlib_cache/2befccc251a3e63a.ltar: No space left on device (os error 28)
+Downloaded: 7219 file(s) [attempted 7226/9031 = 80%, 69 KB/s], 7 download failedDecompression error: leantar exited with code 101 on batch of 1913 files: Batteries.Data.Range (<task>/runtime/mathlib_cache/4d51e63eeee9b4a2.ltar), Mathlib.CategoryTheory.Functor.Trifunctor (<task>/runtime/mathlib_cache/960446358e05dd95.ltar), Mathlib.Algebra.GCDMonoid.Nat (<task>/runtime/mathlib_cache/3e59fcd757c50155.ltar), ... and 1910 more
+Process exit status: 1. No GRH Main build or five-theorem axiom command was run.

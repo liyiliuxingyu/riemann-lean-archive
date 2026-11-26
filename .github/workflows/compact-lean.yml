@@ -1,0 +1,58 @@
+name: Compact Lean build and public interface
+
+on:
+  push:
+    branches: [simplify/grh-compact-20261126]
+    paths:
+      - 'project/lean/compact/src/**'
+      - 'project/lean/compact/scripts/**'
+      - 'project/lean/compact/lean-toolchain'
+      - 'project/lean/compact/lakefile.toml'
+      - 'project/lean/compact/lake-manifest.json'
+      - 'project/lean/compact/UPSTREAM.json'
+      - '.github/workflows/compact-lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: compact-lean-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: '2'
+      MATHLIB_CACHE_DIR: ${{ runner.temp }}/grh-mathlib-cache
+    steps:
+      - name: Check out only the compact project
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /project/lean/compact/
+      - name: Install verified Lean 4.35.0
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/grh-lean-toolchain.tar.zst" https://github.com/leanprover/lean4/releases/download/v4.35.0/lean-4.35.0-linux.tar.zst
+          printf '%s  %s\n' '7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d' "$RUNNER_TEMP/grh-lean-toolchain.tar.zst" | sha256sum --check -
+          tar --zstd -xf "$RUNNER_TEMP/grh-lean-toolchain.tar.zst" -C "$RUNNER_TEMP"
+          rm "$RUNNER_TEMP/grh-lean-toolchain.tar.zst"
+          printf '%s\n' "$RUNNER_TEMP/lean-4.35.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Build and validate the five exports
+        working-directory: project/lean/compact
+        run: python3 scripts/ci_validate.py
+      - name: Preserve validation report and logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: compact-lean-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: project/lean/compact/verification-output/
+          if-no-files-found: warn
+          retention-days: 3
